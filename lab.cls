@@ -11,8 +11,8 @@
 \hypersetup{
     colorlinks=true,
     urlcolor=blue,
-    citecolor=magenta,
-    linkcolor=magenta,
+    citecolor=blue,
+    linkcolor=blue,
 }
 \RequirePackage[numbers]{natbib}
 
