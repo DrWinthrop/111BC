@@ -1,5 +1,7 @@
 # Physics 111B LaTeX Lab Writeups
 
+[![Build Status](https://travis-ci.org/phylabs/111B.svg?branch=master)](https://travis-ci.org/phylabs/111B)
+
 ## Usage instructions
 
 ### First-time setup
