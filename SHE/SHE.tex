@@ -17,6 +17,15 @@
 \newcommand{\FourWireMeasurements}{http://physics111.lib.berkeley.edu/Physics111/Reprints/SHE/19-Four_Wire_Measurement.pdf}
 \newcommand{\SemiconductorMaterialsLectureNotes}{http://physics111.lib.berkeley.edu/Physics111/Reprints/SHE/Semiconductor\%20Materials\%20Notes\%20MSE\%20223\%20Haller.pdf}
 
+\newcommand{\WhatIsHysteresis}{http://experimentationlab.berkeley.edu/hysteresis}
+\newcommand{\SHEControlProgramFrontPanel}{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_FrontPanel.pdf}
+\newcommand{\SHEDataTakingTable}{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_Data_Taking_Table.pdf}
+
+% References
+\newcommand{\ChFifteenTheHallEffect}{http://physics111.lib.berkeley.edu/Physics111/Reprints/SHE/09-Semiconductors.pdf}
+\newcommand{\ChSeventeenElectricalConductivityandtheHallEffect}{http://physics111.lib.berkeley.edu/Physics111/Reprints/SHE/07-Electrical_Conductivity.pdf}
+\newcommand{\ChapterFortySixConductionofElectricity}{http://physics111.lib.berkeley.edu/Physics111/Reprints/SHE/Halliday_Resnick/Ch.\%2046\%20Conduction\%20of\%20electricity\%20in\%20solids.pdf}
+
 \begin{document}
 
 \maketitle
@@ -54,6 +63,19 @@ This manual is intended to provide a general guidance for the lab. It is not des
 
 \section{Hall Effect in a Semiconductor Pictures (SHE)}
 
+\noindent Click the pictures to view them full-size on a webpage. \\
+
+\noindent
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_3541-2.jpg}{\includegraphics[width=0.33\linewidth,height=4cm,keepaspectratio]{images/SHE_3541-2.jpg}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_Electronics_3546_Crop.jpg}{\includegraphics[width=0.33\linewidth,height=4cm,keepaspectratio]{images/SHE_Electronics_3546_Crop.jpg}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_Mag_Pwr_Crop_3547.jpg}{\includegraphics[height=4cm,keepaspectratio]{images/SHE_Mag_Pwr_Crop_3547.jpg}} \\
+
+\noindent
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/Chamber_Front_3304.jpg}{\includegraphics[width=0.33\linewidth,height=6.5cm,keepaspectratio]{images/Chamber_Front_3304.jpg}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/Magnet_Backside_Polepieces_Crop_3307.jpg}{\includegraphics[width=0.33\linewidth,height=6.5cm,keepaspectratio]{images/Magnet_Backside_Polepieces_Crop_3307.jpg}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_LN-2_Crop_3542.jpg}{\includegraphics[width=0.33\linewidth,height=6.5cm,keepaspectratio]{images/SHE_LN-2_Crop_3542.jpg}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_Water_Crop_3544.jpg}{\includegraphics[width=0.33\linewidth,height=6.5cm,keepaspectratio]{images/SHE_Water_Crop_3544.jpg}}
+
 \section{Before the 1st Day of Lab}
 
 Complete the following before your experiment's scheduled start date:
@@ -86,7 +108,7 @@ Complete the following before your experiment's scheduled start date:
     \item \href{\LabReprints}{\textbf{Physics 111-Lab Library site}}
 \end{enumerate}
 
-\noindent More References \\
+\noindent More \hyperref[references]{\textbf{References}} \\
 
 \noindent\textbf{If you only read one reference, it is best to read Melissinos. It does a great job of explaining the physics. Section 3.3 on the Hall Effect will be vital during analysis when finding the Hall Voltage and extrapolating the conductivity values from the extrinsic region to the point where $T = T_0$. It will also shed some light on the concentrations of holes and electrons at the transition point.}
 
@@ -281,7 +303,187 @@ The only difficult part remaining is the determination of the function $f(x)$, a
 \end{figure}
 
 For good measure, once the above procedure has been completed, it is worthwhile to verify our experimental technique. Thus, we will make four more sets of measurements (just the reverse of the previous ones), indicated by the table below.
+\[
+\begin{array}{c|c|c}
+\textrm{Current} & \textrm{Voltage} & \textrm{Trans-resistance} \\
+\hline
+I_{BA} & V_{DC} & R_{BA,DC} = V_{DC} / I_{BA} \\
+I_{DA} & V_{BC} & R_{DA,BC} = V_{BC} / I_{DA} \\
+I_{CA} & V_{DB} & R_{CA,DB} = V_{DB} / I_{CA} \\
+I_{DB} & V_{AC} & R_{DB,AC} = V_{AC} / I_{DB}
+\end{array}
+\]
+Once again, we use these trans-resistances to determine the Hall voltage and the resistivity. The results of the two sets of measurements should obviously agree.
 
-% 207/297
+From measurements of the resistivity, we obtain the \emph{mobilities} of the charge carriers in our sample as follows:
+\begin{equation}
+    1/\rho = e \cdot (n \cdot \mu_n + p \cdot \mu_p)
+\end{equation}
+Here, $\mu_n$ is the electron mobility and $\mu_p$ the hole mobility. This equation is trivially adapted to samples in which the carriers are exclusively either electrons or holes. The charge carrier densities $n$ (electrons) and $p$ (holes) come from our Hall voltage measurements.
+
+Finally, having experimentally determined the carrier concentrations and mobilities, we obtain their drift velocities, given as $\nu_{de} = \mu_n E$ for electrons and as $\nu_{dp} = \mu_p E$ for holes. In both expressions, $E$ is the magnitude of the electric field which drives the current.
+
+In this experiment we are going to make measurements of Hall Voltage and sample resistivity as it varies with temperature. We will start with the sample at room temperature, around 320K. Adding liquid nitrogen, we will begin to cool down the sample. Below 240K we will add more liquid nitrogen to replace boil off. Once the system has reached the specified starting temperature, the computer automatically senses it. At this point the heater will start warming up the sample. Once this begins, it is not possible to change the starting and ending temperatures, except by stopping the experiment early. The computer will begin to record data every degree change as the temperature rises at 5K per minute. (These data should be preserved in the data file, even if the program is terminated early or even if the computer crashes.) The temperature controller (running autonomously) will stop heating the sample at 400K (the ending temperature), and computer will stop taking the data. We are going to stop at 400K to prevent the melting of the soldered contacts on the sample. (The contacts will begin to break down at 156 $^\circ$C and we want to stay below that point.) The contact points of the sample consist of Boron dopant covered by a Palladium layer which in turn is covered by a gold layer which is covered by an indium layer. Then, wires are pressed onto the indium contacts (see photo, below, of this process). These contacts are very delicate. Please do not touch them. If you think there is a problem with the mounted sample, ask for help from the staff.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/WireGermaniumSample.png}
+    \caption{Hughes Silvestri wires the Germanium sample, using Indium and a wooden rod.}
+\end{figure}
+
+Once all the data have been collected, we are going to reverse the magnetic field and take the same data again. After that is done, we will turn off the magnetic field. (Actually, we will actively drive it to zero field with a small winding current. This overcomes residual hysteretic field.) We will take a third set of data at zero magnetic field (why?). \href{\WhatIsHysteresis}{\textbf{What is hysteresis?}}
+
+\section{Apparatus and Procedure}
+
+In brief, this experiment involves measuring the resistivity and Hall voltage as functions of temperature on a particular semiconductor sample which has been prepared and mounted into a cryostat (Figure \ref{fig:cryostat}). Components of the experiment you will be using are described below.
+
+\noindent Temperature control system
+
+To perform these measurements, we will first cool the sample to the lowest temperatures we will be accessing. This cooling of the apparatus is accomplished by adding liquid nitrogen to the cryostat twice: a first batch of liquid nitrogen will get the temperature down to about 240 K, and then we will keep adding nitrogen to lower the temperature further. A computer interfaced thermometric system is used to control the temperature. Once the specified lowest temperature is reached, a heater is turned on and the sample begins to slowly rise in temperature until the specified highest temperature is reached. This controlled temperature ramp can be terminated by stopping the experiment early. The computer will begin to record data every degree change as the temperature rises at 5K per minute. An upper temperature limit of 400 K is imposed so as not to damage the sample (in particular the leads on the sample). The sample we are going to use for this experiment is a doped germanium crystal that is cut out into an approximately 10mm x 10mm square $\pm$ 0.01mm with thickness of approximately 1.25 millimeters $\pm$ 0.01mm. The sample is mounted in a cryostat as shown in the Figure \ref{fig:cryostat}. The germanium crystal is mounted to the front side of the copper block with connection leads A, B, C, and D. The backside of the copper block contains a silicon diode temperature sensor (DT-470/471/670 SD). This diode measures the temperature of the sample and is a two-lead device with a capability of a four-wire configuration for making more accurate measurements. The temperature range for the diode measurement is about 4K to 475K. Two wires out of four assigned to the diode are current leads, $I\pm$. The diode's other two leads are for the voltage measurement, $V\pm$. The copper block is mounted to the brass-copper rod containing a 50-watt maximum heating coil through which we will be able to heat up the sample. The brass part of the rod can be thought of as a thermal resistance: we want to limit how fast the sample cools and heats up. The whole assembly is submerged into the chamber in which part of it (copper block with the heating coil) lies in the vacuum and the other part in the chamber where liquid nitrogen will be poured (refer to Fig. \ref{fig:cryostat}). Vacuum is needed to keep the Germanium sample from oxidizing when it is heated above room temperature. The cryostat is kept between the poles of the magnet and serves to hold the magnetic field measurement probe in place perpendicular to the magnetic field.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/Cryostat.png}
+    \caption{Operating Position of the Cryostat}
+    \label{fig:cryostat}
+\end{figure}
+
+\begin{itemize}
+    \item The two water valves are behind the magnet labelled ``Main Water'' (In) and ``Return'' (out). Open the Return 1st, then open SLOWLY the Main Water while pushing in and holding the button on the grey interlock box behind the magnet near the water valves. Check to see that you have 80 PSI water pressure on the meters on the table behind the magnet. If NOT see Don Orlando immedately.
+
+    \item To turn off the water, close the Main Water(in) valve 1st, then monitor the water pressure on the meters and when it get to less then 5 PSI, turn off the Return valve.
+\end{itemize}
+
+In this experiment we are going to use 5000 gauss electromagnet to observe the Hall effect. The electromagnet is powered by the two 60V DC power supplies connected in series. To prevent the magnet from overheating, water-cooling lines are connected to the magnet. Water interlock circuitry in the grey box monitors the flow of the water through the magnet. When it senses that there is no water circulation, this circuit prevents any significant operation of the magnet by tripping a disconnect relay whenever more than 5 watts are being dissipated into the magnet's coil. Magnet operation resumes as soon as water circulation is restored or the target field is reduced to close to zero. See Figure 7 for the simple block diagram of the experiment. Note that the data collection software still requires water to be flowing, at least at the beginning, even if measurements are being made at zero field.
+
+The magnet is monitored by the LakeShore 450 Gaussmeter. It provides precise measurements of the magnetic fields. \textbf{To allow the LakeShore 450 to be used in a control loop to reach the target field, its auto-ranging and filtering have both been turned off (these settings persist even when turned off).} To pass a current through any two leads of the sample we will use 2400 SourceMeter. To measure the voltage across any two leads of the sample we will use 6514 Electrometer. (These are finicky devices, sometimes needing to be turned off and back on again during startup of data-taking.) The 330 Temperature Controller measures and autonomously controls the temperature of the sample using the silicon diode temperature sensor. All these instruments are connected to the computer through a GPIB connection. The operation manuals of these instruments are contained in the Appendix B. (Remember to TURN OFF the Temperature Controller when finish for the day, DO NOT LEAVE IT ON!!)
+
+The Gold box is Labview computer controlled system that automatically triggers the 2400 Source meter to deliver its current to the sample. It also contains a bank of 16 relays to connect this current to one of four pairs of the sample's leads and measure the corresponding voltage on the remaining pair. The Labview program controls the Gold box and has the capability of switching the above, plus the magnetic field current and the sample current directions. It also monitors the status of the experiment and if something goes wrong, it has the capability to turn things off.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/BlockDiagram.png}
+    \caption{Simple Block Diagram for the Hall Effect in Semiconductors experiment.}
+    \label{fig:BlockDiagram}
+\end{figure}
+
+\section{Procedure}
+
+Below is a ``simple'' procedure for this experiment.
+
+Read the Cryogenic Safety sheet before filling the system with Liquid Nitrogen: See the Cryogenic Liquids information from EH\&S. \href{\CryogenicLiquids}{\textbf{Cryogenic Liquids}}
+
+\textbf{Always wear the Blue Cryogenic safety gloves, the clear safety goggles, and the clear face shield while handling of LN-2.}
+
+\subsection{Control Program procedure using the Gold box}
+
+\begin{enumerate}
+    \item Turn on the computer.
+
+    \item Turn the water on. There are two valves that must be opened; first open the lever valve \textbf{Return} behind the magnet, then open the \textbf{Main Water} valve behind the magnet, and finally push the button on the grey interlock box. Hold the button for about 5 seconds. At first the light might blink but it should stop doing so in about a minute.
+
+    \item Make sure the vacuum is below 100 milli-torr, plug in the pump and open the vacuum valve on the chamber. \textbf{NOTE: Keep Pump on during the time dewar is still cold, leave on overnight is okay.}
+
+    \item Then turn on all the equipment in the Rack. The on/off switches are in the back of some of the units.
+
+    \item Starting from the top most piece; Electrometer, Current Source, Gauss Meter, the Lakeshore Temperature Controller and the GOLD Box. Then go to the two power supplies under the bench with the magnet on it and turn the power supplies on.
+
+    \item Now push the ``RUN'' button on the GOLD Box (this button is located just above the on/off switch). The power supplies should turn on with a fan sound, if you turned on the circuit breakers on the power supplies.
+
+    \item On your Desktop or in the Support folder on the C: drive is the LabView Program called ``Control Program v9\_multifield'' excute this program. \href{\SHEControlProgramFrontPanel}{\textbf{SHE Control Program Front Panel}}.
+
+    \item The data that the program takes is as follows: \href{\SHEDataTakingTable}{\textbf{SHE Data Taking Table}}.
+
+    \item Run the Control Program; Then input the experiment parameters; Sample Current, Magnet Field in Gauss (Max 5000), Start Temperature, End Temperature (in K, Then click the Start Experiment button. Name a file to save with an extension of *.TXT or *.DAT for your data (dialog box will pop up).
+
+    \item Test the system by inputing temperature range 120K to 200K.
+
+    \item Then you can use the defaults 95K to 350K the program will take about 1 hour 40 minutes to finish.
+
+    \item You need to make 4 different sample current runs.
+
+    \item Do NOT RUN or take data overnight.
+
+    \item \textbf{If you want to STOP early use the STOP button (Only Click it once) in the program DO NOT Stop LabView or X out the program. This would be like driving your car at 65 miles per hour and you get removed from your car while it is still going.} (this takes about 60 seconds to stop)
+
+    \item Wear the blue gloves and the face shield (available at your station) and with the help of a GSI fill the white dewer with liquid nitrogen. You do not actually need a full dewer.
+
+    \item Now add some of the liquid nitrogen to the cryostat, so it can begin cooling. Move on to the next step, but periodically check the temperature displayed by the Lakeshore 330 Temperature Controller (check that it is on) and the Control Program display; when it reaches 240K, add more liquid nitrogen. (Always wear the blue gloves and a face shield while handeling liquid nitrogen.) NOTE: You MUST add liquid nitrogen to the cryostat, even if you are only taking data for above room temperature.
+
+    \item Check the temperature. The minimum temperature that we are capable of reaching is about 88K, but this is hard to get to; as long as you get bellow approximately 95K you should be fine. (88K takes about 1 hour to get)
+
+    \item The Temperature Ramp Rate is set to increase the temperature by 2 Kelvin per minute (calculate how much time it will take for you to complete a run,  but remember, this is NOT an overnight lab: you must finish before closing time).
+
+    \item \textcolor{red}{\textbf{This is a CheckPoint: Once you have taken your first run of data determine what the Resistivity and Hall coefficients at room temperature are. How accurate are your measurements? What type of semiconductor are we dealing with (p-type or n-type) and how do you know this? At what temperature does the material transition between intrinsic and extrinsic? Finally, make sure you understand how to extrapolate the conductivity and find the ratio of the Hole and Electron Mobility at the point of transition between extrinsic and intrinsic regions (Talk to a GSI or review section 3.3 in Melissinos).}}
+
+    \item Run the procedure roughly 5 times and make sure you have enough data to analyze.
+
+    \item When finished for the day Stop Control Program or let it finish data taking.
+
+    \item Turn off GOLD Box, and Heater controller before you leave the 111-Lab.
+\end{enumerate}
+
+\subsection{Control Program Description}
+
+\begin{enumerate}
+    \item Start the Control Program ie; RUN LabView program
+    \item Input Experiment Parameters
+    \item Click Start Experiment
+    \item The data taking will start after the start temperature is reached the second time.
+    \item there is over shoot you will see it on the temperature graph.
+    \item Temperature goes below set point then heater will come on and when start temperature is reached again data taking will start.
+    \item NOTE: if for some reason the program crashes or you accidentally X out the program You must restart the program and just click start experiment button, with no parameters entered, to reset the system. Check to see that the Heater is OFF.
+    \item Turn off GOLD Box, and Heater controller when finished before you leave the 111-Lab.
+\end{enumerate}
+
+\section{Report}
+
+The following should be included in your report:
+
+\begin{enumerate}
+    \item Resistivity and Hall Coefficient of the sample at room temperature. At what magnetic field intensity, would the $E$ field due to Hall effect be of the same magnitude (though perpendicular in direction) as the $E$ field due to resistance?
+
+    \item Plot of resistivity $\rho$ of the sample versus inverse temperature. Find at what temperature values the sample is in the extrinsic or intrinsic regions.
+
+    \item Plot of conductivity $\sigma = 1/\rho$ versus inverse temperature.
+
+    \item Plot of Hall coefficient of the sample versus inverse temperature.
+
+    \item Measure the carrier mobility ($\mu$) and carrier concentration ($n$).
+
+    \item Plot (Hall coefficient $\times$ conductivity) versus $T$. Where does Hall coefficient becomes zero.
+
+    \item Explain what type of material we have: p-type or n-type. (Why don't you need to know the direction of the magnetic field after all?)
+
+    \item Find electron or hole concentrations for the sample versus temperature.
+
+    \item Find the Hall Coefficient $R_H$ and the Hall mobility $\mu_H = R_H \cdot \sigma$ versus temperature.
+
+    \item Find electron or hole concentration in the extrinsic region see \href{\EHallerArticle}{\textbf{E. Haller Article}}.
+
+    \item Find electron \emph{and} hole mobilities in the extrinsic region.
+
+    \item Compare the resistance measured for the sample (at zero field) with the magnetoresistance (the resistance measured while the magnetic field is on).
+
+    \item \textbf{Last day of the experiment please fill out the \href{\ExperimentEvaluation}{Experiment Evaluation}}
+\end{enumerate}
+
+\begin{thebibliography}{}
+\label{references}
+\bibitem{manuals}
+\href{\InstrumentManuals}{\textbf{Instrument Manuals}}
+
+\bibitem{Neamen}
+Neamen, D.A. ``\href{\ChFifteenTheHallEffect}{\textbf{Ch.15: The Hall Effect pg. 17c, 180-183}}.'' Semiconductor Physics and Devices, Basic Principles (Whole Book). (1992). More than you ever wanted to know about semiconductors.
+
+\bibitem{PrestonDietz}
+Preston and Dietz. ``\href{\ChSeventeenElectricalConductivityandtheHallEffect}{\textbf{Ch. 17: Electrical Conductivity and the Hall Effect pg. 303-315}}.'' \emph{The Art of Experimental Physics} (1991).
+
+\bibitem{HallidayResnickWalker}
+D. Halliday, R. Resnick, J. Walker. ``\href{\ChapterFortySixConductionofElectricity}{\textbf{Chapter 46: Conduction of Electricity in Solids}} \emph{Fundamental of Physics extended.} Excellent introduction to conductivity in solids. (1993).
+\end{thebibliography}
+
+\vspace{1em}
+\noindent Other reprints and reference materials can be found on the \href{\LabReprints}{\textbf{Physics 111 Library Site}}
 
 \end{document}
