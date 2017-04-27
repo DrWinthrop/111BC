@@ -8,6 +8,7 @@
 \RequirePackage{color}                 % Color text
 \RequirePackage[nottoc]{tocbibind}     % Add references to TOC
 \RequirePackage{hyperref}              % Hyperlinks
+\RequirePackage{amsmath}
 \hypersetup{
     colorlinks=true,
     urlcolor=blue,

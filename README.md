@@ -2,6 +2,29 @@
 
 [![Build Status](https://travis-ci.org/phylabs/111B.svg?branch=master)](https://travis-ci.org/phylabs/111B)
 
+## Lab Writeup Completion Status
+
+- [ ] AFM - Atomic Force Microscope
+- [ ] ATM - Atomic Physics
+- [ ] CO2 - CO2 Laser
+- [ ] MNO - Nonlinear Spectroscopy & Magneto-Optics
+- [ ] MOT - Atom Trapping
+- [ ] NMR - Nuclear Magnetic Resonance
+- [ ] OPT - Optical Pumping
+- [ ] QIE - Quantum Interference & Entanglement
+- [ ] BMC - Brownian Motion in Cells
+- [ ] OTZ - Optical Trapping
+- [ ] COM - Compton Scattering
+- [ ] MUO - Muon Lifetime
+- [ ] GMA - Gamma-Ray Spectroscopy
+- [ ] BRA - Beta Ray Spectroscopy
+- [ ] RUT - Rutherford Scattering
+- [ ] HAL - Hall Effect in a Plasma
+- [ ] LLS - Low Light Signal Measurements
+- [ ] NLD - Non-linear Dynamics and Chaos
+- [ ] JOS - Josephson Junction
+- [ ] SHE - Hall Effect in Semiconductor
+
 ## Usage instructions
 
 ### First-time setup
