@@ -2,8 +2,8 @@
 \ProvidesClass{lab}
 \LoadClass{article}
 \RequirePackage[margin=1in]{geometry}  % Set page margins
-\RequirePackage{graphicx}
-\RequirePackage{caption}               % Go to top of image when Fig. is clicked
+\RequirePackage{graphicx}              % Include pictures in document
+\RequirePackage{caption}               % Go to top of image when reference is clicked
 \RequirePackage{subcaption}            % Subfigure labels
 \RequirePackage{color}                 % Color text
 \RequirePackage[nottoc]{tocbibind}     % Add references to TOC
