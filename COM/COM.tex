@@ -1,7 +1,7 @@
 \documentclass{../lab}
 
-\labacronym{}
-\labtitle{}
+\labacronym{COM}
+\labtitle{Compton Scattering}
 
 %\newcommand{\Melissinos}{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Melissinos\%201966\%20pg\%20252-265\%20and\%20369-384.pdf}
 %\newcommand{\Clickheretoseelargerpicture}{http://experimentationlab.berkeley.edu/sites/default/files/images/COM_1.JPG}
@@ -56,21 +56,22 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \href{http://experimentationlab.berkeley.edu/sites/default/files/images/COM_Inside_3525-Lg.JPG}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/COM_Inside_3525-Lg.JPG}}
 
 \section{Before the 1st Day Lab and Standard Operating Procedure, SOP's for Compton}
+\label{sec:BeforeTheLab}
 
 \textbf{Complete the following before your experiment's scheduled start date:}
 
 \begin{enumerate}
     \item View the \href{http://youtu.be/PVgqyf3kNRs}{\textbf{Compton Scattering video}} and \href{http://youtu.be/lQKLakISoBA}{\textbf{``Light Sources and Detectors'' video}}.
 
-    \item \emph{Checkpoints are examination points where you must STOP and get a GSI or professor to verify your understanding and/or verify proper experimental setup. You cannot skip the checkpoints, as there is a \href{http://experimentationlab.berkeley.edu/node/132}{\textbf{sign off sheet}}\href{http://experimentationlab.berkeley.edu/node/132}{\textbf{}}that must be scanned in with your lab report. Print out the checkpoints page now and look it over.}
+    \item \emph{Checkpoints are examination points where you must STOP and get a GSI or professor to verify your understanding and/or verify proper experimental setup. You cannot skip the checkpoints, as there is a \href{http://experimentationlab.berkeley.edu/node/132}{\textbf{sign off sheet}} that must be scanned in with your lab report. Print out the checkpoints page now and look it over.}
 
-    \item View the \href{http://youtu.be/KHxtzF5pZZM}{\textbf{'\textbf{Radiation Safety Video'}}} After watching the video in the 111-Lab, get a pink Radiation Safety form from a 111-Lab staff person. Fill it out \& sign the form for getting a \textbf{Radiation Ring}.
+    \item View the     ``\href{http://youtu.be/KHxtzF5pZZM}{\textbf{Radiation Safety Video}}.'' After watching the video in the 111-Lab, get a pink Radiation Safety form from a 111-Lab staff person. Fill it out \& sign the form for getting a \textbf{Radiation Ring}.
 
     \item Now complete the Radiation Safety Training \href{http://experimentationlab.berkeley.edu/RadiationSafety}{\textbf{Radiation Safety}} \textbf{After completion of Training turn in all forms to Don Orlando.}
 
     \item Complete the \href{http://experimentationlab.berkeley.edu/COMPreLab}{\textbf{COM Pre Lab and Evaluation}} sheets. Print, fill it out, then turn in with your answers. The Pre-Lab must be printed separately. Discuss the experiment and pre-lab questions with any faculty member or GSI and get it signed off by that faculty member or GSI. Turn in the signed pre-lab sheet with your lab report.
 
-    \item View the \href{http://youtu.be/jR54387Wd6c}{\textbf{Introduction to Error Analysis video}} and \href{http://experimentationlab.berkeley.edu/EAX}{\textbf{\textbf{Error Analysis Notes}}}.
+    \item View the \href{\ErrorAnalysisVideo}{\textbf{Introduction to Error Analysis video}} and \href{\ErrorAnalysisNotes}{\textbf{\textbf{Error Analysis Notes}}}.
 
     \item Read the Standard Operating Procedures (SOP) for this lab before starting \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SOP\_3271\_Cs-137\_Na-22\_Co-60\_Mn-54\_Am-241\_Fe-55\_2014.pdf}{\textbf{SOP\_3271\_Cs-137\_Na-22\_Co-60\_Mn-54\_Am-241\_Fe-55\_2014}}.
 
@@ -96,7 +97,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \end{enumerate}
 
-More\textbf{ }
+More \hyperref[sec:References]{References}
 
 [\href{\LabReprints}{\textbf{Physics 111 Library Site}}]
 
@@ -126,11 +127,10 @@ Your goals for this lab are to observe and analyze Compton scattering and to lea
 \section{Theory}
 
 The Compton scattering process consists of a photon scattering off of a (free) electron. The scattering formula is
-
 \begin{equation}
     \lambda'-\lambda=\left ( \frac{h}{m_ec}\right)\left (1-\cos{\theta}\right )=\lambda_c(1-\cos{\theta})
 \end{equation}
-where $\lambda$' is the wavelength of the scattered photon, $\lambda$ is the wavelength of the incident photon, $\theta$ is the scattering angle, and $\lambda_c$ is the Compton wavelength of the electron, equals to 2426 fermi ($2426 * 10^{-15}$). By comparison, the wavelength of a 59.54 keV X-ray is 20824 Fm. You will need to convert the wavelength of the scattered photon into \emph{energy,} which is measured by the detector. You should derive the Compton formula, but do \emph{not} include it in your report. Rather, explain where it comes from, including any conservation laws and assumptions that are used.
+where $\lambda'$ is the wavelength of the scattered photon, $\lambda$ is the wavelength of the incident photon, $\theta$ is the scattering angle, and $\lambda_c$ is the Compton wavelength of the electron, equals to 2426 fermi ($2426 \times 10^{-15}$). By comparison, the wavelength of a 59.54 keV X-ray is 20824 Fm. You will need to convert the wavelength of the scattered photon into \emph{energy}, which is measured by the detector. You should derive the Compton formula, but do \emph{not} include it in your report. Rather, explain where it comes from, including any conservation laws and assumptions that are used.
 
 The scattered X-ray energy may deviate from this prediction by roughly 1 part in 1000 if the electron from which it scatters is a bound valence electron. Can you explain why this is so?
 
@@ -139,7 +139,7 @@ The scattered X-ray energy may deviate from this prediction by roughly 1 part in
 All the apparatus comes packaged together in one box
 
 \begin{enumerate}
-    \item Amptek CdTe detector (3x3x1 $mm^{3}$).....\href{http://experimentationlab.berkeley.edu/sites/default/files/images/X-123\_CdTe\_User\_Manual.pdf}{\textbf{X-123\_CdTe\_User\_Manual}}
+    \item Amptek CdTe detector ($3 \times 3 \times 1$ mm$^{3}$).....\href{http://experimentationlab.berkeley.edu/sites/default/files/images/X-123\_CdTe\_User\_Manual.pdf}{\textbf{X-123\_CdTe\_User\_Manual}}
 
     \item Detector Pre-amplifier
 
@@ -155,18 +155,17 @@ Other user Manuals and information on the X-123 Detector
 
 \begin{itemize}
     \item \textbf{If you have any problems with the apparatus see Don Orlando}
-
 \end{itemize}
 
-\section{Source}
+\subsection{Source}
 
-This experiment uses an $^{241}Am$ (americium) at 130uCi radioactive source to provide the photons for scattering. The source is located in the lead box below the bench on the floor. Leave the source in the plastic box, in which it is contained. When working near the source, you must wear your radiation ring, and when handling the source you must wear vinyl gloves. Please remember to \emph{remove }the gloves before touching anything else or you will defeat the purpose of the gloves! Place the source at the height of the detector roughly 15cm away from the detector.
+This experiment uses an $^{241}$Am (americium) at 130uCi radioactive source to provide the photons for scattering. The source is located in the lead box below the bench on the floor. Leave the source in the plastic box, in which it is contained. When working near the source, you must wear your radiation ring, and when handling the source you must wear vinyl gloves. Please remember to \emph{remove }the gloves before touching anything else or you will defeat the purpose of the gloves! Place the source at the height of the detector roughly 15cm away from the detector.
 
 The source is made by placing a small amount of radioactive Am material inside an aluminum holder as shown. There is a lead backing behind the material that strongly attenuates the number of photons emitted at greater than 90 degrees in either direction of the source-end; radiation effectively is only emitted from the source-end (the side opposite the screw).
 
 There is an energy level diagram of Am posted in the Compton experiment area. (There are more transitions possible than the strongest ones, which are listed below.)
 
-\emph{Energies and branching fractions of X-rays from $^{241}Am$}
+\emph{Energies and branching fractions of X-rays from $^{241}$Am}
 
 13.5 keV 12.8\%
 
@@ -178,147 +177,130 @@ There is an energy level diagram of Am posted in the Compton experiment area. (T
 
 59.54 keV 40\%
 
-\section{CdTe Detector}
+\subsection{CdTe Detector}
 
-\emph{The CdTe detector detects X-rays primarily by what means?} In your laboratory report you should briefly explain how the energies of the X-rays are registered by the detector and then converted into the voltage pulses that are accumulated by the multi channel analyzer (MCA). Note that while the detector is protected by a 1.5 cm cap, it is actually only 3x3 mm in size and 1 mm thick. It is placed behind the 100 $\mu m$ thick Be window which sits 1.5 inches from the cap.
+\emph{The CdTe detector detects X-rays primarily by what means?} In your laboratory report you should briefly explain how the energies of the X-rays are registered by the detector and then converted into the voltage pulses that are accumulated by the multi channel analyzer (MCA). Note that while the detector is protected by a 1.5 cm cap, it is actually only 3 $\times$ 3 mm in size and 1 mm thick. It is placed behind the 100 $\mu$m thick Be window which sits 1.5 inches from the cap.
 
 For information on the spectrometer system, see the \href{http://experimentationlab.berkeley.edu/sites/default/files/images/DP5\_User\_Manual\_A1.pdf}{\textbf{Dp5 User Manual}} and the book Knoll.
 
 The X-ray detector is mounted on the 1.5 in extender and is coupled to a charge sensitive preamplifier. The output of the preamp is sent to the DP5 digital pulse processor which implements functions such as pulse shaping, pulse selection logic, pulse counters, a multichannel analyzer, and interfaces for data acquisition and control. The detector and preamp power supplies are housed together with the detector itself. It requires a +5VDC input and supplies the necessary voltages to the preamp.
 
-
-\begin{figure}[h]
+\begin{figure}
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/COMimage01.jpg}{\includegraphics[width=0.5\linewidth]{images/COMimage01.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/COMimage01.jpg}{\includegraphics[width=0.7\linewidth]{images/COMimage01.jpg}}
     \caption{}
-    \label{fig:COMimage01}
+    \label{COMimage01}
 \end{figure}
 
 A photon striking the detector generates an output current pulse, which is turned into a voltage pulse and amplified by the pre-amp and amplifier systems. The DP5 digitizes the analog signal from the preamp, performs pulse shaping and pulse selection logic, determines the amplitude of the pulses and allocates this value to a histogram . The counts are binned in a channel corresponding to the detected energy. This produces the spectrum which is displayed on the computer. The Amptek ADMCA program allows you to choose from 256 to 8192 channels and the width of each channel will be approximately your full scale energy divided by the number of channels. In the experiment you should adjust the parameters so that you obtain an optimal full scale energy range. \emph{Why? What happens if your full scale energy range is too large or too small? How will you judge when you have obtained an appropriate range?}
 
 It takes a finite amount of time for the PHA unit to sense a pulse, determine its height, place it in the proper channel, and then set up for sensing the next pulse. Pulses that arrive too closely together in time cannot be distinguished and yield problems with \emph{PHA Dead Time}. However, the rates for this experiment are low enough that this should not be a problem.
 
-Understanding some basics of the DP5 digital pulse processor helps with optimizing the system configuration (that is, to get the best resolution for the energy peaks). See the manual for details. You might have to change some parameters for the pulse shaping, gain, thresholds, etc, to optimize your data acquisition. For example setting a low peaking time results in higher count rates attainable by the detector, but results in lower accuracy when determining the photon energies. A high peaking time does the opposite (lower count rates, more accuracy). However, for our Americium source, this rate is low enough that it is not necessary for us to use a low peaking time, and it is accurate enough that you don't need to use the high peaking times (otherwise it takes much longer to obtain usable data). [Note: As of July 2011, set the peaking time to 4.8 $\mu s$, flat top width to 0.2 $\mu s$, fast threshold to 25.] Again, you will find this information in the manual.
+Understanding some basics of the DP5 digital pulse processor helps with optimizing the system configuration (that is, to get the best resolution for the energy peaks). See the manual for details. You might have to change some parameters for the pulse shaping, gain, thresholds, etc, to optimize your data acquisition. For example setting a low peaking time results in higher count rates attainable by the detector, but results in lower accuracy when determining the photon energies. A high peaking time does the opposite (lower count rates, more accuracy). However, for our Americium source, this rate is low enough that it is not necessary for us to use a low peaking time, and it is accurate enough that you don't need to use the high peaking times (otherwise it takes much longer to obtain usable data). [Note: As of July 2011, set the peaking time to 4.8 $\mu$s, flat top width to 0.2 $\mu$s, fast threshold to 25.] Again, you will find this information in the manual.
 
-See \href{http://experimentationlab.berkeley.edu/EAX}{\textbf{\textbf{Error Analysis Notes}}} for further computer information.
+See \href{\ErrorAnalysisNotes}{\textbf{\textbf{Error Analysis Notes}}} for further computer information.
 
 The detector electronics are already in place but may need to be connected; so check the cables. The equipment is easily damaged, expensive, and time-consuming to repair or replace. Thus, ask for help if you do not understand something!
 
 Keep the following in mind:The red polyethylene safety cap should never be removed from the detector face!
 
-\section{Scattering Apparatus}
+\subsection{Scattering Apparatus}
 
-The main components of the Apparatus consist of the $^{241}Am$ source, the Amptek X-123 CdTe detector, and the five (5) aluminum rods of various sizes. Each rod is about 8-cm-long, and is screwed onto a low-mass rod that in turns can be screwed onto the steel plate base. \textbf{(Be careful not to over tighten the rods, you can break the low mass rods).} The detector and the source sit about 10.5 cm above the surface such that they are placed midway the height of the target. The $^{241}Am$ source is removable and is kept in its plastic case inside a lead box when not in use. The source mounts on top of a steel holder which is held in place by a post on a magnetic base. The same goes for the detector. These bases can be secured in position by turning on/off the magnets that hold the bases to the steel surface. The detector mount can only be translated radially while the source may be displaced radially and rotated about the aluminum target. The surface of the set-up have markings which allow you to determine the scattering angle $\theta$.
+The main components of the Apparatus consist of the $^{241}$Am source, the Amptek X-123 CdTe detector, and the five (5) aluminum rods of various sizes. Each rod is about 8-cm-long, and is screwed onto a low-mass rod that in turns can be screwed onto the steel plate base. \textbf{(Be careful not to over tighten the rods, you can break the low mass rods).} The detector and the source sit about 10.5 cm above the surface such that they are placed midway the height of the target. The $^{241}$Am source is removable and is kept in its plastic case inside a lead box when not in use. The source mounts on top of a steel holder which is held in place by a post on a magnetic base. The same goes for the detector. These bases can be secured in position by turning on/off the magnets that hold the bases to the steel surface. The detector mount can only be translated radially while the source may be displaced radially and rotated about the aluminum target. The surface of the set-up have markings which allow you to determine the scattering angle $\theta$.
 
 \section{Standard Operating Procedure (SOP) for Seal Source experiment}
 
 Before proceeding, see a staff member to obtain a radiation ring. The ring should be worn on whichever hand will be closer to the source.
 
 \begin{enumerate}
-    \item You should have completed the Radiation Safety Training above
+    \item You should have completed the Radiation Safety Training above \hyperref[sec:BeforeTheLab]{Before the Lab}
 
     \item To start the detector you need to launch the ADMCA software by opening the ADMCA.exe file on the DeskTop and then connecting the PC to the detector by choosing DP5/X123-SDD in the dialog box. Clear any data that is saved from previous runs.
 
-    \item Remove the $^{241}Am$ source from the lead box on the floor, leaving it in its plastic case. Wear your radiation ring, and use the rubber gloves when handling the sources! Also, remember to \textbf{remove} the gloves before touching anything else or you will defeat the purpose of the gloves. Place the source on a stand at the height of the detector roughly 15 cm away from the detector.
+    \item Remove the $^{241}$Am source from the lead box on the floor, leaving it in its plastic case. Wear your radiation ring, and use the rubber gloves when handling the sources! Also, remember to \textbf{remove} the gloves before touching anything else or you will defeat the purpose of the gloves. Place the source on a stand at the height of the detector roughly 15 cm away from the detector.
 
-    \item Calibrate your detector by taking a spectrum as shown below. That is, determine the relation between energy and channel numbers. Reference the known energies of the x-rays emitted by $^{241}Am$ that are listed in the beginning of this write-up. Note: You can simply take a spectrum and use it to calibrate the detector, however, try to adjust your parameters so that you are taking advantage of the full range of channels. The Americium spectrum should look something that looks like this:
-
-
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/550px-COMimage02.jpg}{\includegraphics[width=0.5\linewidth]{images/550px-COMimage02.jpg}}
-    \caption{}
-    \label{fig:550px-COMimage02}
-\end{figure}
-
-
-Figure 2: $^{241}Am$ source Energy Spectrum 
+    \item Calibrate your detector by taking a spectrum as shown below. That is, determine the relation between energy and channel numbers. Reference the known energies of the x-rays emitted by $^{241}$Am that are listed in the beginning of this write-up. Note: You can simply take a spectrum and use it to calibrate the detector, however, try to adjust your parameters so that you are taking advantage of the full range of channels. The Americium spectrum should look something that looks like this:
+    \begin{figure}[h]
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/550px-COMimage02.jpg}{\includegraphics[width=0.8\linewidth]{images/550px-COMimage02.jpg}}
+        \caption{$^{241}$Am source Energy Spectrum}
+        \label{fig:550px-COMimage02}
+    \end{figure}
  
+	Determine the uncertainties in your fit parameters and the value of the reduced $x^2$. If you are missing the 59.54 keV peak (far right), your amplification/gain is probably too high. \emph{\textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:
+	Show the staff your setup for calibration. Erase any existing data in the program (the button to the right of the little traffic light in the toolbar). The staff will verify that data collection is working properly.}}
 
-
-
-	Determine the uncertainties in your fit parameters and the value of the reduced $x^2$.If you are missing the 59.54 keV peak (far right), your amplification/gain is probably too high.\emph{\textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:
-	Show the staff your setup for calibration. Erase any existing data in the program (the button to the right of the little traffic light in the toolbar). The staff will verify that data collection is working properly. }}
-
-    \item To observe Compton scattering you will want to use the 59.54 keV photons as they’re the clearest to measure. When setting up your scattering apparatus keep in mind how the placement of the source, target, and detector affect your counting rate, resolution, background, etc. For example, you will have to place a small lead sheet between the source and detector to shield this from direct radiation from the source when you are interested in events coming from the target. Try using the different targets available; keep in mind that different targets introduce different factors which you will have to consider when measure the Compton scattering cross section for five different scattering angles. Note: you can see the peaks of the scattered photos for the smaller angles and higher angles in an afternoon (4 hours), but for other scattering angles you will need to leave the detector running after lab-hours; so plan accordingly. In general, longer runs at a given angle yield better data.
+    \item To observe Compton scattering you will want to use the 59.54 keV photons as they're the clearest to measure. When setting up your scattering apparatus keep in mind how the placement of the source, target, and detector affect your counting rate, resolution, background, etc. For example, you will have to place a small lead sheet between the source and detector to shield this from direct radiation from the source when you are interested in events coming from the target. Try using the different targets available; keep in mind that different targets introduce different factors which you will have to consider when measure the Compton scattering cross section for five different scattering angles. Note: you can see the peaks of the scattered photos for the smaller angles and higher angles in an afternoon (4 hours), but for other scattering angles you will need to leave the detector running after lab-hours; so plan accordingly. In general, longer runs at a given angle yield better data.
 
     \begin{itemize}
         \item After acquiring data for some scattering angles you should be able to answer questions 2 and 6 below, that is, measuring the FWHM of your peaks and say something about their broadness. Also, for scattering angles below around 100 degrees (depending on your set-up) you might observe the presence of a double-peak. To help you understand this and answer some of the questions below, set your experiment as if you were measuring Compton scattering at one of your angles, except this time remove the target and take a new acquisition. What you are doing here is measuring the background which will help you improve the data you have taken. Now, measure the numerical value of your background and explain the meaning of this value. \emph{Where is it coming from?} If you measure the background at some other angle, what do you observe? Make sure to get the counting rate of your background so you can make adjustments when you are reducing your actual data. As a suggestion, for each scattering angle, measure the background first, save and clear the data, then simply place the target in place (or vice versa) so that the only change in the environment is the placement/removal of the scatterer. In this way, you can get a decent background spectrum/count rate in one afternoon and then measure scattering from the rod overnight. To get you started, you can measure Compton scattering at a low angle for 2 hours, and then measure its background for the remaining 2 hours so you can see this in an afternoon. Using a program such as MATLAB will help you reduce the background from your actual spectra. Afterwards you will want to take advantage of longer acquisition times.
 
     \end{itemize}
 
-    \item In your data analysis you will want to compare the number of photons scattered into the different scattering angles, to the numbers predicted by the Klein-Nishina formula (see figure 3) so be sure to keep a record of how long each run is, which scattering target you’re using, the distance between source-target and target-detector, and an estimate of how much of the target is illuminated by the source after the lead-shielding is in place for every scattering angle. These values will be necessary to calculate quantities such as number of scattering centers and incident flux at the target (see \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Melissinos\%201966\%20pg\%20252-265\%20and\%20369-384.pdf}{\textbf{Melissinos}} [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/COM\_index.html}{\textbf{Reading Materials}}] . If you start a run and then leave the area, leave a sign saying ``Do Not Disturb'' along with your names and when you will return. No responsibility is assumed for equipment left running with no indication of when you will return; such equipment may be turned off by the staff. If you are doing an overnight run and do not have the equipment scheduled for the following day, you must come at the start of lab to collect your data unless you make other arrangements.
+    \item In your data analysis you will want to compare the number of photons scattered into the different scattering angles, to the numbers predicted by the Klein-Nishina formula (see figure 3) so be sure to keep a record of how long each run is, which scattering target you're using, the distance between source-target and target-detector, and an estimate of how much of the target is illuminated by the source after the lead-shielding is in place for every scattering angle. These values will be necessary to calculate quantities such as number of scattering centers and incident flux at the target (see \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Melissinos\%201966\%20pg\%20252-265\%20and\%20369-384.pdf}{\textbf{Melissinos}} [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/COM\_index.html}{\textbf{Reading Materials}}]. If you start a run and then leave the area, leave a sign saying ``Do Not Disturb'' along with your names and when you will return. No responsibility is assumed for equipment left running with no indication of when you will return; such equipment may be turned off by the staff. If you are doing an overnight run and do not have the equipment scheduled for the following day, you must come at the start of lab to collect your data unless you make other arrangements.
 
-    \item Find the radiation flux at the source (to be used in the Klein-Nishina verification). To determine the flux, use a program such as ``Matlab''" to find the \emph{yield} (the number of 59.54 keV photons). NOTE: you simply cannot use the number in the bin that corresponds to 59.54 keV, why? Dividing the \emph{yield} by the amount of time it took to get the spectrum (i.e. 5 minutes) you can find the flux at the detector. You should be able to find the flux at the source using this number and the fact that you know the source target distance (See \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Melissinos\%201966\%20pg\%20252-265\%20and\%20369-384.pdf}{\textbf{Melissinos}}, pp. 261-265 5 under [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/COM\_index.html}{\textbf{Reading Materials}}]).\textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:}
+    \item Find the radiation flux at the source (to be used in the Klein-Nishina verification). To determine the flux, use a program such as ``Matlab'' to find the \emph{yield} (the number of 59.54 keV photons). NOTE: you simply cannot use the number in the bin that corresponds to 59.54 keV, why? Dividing the \emph{yield} by the amount of time it took to get the spectrum (i.e. 5 minutes) you can find the flux at the detector. You should be able to find the flux at the source using this number and the fact that you know the source target distance (See \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Melissinos\%201966\%20pg\%20252-265\%20and\%20369-384.pdf}{\textbf{Melissinos}}, pp. 261-265 5 under [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/COM\_index.html}{\textbf{Reading Materials}}]). \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:}
 	Show your calculations and your reasoning for your result above (the radiation flux at the source).
 
-
-
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/550px-COMimage013.jpg}{\includegraphics[width=0.5\linewidth]{images/550px-COMimage013.jpg}}
-    \caption{}
-    \label{fig:550px-COMimage013}
-\end{figure}
-
-
-Figure 3: Klein-Nishina Cross Section using Scattering Angles
+    \begin{figure}[h]
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/550px-COMimage013.jpg}{\includegraphics[width=0.7\linewidth]{images/550px-COMimage013.jpg}}
+        \caption{Klein-Nishina Cross Section using Scattering Angles}
+        \label{fig:550px-COMimage013}
+    \end{figure}
 
     \item For something more complex, you will try to verify the Klein-Nishina formula for scattering within the detector, you need to run over the weekend so plan ahead. If we send monoenergetic X-rays directly into the detector without scattering them off of anything first, we should be able to observe Compton scattering off of the electrons within the detector. (See \emph{Knoll} [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/COM\_index.html}{\textbf{Knoll}}]). For this effect to occur, the photon must enter the detector, scatter off of an electron, and then exit the detector. Since it is the electron energy that is ultimately processed to become the PHA count that we see, and since this electron energy is dependent upon the scattering angle, we should be able to see the Compton continuum predicted by Klein and Nishina (Figure 4). \emph{You should complete Questions} \emph{part 7 before you come to lab to begin taking the following data. }Please see a staff member if you do not understand this part of the lab. To obtain only 59.54 keV photons (eliminating the lower energy lines) that are unscattered before entering the detector, use the two brass plates with 1-mm aperture in the lead sheets for collimation and a brass plate with a 0.003``-thick Cu upstream of a 0.003''-thick Al sheet to filtering out the source X-rays with low energies. Align holes in the Brass collimator plates to be in line with the detector window. You will need to use these three plates and check the alignment of the holes to the detector. Measure the resulting spectrum by doing a long over-the-weekend run-you should see a continuum at lower energies that comes from Compton scattering off of the detector's own electrons as examined in \emph{\textbf{Questions}}, Part 7. The Klein-Nishina verification portion of this experiment does not work out as the model predicts. You should nevertheless try it, and put some thought into what might be going wrong. Do keep in mind that we are more concerned that you understand what it is that we are testing and what we expect (Questions, Part 7), than that you achieve ``the'' correct result. After all, in experimental physics it happens that something does not come out as expected at least as often as it does come out as expected. Examining and explaining these situations are often more worthwhile than looking at those in which the answers are already known.
 
-
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/550px-COMimage014.jpg}{\includegraphics[width=0.5\linewidth]{images/550px-COMimage014.jpg}}
-    \caption{}
-    \label{fig:550px-COMimage014}
-\end{figure}
-
-
-Figure 4: Scattered Electron Energy Distribution using Compton Continuum
+    \begin{figure}[h]
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/550px-COMimage014.jpg}{\includegraphics[width=0.7\linewidth]{images/550px-COMimage014.jpg}}
+        \caption{Scattered Electron Energy Distribution using Compton Continuum}
+        \label{fig:550px-COMimage014}
+    \end{figure}
 
 \end{enumerate}
 
 \section{Questions}
 
-1. What accounts for the unshifted peaks that appear in your spectra taken at the different scattering angles? Can they be due to scattering off of the aluminum nuclei. (See Pre-lab questions.) (Hint: See \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Melissinos\%201966\%20pg\%20252-265\%20and\%20369-384.pdf}{\textbf{Melissinos}}. [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/COM\_index.html}{\textbf{Reading Materials}}])
+\begin{enumerate}
+    \item What accounts for the unshifted peaks that appear in your spectra taken at the different scattering angles? Can they be due to scattering off of the aluminum nuclei. (See Pre-lab questions.) (Hint: See \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Melissinos\%201966\%20pg\%20252-265\%20and\%20369-384.pdf}{\textbf{Melissinos}}. [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/COM\_index.html}{\textbf{Reading Materials}}])
 
-2. What is the full-width at half-maximum (FWHM) of each of your measured peaks of the $^{241}Am$ source, measured in energy, as listed in the section Source? How do these compare with the expected resolution of the detector? (See, for example, Knoll, pp. 89-92.)
-
-3. What is chi-square for the hypothesis that the X-ray energy and scattering angle are described by the Compton relationship?
-
-4. What is the value of the background (the contamination in the area of interest) that you measure? Why does it have this energy and where does it come from?
-
-5. How does the relative number of photons scattered into each scattering angle compare to the Klein-Nishina prediction? How about the Thomson cross section?
-
-6. Use your results from the scattering runs to determine the electron mass. What is the uncertainty in your value? Accuracy is optimized if the widest possible range of scattering angles is used.
-
-7. In the preceding question, you have assumed that the scattered beam was entirely monoenergetic. Is this actually true? Consider that there are several geometrical effects which cause the scattering angle to deviate from its nominal value-what are they, and how do they affect the results? This is not a trivial question! In particular, do they tend to shift your peaks from where you expect them to be, or do they tend to broaden the peaks about the expected value?
-
-8. In the last part of the lab you attempt to verify the Klein-Nishina prediction for Compton scattering within the detector. The theoretical prediction for this experiment consists of the following:
-
-(a) Prove that the scattered electron energy distribution $\frac{d\sigma}{dq'}$ and the scattered photon angular distribution $\frac{d\sigma}{d\Omega}$ are related by
-
-\begin{equation}
-    \frac{d\sigma}{dq'}=\frac{d\sigma}{d\Omega}\frac{2\pi m_ec^2}{k'^2},
-\end{equation}
-where q' is the kinetic energy of the scattered electron and k' is the energy of the scattered photon. [\textbf{Hint}: note that
-
-\begin{equation}
-    \frac{d\sigma}{dq'}=\frac{d\sigma}{d\Omega}\frac{d\Omega}{dq'}=\frac{d\sigma}{d\Omega}\left (\frac{dq'}{d\Omega}\right )^{-1},
-\end{equation}
-and recall that $d\Omega=2\pi\sin{\theta}d\theta$ since we have azimuthal symmetry.]
-
-(b) The Klein-Nishina cross-section for scattering from a free electron is:
-
-\begin{equation}
-    \frac{d\sigma}{d\Omega}=\frac{r_0^2}{2}\frac{f}{(1+g)^2}\left (1+\frac{g^2}{f(1+g)}\right ),
-\end{equation}
-where $r_0=\frac{e^2}{m_ec^2}$, the classical radius of the electron, and $f(\theta)=1+\cos^2{\theta}$ and $g(\theta)=\frac{E_0}{m_ec^2}(1-\cos{\theta})$,
-
-and Eo = 59.54 keV for the $^{241}Am$ photons that we use to observe Compton scattering.
-
-Make a plot of $\frac{d\sigma}{dq'}$ and include it in your report as the theoretical prediction for this part of the experiment.
+    \item What is the full-width at half-maximum (FWHM) of each of your measured peaks of the $^{241}Am$ source, measured in energy, as listed in the section Source? How do these compare with the expected resolution of the detector? (See, for example, Knoll, pp. 89-92.)
+    
+    \item What is chi-square for the hypothesis that the X-ray energy and scattering angle are described by the Compton relationship?
+    
+    \item What is the value of the background (the contamination in the area of interest) that you measure? Why does it have this energy and where does it come from?
+    
+    \item How does the relative number of photons scattered into each scattering angle compare to the Klein-Nishina prediction? How about the Thomson cross section?
+    
+    \item Use your results from the scattering runs to determine the electron mass. What is the uncertainty in your value? Accuracy is optimized if the widest possible range of scattering angles is used.
+    
+    \item In the preceding question, you have assumed that the scattered beam was entirely monoenergetic. Is this actually true? Consider that there are several geometrical effects which cause the scattering angle to deviate from its nominal value-what are they, and how do they affect the results? This is not a trivial question! In particular, do they tend to shift your peaks from where you expect them to be, or do they tend to broaden the peaks about the expected value?
+    
+    \item In the last part of the lab you attempt to verify the Klein-Nishina prediction for Compton scattering within the detector. The theoretical prediction for this experiment consists of the following:
+    \begin{enumerate}
+        \item Prove that the scattered electron energy distribution $\frac{d\sigma}{dq'}$ and the scattered photon angular distribution $\frac{d\sigma}{d\Omega}$ are related by
+        \begin{equation}
+            \frac{d\sigma}{dq'}=\frac{d\sigma}{d\Omega}\frac{2\pi m_ec^2}{k'^2},
+        \end{equation}
+        where q' is the kinetic energy of the scattered electron and k' is the energy of the scattered photon. [\textbf{Hint}: note that
+        \begin{equation}
+            \frac{d\sigma}{dq'} = \frac{d\sigma}{d\Omega} \frac{d\Omega}{dq'} = \frac{d\sigma}{d\Omega} \left(\frac{dq'}{d\Omega} \right)^{-1},
+        \end{equation}
+        and recall that $d\Omega = 2 \pi \sin\theta d\theta$ since we have azimuthal symmetry.]
+        
+        \item The Klein-Nishina cross-section for scattering from a free electron is:
+        \begin{equation}
+            \frac{d\sigma}{d\Omega} = \frac{r_0^2}{2} \frac{f}{(1+g)^2} \left(1 + \frac{g^2}{f(1+g)}\right),
+        \end{equation}
+        where $r_0=\frac{e^2}{m_e c^2}$, the classical radius of the electron, and $f(\theta) = 1 + \cos^2 \theta$ and $g(\theta) = \frac{E_0}{m_ec^2} (1-\cos \theta)$,
+        
+        and $E_0$ = 59.54 keV for the $^{241}$Am photons that we use to observe Compton scattering.
+        
+        Make a plot of $\frac{d\sigma}{dq'}$ and include it in your report as the theoretical prediction for this part of the experiment.
+    \end{enumerate}
+    
+\end{enumerate}
 
 \begin{itemize}
     \item Last day of the experiment please fill out the \href{\ExperimentEvaluation}{\textbf{Experiment Evaluation}}
@@ -326,6 +308,7 @@ Make a plot of $\frac{d\sigma}{dq'}$ and include it in your report as the theore
 \end{itemize}
 
 \section{References}
+\label{sec:References}
 
 \begin{enumerate}
     \item R. M. Eisberg et al., ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Ch.\%203.8\%20The\%20compton\%20effect\%20pg\%2081-86.pdf}{\textbf{Chapter 3.8: The Compton Effect}} and \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/COM/Ch.\%2014\%20X-rays.pdf}{\textbf{Chapter 14: X-Rays}}.'' \emph{Fundamentals of Modern Physics}, (Wiley, 1961), Physics Library Ref. QC173.E38.

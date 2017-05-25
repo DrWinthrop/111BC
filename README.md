@@ -14,7 +14,7 @@
 - [ ] QIE - Quantum Interference & Entanglement
 - [x] BMC - Brownian Motion in Cells
 - [ ] OTZ - Optical Trapping
-- [ ] COM - Compton Scattering
+- [x] COM - Compton Scattering
 - [ ] MUO - Muon Lifetime
 - [ ] GMA - Gamma-Ray Spectroscopy
 - [ ] BRA - Beta Ray Spectroscopy
