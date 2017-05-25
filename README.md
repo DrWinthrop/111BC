@@ -12,7 +12,7 @@
 - [ ] NMR - Nuclear Magnetic Resonance
 - [ ] OPT - Optical Pumping
 - [ ] QIE - Quantum Interference & Entanglement
-- [ ] BMC - Brownian Motion in Cells
+- [x] BMC - Brownian Motion in Cells
 - [ ] OTZ - Optical Trapping
 - [ ] COM - Compton Scattering
 - [ ] MUO - Muon Lifetime
