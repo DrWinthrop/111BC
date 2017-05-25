@@ -5,7 +5,7 @@
 ## Lab Writeup Completion Status
 
 - [ ] AFM - Atomic Force Microscope
-- [ ] ATM - Atomic Physics
+- [x] ATM - Atomic Physics
 - [ ] CO2 - CO2 Laser
 - [ ] MNO - Nonlinear Spectroscopy & Magneto-Optics
 - [ ] MOT - Atom Trapping
