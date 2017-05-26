@@ -16,7 +16,7 @@
 - [ ] OTZ - Optical Trapping
 - [x] COM - Compton Scattering
 - [ ] MUO - Muon Lifetime
-- [ ] GMA - Gamma-Ray Spectroscopy
+- [x] GMA - Gamma-Ray Spectroscopy
 - [ ] BRA - Beta Ray Spectroscopy
 - [ ] RUT - Rutherford Scattering
 - [ ] HAL - Hall Effect in a Plasma
