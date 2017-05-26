@@ -19,7 +19,7 @@
 - [x] GMA - Gamma-Ray Spectroscopy
 - [ ] BRA - Beta Ray Spectroscopy
 - [ ] RUT - Rutherford Scattering
-- [ ] HAL - Hall Effect in a Plasma
+- [x] HAL - Hall Effect in a Plasma
 - [ ] LLS - Low Light Signal Measurements
 - [ ] NLD - Non-linear Dynamics and Chaos
 - [ ] JOS - Josephson Junction
