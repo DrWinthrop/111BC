@@ -1022,8 +1022,16 @@ In this experiment, you will use the SR830 Lock-In to measure Johnson noise and 
 
     \end{enumerate}
     
-    \item It should take just a minute or two for the \emph{\textbf{Interface}} program to collect, analyze, and save the data. Open the file ``\textbf{[base file path] Analyzed Data (T= [time constant] ).xls}'' in Excel. You should see something like the following (note, this sample only represents 3 data runs using a resistor that was not 100 k$ \Omega $):
-    
+    \item It should take just a minute or two for the \emph{\textbf{Interface}} program to collect, analyze, and save the data. Open the file ``\textbf{[base file path] Analyzed Data (T= [time constant] ).xls}'' in Excel. You should see something like the following (note, this sample only represents 3 data runs using a resistor that was not 100 k$\Omega$):
+    \begin{center}
+    \begin{tabular}{l|l|l}
+        $\langle R \rangle$ & $\langle dR^2 \rangle^{1/2}$ & $\langle dR \rangle$ \\\hline
+        1.18E-07 & 5.73E-08 & 4.79E-08 \\\hline
+        1.64E-07 & 6.81E-08 & 5.19E-08 \\\hline
+        1.52E-07 & 6.71E-08 & 5.54E-08
+    \end{tabular}
+    \end{center}
+
     \item Find the average value of your ${\langle \triangle R^2 \rangle}^{1/2}$ measurements and compare it to the theoretical value (remember: $R$ stands for magnitude of the measurement made by the Lock-In). Is your measurement off by about a factor of $\sqrt{2}$? \textbf{If it is, why}?
     
     \item Repeat the above procedure for TIME CONSTANT values of 100 msec., 300 msec., 1 sec., and 3 sec. \emph{Note: taking data at high TIME CONSTANT values will take a long time. You can let it run overnight or while you go to get lunch, if you want.}
