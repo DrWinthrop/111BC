@@ -20,7 +20,7 @@
 - [ ] BRA - Beta Ray Spectroscopy
 - [ ] RUT - Rutherford Scattering
 - [x] HAL - Hall Effect in a Plasma
-- [ ] LLS - Low Light Signal Measurements
+- [x] LLS - Low Light Signal Measurements
 - [ ] NLD - Non-linear Dynamics and Chaos
 - [x] JOS - Josephson Junction
 - [ ] SHE - Hall Effect in Semiconductor
