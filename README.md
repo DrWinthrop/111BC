@@ -22,7 +22,7 @@
 - [x] HAL - Hall Effect in a Plasma
 - [ ] LLS - Low Light Signal Measurements
 - [ ] NLD - Non-linear Dynamics and Chaos
-- [ ] JOS - Josephson Junction
+- [x] JOS - Josephson Junction
 - [ ] SHE - Hall Effect in Semiconductor
 
 ## Usage instructions
