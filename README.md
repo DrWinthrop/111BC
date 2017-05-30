@@ -18,7 +18,7 @@
 - [ ] MUO - Muon Lifetime
 - [x] GMA - Gamma-Ray Spectroscopy
 - [ ] BRA - Beta Ray Spectroscopy
-- [ ] RUT - Rutherford Scattering
+- [x] RUT - Rutherford Scattering
 - [x] HAL - Hall Effect in a Plasma
 - [x] LLS - Low Light Signal Measurements
 - [ ] NLD - Non-linear Dynamics and Chaos
