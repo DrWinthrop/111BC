@@ -23,7 +23,7 @@
 - [x] LLS - Low Light Signal Measurements
 - [ ] NLD - Non-linear Dynamics and Chaos
 - [x] JOS - Josephson Junction
-- [ ] SHE - Hall Effect in Semiconductor
+- [x] SHE - Hall Effect in Semiconductor
 
 ## Usage instructions
 
