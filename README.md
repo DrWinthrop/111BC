@@ -7,7 +7,7 @@
 - [ ] AFM - Atomic Force Microscope
 - [x] ATM - Atomic Physics
 - [ ] CO2 - CO2 Laser
-- [ ] MNO - Nonlinear Spectroscopy & Magneto-Optics
+- [x] MNO - Nonlinear Spectroscopy & Magneto-Optics
 - [ ] MOT - Atom Trapping
 - [ ] NMR - Nuclear Magnetic Resonance
 - [ ] OPT - Optical Pumping
