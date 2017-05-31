@@ -11,7 +11,7 @@
 - [ ] MOT - Atom Trapping
 - [ ] NMR - Nuclear Magnetic Resonance
 - [ ] OPT - Optical Pumping
-- [ ] QIE - Quantum Interference & Entanglement
+- [x] QIE - Quantum Interference & Entanglement
 - [x] BMC - Brownian Motion in Cells
 - [ ] OTZ - Optical Trapping
 - [x] COM - Compton Scattering
