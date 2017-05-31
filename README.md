@@ -15,7 +15,7 @@
 - [x] BMC - Brownian Motion in Cells
 - [ ] OTZ - Optical Trapping
 - [x] COM - Compton Scattering
-- [ ] MUO - Muon Lifetime
+- [x] MUO - Muon Lifetime
 - [x] GMA - Gamma-Ray Spectroscopy
 - [ ] BRA - Beta Ray Spectroscopy
 - [x] RUT - Rutherford Scattering
