@@ -17,11 +17,14 @@
 }
 \RequirePackage[numbers]{natbib}
 \RequirePackage{enumitem}
+\RequirePackage{tocloft}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.5em}
 \setlist[itemize]{topsep=0pt}
 \setlist[enumerate]{topsep=0pt}
+
+\setlength{\cftbeforesecskip}{1em}
 
 \date{}
 \author{}
