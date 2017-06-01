@@ -21,7 +21,7 @@
 - [x] RUT - Rutherford Scattering
 - [x] HAL - Hall Effect in a Plasma
 - [x] LLS - Low Light Signal Measurements
-- [ ] NLD - Non-linear Dynamics and Chaos
+- [x] NLD - Non-linear Dynamics and Chaos
 - [x] JOS - Josephson Junction
 - [x] SHE - Hall Effect in Semiconductor
 
