@@ -1,10 +1,10 @@
 \documentclass{../lab}
 
-\labacronym{}
-\labtitle{}
+\labacronym{NLD}
+\labtitle{Non-Linear Dynamics and Chaos}
 
-%\newcommand{\Physics111LibrarySite}{http://physics111.lib.berkeley.edu/Physics111/Reprints/NLD/NLD_index.html}
 %\newcommand{\ExperimentandProcedure}{http://experimentationlab.berkeley.edu/node/102}
+%\newcommand{\Physics111LibrarySite}{http://physics111.lib.berkeley.edu/Physics111/Reprints/NLD/NLD_index.html}
 %\newcommand{\(Ref.1,§11.5}{http://physics111.lib.berkeley.edu/Physics111/Reprints/NLD/Strogatz_Nonlinear_dynamics_chaos.pdf}
 
 \begin{document}
@@ -17,7 +17,6 @@
 
 \begin{enumerate}
     \item \textbf{Note that there is NO eating or drinking in the 111-Lab anywhere, except in rooms 282 \& 286 LeConte on the bench with the BLUE stripe around it.} Thank You, the Staff.
-
 \end{enumerate}
 
 This experiment is an introduction to Non-Linear Dynamics, Data Acquisition, Chaos theory and Fractals. Limited as we are by our senses and relatively short powers of recall, much of the physical world seems aperiodic and defies quantitative description. While we have yet to discover closed form solutions to the simplest of systems (e.g. the one-dimensional gravitational three-body problem), the field of chaos reveals structure in their dynamics. The results of chaos theory have found practical applications in almost every branch of science.
@@ -56,7 +55,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \begin{enumerate}
     \item View the \href{http://www.youtube.com/watch?v=Y0u3o9\_BRVQ}{\textbf{Non-Linear Dynamics and Chaos Video}}.
 
-    \item \textbf{Check points} \textbf{are examination points that are placed in this lab where you must }\emph{STOP and call a GSI or professor to make sure you understand what's expected. There could  be multiple check points throughout your lab so make sure you don't skip them since there is a \href{http://experimentationlab.berkeley.edunldcheckpoints}{\textbf{sign off sheet}} that must be turned in with your lab report. There are 4 Checkpoints in this lab.}
+    \item \textbf{Check points} \textbf{are examination points that are placed in this lab where you must }\emph{STOP and call a GSI or professor to make sure you understand what's expected. There could  be multiple check points throughout your lab so make sure you don't skip them since there is a \href{http://experimentationlab.berkeley.edu/nldcheckpoints}{\textbf{sign off sheet}} that must be turned in with your lab report. There are 4 Checkpoints in this lab.}
 
     \item \textbf{Complete all of the mandatory prerequisite reading.}
 
@@ -177,7 +176,7 @@ The term Chaotic has come to mean something very specific in this field. It does
 
 \section{Theory}
 
-\section{The PN Junction: an introductory Dynamical System}
+\subsection{The PN Junction: an introductory Dynamical System}
 
 A \emph{dynamical system} is essentially anything that varies with time. The pertinent variables necessary to describe its motion are called the \emph{dynamical variables} and the evolution of the system describes a path, or \emph{trajectory} in the \emph{state-space} (also called \emph{phase space}) of the dynamical variables. Dynamical systems may be either \emph{conservative}: a volume element in state space remains invariant (recall Liouville's theorem; see Marion, J. B\emph{. Classical dynamics of particles \& systems}); or the system may be \emph{dissipative}: for which regions of state space become compressed as the systems evolves.
 
@@ -256,7 +255,7 @@ Notice that these equations do not depend explicitly on time (and so are called 
 \end{equation}
 Thus $ \vec p $ denotes the current state of the system, and $ \vec p(t) $ the path of the system through the three-dimensional state-space of the dynamical variables.
 
-\section{Phase-Path Reconstruction}
+\subsection{Phase-Path Reconstruction}
 
 If one could measure all the dynamical variables of a system simultaneously, the path $ \vec p(t) $ could be plotted easily. However, in many cases this is not possible and, moreover, it is not necessary in most cases. Look ahead to the reconstructed phase plots of Figures 7 to 10. These plots were made by sampling the diode current only. Rather than measuring the complete set of variables $ (I,~V_d,~\theta) $, the trajectory is available in \emph{each} variable (i.e. we could have sampled the diode voltage and come up with similar plots).
 
@@ -266,7 +265,7 @@ This set of points then reveals an object topologically equivalent to the actual
 
 This is by no means obvious, and it's complicated by the fact that there do exist situations where it doesn't work. But that the geometric properties of the system's trajectory can be found by sampling only one of the state-variables is remarkable and useful: It means that the structure of large-scale, multi-dimensional dynamical systems is available to a simple, single-detector apparatus.
 
-\section{PN-Junction phase plots \& The Bifurcation Route to Chaos}
+\subsection{PN-Junction phase plots \& The Bifurcation Route to Chaos}
 
 Figure 7- Figure 10 show reconstructed phase-space trajectories, $ \vec p(t) $, that correspond to the circuit's operation in Figure 3- Figure 6. The plots were made using the embedding technique described in the previous section, so the plot axes are $ (I_n,~I_{n+1},~I_{n+2}) $. We speculate that θ revolves around the line \emph{z = y = x}, and that the other two state variables, V and I, correspond loosely to the distance along that line and the distance from that line. The graphs are all stereo-optic. Try holding them at arm's length (or set them on a desk as you stand over them) and letting your eyes focus at infinity. Let two of the double images overlap so that you can see three images. The middle one, if you get it to match up just right, will look like it's 3D.
 
@@ -292,7 +291,7 @@ Figure 7- Figure 10 show reconstructed phase-space trajectories, $ \vec p(t) $, 
 
 \textbf{Figure 10: } \emph{The system is now chaotic. The path in phase space never closes. And the evolution traces out the system's attractor. To improve the visibility of the plot the lines connecting the points have been omitted.}
 
-\section{Fractals}
+\subsection{Fractals}
 
 As you learned in calculus, most geometrical objects become smoother as one gets closer and closer to them. Fractals, however, remain twisty and crumpled no matter how close one scrutinizes them. As such, they defy conventional definitions of length and volume. Efforts to quantify fractals first led to several different definitions of dimension and finally to generalized dimension (Ref. 3, Section 5.3, Ref. 4 p1060, Ref. 2, p78), the most intuitive of which is:
 
@@ -301,7 +300,7 @@ As you learned in calculus, most geometrical objects become smoother as one gets
 \end{equation}
 For instance, in two dimensions a disk has an Area ∝ radius$^2$, and $ \lim_{r \to 0}\frac{\mbox{ln}\pi r^2}{\mbox{ln}r}=2 $. With this definition, objects of non-integral dimension are called fractals.
 
-\section{Flow and Liapunov Exponents}
+\subsection{Flow and Liapunov Exponents}
 
 Chaotic systems are noted for several universal features: The bifurcation route to chaos; Stable windows of periodicity, the borders of which exhibit short bursts of chaotic signal (``intermittency''); And sensitivity to initial conditions. To help explain some of these features, we define a \emph{\textbf{flow}} $ \phi_t $ that maps a state $ \vec p $ to its new state $ {\phi}_t(\vec p) $ at a time \emph{t} units later. This operation also satisfies the relationship:
 
@@ -315,7 +314,7 @@ Now consider two neighboring initial conditions $ \vec P_0~\mbox{and}~\vec P_0+\
 \end{equation}
 If the Liapunov exponents are all positive then the system diverges. If they are all negative then the system condenses to a point. If the largest one is positive and the sum of them all is negative, then it amounts to a stretch in one or more dimensions and a contraction in the others and chaotic behavior is guaranteed.
 
-\section{Recurrence relations}
+\subsection{Recurrence relations}
 
 The equations of state (Eq's 1,2,3) are functions of a continuous time variable. Using the Runge-Kutta method of integrating ordinary differential equations, it is possible to form a set of discrete-time dynamical equations and these are seen to exhibit universal features common to other similar systems. For this reason, we study \emph{\textbf{iterative maps}}: discrete versions of $ \phi_t $ that relate the next state of a system to its previous state. You might wonder why, if chaotic systems are so sensitive to initial conditions, should we expect to see any useful results computed by an approximating method such as Runge-Kutta. The reason is explained in [Ref. 1, §10.1], where the authors present the 'shadowing' lemma: Although a finitely computed chaotic time-series, beginning with an initial value, will rapidly diverge from the true orbit, there exists some other orbit that coincides closely to the computed series.
 
@@ -341,7 +340,7 @@ Most of the non-linear circuits you will examine in this lab are driven, so the 
 
 \textbf{Figure 11:} \emph{Simplified block diagram.}\section{Procedures}
 
-\section{Getting started with LabView and Sampling}
+\subsection{Getting started with LabView and Sampling}
 
 Before starting LabView, create a directory for yourself inside My Documents folder. This is where you will save ALL your work. Read chapters 1-3 in LabView for Everyone and be sure to do the exercises. If you know LabView from BSC then proceed. Otherwise this will help immensely, especially if you have no previous programming experience. Here is a list of helpful things you might want to know:
 
@@ -407,9 +406,8 @@ Your two graphs should display the time-series of the signal (it should look lik
 
 The Fourier transform of a sine wave is a delta-function (loosely speaking, a peak). Now change the frequency. Vary it between 100 and 10,000 Hz. See if you can explain what's happening. Also make sure that you are changing the sampling rate on your DAQ Assistant, think about why the sampling rate is important. Is there a way you can confidently predict a sampling rate that will give you an accurate reading of the signal? (Hint: Think back to BSC and the Nyquist criterion)
 
-\begin{equation}
-     This is a Checkpoint: Call over a professor or GSI and show them your program and explain how it works.  Explain the units on the DFT window, how do read the power spectrum from a time varying signal, and how you were able to accurately sample the incoming signal (explain what frequencies you set when varying the DS345).
-\end{equation}
+
+\textbf{ This is a Checkpoint: Call over a professor or GSI and show them your program and explain how it works.  Explain the units on the DFT window, how do read the power spectrum from a time varying signal, and how you were able to accurately sample the incoming signal (explain what frequencies you set when varying the DS345). }
 \section{Graphing}
 
 
@@ -426,7 +424,7 @@ Next, change the waveform from a sine to a triangle at 100 Hz. Calculate, or loo
 
 The harmonics of the triangle wave that occur above the Nyquist frequency, will be aliased. Adjust the frequency of the function generator between 100 and 800 Hz, and familiarize yourself with the operational details of aliasing.
 
-\section{One-dimensional maps: Introductory chaotic systems.}
+\subsection{One-dimensional maps: Introductory chaotic systems.}
 
 Multi-dimensional differential equations are hard to study. If they are insoluble, only numerical integration is possible. As simple examples of chaotic systems, one-dimensional maps offer an easy way to explore the defining features of chaos.
 
@@ -452,11 +450,11 @@ Making this VI yourself will teach you about arrays, or lists of numbers, in Lab
     \label{fig:Nldimage082}
 \end{figure}
 
-\textbf{Figure 16: Section of the cob web VI}The big square is a for-loop that gets executed 100 times (the constant 100 wired to N). Each time through the loop the variable \emph{i} increases by 1 (\emph{i} starts at zero and goes through \emph{(N-1)}). The quotient is calculated and assembled into an array, which we shall call $ x_i $, at the right border of the loop. The function $ f(x_i) $ is computed and also accumulated. The array is accumulated by means of the ``indexing'' feature at the border of the loop. Whenever you connect a wire from the inside to the outside of a loop a border node is formed to control how the data flows. Pop-up on the node to enable ``indexing'' and the result of each iteration will be assembled into an array. Leave indexing off and only the single number that was calculated last will be passed on.
+\textbf{Figure 16: Section of the cob web VI}The big square is a for-loop that gets executed 100 times (the constant 100 wired to N). Each time through the loop the variable \emph{i} increases by 1 (\emph{i} starts at zero and goes through \emph{(N-1)}). The quotient is calculated and assembled into an array, which we shall call $x_i$, at the right border of the loop. The function $f(x_i)$ is computed and also accumulated. The array is accumulated by means of the ``indexing'' feature at the border of the loop. Whenever you connect a wire from the inside to the outside of a loop a border node is formed to control how the data flows. Pop-up on the node to enable ``indexing'' and the result of each iteration will be assembled into an array. Leave indexing off and only the single number that was calculated last will be passed on.
 
-Outside the loop, the arrays are ``bundled'' into a form that the XY-graph module will accept: an array of x-values bundled with an array of corresponding y-values. A ``bundle'' is a LabView data-structure that is a convenient way of collecting several things into one. It basically creates a list of ordered pairs, $ \{x_i,y_i\} $ which the program then builds into an array with three such lists. The graph reads these three lists of ordered pairs and plays connect the dots, making three graphs. One graph is made by taking the $ x_i $ array and bundling it with itself, producing the graph of y =x. The downward parabola, $ y=rx(1-x) $, is made by bundling $ x_i $ with $ f(x_i) $.
+Outside the loop, the arrays are ``bundled'' into a form that the XY-graph module will accept: an array of x-values bundled with an array of corresponding y-values. A ``bundle'' is a LabView data-structure that is a convenient way of collecting several things into one. It basically creates a list of ordered pairs, $ \{x_i,y_i\} $ which the program then builds into an array with three such lists. The graph reads these three lists of ordered pairs and plays connect the dots, making three graphs. One graph is made by taking the $x_i$ array and bundling it with itself, producing the graph of y =x. The downward parabola, $ y=rx(1-x) $, is made by bundling $x_i$ with $ f(x_i) $.
 
-That was the easy part, the graph of the cobweb part is a little harder and requires some discussion beforehand. We've already written a VI, named quad.vi, that calculates successive iterates of the quad map. The VI is located in c:\\NLD-chaos\\LABVIEW\\CHAOS. So let's assume we have a series of map-iterates
+That was the easy part, the graph of the cobweb part is a little harder and requires some discussion beforehand. We've already written a VI, named quad.vi, that calculates successive iterates of the quad map. The VI is located in C:\textbackslash NLD-chaos\textbackslash LABVIEW\textbackslash CHAOS. So let's assume we have a series of map-iterates
 
 \begin{equation}
     m_i= \{m_0,m_1,m_2,\cdots ,m_n\}= \{x_i,f(x_i),f(f(x_i)),\cdots f^n(x_i)\}
@@ -468,11 +466,11 @@ We arrange these values in a way that will let LabView draw the cobweb by connec
 \end{equation}
 The x-values form a series $ \{m_0,m_0,m_1,m_1km_2,m_2,\cdots,m_{n-1},m_{n-1}\} $
 
-which we may form by ``interleaving'' the $ x_i $ array with itself and removing the last two elements. Fortunately, LabView has a function that interleaves arrays and a function that takes an array's subset.
+which we may form by ``interleaving'' the $x_i$ array with itself and removing the last two elements. Fortunately, LabView has a function that interleaves arrays and a function that takes an array's subset.
 
 The y-values of the cobweb form a series $ \{0,m_1,m_1,m_2,m_2,\ldots ,m_{n-1},m_n\} $
 
-which can also be made by interleaving the $ x_i $ array and taking subsets (and replacing one element with a zero). Once you have the two arrays of x's and y's, you must bundle them together and then build an array out of this bundle and the other bundled plots of \emph{f} and \emph{g} (see the right side of Figure 16).
+which can also be made by interleaving the $x_i$ array and taking subsets (and replacing one element with a zero). Once you have the two arrays of x's and y's, you must bundle them together and then build an array out of this bundle and the other bundled plots of \emph{f} and \emph{g} (see the right side of Figure 16).
 
 Try making the cobweb analyzer yourself. First, understand and make the section in Figure 16. Make the ``Build array'' icon have only two inputs, and then run the program. It should give you a graph of y =x and y =rx(1-x).
 
@@ -480,10 +478,10 @@ Next, expand the ``Build array'' icon to three inputs and start the cobweb part.
 
 Again, try to do this on your own. If you get really stuck, you can look in appendix A of this write-up for hints. Once you have the working VI, you can use it for a variety of things. Observe how the derivative of $ f(x_i) $ affects the stability of fixed points (Ref. 1 §10.1). Look for limit cycles, period windows, etc. Change the function $ f(x_i) $ to $ f(f(x_i)) $ or some other 1-d map and observe the same qualitative behavior. To do this, you will have to modify both your program and quad.vi. Save quad.vi as quad2.vi in your directory rather than messing with the original. Try any non-invertible function that takes the unit interval to itself. There are numerous ones in the references: the tent map, the shift map, the sine map, etc. Try to come up with one of your own. Pretty much any function with a range of the unit interval that starts at (0,0) and goes to (1,0) will work. The maps must be non-invertible because there must be some dissipation in the equations [Ott p8]. Try at least one other map and analyze it.
 
-\begin{equation}
-     This is a Checkpoint: Call over a GSI and Professor and show them your program. Explain what you have done.
-\end{equation}
-\section{Numerical calculation of Liapunov Exponents}
+
+\textbf{ This is a Checkpoint: Call over a GSI and Professor and show them your program. Explain what you have done. }
+
+\subsection{Numerical calculation of Liapunov Exponents}
 
 Sensitive dependence on initial conditions is one of the defining features of chaotic behavior. Consider two close initial-conditions, $ \xi $ and $ \xi +\delta $ evolving in time. If their distance of separation increases exponentially, i.e. $ |f(t,\xi)-f(t,\xi +\delta)|=\delta e^{\lambda t} $, we say the function \emph{f} exhibits sensitive dependence on initial conditions. The coefficient is necessarily positive and it is called the Liapunov exponent (see ref. 1, section 9.3 especially the qualifications after fig 9.3.5). As such, if you can calculate or measure , you have a test to determine whether or not a particular system is chaotic. If is not positive, the system is not chaotic.
 
@@ -507,10 +505,10 @@ As previously mentioned, the Liapunov exponents of multi-dimensional systems are
 
 \textbf{Figure 18:} \emph{Liapunov exponent VI.}The front panel of your finished VI should look something like Figure 18. After you look at the algorithm in Ref. 1, make another block diagram of what you'll want to do and then try it in LabView. You'll probably find a FOR loop helpful. If you find yourself spending more than an hour or so on it, you should look at the solution in the appendix. When you have your working VI, explore the area around r=3.57 especially. What happens when λ--->0 Use your observations to approximate Feigenbaum's ratio δ. Ref.1 suggests 10,000 iterations, but this is a bit excessive, not to mention time consuming. Make sure to have lots of different values for r, the chaotic parameter. Experiment to see what gives you good graphs.
 
-\begin{equation}
-     This is a Checkpoint: Call over a GSI and show them your program. Explain what you have done and which value of the chaotic parameter seems to work best.
-\end{equation}
-\section{NLSIM.VI: the simulation VI}
+
+\textbf{ This is a Checkpoint: Call over a GSI and show them your program. Explain what you have done and which value of the chaotic parameter seems to work best. }
+
+\subsection{NLSIM.VI: the simulation VI}
 
 Before proceeding to real-time NLD systems, you will take some time to run the simulation VI, NLSIM.VI. Open NLSIM.VI. This VI (Figure19) allows you to display the time-series, return-map and power spectrum of a variety of signals. As in all the VI's, press control-H and move the mouse pointer over the elements of the screen to get specific information on how to use the program.
 
@@ -526,10 +524,9 @@ Before proceeding to real-time NLD systems, you will take some time to run the s
 
 Now select the Quadratic Map function and set the parameter \emph{r}=2.8 . The return map should show a single point. Increase \emph{r} to about 3, the map will bifurcate, and you should see two points on the return map. Continuing to increase \emph{r} will produce successive bifurcations and finally chaos at \emph{r}=3.5. One dimensional maps like this one are good analogs to \emph{Poincaré sections} and when you sample the real NLD systems synchronous to their driving forces, you will see the same behavior. So it pays to spend some time here to really figure out what's going on. Be sure to compare this map with your cobweb VI at the same value of \emph{r}. Also look at the quadratic map's bifurcation program.
 
-\begin{equation}
-     This is a Checkmark: Take a look at the Henon Map. Play with the non-linear parameter between 0 and about 1.4. What is that funky thing in the Return Map? Look at the Henon map's bifurcation program as well. Discuss what you are thinking with a GSI or Professor.
-\end{equation}
-\section{Continuous-time systems- PN Junction}
+\textbf{This is a Checkmark: Take a look at the Henon Map. Play with the non-linear parameter between 0 and about 1.4. What is that funky thing in the Return Map? Look at the Henon map's bifurcation program as well. Discuss what you are thinking with a GSI or Professor.}
+
+\subsection{Continuous-time systems- PN Junction}
 
 Now we're ready to proceed to real-time continuous systems. At present there are two driven NLD systems at the experiment station: The bouncing ball circuit and the PN-junction. For both these driven systems, the basic set-up is the same: The computer controls the driving amplitude and measures the system's response. Both circuits, as well as most of the supporting electronics are located behind the large panel marked ``Nonlinear Dynamics Laboratory.''(see fig. 20) Note: the Sine Input switch should be off for the PN-junction part.
 
@@ -688,10 +685,10 @@ Connect . . .
 
 \end{itemize}
 
-\begin{equation}
-     This is a Checkpoint: What is fundamentally different about the chaotic behavior of the bouncing ball circuit when compared to the PN-Junction? (Hint: What would the bifurcation diagram for this circuit look like? Does it even have one?) Discuss what you notice with a Professor or GSI.
-\end{equation}
-\section{Information dimension}
+
+\textbf{ This is a Checkpoint: What is fundamentally different about the chaotic behavior of the bouncing ball circuit when compared to the PN-Junction? (Hint: What would the bifurcation diagram for this circuit look like? Does it even have one?) Discuss what you notice with a Professor or GSI.}
+
+\subsection{Information dimension}
 
 \begin{figure}[h]
     \centering
@@ -741,7 +738,7 @@ Quad.VI Iterates the quadratic map.
 
 QuadBifr.VI Calculates the bifurcation diagram for the quadratic map.
 
-\section{Quad Bifur}
+\subsection{Quad Bifur}
 
 This VI permits you to explore the Bifurcation diagram of the quadratic map. You can change the parameters to reveal the fine detail at the onset of chaos.
 
@@ -753,7 +750,7 @@ This VI permits you to explore the Bifurcation diagram of the quadratic map. You
     \label{fig:Nldimage138}
 \end{figure}
 
-\section{Henon Bifur}
+\subsection{Henon Bifur}
 
 
 \begin{figure}[h]
@@ -763,8 +760,7 @@ This VI permits you to explore the Bifurcation diagram of the quadratic map. You
     \label{fig:Nldimage139}
 \end{figure}
 
-\section{NLDBifur}
-
+\subsection{NLDBifur}
 
 \begin{figure}[h]
     \centering
@@ -773,8 +769,9 @@ This VI permits you to explore the Bifurcation diagram of the quadratic map. You
     \label{fig:Nldimage140}
 \end{figure}
 
-\section{Appendix A: Cobweb analyzer for the quadratic map. (Cobweb2.vi)}
+\appendix
 
+\section{Cobweb analyzer for the quadratic map. (Cobweb2.vi)}
 
 \begin{figure}[h]
     \centering
@@ -785,7 +782,7 @@ This VI permits you to explore the Bifurcation diagram of the quadratic map. You
 
 \textbf{Note: The elements in the current LabView program VI do not look quite like the elements in these diagrams.}
 
-\section{Appendix B: Liapunov exponent VI (liapunov2.vi)}
+\section{Liapunov exponent VI (liapunov2.vi)}
 
 
 \begin{figure}[h]
