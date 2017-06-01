@@ -16,6 +16,12 @@
     linkcolor=blue,
 }
 \RequirePackage[numbers]{natbib}
+\RequirePackage{enumitem}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setlist[itemize]{topsep=0pt}
+\setlist[enumerate]{topsep=0pt}
 
 \date{}
 \author{}

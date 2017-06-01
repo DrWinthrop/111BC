@@ -17,7 +17,7 @@
 - [x] COM - Compton Scattering
 - [x] MUO - Muon Lifetime
 - [x] GMA - Gamma-Ray Spectroscopy
-- [ ] BRA - Beta Ray Spectroscopy
+- [x] BRA - Beta Ray Spectroscopy
 - [x] RUT - Rutherford Scattering
 - [x] HAL - Hall Effect in a Plasma
 - [x] LLS - Low Light Signal Measurements
