@@ -9,7 +9,7 @@
 - [x] CO2 - CO2 Laser
 - [x] MNO - Nonlinear Spectroscopy & Magneto-Optics
 - [ ] MOT - Atom Trapping
-- [ ] NMR - Nuclear Magnetic Resonance
+- [x] NMR - Nuclear Magnetic Resonance
 - [ ] OPT - Optical Pumping
 - [x] QIE - Quantum Interference & Entanglement
 - [x] BMC - Brownian Motion in Cells

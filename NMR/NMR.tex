@@ -16,7 +16,6 @@
 
 \begin{enumerate}
     \item \textbf{Note that there is NO eating or drinking in the 111-Lab anywhere, except in rooms 282 \& 286 LeConte on the bench with the BLUE stripe around it.} Thank You the Staff.
-
 \end{enumerate}
 
 In 1945 Felix Bloch (Stanford) and Edward Purcell (Harvard) discovered nuclear magnetic resonance in ordinary matter, for which they were awarded the Nobel Prize in 1952. This phenomenon has found many applications in science and technology, including magnetic resonance imaging used in medical practice.
@@ -127,57 +126,57 @@ Conceptually this experiment is quite simple, but how the data are recorded is n
 
 Suppose we place a single nucleus between the south and north poles of the magnet. The interaction between the magnetic moment of the nucleus with the local magnetic field creates equal and opposite forces that form a torque upon the nucleus in the classical picture. The magnetic moment then begins to rotate about the vertical axis. This rotation is called Larmor ``precession''. The frequency of this precession is called the Larmor frequency. In this experiment we will place the sample of protons in a permanent magnet. This will force the protons to precess at the Larmor frequency and induce an electric field in a receiver coil that is wrapped around the sample. At the same time we will apply a radio frequency to the sample. This frequency will be tuned to the precession frequency, yielding a resonance. Our goal is to observe the nuclear magnetic resonance of the protons in the sample.
 
-
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR1.jpg}{\includegraphics[width=0.5\linewidth]{images/NMR1.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR1.jpg}{\includegraphics[width=0.3\linewidth]{images/NMR1.jpg}}
     \caption{Absorption signal of a magnetic resonance system as a function of the applied magnetic field.}
-    \label{fig:NMR1}
+    \label{fig:AbsorptionSignal}
 \end{figure}
 
-In the quantum mechanical picture, a sample of protons in a magnetic field of strength H0 has energy levels that are populated according to the Boltzmann distribution. When we send in photons (electromagnetic radiation) of energy $ E = h\nu_0 = \hbar \gamma H_0 $ the system absorbs some of the photons. This frequency, $\nu_0 = \frac{\gamma H_0} {2 \pi}$ known as the Larmor frequency, is the resonance frequency of the system. At the resonance, the gyromagnetic ratio $\gamma $ can be determined from the ratio $\frac{2 \pi \nu_0} {H_0}$. Alternatively, once we find the resonance frequency, we can determine H0 using the known value of $\gamma $.
+In the quantum mechanical picture, a sample of protons in a magnetic field of strength $H_0$ has energy levels that are populated according to the Boltzmann distribution. When we send in photons (electromagnetic radiation) of energy $E = h\nu_0 = \hbar \gamma H_0$ the system absorbs some of the photons. This frequency, $\nu_0 = \gamma H_0 / 2\pi$ known as the Larmor frequency, is the resonance frequency of the system. At the resonance, the gyromagnetic ratio $\gamma $ can be determined from the ratio $2 \pi \nu_0 / H_0$. Alternatively, once we find the resonance frequency, we can determine $H_0$ using the known value of $\gamma$.
 
-A typical resonance curve is shown in \textbf{Figure 1.} How shall we produce this curve so that we can measure H0 at resonance? We could set $\nu$ to a fixed value and make measurements of (power out)/(power in) for many different values of H, in small enough increments, to determine $H_0$. Of course we could also set H to a fixed value, and make measurements as $\nu$ is varied. We really don't care about the exact amount of power - we need only the ratios - but we do need some way of measuring the power, which in our case is at a frequency of about 16 MHz.
+A typical resonance curve is shown in Figure~\ref{fig:AbsorptionSignal}. How shall we produce this curve so that we can measure $H_0$ at resonance? We could set $\nu$ to a fixed value and make measurements of (power out)/(power in) for many different values of H, in small enough increments, to determine $H_0$. Of course we could also set H to a fixed value, and make measurements as $\nu$ is varied. We really don't care about the exact amount of power - we need only the ratios - but we do need some way of measuring the power, which in our case is at a frequency of about 16 MHz.
 
-In the lab, we shall scan the applied magnetic field H back and forth relatively slowly above and below the resonance value Ho. We will use a scanning frequency of 60 Hz. The variation of H in time will look like \textbf{Figure 2} when we observe it with an oscilloscope.
+In the lab, we shall scan the applied magnetic field H back and forth relatively slowly above and below the resonance value Ho. We will use a scanning frequency of 60 Hz. The variation of H in time will look like Figure~\ref{fig:AppliedMagneticField} when we observe it with an oscilloscope.
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR5.jpg}{\includegraphics[width=0.5\linewidth]{images/NMR5.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR5.jpg}{\includegraphics[width=0.3\linewidth]{images/NMR5.jpg}}
     \caption{Applied Magnetic Field varying at 60 Hz}
-    \label{fig:NMR5}
+    \label{fig:AppliedMagneticField}
 \end{figure}
 
-When Figures 1 and 2 are put together, we obtain \textbf{Figure 3.}
+When Figures \ref{fig:AbsorptionSignal} and \ref{fig:AppliedMagneticField} are put together, we obtain Figure~\ref{fig:MeasuredSignal}.
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR6.gif}{\includegraphics[width=0.5\linewidth]{images/NMR6.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR6.gif}{\includegraphics[width=0.3\linewidth]{images/NMR6.png}}
     \caption{Measured signal}
     \label{fig:MeasuredSignal}
 \end{figure}
 
-Next is to visualize the resonant ``signal'' shown in Figure 1. If the input power is kept constant, the resonant signal can be realized as a change in the output power. We will consider the electric field, rather than the power, of the outgoing radiation at the frequency $f_o$ as a function of time and call it the signal. The amplitude of this signal is a measure of the power absorbed in the sample.
+Next is to visualize the resonant ``signal'' shown in Figure~\ref{fig:AbsorptionSignal}. If the input power is kept constant, the resonant signal can be realized as a change in the output power. We will consider the electric field, rather than the power, of the outgoing radiation at the frequency $f_o$ as a function of time and call it the signal. The amplitude of this signal is a measure of the power absorbed in the sample.
 
 \begin{figure}[h]
 \begin{minipage}[t]{0.49\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR7.gif}{\includegraphics[width=0.9\linewidth,keepaspectratio]{images/NMR7.png}}
     \caption{Amplitude of Incident electric field as a function of time.}
+    \label{fig:AmplitudeOfIncidentElectricField}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.49\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/330px-NMR8.gif}{\includegraphics[width=0.9\linewidth,keepaspectratio]{images/330px-NMR8.png}}
     \caption{Amplitude of outgoing electric field as a function of time.}
+    \label{fig:AmplitudeOfOutgoingElectricField}
 \end{minipage}
 \end{figure}
 
-The incident electric field at a frequency of 16 MHz shown in Figure 4a is now modulated in amplitude at a frequency of 60 Hz as illustrated in Figure 4b. The magnitude of the amplitude when plotted in time is a measure of the resonance curve. The function of the detector is to rectify the 16 MHz signal by putting it through a low-pass filter that removes the 16 MHz component but leaves the modulating component at 60 Hz. The resulting signal is sent to an oscilloscope with the sweep frequency set at 60 Hz. If we operate the oscilloscope in the x-y mode, with the x-channel being the modulating magnetic field and the y-channel being the filtered signal, the display of the oscilloscope is the desired resonance curve.
+The incident electric field at a frequency of 16 MHz shown in Figure~\ref{fig:AmplitudeOfIncidentElectricField} is now modulated in amplitude at a frequency of 60 Hz as illustrated in Figure~\ref{fig:AmplitudeOfOutgoingElectricField}. The magnitude of the amplitude when plotted in time is a measure of the resonance curve. The function of the detector is to rectify the 16 MHz signal by putting it through a low-pass filter that removes the 16 MHz component but leaves the modulating component at 60 Hz. The resulting signal is sent to an oscilloscope with the sweep frequency set at 60 Hz. If we operate the oscilloscope in the x-y mode, with the x-channel being the modulating magnetic field and the y-channel being the filtered signal, the display of the oscilloscope is the desired resonance curve.
 
 A block diagram with signals at the various stages will be shown in the next section.
 
 To summarize, we place a test tube of a liquid sample in a magnetic field. We then apply electromagnetic radiation at radio frequency to the sample with a nearby transmission coil. We observe the resonance at the Larmor frequency by tuning the input frequency. As the protons precess, they induce an emf in a receiver coil wrapped around the sample. The amplitude of the induced field is at a maximum when the frequency of the applied RF field exactly matches the Larmor frequency. In the detecting circuit we rectify the RF field, filter it to get a DC voltage proportional to the amplitude of the field, and display it on an oscilloscope.
 
 To take data, we set the frequency of the applied RF to the Larmor frequency for the static field produced by the permanent magnet. By superimposing a modulating magnetic field, we then sweep the amplitude of the resulting magnetic field sinusoidally in time at 60 Hz, above and below the static field for resonance (we say that the field is modulated sinusoidally with a frequency of 60 Hz). The final result is a plot of the resonance curve, the amplitude of the detector signal vs. the magnetic field applied to the sample, for a fixed frequency.
-
 
 \begin{figure}[h]
     \centering
@@ -197,20 +196,20 @@ To take data, we set the frequency of the applied RF to the Larmor frequency for
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/500px-NMR11.gif}{\includegraphics[width=0.5\linewidth]{images/500px-NMR11.png}}
     \caption{Detail of the NMR Head.}
-    \label{fig:500px-NMR11}
+    \label{fig:DetailOfNMRHead}
 \end{figure}
 
 \section{Magnet}
 
-In the first part of this experiment we are going to use a ${H_0}$ about 3.9 kG permanent magnet. The coils of wire wrapped around the poles of the permanent magnet are for the purpose of varying the field at a very low frequency and are needed in the later part of the experiment, where a lock-in amplifier is used.
+In the first part of this experiment we are going to use a $H_0$ about 3.9 kG permanent magnet. The coils of wire wrapped around the poles of the permanent magnet are for the purpose of varying the field at a very low frequency and are needed in the later part of the experiment, where a lock-in amplifier is used.
 
 It is also used with the Lock-in and function generator for sweeping the magnetic field. This is done by using the magnetizing coils wrapped around the magnet iron core.
 
 \section{NMR Head}
 
-Details of the NMR head are shown in Figure 7. It is a brass box containing a radio-frequency transmitting coil positioned perpendicularly to a receiving coil into which a test tube contain a sample of protons in H2O or other liquids is inserted. The NMR head is placed between the poles of the permanent magnet. Do \textbf{not} remove this head from the magnet, nor disconnect its cables. Instead, you may examine a spare NMR head on the table.
+Details of the NMR head are shown in Figure~\ref{fig:DetailOfNMRHead}. It is a brass box containing a radio-frequency transmitting coil positioned perpendicularly to a receiving coil into which a test tube contain a sample of protons in H2O or other liquids is inserted. The NMR head is placed between the poles of the permanent magnet. Do \textbf{not} remove this head from the magnet, nor disconnect its cables. Instead, you may examine a spare NMR head on the table.
 
-The top and bottom covers of the NMR head have 7-turn pancake coils which carry varying currents that produce a modulation field $H_\text{mod} \cos(2 \pi f_m t)$, where $ {f_m }$ is 60 Hz. The amplitude $H_\text{mod}$ is controlled from the modulation unit with $H_\text{mod} \approx 1.7$ gauss/amp coming from the modulating current. This is done with a 1.7 amp 60Hz power supply to modulate the field.
+The top and bottom covers of the NMR head have 7-turn pancake coils which carry varying currents that produce a modulation field $H_\text{mod} \cos(2 \pi f_m t)$, where $f_m$ is 60 Hz. The amplitude $H_\text{mod}$ is controlled from the modulation unit with $H_\text{mod} \approx 1.7$ gauss/amp coming from the modulating current. This is done with a 1.7 amp 60Hz power supply to modulate the field.
 
 \section{NMR Box}
 
@@ -220,20 +219,23 @@ is permanently mounted on the magnet stand and is not to be removed or disassemb
 
 The oscillator generates an RF signal that produces a magnetic field $H_1\cos(2\pi f t)$ in the sample. The frequency is determined by $1/\sqrt{LC}$ where $L$ and $C$ are the combined inductance and capacitance of the coil in the NMR head, the variable capacitors in the NMR box, and the cables connecting the two. One of the capacitors tunes the circuit to hit resonance at the Larmor frequency. Because the resonant circuit includes inductors in the head and in the cables, as well as capacitors in the NMR box and the cables, touching or moving anything during measurements makes the frequency unstable and introduces lots of noise. Thus, be gentle, and keep your hands off while taking data.
 
-The amplitude of the RF field $H_1$ is controlled by the DC supply voltage $V_1$ to the oscillator. The direction of $H_1$ lies in a plane perpendicular to the DC field $H_0$ of the large permanent magnet. However, the direction relative to the axis of the receiving coil can be adjusted by rotating a copper disk on a ``paddle,'' which controls the phase of the leakage voltage into the receiving coil. Changing the phase enables us to observe either absorption, dispersion or a mixture of the two. In this lab, we will observe adiabatic absorption or dispersion, and non-adiabatic absorption or dispersion modes. See Figures 7A, 7B, and 7C for examples of these modes.
+The amplitude of the RF field $H_1$ is controlled by the DC supply voltage $V_1$ to the oscillator. The direction of $H_1$ lies in a plane perpendicular to the DC field $H_0$ of the large permanent magnet. However, the direction relative to the axis of the receiving coil can be adjusted by rotating a copper disk on a ``paddle,'' which controls the phase of the leakage voltage into the receiving coil. Changing the phase enables us to observe either absorption, dispersion or a mixture of the two. In this lab, we will observe adiabatic absorption or dispersion, and non-adiabatic absorption or dispersion modes. See Figures \ref{fig:AdiabaticAbsorption}, \ref{fig:AdiabaticDispersion}, and \ref{fig:NonAdiabaticAbsorption} for examples of these modes.
 
 \begin{figure}[h]
-\begin{minipage}[t]{0.32\textwidth}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR17.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR17.png}}
+\begin{minipage}[t]{0.31\textwidth}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR17.gif}{\includegraphics[width=\linewidth]{images/NMR17.png}}
     \caption{Resonance pattern corresponding to Adiabatic (Slow passage) - Absorption ($\sim$ 1.0 Molar Mn$^{++}$in H2O).}
+    \label{fig:AdiabaticAbsorption}
 \end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/250px-NMR18.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/250px-NMR18.png}}
+\begin{minipage}[t]{0.31\textwidth}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/250px-NMR18.gif}{\includegraphics[width=\linewidth]{images/250px-NMR18.png}}
     \caption{Resonance pattern corresponding to Adiabatic (Slow Passage) - Dispersion ($\sim$ 1.0 Molar Mn$^{++}$in H2O).}
+    \label{fig:AdiabaticDispersion}
 \end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR19.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR19.png}}
+\begin{minipage}[t]{0.31\textwidth}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR19.gif}{\includegraphics[width=\linewidth]{images/NMR19.png}}
     \caption{Resonance pattern corresponding to Non-Adiabatic passage - Absorption ($\sim$ 0.1 Molar Mn$^{++}$in H2O).}
+    \label{fig:NonAdiabaticAbsorption}
 \end{minipage}
 \end{figure}
 
@@ -243,7 +245,7 @@ The amplitude of the RF field $H_1$ is controlled by the DC supply voltage $V_1$
 
 Refer to Figure A for the NMR Block Diagram:
 
-The NMR head is placed in the DC field $H_0 \approx 3800$ gauss of a large permanent magnet. The simplest method for observing NMR is to sweep the magnetic field through resonance at 60 Hz by superimposing a modulating $H_\text{mod}$ on $H_0$. Also, it is helpful to display the NMR signal $V_\text{ac}$as the y-input of an oscilloscope and the 60-Hz phase shifted sine wave from the modulation unit as the x-input.
+The NMR head is placed in the DC field $H_0 \approx$ 3800 gauss of a large permanent magnet. The simplest method for observing NMR is to sweep the magnetic field through resonance at 60 Hz by superimposing a modulating $H_\text{mod}$ on $H_0$. Also, it is helpful to display the NMR signal $V_\text{ac}$as the y-input of an oscilloscope and the 60-Hz phase shifted sine wave from the modulation unit as the x-input.
 
 The signal from the NMR box is amplified by the SRS 560 amplifier which is used to limit the upper and lower pass frequency (typically 10 kHz and 3 Hz), thereby rejecting unwanted frequencies and improving the visibility of the desired signal. The Fluke frequency counter is used to read the NMR oscillator frequency without perturbing the oscillator.
 
@@ -253,13 +255,13 @@ The coils wrapped around the pole pieces of the magnet were initially used to ma
 
 \emph{\textbf{Check Point: Show the professor or GSI your CW setup with picture on scope. What is the line width for Glycerin? For water?}}
 
-To observe resonance of the proton, use the prepared set of samples of $H_2O + MnCl_24H_2O$ with yellow mylar tape on the top. The Mn molarity (M) ranges from M = 3.3, 1.0, 0.33, ..., to ${10^{-5}}$ moles of $MnCl_24H_2O$ per liter of solution, and gives a wide range of relaxation times. A one molar sample contains 19.7 grams of $MnCl_24H_2O$ in 100 cc of mixed solution. Other useful samples are glycerin with a small amount of $ {FeCl_3 }$, and pure $H_2O$. For $F^{19}$ we are going to use Teflon rods. Samples should be tightly stopped and contain no air bubbles. Be careful not to drop or open the test tubes. Call for the staff if any solution comes out of the test tubes.
+To observe resonance of the proton, use the prepared set of samples of H$_2$O + MnCl$_2$4H$_2$O with yellow mylar tape on the top. The Mn molarity (M) ranges from M = 3.3, 1.0, 0.33, ..., to $10^{-5}$ moles of MnCl$_2$4H$_2$O per liter of solution, and gives a wide range of relaxation times. A one molar sample contains 19.7 grams of MnCl$_2$4H$_2$O in 100 cc of mixed solution. Other useful samples are glycerin with a small amount of FeCl$_3$, and pure H$_2$O. For F$^{19}$ we are going to use Teflon rods. Samples should be tightly stopped and contain no air bubbles. Be careful not to drop or open the test tubes. Call for the staff if any solution comes out of the test tubes.
 
 \section{NMR Lock In Amplifier}
 
 A lock-in amplifier has various capabilities, one of which is the detection of ac signals of incredibly low signal-to-noise ratios. This capability results from the filtering mechanism it employs, which creates incredibly narrow passbands (think 0.01 Hz). How is this possible, you ask? The filtering technique involves two essential components: a mixer and low-pass filter.
 
-A mixer takes in two waves, $f_1(x) = V_a\sin(ax)$ and $f_2(x) = V_b\sin(bx)$, of frequency a and b respectively. Its output is the \emph{product} of those two waves. Recall the trig identity for the product of two waves:
+A mixer takes in two waves, $f_1(x) = V_a\sin(ax)$ and $f_2(x) = V_b\sin(bx)$, of frequency $a$ and $b$ respectively. Its output is the \emph{product} of those two waves. Recall the trig identity for the product of two waves:
 \begin{align*}
 f_1(x) f_2(x) &= V_a V_b \sin(ax)\sin(bx) \\
 &= \frac{1}{2} V_a V_b(\cos((a-b)x) - \cos((a+b)x))
@@ -269,7 +271,7 @@ Now consider the special case where both input waves have the same frequency, i.
 \frac{1}{2} V_a V_b(\cos((a-a)x) - \cos((a+a)x))
     = \frac{1}{2}V_a V_b - \frac{1}{2} V_a V_b \cos(2ax)
 \]
-Note that the in this case, the output is simply the sum a DC signal with amplitude $\frac{1}{2} V_aV_b$ and an AC signal with frequency $2a$ . If we low-pass filter the mixer output, we get rid of the AC signal, leaving us with just the DC signal. If we know $V_b$ , then we can calculate $V_a$ by measuring the DC amplitude and dividing by $V_b/2$.
+Note that the in this case, the output is simply the sum a DC signal with amplitude $\frac{1}{2} V_a V_b$ and an AC signal with frequency $2a$. If we low-pass filter the mixer output, we get rid of the AC signal, leaving us with just the DC signal. If we know $V_b$, then we can calculate $V_a$ by measuring the DC amplitude and dividing by $V_b/2$.
 
 This analysis neglects, however, the possibility of a phase shift between the two waves. In fact, if we include the possibility of a phase shift, then the DC output (after low-pass filtering), also depends on the phase shift. It turns out that the amplitude of the DC signal acquires a factor of $\cos(\Delta \phi)$, where $\Delta \phi$ represents the phase difference of the two waves. For this reason, a feedback circuit is added to maintain a constant phase difference of 0 degrees between the two waves.
 
@@ -289,7 +291,7 @@ Lock-in information \href{http://physics111.lib.berkeley.edu/Physics111/Reprints
 
 Let's consider an example. Suppose the signal is a 10 nV sine wave at 10 kHz. Clearly some amplification is required. A good low-noise amplifier will have about 5 nV/$\sqrt{\text{Hz}}$ of input noise. If the amplifier bandwidth is 100 kHz and the gain is 1000, then we can expect our output to be 10 $\mu$V of signal (10 nV $\times$ 1000) and 1.6 mV of broadband noise (5nV/$\sqrt{\text{Hz}}$ $\times$ $\sqrt{100}$ kHz $\times$ 1000). We won't have much luck measuring the output signal unless we single out the frequency of interest.
 
-If we follow the amplifier with a band pass filter with a Q=100 (a VERY good filter) centered at 10 kHz, any signal in a 100 Hz bandwidth will be detected (10 kHz/Q). The noise in the band pass filter will be 50 $\mu$V (5 nV/$\sqrt{\text{Hz}} \times \sqrt{100}$ Hz $\times$ 1000) and the signal will still be 10 $\mu$V. The output noise is much greater than the signal and an accurate measurement can not be made. Further gain will not help the signal to noise problem.
+If we follow the amplifier with a band pass filter with a $Q$ = 100 (a VERY good filter) centered at 10 kHz, any signal in a 100 Hz bandwidth will be detected (10 kHz/$Q$). The noise in the band pass filter will be 50 $\mu$V (5 nV/$\sqrt{\text{Hz}} \times \sqrt{100}$ Hz $\times$ 1000) and the signal will still be 10 $\mu$V. The output noise is much greater than the signal and an accurate measurement can not be made. Further gain will not help the signal to noise problem.
 
 Now try following the amplifier with a phase sensitive detector (PSD). The PSD can detect the signal at 10 kHz with a bandwidth as narrow as 0.01 Hz! In this case, the noise in the detection bandwidth will be only 0.5 $\mu$V (5 nV/$\sqrt{\text{Hz}} \times \sqrt{.01}$ Hz $\times$ 1000) while the signal is still 10 (V. The signal to noise ratio is now 20 and an accurate measurement of the signal is possible.
 
@@ -332,11 +334,11 @@ We need to make the lock-in reference the same as the signal frequency, i.e. $\o
 
 Lock-in amplifiers use a phase-locked-loop (PLL) to generate the reference signal. An external reference signal (in this case, the reference square wave) is provided to the lock-in. The PLL in the lock-in locks the internal reference oscillator to this external reference, resulting in a reference sine wave at $\omega_r $ with a fixed phase shift of $\theta_\text{ref}$ Since the PLL actively tracks the external reference, changes in the external reference frequency do not affect the measurement.
 
-\subsection{All lock-in measurements require a reference signal.}
+\subsection{All Lock-In Measurements Require a Reference Signal}
 
 In this case, the reference is provided by the excitation source (the function generator). This is called an external reference source. In many situations, the SR830's internal oscillator may be used instead. The internal oscillator is just like a function generator (with variable sine output and a TTL sync) which is always phase-locked to the reference oscillator.
 
-\subsection{Magnitude and phase}
+\subsection{Magnitude and Phase}
 
 Remember that the PSD output is proportional to $V_\text{sig} \cos \theta$ where $\theta = (\theta_\text{sig} - \theta_\text{ref})$. $\theta$ is the phase difference between the signal and the lock-in reference oscillator. By adjusting $\theta_\text{ref}$ we can make $\theta$ equal to zero, in which case we can measure Vsig$(\cos \theta = 1)$. Conversely, if $\theta$ is 90$^\circ$, there will be no output at all. A lock-in with a single PSD is called a single-phase lock-in and its output is $V_\text{sig} \cos \theta$.
 
@@ -357,16 +359,16 @@ By computing the magnitude (R) of the signal vector, the phase dependency is rem
 \]
 R measures the signal amplitude and does not depend upon the phase between the signal and Lock-in reference.
 
-A dual-phase lock-in, such as the SR830, has two PSD's, with reference oscillators 90$^\circ$ apart, and can measure $X$, Y and R directly. In addition, the phase (between the signal and lock-in reference, can be measured according to
+A dual-phase lock-in, such as the SR830, has two PSD's, with reference oscillators 90$^\circ$ apart, and can measure $X$, $Y$ and $R$ directly. In addition, the phase (between the signal and lock-in reference, can be measured according to
 \[
     \theta = \tan^{-1} \left(\frac{Y}{X} \right)
 \]
 
-\subsection{WHAT DOES A LOCK-IN MEASURE?}
+\subsection{What Does a Lock-In Measure?}
 
 So what exactly does the SR830 measure? Fourier's theorem basically states that any input signal can be represented as the sum of many, many sine waves of differing amplitudes, frequencies and phases. This is generally considered as representing the signal in the ``frequency domain''. Normal oscilloscopes display the signal in the ``time domain''. Except in the case of clean sine waves, the time domain representation does not convey very much information about the various frequencies which make up the signal.
 
-\subsection{What does the SR830 measure?}
+\subsection{What Does the SR830 Measure?}
 
 The SR830 multiplies the signal by a pure sine wave at the reference frequency. All components of the input signal are multiplied by the reference simultaneously. Mathematically speaking, sine waves of differing frequencies are orthogonal, i.e. the average of the product of two sine waves is zero unless the frequencies are EXACTLY the same. In the SR830, the product of this multiplication yields a DC output signal proportional to the component of the signal whose frequency is exactly locked to the reference frequency. The low pass filter which follows the multiplier provides the averaging which removes the products of the reference with components at all other frequencies.
 
@@ -374,7 +376,7 @@ The SR830, because it multiplies the signal with a pure sine wave, measures the 
 \[
     S(t) = 1.273 \sin(\omega t) + 0.4244 \sin(3 \omega t) + 0.2546 \sin(5 \omega t) + ...
 \]
-where $\omega = 2 \pi f$. The SR830, locked to 'f' will single out the first component. The measured signal will be $1.273 \sin(\omega t)$, not the 2V pk-pk that you'd measure on a scope.
+where $\omega = 2 \pi f$. The SR830, locked to `f' will single out the first component. The measured signal will be $1.273 \sin(\omega t)$, not the 2V pk-pk that you'd measure on a scope.
 
 In the general case, the input consists of signal plus noise. Noise is represented as varying signals at all frequencies. The ideal lock-in only responds to noise at the reference frequency. Noise at other frequencies is removed by the low pass filter following the multiplier. This "bandwidth narrowing. is the primary advantage that a lock-in amplifier provides. Only inputs at frequencies at the reference frequency result in an output.
 
@@ -407,7 +409,7 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/500px-NMRblockdiagram.jpg}{\includegraphics[width=0.5\linewidth]{images/500px-NMRblockdiagram.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/500px-NMRblockdiagram.jpg}{\includegraphics[width=0.6\linewidth]{images/500px-NMRblockdiagram.jpg}}
     \caption{NMR Block Diagram}
     \label{fig:500px-NMRblockdiagram}
 \end{figure}
@@ -429,24 +431,25 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 
     \item Turn on the frequency counter (Fluke PM6669) and the oscilloscope. Connect the FREQUENCY MONITOR on the back of the NMR box to the input of the frequency counter. Put the scope in the x-y mode. Then connect the PHASE ADJUST to the x-input of the scope and the PRE-AMP output to the y-input of the scope.
 
-    \item Now you're ready to go. Insert a glycerin sample into the NMR HEAD and find the resonance signal by doing the following. Look up in the \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/images/NMR32.jpg}{\textbf{NMR Frequency TABLE}} of the manual - the NMR frequency for $H^1$ in a 10 kilogauss field. Knowing this number and that our $H_0$is about 3.8 kG, calculate the approximate NMR frequency for our set-up (around 16.1xxxxx Mhz). Turn the TRANS FREQ knob on the NMR BOX until the counter reads this value. Now adjust the receiver coil to observe the resonance by adjusting the CR control so that the receiver frequency matches that of the transmitter. Start with it at the fiducial mark.
+    \item Now you're ready to go. Insert a glycerin sample into the NMR HEAD and find the resonance signal by doing the following. Look up in the \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/images/NMR32.jpg}{\textbf{NMR Frequency TABLE}} of the manual - the NMR frequency for H$^1$ in a 10 kilogauss field. Knowing this number and that our $H_0$ is about 3.8 kG, calculate the approximate NMR frequency for our set-up (around 16.1xxxxx Mhz). Turn the TRANS FREQ knob on the NMR BOX until the counter reads this value. Now adjust the receiver coil to observe the resonance by adjusting the CR control so that the receiver frequency matches that of the transmitter. Start with it at the fiducial mark.
 
     \begin{figure}[h]
-    \begin{minipage}[t]{0.32\textwidth}
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR21.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR21.png}}
+    \begin{minipage}[t]{0.33\textwidth}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR21.gif}{\includegraphics[width=0.95\linewidth,keepaspectratio]{images/NMR21.png}}
         \caption{0.1 Molar Mn$^{++}$ in H2O}
+        \label{fig:TenthMolarMn}
     \end{minipage}\hfill
-    \begin{minipage}[t]{0.32\textwidth}
+    \begin{minipage}[t]{0.31\textwidth}
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR22.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR22.png}}
         \caption{1 Molar Mn$^{++}$ in H2O}
     \end{minipage}\hfill
-    \begin{minipage}[t]{0.32\textwidth}
+    \begin{minipage}[t]{0.31\textwidth}
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR23.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR23.png}}
         \caption{1 Molar Mn$^{++}$ in H2O}
     \end{minipage}
     \end{figure}
 
-    Make sure that the amplitude is ``peaked'' on the NMR box. Adjust the peak knob until the maximum microampere reading is shown. This will have to be done for every sample used. Slowly vary the frequency around the value you calculated above. You should be able to find the resonance, and your signal should look like Fig. 8. Note that the resonance condition is very sensitive to frequency; so go slowly. Once you have found it, ``peak-up'' your signal by readjusting CR on the NMR BOX for maximizing the signal. If you don't find a signal after you've fussed with everything, ask for help. Once resonance is found, adjust the x-axis of the scope until both edges of the signal are visible on the screen. Vary the frequency so that the resonance signal goes barely off the edge to the left of the screen, and record the frequency. Do the same for the right side of the screen. Subtract the frequencies, and the difference will be the scanning frequency range. You will not need to scan past this range when searching for resonance for any sample, once the signal is found (It should be $\sim$90kHz).
+    Make sure that the amplitude is ``peaked'' on the NMR box. Adjust the peak knob until the maximum microampere reading is shown. This will have to be done for every sample used. Slowly vary the frequency around the value you calculated above. You should be able to find the resonance, and your signal should look like Figure~\ref{fig:TenthMolarMn}. Note that the resonance condition is very sensitive to frequency; so go slowly. Once you have found it, ``peak-up'' your signal by readjusting CR on the NMR BOX for maximizing the signal. If you don't find a signal after you've fussed with everything, ask for help. Once resonance is found, adjust the x-axis of the scope until both edges of the signal are visible on the screen. Vary the frequency so that the resonance signal goes barely off the edge to the left of the screen, and record the frequency. Do the same for the right side of the screen. Subtract the frequencies, and the difference will be the scanning frequency range. You will not need to scan past this range when searching for resonance for any sample, once the signal is found (It should be $\sim$90kHz).
     
     Move the NMR HEAD around gently in the gap until you have maximized the number of ``wiggles'' and minimized the line width. This will place the head in the most uniform or homogeneous region of the magnet, and you want to keep it there. Once you have set the position for the day, don't change it. Some of your calculations depend on the field being the same for successive measurements. Repeat this procedure each day when you first come to the lab, since other people may have moved the NMR head from where you have determined to be the best.
 
@@ -458,13 +461,13 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 \begin{enumerate}
     \item By using the glycerin sample you can find a narrow line (that is, a sharp resonance) in the homogeneous region of the magnet. Once the resonance is observed, tune the phase adjust knob until the two peaks are symmetric about the midpoint of the $H_\text{mod}$ trace on the scope, for both slow passage and non-adiabatic passage conditions. Measure the resonant frequency and hence (by knowing γ) the magnetic field to high precision. It is a standard technique to use NMR to determine the magnetic field strength precisely.
 
-    \item By recalling that $\left(\frac{\Delta f}{f} \right) = \left(\frac{\Delta H}{H} \right)$, where f is the frequency and H is the magnetic field, you can devise a method of calibrating (in gauss/div) the field axis of the oscilloscope. Then you can transfer the data of the four modes (absorption/dispersion; slow passage/non-adiabatic passage) to the computer.
+    \item By recalling that $\Delta f / f = \Delta H / H$, where $f$ is the frequency and $H$ is the magnetic field, you can devise a method of calibrating (in gauss/div) the field axis of the oscilloscope. Then you can transfer the data of the four modes (absorption/dispersion; slow passage/non-adiabatic passage) to the computer.
     
     \item Replace the glycerin sample with a 0.01M Mn$^{++}$sample; again this signal should look like Figure 8. Download the data of this non-adiabatic rapid-passage absorption mode to the computer. (See REPORT, \#3.) Now insert a more highly doped sample, 1M Mn$^{++}$. The paramagnetic Mn$^{++}$ions relax the proton spins and the signal is closely resembled the one of a slow passage absorption mode. By further rotating the paddles you should be able to get a signal like Fig. 10, approximately a slow passage dispersion mode. You may have to increase $V_1$ to see this.
     
-    \item For observing the $F^{19}$ resonance we use a Teflon rod. Note that the $F^{19}$ resonance is a little harder to find. Using the same procedures as for $H^1$, find the resonance curves for $F^{19}$. Accurately measure the NMR frequency ratio of $F^{19}$ to $H^1$. To do that, measure f($H^1$) and f($F^{19}$) each a number of times under identical conditions.
+    \item For observing the F$^{19}$ resonance we use a Teflon rod. Note that the F$^{19}$ resonance is a little harder to find. Using the same procedures as for H$^1$, find the resonance curves for F$^{19}$. Accurately measure the NMR frequency ratio of F$^{19}$ to H$^1$. To do that, measure $f(\text{H}^1)$ and $f(\text{F}^{19})$ each a number of times under identical conditions.
     
-    \item Lock-in Amplifier Operation: For fine tuning the NMR resonance, we can leave the frequency f and all the other parameters fixed and optimized, and vary the ``total-DC'' magnetic field by adding a small field $H_2$ with the output of the \href{https://youtu.be/PrM8DHFOFS0}{\textbf{SRS DS345 generator}} driving the wire coils. The following diagrams show what this change does to the signal. See Figure~\ref{fig:LockInAmplifierSignals}.
+    \item Lock-in Amplifier Operation: For fine tuning the NMR resonance, we can leave the frequency $f$ and all the other parameters fixed and optimized, and vary the ``total-DC'' magnetic field by adding a small field $H_2$ with the output of the \href{https://youtu.be/PrM8DHFOFS0}{\textbf{SRS DS345 generator}} driving the wire coils. The following diagrams show what this change does to the signal. See Figure~\ref{fig:LockInAmplifierSignals}.
 \end{enumerate}
 
 \begin{figure}[h]
@@ -492,11 +495,11 @@ Set the lock-in controls as follows:
 
 T-split the phase adjust on the $H_\text{mod}$ panel and connect one of the BNC cables to the phase input (ref) on the Lock-in and the other to the X-input on the DAQ box. It would be useful to put a T on each channel of the oscilloscope, so that you can run the inputs to the scope and then just simply connect the channels on the scope to the DAQ, so that you can easily monitor the traces just by viewing the scope.
 
-Now how do you start? Turn the amplitude of $H_\text{mod}$way down, to about 10$\sim$20\% of its original value. Refer to the diagrams above. For the first part of the experiment, $H_\text{mod}$was large; for this part it must be small (but not too small, how come?). Once things are working, adjust the amplitude to peak the signal. With the pre-amplifier hooked up to the Y channel of the scope, you should see the resonance curve sweeping across the face of the scope, and off the end. A few seconds later it should return and sweep across and off the other end. You want the sweep to be symmetrical and off the screen on both sides. I.e., adjust the offset and amplitude on the signal generator to make the resonance peaks go off the right and left hand sides of the oscilloscope, and that the amount of time spent off the screen is minimal and even for both sides. The voltage on the magnet power supply should be going from zero up and back again. If you are monitoring the signal generator output on another oscilloscope, the horizontal line should go up and down from zero. When it is halfway, the resonance curve should be in the center of the scope.
+Now how do you start? Turn the amplitude of $H_\text{mod}$ way down, to about 10$\sim$20\% of its original value. Refer to the diagrams above. For the first part of the experiment, $H_\text{mod}$ was large; for this part it must be small (but not too small, how come?). Once things are working, adjust the amplitude to peak the signal. With the pre-amplifier hooked up to the Y channel of the scope, you should see the resonance curve sweeping across the face of the scope, and off the end. A few seconds later it should return and sweep across and off the other end. You want the sweep to be symmetrical and off the screen on both sides. I.e., adjust the offset and amplitude on the signal generator to make the resonance peaks go off the right and left hand sides of the oscilloscope, and that the amount of time spent off the screen is minimal and even for both sides. The voltage on the magnet power supply should be going from zero up and back again. If you are monitoring the signal generator output on another oscilloscope, the horizontal line should go up and down from zero. When it is halfway, the resonance curve should be in the center of the scope.
 
 Once a good sweep is established, disconnect the pre-amplifier from the Y-input and connect the Ch. 1 output of the lock-in to the Y-input of the DAQ box and flip the switch to CW mode. Take a strip chart recording with a scan rate of 20.00.
 
-For the H2O samples with molarity of 3, 1, 0.3, 0.1, 0.03 molar Mn$^{++}$, adjust the mode to absorption and set $H_\text{mod}$small,$\sim$1/8 the line width; this takes the derivative (see Ref.~\cite{Liboff}, p. 51). Adjust the lock-in amplifier and record the derivative with the computer.
+For the H2O samples with molarity of 3, 1, 0.3, 0.1, 0.03 molar Mn$^{++}$, adjust the mode to absorption and set $H_\text{mod}$ small, $\sim$1/8 the line width; this takes the derivative (see Ref.~\cite{Liboff}, p. 51). Adjust the lock-in amplifier and record the derivative with the computer.
 
 Figure~\ref{fig:OutputFor33Molar} shows a typical result for a 0.33 Molar  Mn$^{++}$ sample. (Settings used were H-MOD amplitude adjust 15, Signal generator frequency 0.012Hz, amplitude 0.40, offset 2.07. Lock-in settings: 1s time constant, 6 dB, DC coupling, ground, and Ch.1 Output on ``display''). By scanning more slowly, one can get a good measure of the line width H between the peaks. To measure the signal-to-noise ratio (S/N), one can increase the input gain by, say, 10x or more to record the RMS noise off resonance.
 
@@ -535,7 +538,6 @@ The program we are going to use to transfer the data is called \textbf{NMR Scope
 
 On the desktop you will find an icon \textbf{NMR Scope2.0.vi}. Double click on that icon to open up the program. You will see the following window:
 
-
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR35.jpg}{\includegraphics[width=0.5\linewidth]{images/NMR35.jpg}}
@@ -550,9 +552,16 @@ On the desktop you will find an icon \textbf{NMR Scope2.0.vi}. Double click on t
     
     \item To see the signal press the \textbf{TY Mode} or the \textbf{XY Mode}, depending on the previous choice you have made. You should now see a signal in the upper right chart. This is what it might look like:
     
-    \noindent
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR36.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/NMR36.jpg}}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR37.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/NMR37.jpg}}
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR36.jpg}{\includegraphics[width=\linewidth]{images/NMR36.jpg}} \\
+        TY Mode
+    \end{minipage}\hfill
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR37.jpg}{\includegraphics[width=\linewidth]{images/NMR37.jpg}} \\
+        XY Mode
+    \end{minipage}
     
     \item To zoom in on the signal, press the magnifying glass located directly below the graph. Here, you will find several zoom options to zoom in on the entire graph, portions of the graph, etc. To manually drag the graph to display different portions of the trace, click the hand icon located next to the magnifying glass.
     
@@ -571,13 +580,20 @@ We can also ``average out'' the signal to get a smother line. The program takes 
 
 \begin{enumerate}
     \item Press \textbf{TY/XY Average}. The window comes up asking if you want to ``AutoSave the data.'' If you wish to do so, press yes and it will prompt you to save it. Otherwise, press no. In either case, you will get a window, asking to ``Chose Acquisition Points.'' Just press ok. In the middle to the left of the program window you can set either the acquisition time or acquisition points. By default they are set to maximum.
-
+    
     \item Now, press \textbf{Start TY/XY Average}. The top right graph is the same as one before. The bottom right graph is the average graph. You might see similar graphs to the ones bellow:
 
-    \noindent
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR38.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/NMR38.jpg}}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR39.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/NMR39.jpg}}
-    
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR38.jpg}{\includegraphics[width=\linewidth]{images/NMR38.jpg}} \\
+        TY Mode
+    \end{minipage}\hfill
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR39.jpg}{\includegraphics[width=\linewidth]{images/NMR39.jpg}} \\
+        XY Mode
+    \end{minipage}
+
     \item To stop the signal, press \textbf{Quit TY/XY Average}.
     
     \item To save the data press \textbf{Save Averaged TY/XY Data}.
@@ -644,7 +660,7 @@ Include the following data, analysis, and calculations.
 
     \item Computer plots with calibrated H axes for absorption and for dispersion NMR signals in H2O under slow passage and under non-adiabatic passage.
 
-    \item Measure as precisely as you can the ratio of the magnetic moment of $F^{19}$ to $H^1$ , with standard deviation. Show best scope photo of $F^{19}$ resonance.
+    \item Measure as precisely as you can the ratio of the magnetic moment of F$^{19}$ to H$^1$, with standard deviation. Show best scope photo of F$^{19}$ resonance.
 
     \item Record and show sequence of absorption lock-in trace from the computer for protons in the presence of M = 3, 1, 0.3, 0.1, 0.03 Molar Mn$^{++}$. Measure the line width (H in Gauss and plot (H vs. Molarity; explain this graph; what is the residual line width (in Gauss) due to field non-uniformity?
 
