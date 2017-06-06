@@ -8,7 +8,7 @@
 - [x] ATM - Atomic Physics
 - [x] CO2 - CO2 Laser
 - [x] MNO - Nonlinear Spectroscopy & Magneto-Optics
-- [ ] MOT - Atom Trapping
+- [x] MOT - Atom Trapping
 - [x] NMR - Nuclear Magnetic Resonance
 - [ ] OPT - Optical Pumping
 - [x] QIE - Quantum Interference & Entanglement
