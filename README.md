@@ -13,7 +13,7 @@
 - [ ] OPT - Optical Pumping
 - [x] QIE - Quantum Interference & Entanglement
 - [x] BMC - Brownian Motion in Cells
-- [ ] OTZ - Optical Trapping
+- [x] OTZ - Optical Trapping
 - [x] COM - Compton Scattering
 - [x] MUO - Muon Lifetime
 - [x] GMA - Gamma-Ray Spectroscopy

@@ -110,7 +110,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
     \item Watch the \href{http://youtu.be/bqIBcjcAhso}{\textbf{Optical Tweezer video}}.
 
-    \item Check points are examination points that are placed in this lab where you must STOP and call a GSI or professor to make sure you understand what's expected. There could  be multiple check points throughout your lab so make sure you don't skip them since there is a \href{http://experimentationlab.berkeley.edu/otzcheckpoints}{\textbf{sign off sheet}}that must be turned in with your lab report. There are 6 Checkpoints in this lab.
+    \item Check points are examination points that are placed in this lab where you must STOP and call a GSI or professor to make sure you understand what's expected. There could  be multiple check points throughout your lab so make sure you don't skip them since there is a \href{http://experimentationlab.berkeley.edu/otzcheckpoints}{\textbf{sign off sheet}} that must be turned in with your lab report. There are 6 Checkpoints in this lab.
 
     \item Complete the \href{http://experimentationlab.berkeley.edu/OTZprelab}{\textbf{OTZ Pre Lab and Evaluation}} sheets. Print, fill it out, then turn in with your answers. The Pre-Lab must be printed separately. Discuss the experiment and pre-lab questions with any faculty member or GSI and get it signed off by that faculty member or GSI. Turn in the signed pre-lab sheet with your lab report.
 
@@ -225,7 +225,7 @@ The numerous mirrors and lenses that steer and shape the beam to this end requir
 
 \textbf{Beam Path}
 
-From the 975 nm laser it goes through two steering mirrors, then 1/2 waveplate at 980nm bandpass,, ( DO NOT ADJUST or TURN IT) then goes through lens, then to the 95 0nm Shortpass Dichoric mirror. With the addition of the point Grey camera, we needed to remove the Shott filter KG-5, but the FG900 filter is still installed.
+From the 975 nm laser it goes through two steering mirrors, then 1/2 waveplate at 980nm bandpass, (DO NOT ADJUST or TURN IT) then goes through lens, then to the 950nm Shortpass Dichoric mirror. With the addition of the point Grey camera, we needed to remove the Shott filter KG-5, but the FG900 filter is still installed.
 
 \subsection{Lasers}
 
@@ -254,7 +254,7 @@ The trapping laser has a power output of up to 300 mW and a wavelength of 975nm,
 
     \item The survey is done by using the IR Viewer, if it is not in the room find a staff member to locate it. The IR viewer is blue and you use it with your goggles on. The laser beam is invisible and very powerful; the IR viewer allows you to see it, but even if you can't see it you can still be blinded.
 
-    \item When the laser is at its maximum power, with LD I set to 490.00 mA, the power output about an inch from the stage is .4 mW and drops off with distance r away from the stage like 1 / (\emph{r}2). This is not powerful enough to cause damage to your eyes, especially if you are seated in your chair and not leaning in toward the equipment. However, within the optical path the laser emits about 238 to 300 mW of power, so make sure that you do not touch/adjust/insert any elements in the optical path which could diffract the beam. After you have checked for stray beams and when you are not adding oil or moving the slide, you do not need to wear the laser safety glasses.
+    \item When the laser is at its maximum power, with LD I set to 490.00 mA, the power output about an inch from the stage is .4 mW and drops off with distance $r$ away from the stage like $1/r^2$. This is not powerful enough to cause damage to your eyes, especially if you are seated in your chair and not leaning in toward the equipment. However, within the optical path the laser emits about 238 to 300 mW of power, so make sure that you do not touch/adjust/insert any elements in the optical path which could diffract the beam. After you have checked for stray beams and when you are not adding oil or moving the slide, you do not need to wear the laser safety glasses.
 
 \end{enumerate}
 
@@ -319,9 +319,9 @@ The gap between the coverslip and objective lens is filled with immersion oil wh
 
 The quadrant photodiode (QPD) is our principal way of collecting data on the position of the trapped particle relative to the center of the trap. This distance also tells us the force the trap exerts on the particle since force increases linearly with distance from the trap's center. Some simpler optical traps use the video camera image to provide position information, but a photodiode allows finer spatial resolution and much higher frequencies (we'll be collecting data at 12 kHz for power spectrum analysis -- compared with 30-500 Hz for video cameras).
 
-The QPD consists of 4 photodiodes in a quadrant formation to allow X and Y position calculation. Within a certain range of light intensities, the output voltage of a photodiode scales linearly with the intensity of light incident upon the diode. The light incident upon each quadrant in the QPD generates a voltage. The analog circuitry then outputs a voltage Vx and Vy which are proportional to the actual X and Y position of the incident beam. As the light scatters in a predictable way off of the spherical beads, this information can be used to recover actual bead position within a narrow range around the center of the trap. Further information can be found in reference: Gittes and Schmidt.
+The QPD consists of 4 photodiodes in a quadrant formation to allow X and Y position calculation. Within a certain range of light intensities, the output voltage of a photodiode scales linearly with the intensity of light incident upon the diode. The light incident upon each quadrant in the QPD generates a voltage. The analog circuitry then outputs a voltage $V_x$ and $V_y$ which are proportional to the actual X and Y position of the incident beam. As the light scatters in a predictable way off of the spherical beads, this information can be used to recover actual bead position within a narrow range around the center of the trap. Further information can be found in reference: Gittes and Schmidt.
 
-With nothing in the trap (or a trapped bead exactly centered in the trap), the laser beam is tightly focused on the center of the QPD, giving Vx and Vy signals of zero. When a trapped bead moves slightly away from the center of the trap, the laser spot moves on the QPD, causing Vx and Vy to vary accordingly.
+With nothing in the trap (or a trapped bead exactly centered in the trap), the laser beam is tightly focused on the center of the QPD, giving $V_x$ and $V_y$ signals of zero. When a trapped bead moves slightly away from the center of the trap, the laser spot moves on the QPD, causing $V_x$ and $V_y$ to vary accordingly.
 
 \section{Operating Procedures}
 
@@ -329,48 +329,26 @@ With nothing in the trap (or a trapped bead exactly centered in the trap), the l
 
 We use a program written in Matlab to control the camera and motorized stage and to record and process data from the QPD. To open the program, double click on ``Computer'' on your desktop, and the C: drive. Open the folder ``Matlab Trapping Software2'' (MAKE SURE IT IS 2). Then double click the file ``OTKBv7.m'' This should open Matlab. \textbf{BE SURE NOT TO CLICK THE FILE OTKBv7.fig AS THIS WILL CRASH MATLAB.} In the Matlab editor which contains the script for the program, click on the play button on the top menu to run the program.
 
-Alternatively, you can open Matlab (which should be available on the desktop, if not: use the search bar under the start menu and search for Matlab, we will be using the 32-bit version) and run the program by typing the program name 'OTKBv7' into the command window (The current folder must be the directory ``C:\\Matlab Trapping Software2''). \textbf{DO NOT EDIT THE PROGRAM!}
+Alternatively, you can open Matlab (which should be available on the desktop, if not: use the search bar under the start menu and search for Matlab, we will be using the 32-bit version) and run the program by typing the program name ``OTKBv7'' into the command window (The current folder must be the directory ``C:\textbackslash Matlab Trapping Software2''). \textbf{DO NOT EDIT THE PROGRAM!}
 
 ``Once the OTKBv7 GUI has opened, you will see three graphs and several panels of controls:''
 
 \begin{itemize}
     \item \textbf{Note: The program takes about 15 seconds to open. When the bottom left graphs start to move, then click the camera view button on the bottom right. If you do not wait it will crash.}
 
-\end{itemize}
-
-\begin{itemize}
     \item The ``Sampling'' control panel has two input boxes. Sample Rate determines the rate at which the QPD is sampled by the DAQ, and History Length determines the number of seconds to be graphed and saved (if prompted).
 
-\end{itemize}
-
-\begin{itemize}
     \item With the \emph{Particle} control panel, the user can input the diameter of bead being used and the viscosity of the containing fluid. These are only applicable to PSD (Power Spectral Density) calibrations with fabricated microspheres.
 
-\end{itemize}
-
-\begin{itemize}
     \item The \emph{Plots} control panel has three input boxes. The first is used to set the desired display units on the upper graph. The QPD outputs data as voltage, but this data can be converted to units of force or distance using the trap stiffness and QPD sensitivity. If these values (visible and editable in the bottom panel) are zero, the program will only allow the data to be presented in volts. The QPD Minimum Range input determines the minimum plot range of the two realtime QPD graphs. If any data points exceed this range, the plots will autoscale. Lastly, the PSD Cut Off Frequency input sets the maximum frequency displayed in the bottom-left graph. Since at high frequencies the signal drops below the noise floor (beyond which the graph flattens out), too high a cut off frequency will skew the PSD fit and any calibration values.
 
-\end{itemize}
-
-\begin{itemize}
     \item The \emph{Save} panel contains two push buttons: ``Save Voltage Data and Graph'' saves the X and Y raw QPD voltage data (two columns of data), and a copy of the upper plot, while the ``Fit PSD and Save Data/Graph'' saves a text file of frequency, PSD X, and PSD Y data (three columns, all log10 transformed), and a copy of the bottom left plot. The data is also fit to the PSD equation for a trapped bead. Both of these also save a text file of relevant settings from each panel.
 
-\end{itemize}
-
-\begin{itemize}
     \item The \emph{Calibrations} panel contains input boxes to enter calibration values for the optical trap. However, these values are also automatically set whenever Fit PSD and Save Data/Graph is clicked. If the fit is bad and returns imaginary results, all fields will be set to 0.
 
-\end{itemize}
-
-\begin{itemize}
     \item \emph{Stage Controls} opens the Stage Control GUI, from which the motorized stage can be controlled. Change the \emph{Control Type} to \emph{Software Control} to control the motors and position of the stage with the program. Step Size and Frequency input boxes determine the effect of a movement command from the Stage Control, while Joystick Speed can be set to Coarse (2000Hz) or Fine (250Hz) control when using the joystick.
 
-\end{itemize}
-
-\begin{itemize}
     \item ``Camera Viewer'' opens up the CCD camera display. The shutter speed can be changed in the ``Live Settings'' to alter the level of light exposure.
-
 \end{itemize}
 
 \subsection{How to pipette}
@@ -460,6 +438,16 @@ After doing this, the red LED indicators at the top of the joystick should alter
 
 \textbf{Controlling Sample Movement. ``Stage Control Software'' refers to the large buttons in the Stage Control matlab program, and ``Image Movement'' refers to the way the image moves on the computer camera viewer.  All joystick operations are from the reference point of standing as if you were typing on the keyboard for the computer.}
 
+\begin{center}
+    \begin{tabular}{c|c|c|c}
+        Joystick Direction & Software Control Button & Image Movement & Stage Movement \\\hline
+        $\uparrow$    & Left  & Down  & Left (+y) \\\hline
+        $\downarrow$  & Right & Up    & Right ($-$y) \\\hline
+        $\rightarrow$ & Up    & Left  & Forward (+x) \\\hline
+        $\rightarrow$ & Down  & Right & Backward ($-$x)
+    \end{tabular}
+\end{center}
+
 \emph{If you ever accidentally hit one of the buttons the joystick will change operation modes.} To get back to the correct mode:
 
 \begin{enumerate}
@@ -502,7 +490,7 @@ After doing this, the red LED indicators at the top of the joystick should alter
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/OTZ/Beads.png}{\includegraphics[width=0.5\linewidth]{images/Beads.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/OTZ/Beads.png}{\includegraphics[width=0.7\linewidth]{images/Beads.png}}
     \caption{This is an example of what you should be seeing in your camera. The circled spots are the 1.01 micro meter silica beads.}
     \label{fig:Beads}
 \end{figure}
@@ -518,7 +506,7 @@ When you are done trapping and collecting data (see below) power down everything
 \begin{enumerate}
     \item Turn on the unit (by turning the key to the right), and turn on the TEC Control. Make sure the TEC is in CT mode. Press ``Config'' and arrow up until the ``TE Cfg: Sensor'' menu is illuminated. Use the wheel to scroll down to ``*3) NTC auto'' and press Enter.
 
-    \item Press the down arrow key to move to the ``TE Cfg: Model'' page. Scroll to ``*0) NTC Β,R(t),t'' (if it is not already on it). Arrow down to set the values of Β, R(\emph{t}0), and \emph{t}0, which should be 3800C, 10k$\Omega$, and 25C, respectively.
+    \item Press the down arrow key to move to the ``TE Cfg: Model'' page. Scroll to ``*0) NTC B,R(t),t'' (if it is not already on it). Arrow down to set the values of Β, R($t_0$), and $t_0$, which should be 3800C, 10k$\Omega$, and 25C, respectively.
 
     \item Room temperature should read on the ``Thermoelectric Cooler'' display.
 
@@ -526,12 +514,12 @@ When you are done trapping and collecting data (see below) power down everything
 
     \item By arrowing down to the next item, set ``TEC Ilim'' (Current limit) to 1.4A, ``Tmax'' to 50C, Tmin to 0C, and ``TE Vmin'' to 8.00V.
 
-    \item Press ``Config'' again and arrow down to ``PID vals.'' Enter the following settings for the P, I, and D loop gain parameters: P = -0.50A/C, I = 0.360/s, D = 0.65s. Also enter the settings: tunestep = 0.140A, CC $\leftrightarrow$ CT lock when on: *N, and the trip-off settings: TEIlim: *N, TE Vlim: *Y, Tmax: *Y, Tmin: *Y, SenseFault: *Y.
+    \item Press ``Config'' again and arrow down to ``PID vals.'' Enter the following settings for the P, I, and D loop gain parameters: P = $-$0.50A/C, I = 0.360/s, D = 0.65s. Also enter the settings: tunestep = 0.140A, CC $\leftrightarrow$ CT lock when on: *N, and the trip-off settings: TEIlim: *N, TE Vlim: *Y, Tmax: *Y, Tmin: *Y, SenseFault: *Y.
 \end{enumerate}
 
 Many, if not all, of these settings, and the ones for the laser control, are likely already set to what they should be. If this is the case, then great. \textbf{It is important to make sure the proper settings are used}.
 
-The TEC has a preset current limit, $I_{LIM}$, of 1.4 A and the resistance, $T_{ACT}$, should be around 10.0 k$\Omega$, and always within the range 9.5 to 10.5 k$\Omega$. This should already be set, but it is important to make sure it is not changed. The TEC, when set properly and turned on, will control the temperature of the laser diode , which prevents temperature-related power fluctuations. It should not need to be adjusted.
+The TEC has a preset current limit, $I_\text{LIM}$, of 1.4 A and the resistance, $T_\text{ACT}$, should be around 10.0 k$\Omega$, and always within the range 9.5 to 10.5 k$\Omega$. This should already be set, but it is important to make sure it is not changed. The TEC, when set properly and turned on, will control the temperature of the laser diode , which prevents temperature-related power fluctuations. It should not need to be adjusted.
 
 \textbf{Laser Diode Control} Control of the laser diode power is via the Laser Diode Control. Once the TEC has been set and turned on, the LDC can be used.
 
@@ -547,13 +535,13 @@ The TEC has a preset current limit, $I_{LIM}$, of 1.4 A and the resistance, $T_{
 
 \emph{\textbf{Note: Do not over turn the QPD adjustment knobs, you will damage the mount and not be able to adjust the QPD to the center position.}}
 
-Before taking data from the QPD, the QPD should be aligned so that the laser hits it in the center, resulting in voltages Vx and Vy being zero. Once you have opened the program, have turned on the LED and QPD, and have trapped a bead, you can zero the QPD signal in the QPD readout window. (Note: If you center the QPD before trapping a bead, the QPD readouts will not be zeroed after trapping a bead.)
+Before taking data from the QPD, the QPD should be aligned so that the laser hits it in the center, resulting in voltages $V_x$ and $V_y$ being zero. Once you have opened the program, have turned on the LED and QPD, and have trapped a bead, you can zero the QPD signal in the QPD readout window. (Note: If you center the QPD before trapping a bead, the QPD readouts will not be zeroed after trapping a bead.)
 
-The QPD signal is indicated by the blue ``x'' on the Vy vs. Vx graph. If this is not centered at the origin, adjust the knurled adjusting screws on the top and front of the QPD mount to bring the blue ``x'' to the origin.
+The QPD signal is indicated by the blue ``x'' on the $V_y$ vs. $V_x$ graph. If this is not centered at the origin, adjust the knurled adjusting screws on the top and front of the QPD mount to bring the blue ``x'' to the origin.
 
 If you are unable to zero the signal, first check to see if something like a second bead or debris has entered the trap (e.g. disable the laser and watch how many beads leave the trap). Also check that the green fluorescent laser is off whenever analyzing QPD readouts, as this laser affects the results.
 
-The QPD zero signal will vary somewhat with the power level of the laser. Hint: If you are doing calibrations with beads at multiple power levels, you can zero the QPD signal at the highest power level, and then switch to lower and lower power levels without too much problem. If you precisely zero it at a low power level, you will find more drift in Vx and Vy as you move to higher power levels.
+The QPD zero signal will vary somewhat with the power level of the laser. Hint: If you are doing calibrations with beads at multiple power levels, you can zero the QPD signal at the highest power level, and then switch to lower and lower power levels without too much problem. If you precisely zero it at a low power level, you will find more drift in $V_x$ and $V_y$ as you move to higher power levels.
 
 \subsection{Trapping Procedure}
 
@@ -568,7 +556,7 @@ The QPD zero signal will vary somewhat with the power level of the laser. Hint: 
 
     \item To take QPD data from a free bead or other trapped object, move the bead above the coverslip about 3 $\mu$m (the finest gradations on the micrometer screw of the objective lens correspond to 1 $\mu$m of vertical travel) so that its motion will not be influenced by the wall effect. Think about why adjusting the micrometer screw affects the vertical position of the trapped bead, and \emph{be sure to explain this in your lab report.}
 
-    \item Center the QPD (i.e. adjust the position of the QPD mount until Vx and Vy are zero).
+    \item Center the QPD (i.e. adjust the position of the QPD mount until $V_x$ and $V_y$ are zero).
 
     \item As you collect data, keep an eye on the bead to make sure that another bead does not get sucked into the trap. This is a problem especially with dense suspensions and higher power levels. When you finish with a bead, it is wise to release it and check the image to see if another bead was hiding below it in the trap.
 \end{enumerate}
@@ -611,23 +599,29 @@ The QPD zero signal will vary somewhat with the power level of the laser. Hint: 
 
 Before you begin taking and analyzing data, it is useful to learn how to programmatically load data from file. The obvious approach that many students take is to manually load each data set from its respective text file, but there are much more efficient ways of performing this task. For this experiment in particular, there will be two types of data files to handle. The first type is simply a text file with several columns of data, which can be accessed with the code below:
 
-fmt = repmat('\%f',1,numberOfColumns);
+\begin{verbatim}
+    fmt = repmat('\%f', 1, numberOfColumns);
 
-fid = fopen(file);
+    fid = fopen(file);
 
-datacell = textscan(fid, fmt, 'Delimiter', '\t', 'CollectOutput',1);
+    datacell = textscan(fid, fmt, 'Delimiter', '\t', 'CollectOutput', 1);
 
-fclose(fid);
+    fclose(fid);
 
-Data = datacell{1};
+    Data = datacell{1};
+\end{verbatim}
 
 The data can now be retrieved from the Data matrix. This code will work for both the voltage and PSD data, assuming the numberOfColumns is correct. The second type of file is the \emph{Settings} text file, in which the information is organized into fields. By using the code below, you can retrieve the value of each field from the single-column matrix Settings:
 
-fid = fopen(file);
+\begin{verbatim}
+    fid = fopen(file);
 
-Settings = fscanf(fid,`Sample Rate: \%f\textbackslash nNumberOfSeconds: \%f\textbackslash nParticleDiameter: \%f\textbackslash nViscosity: \%f\textbackslash nxStiffness: \%f\textbackslash nyStiffness: \%f\textbackslash nxSensitivity: \%f\textbackslash nySensitivity: \%f\textbackslash n');
-
-fclose(fid);
+    Settings = fscanf(fid,'Sample Rate: %f\nNumberOfSeconds: %f\nParticleDiameter: %f\n
+                      Viscosity: %f\nxStiffness: %f\nyStiffness: %f\nxSensitivity: %f\n
+                      ySensitivity: %f\n');
+    
+    fclose(fid);
+\end{verbatim}
 
 Ideally, you will now be able to work much of the analysis required in this experiment into several Matlab scripts, while still retaining an understanding of the processes involved in the analysis.
 
@@ -678,11 +672,20 @@ The others were checked as well, but it is not necessary for me to include them 
 
 Calibration of the QPD's response to movements of the trapped objects typically use microspheres because of their symmetry and standardized characteristics, such as refractive index, size, shape, etc. In some cases, calibration is performed with a bead that is similar in size and shape to the biological specimen of interest. In others, the bead itself is used in an experiment to apply forces to the biological specimen. For example, a bead can be attached to one end of a macromolecule such as DNA as a handle to pull on. If the other end of the molecule is stuck to a coverslip or a pipette, the bead can be moved by the trap to apply precise forces to the molecule or other structure. In this lab you can do your calibration with Silica beads of 1 or 2 micron diameter, and should plan to use the same bead size for all of your calibration techniques.
 
-\textbf{What is Position Calibration?} Within a narrow range around the trap (about 100-200 nm), the voltages Vx and Vy from the QPD are linearly related \cite{Gittes} to the distance of the bead from the center of the trap along each axis. The position calibration, also called \emph{sensitivity}, allows us to translate our raw Vx and Vy data into distance data. Sensitivity, $\rho$, is usually given in units of Volts/$\mu$. Of course, the power setting of the laser will affect the light intensity incident on the QPD, and thus the voltage responses, so rather than a single conversion we really want the relationship between sensitivity and laser power. This normally is fairly linear, so measuring sensitivity at 4 power levels is plenty to characterize the relationship.
+\textbf{What is Position Calibration?} Within a narrow range around the trap (about 100-200 nm), the voltages $V_x$ and $V_y$ from the QPD are linearly related \cite{Gittes} to the distance of the bead from the center of the trap along each axis. The position calibration, also called \emph{sensitivity}, allows us to translate our raw $V_x$ and $V_y$ data into distance data. Sensitivity, $\rho$, is usually given in units of Volts/$\mu$. Of course, the power setting of the laser will affect the light intensity incident on the QPD, and thus the voltage responses, so rather than a single conversion we really want the relationship between sensitivity and laser power. This normally is fairly linear, so measuring sensitivity at 4 power levels is plenty to characterize the relationship.
 
-We have two independent methods for performing position calibrations. The first, called the \textbf{stuck bead scanning method}, is to move a bead stuck to a slide through the center of the trap at a controlled speed with the motorized stage and record the Vx or Vy. In the linear region near the center of the trap, the slope of Vx vs. distance is the inverse of sensitivity. The second method, less direct, is to apply our understanding of the physics of Brownian motion of a bead of known size in a medium (water) of known viscosity. By trapping a free bead and recording Vx and Vy at high frequency, a Power Spectrum Density (PSD) can be calculated to give an estimate of sensitivity. We'll call this the \textbf{PSD method}. Try both of these methods as detailed below and see how comparable are the results.
+We have two independent methods for performing position calibrations. The first, called the \textbf{stuck bead scanning method}, is to move a bead stuck to a slide through the center of the trap at a controlled speed with the motorized stage and record the $V_x$ or $V_y$. In the linear region near the center of the trap, the slope of $V_x$ vs. distance is the inverse of sensitivity. The second method, less direct, is to apply our understanding of the physics of Brownian motion of a bead of known size in a medium (water) of known viscosity. By trapping a free bead and recording $V_x$ and $V_y$ at high frequency, a Power Spectrum Density (PSD) can be calculated to give an estimate of sensitivity. We'll call this the \textbf{PSD method}. Try both of these methods as detailed below and see how comparable are the results.
 
 \textbf{What is Stiffness Calibration?} Forces in optical traps generally cannot be measured directly. Rather, the force on a trapped particle is calculated by multiplying the displacement of the particle from the trap's center by the stiffness of the trap. That is, the trap obeys Hooke's law, $F = -k x$, where `$k$' is the stiffness of the trap.
+
+\begin{center}
+    \begin{tabular}{l|l|l}
+        Method/how to sample & Position & Stiffness \\\hline
+        \textbf{1. Stuck Bead:} sample 8s@1 kHz & X & \\\hline
+        \textbf{2. PSD} (with free bead): sample 4/3 s@12kHz & X & X \\\hline
+        \textbf{3. Equipartition} (with free bead): sample 8s@1kHz, down-sample to 30 Hz & & X
+    \end{tabular}
+\end{center}
 
 A variety of methods can be used to calculate trap stiffness, each with advantages and drawbacks. We'll use two in this lab, both exploiting the effect that the trap has on inhibiting Brownian motion of a trapped particle. The \textbf{Power Spectrum Method} uses the same data as for the position calibration method of that name. The second, called the \textbf{Equipartition Method}, analyzes the variance in position of the particle over a longer time period at much lower frequency. Compare the results of these two methods and consider which might be preferable in different applications.
 
@@ -690,14 +693,14 @@ To summarize, you will use three techniques for position and stiffness calibrati
 
 \subsubsection{Stuck Bead Scanning Method (Position Calibration)}
 
-We recommend scanning a stuck bead along each orthogonal axis through the center of the trap, considering Vx and Vy independently of one another. A more complete calibration would require raster scanning back and forth in a grid to cover the entire active 2D region of sensor, but this is problematic due to some hysteresis and imprecision in our motorized stage so we'll stick to measurements along the axes.
+We recommend scanning a stuck bead along each orthogonal axis through the center of the trap, considering $V_x$ and $V_y$ independently of one another. A more complete calibration would require raster scanning back and forth in a grid to cover the entire active 2D region of sensor, but this is problematic due to some hysteresis and imprecision in our motorized stage so we'll stick to measurements along the axes.
 
 \textbf{Stuck Bead Sample Preparation} Exposing the beads to a salt solution causes them to stick to glass by hydrophobic interactions. A 1 M NaCl solution is provided for this purpose. You can simply substitute the salt solution for water, and again make a 1:10,000 dilution. Alternatively, you could combine the salt solution with a bead sample directly on a slide rather than making a separate vial. To do this, try adding 5 microliters of your previous 1:10,000 dilution of a bead stock in water to 30 microliters of 1 M NaCl on a slide. After adding a coverslip, invert the slide. It may take up to 10-20 min to get good adhesion, and some beads will stick better than others. You may need to adjust the bead concentration to get a reasonable density of beads on your slide.
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/StuckBead500.png}{\includegraphics[width=0.5\linewidth]{images/StuckBead500.png}}
-    \caption{A plot of Vx vs time for a stuck bead moved from left to right. The red line is fitted to the data from the linear region.}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/StuckBead500.png}{\includegraphics[width=0.7\linewidth]{images/StuckBead500.png}}
+    \caption{A plot of $V_x$ vs time for a stuck bead moved from left to right. The red line is fitted to the data from the linear region.}
     \label{fig:StuckBead500}
 \end{figure}
 
@@ -712,7 +715,7 @@ We recommend scanning a stuck bead along each orthogonal axis through the center
 
     \item Focus the microscope so that the bead is at the same height that it would be if it were freely suspended but trapped. It should be a little out of focus. (Use your prior experience trapping beads to judge this.)
 
-    \item Center the stuck bead in the laser trap, using the joystick. The QPD signal should read approximately Vx=0,Vy=0 and small motions along the X or Y axis should cause large changes in Vx or Vy, respectively).
+    \item Center the stuck bead in the laser trap, using the joystick. The QPD signal should read approximately $V_x$ = 0, $V_y$ = 0 and small motions along the X or Y axis should cause large changes in $V_x$ or $V_y$, respectively).
 
     \item Once the bead is centered, switch to software control of the stage and set the step number (preferably at least 100) and frequency (50-150 Hz) how you want.
 
@@ -724,11 +727,11 @@ We recommend scanning a stuck bead along each orthogonal axis through the center
 
 \end{enumerate}
 
-This will take 8 seconds of QPD voltage data sampled at 1kHz and saved as a text file with name and location you specified. A graph of the QPD readout vs. time will be shown when you click the save button, and the graph itself will be saved along with your data. The graphs should both read roughly 0 at the very beginning and end of the run and you should see a signal like that of the one pictured above in the direction in which you are scanning the bead. The perpendicular direction (in our case, Y) should show very little change and be roughly symmetric around the center of the trap, as determined from the Vx plot. If Vy varies a lot, you might recenter the bead and try again. Keep in mind that there is some hysteresis in the motors/stage and sometimes the coverslip may be dragged a little by the viscosity of the immersion oil. Reducing the number of steps you go away from the center of the trap may help.
+This will take 8 seconds of QPD voltage data sampled at 1kHz and saved as a text file with name and location you specified. A graph of the QPD readout vs. time will be shown when you click the save button, and the graph itself will be saved along with your data. The graphs should both read roughly 0 at the very beginning and end of the run and you should see a signal like that of the one pictured above in the direction in which you are scanning the bead. The perpendicular direction (in our case, Y) should show very little change and be roughly symmetric around the center of the trap, as determined from the $V_x$ plot. If $V_y$ varies a lot, you might recenter the bead and try again. Keep in mind that there is some hysteresis in the motors/stage and sometimes the coverslip may be dragged a little by the viscosity of the immersion oil. Reducing the number of steps you go away from the center of the trap may help.
 
 Repeat this measurement for the Y axis and then repeat both X and Y for each power level you choose for calibration.
 
-Plot both Vx and Vy vs. index and zoom in to note the time points that bound the linear region that lies in the center of the trap. Perform a linear regression on this time range of data only and use the appropriate sample rate, step size, and frequency to calculate the sensitivity for this axis and power level.
+Plot both $V_x$ and $V_y$ vs. index and zoom in to note the time points that bound the linear region that lies in the center of the trap. Perform a linear regression on this time range of data only and use the appropriate sample rate, step size, and frequency to calculate the sensitivity for this axis and power level.
 
 \textbf{Using Matlab}
 
@@ -763,11 +766,10 @@ The thermal motion of a spherical bead of known size suspended in water is well 
 The PSD Method stiffness measurement requires knowledge of the hydrodynamic drag on the particle. For a sphere, the Stoke's drag relation is well known, and requires knowing the diameter of the bead and viscosity of the fluid. The Stoke's relationship is not valid close to a wall, so a particle must not be near the surface of a slide or coverslip.
 
 The Power Spectral Density (PSD) \cite{Reif} of a trapped bead has a Lorentzian profile described by:
-
 \begin{equation}
     S_{\nu\nu} = \frac{\rho^2 k_b T}{\pi^2 \beta(f_o^2+f^2)}
 \end{equation}
-in \emph{V}\emph{o}\emph{l}\emph{t}\emph{s}2 / \emph{H}\emph{e}\emph{r}\emph{t}\emph{z}. Where β = 3πη\emph{d} is the drag, η is the fluid viscosity of water, d is the diameter of the bead, ρ is the sensitivity of the trap, and f is the frequency of bead vibrations. If the fluid is water then we can take: η = 8.90 * 10 - 4\emph{P}\emph{a} * \emph{s}. Using this, a curve can be fit to the log of the data sets giving the rolloff frequency \emph{f}\emph{o}. In addition the rolloff frequency relates to the relaxation time: $\tau_o = \frac{1}{2 \pi f_o}$.
+in Volts$^2$ / Hertz. Where $\beta = 3\pi\eta d$ is the drag, $\eta$ is the fluid viscosity of water, $d$ is the diameter of the bead, $\rho$ is the sensitivity of the trap, and $f$ is the frequency of bead vibrations. If the fluid is water then we can take: $\eta = 8.90 \times 10^{-4}$ Pa*s. Using this, a curve can be fit to the log of the data sets giving the rolloff frequency $f_o$. In addition the rolloff frequency relates to the relaxation time: $\tau_o = 1/2\pi f_o$.
 
 \emph{Using Matlab}
 
@@ -779,19 +781,21 @@ Several Matlab programs are provided, including: (\textbf{All Matlab .m files ca
 
 \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/FitlogcurvevarYV2.m}{\textbf{FitlogcurvevarYV2.m}}
 
-One useful analytic method for this part of the lab minimizes the least-squares distance of every point from the predicted curve, giving two parameters of the equation, alpha and $ f_o $. The Lorentzian can be recast as the equation: $\log{S_{\nu\nu}(f)} = \log{\alpha} - \log{(f_o^2+f^2)}$.
+One useful analytic method for this part of the lab minimizes the least-squares distance of every point from the predicted curve, giving two parameters of the equation, alpha and $f_o$. The Lorentzian can be recast as the equation: $\log{S_{\nu\nu}(f)} = \log{\alpha} - \log{(f_o^2+f^2)}$.
 
 To use Matlab, you will have to import your data from the text files into the workspace. These text files will have two columns - one for X voltage and one for Y voltage - and can be imported into Matlab easily with the aid of the ``Useful Matlab Code'' section above. It is best if you use a matlab script to perform these and the following tasks, rather than do everything in the command window.
 
 Once the data is imported, you will need to convert it to Power Spectral Density data using the built-in Matlab function ``pwelch.'' It is recommended that you look up what this function does, and look in the ``OTKBv7'' code to see its correct usage. Once you have done this, you can represent the data with a three column matrix: frequency, x-direction PSD data, and y-direction PSD data. You can then call the functions \emph{fitlogcurvevarX} and \emph{fitlogcurvevarY} within this script. These functions will allow you to input as many three-column data sets at once as you wish. They use a non-linear fitting procedure to fit the theoretical curve to log transformed data, returning alpha (a\_x or a\_y) and rolloff frequencies (fo\_x or fo\_y). The plot(s) from the functions relate log(PSD) vs. log(freq), and should look like the Power Spectrum Density as it appears in the QPD readout window.
-
-[a\_x fo\_x] = fitlogcurvevarX( data1, pwr1, data2, pwr2, ... )Then, using properties of logarithms and the two Lorentzian equations above, it should be possible to solve for x and y sensitivities from the alpha values a\_x and a\_y.
+\begin{verbatim}
+    [a_x fo_x] = fitlogcurvevarX( data1, pwr1, data2, pwr2, ... )
+\end{verbatim}
+Then, using properties of logarithms and the two Lorentzian equations above, it should be possible to solve for x and y sensitivities from the alpha values a\_x and a\_y.
 
 Similarly, the rolloff frequency parameters found from \emph{fitlogcurvevarX} and \emph{fitlogcurvevarY} give the trap stiffnesses from the following relation:
 \[
     k = 2 \pi f_o \beta
 \]
-again where $\beta$ = 3 $\pi \eta d$  is the drag,  $\eta = 8.90 \times 10^{-4}$ Pa*s  is the viscosity of water, and $d$ is the diameter of the bead (in meters).
+again where $\beta$ = $3\pi\eta d$  is the drag, $\eta = 8.90 \times 10^{-4}$ Pa*s is the viscosity of water, and $d$ is the diameter of the bead (in meters).
 
 Finally, you will want to graph $\rho_x$, $\rho_y$, $k_x$, and $k_x$ versus laser power, and fit a line to each of them to determine their dependence on laser power. You may consider averaging the values you obtained from each bead first.
 
@@ -805,7 +809,7 @@ This method is based on the equipartition theorem, which states that each degree
 This method has a few requirements you should be aware of.
 
 \begin{enumerate}
-    \item The variance used must be of particle position (distance from the center of the trap in x or y), not of the voltage from the QPD. So you need to use the position calibration (sensitivity) to convert Vx to $x$ before taking the variance. You can try using sensitivities from the Stuck Bead and PSD methods, and you may find that this choice has a big effect on the stiffness values you obtain.
+    \item The variance used must be of particle position (distance from the center of the trap in x or y), not of the voltage from the QPD. So you need to use the position calibration (sensitivity) to convert $V_x$ to $x$ before taking the variance. You can try using sensitivities from the Stuck Bead and PSD methods, and you may find that this choice has a big effect on the stiffness values you obtain.
 
     \item The observations used in this analysis are assumed to be independent of one another. Hence, the particle positions must be taken at intervals greater than the relaxation time, $\gg \tau_o$, which can be derived from the rolloff frequency of the trap as described in the ``PSD Method'' section. The program will not allow you to set the Sample Rate this low, so it may be simpler to use the data taken for the PSD method and down-sample it in Matlab.
 
@@ -814,8 +818,9 @@ This method has a few requirements you should be aware of.
 \emph{Using Matlab } (\textbf{All Matlab .m files can be found zipped }\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{\textbf{here.}})
 
 Here we will use the program \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/Equipartition.m}{\textbf{Equipartition.m}} . After inputting the values for sensitivity at each power in both the x and y-directions, as well as the data sets with their corresponding power levels, it will graph and calculate stiffnesses in both X and Y and perform a linear fit. A quick glance at the program in the Matlab editor should be sufficient to understand how it operates.
-
-[Kx,Ky] = equipartition(x\_sensvspwr, y\_sensvspwr, data1, pwr1, data2, pwr2, ...)
+\begin{verbatim}
+    [Kx,Ky] = equipartition(x_sensvspwr, y_sensvspwr, data1, pwr1, data2, pwr2, ...)
+\end{verbatim}
 \textbf{This is a Checkpoint: Call over a GSI or Professor, show them your values for stiffness and discuss your answers to the following questions:}
 \begin{itemize}
     \item \emph{Why might there be a difference in $k_x$ and $k_y$}?
@@ -829,8 +834,7 @@ Here we will use the program \href{http://dev-physicsadv.pantheon.berkeley.edu/s
     \item \textbf{BONUS:} \emph{How can this independence be tested? i.e. How can the correlation be measured?}
 
     \begin{itemize}
-        \item To understand how to test this it may help to consult \emph{Reif} and look into the ideas of \href{http://en.wikipedia.org/wiki/Covariance}{\textbf{covariance}} and \href{http://en.wikipedia.org/wiki/Autocorrelation}{\textbf{autocorrelation}}. If time permits and you are interested in this idea, by taking several data sets (maybe 100 of 1 second each), each giving a value: $ k_i $, you should see some variance in k. You can measure the mean and standard deviation in k using 2 different sampling rates (one above and one below the correlation time of the trap) and then measure the autocorrelation.
-
+        \item To understand how to test this it may help to consult \emph{Reif} and look into the ideas of \href{http://en.wikipedia.org/wiki/Covariance}{\textbf{covariance}} and \href{http://en.wikipedia.org/wiki/Autocorrelation}{\textbf{autocorrelation}}. If time permits and you are interested in this idea, by taking several data sets (maybe 100 of 1 second each), each giving a value: $k_i$, you should see some variance in $k$. You can measure the mean and standard deviation in $k$ using 2 different sampling rates (one above and one below the correlation time of the trap) and then measure the autocorrelation.
     \end{itemize}
 
 \end{itemize}
@@ -859,7 +863,7 @@ Begin by reading carefully the following two papers on using optical traps to st
 \begin{itemize}
     \item S. Chattopadhyay, R. Moldovan, C. Yeung, X. L. Wu, Swimming efficiency of bacterium Escherichia coli. \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1564254/}{\textbf{Proc. Natl. Acad. Sci. 103(37): 13712-13717 (2006)}}. Uses optical trap similar to ours; good intro to E. coli locomotion and ideas for experiments.
 
-    \item T. L. Min, P. J. Mears, L. M. Chubiz, C. V. Rao, I. Golding, Y. R. Chemla, High-resolution, long-term characterization of bacterial motility using optical tweezers, \href{http://www.nature.com/nmeth/journal/v6/n11/full/nmeth.1380.html}{\textbf{Nature Methods 6, 831-835 (2009)}} . Note that following the reference section of the paper there is a supplemental online methods section, which contains links to a separate pdf of supplemental figures. This studey features excellent experimental work on \emph{E. coli} swimming using a setup that generates two traps with a single laser beam, allowing better control over the orientation of the cell.
+    \item T. L. Min, P. J. Mears, L. M. Chubiz, C. V. Rao, I. Golding, Y. R. Chemla, High-resolution, long-term characterization of bacterial motility using optical tweezers, \href{http://www.nature.com/nmeth/journal/v6/n11/full/nmeth.1380.html}{\textbf{Nature Methods 6, 831-835 (2009)}}. Note that following the reference section of the paper there is a supplemental online methods section, which contains links to a separate pdf of supplemental figures. This studey features excellent experimental work on \emph{E. coli} swimming using a setup that generates two traps with a single laser beam, allowing better control over the orientation of the cell.
 \end{itemize}
 
 Consider what kinds of patterns you might expect in your data on trapped cells and what questions you might be able to investigate.
@@ -875,7 +879,7 @@ Some suggestions you might try:
 
     \item What is the distribution of cell swimming speeds? (You can use the particle tracker feature on the video camera images to measure this without using the trapping laser.)
 
-    \item What is the propulsive force required to offset hydrodynamic drag? The Stoke's Drag for laminar flow past a spherical bead of diameter d is: $ F = \beta v $, where $\beta = 3 \pi \eta d $, v is the velocity of the water flow past the object, and where $\eta $ is the fluid viscosity, which we may take to be water: $\eta = 8.90*10^{-4}Pa* s $.
+    \item What is the propulsive force required to offset hydrodynamic drag? The Stoke's Drag for laminar flow past a spherical bead of diameter $d$ is: $F = \beta v$, where $\beta = 3\pi\eta d$, $v$ is the velocity of the water flow past the object, and where $\eta$ is the fluid viscosity, which we may take to be water: $\eta = 8.90 \times 10^{-4}$ Pa*s.
 
     \item Is swimming velocity or cell rotation related to cell size?
 
@@ -928,17 +932,19 @@ The bacteria cultures are maintained for us by the Bio 1A course staff in the Mo
 
 (\textbf{All Matlab .m files can be found zipped }\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{\textbf{here.}})
 
-The text files from the QPD (8sec@1kHz) can be used to generate plots of Vx and Vy vs. time in Matlab.
+The text files from the QPD (8sec@1kHz) can be used to generate plots of $V_x$ and $V_y$ vs. time in Matlab.
 
-Sometimes it is interesting to plot Vx vs. Vy to see the shape of the motion. The functions MovingAve.m smooths the data and plots Vx vs. Vy. The AnimatedPlot.m function creates an animation of the trajectory shown in MovingAve.m. To use AnimatedPlot without saving the animation as a AVI file, type in the following in the command window
-
-AnimatedPlot(Xdata,Ydata,'off','')Xdata and Ydata represent the variables for the voltage data in the X and Y directions respectively
+Sometimes it is interesting to plot $V_x$ vs. $V_y$ to see the shape of the motion. The functions MovingAve.m smooths the data and plots $V_x$ vs. $V_y$. The AnimatedPlot.m function creates an animation of the trajectory shown in MovingAve.m. To use AnimatedPlot without saving the animation as a AVI file, type in the following in the command window
+\begin{verbatim}
+    AnimatedPlot(Xdata, Ydata, 'off', '')
+\end{verbatim}
+Xdata and Ydata represent the variables for the voltage data in the X and Y directions respectively
 
 \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/MovingAve.m}{\textbf{MovingAve.m}}
 
 \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/AnimatedPlot.m}{\textbf{AnimatedPlot.m}}
 
-It may also be useful to perform a FFT on the Vx or Vy data to look for patterns in the frequency.
+It may also be useful to perform a FFT on the $V_x$ or $V_y$ data to look for patterns in the frequency.
 
 \section{Part III. Investigating Internal Transport in Onion Cells}
 
@@ -962,15 +968,33 @@ In this part of the experiment, you will observe the motion of particles inside 
 
 Most motions within and of cells involve two components, a cytoskeletal fiber that serves as a track, and a \href{http://en.wikipedia.org/wiki/Motor\_protein}{\textbf{motor protein}} that does the work. The motor molecule uses energy from the hydrolysis of one ATP molecule to bind to the fiber, bend to pull itself along the fiber, and release, all of which constitutes one ``step''. For an animation of this stepping process, see this \href{https://valelab.ucsf.edu/molecular-animations/}{\textbf{movie animation}} from the Vale lab web site at UC San Francisco. One can divide cellular motility mechanisms into two classes based on the cytoskeletal fibers involved. (1) Microtubule-based mechanisms involve dynein or kinesin motors pulling on microtubules made of the protein tubulin. (2) Actin-based mechanisms involve myosin motors pulling on actin fibers, also called microfibers.
 
-\noindent
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/Myosin.gif}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Myosin.png}}
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/196px-Kinesin.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/196px-Kinesin.jpg}}
+\begin{figure}[h]
+\begin{minipage}[t]{.475\textwidth}
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Myosin.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/Myosin.png}}
+    \caption{Cartoon of myosin motors pulling organelles along an actin filament.}
+\end{minipage}\hfill
+\begin{minipage}[t]{.475\textwidth}
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/196px-Kinesin.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/196px-Kinesin.jpg}}
+    \caption{Binding of kinesin motor to microtubule.}
+\end{minipage}
+\end{figure}
 
 Virtually all cell types exhibit directed intracellular transport, but some cell types are particularly suitable for transport studies. Fish-scale pigment cells work well, since a large fraction of the cargoes that are transported are pigmented and thus easy to observe – the disadvantage is that you would need to bring a living fish into lab as a source of these cells. For convenience, we will use epidermal cells from onion bulbs that you can easily acquire in a grocery store. With some care, a single layer of cells can be peeled off an inner section of the onion bulb and mounted flat on a slide.
 
-\noindent
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/250px-Image005.png}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/250px-Image005.png}}
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/Image003.png}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Image003.png}}
+\begin{figure}[h]
+\begin{minipage}[t]{.475\textwidth}
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/250px-Image005.png}{\includegraphics[width=\linewidth,keepaspectratio]{images/250px-Image005.png}}
+    \caption{Onion cells in bright-field illumination. Round object in each cell is the nucleus.}
+\end{minipage}\hfill
+\begin{minipage}[t]{.475\textwidth}
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Image003.png}{\includegraphics[width=\linewidth,keepaspectratio]{images/Image003.png}}
+    \caption{Vesicles in the cytoplasm of a plant cell, as seen in dark-field.}
+\end{minipage}
+\end{figure}
 
 In this experiment, we will be viewing the movement of vesicles within the cytoplasm of onion epidermal cells, shown above as they appear in bright-field and dark-field microscopy. The layers you see in an onion bulb develop into leaves when it sprouts. Both sides of the leaf are covered with an epidermis consisting of brick-shaped cells, each with a cell wall and cell membrane on the outside. Most of the interior of the cell is filled with a clear \href{http://en.wikipedia.org/wiki/Vacuole}{\textbf{vacuole}} that functions in storage and in maintenance of hydrostatic pressure essential to the stiffness of the plant (the difference between crisp lettuce and wilted lettuce). The \href{http://en.wikipedia.org/wiki/Cytoplasm}{\textbf{cytoplasm}}, containing all of the other cell contents, occurs in a thin layer between the cell membrane and the vacuole, and in thin extensions through the vacuole called transvacuolar strands. It is within the cytoplasm that you will be observing directed transport of vesicles by an actin-based mechanism. These vesicles are spherical or rod-shaped organelles such as mitochondria, spherosomes, and \href{http://en.wikipedia.org/wiki/Peroxisome}{\textbf{peroxisomes}} ranging in size from 0.5 to 3 microns. The diagram of an onion cell below shows the location of the cell wall, cytoplasm and vesicles in a typical cell; you will not be able to see much of the endoplasmic reticulum or the vacuole depicted because of their transparency. Under the microscope, you will notice the vesicles are located just along the edges of the cell, or near the top and bottom surface if you focus up and down. When you see a narrow band of moving vesicles in the center of the cell, it is located in a transvacuolar strand, which may be a handy place to study motion.
 
@@ -981,7 +1005,7 @@ In this experiment, we will be viewing the movement of vesicles within the cytop
     \label{fig:500px-BMC_OnionStucture}
 \end{figure}
 
-In plant cells, vesicles are transported along actin fibers by myosin motor molecules. An actin filament is composed of two intertwined actin chains, about 7 nm in diameter. An actin fiber is considered structurally polar, having a (+) end and a (-) end, and most myosin motors move only towards the (+) end of the actin fiber. In order to reverse the direction of a vesicle's motion, the vesicle must grab on to another actin fiber oriented in the opposite direction. There are at least eighteen described classes of myosin, of which three, myosin VIII, XI, and XII are found in plant cells. Some myosin motors are processive, meaning that they remain bound to an actin fiber as they move step-by-step along it (analagous to this \href{http://valelab.ucsf.edu/images/movies/mov-procmotconvkinrev5.mov}{\textbf{movie animation of kinesin}}. Other myosins are non-processive, releasing from the actin fiber after each step. Myosin II found in muscle cells is non-processive, as illustrated in this \href{http://www.banyantree.org/jsale/actinmyosin/index.html}{\textbf{video animation}}. In the muscle functional unit, there are many myosin motors acting together, so there are always some attached to the actin fiber. The myosin XI responsible for transport of plant cell vesicles is the fastest myosin known and is processive. It is not certain how many myosin molecules are attached to the surface of a vesicle or how many of those are active at one time in pulling the vesicle along an actin fiber.
+In plant cells, vesicles are transported along actin fibers by myosin motor molecules. An actin filament is composed of two intertwined actin chains, about 7 nm in diameter. An actin fiber is considered structurally polar, having a (+) end and a ($-$) end, and most myosin motors move only towards the (+) end of the actin fiber. In order to reverse the direction of a vesicle's motion, the vesicle must grab on to another actin fiber oriented in the opposite direction. There are at least eighteen described classes of myosin, of which three, myosin VIII, XI, and XII are found in plant cells. Some myosin motors are processive, meaning that they remain bound to an actin fiber as they move step-by-step along it (analagous to this \href{http://valelab.ucsf.edu/images/movies/mov-procmotconvkinrev5.mov}{\textbf{movie animation of kinesin}}. Other myosins are non-processive, releasing from the actin fiber after each step. Myosin II found in muscle cells is non-processive, as illustrated in this \href{http://www.banyantree.org/jsale/actinmyosin/index.html}{\textbf{video animation}}. In the muscle functional unit, there are many myosin motors acting together, so there are always some attached to the actin fiber. The myosin XI responsible for transport of plant cell vesicles is the fastest myosin known and is processive. It is not certain how many myosin molecules are attached to the surface of a vesicle or how many of those are active at one time in pulling the vesicle along an actin fiber.
 
 In some plant cells and algal cells, a large-scale streaming motion of the cytoplasm is observed, logically called \href{http://en.wikipedia.org/wiki/Cytoplasmic\_streaming}{\textbf{cytoplasmic streaming}}. This bulk flow is believed to be caused by myosin motors pulling the extensive endoplasmic reticulum along actin fibers lining the cell membrane. Many other vesicles are then dragged along with the endoplasmic reticulum. \href{http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mcb.figgrp.5242}{\textbf{Lodish and Berk, et al.}} provide a detailed explanation of this process and a video of cytoplasmic streaming in the pond weed Elodea can be viewed \href{http://www.microscopy-uk.org.uk/mag/imgnov00/cycloa3i.avi}{\textbf{here}}.
 
@@ -1067,10 +1091,9 @@ Dynein is a eukaryotic motor protein that is involved in the transport of organe
 
 \subsection{Methods}
 
-
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/200px-Dynein_On_Axoneme.gif}{\includegraphics[width=0.5\linewidth]{images/200px-Dynein_On_Axoneme.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/200px-Dynein_On_Axoneme.gif}{\includegraphics[width=0.3\linewidth]{images/200px-Dynein_On_Axoneme.png}}
     \caption{A dynein motor walking along an axoneme. The dynein head is bound to a microsphere, which is being pulled out of the optical trap.}
     \label{fig:200px-Dynein_On_Axoneme}
 \end{figure}
@@ -1123,25 +1146,20 @@ Now that all the necessary ingredients are in the ice bucket, you may begin prep
     \item Prepare the axoneme solution - Mix 1 $\mu$L of axoneme stock with 6 $\mu$L of DLB (no casein). Mix as thoroughly as possible, since the glycerol content of the DLB does not mix easily.
 
     \item Prepare the stepping buffer-
+    \begin{itemize}
+        \item 1 $\mu$L PCA
+    
+        \item 1 $\mu$L PCD
+    
+        \item 1 $\mu$L ATP
+    
+        \item 1 $\mu$L DTT
+    
+        \item 2.5 $\mu$L DLB
+    
+        \item 3.5 $\mu$L Casein
+    \end{itemize}
 
-\end{enumerate}
-
-\begin{itemize}
-    \item 1 $\mu$L PCA
-
-    \item 1 $\mu$L PCD
-
-    \item 1 $\mu$L ATP
-
-    \item 1 $\mu$L DTT
-
-    \item 2.5 $\mu$L DLB
-
-    \item 3.5 $\mu$L Casein
-
-\end{itemize}
-
-\begin{enumerate}
     \item After ten minutes has passed (don't worry if you took a little longer than that), add 14 $\mu$L of DLB and 2 $\mu$L of stepping buffer to the motor+beads solution.
 
     \item Place the slide against an object (like the coverslip box) such that the channel is tilted up, and slowly pipette all the axoneme solution into the channel.
@@ -1149,7 +1167,6 @@ Now that all the necessary ingredients are in the ice bucket, you may begin prep
     \item Do the same with the 20 $\mu$L of motor+bead+DLB+stepping buffer solution. You may have to simultaneously place the edge of a kimwipe against the lower edge of the channel to suck out the previous axoneme solution to fit the new solution.
 
     \item Seal the ends with nail polish.
-
 \end{enumerate}
 
 You can continue using the original motor solution (without beads), DLBC, and bead solution for any other tests you do during the four hours after the dynein was defrosted. However, the stepping buffer is only good for an hour, so it and the axoneme solution must be remade before every test.
@@ -1181,7 +1198,7 @@ You may set the QPD y-axis range as you wish, and turn off either the QPD X or Y
 
     \begin{figure}[h]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Dynein-Stall-Graph_No-Y-Axis.gif}{\includegraphics[width=0.5\linewidth]{images/Dynein-Stall-Graph_No-Y-Axis.png}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Dynein-Stall-Graph_No-Y-Axis.gif}{\includegraphics[width=0.9\linewidth]{images/Dynein-Stall-Graph_No-Y-Axis.png}}
         \caption{Force exerted by the optical trap upon a bead and motor, plotted against time. There are two stall events in this 60 second window. 1) Once the dynein motor reaches its stall force, the QPD output will plateau for a time. This is necessary prerequisite of any stall event. 2) After the plateau, the motor will detach and the bead will snap back to the center of the trap. A clean detachment is also a prerequisite of a stall event. 3) These three detachments display no prior plateau. They are likely due to random fluctuations in the system that provide the disassociation energy for the dynein motor, and do not count as stalls. 4) In this detachment event, the motor does not plateau but rather begins walking backwards to the center of the trap. It also is not considered a proper stall event.}
         \label{fig:Dynein-Stall-Graph_No-Y-Axis}
     \end{figure}
@@ -1190,7 +1207,7 @@ You may set the QPD y-axis range as you wish, and turn off either the QPD X or Y
 
     \begin{figure}[h]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/150px-Gennerich_Stall_Data.jpg}{\includegraphics[width=0.5\linewidth]{images/150px-Gennerich_Stall_Data.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/150px-Gennerich_Stall_Data.jpg}{\includegraphics[width=0.3\linewidth]{images/150px-Gennerich_Stall_Data.jpg}}
         \caption{Histogram of dynein stall forces from Gennerich et al. 2007.}
         \label{fig:150px-Gennerich_Stall_Data}
     \end{figure}
@@ -1235,7 +1252,6 @@ Other References
     \item Other reprints and materials can be found on the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/OTZ\_index.html}{\textbf{Physics 111 Library Site}}
 
     \item \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Cable\_Diagram\_Laser\_TEC.pdf}{\textbf{Cable wiring diagram for SRS Laser \& TEC controller}}
-
 \end{enumerate}
 
 \end{document}
