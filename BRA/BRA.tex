@@ -530,7 +530,7 @@ If you forget where you chose to save the data, don't worry. The \emph{Base File
 
 The \emph{Status Ring} will tell you what the computer is currently doing. The hysteresis cycle that the computer sweeps out is identical to that in the Beta-Ray Scan program. Data will be plotted as they are taken.
 
-\subsubsection{Analysis}
+\subsection{Analysis}
 
 \subsubsection{Beta-ray Spectroscopy}
 
@@ -616,7 +616,7 @@ So now we can deconvolute our data and find our true Beta spectrum Figure 6D. Re
 
 \section{Data Analysis and Fermi-Kurie Plots}
 
-This section use the \href{http://experimentationlab.berkeley.edu/matlabfitting}{\textbf{Matlab scripts}} The Fermi-Kurie plot is simply an algorithm that transforms your spectrum to another view of the energy spectrum. It uses the formula [B10] in the National Bureau of Standards reference. The expectation of this experiment is to experimentally determine $Q_1$ and $Q_2$ , respectively the high and low energy 'X' intercept points. FK (Fermi-Kurie ) transform makes it easier to determine $Q_1$ and $Q_2$ . First you must start with your full data spectrum from channel 0 to 4095 summed up and down data shifted together and then compensated, calibrated, and background-subtracted. Make a Folder in your My Documents folder for your data saving. Save your data ending in \*.DAT. The Excel files need to be opened and re-saved as ``Text delimited with Tab'' files ending in \*.DAT. After you have acquired your data, using the summed up and summed down files save them as the Fileup1.dat and filedn1.dat in excel as ``Text delimited with Tab'' files. Shift them together by the your calculated number, (see \href{http://experimentationlab.berkeley.edu/matlabfitting}{\textbf{Matalab scripts)}} if they look okay then go on with the analysis.
+This section use the \href{http://experimentationlab.berkeley.edu/matlabfitting}{\textbf{Matlab scripts}} The Fermi-Kurie plot is simply an algorithm that transforms your spectrum to another view of the energy spectrum. It uses the formula [B10] in the National Bureau of Standards reference. The expectation of this experiment is to experimentally determine $Q_1$ and $Q_2$ , respectively the high and low energy 'X' intercept points. FK (Fermi-Kurie ) transform makes it easier to determine $Q_1$ and $Q_2$ . First you must start with your full data spectrum from channel 0 to 4095 summed up and down data shifted together and then compensated, calibrated, and background-subtracted. Make a Folder in your My Documents folder for your data saving. Save your data ending in \*.DAT. The Excel files need to be opened and re-saved as ``Text delimited with Tab'' files ending in \*.DAT. After you have acquired your data, using the summed up and summed down files save them as the Fileup1.dat and filedn1.dat in excel as ``Text delimited with Tab'' files. Shift them together by the your calculated number, (see \href{http://experimentationlab.berkeley.edu/matlabfitting}{\textbf{Matlab scripts)}} if they look okay then go on with the analysis.
 
 If they are not perfect with respect to the hysteresis effects, then you will have to adjust the data yourself. You will need to shift each Y value by the different between the Y's at each X. In some instances you will have to average the Y's.
 
