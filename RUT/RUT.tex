@@ -159,10 +159,8 @@ In the experiment you will measure the relative numbers of alpha particles scatt
 \section{Theory}
 
 It is your responsibility to reproduce the necessary derivations for this experiment. Information on Rutherford scattering is usually first presented in Physics 7C. Detailed derivations are given in Physics 137A or Physics 105 courses and their associated texts. The recommended text for this course (Melissinos) is an excellent source for Rutherford Scattering. The bottom line is that you will need to find a relationship between what you measure - number of counts in a given time interval as a function of scattering angle - to the charge on the nucleus. The Rutherford formula and some algebra give
-\[
-Z = K \sqrt{N} \sin^2 \frac{\theta}{2}
-\]
-where $K$ is a constant depending upon the foil thickness, the strength of the source, the angular beam-width $\triangle\theta$ and the counting time. $N$ is the number of counts.
+\[Z = K \sqrt{N} * \sin^2 \frac{\theta}{2}\]
+where $K$ is a constant depending upon the foil thickness, the strength of the source, the angular beam-width $\triangle \theta$ and the counting time. $N$ is the number of counts.
 
 There are some models that are helpful in thinking about this experiment. The Rutherford scattering derivation assumes a single heavy charged spherical target and an α particle. But this experiment uses a gold foil, not single gold nuclei. What difference does this make to your experiment? It may help to think of the possible effects by breaking down the problem into two views. First, imagine the gold foil as an array of immobile gold atoms in space. Now remove the electrons from your picture. The remaining array of fixed bare nuclei is the first order experiment of Rutherford scattering. In this view you can see what it means to have a single scattering event or multiple scattering interactions.
 
@@ -182,7 +180,7 @@ There are other reactions taking place, that we ignore: Cherenkov radiation, bre
 
 The overall plan of the experiment is as follows. Alpha particles from a radioactive source called an alpha gun are made into a beam by two collimating apertures and directed toward a thin gold foil. Particles scattered by gold nuclei are counted by a detector placed at various angles to the beam direction. A histogram of particle counts vs. energy is made at each angle chosen. Even though nuclear scattering is elastic, some energy is always lost because of interactions with extra-nuclear electrons as mentioned above, and these losses are not exactly the same for every alpha particle. Consequently the histogram looks like a broad line rather than a delta function. The area under the line is proportional to the number of counts. With these numbers the angular scattering law mentioned above can be demonstrated, and the nuclear charge calculated.
 
-The source of alpha particles is the isotope 241 of Americium at 130uCi. Its half-life is 458 years. The energies of emitted alpha particles are 5.49 MeV (86\%), 5.44 MeV (13\%), and 5.39 MeV (1.3\%). This also has a 59.6 Kev X-Ray which is used in the Compton experiment (neglecting other very infreguent α energies, all in the range of 5.55 to 4.8 Mev). The Americium is deposited as a thin layer on an aluminum foil located in the gun as shown below in Figure \ref{fig:DiagramOfVacuumChamber}. This deposit randomly flakes off so always wear your gloves.
+The source of alpha particles is the isotope 241 of Americium at 130uCi. Its half-life is 458 years. The energies of emitted alpha particles are 5.49 MeV (86\%), 5.44 MeV (13\%), and 5.39 MeV (1.3\%). This also has a 59.6 KeV X-Ray which is used in the Compton experiment (neglecting other very infrequent α energies, all in the range of 5.55 to 4.8 Mev). The Americium is deposited as a thin layer on an aluminum foil located in the gun as shown below in Figure \ref{fig:DiagramOfVacuumChamber}. This deposit randomly flakes off so always wear your gloves.
 
 \begin{figure}[h]
     \centering
@@ -239,9 +237,9 @@ The experiment is done in a \href{http://experimentationlab.berkeley.edu/sites/d
 See diagram \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/RUT/RUT_Positive-diagram.JPG}{\textbf{here}}
 
 \begin{enumerate}
-    \item Turn the electronics on. There are four switches to check: the master power switch in the lower right side of the Nim Bin, the then the Tran-L-Amp should be inside the Nim Bim rack.
+    \item Turn the electronics on. There are four switches to check: the master power switch in the lower right side of the Nim Bin, the then the Tran-L-Amp should be inside the Nim Bin rack.
 
-    \item DETECTOR and PRE-AMP: The detector is a Silcon PN-junction with about 250 microns of gold on it. It has a bias of 50 volts at 4 microamps with a diameter of 0.75 inches. The detector receives its power through a voltage divider to get 50 volts from the 100 volt power supply in the rack. Take the output from the pre-amp (BNC coaxial cable) and feed it into the scope. Adjust the A TRIGGER LEVEL on the scope and see if you can obtain the positive pulse as shown in Fig. 5. You may have to increase the intensity of the trace, and put a hood on the oscilloscope to shut out room light. This pulse is the amplified signal from the detector. The positive voltage pulses represent the detected alpha particles, and the height of the pulses is proportional to the energy of the particles. Reconnect the output of the pre-amp to the AMP IN of the linear amplifier (PG1).
+    \item DETECTOR and PRE-AMP: The detector is a Silicon PN-junction with about 250 microns of gold on it. It has a bias of 50 volts at 4 microamps with a diameter of 0.75 inches. The detector receives its power through a voltage divider to get 50 volts from the 100 volt power supply in the rack. Take the output from the pre-amp (BNC coaxial cable) and feed it into the scope. Adjust the A TRIGGER LEVEL on the scope and see if you can obtain the positive pulse as shown in Fig. 5. You may have to increase the intensity of the trace, and put a hood on the oscilloscope to shut out room light. This pulse is the amplified signal from the detector. The positive voltage pulses represent the detected alpha particles, and the height of the pulses is proportional to the energy of the particles. Reconnect the output of the pre-amp to the AMP IN of the linear amplifier (PG1).
 
     \item Tran-L-Amp: This unit amplifies and shapes the unipolar pulse (unipolar means it goes up and comes down without crossing zero) from the pre-amp. The polarity knob must be set properly for the input pulses, should it be set to POSITIVE or NEGATIVE? To start with, also set the DIFF to 1.0, INT to 0.05, Coarse Gain to 100, and Vennier Gain to about 5.9. microseconds. For now, set the FINE GAIN at 1.75 (you should optimize the settings of this amplifier before starting taking serious data). Use the BNC cable to look at point PG2 ---the output of the Linear . You should see a signal like Figure \ref{fig:SoftScopeDisplay}. Now use the Soft Scope program to view the signal at PG-2 look for a positive signal as seen below.
 
@@ -259,7 +257,7 @@ See diagram \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/RUT/RUT
 \section{PHA Setup and Operation}
 
 \begin{enumerate}
-    \item There is a LabView Program ICON on the computer desktop called ``PHA-5124''. Read \href{http://experimentationlab.berkeley.edu/PHA-5124Program}{\textbf{PHA-5124}} first. This program automates the data taking. Just double click on the Icon and take data. Before taking genuine data, determine the impact of the setting of the control parameters listed in the program. Make sure you understand each one and choose the proper setting for your measurement. Your data will be saved with a header and data such that it can be imported into Matlab or Excel. The dat will have time and day stamp on all of the files saved.
+    \item There is a LabView Program ICON on the computer desktop called ``PHA-5124''. Read \href{http://experimentationlab.berkeley.edu/PHA-5124Program}{\textbf{PHA-5124}} first. This program automates the data taking. Just double click on the Icon and take data. Before taking genuine data, determine the impact of the setting of the control parameters listed in the program. Make sure you understand each one and choose the proper setting for your measurement. Your data will be saved with a header and data such that it can be imported into Matlab or Excel. The data will have time and day stamp on all of the files saved.
 
 \end{enumerate}
 
