@@ -207,7 +207,7 @@ but due to the properties of the junction (see Ref.~\cite{Cvitanovic}), it has a
     C(V_d) =
     \begin{cases}
         C_0 e^{eV_d/kT} &: V_d > 0 \\
-        \frac{C_0}{\sqrt {1-e^{V_d/dT}}} &: V_d \le 0
+        \frac{C_0}{\sqrt {1-e^{eV_d/kT}}} &: V_d \le 0
     \end{cases}
 \]
 Thus the diode may be modeled as a voltage-dependent capacitor connected in parallel with an ideal diode (a voltage-dependent current-source), giving the equivalent circuit on the right of Figure 1.
@@ -585,19 +585,19 @@ Now let's include the computer. All of the connections to the computer are made 
 Disconnect the SRS DS345 from Vin and make the following connections, in addition to looking at Figure~\ref{fig:ConnectionsForComputerSamplingOfPNJunction}. $V_{os} \cos(\theta)$,
 
 \begin{itemize}
-    \item SRS DS345 ``$ 50 \Omega $; Sine output --------------------------to ``EXT REF''
+    \item SRS DS345 ``$ 50 \Omega $; Sine output ----------------------------to ``EXT REF''
 
-    \item COMPUTER ``AO 0''------------------------------------------to PN JUNCTION ``$V_{in}$''
+    \item COMPUTER ``AO 0''-----------------------------------------to PN JUNCTION ``$V_{in}$''
 
-    \item PN JUNCTION ``Differential $I_{diode}$ out''-------------to ``AI 0''
+    \item PN JUNCTION ``Differential $I_{diode}$ out''---------------to ``AI 0''
 
-    \item STROBE PULSE GENERATOR ``TTL OUT''------------------------to ``GATE''
+    \item STROBE PULSE GENERATOR ``TTL OUT''-------------to ``GATE''
 
-    \item STROBE PULSE GENERATOR ``TTL OUT''----------------------to ``EXT TRIG''
+    \item STROBE PULSE GENERATOR ``TTL OUT''-------------to ``EXT TRIG''
 
-    \item Sine Input switch set to --------------------------------Off
+    \item Sine Input switch set to -----------------------------------Off
 
-    \item set the switch below AUX in/out to ``INT''
+    \item set the switch below AUX in/out ---------------------to ``INT''
 \end{itemize}
 
 \begin{figure}[h]
@@ -658,21 +658,21 @@ Now we're ready to hook up the computer. Make/check the following connections, r
 Connect . . .
 
 \begin{itemize}
-    \item DS345 ``Sine output''-------------- to ``EXT REF''
+    \item DS345 ``Sine output''---------------- to ``EXT REF''
 
-    \item DS345 ``Sync out''--------------- to STROBE PULSE GENERATOR ``SINE INPUT''
+    \item DS345 ``Sync out''------------------- to STROBE PULSE GENERATOR ``SINE INPUT''
 
-    \item ``AO 0''--------------- to Bouncing ball ``DRIVE''
+    \item ``AO 0''--------------------------------- to Bouncing ball ``DRIVE''
 
-    \item Bouncing ball OUT 1-------------- to scope CH1
+    \item Bouncing ball OUT 1--------------- to scope CH1
 
-    \item Bouncing ball OUT 2----------------- to scope CH2 and ``AI 0''
+    \item Bouncing ball OUT 2--------------- to scope CH2 and ``AI 0''
 
-    \item STROBE PULSE GENERATOR ``VC2''--------- to ``GATE''
+    \item STROBE PULSE GENERATOR ``VC2''-------- to ``GATE''
 
-    \item STROBE PULSE GENERATOR ``TTL OUT''--------- to ``EXT TRIG''
+    \item STROBE PULSE GENERATOR ``TTL OUT''- to ``EXT TRIG''
 
-    \item Set the Sine Input Swtich to-------------------------------Off
+    \item Set the Sine Input Swtich to---------------------------Off
 
     \item Set the DS345 to $f$ = 90Hz and full amplitude output.
 
