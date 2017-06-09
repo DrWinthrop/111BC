@@ -38,8 +38,6 @@
 
 \tableofcontents
 
-This is a test.
-
 \section{Optical Pumping Description (OPT)}
 
 This experiment is quantum mechanics in action. When a sample of gaseous atoms is placed in a static magnetic field, the electronic states undergo Zeeman splitting in addition to fine-structure and hyperfine-structure splittings. By applying polarized light at the proper frequency, we can induce transitions from ground state levels to excited state energy levels. The atoms then decay to higher ground state levels until we have ``pumped'' all of them into the same (highest) ground state energy level. At this point we can see an increase in light passing through the sample because no more can be absorbed. However, when we apply a radiofrequency signal of just the right energy to stimulate transitions to a lower level, we see a sudden decrease in the radiation signal as the system is again pumped to the higher level. By determining the frequency of the RF signal we gain information about the atomic energy levels.
@@ -48,7 +46,7 @@ You will need to use your knowledge of fine, hyperfine, and Zeeman splitting to 
 
 Pre-requisites: Physics 137B (may be taken concurrently)
 
-Days alloted for the Experiment: 3\\
+Days allotted for the Experiment: 3\\
 
 This lab will be graded 20\% on theory, 30\% on technique, and 50\% on analysis. For more information, see the \href{\AdvancedLabSyllabus}{\textbf{Advanced Lab Syllabus}}. \\
 
@@ -273,7 +271,7 @@ Taking data for this experiment is more straightforward than for any other lab i
 
 \section{The Effect of Temperature on Signal Strength}
 
-The temperature controller provides a DC signal to copper wires located inside the apparatus next to the rubidium bulb. The electrical current will radiate in the form of heat from the wires due to the friction of electron interaction ($\frac{dQ}{dt} = I^2 R = I^2 \frac{\rho l}{A}$).  The greater the current the hotter the wires will get, as the electrons traveling down the wire will feel more of a frictional force. You will notice that the ``DC microamp'' display of the controller runs both ways. In order to increase the heat you will want to turn the black knob clockwise, shifting the red needle to the left. The greater the displacement of the needle the faster the temperature will rise, you will be able to keep your signal at roughly a constant temperature by adjusting this knob. \\
+The temperature controller provides a DC signal to copper wires located inside the apparatus next to the rubidium bulb. The electrical current will radiate in the form of heat from the wires due to the friction of electron interaction ($\frac{dQ}{dt} = I^2 R = I^2 * \frac{\rho l}{A}$).  The greater the current the hotter the wires will get, as the electrons traveling down the wire will feel more of a frictional force. You will notice that the ``DC microamp'' display of the controller runs both ways. In order to increase the heat you will want to turn the black knob clockwise, shifting the red needle to the left. The greater the displacement of the needle the faster the temperature will rise, you will be able to keep your signal at roughly a constant temperature by adjusting this knob. \\
 
 Heat the sample to 48$^\circ$C, then turn the heater off to reduce noise, but remember that you want the temperature between 38$^\circ$C and 45$^\circ$C for good data (You will explore this temperature dependence in the following section and the noise associated with it). A reading from the temperature sensor is output to an LED display labeled `Oven Temperature'. Make sure the temperature does not go above 55$^\circ$C; if you start to approach this temperature, turn down the thermostat. The heater has an over-temperature shutoff switch in the heater box. If you over heat the box it will need time to rest and you should call one of the staff. \\
 
@@ -289,7 +287,7 @@ Take an experimentalist's approach: once you have identified the optical pumping
 
 \subsection{Using the Function Generator to Find Resonance}
 
-The setup will need to be slightly tuned to find the resonance frequencies of the two isotopes. Initially we will want to induce the Zeeman splitting by driving a DC current through the magnetic coil, power the coils with roughly 1.0 Amp to start with. The strength of the coils will change the spacing between Zeeman levels and will ultimately dictate the resonance frequency needed to induce stimulated emission of the Rb. Next the RF coils shold be set to create the electromagnetic radiation required to induce these emissions. They can be driven using the function output of the DS345. The variation in the opacity of Rubidium gas that occurs when it is optically pumped and then hit by the resonance frequency electromagnetic radiation can be observed through the photodiode. In order to read the signal generated inside the bulb the photo diode's output will need to be connected to the PRE-AMP as the signal of radiation will be very low. It is important to make sure the PRE-AMP settings are as specified before or you will not receive a proper signal. Finally run the output of the PRE-AMP (the amplified photo diode output, see [\href{\PhotodiodeDataSheet}{\textbf{Photodiode Data Sheet}}] for photo detector operation) to Ch.2 (Y) of the oscilloscope and keep Ch.1 (X) connected to the DS 345's modulation output. It will be best to observe the results in the X-Y mode of the oscilloscope. \\
+The setup will need to be slightly tuned to find the resonance frequencies of the two isotopes. Initially we will want to induce the Zeeman splitting by driving a DC current through the magnetic coil, power the coils with roughly 1.0 Amp to start with. The strength of the coils will change the spacing between Zeeman levels and will ultimately dictate the resonance frequency needed to induce stimulated emission of the Rb. Next the RF coils should be set to create the electromagnetic radiation required to induce these emissions. They can be driven using the function output of the DS345. The variation in the opacity of Rubidium gas that occurs when it is optically pumped and then hit by the resonance frequency electromagnetic radiation can be observed through the photodiode. In order to read the signal generated inside the bulb the photo diode's output will need to be connected to the PRE-AMP as the signal of radiation will be very low. It is important to make sure the PRE-AMP settings are as specified before or you will not receive a proper signal. Finally run the output of the PRE-AMP (the amplified photo diode output, see [\href{\PhotodiodeDataSheet}{\textbf{Photodiode Data Sheet}}] for photo detector operation) to Ch.2 (Y) of the oscilloscope and keep Ch.1 (X) connected to the DS 345's modulation output. It will be best to observe the results in the X-Y mode of the oscilloscope. \\
 
 Use the Current knob on the Power Supply to adjust the current and the 10mΩΩ shunt to measure it. Current shunt resistors are low resistance precision resistors used to measure AC or DC electrical currents by the voltage drop those currents create across the resistance. The shunt is a calibrated resistor and is temperature compensated so that its resistance value does not change with a change in temperature (On average the shunt's resistance changes less than 0.002\% (or 20 ppm = parts per million) per °C of temperature change). The voltage that develops across the shunt is 10 mV per Amp of current through the coils. The Digital Volt meter reads the millivolt reading. (Note that there is a button on the front of the Digital Volt meter that changes the connections from front to rear of the unit.) This button should be in the front position. A circuit diagram of the set up can be found \href{\CircuitForMagneticCoils}{\textbf{here}}. Make a note of the current value that the Multimeter and the power supply give you (the Multimeter displays voltage drop and will have to be converted to current using ohms law).
 
@@ -300,7 +298,7 @@ Use the Current knob on the Power Supply to adjust the current and the 10mΩΩ s
     \label{fig:PhotodiodeSignal}
 \end{figure}
 
-On the oscilloscope, with the modulation connected to ch1 and the amplified signal connected to ch2, you should see something like what is shown in Figure \ref{fig:PhotodiodeSignal}. You may see some 60 Hz noise in your signal; adjusting the connections may help minimize the problem. The fault may simply be related to the electronics and not the settings. It is important to recognize the source of this noise if it arises (60 Hz noise is a commonly recurring theme in experimental physics). The function of the modulated signal will ultimately dictate how the oscilloscopes depicts what is happening. Since the frequency modulation serves to sweep a range set by the span of the function generator and output frequencies ranging from OutF $−$ Span/2 to OutF $+$ Span/2 the oscilloscope in XY mode will divide this frequency range amongst roughly 10 divisions along the axis where the Modulation output of the function generator is plugged in starting (with the minimum frequency on the left hand side of the display). Based on this information it should be noted that the span can not be equal to or greater than twice the carrier frequency of the function output [In case the reasoning behind this isn't so obvious see the  FM Modulation section in the DS345 Manual]. This, in combination with understanding what the perpendicular axis represents in the XY plot, is useful for determining what the resonance frequencies of the isotopes are. Center the output of the function generator to a frequency close to one that would correspond to the energy difference between two Zeeman levels (You can calculate what this energy difference would be by using the Breit-Rabi equation you found in the prelab), thus inducing spontaneous emission. The signal should be a sine wave with a 10 Hz modulation. Sweep a range you believe will hold the resonance frequencies for the two isotopes, if you have hit the resonance frequency then the figure should look like Figure \ref{fig:PhotodiodeSignal}. Once you have found the proper range it will be possible to better resolve the image to extract a better estimate of the resonance frequency value. You should ebe able to determine which peak corresponds to which isotope by examining the natural abundance of the two isotopes.
+On the oscilloscope, with the modulation connected to ch1 and the amplified signal connected to ch2, you should see something like what is shown in Figure \ref{fig:PhotodiodeSignal}. You may see some 60 Hz noise in your signal; adjusting the connections may help minimize the problem. The fault may simply be related to the electronics and not the settings. It is important to recognize the source of this noise if it arises (60 Hz noise is a commonly recurring theme in experimental physics). The function of the modulated signal will ultimately dictate how the oscilloscopes depicts what is happening. Since the frequency modulation serves to sweep a range set by the span of the function generator and output frequencies ranging from OutF $−$ Span/2 to OutF $+$ Span/2 the oscilloscope in XY mode will divide this frequency range amongst roughly 10 divisions along the axis where the Modulation output of the function generator is plugged in starting (with the minimum frequency on the left hand side of the display). Based on this information it should be noted that the span can not be equal to or greater than twice the carrier frequency of the function output [In case the reasoning behind this isn't so obvious see the  FM Modulation section in the DS345 Manual]. This, in combination with understanding what the perpendicular axis represents in the XY plot, is useful for determining what the resonance frequencies of the isotopes are. Center the output of the function generator to a frequency close to one that would correspond to the energy difference between two Zeeman levels (You can calculate what this energy difference would be by using the Breit-Rabi equation you found in the prelab), thus inducing spontaneous emission. The signal should be a sine wave with a 10 Hz modulation. Sweep a range you believe will hold the resonance frequencies for the two isotopes, if you have hit the resonance frequency then the figure should look like Figure \ref{fig:PhotodiodeSignal}. Once you have found the proper range it will be possible to better resolve the image to extract a better estimate of the resonance frequency value. You should be able to determine which peak corresponds to which isotope by examining the natural abundance of the two isotopes.
 
 \subsection{Using the Helmholtz Coils to Induce a Modulating Frequency to Find Resonance}
 
@@ -338,7 +336,7 @@ After swapping the modulation output from the function generator with the modula
     \begin{itemize}
         \item Remember to take advantage of the scope's magnification capabilities. The horizontal mode can be set to Mag, with magnifications of $\times$5, $\times$10, and $\times$50. If you observe the relaxation process with a high enough magnification you will see small oscillations in the signal even after you eliminate 60 cycle noise. These are real, physical effects in the relaxation process known as Rabi oscillations. (You should be able to distinguish them from noise by modulating the frequency by small increments, [less than 1 Hz, say]; if they continue to track with the modulation, they're probably real.)
         \item Be mindful of the effects the PRE-AMP's filters and source coupling can have on your signal; adjust them to make sure that your values are real.
-        \item Examine the time constant of the other isotope. ​
+        \item Examine the time constant of the other isotope. 
     \end{itemize}
 
 \end{itemize}
@@ -369,13 +367,13 @@ After swapping the modulation output from the function generator with the modula
 
 \subsubsection{Overview}
 
-The purpose of the experiment is to determine the nuclear spins of the two isotopes $^{85}$Rb and $^{87}$Rb [It is known that both spins are odd half-integral values, like 1/2, 3/2, 5/2, etc.] and to measure $B_E$, the Earth's magnetic field. \\
+The purpose of the experiment is to determine the nuclear spins of the two isotopes $^{85}$Rb and $^{87}$Rb [It is known that both spins are odd half-integral values, like 1/2, 3/2, 5/2, etc.] and to measure $B_{E}$, the Earth's magnetic field. \\
 
 We have two rubidium isotopes in gaseous form inside a bulb placed in a magnetic field and subject to electromagnetic radiation. The Earth's magnetic field also affects the rubidium energy levels and their populations. We set the current in the coil producing the magnetic field, and adjust the radio frequency to produce a resonance condition. The parameters that we either want to change, vary, or to measure are the current, the field produced by the current, and the frequency of the applied RF radiation at resonance. The relevant equations are Eq. \ref{eq:HelmholtzCoilField} and Eq. \ref{eq:BreitRabi}. \\
 
-We have $B_H$ = magnetic field from the Helmholtz coils, $i$ = current in the coils, and $a$ = radius of the coils. The value 0.9 is approximate because the radius $a$ is not exactly the same for each of the $N$ windings and we have no simpler way of incorporating this fact. \\
+We have $B_{H}$ = magnetic field from the Helmholtz coils, $i$ = current in the coils, and $a$ = radius of the coils. The value 0.9 is approximate because the radius $a$ is not exactly the same for each of the $N$ windings and we have no simpler way of incorporating this fact. \\
 
-Next we have $\nu$ = frequency of applied em radiation, $I$ = nuclear spin of Rb, and $B = B_H + B_E$ = the total magnetic field from the Helmholtz coil and the Earth.
+Next we have $\nu$ = frequency of applied em radiation, $I$ = nuclear spin of Rb, and $B = B_{H} + B_{E}$ = the total magnetic field from the Helmholtz coil and the Earth.
 
 \subsubsection{Nuclear Spins}
 
@@ -387,11 +385,11 @@ In both methods there will be some errors, but it does not matter because we kno
 
 \subsubsection{Earth's Magnetic Field}
 
-To determine the value of the earth's magnetic field, we need to find a way to determine $B_H$ exactly, or to eliminate it from the equations. $B_H$ can be eliminated by setting $i = 0$ and using the frequency intercepts and the Breit-Rabi equation. Recall that the equation for $B_H$ as a function of $i$ is not exact. \\
+To determine the value of the earth's magnetic field, we need to find a way to determine $B_{H}$ exactly, or to eliminate it from the equations. $B_{H}$ can be eliminated by setting $i = 0$ and using the frequency intercepts and the Breit-Rabi equation. Recall that the equation for $B_{H}$ as a function of $i$ is not exact. \\
 
 There is yet another way to determine the earth's field. There is a reversing switch on the coil current, to reverse the direction of the field. For the same absolute value of the current, the field must have the same strength, except for possible hysteresis effects. Check for hysteresis by measuring the resonant frequency at a particular current, when the value of current is reached from above (run the current to a max, and then come down to the desired value), and from below (run the current to zero, and then come up to the desired value). \\
 
-So, at a particular current, measure the resonance frequencies for both positive and negative values of current. Add and subtract the two equations, and get exact expressions for $B_E$ and for the more exact parameter for the relation between current and $B_H$.
+So, at a particular current, measure the resonance frequencies for both positive and negative values of current. Add and subtract the two equations, and get exact expressions for $B_{E}$ and for the more exact parameter for the relation between current and $B_{H}$.
 
 \subsubsection{Errors in the Field}
 
@@ -428,7 +426,7 @@ J.R. Taylor, Taylor Book 2ed ``\href{\ErrorAnalysis}{\textbf{An Introduction to 
 L. Lyons, ``\href{\DataAnalysis}{\textbf{A Practical Guide to Data Analysis for Physical Science Students}}'', Cambridge, 1991. \#QC33.L9
 
 \bibitem{Camparo}
-James Camparo, ``The Rubidium Atomic Clock and Basic Research'', Physics Today -- November 2007
+James Camparo, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/Camparo,PhysTodayNov(07)33-Rb\%20Atomic\%20Clock.pdf}{\textbf{The Rubidium Atomic Clock and Basic Research}}'', Physics Today -- November 2007
 
 \bibitem{Carver}
 Carver, Thomas R. ``\href{\OpticalPumpingCarver}{\textbf{Optical Pumping}}''; Science: vol. 141, Aug 16, 1963, pp. 599-608.
