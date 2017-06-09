@@ -54,6 +54,8 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
     \item \textbf{Radiation Safety SOP} View the \href{http://youtu.be/KHxtzF5pZZM}{\textbf{'Radiation Safety Video'}}. After watching the video in the 111-Lab, get a pink Radiation Safety form from a 111-Lab staff person. Fill it out \& sign the form for getting a \textbf{Radiation Ring}.
 
     \item Now complete the Radiation Safety Training \href{http://experimentationlab.berkeley.edu/RadiationSafety}{\textbf{Radiation\_Safety}} \textbf{After the training turn in all the forms to Don Orlando or the teaching staff.}
+    
+    \item \emph{\textbf{Checkpoints are examination points where you must STOP and get a GSI or professor to verify your understanding and/or verify proper experimental setup. You cannot skip the checkpoints, as there is a \href{http://experimentationlab.berkeley.edu/bracheckpoints}{\textbf{sign off sheet}} that must be turned in with your lab report. If you fail to pass the checkpoints, you fail the lab.}} 
 
     \item Complete the \href{http://experimentationlab.berkeley.edu/BRAPreLab}{\textbf{BRA Pre Lab and Evaluation}} sheets. Print, fill it out, then turn in with your report. The Pre-Lab must be printed separately. Discuss the experiment and pre-lab questions with any faculty member or GSI and get it signed off by that person. Turn in the signed pre-lab sheet with your lab report.
 
@@ -241,7 +243,7 @@ A Photomultiplier tube is a photon detector that converts single photons into la
 
 First read and get familiar with the LabView Beta Ray Computer Program  \cite{Siegbahn} which describe the operation of the computerized data-acquisition program that communicates with the DAQ card and controls data taking. The current is supplied to the magnet by a DC power supply in series with a current DVM meter through the relay circuits which can only be set to a particular value with this computer program.
 
-\textbf{Checkpoint: Describe the various components of the LabView program to a GSI and explain what and ho
+\textbf{Checkpoint: Describe the various components of the LabView program to a GSI and explain how data is collected and what will be measured.}
 
 \subsection{Set the signal and discriminator levels}
 
@@ -261,7 +263,9 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 
     \item With the Single Point Program, find a bin that corresponds to a high count on the sample spectrum. This program is a one part of two of the Beta Ray Scan Program Utilities, Beta Ray Computer Program \cite{Krane}. Refer to that section now. Start with the SCA upper-level threshold (UL) set to 10 and the lower-level (LL) set to 0. There should be little or no signal displayed on the SCOPE. Increase the LL until a signal appears on the scope, this is the minimum LL setting you may use (approx. 0.36), the SCA will not operate properly at a lower setting. Now increase LL well past this setting and observe the output on the scope
 
-    \item You should see something similar to Figure \ref{fig:Signal1}. In this case, most of the low voltage noise signals are passing through the discriminator and registering as counts on the computer. Now, by slowly increasing the LL (Lower Level) setting, you should be able to obtain an output similar to Figure \ref{fig:Signal2}. In this picture the lower line and a few of the lower voltage pulses beneath the brightest pulse have been eliminated. This effectively eliminates most of the PMT noise as well as some of the lower momentum pulses..
+    \item You should see something similar to Figure \ref{fig:Signal1}. In this case, most of the low voltage noise signals are passing through the discriminator and registering as counts on the computer. Now, by slowly increasing the LL (Lower Level) setting, you should be able to obtain an output similar to Figure \ref{fig:Signal2}. In this picture the lower line and a few of the lower voltage pulses beneath the brightest pulse have been eliminated. This effectively eliminates most of the PMT noise as well as some of the lower momentum pulses.
+    
+    \textbf{Checkpoint: Call a GSI over and show them the image on the scope. Explain what it is that you're seeing.}
 
     \begin{figure}[h]
         \centering
@@ -287,7 +291,8 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 \begin{enumerate}
     \item Using the Integrate Single Bin program acquire 50 or 60 observations each, at one second per integration, for two bins with greatly different count-rates. Save the observations in a file, and use them to calculate the means and standard deviations for the two channels. How do they compare to counting statistics?
 
-    \item For one bin (one single setting of coil-current), observe the change in fluctuation as you change integration times in a range from 1 to 30 seconds. Based on the lowest count-rate of all channels, for how long should you integrate each channel of your spectrum to achieve a better than 1\% error due to statistical factors?
+    \item For one bin (one single setting of coil-current), observe the change in fluctuation as you change integration times in a range from 1 to 30 seconds. 
+    \textbf{Checkpoint: Based on the lowest count-rate of all channels, for how long should you integrate each channel of your spectrum to achieve a better than 1\% error due to statistical factors?}
 \end{enumerate}
 
 \subsection{Observe the effect of hysteresis}
@@ -296,6 +301,8 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
     \item Re-read the [\href{http://experimentationlab.berkeley.edu/Hysteresis}{\textbf{hysterisis section}}] and the Analysis section of VI. \textbf{Beta Ray Computer Programs} to be sure that you understand how the scan program establishes a hysteresis loop before it begins taking data.
 
     \item Take a quick complete spectrum (Bins 0-2000 by 100; 2000-2500 by 5; 2500-4000 by 100; 2 seconds/bin). Observe the shift in the k-peak between the two directions of current. Using the knowledge that the k-peak always occurs at a given magnetic induction (not at a given current), convince yourself that the observed shift in the spectrum between current up and current down is in the correct direction.
+    
+    \textbf{Checkpoint: Show a GSI this shifting and explain why it demonstrates hysteresis and why it shifts in the direction it does.}
 
 \end{enumerate}
 
@@ -646,6 +653,9 @@ Your combined graphs should be like the following;
 \begin{center}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage022.gif}{\includegraphics[width=0.5\linewidth]{images/BRAimage022.png}}
 \end{center}
+
+\textbf{Checkpoint: Show your combined graph to a GSI.}
+
 Reduce your data by following the numbered steps listed below, but first read Ref. 1 for detailed explanations of how beta-ray spectra are analyzed. Also read about data analysis.
 
 In your Fermi-Kurie analysis, use units of $\eta \equiv \frac {p}{m_e c}$ and $\epsilon \equiv \frac{E}{m_e c^2}$ for momentum and energy respectively.
