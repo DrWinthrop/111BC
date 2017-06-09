@@ -292,7 +292,7 @@ The light passes straight through a dichroic mirror and is focused on the conden
 
 \emph{Fluorescence Laser}
 
-The fluorescence laser's alignment is less critical than the trapping laser's, since at the sample it provides broad illumination rather than a tight focus. This is why we can get away with mounting it on a post rarther than the cage system. The beam exits the laser unit collimated and goes through 8x expansion (a 2x unit and a 4x pair of lenses). It bounces off one steering mirror and through a lens, which (after it reflects off a dichroic mirror) focuses it on the back focal plane of the objective, which collimates it to provide the nice, even illumination we want. The condenser refocuses it, and then it passes through the QPD's dichroic mirror. The illuminator acts as a beam stop.
+The fluorescence laser's alignment is less critical than the trapping laser's, since at the sample it provides broad illumination rather than a tight focus. This is why we can get away with mounting it on a post rather than the cage system. The beam exits the laser unit collimated and goes through 8x expansion (a 2x unit and a 4x pair of lenses). It bounces off one steering mirror and through a lens, which (after it reflects off a dichroic mirror) focuses it on the back focal plane of the objective, which collimates it to provide the nice, even illumination we want. The condenser refocuses it, and then it passes through the QPD's dichroic mirror. The illuminator acts as a beam stop.
 
 \emph{Fluorescent dye emission}
 
@@ -331,7 +331,7 @@ We use a program written in Matlab to control the camera and motorized stage and
 
 Alternatively, you can open Matlab (which should be available on the desktop, if not: use the search bar under the start menu and search for Matlab, we will be using the 32-bit version) and run the program by typing the program name ``OTKBv7'' into the command window (The current folder must be the directory ``C:\textbackslash Matlab Trapping Software2''). \textbf{DO NOT EDIT THE PROGRAM!}
 
-``Once the OTKBv7 GUI has opened, you will see three graphs and several panels of controls:''
+Once the OTKBv7 GUI has opened, you will see three graphs and several panels of controls:
 
 \begin{itemize}
     \item \textbf{Note: The program takes about 15 seconds to open. When the bottom left graphs start to move, then click the camera view button on the bottom right. If you do not wait it will crash.}
@@ -393,7 +393,7 @@ If there are too many beads while you are trapping, try diluting your solution a
 
 \begin{figure}[h]
     \centering
-    \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/images/OTZSlide.jpg}{\includegraphics[width=0.5\linewidth]{images/OTZSlide.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/OTZSlide.jpg}{\includegraphics[width=0.5\linewidth]{images/OTZSlide.jpg}}
     \caption{}
     \label{fig:OTZSlide}
 \end{figure}
@@ -773,13 +773,13 @@ in Volts$^2$ / Hertz. Where $\beta = 3\pi\eta d$ is the drag, $\eta$ is the flui
 
 \emph{Using Matlab}
 
-(\textbf{All Matlab .m files can be found zipped  \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{here}.})
+(\textbf{All Matlab .m files can be found zipped  \href{http://experimentationlab.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{here}.})
 
-Several Matlab programs are provided, including: (\textbf{All Matlab .m files can be found zipped  \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{here}.})
+Several Matlab programs are provided, including: (\textbf{All Matlab .m files can be found zipped  \href{http://experimentationlab.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{here}.})
 
-\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/FitlogcurvevarXV2.m}{\textbf{FitlogcurvevarXV2.m}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/matlab\_fitting/FitlogcurvevarXV2.m}{\textbf{FitlogcurvevarXV2.m}}
 
-\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/FitlogcurvevarYV2.m}{\textbf{FitlogcurvevarYV2.m}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/matlab\_fitting/FitlogcurvevarYV2.m}{\textbf{FitlogcurvevarYV2.m}}
 
 One useful analytic method for this part of the lab minimizes the least-squares distance of every point from the predicted curve, giving two parameters of the equation, alpha and $f_o$. The Lorentzian can be recast as the equation: $\log{S_{\nu\nu}(f)} = \log{\alpha} - \log{(f_o^2+f^2)}$.
 
@@ -815,9 +815,9 @@ This method has a few requirements you should be aware of.
 
 \end{enumerate}
 
-\emph{Using Matlab } (\textbf{All Matlab .m files can be found zipped }\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{\textbf{here.}})
+\emph{Using Matlab } (\textbf{All Matlab .m files can be found zipped }\href{http://experimentationlab.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{\textbf{here.}})
 
-Here we will use the program \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/Equipartition.m}{\textbf{Equipartition.m}} . After inputting the values for sensitivity at each power in both the x and y-directions, as well as the data sets with their corresponding power levels, it will graph and calculate stiffnesses in both X and Y and perform a linear fit. A quick glance at the program in the Matlab editor should be sufficient to understand how it operates.
+Here we will use the program \href{http://experimentationlab.berkeley.edu/sites/default/files/matlab\_fitting/Equipartition.m}{\textbf{Equipartition.m}} . After inputting the values for sensitivity at each power in both the x and y-directions, as well as the data sets with their corresponding power levels, it will graph and calculate stiffnesses in both X and Y and perform a linear fit. A quick glance at the program in the Matlab editor should be sufficient to understand how it operates.
 \begin{verbatim}
     [Kx,Ky] = equipartition(x_sensvspwr, y_sensvspwr, data1, pwr1, data2, pwr2, ...)
 \end{verbatim}
@@ -841,7 +841,7 @@ Here we will use the program \href{http://dev-physicsadv.pantheon.berkeley.edu/s
 
 \section{Part II. Investigating Flagellar Locomotion in E. Coli}
 
-\emph{\href{http://en.wikipedia.org/wiki/Escherichia\_coli}{\textbf{Escherichia coli}}} (abbreviated \emph{E. coli}) is a rod-shaped bacterium about 1 $\mu$ in diameter by 2-4 $\mu$ long. It normally occurs in the intestines of humans and all warm-blooded animals. Most strains, including the one we will study, are harmless to humans. \emph{E. coli} has a bad reputation due to some pathogenic strains that produce dangerous toxins causing diarrhea and some other diseases.
+\emph{\href{http://en.wikipedia.org/wiki/Escherichia\_coli}{\textbf{Escherichia coli}}} (abbreviated \emph{E. coli}) is a rod-shaped bacterium about 1 $\mu$m in diameter by 2-4 $\mu$m long. It normally occurs in the intestines of humans and all warm-blooded animals. Most strains, including the one we will study, are harmless to humans. \emph{E. coli} has a bad reputation due to some pathogenic strains that produce dangerous toxins causing diarrhea and some other diseases.
 
 \begin{figure}[h]
     \centering
@@ -850,7 +850,7 @@ Here we will use the program \href{http://dev-physicsadv.pantheon.berkeley.edu/s
     \label{fig:400px-Ecoli800}
 \end{figure}
 
-\emph{E. coli} is propelled in liquids by a set of four or more helical flagellar filaments that arise from separate positions on the cell surface but intertwine to appear as a single flagellum in forward movement. A cell may lose its flagella under some conditions, and regenerate them under others. Although motile cells on a crowded slide may appear to be moving pretty randomly, a cell actually can modulate its swimmming to follow gradients of chemicals, temperature, or light. It accomplishes this by varying the ratio of two swimming behaviors. The first, called a ``\textbf{run}'', is swimming forward in a steady, mostly straight path. The second behavior, called a ``\textbf{tumble}'', is an erratic motion that causes the next run to be in a new direction, pretty much at random. If the cell senses that the environmental gradient is getting worse as it swims, then a tumbles are more frequent; if it is getting better, tumbles are less frequent. So motility of the cell is facultative and under at least crude directional control.
+\emph{E. coli} is propelled in liquids by a set of four or more helical flagellar filaments that arise from separate positions on the cell surface but intertwine to appear as a single flagellum in forward movement. A cell may lose its flagella under some conditions, and regenerate them under others. Although motile cells on a crowded slide may appear to be moving pretty randomly, a cell actually can modulate its swimming to follow gradients of chemicals, temperature, or light. It accomplishes this by varying the ratio of two swimming behaviors. The first, called a ``\textbf{run}'', is swimming forward in a steady, mostly straight path. The second behavior, called a ``\textbf{tumble}'', is an erratic motion that causes the next run to be in a new direction, pretty much at random. If the cell senses that the environmental gradient is getting worse as it swims, then a tumbles are more frequent; if it is getting better, tumbles are less frequent. So motility of the cell is facultative and under at least crude directional control.
 
 The running and tumbling behaviors are caused by a simple switching of direction of motors. Each flagellar filament is driven by a rotary motor at its base that turns counterclockwise (CCW) in forward swimming, as all the filaments intertwine together. During running, the cell swims steadily forward in a direction parallel to the long axis of the cell with the flagellum pushing. Tumbling occurs when one or more of the flagellar filaments turns clockwise (CW), causing the flagellar filaments to separate and beat erratically. You can see the run and tumble pattern behavior in a series of \href{http://www.rowland.harvard.edu/labs/bacteria/movies/ecoli.php}{\textbf{movies}} depicting fluorescently labelled \emph{E. coli}.
 
@@ -863,7 +863,7 @@ Begin by reading carefully the following two papers on using optical traps to st
 \begin{itemize}
     \item S. Chattopadhyay, R. Moldovan, C. Yeung, X. L. Wu, Swimming efficiency of bacterium Escherichia coli. \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1564254/}{\textbf{Proc. Natl. Acad. Sci. 103(37): 13712-13717 (2006)}}. Uses optical trap similar to ours; good intro to E. coli locomotion and ideas for experiments.
 
-    \item T. L. Min, P. J. Mears, L. M. Chubiz, C. V. Rao, I. Golding, Y. R. Chemla, High-resolution, long-term characterization of bacterial motility using optical tweezers, \href{http://www.nature.com/nmeth/journal/v6/n11/full/nmeth.1380.html}{\textbf{Nature Methods 6, 831-835 (2009)}}. Note that following the reference section of the paper there is a supplemental online methods section, which contains links to a separate pdf of supplemental figures. This studey features excellent experimental work on \emph{E. coli} swimming using a setup that generates two traps with a single laser beam, allowing better control over the orientation of the cell.
+    \item T. L. Min, P. J. Mears, L. M. Chubiz, C. V. Rao, I. Golding, Y. R. Chemla, High-resolution, long-term characterization of bacterial motility using optical tweezers, \href{http://www.nature.com/nmeth/journal/v6/n11/full/nmeth.1380.html}{\textbf{Nature Methods 6, 831-835 (2009)}}. Note that following the reference section of the paper there is a supplemental online methods section, which contains links to a separate pdf of supplemental figures. This study features excellent experimental work on \emph{E. coli} swimming using a setup that generates two traps with a single laser beam, allowing better control over the orientation of the cell.
 \end{itemize}
 
 Consider what kinds of patterns you might expect in your data on trapped cells and what questions you might be able to investigate.
@@ -930,7 +930,7 @@ The bacteria cultures are maintained for us by the Bio 1A course staff in the Mo
 
 \subsubsection{Using Matlab}
 
-(\textbf{All Matlab .m files can be found zipped }\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{\textbf{here.}})
+(\textbf{All Matlab .m files can be found zipped }\href{http://experimentationlab.berkeley.edu/sites/default/files/ZIP\_files/OTZ\_Matlab\_files.zip}{\textbf{here.}})
 
 The text files from the QPD (8sec@1kHz) can be used to generate plots of $V_x$ and $V_y$ vs. time in Matlab.
 
@@ -940,15 +940,15 @@ Sometimes it is interesting to plot $V_x$ vs. $V_y$ to see the shape of the moti
 \end{verbatim}
 Xdata and Ydata represent the variables for the voltage data in the X and Y directions respectively
 
-\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/MovingAve.m}{\textbf{MovingAve.m}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/matlab\_fitting/MovingAve.m}{\textbf{MovingAve.m}}
 
-\href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/matlab\_fitting/AnimatedPlot.m}{\textbf{AnimatedPlot.m}}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/matlab\_fitting/AnimatedPlot.m}{\textbf{AnimatedPlot.m}}
 
 It may also be useful to perform a FFT on the $V_x$ or $V_y$ data to look for patterns in the frequency.
 
 \section{Part III. Investigating Internal Transport in Onion Cells}
 
-To begin, you must first have an onion you provide and a bag to hold it after you cut it open in the lab. First, read through the ``Analyzing Intracellular Movement in Onion Cells'' under the \href{http://dev-physicsadv.pantheon.berkeley.edu/BMC}{\textbf{Brownian Motion in Cells}} page. Our goal in this section is to analyze the force exerted by Myosin to move the granules in the onion cell. These small granules (or vesicles) are about 1 micron in diameter.
+To begin, you must first have an onion you provide and a bag to hold it after you cut it open in the lab. First, read through the ``Analyzing Intracellular Movement in Onion Cells'' under the \href{http://experimentationlab.berkeley.edu/BMC}{\textbf{Brownian Motion in Cells}} page. Our goal in this section is to analyze the force exerted by Myosin to move the granules in the onion cell. These small granules (or vesicles) are about 1 micron in diameter.
 
 \begin{itemize}
     \item NOTE: The saline solution may be in the cupboard above the BMC lab area.
@@ -1005,7 +1005,7 @@ In this experiment, we will be viewing the movement of vesicles within the cytop
     \label{fig:500px-BMC_OnionStucture}
 \end{figure}
 
-In plant cells, vesicles are transported along actin fibers by myosin motor molecules. An actin filament is composed of two intertwined actin chains, about 7 nm in diameter. An actin fiber is considered structurally polar, having a (+) end and a ($-$) end, and most myosin motors move only towards the (+) end of the actin fiber. In order to reverse the direction of a vesicle's motion, the vesicle must grab on to another actin fiber oriented in the opposite direction. There are at least eighteen described classes of myosin, of which three, myosin VIII, XI, and XII are found in plant cells. Some myosin motors are processive, meaning that they remain bound to an actin fiber as they move step-by-step along it (analagous to this \href{http://valelab.ucsf.edu/images/movies/mov-procmotconvkinrev5.mov}{\textbf{movie animation of kinesin}}. Other myosins are non-processive, releasing from the actin fiber after each step. Myosin II found in muscle cells is non-processive, as illustrated in this \href{http://www.banyantree.org/jsale/actinmyosin/index.html}{\textbf{video animation}}. In the muscle functional unit, there are many myosin motors acting together, so there are always some attached to the actin fiber. The myosin XI responsible for transport of plant cell vesicles is the fastest myosin known and is processive. It is not certain how many myosin molecules are attached to the surface of a vesicle or how many of those are active at one time in pulling the vesicle along an actin fiber.
+In plant cells, vesicles are transported along actin fibers by myosin motor molecules. An actin filament is composed of two intertwined actin chains, about 7 nm in diameter. An actin fiber is considered structurally polar, having a (+) end and a ($-$) end, and most myosin motors move only towards the (+) end of the actin fiber. In order to reverse the direction of a vesicle's motion, the vesicle must grab on to another actin fiber oriented in the opposite direction. There are at least eighteen described classes of myosin, of which three, myosin VIII, XI, and XII are found in plant cells. Some myosin motors are processive, meaning that they remain bound to an actin fiber as they move step-by-step along it (analagous to this \href{https://vimeo.com/157524451}{\textbf{movie animation of kinesin}}. Other myosins are non-processive, releasing from the actin fiber after each step. Myosin II found in muscle cells is non-processive, as illustrated in this \href{http://www.banyantree.org/jsale/actinmyosin/index.html}{\textbf{video animation}}. In the muscle functional unit, there are many myosin motors acting together, so there are always some attached to the actin fiber. The myosin XI responsible for transport of plant cell vesicles is the fastest myosin known and is processive. It is not certain how many myosin molecules are attached to the surface of a vesicle or how many of those are active at one time in pulling the vesicle along an actin fiber.
 
 In some plant cells and algal cells, a large-scale streaming motion of the cytoplasm is observed, logically called \href{http://en.wikipedia.org/wiki/Cytoplasmic\_streaming}{\textbf{cytoplasmic streaming}}. This bulk flow is believed to be caused by myosin motors pulling the extensive endoplasmic reticulum along actin fibers lining the cell membrane. Many other vesicles are then dragged along with the endoplasmic reticulum. \href{http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mcb.figgrp.5242}{\textbf{Lodish and Berk, et al.}} provide a detailed explanation of this process and a video of cytoplasmic streaming in the pond weed Elodea can be viewed \href{http://www.microscopy-uk.org.uk/mag/imgnov00/cycloa3i.avi}{\textbf{here}}.
 

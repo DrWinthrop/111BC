@@ -72,11 +72,11 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \begin{enumerate}
     \item \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/BRA/04-Table\_for\_Analysis\_of\_Beta\_Spectra.pdf}{\textbf{Tables for the Analysis of Beta Spectra}}; U.S. National Bureau of Standards*
 
-    \item Y. Yoshizawa, ``\href{http://dx.doi.org/10.1016/0029-5582(58)90011-7}{\textbf{Beta and Gamma Ray Spectroscopy of Cs137}}'',* Nucl. Phys. \textbf{5}, 122 (1958).
+    \item Y. Yoshizawa, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/BRA/Yoshizawa_beta&gammarayspecofCs137.pdf}{\textbf{Beta and Gamma Ray Spectroscopy of Cs137}}'',* Nucl. Phys. \textbf{5}, 122 (1958).
 
     \item H. A. Bethe, `` \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/BRA/05-Elementary\_Nuclear\_Theory.pdf}{\textbf{Elementary Nuclear Theory}}''.
 
-    \item W. C. Haxton, B. R. Holstein, ``\href{http://scitation.aip.org/content/aapt/journal/ajp/68/1/10.1119/1.19368}{\textbf{Neutrino Physics}}'', Am. Jour. Phys. \textbf{68}, 15 (2000).
+    \item W. C. Haxton, B. R. Holstein, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/BRA/BRA(state\%20of\%20the\%20science\%20and\%20art\%20of\%20beta\%20decay_OCR\%20.pdf}{\textbf{Neutrino Physics}}'', Am. Jour. Phys. \textbf{68}, 15 (2000).
 
     \item R. D. Evans, `` \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/R.D.Evans\%20Atomic\%20Nucleus/The\%20Atomic\%20Nucleus\%20Evans\%20full\%20text.pdf}{\textbf{The Atomic Nucleus}}'', McGraw Hill (1972).
 
@@ -250,7 +250,7 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 \begin{enumerate}
     \item Familiarize yourself with the relationship between the PMT voltage with a maximum of -1100 VDC, amplifier gain, and pulse height. Consult the block diagram of the apparatus (\href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage010.gif}{\textbf{Beta Ray Apparatus}}). The signal path is from the PMT to the current PREAMP (SR570 - Bias Voltage : pos; Filter Type : none; Input Offset : pos, 2 x 100 nA; Filter Freq : not used; Sensitivity : 2 x 1 microA/V) to AMP to a 2 second [DELAY-LINE BOX to SCOPE (when the scope is triggering internally, the delay-line has no effect, but you will need it later to delay the main pulse)], and the Tran-L-Amp Amplifier settings: DIFF DL .8, INT 2, GAIN 16. Referring to a sample spectrum, set the coil current (use the bin setting on the Integrate Single Point Program) to a bin corresponding to a high count rate. Observing the signal on the oscilloscope, gradually turn up the high voltage (negative polarity) on the PMT until an operating voltage of -800 to -1100 V (maximum). You should see many pulses of various heights. Vary the PMT voltage (always between -800 and -1100V max) and the gains of the preamp and the amplifier, and observe the effects on the signal and noise. Change the coil current corresponding to various points on the spectrum and observe how the intensity and height of the pulses change. Note what you see. Remember that you are trying to maximize the signal to noise in the pulses. Set the coil current to approximately 0 amps (bin 0) and observe the signal. Theoretically, there should be no signal at zero field. What do you see, and what can you conclude about the nature of the noise in this experiment? What is the amplitude of the signal at each stage of the processing path?
 
-    You will need to use the ``Signal Point Scan'' for this part before seeing any signals from the appartatus. Refer to section setup of the \hyperref[subsec:IntegrateSinglePointProgram]{Signal Point Scan}
+    You will need to use the ``Signal Point Scan'' for this part before seeing any signals from the apparatus. Refer to section setup of the \hyperref[subsec:IntegrateSinglePointProgram]{Signal Point Scan}
 
     \item Familiarize yourself with the operation of the SCA: The normal operation of a PMT will result in small-amplitude noise pulses. We want to use the discriminator on the SCA to reduce or eliminate the noise, permitting the signal pulses which are larger in amplitude to be passed and recorded. You can adjust the LLD Lower Level Discriminator or Baseline control to remove the noise line below the pulses. Connect the Tran-L-Amp linear amplifier to the SCA and the rest of the circuit elements as shown in Figure \ref{fig:DiagramOfBetaRayApparatus}, apparatus \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage010.gif}{\textbf{Beta Ray Apparatus}}. Switch the SCOPE to EXT trigger. Now the scope is only displaying pulses that pass the SCA, and the 2 microsecond (-DELAY-LINE compensates for the SCA's signal transit time.
 
@@ -298,7 +298,7 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 \subsection{Observe the effect of hysteresis}
 
 \begin{enumerate}
-    \item Re-read the [\href{http://experimentationlab.berkeley.edu/Hysteresis}{\textbf{hysterisis section}}] and the Analysis section of VI. \textbf{Beta Ray Computer Programs} to be sure that you understand how the scan program establishes a hysteresis loop before it begins taking data.
+    \item Re-read the [\href{http://experimentationlab.berkeley.edu/Hysteresis}{\textbf{hysteresis section}}] and the Analysis section of VI. \textbf{Beta Ray Computer Programs} to be sure that you understand how the scan program establishes a hysteresis loop before it begins taking data.
 
     \item Take a quick complete spectrum (Bins 0-2000 by 100; 2000-2500 by 5; 2500-4000 by 100; 2 seconds/bin). Observe the shift in the k-peak between the two directions of current. Using the knowledge that the k-peak always occurs at a given magnetic induction (not at a given current), convince yourself that the observed shift in the spectrum between current up and current down is in the correct direction.
     
@@ -704,7 +704,7 @@ Copyright 2015 The Regents of the University of California. All rights reserved.
 
     \bibitem{PhotoMultiplierTubeHandbook} \href{http://physics111.lib.berkeley.edu/Physics111/Equipment\_Manuals/RCA\_PMT.pdf}{\textbf{Photo-multiplier tube Handbook}}* (Note this is a separate reprint booklet)
 
-    \bibitem{Feister} I. Feister, ``\href{http://prola.aps.org/abstract/PR/v78/i4/p375\_1}{\textbf{Numerical Evaluation of the Fermi Beta-Distribution Function}}'', Physical Review 78, 4 (1950) *\*.
+    \bibitem{Feister} I. Feister, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/BRA/Feister_EvaluationoftheFermiBeta-DistributionFunction.pdf}{\textbf{Numerical Evaluation of the Fermi Beta-Distribution Function}}'', Physical Review 78, 4 (1950) *\*.
 
     \bibitem{Elton} L.R.B. Elton, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/BRA/Elton\_Nuclear\%20Theory\%20Ch.\%209\%20Beta\%20Decay.pdf}{\textbf{Chapter 9: Beta Ray Theory}}'', Introductory Nuclear Theory, 2nd ed.; 1966, W.B. Saunders Company,PA
 \end{thebibliography}
