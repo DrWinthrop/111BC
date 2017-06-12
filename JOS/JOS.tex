@@ -332,8 +332,8 @@ Connect the probe to the electronics box on the side of the power meter, here yo
 
 You should see a straight line on the scope with the preamp turned off. You may have to play with a number of the above settings; every point is different. The Low-Frequency oscillator is set to 60 Hz to match any 60 cycle pick up, but the wall current may vary (20 mHz, so you may need to adjust the frequency slightly to get a signal on the scope that doesn't oscillate. By using the slope of the $I$-$V$ line, calculate the room-temperature resistance of the junction. It should be the same as what you measured on the VOM.
 
-\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:
-Will matching the Low-Frequency oscillator to the wall current frequency affect the conclusions you will be drawing? What systematic error could occur?}
+\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}\\
+Will matching the Low-Frequency oscillator to the wall current frequency affect the conclusions you will be drawing? What systematic error could occur?
 
 \subsection{Before you Insert the probe into the cryostat}
 
@@ -348,7 +348,7 @@ Carefully insert the probe into the cryostat, turning it back and forth as you g
 Every day, before you go home, you should remove the probe from the cryostat; if the probe is left unattended overnight, the neck could freeze closed and there could be an explosion. You should make sure you close the cryostat valve after the probe is removed to avoid wasting LHe. Whenever the probe is taken out of the liquid helium, it should be dried. There is a heat gun on the lab table; use it to remove any condensation and heat the entire probe, including the point assembly, until it is warm to the touch (not hot: you don't want to melt anything). Even if you are leaving the probe overnight, it is important to dry it, as you some condensed water may not evaporate.
 
 
-This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:
+\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}\\
 Explain the steps and why you must follow these instructions before inserting the probe into the cryostat, when lowering the probe down the cryostat, and after the probe has been removed.
 
 \subsection{Observe the DC effect}
@@ -363,6 +363,9 @@ Explain the steps and why you must follow these instructions before inserting th
 Connect the probe outputs to the electronics and observe the $I$-$V$ curve displayed on the scope. Gently turn the screw to obtain the DC effect. You may very quickly see an $I$-$V$ curve that looks like the DC effect (see Figure \ref{fig:IVCurveOfDCEffect}). Test whether this is a true DC Josephson effect or a supershort by bringing the large permanent magnet near the cryostat. If you have the DC effect, you should see fluctuations in the maximum current that flows without a voltage drop as you move the magnet around. If you do not observe these fluctuations, keep adjusting. You should find that the DC Effect is not too difficult to get, although it takes patience. If you don't get a good effect, try subtly raising and lowering the point with the screw; each time you do this, you make the contact at a slightly different location (were talking Angstroms here) with potentially different properties at the same time, with each contact, some of the oxide layer is removed (which may or may not be a good thing).
 
 First you should use the analog scope to see all of your data DC and AC effects, then use the Josephson junction VI accessible from the desktop to acquire more data (This is a LabView program). You will have to switch your leads from the oscilloscope to the DAQ on your work station table. Once you open your JSO LabView program  on the top tab you can select the input ports where you will now connect your leads. You should be saving your data collected.
+
+\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}\\
+Did you observe decent results of DC effect on the scope? What changes did you made in order to improve your observation?
 
 \subsection{Observe the AC effect}
 
@@ -392,6 +395,8 @@ First you should use the analog scope to see all of your data DC and AC effects.
     \label{fig:IVCurveOfACEffect}
 \end{figure}
 
+
+\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}\\
 \subsection{Calibration}
 
 As you might imagine, the accuracy of your results depends critically on the calibration of the voltage axis of the $I$-$V$ curve. One method of calibration would be to measure the gain of each individual piece of the signal chain (junction to pre-amp to scope) and multiply them together. But that becomes impractical as the number of signal chain elements grows, and is more prone to error than the alternative. So, although the signal chain in this experiment is not too complex, you are going to use the technique of measuring end-to-end gain. Replace the Josephson junction, two wire cables, with a voltage box about 517 µV. Measure the box voltage with the DVM and hook it up to replace the point contact voltage. Measure the limits of the excursion of the trace on the scope and use this to calibrate your equipment setup. See pictures below.
