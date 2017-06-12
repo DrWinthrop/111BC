@@ -202,7 +202,8 @@ The gamma rays in this experiment are detected with a thallium-doped sodium iodi
 
 The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''}, using the National Instruments NI-5124 Digitizer Card. National Instruments donated this card to us for the Physics 111-Lab. You first check the signals out of the pre-amplifier with the \textbf{Soft Scope program} using the NI-5124 Card. Pulses of varying amplitudes between 0 and 8 volts are sampled into 1024 increments (or what you select in program control Tab). When a pulse representing a detected gamma ray is received, the PHA-5124 determines its amplitude and puts it into the correct channel (bin). Because the amplitude expressed as a voltage is proportional to the energy of the incoming gamma ray (a fact you should explain in your report), the accumulated counts form a distribution called an energy spectrum on the screen - the number of gamma rays that have been detected in each energy bin.
 
-\textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off: What is the role of the variable high voltage and how does it affect the output amplitude on the oscilloscope?}
+\emph{\textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
+What is the role of the variable high voltage and how does it affect the output amplitude on the oscilloscope?
 
 \section{Procedure}
 
@@ -252,8 +253,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
             \label{fig:350px-CO-60_Spectrum}
         \end{figure}
 
-    \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:  }}
-               For a given radioactive sample (in a bottle) what are  some things that can produce a change in coherent time producing a spread of the peak with a finite width in the Pulse Height analyzer? (You should be thinking about what's going on in the bottle)
+    \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}} \\
+    For a given radioactive sample (in a bottle) what are  some things that can produce a change in coherent time producing a spread of the peak with a finite width in the Pulse Height analyzer? (You should be thinking about what's going on in the bottle)
 
         \item The other adjustments you should experiment with are the LLD on the Control Tab in the program: this sets the Lower Level Discriminator so that the PHA will ignore pulses with amplitudes below the setting. This way the system doesn't spend its time with unwanted pulses like low-level noise. To set it properly look at the Soft Scope program display. Setting the LLD too low will allow the program to trigger on noise, and overload the program. Set the LLD at a reasonable level that is above the noise level, but below the level of the physical processes that you are interested in. You may find that you still have some noise causing your spectrum to look distorted and this could be due to a couple of factors. Try thinking about the PMT and what are some of the variables that can contribute to non-linearity in it (this should hint you on what should be adjusted).
 
@@ -305,7 +306,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
 
     \item Also look at the effects of varying the repetition rate of the Pulse Gen: do the counts under the peak increase as you expect? As you increase the repetition rate, you may begin to see a phenomenon called pileup. This is when a pulse comes along before the electronics have finished processing the previous pulse. The lesson to learn here is that if you place the source too close to the NaI detector, your spectrum will be skewed due to pile up.
     
-    \textbf{This is a checkpoint and a great time to stop and think about the devices you have learned in this experiment. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off: Show your knowledge of several parameters you have set. How do their affect the output data? For example, what is the role of the fine gain, and coarse gain and how do them affect the shape and position of the PHA plot (Counts vs. Energy)?}
+    \emph{\textbf{This is a checkpoint and a great time to stop and think about the devices you have learned in this experiment. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
+    Show your knowledge of several parameters you have set. How do their affect the output data? For example, what is the role of the fine gain, and coarse gain and how do them affect the shape and position of the PHA plot (Counts vs. Energy)?
 
     \item Choose a high voltage somewhere near the middle of the range and an amp gain setting in the linear region such that you are utilizing the full scale of the PHA; that is, the highest energy gamma ray (which comes not from the $^{137}$Cs but from the $^{22}$Na source) should appear near the end of your spectrum, not in the middle. Then obtain a spectrum for each source listed above (2-5 minute runs each).
     \begin{enumerate}
@@ -313,7 +315,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
 
         \item Also compute the 180$^\circ$ back-scatter and Compton edge energies of the gamma ray(s) for each source, and compare to the observed spectra. See the book by Knoll for a description of what the plot should look like.
         
-        \textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off: How can you attenuate the signals of back-scatter and Compton edge gamma ray(s)? Describe how you recognize them from the graph.}
+        \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
+        How can you attenuate the signals of back-scatter and Compton edge gamma ray(s)? Describe how you recognize them from the graph.
 
         \item Use the computer connected to the apparatus to obtain the data and plots of all of your spectra. There is a built-in timer in the equipment. Once your spectra are available on the computer, you may use Matlab to perform background subtraction and peak-fitting.
 
@@ -325,7 +328,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
 
     \item Compute the absolute intensity of the $^{137}$Cs source using the published values of the NaI efficiency. The NaI crystal must not be near or enclosed by lead shielding for this measurement. Subtract the background. To reduce background, support the source with a low-mass stand. Use $I_\textrm{measured} = I_\textrm{absolute} (n(E)\frac{\Delta\Omega}{4\pi})$ where $n(E)$ is the intrinsic efficiency and the quantity in brackets (the product of $n$ and the solid angle) is given in the NaI Crystal Information for a distance of $d$ = 30 cm.
     
-    \textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off: Interpret the aforementioned intensity formula and how does the distance d as well as the size of detector matter when you take measurement?}
+    \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
+    Interpret the aforementioned intensity formula and how does the distance \emph{d} as well as the size of detector matter when you take measurement?
 
     \begin{figure}[h]
         \centering
