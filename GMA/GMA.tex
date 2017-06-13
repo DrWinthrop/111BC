@@ -188,11 +188,11 @@ The measurement of energy levels of atomic, molecular, and nuclear systems const
 \section{Apparatus}
 
 \begin{enumerate}
-    \item PMT with Ortec 266 Base
+    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/images/905-4.pdf}{\textbf{PMT}} with \href{http://experimentationlab.berkeley.edu/sites/default/files/images/266.pdf}{\textbf{Ortec 266 Base}}
 
     \item Stanford Research Systems Model PS325 High Voltage Power Supply
 
-    \item Canberra Amplifier Model 816
+    \item \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/GMA/GMA\%20OCR\%20Canberra\%20spectroscopy\%20amp\%20816.pdf}{\textbf{Canberra Amplifier Model 816}}
 
     \item Stanford Research Systems Model DG645 Digital Delay Generator
 
@@ -247,7 +247,7 @@ What is the role of the variable high voltage and how does it affect the output 
         \label{fig:250px-HV-SRS-PSU}
     \end{figure}
 
-    Place the $^{137}$Cs source into the Circular Lead Pig \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Pig_3536-Lg.jpg}{\textbf{See picture Figure~\ref{fig:LeadPig} above.}} 20 to 25 cm away from the detector with lead colliminator in front of the source. Make sure that the collimator assembly is in place as shown \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Layout_3537-Lg.jpg}{\textbf{See picture Figure~\ref{fig:PigCollimator}}} \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Layout_3538-Lg.jpg}{\textbf{\& Figure~\ref{fig:CollimatorMovedIn} above.}} Look at the output of the PMT on a fast scope (Tektronix type), then look at it with the ``Soft Scope program using the Digitizer NI-5124. To match impedance, use a 50-ohm terminator on a BNC ''tee" going into the scope. Look for a faint signal about 0.5 $\mu$sec wide and -50 mV high (see Figure~\ref{fig:250px-GMAimage004}). You'll have to play with the triggering to get this, and you'll probably have to turn up the trace intensity and shield the screen from glare. Each trace of this signal is the electron pulse coming from the PMT that represents a gamma ray striking the detector. The signal is blurred because of many negative pulses with different amplitudes coming from the PMT.
+    Place the $^{137}$Cs source into the Circular Lead Pig \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Pig_3536-Lg.jpg}{\textbf{See picture Figure~\ref{fig:LeadPig} above.}} 20 to 25 cm away from the detector with lead colliminator in front of the source. Make sure that the collimator assembly is in place as shown \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Layout_3537-Lg.jpg}{\textbf{See picture Figure~\ref{fig:PigCollimator}}} \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Layout_3538-Lg.jpg}{\textbf{\& Figure~\ref{fig:CollimatorMovedIn} above.}} Look at the output of the PMT on a fast scope (Tektronix type), then look at it with the ``Soft Scope program using the Digitizer NI-5124. To match impedance, use a 50-ohm terminator on a BNC ''tee" going into the scope. Look for a faint signal about 0.5 $\mu$sec wide and -50 mV high (see Figure~\ref{fig:250px-GMAimage003}). You'll have to play with the triggering to get this, and you'll probably have to turn up the trace intensity and shield the screen from glare. Each trace of this signal is the electron pulse coming from the PMT that represents a gamma ray striking the detector. The signal is blurred because of many negative pulses with different amplitudes coming from the PMT.
 
     \begin{figure}[h]
         \centering
@@ -256,7 +256,7 @@ What is the role of the variable high voltage and how does it affect the output 
         \label{fig:250px-GMAimage003}
     \end{figure}
 
-    \item The CANBERRA AMPLIFIER (amp), \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Equip_3518-Lg.jpg}{\textbf{located in the equipment rack Figure 5 above}}, amplifies the small pulses from the PMT to a sufficiently large one necessary for the PHA-5124 program. Feed the output of the PMT into the amp (you don't need a terminator here). Set the INPUT switch to NEG (since the PMT output are negative pulses), and the MODE switch to UNI (since the pulses are unipolar - that is, they are entirely negative as opposed to a signal that has positive as well as negative parts). Look at the output of the amp (without a terminator); you should see a positive pulse about 1 $\mu$sec wide followed by a negative pulse that is of no interest (see Figure 3). Watch the effects of varying the gain controls, it's recommended to start with FINE GAIN at 2.5 and COARSE GAIN AT 4. Set the gain to produce a pulse that does not have a flat top.
+    \item The CANBERRA AMPLIFIER (amp), \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_Equip_3518-Lg.jpg}{\textbf{located in the equipment rack Figure~\ref{fig:Equipment} above}}, amplifies the small pulses from the PMT to a sufficiently large one necessary for the PHA-5124 program. Feed the output of the PMT into the amp (you don't need a terminator here). Set the INPUT switch to NEG (since the PMT output are negative pulses), and the MODE switch to UNI (since the pulses are unipolar - that is, they are entirely negative as opposed to a signal that has positive as well as negative parts). Look at the output of the amp (without a terminator); you should see a positive pulse about 1 $\mu$sec wide followed by a negative pulse that is of no interest (see Figure~\ref{fig:250px-GMAimage004}). Watch the effects of varying the gain controls, it's recommended to start with FINE GAIN at 2.5 and COARSE GAIN AT 4. Set the gain to produce a pulse that does not have a flat top.
 
     \begin{figure}[h]
         \centering
@@ -274,7 +274,7 @@ What is the role of the variable high voltage and how does it affect the output 
 \begin{enumerate}
     \item The \href{http://experimentationlab.berkeley.edu/PHA-5124Program}{\textbf{PHA-5124}} is explained here. For this experiment we use the National Instruments Digitizer Card NI-5124.
     \begin{enumerate}
-        \item To start, plug the output of the amp into the Digitizer channel 0 located at the rear of the computer (The Digitizer cable should be labeled and connected to a T). Using a \textbf{$^{60}$Co source} you should see a spectrum similar to Figure 4.
+        \item To start, plug the output of the amp into the Digitizer channel 0 located at the rear of the computer (The Digitizer cable should be labeled and connected to a T). Using a \textbf{$^{60}$Co source} you should see a spectrum similar to Figure~\ref{fig:350px-CO-60_Spectrum}.
 
         \begin{figure}[h]
             \centering
@@ -288,13 +288,13 @@ What is the role of the variable high voltage and how does it affect the output 
 
         \item The other adjustments you should experiment with are the LLD on the Control Tab in the program: this sets the Lower Level Discriminator so that the PHA will ignore pulses with amplitudes below the setting. This way the system doesn't spend its time with unwanted pulses like low-level noise. To set it properly look at the Soft Scope program display. Setting the LLD too low will allow the program to trigger on noise, and overload the program. Set the LLD at a reasonable level that is above the noise level, but below the level of the physical processes that you are interested in. You may find that you still have some noise causing your spectrum to look distorted and this could be due to a couple of factors. Try thinking about the PMT and what are some of the variables that can contribute to non-linearity in it (this should hint you on what should be adjusted).
 
-        \item After setting the LLD, STOP the unit from acquiring, change your source back to $^{137}$Cs and ACQUIRE again. You should see one peak start to form in the middle of the display, along with a ``mess'' forming to its left. The peak corresponds to the 0.662 MeV $^{137}$Cs gamma rays; what are the peaks to its left? It may be useful to try thinking about what determines the height of the peaks on the graph. Press STOP to stop the accumulation of counts when the peak is reasonably well formed. See Figure 3.
+        \item After setting the LLD, STOP the unit from acquiring, change your source back to $^{137}$Cs and ACQUIRE again. You should see one peak start to form in the middle of the display, along with a ``mess'' forming to its left. The peak corresponds to the 0.662 MeV $^{137}$Cs gamma rays; what are the peaks to its left? It may be useful to try thinking about what determines the height of the peaks on the graph. Press STOP to stop the accumulation of counts when the peak is reasonably well formed. See Figure~\ref{fig:250px-GMAimage004}.
 
         \item After collecting a data set and saving it to a file you can use a computer with Matlab or some other program to display the channel number and counts of any channel that you want to see. In this experiment we are only interested in channel 0.
 
     \end{enumerate}
 
-    \item \textbf{Remember The Maximum Voltage is +800 VDC.} Measure the relative gain of the photomultiplier tube as a function of high voltage using the photopeak of the Cs source. The purpose of this exercise is to gain familiarity with the gain of a photomultiplier. It is not an examination of the non-linearity of the gain curve. To do this, vary the high voltage to the PMT using the knobs on the 3 KV High Voltage power supply only, and watch to see where the Cs peak moves. Because the peak channel number is equivalent to some pulse height, by recording the peak channel number at each voltage we can determine the relative gain as a function of the PMT high voltage. Start at around +400 volts, and stop at about +800 volts (change the high voltage by 10 volts at a time) to determine the relation between gain and high voltage. \textbf{Do not exceed 800V.} Plot the results. Explain the plot, particularly the behavior at the higher (more positive) voltage settings. Then, make another plot to show that the gain is related to the applied high voltage as a power law (see the section on Photomultiplier Tube in Knoll).
+    \item \textbf{Remember The Maximum Voltage is +800 VDC.} Measure the relative gain of the photomultiplier tube as a function of high voltage using the photopeak of the Cs source. The purpose of this exercise is to gain familiarity with the gain of a photomultiplier. It is not an examination of the non-linearity of the gain curve. To do this, vary the high voltage to the PMT using the knobs on the 3 KV High Voltage power supply only, and watch to see where the Cs peak moves. Because the peak channel number is equivalent to some pulse height, by recording the peak channel number at each voltage we can determine the relative gain as a function of the PMT high voltage. Start at around +400 volts, and stop at about +800 volts (change the high voltage by 10 volts at a time) to determine the relation between gain and high voltage. \textbf{Do not exceed 800V.} Plot the results. Explain the plot, particularly the behavior at the higher (more positive) voltage settings. Then, make another plot to show that the gain is related to the applied high voltage as a power law (see the section on Photomultiplier Tube in Knoll \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/GMA/01-Radiation\_Detection\_and\_Measurement\_CH\_09.pdf}{\textbf{Ch.9}}).
 
     \item To examine the capabilities and linearity of the amplifier, use the SRS DG645 Digital Delay Pulse Generator (PG) to simulate the detected pulses that you saw coming from the PMT in step 1 (instructions on how to do this are below). To make the PG's pulses as small as those from the PMT, connect the Pulse Gen to the \emph{dB} attenuator (a small box with a row of toggle switches that selects the attenuation). Use a BNC tee to send the attenuated output of the Pulse Gen to the input of the amplifier as well as to the scope - once again you need a BNC tee and 50 ohm terminator on the scope-input to match impedance (Make sure you are not using the PMT OUTPUT signal but rather Digital Delay Generator) . Set the Pulse Gen such that the pulse width is approximately the same as that of the pulses from the PMT (This will be explained below). To get you started with the DG645, set it up as follows:
     \begin{enumerate}
@@ -354,12 +354,12 @@ What is the role of the variable high voltage and how does it affect the output 
 
     \end{enumerate}
 
-    \item Verify the inverse square law for radiation using one of the radioactive sources on the cart with the PMT. *\textbf{Remember}* putting the source closer than 25 cm to the detector will skew your spectrum. For a given detector with a fixed size and gain, how does the rate of data collection vary with distance from the source?
+    \item Verify the inverse square law for radiation using one of the radioactive sources on the cart with the PMT \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMA_PMT_3519-Lg.jpg}{\textbf{See picture Figure~\ref{fig:PMT} above}}. *\textbf{Remember}* putting the source closer than 25 cm to the detector will skew your spectrum. For a given detector with a fixed size and gain, how does the rate of data collection vary with distance from the source?
 
     \item Compute the absolute intensity of the $^{137}$Cs source using the published values of the NaI efficiency. The NaI crystal must not be near or enclosed by lead shielding for this measurement. Subtract the background. To reduce background, support the source with a low-mass stand. Use $I_\textrm{measured} = I_\textrm{absolute} (n(E)\frac{\Delta\Omega}{4\pi})$ where $n(E)$ is the intrinsic efficiency and the quantity in brackets (the product of $n$ and the solid angle) is given in the NaI Crystal Information for a distance of $d$ = 30 cm.
     
     \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
-    Interpret the aforementioned intensity formula and how does the distance \emph{d} as well as the size of detector matter when you take measurement?
+    Interpret the aforementioned intensity formula and explain how the distance \emph{d} as well as the size of detector matter when you take measurement.
 
     \begin{figure}[h]
         \centering
@@ -368,11 +368,11 @@ What is the role of the variable high voltage and how does it affect the output 
     \end{figure}
 
     \item \begin{enumerate}
-        \item Use the $^{22}$Na and $^{137}$Cs sources and several sheets/blocks of different thickness to measure the \emph{mass attenuation coefficient}, in cm$^2$/gm, of Al, Cu, and Pb [see reference (ii)]. Compare the results to the accepted values. Think about doing background subtraction, and be sure to include some discussion of uncertainties.
+        \item Use the $^{22}$Na and $^{137}$Cs sources and several sheets/blocks of different thickness to measure the \emph{mass attenuation coefficient}, in cm$^2$/gm, of Al, Cu, and Pb (see Knoll \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/GMA/01-Radiation\_Detection\_and\_Measurement\_CH\_02.pdf}{\textbf{Ch.2}} as a reference). Compare the results to the accepted values. Think about doing background subtraction, and be sure to include some discussion of uncertainties.
 
         \item When measuring the mass attenuation coefficients it is important to have proper geometry. Your source, collimators, absorber, and detector must all be in a line. The source should be placed on this line so that the greatest intensity of gamma-rays will go toward the detector, not toward the ceiling, table, PHA, etc.
 
-        \item There should be two lead bricks with holes in them at the apparatus. Use these bricks as collimators (see figure below). The first collimator passes only photons that strike the absorber nearly perpendicular to its face. The second collimator is needed to absorb the gamma rays that have undergone small angle scattering from the absorber. If the angle is small enough these gamma rays might enter the detector and be counted as unaffected gamma rays. It is possible for gamma rays that are scattered by the collimators to reach the detector, but these are of such low energies that they do not affect your results significantly.
+        \item There should be two lead bricks with holes in them at the apparatus. Use these bricks as collimators (See Figure~\ref{fig:GMAimage008} below). The first collimator passes only photons that strike the absorber nearly perpendicular to its face. The second collimator is needed to absorb the gamma rays that have undergone small angle scattering from the absorber. If the angle is small enough these gamma rays might enter the detector and be counted as unaffected gamma rays. It is possible for gamma rays that are scattered by the collimators to reach the detector, but these are of such low energies that they do not affect your results significantly.
 
         \item Last day of the experiment please fill out the \href{\ExperimentEvaluation}{\textbf{Experiment Evaluation}}
 
@@ -384,7 +384,8 @@ What is the role of the variable high voltage and how does it affect the output 
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMAimage008.gif}{\includegraphics[width=0.5\linewidth]{images/GMAimage008.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/GMAimage008.gif}{\includegraphics[width=0.7\linewidth]{images/GMAimage008.png}}
+    \caption{A diagram of Gamma-ray Spectroscopy}
     \label{fig:GMAimage008}
 \end{figure}
 

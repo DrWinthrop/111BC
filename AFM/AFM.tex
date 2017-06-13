@@ -67,8 +67,8 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \begin{figure}[!h]
 \minipage{0.32\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/9.JPG}{\includegraphics[width=\linewidth,keepaspectratio]{images/9.JPG}}
-  \caption{AFM EBox\\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/9.JPG}{Click here to see larger picture}}
-  \label{fig:EBox}
+  \caption{AFM EBOX\\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/9.JPG}{Click here to see larger picture}}
+  \label{fig:AFMEBox}
 \endminipage\hfill
 \minipage{0.32\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcan.JPG}{\includegraphics[width=\linewidth,keepaspectratio]{images/toposcan.JPG}}
@@ -271,10 +271,11 @@ Imagine a crosshair at the triangle point of the cantilever. That is roughly whe
 \begin{itemize}
     \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/2.1.\%20photodetector.flv\_converted.mp4}{\textbf{Here}} is an animation of how the detector outputs a voltage proportional to the surface topography of a sample.
 
-    \item A light lever is created by reflecting the light off of the cantilever.  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/2.3.\%20Light\%20Lever.flv\_converted.mp4}{\textbf{Here}} is a quick animation showing the operation of the light lever. Do you see how T-B, the signal on photodetector T minus the signal from photodetector B, gives the relative vertical deflection of the cantilever.
+    \item A light lever is created by reflecting the light off of the cantilever.  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/2.3.\%20Light\%20Lever.flv\_converted.mp4}{\textbf{Here}} is a quick animation showing the operation of the light lever. Do you see how T-B, the signal on photodetector T minus the signal from photodetector B, gives the relative vertical deflection of the cantilever?
     \begin{figure}[h]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMlasermirror.png}{\includegraphics[width=0.5\linewidth]{images/AFMlasermirror.png}}
+        \caption{Laser-Mirror Setup}
         \label{fig:AFMlasermirror}
     \end{figure}
 
@@ -285,12 +286,23 @@ Imagine a crosshair at the triangle point of the cantilever. That is roughly whe
     \item This \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/3.4.\%20Z\%20Scanner.flv\_converted.mp4}{\textbf{animation}} and this\textbf{ }\href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/4.1.\%20Z\%20motion.flv\_converted.mp4}{\textbf{animation}} show how the z piezo works.
 
     \item Stage Integration:
-    \begin{center}
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMdiagram.png}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/AFMdiagram.png}}
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstage2.PNG}{\includegraphics[width=0.5\linewidth,keepaspectratio]{images/AFMstage2.PNG}}
-    \end{center}
+    
+    \begin{figure}[!h]
+\minipage{0.4\textwidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMdiagram.png}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMdiagram.png}}
+  \caption{Piezo integration}
+  \label{fig:PiezoIntegration}
+\endminipage\hfill
+\minipage{0.58\textwidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstage2.PNG}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMstage2.PNG}}
+  \caption{Laser Setup}
+    \label{fig:LaserSertup}
+\endminipage
+\end{figure}
 
 \end{itemize}
+
+\pagebreak
 
 \textbf{Mechanism:}
 
@@ -300,10 +312,18 @@ The sample stage scans around in a raster pattern underneath the probe. When the
 
 The EBOX is located on the shelf behind the AFM. The EBOX houses the DAQ and connects/interfaces the AFM hardware with the software on the computer.
 
-\begin{center}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/EBOX.jpg}{\includegraphics[width=0.4\linewidth,keepaspectratio]{images/EBOX.jpg}}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMconnections.PNG}{\includegraphics[width=0.4\linewidth,keepaspectratio]{images/AFMconnections.PNG}}
-\end{center}
+\begin{figure}[!h]
+\minipage{0.49\textwidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/EBOX.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/EBOX.jpg}}
+  \caption{AFM EBOX}
+  \label{fig:EBox}
+\endminipage\hfill
+\minipage{0.49\textwidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMconnections.PNG}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMconnections.PNG}}
+  \caption{AFM Connections}
+    \label{fig:AFMConnections}
+\endminipage
+\end{figure}
 
 \subsection{Software}
 
@@ -372,16 +392,21 @@ Use this section as a reference for when you calibrate the AFM and scan.
     \item Phase (deg): The phase of cantilever oscillations.  There should be an inflection point in phase at the point of resonance. (see screenshot above) Phase shifts in the cantilever signal also give information about surface features.
 
     \item Automated Tip Approach:  the mechanism by which the AFM software slowly lowers the probe tip to within a few nanometers of the sample's surface.  The AFM program uses a ``Woodpecker'' Tip Approach, demonstrates in the image below: The \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/VM\%203.3.\%20Avg\%20Dist\%20Control\_converted.mp4}{\textbf{setpoint}} determines the amount of deflection that the feedback attempts to maintain.
+    
+    \begin{figure}[h]
     \begin{center}
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMwoodpecker.png}{\includegraphics[width=0.4\linewidth]{images/AFMwoodpecker.png}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMwoodpecker.png}{\includegraphics[width=0.3\linewidth]{images/AFMwoodpecker.png}}
+        \caption{Woodpecker tip approach}
+        \label{Woodpecker}
     \end{center}
+    \end{figure}
 
 \end{itemize}
 
 \textbf{Topo Scan Tab} - Where you can adjust scan parameters like scan speed, scan size, what measurements you want to take (i.e. Z Drive will give basic topography, Z phase will give hardness, and Z error will map abrupt changes in topography). A screenshot of the tab is shown below:
 
 \begin{center}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcan.JPG}{\includegraphics[width=0.5\linewidth]{images/toposcan.JPG}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcan.JPG}{\includegraphics[width=0.45\linewidth]{images/toposcan.JPG}}
 \end{center}
 
 \begin{itemize}
@@ -400,10 +425,10 @@ Use this section as a reference for when you calibrate the AFM and scan.
     \end{itemize}
 
     \begin{center}
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/scanningmethod.jpg}{\includegraphics[width=0.65\linewidth]{images/scanningmethod.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/scanningmethod.jpg}{\includegraphics[width=0.6\linewidth]{images/scanningmethod.jpg}}
     \end{center}
 
-    \item Z Feedback - Standard PID feedback loop. For more information see .
+    \item Z Feedback - Standard PID feedback loop.
 
     \begin{itemize}
         \item Integral - before doing a re-center in the pre-scan tab for automated tip approach, be sure to lower the integral value to 100, otherwise you \textbf{WILL} \hyperref[subsec:BrokenTip]{BREAK A TIP}. When the automated tip approach is complete, be sure to change the integral value back to 1000 before you start a scan.
@@ -550,7 +575,7 @@ Watching the video and following along will ultimately save you time.
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstagespace_0.jpg}{\includegraphics[width=0.9\linewidth]{images/AFMstagespace_0.jpg}}
-        \caption{}
+        \caption{Proper spacing between probe holder and sample holder}
         \label{fig:AFMStageSpace}
     \end{figure}
     
@@ -559,7 +584,7 @@ Watching the video and following along will ultimately save you time.
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/14.JPG}{\includegraphics[width=0.6\linewidth]{images/14.JPG}}
-        \caption{}
+        \caption{Removing the probe holder}
         \label{fig:PullOutYellowSlide}
     \end{figure}
 
@@ -582,7 +607,7 @@ Watching the video and following along will ultimately save you time.
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/ProbeHolderExchange.png}{\includegraphics[width=0.35\linewidth]{images/ProbeHolderExchange.png}}
-        \caption{}
+        \caption{Non-conductive probe holder and exchange tool}
         \label{fig:ProbeHolderExchange}
     \end{figure}
     
@@ -830,10 +855,13 @@ After replacing a probe, you will have to realign the laser so that it properly 
         \item \textbf{Make sure the beam is positioned before (to the right of) the triangle tip of the cantilever. } Imagine a crosshair at the triangle point of the cantilever--that is roughly where your tip is located.
 
         \item Center the beam, as best you can, between the top and bottom of the cantilever arm on the camera display.
-        \begin{center}
+        
+        \begin{figure}[H]
+        \centering
             \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/laser_align.png}{\includegraphics[width=0.5\linewidth]{images/laser_align.png}}
-        \end{center}
-
+            \caption{Laser aligned on tip of cantilever}
+            \label{LaserAlignment}
+        \end{figure}
     \end{itemize}
 
 \end{enumerate}
@@ -846,7 +874,7 @@ After replacing a probe, you will have to realign the laser so that it properly 
 In the AFM program in the\textbf{ Laser Align} section of the \textbf{PreScan} Tab, the \textbf{Beam Position} tells you where the laser spot is hitting the photodetector. The Mean Adjustment is \textbf{D2}, this moves the beam horizontally on the Beam Position graph--moving the detector physically in or out.  We want D2 to move the red dot on the Beam Position to 0 horizontally.  This should be a one time adjustment.  If you have to change this that probably means that there is something wrong with the probe. \textbf{Top - Bottom should be around .3,} not 0.
 
 \begin{center}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/detectoralign.JPG}{\includegraphics[width=0.8\linewidth]{images/detectoralign.JPG}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/detectoralign.JPG}{\includegraphics[width=0.65\linewidth]{images/detectoralign.JPG}}
 \end{center}
 
 \subsection{AFM Calibration (Complete on 1st Day)}
@@ -1041,7 +1069,7 @@ Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/ZControl.jpg}{\includegraphics[width=0.5\linewidth]{images/ZControl.jpg}}
-        \caption{}
+        \caption{AFM Knobs}
     \end{figure}
     
     \item\textbf{MAKE SURE THE TIP IS NOT TOO CLOSE TO THE SAMPLE} (if the sample is in focus with the camera, the tip should not be in focus--refer to Figure~\ref{fig:ProbeUnfocused} below). Make minimal adjustments to the X-Y micrometers labeled S1 and S2 to move the area of interest of the sample under the tip.
@@ -1051,13 +1079,13 @@ Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_
 \begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/26.png}{\includegraphics[width=0.5\linewidth]{images/26.png}}
-    \caption{}
+    \caption{Top and side views of the cantilever}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/probe_unfocused1_0.png}{\includegraphics[width=0.5\linewidth]{images/probe_unfocused1_0.png}}
-    \caption{The probe is not in focus while the sample is, meaning that there is a safe distance between the probe and the sample.  Adjust the Focus of the camera so that your Camera Viewer resembles this figure.}
+    \caption{The probe is not in focus while the sample is, meaning that there is a safe distance between the probe and the sample.  Adjust the focus of the camera so that your Camera Viewer resembles this figure.}
     \label{fig:ProbeUnfocused}
 \end{figure}
 
@@ -1122,7 +1150,7 @@ Make sure the tip is NOT IN CONTACT with the sample (there should be about a 2 c
         \begin{figure}[H]
             \centering
             \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/FreqPhase.JPG}{\includegraphics[width=0.8\linewidth]{images/FreqPhase.JPG}}
-            \caption{}
+            \caption{Tune Frequency}
         \end{figure}
         
         \item\textbf{Phase}
@@ -1222,7 +1250,7 @@ Make sure the tip is NOT IN CONTACT with the sample (there should be about a 2 c
     
     \begin{figure}[H]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcansetup.jpg}{\includegraphics[width=0.5\linewidth]{images/toposcansetup.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcansetup.jpg}{\includegraphics[width=0.7\linewidth]{images/toposcansetup.jpg}}
         \caption{}
         \label{fig:TopoScan}
     \end{figure}
@@ -1281,7 +1309,7 @@ Use the program \textbf{Gwyddion} to view, process, and analyze your data:
 \begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/39.png}{\includegraphics[width=0.3\linewidth]{images/39.png}}
-    \caption{}
+    \caption{Gwyddion program measurement icons}
     \label{fig:GwyddionProgram}
 \end{figure}
 
@@ -1297,16 +1325,16 @@ Watch the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMIm
 \begin{itemize}
     \item Open the Gwyddion.exe program located in the AFM Experiment folder on the C drive.
     
-    \item Open the data files you previously saved (file extension .wsf) in gwyddion by clicking file$\rightarrow$open$\rightarrow$wherever you saved the file
+    \item Open the data files you previously saved (file extension .wsf) in Gwyddion by clicking file$\rightarrow$open$\rightarrow$wherever you saved the file
     \begin{itemize}
         \item Select the left image (Z\_DRIVE)
     \end{itemize}
     
-    \item\textbf{NOTE: Save processed data files as native gwyddion files.}
+    \item\textbf{NOTE: Save processed data files as native Gwyddion files.}
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/40.png}{\includegraphics[width=0.5\linewidth]{images/40.png}}
-        \caption{}
+        \caption{Sample imported AFM scan in Gwyddion}
     \end{figure}
     
     \item Click the \includegraphics[height=2em]{images/41.png} button under the \textbf{View} drop down menu to view your data in 3D.
@@ -1315,11 +1343,10 @@ Watch the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMIm
         
         \item Right click on the image to pick a fun color setting, to make things more fun.
         
-        \item Click the floppy disk button to save your 3D image at any time.
         \begin{figure}[H]
             \centering
             \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/42.png}{\includegraphics{images/42.png}}
-            \caption{}
+            \caption{Click the floppy disk to save your 3D image}
         \end{figure}
     \end{itemize}
     
@@ -1524,7 +1551,7 @@ Use a Z HV Gain value of 5 for this experiment.
 \textbf{Use the 15 Micron Scanner} \hyperref[subsec:ChangingScanners]{(How to change a scanner)}
 
 \begin{enumerate}
-    \item Begin with a few sources - explain how a CD works and what we are expecting to see. (Destructive/Constructive interference)
+    \item Begin with a few sources - explain how a CD works and what we are expecting to see. The following are external links and are not exhaustive on this topic. (Destructive/Constructive interference)
 
     \begin{enumerate}
         \item \href{https://en.wikipedia.org/wiki/Compact\_disc}{\textbf{https://en.wikipedia.org/wiki/Compact\_disc}}
@@ -1540,7 +1567,7 @@ Use a Z HV Gain value of 5 for this experiment.
 
     \item \emph{Before you scan, explain and include in your write-up: How is information is stored on a CD? What wavelength of light is used? Why? How is it different for a DVD? Explain constructive and destructive interference as well as a brief explanation of EMF. Using your knowledge, find an expected value for pit depth of the CD/DVD. You will compare this number with your measurement during the lab. }
 
-    \item ``Each pit is approximately 125 \href{https://en.wikipedia.org/wiki/Nanometre}{\textbf{nm}} deep by 600 nm wide, and varies from 850 nm to 3.5 \href{https://en.wikipedia.org/wiki/Micrometre}{\textbf{$\mu$m}} in length.The distance between the tracks, the pitch, is 1.6 µm.''
+    \item ``Each pit is approximately 125 nm deep by 600 nm wide, and varies from 850 nm to 3.5 $\mu$m in length.The distance between the tracks, the pitch, is 1.6 µm.''
 
     \item A 780 nm laser is used to scan CDs
 
@@ -1687,7 +1714,7 @@ You should read up on the physics behind a phase measurement in AFM in the \href
 
 Force/Distance curves are created by measuring the deflection of the cantilever as the sample is moved towards and then away form the probe at the end of the cantilever.  The shape of a F/D curve depends primarily on the cantilever stiffness and the thickness of a surface contamination layer.
 
-**see animation \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/Force-distance\_curves\_en\_video.mp4}{\textbf{Force-distance\_curves\_en\_video.mp4}} (this link brings you to a new page, open link in new tab)
+**see animation \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/Force-distance\_curves\_en\_video.mp4}{\textbf{Force distance curves}} (this link brings you to a new page, open link in new tab)
 
 Here is another animation showing a \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/6.1\%20Tip\%20Sample.flv\_converted.mp4}{\textbf{Force Distance Curve}}.
 
