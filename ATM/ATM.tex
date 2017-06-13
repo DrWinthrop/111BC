@@ -80,7 +80,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \endminipage\hfill
 \minipage{0.32\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Atm_5.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/Atm_5.jpg}}
-  \caption{Imaged fringes \\
+  \caption{Captured image from Fabry-Perot interferometer \\
   \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Atm_5.jpg}{Click here to see larger picture}}
   \label{fig:ImagedFringes}
 \endminipage\hfill
@@ -149,7 +149,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
     
         \item \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Melissinos\_2nd\_2003/ATM\%20OCR\%20melissinos\%202003\%20chapter\%206.2.pdf}{\textbf{Ch. 6.2: The Normal Zeeman Effect}}, 11pgs
     
-        \item \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Melissinos\_2nd\_2003/ATM\%20OCR\%20melissinos\%202003\%20chapter\%206.5.pdf}{\textbf{Ch. 6.5:The Zeeman Effect of the Green Line of 198Hg}}, 7pgs
+        \item \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Melissinos\_2nd\_2003/ATM\%20OCR\%20melissinos\%202003\%20chapter\%206.5.pdf}{\textbf{Ch. 6.5: The Zeeman Effect of the Green Line of 198Hg}}, 7pgs
     
     \end{enumerate}
 
@@ -267,7 +267,7 @@ It's time to get started. Pro-tip: check out the photos at the beginning of the 
 
     \item Aligning the mercury lamp. Objective: get the lamp's light focused on the slit. First, make sure the opening in the lamp is aligned with the slit of the monochromator. There ought to be a lens attached to a rail, in between the lamp and the slit. By loosening the bottom screw, you can adjust its position on the rail. In order to gauge how well focused the light is, hold up a piece of paper close to the slit. By moving around the lamp, the light should change its focus on the paper. Try and line it up with the slit opening. You can also slide around the lens in order to obtain sharper focus. Use the thin lens equation to get a good idea of where to position the lens and the source with respect to the slit. The end result should be a well-focused slit of light, aligned with the slit of the monochromator.
     
-    \item Checking out the spectrum:  Make sure that the knob on the corner of the top of the monochromator is switched into the ``o position." This turns the mirror so that the light will be reflected out of the slit on the side of the monochromator. You can stick your eye up to the slit. Before turning the wave knob, you must DISENGAGE THE SPEED KNOB. To do this, pull it out a little and turn it so that it rests between two numbers. You will notice that it stays out. Now, by cranking the wave knob you can adjust the color that is being displayed. IMPORTANT: the wave knob suffers from backlash (\href{https://en.wikipedia.org/wiki/Backlash\_(engineering)}{\textbf{https://en.wikipedia.org/wiki/Backlash\_(engineering)}}). Thus, in order to set the wave number, you must approach it from the left (smaller value). Also remember that the wave number on the display must be multiplied by 6 to correspond to an actual wavelength in angstroms. Hint: there's a big blue peak in the mercury spectrum at \textit{around} 4400 angstroms (check out the figure below of the intensity of different peaks): divide that by 6. You should see a bright blue line, oriented vertically on the mirror. If you don't, you need to go back to step 2. If you do, and the line is well resolved, you can move on.
+    \item Checking out the spectrum:  Make sure that the knob on the corner of the top of the monochromator is switched into the ``o position." This turns the mirror so that the light will be reflected out of the slit on the side of the monochromator. You can stick your eye up to the slit. Before turning the wave knob, you must DISENGAGE THE SPEED KNOB. To do this, pull it out a little and turn it so that it rests between two numbers. You will notice that it stays out. Now, by cranking the wave knob you can adjust the color that is being displayed. IMPORTANT: the wave knob suffers from \href{https://en.wikipedia.org/wiki/Backlash\_(engineering)}{\textbf{backlash}} (Wikipedia link, browse at your own risk). Thus, in order to set the wave number, you must approach it from the left (smaller value). Also remember that the wave number on the display must be multiplied by 6 to correspond to an actual wavelength in angstroms. Hint: there's a big blue peak in the mercury spectrum at \textit{around} 4400 angstroms (check out the figure below of the intensity of different peaks): divide that by 6. You should see a bright blue line, oriented vertically on the mirror. If you don't, you need to go back to step 2. If you do, and the line is well resolved, you can move on.
     
     \item Optimizing the mercury lamp: now that we've checked out that the line is decently focused, we're going to use the electronics to optimize it. Switch the PMT knob to the ``s position.'' This sends the light into the PMT. By twisting around the wave knob, you should be able to find a peak on the spectrum (it will register on the scope). Now wiggle around the mercury lamp, trying to get the signal on the scope bigger. Now that you have managed to get peaks, you need to narrow the peak. Adjust the appropriate parameters until the peak's signal is sharply peaked (i.e. we the signal to die off quickly for nearby wavelengths).
     
@@ -333,7 +333,7 @@ Think before you do anything, because some errors are so small that they are ins
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Atmimage015.gif}{\includegraphics[width=0.8\linewidth]{images/Atmimage015.png}}
-    \caption{}
+    \caption{Spectrum of Mercury}
     \label{fig:Atmimage015}
 \end{figure}
 
@@ -459,16 +459,20 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
         \end{itemize}
         
     \end{itemize}
-    \begin{center}
+    \begin{figure}
+    \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Atmimage031.gif}{\includegraphics[width=0.6\linewidth]{images/Atmimage031.png}} \\
-        Captured Image From Fabry Perot Interferometer
-    \end{center}
+        \caption{Captured image from Fabry-Perot interferometer}
+        \label{CapturedImage}
+    \end{figure}
     
     \item \textbf{Something more complex and interesting:} Use the spectrometer to see what lines are actually present in helium. Set up the system to use the prism spectrometer as a filter to isolate the red, yellow, and blue lines, and observe the splitting with the interferometer. The trick here is to focus the light from the lamp on the slit of the prism spectrometer and opening the slit up all the way to let in as much light as possible. Then closing it down to see the yellow line in the center of the eyepiece. Ensure that the lens focuses a sharp line of light onto the slit. The optical equipment should already be aligned for this, just move the lens along the track until the line is sharp. When using the camera, try using the Live Control Settings: Auto-Exposure 0, Gain 8, Shutter 425, Brightness 90, camera focal length set to infinity and zoom set to 80. If you go to edit the live controls and they are not having an effect, try restarting the computer or adjusting the lamp voltage until the rings are brighter.
-    \begin{center}
+    \begin{figure}
+    \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/ATM_Zeeman_3489-Crop-Lg.jpg}{\includegraphics[width=0.8\linewidth]{images/ATM_Zeeman_3489-Crop-Lg.jpg}} \\
-        Setup using the Prism Spectrometer
-    \end{center}
+        \caption{Setup using the prism spectrometer}
+        \label{PrismSpectrometer}
+    \end{figure}
     
     Find the levels which give rise to the 587.56 nm lines of helium. Work out the Zeeman pattern thoroughly enough to show you understand the problems. You will need to check out the magnitudes of the triplet splittings. Use the spectrometer together with the interferometer to observe the Zeeman effect in this line, and compare to the calculated pattern. Why don't you see a clear pattern? Can you still see polarization effects? Originally Zeeman did not have enough resolution or magnetic field to see components clearly, but only slight polarization effects in the wings of the line.
 

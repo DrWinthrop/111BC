@@ -188,7 +188,7 @@ One of the dynamical systems we study is a driven damped oscillator with a non-l
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage004.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage004.png}}
-    \caption{}
+    \caption{Driven damped oscillator circuit with a closeup of the diode.}
     \label{fig:Circuit}
 \end{figure}
 
@@ -339,10 +339,6 @@ If the Liapunov exponents are all positive then the system diverges. If they are
 
 The equations of state (Eq's \eqref{eq:Motion1}, \eqref{eq:Motion2}, 
 \eqref{eq:Motion3}) are functions of a continuous time variable. Using the Runge-Kutta method of integrating ordinary differential equations, it is possible to form a set of discrete-time dynamical equations and these are seen to exhibit universal features common to other similar systems. For this reason, we study \emph{\textbf{iterative maps}}: discrete versions of $ \phi_t $ that relate the next state of a system to its previous state. You might wonder why, if chaotic systems are so sensitive to initial conditions, should we expect to see any useful results computed by an approximating method such as Runge-Kutta. The reason is explained in [Ref.~\cite{Strogatz}, \S10.1], where the authors present the 'shadowing' lemma: Although a finitely computed chaotic time-series, beginning with an initial value, will rapidly diverge from the true orbit, there exists some other orbit that coincides closely to the computed series.
-
-\section{Experiment and Procedure}
-
-The procedure is below.
 
 \section{The Experiment Apparatus}
 
@@ -728,40 +724,38 @@ Quad.VI Iterates the quadratic map.
 
 QuadBifr.VI Calculates the bifurcation diagram for the quadratic map.
 
-\subsection{Quad Bifur}
+\begin{figure}[h]
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage138.gif}{\includegraphics[width=0.6\linewidth]{images/Nldimage138.png}}
+    \caption{\textbf{Quad Bifur} This VI permits you to explore the Bifurcation diagram of the quadratic map. You can change the parameters to reveal the fine detail at the onset of chaos.}
+\end{figure}
 
-This VI permits you to explore the Bifurcation diagram of the quadratic map. You can change the parameters to reveal the fine detail at the onset of chaos.
-
-\begin{center}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage138.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage138.png}}
-\end{center}
-
-\subsection{Henon Bifur}
-
-\begin{center}
+\begin{figure}[h]
+    \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage139.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage139.png}}
-\end{center}
+    \caption{\textbf{Henon Bifur}}
+\end{figure}
 
-\subsection{NLDBifur}
-
-\begin{center}
+\begin{figure}[h]
+    \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage140.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage140.png}}
-\end{center}
+    \caption{\textbf{NLDBifur}}
+\end{figure}
 
 \appendix
 
-\section{Cobweb analyzer for the quadratic map. (Cobweb2.vi)}
-
-\begin{center}
+\begin{figure}[h]
+    \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage141.gif}{\includegraphics[width=\linewidth]{images/Nldimage141.png}}
-\end{center}
+    \caption{Cobweb analyzer for the quadratic map. \textbf{Cobweb2.vi}}
+\end{figure}
 
 \textbf{Note: The elements in the current LabView program VI do not look quite like the elements in these diagrams.}
 
-\section{Liapunov exponent VI (liapunov2.vi)}
-
-\begin{center}
+\begin{figure}[h]
+    \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage142.jpg}{\includegraphics[width=\linewidth]{images/Nldimage142.jpg}}
-\end{center}
+    \caption{Liapunov exponent VI. \textbf{liapunov2.vi}}
+\end{figure}
 
 \end{document}
