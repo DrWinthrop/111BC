@@ -249,6 +249,8 @@ All six photodiode sensors are connected to photodiode load resistors. The PD-5 
 
 Referring to Figure \ref{fig:BlockDiagramOfElectricalConnections}, you can see that the PD-4 is connected to the 100K$\Omega$ Load Resistor whose output is connected to AI 0 of the Breakout Box. The PD-3 is also connected to 1M$\Omega$ Load Resistor whose output will be connected at some point of the experiment to SR830 DSP Lock-In amplifier (do not connect the PD Load resistor to the Lock-in yet). Lock-in amplifiers are used to detect and measure very small AC signals. Accurate measurements can be made even when the small signal is obscured by noise sources. Lock in amplifiers use a technique known as phase-sensitive detection to single out the component of the signal at a specific reference frequency and phase. Noise frequencies other than the reference frequency are rejected and do not affect the measurement. In our experiment we will connect Channel 1 Output of the Lock-in to the AI 1 Input of the Breakout Box via Cable 2. (The switch for the lock-in amplifier is in the back of the unit). The Ref In of the Lock-in is connected to the SR 540 Chopper Controller's ``f''/f diff Input. The SR 540 Chopper Controller controls the optical chopper that chops the laser beam coming from BS-2. The PD-2 is connected to the 100k$\Omega$ Load resistor whose output goes to AI 4 of the Breakout Box. The PD-1 is also connected to the 100k$\Omega$ Load Resistor whose output is connected to AI 3 of the Breakout Box.
 
+\newpage
+
 In the Diode Scan section of the lab, the AO 0 of the Breakout box should be directly connected to the Input of the ECDL-7840R. When doing the B-Field Scan, the AO 1 should be connected to the magnetic coils in either of the two ways. One way is to connected it through a 2.5 k$\Omega$ Load Resistor (Little Blue Box). Second way (\textbf{Highly recommended}) is to connect it to Input 1 of the COIL DRIVER via Cable 3. The COIL DRIVER is located on the rack above the magnetic coils (shielded metal chamber). The COIL DRIVER OUTPUT 1 should be connected to the magnetic coils. The apparatus is already setup for the second way, and you shouldn't need to change it. The Monitor 1 input of the Coil Driver should be monitored by a DMM. The 2.5 k$\Omega$ resistor is there so that you can also ``zoom-in'' on your spectrum for better detail. A chart of the connections from the DAQ is below in Table \ref{table:ListOfConnectionsInvolvingDAQ}. The cable numbers are on a label on each cable.
 
 \begin{table}[h]
@@ -298,6 +300,8 @@ In this part, you will learn to operate the diode laser, familiarize yourself wi
             \item Offset knob: Turn 8 turns to the right, and then an additional 45 degrees (approximately) to the right.
         \end{itemize}
 
+\newpage
+
         \item After you have made the adjustments, you should see a faint glow in the glass Rb chamber using the Blue Night Vision Viewer (press the red button while looking through the Viewer, and adjust to the focus to see clearly). If you do not see a glow using the Viewer, trying adjusting the Offset knob slightly either way until you see it. Be careful not to turn the knob too far, for this will throw off your other measurements.
     \end{itemize}
     
@@ -317,6 +321,8 @@ In this part, you will learn to operate the diode laser, familiarize yourself wi
 
     As shown on the diagram of the optical set-up (Figure \ref{fig:DiagramOfOpticalSetup}), small fractions of the laser beam are split with beam splitters mounted on adjustable mirror mounts. The first beam splitter directs laser light through a scanning confocal Fabry-Perot interferometer. Reprints for this lab contain a technical memo on Fabry-Perot interferometry written by Burleigh Instruments - a commercial manufacturer of F-P spectrum analyzers. In this experiment, we use a homemade F-P.
     
+\newpage
+    
     In this lab, the FP serves two purposes. The first is as a frequency marker, so we know how far apart the peaks are when we take a spectrum. For reference, the peaks on the FP spectrum are spaced 1.50 GHz apart. The second is to see how well the laser is working. If the peaks are periodic, then the laser is working well, but if the peaks are absent or scattered around, that means either the laser is ``mode hopping'' or the FP is not aligned correctly. Also, make sure that you are not driving the FP with the signal generator. This causes the cavity length to oscillate and would produce irregular scans. You may accidentally be doing this if the signal generator is on and the cable labeled ``FP PZT Input'' connects the FP PZT and the high voltage amplifier. (\emph{This is confusing, there are two PZTs, one connected to the FP and one inside the laser. The one connected to the FP is used only for aligning the FP and if the cable FP PZT Input is plugged into the FP, unplug it now. \textbf{ Be sure not to accidentally turn the FP though, it is not very secure.}})
     
     \item In order to observe the transmission pattern of the F-P analyzer, check to see that the appropriate connections are made. Everything should be already there, but check it anyway. As shown on the diagram in Figure \ref{fig:BlockDiagramOfElectricalConnections}, the photodiode (PD-4) output of the F-P analyzer is connected to a photodiode 100 k$ \Omega $ Load resistor. (The circuit is described in \href{http://experimentationlab.berkeley.edu/node/120}{\textbf{Photodiode Circuit}}). The output of the PD Load resistor is connected to the AI 0 input channel of the DAQ board (the BREAKOUT BOX). Connect the AO 0 from the Breakout Box to the Ext on the back of the ECU. The BNC cable from AO 1 can be left disconnected. Make sure the laser beam passes straight through the F-P spectrum analyzer. If it does not, you need to align it using the night vision viewer or the IR card. Be very gentle when aligning the optical instruments. When aligning the optics, use Figure \ref{fig:DiagramOfOpticalSetup} as your guide. Make sure you understand where the laser beams must enter and exit.
@@ -334,6 +340,8 @@ In this part, you will learn to operate the diode laser, familiarize yourself wi
 This section should be only used when all other things have failed to fix the problem (i.e. the laser beam is aligned, you have the proper connections and etc.). Before you start aligning the Fabry-Perot Interferometer, talk with the staff members and explain why you think the F-P Interferometer needs to be aligned. Please refer to the \href{http://experimentationlab.berkeley.edu/OpticsTutorial}{\textbf{Optics Tutorial}}.
 
 Instead of varying the frequency of the laser and observing the F-P spikes on Labview, you can use a signal generator to apply a changing voltage to the PZT in the interferometer while keeping the laser at a fixed frequency. This changes the length of the resonant cavity periodically. You can then make the necessary adjustments and watch the shape and of the F-P spikes change on the scope.
+
+\newpage
 
 \begin{enumerate}
     \item Connect the output of the high voltage amplifier to the PZT on the Fabry-Perot interferometer.
@@ -368,6 +376,8 @@ The laser's frequency as a function of control voltage may not be a perfectly li
 
 \textbf{Important: When using the 1:10 zoom resistor the voltage to frequency conversion factor is different. To determine the new conversion factor repeat the process above with the zoom resistor connected. With the resistor you will need to scan at least 5 V p-p in order to fit two FP spikes on one scan.} Note: The zoom resistor may not be necessary with the new daq cards (as of summer 2013), try zooming in with the scan settings.
 
+\newpage
+
 \section{How to tune the laser}
 
 It is not likely the laser needs to be tuned by any means other than adjusting the current, especially if you followed the directions in step 2 of the \hyperref[subsubsec:OperatingTheLaser]{Operating the Laser} section. If the D2 line does not resonate at the 63.3 mA setting (if you are not able to see any glow in the glass Rb chamber using the blue IR night vision viewer), you may need to tune the laser. To do so, set the laser current to 63.3 mA. While using the night vision viewer, VERY SLOWLY turn the OFFSET knob on the laser until you see some light beams flicker in the 87/85 cell. Due to the behavior of the laser, this may only happen if you pass the point in one direction, but not the other. Since this knob is such a course adjustment, the flicker means you went through all the peaks really quickly. Try to leave the knob on a position so that you can see a constant glow in the tube. It doesn't matter which peak you are on, but some are brighter than others.
@@ -382,6 +392,8 @@ In this part of the lab, you will tune the laser to the rubidium D2 resonance ($
 \end{itemize}
 
 \emph{Description of Beam Path:} The laser beam coming from BS-1 should pass through a beam splitter BS-2 that splits the beam into two. One of the beams passes through, and the other splits off at somewhere less than 90 degree angle towards an optical chopper. Passing through the optical chopper, the beam enters and exits the glass rubidium cell/chamber (the one outside the magnetic shield). The cell mounting and BS-2 can both be adjusted if necessary (Do not unless you are sure it is not aligned! In general, be careful not to touch or change the positions of the optical equipment because it is difficult to realign.) As indicated on the diagram, there should be a photodiode PD-5 placed facing the glass Rb cell. This photodiode has a 780 nm interference filter attached to the front side of the diode to reduce pick-up from room lights. The output of the photodiode is connected to the 1 M$\Omega$ Load resistor input. The output of the PD Load resistor is connected to the AI 2 input of the DAQ BNC connector box (the Breakout Box) via cable 5. The second beam that passes through the BS-2 is split in to two once again by a beam splitter BS-3. One of the beams passes right trough the BS-3 and the other is reflected off of it. The reflected beam is then sent to a mirror M1 where it is reflected to pass through the rubidium cell, but in the opposite direction. This beam exits the rubidium cell and is reflected once more by another mirror, M2. Finally this beam enters a photodiode sensor PD-3. The output of the PD-3 is connected to the PD Load Resistor. At this time, nothing is connected to the output of this load resistor, but in the next section you will connect it to the Lock in Amplifier. Connect the AO 0 from the Breakout Box to the BNC connection marked PZT on the back of the laser controller via Cable 1. Connect the AO 1 of the Breakout Box to the Input of the Coil Driver via cable 3. Start the Diode Scan LabView program using -1.5 V minimum, 3 V p-p, 1000 pts/scan, 50 acquisitions/pt, and 500 acquisitions/sec. If you do not see the correct signal in the diode scan program, redo step 2 listed in the \hyperref[subsubsec:OperatingTheLaser]{Operating the Laser} section. If you still don't see results, then it is possible that the laser beam needs to be aligned. Please refer to the \href{http://experimentationlab.berkeley.edu/OpticsTutorial}{\textbf{Optics Tutorial}}.
+
+\newpage
 
 \subsubsection{Aligning the laser induced fluorescence set up.}
 
@@ -452,6 +464,8 @@ In this part of the lab, you will use a laser polarimeter to investigate the res
 
 \emph{\textbf{Check Point: Estimate the value of the residual magnetic field at the vapor cell due to the Earth's and building's magnetic field.}}
 
+\newpage
+
 The article on magnetic shielding may be useful. Both layers of magnetic shielding are manufactured out of 0.04'' (1 mm) thick sheet of the CONETIC-AA alloy with a magnetic permeability $\mu = B/H \approx 10^5$. Calculate the calibration factor (in Gs/A) relating the value of the magnetic field produced by the coil and its current. Reproduce these estimates and calculations in your report. \textbf{Hint:} the presence of the magnetic shield actually affects the field inside the coil.
 
 To measure rotation of the plane of polarization in a sample, it is placed between two polarizers as shown in Figure \ref{fig:SchematicOfBalancedPolarimeter}, in what is called a balanced polarimeter. The Polarizer and Polarized Beam Splitter (PBS) have their transmission axes oriented at 45 degrees to one another.
@@ -508,6 +522,8 @@ This equation is programmed into LabView (``B-field scan for 111 lab.vi'').
     
     As one can see, the current in the coil is linear with its input voltage. The Output 1 of the Coil Driver goes to the magnetic coil. The computer will use the AO 1 output to scan the magnetic coil from -8V to +8V. The current source produces an output current in the approximate range -3 to +3A, proportional to the voltage at its input. \textbf{The input cable to the coil driver power supply must be plugged in the reverse leads to operate correctly. It should be like this already, but double check.} It will be necessary for you to obtain current calibration, i.e., to figure out precisely which current corresponds to a given AO 1 voltage. Hook up a multimeter to the .1$\Omega$ resistor (it is a gold cylinder) located to the right of the coil driver. The DMM should already be connected to measure the voltage across the resistor, but ensure the connections are made properly. \textbf{It registers 100mV for every Amp driven through the coil.}
 
+\newpage
+
     \item Magnetic field control in this experiment is accomplished with a LabView VI program ``B field Scan for 111 lab''. This program is nearly identical with the ``Diode scan for 111 lab.vi'' program. We use both programs sequentially to tune the laser to the frequency at which we wish to take a B-field scan and to scan the magnetic field. When all necessary connections and beam alignment have been done, use the Night Vision Viewer to verify that the laser is still fluorescing within the Rb glass cell. If it is not glowing, go back to Step 2 and restart the diode scan. If it is glowing faintly, try slightly adjust the offset.
     
     \begin{itemize}
@@ -523,6 +539,8 @@ This equation is programmed into LabView (``B-field scan for 111 lab.vi'').
     \end{figure}
     
     \item Before proceeding further, you have to balance the polarimeter, i.e. make sure that the value of the ``optical rotation angle'' that you see when the laser is not on resonance is close to zero. Run the Diode Scan program and pause the laser frequency far from any peaks. The pause button text should change to \textbf{Resume} indicating that a repeated click on the button will resume the frequency scan. Then run the ``B-field scan for 111 lab.vi'' in continuous mode. While the scan is running, adjust the angle of the PBS mount to zero the apparent optical rotation angle. Make note of what numbers were lined up before you make any changes--there is a good chance it is already set close to the correct values. Try setting the number 252 on the left to line up with the number 0 on the right.
+    
+\newpage
     
     \item You are now ready to take Faraday effect data. Decide at which frequency point you would like to study the B-dependence of the Faraday rotation. A good first choice is the center of the F = 3 $\rightarrow$ F' peak for 85Rb. Run the Diode Scan again to scan the laser frequency and stop the scan on this peak. Then be sure to stop the Diode Scan program, and open up and run the ``B-field scan for 111 lab.vi''. The settings should be 1000 points/scan, 15 Acquisitions/point, 500 Acquisitions/second, -5.00 V Min Voltage, and 10.00 V P-P Amp Voltage. The signals should look like Figure \ref{fig:BFieldScan}. This allows you to set the magnetic field (i.e. AO 1) scan parameters and display raw signal from one of the photodiodes (PD-1, or PD-2). The optical rotation angle determined as discussed above, and the sum of signals of photodiodes (PD-1 and PD-2) is a measure of power of the laser beam after the sample.
     
