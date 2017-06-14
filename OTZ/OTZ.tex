@@ -199,6 +199,8 @@ Arthur Ashkin discovered the method of optical trapping in 1970 \cite{Ashkin1970
 
 The most straightforward mechanism to understand the physics of trapping is to consider the change in momentum of light that is scattered by and refracted by a dialectic material, in our case a silica glass bead. Any change in the direction of light imparts momentum to the bead. This mechanism holds for objects much larger in diameter than the wavelength of the laser. A ray-tracing argument holds that the scattered light creates a \emph{scattering force} in the direction of light propagation, while the refracted light creates an opposing \emph{gradient force}. When the bead is in the center of the trap, these forces cancel. When a bead moves slightly away from the center, a net force is applied towards the center, making this a stable equilibrium.
 
+\newpage
+
 In order to understand how the equilibrium is stable, it will help to consider how the gradient force responds to displacement of a bead from the center. In the figure to the right, the red region represents the ``waist'' of the laser at its focus point, with the laser passing upward through the sample chamber. The blue ball is the bead, and the black arrows (1) and (2) represent light rays whose thicknesses correspond to their intensities (note that the beam is brightest at its center). In case (a), with the particle slightly to the left of center, the two rays refract through the particle and bend inwards. The reactionary force vectors, F1 and F2, of each ray on the bead are shown. Because ray (2) is more intense (and thus carries more momentum) than ray 1, the net force on the bead is to the right. Thus, a perturbation to the left causes a rightward-directed force back towards the trap's center.
 
 In case (b) the particle is centered laterally in the beam and will not be pushed left or right. The net gradient force is downward, which is balanced by an upward scattering force (not shown) due to reflection of some of the light.
@@ -260,6 +262,8 @@ From the 975 nm laser it goes through two steering mirrors, then 1/2 waveplate a
 
 \subsubsection{Trapping Laser}
 
+\newpage
+
 The Axcel from Thorlabs BF-979-0300 300mW Max diode laser \href{http://experimentationlab.berkeley.edu/sites/default/files/images/975nm-Laser-Specs.pdf}{\textbf{975nm Laser Specs}} This has a maximum power output of 300 mW, though a fraction is lost traveling through all the optics. The 975nm wavelength is far enough from the resonant frequency of water to prevent much heating of live cells and is less likely to affect the behavior of cells than visible wavelengths. The diode laser is coupled to a very very delicate optical fiber. DO NOT TOUCH IT!!! If this fiber is broken or kinked it could cause backwards reflections of the beam, destroying the laser. The laser diode is mounted in a standard butterfly mount that acts as a heat sink and cooling device. Two cables connect it to a laser diode controller \href{http://experimentationlab.berkeley.edu/sites/default/files/images/LDC501m.pdf}{\textbf{LDC 501 Laser Controller full Manual}} and thermoelectric temperature controller (TEC) located on a shelf above the optical table. Avoid touching the laser or its butterfly mount because static discharge can destroy the laser and the fibre is very very small. \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SOP\_Laser\_Diode\_Driver.pdf}{\textbf{The getting started SOP for this Laser controller}} See References below for SRS controller cable wiring diagram.
 
 \subsubsection{Fluorescence Laser}
@@ -288,6 +292,8 @@ The trapping laser has a power output of up to 300 mW and a wavelength of 975nm,
 \end{enumerate}
 
 \subsection{Optical Paths}
+
+\newpage
 
 The microscope has a dual function. One is to allow us to see our specimen at high magnification by sending visible light through the specimen to a video camera. The other function is to focus the laser beam to create the optical trap and collect the laser light to focus it on a quadrant photodiode (QPD) that tells us how close the trapped object is to the trap's center. Keep in mind that there are three light sources, and though their paths coincide through much of the microscope they are still distinct, with distinct focal and afocal points. A useful concept for understanding microscopy optics is that of \href{http://www.microscopyu.com/articles/formulas/formulasconjugate.html}{\textbf{conjugate planes}}, which groups all the optics into two complementary sets: imaging and illumination.
 
@@ -326,6 +332,8 @@ The fluorescence laser's alignment is less critical than the trapping laser's, s
 \emph{Fluorescent dye emission}
 
 The dye fluoresces in every direction, but the part we are interested in goes through the objective (where it is magnified), off a mirror and through both dichroics and a lens for focusing. It then passes through the emission filter, which is a very tight bandpass to block everything except the dye's emission (which peaks at 570 nm) and the LED. Finally its journey is over when it reaches the CCD focused.
+
+\newpage
 
 \subsection{Stage}
 
@@ -371,6 +379,8 @@ Once the OTKBv7 GUI has opened, you will see three graphs and several panels of 
 
     \item The \emph{Plots} control panel has three input boxes. The first is used to set the desired display units on the upper graph. The QPD outputs data as voltage, but this data can be converted to units of force or distance using the trap stiffness and QPD sensitivity. If these values (visible and editable in the bottom panel) are zero, the program will only allow the data to be presented in volts. The QPD Minimum Range input determines the minimum plot range of the two realtime QPD graphs. If any data points exceed this range, the plots will autoscale. Lastly, the PSD Cut Off Frequency input sets the maximum frequency displayed in the bottom-left graph. Since at high frequencies the signal drops below the noise floor (beyond which the graph flattens out), too high a cut off frequency will skew the PSD fit and any calibration values.
 
+\newpage
+
     \item The \emph{Save} panel contains two push buttons: ``Save Voltage Data and Graph'' saves the X and Y raw QPD voltage data (two columns of data), and a copy of the upper plot, while the ``Fit PSD and Save Data/Graph'' saves a text file of frequency, PSD X, and PSD Y data (three columns, all log10 transformed), and a copy of the bottom left plot. The data is also fit to the PSD equation for a trapped bead. Both of these also save a text file of relevant settings from each panel.
 
     \item The \emph{Calibrations} panel contains input boxes to enter calibration values for the optical trap. However, these values are also automatically set whenever Fit PSD and Save Data/Graph is clicked. If the fit is bad and returns imaginary results, all fields will be set to 0.
@@ -405,6 +415,8 @@ Pipettors are a standard tool in most biology, biophysics, and chemistry labs, b
 \emph{Never allow liquid to enter the body of the micropipette}
 
 \subsection{Preparing a Slide}
+
+\newpage
 
 For the calibration section of the lab, you'll be trapping synthetic silica microspheres, or beads, available as stock solutions in the refrigerator (a small bottle with blue solution, it is made by Bangs Laboratories, Inc. and says ``Uniform Dyed Microspheres'' on the label and ``Bead Solution'' on the lid). Be careful not to contaminate or spill the stock solutions, as they cost more than \$100 each. Whether using beads or bacteria, it is generally necessary to dilute the stock considerably to reduce the concentration of particles. You want particles to be somewhat scarce on the slide so that when you do trap one, you don't have other nearby particles being sucked into the trap and ruining your measurements.
 
@@ -477,6 +489,8 @@ After doing this, the red LED indicators at the top of the joystick should alter
 
 \emph{If you ever accidentally hit one of the buttons the joystick will change operation modes.} To get back to the correct mode:
 
+\newpage
+
 \begin{enumerate}
     \item Click all three buttons simultaneously, all of the red LEDs should be lit.
 
@@ -546,6 +560,8 @@ When you are done trapping and collecting data (see below) power down everything
 
 Many, if not all, of these settings, and the ones for the laser control, are likely already set to what they should be. If this is the case, then great. \textbf{It is important to make sure the proper settings are used}.
 
+\newpage
+
 The TEC has a preset current limit, $I_\text{LIM}$, of 1.4 A and the resistance, $T_\text{ACT}$, should be around 10.0 k$\Omega$, and always within the range 9.5 to 10.5 k$\Omega$. This should already be set, but it is important to make sure it is not changed. The TEC, when set properly and turned on, will control the temperature of the laser diode , which prevents temperature-related power fluctuations. It should not need to be adjusted.
 
 \textbf{Laser Diode Control} Control of the laser diode power is via the Laser Diode Control. Once the TEC has been set and turned on, the LDC can be used.
@@ -576,6 +592,8 @@ The QPD zero signal will vary somewhat with the power level of the laser. Hint: 
 
 \begin{enumerate}
     \item To get familiar with the location of the laser trap vertically with respect to the slide and coverslip and horizontally with respect to the camera's field of view, look for reflections of the infrared beam off of the slide and coverslip. These will look like focused beams in the camera viewer. To do this, find a place on the slide with no beads or cells nearby and turn on the laser at a medium power level (set LD I to 300 mA). Make sure that the emission filter in the filter wheel is not in the light path, as it screens out all of the infrared. As you move the objective up and down, you will see a reflection of the laser off the coverslip and off the slide when each is in focus.
+    
+    \newpage
 
     \item To trap a bead, you can search with the laser on or turned down or disabled until you find one to trap. It is easiest to turn off the laser entirely while noting the trap's location in the camera viewer field of view. Then, using the objective adjustment knob, focus on a bead to trap. Using stage control, move this bead approximately to the location of the trap, and turn back on the laser. The laser will likely no longer be a focused spot as it was when it was reflecting off of the coverslip/slide. Instead you might see a diffraction pattern. This is ok, the trap is still there. You should see the bead fall into place in the trap. Silica beads tend to sink rapidly to the bottom of the chamber formed by the slide and coverslip, meaning that they will be sitting on the coverslip. If beads are dense, then look for one that is isolated from others before turning the laser power up.
 
@@ -658,8 +676,6 @@ Ideally, you will now be able to work much of the analysis required in this expe
 
 Observing specimens and trapping small objects is straightforward with the procedures described above. But to tap the full potential of the laser tweezers to precisely quantify size, position, and forces at nanometer and piconewton scales requires careful calibration. To save time, we are providing you with calibrations of the microscope image scale and the step-size of stage movements by the picomotors. We leave to you the more interesting calibrations, including translating the voltage measurements from the QPD into the position of the trapped particle relative to the center of the trap (QPD position calibration) and the force exerted by the trap on the particle (trap stiffness calibration). There are multiple techniques used to calibrate traps, and we'll let you try a few of them and compare their results and appropriateness.
 
-\newpage
-
 \subsection{Microscope and Stage Calibration}
 
 Results of these calibrations are provided below for your use. If you would like to perform them as part of your lab exercise, that is an option you may choose and we might substitute your results in the future.
@@ -699,6 +715,8 @@ The others were checked as well, but it is not necessary for me to include them 
 
 \subsection{Position and Stiffness Calibration of the QPD}
 
+\newpage
+
 Calibration of the QPD's response to movements of the trapped objects typically use microspheres because of their symmetry and standardized characteristics, such as refractive index, size, shape, etc. In some cases, calibration is performed with a bead that is similar in size and shape to the biological specimen of interest. In others, the bead itself is used in an experiment to apply forces to the biological specimen. For example, a bead can be attached to one end of a macromolecule such as DNA as a handle to pull on. If the other end of the molecule is stuck to a coverslip or a pipette, the bead can be moved by the trap to apply precise forces to the molecule or other structure. In this lab you can do your calibration with Silica beads of 1 or 2 micron diameter, and should plan to use the same bead size for all of your calibration techniques.
 
 \textbf{What is Position Calibration?} Within a narrow range around the trap (about 100-200 nm), the voltages $V_x$ and $V_y$ from the QPD are linearly related \cite{Gittes} to the distance of the bead from the center of the trap along each axis. The position calibration, also called \emph{sensitivity}, allows us to translate our raw $V_x$ and $V_y$ data into distance data. Sensitivity, $\rho$, is usually given in units of Volts/$\mu$. Of course, the power setting of the laser will affect the light intensity incident on the QPD, and thus the voltage responses, so rather than a single conversion we really want the relationship between sensitivity and laser power. This normally is fairly linear, so measuring sensitivity at 4 power levels is plenty to characterize the relationship.
@@ -723,6 +741,8 @@ To summarize, you will use three techniques for position and stiffness calibrati
 \subsubsection{Stuck Bead Scanning Method (Position Calibration)}
 
 We recommend scanning a stuck bead along each orthogonal axis through the center of the trap, considering $V_x$ and $V_y$ independently of one another. A more complete calibration would require raster scanning back and forth in a grid to cover the entire active 2D region of sensor, but this is problematic due to some hysteresis and imprecision in our motorized stage so we'll stick to measurements along the axes.
+
+\newpage
 
 \textbf{Stuck Bead Sample Preparation} Exposing the beads to a salt solution causes them to stick to glass by hydrophobic interactions. A 1 M NaCl solution is provided for this purpose. You can simply substitute the salt solution for water, and again make a 1:10,000 dilution. Alternatively, you could combine the salt solution with a bead sample directly on a slide rather than making a separate vial. To do this, try adding 5 microliters of your previous 1:10,000 dilution of a bead stock in water to 30 microliters of 1 M NaCl on a slide. After adding a coverslip, invert the slide. It may take up to 10-20 min to get good adhesion, and some beads will stick better than others. You may need to adjust the bead concentration to get a reasonable density of beads on your slide.
 
@@ -776,6 +796,8 @@ Once you have calculated the sensitivities for all four power levels in X and Y,
 The thermal motion of a spherical bead of known size suspended in water is well characterized. As the laser power is turned up on a trapped bead, the Brownian motion of the bead is constrained more and more by the increasing trap force restoring the bead to the center of the trap. A statistical analysis of this motion allows us to estimate both the sensitivity of the trap and its stiffness.
 
 \textbf{Procedure}
+
+\newpage
 
 \begin{enumerate}
     \item Starting with a slide loaded with a sparse suspension of beads in water, trap a bead and move it well away from other beads.
@@ -880,6 +902,8 @@ Here we will use the program \href{http://experimentationlab.berkeley.edu/sites/
 \end{figure}
 
 \emph{E. coli} is propelled in liquids by a set of four or more helical flagellar filaments that arise from separate positions on the cell surface but intertwine to appear as a single flagellum in forward movement. A cell may lose its flagella under some conditions, and regenerate them under others. Although motile cells on a crowded slide may appear to be moving pretty randomly, a cell actually can modulate its swimming to follow gradients of chemicals, temperature, or light. It accomplishes this by varying the ratio of two swimming behaviors. The first, called a ``\textbf{run}'', is swimming forward in a steady, mostly straight path. The second behavior, called a ``\textbf{tumble}'', is an erratic motion that causes the next run to be in a new direction, pretty much at random. If the cell senses that the environmental gradient is getting worse as it swims, then a tumbles are more frequent; if it is getting better, tumbles are less frequent. So motility of the cell is facultative and under at least crude directional control.
+
+\newpage
 
 The running and tumbling behaviors are caused by a simple switching of direction of motors. Each flagellar filament is driven by a rotary motor at its base that turns counterclockwise (CCW) in forward swimming, as all the filaments intertwine together. During running, the cell swims steadily forward in a direction parallel to the long axis of the cell with the flagellum pushing. Tumbling occurs when one or more of the flagellar filaments turns clockwise (CW), causing the flagellar filaments to separate and beat erratically. You can see the run and tumble pattern behavior in a series of \href{http://www.rowland.harvard.edu/labs/bacteria/movies/ecoli.php}{\textbf{movies}} depicting fluorescently labelled \emph{E. coli}.
 
@@ -995,6 +1019,8 @@ To begin, you must first have an onion you provide and a bag to hold it after yo
 
 In this part of the experiment, you will observe the motion of particles inside a living cell. Cells transport food, waste, information, etc. in membrane-bound vesicles, which are visible under a light microscope. An old-fashioned view of a cell was that it is a ``bag of water'' containing various enzymes in which matter is transported passively by diffusion. Though diffusion is an important mechanism, it is too slow and random for long distance transport and directing materials where they are most needed, especially in larger cells. It is now understood that cells have highly developed and intricate mechanisms for directed transport of materials.
 
+\newpage
+
 Most motions within and of cells involve two components, a cytoskeletal fiber that serves as a track, and a \href{http://en.wikipedia.org/wiki/Motor\_protein}{\textbf{motor protein}} that does the work. The motor molecule uses energy from the hydrolysis of one ATP molecule to bind to the fiber, bend to pull itself along the fiber, and release, all of which constitutes one ``step''. For an animation of this stepping process, see this \href{https://valelab.ucsf.edu/molecular-animations/}{\textbf{movie animation}} from the Vale lab web site at UC San Francisco. One can divide cellular motility mechanisms into two classes based on the cytoskeletal fibers involved. (1) Microtubule-based mechanisms involve dynein or kinesin motors pulling on microtubules made of the protein tubulin. (2) Actin-based mechanisms involve myosin motors pulling on actin fibers, also called microfibers.
 
 \begin{figure}[h]
@@ -1034,11 +1060,15 @@ In this experiment, we will be viewing the movement of vesicles within the cytop
     \label{fig:500px-BMC_OnionStucture}
 \end{figure}
 
+\newpage
+
 In plant cells, vesicles are transported along actin fibers by myosin motor molecules. An actin filament is composed of two intertwined actin chains, about 7 nm in diameter. An actin fiber is considered structurally polar, having a (+) end and a ($-$) end, and most myosin motors move only towards the (+) end of the actin fiber. In order to reverse the direction of a vesicle's motion, the vesicle must grab on to another actin fiber oriented in the opposite direction. There are at least eighteen described classes of myosin, of which three, myosin VIII, XI, and XII are found in plant cells. Some myosin motors are processive, meaning that they remain bound to an actin fiber as they move step-by-step along it (analagous to this \href{https://vimeo.com/157524451}{\textbf{movie animation of kinesin}}. Other myosins are non-processive, releasing from the actin fiber after each step. Myosin II found in muscle cells is non-processive, as illustrated in this \href{http://www.banyantree.org/jsale/actinmyosin/index.html}{\textbf{video animation}}. In the muscle functional unit, there are many myosin motors acting together, so there are always some attached to the actin fiber. The myosin XI responsible for transport of plant cell vesicles is the fastest myosin known and is processive. It is not certain how many myosin molecules are attached to the surface of a vesicle or how many of those are active at one time in pulling the vesicle along an actin fiber.
 
 In some plant cells and algal cells, a large-scale streaming motion of the cytoplasm is observed, logically called \href{http://en.wikipedia.org/wiki/Cytoplasmic\_streaming}{\textbf{cytoplasmic streaming}}. This bulk flow is believed to be caused by myosin motors pulling the extensive endoplasmic reticulum along actin fibers lining the cell membrane. Many other vesicles are then dragged along with the endoplasmic reticulum. \href{http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mcb.figgrp.5242}{\textbf{Lodish and Berk, et al.}} provide a detailed explanation of this process and a video of cytoplasmic streaming in the pond weed Elodea can be viewed \href{http://www.microscopy-uk.org.uk/mag/imgnov00/cycloa3i.avi}{\textbf{here}}.
 
 In your observations of vesicles in onion epidermal cells, you should distinguish between the random Brownian motion of vesicles that are unattached (or at least not actively moving along) actin filaments, the directed transport of vesicles by attached myosin motors, and possibly (though we are not sure this really happens in onions) bulk flow of vesicles in cytoplasmic streaming.
+
+\newpage
 
 \subsection{Methods}
 
@@ -1126,6 +1156,8 @@ Dynein is a eukaryotic motor protein that is involved in the transport of organe
     \caption{A dynein motor walking along an axoneme. The dynein head is bound to a microsphere, which is being pulled out of the optical trap.}
     \label{fig:200px-Dynein_On_Axoneme}
 \end{figure}
+
+\newpage
 
 Although dynein cannot be directly manipulated with an optical trap, we can promote binding between a silica bead and a dynein molecule such that the bead position can be used as a proxy for the actual dynein position. We do this by using beads coated with Streptavidin, which has a high affinity for the tails of dynein molecules. Once a bead/dynein structure has been trapped, it can be placed above an axoneme (microtubule bundle) to allow the dynein heads to bind. The dynein molecule can then begin walking towards the minus-end of the axoneme, pulling the bead out of the center of the trap. Eventually the force exerted on the trap will match the stall force of the dynein, and the dynein will stall. This can be seen as a plateau in the QPD voltage readout plot, and after a time you may see a sharp drop off, indicative of a stall and snap-back. You can then use this data to determine the stall force of individual dynein molecules.
 
@@ -1257,6 +1289,8 @@ You may set the QPD y-axis range as you wish, and turn off either the QPD X or Y
 
     \item Last day of the experiment please fill out the \href{\ExperimentEvaluation}{\textbf{Experiment Evaluation}}
 \end{itemize}
+
+\newpage
 
 \begin{thebibliography}{}
 \label{sec:References}
