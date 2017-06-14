@@ -561,6 +561,8 @@ The PN junction circuit requires power, so turn on the system with the switch on
 
 Let's begin with the PN Junction: Make the following connections referring, in addition to Figure~\ref{fig:ConnectingTheScope}:
 
+\newpage
+
 \begin{itemize}
     \item $\overline{\text{TTL}}$ to the back of the Tektronix Dual Trace 2215A scope
 
@@ -590,6 +592,8 @@ Now let's include the computer. All of the connections to the computer are made 
 \end{figure}
 
 Disconnect the SRS DS345 from Vin and make the following connections, in addition to looking at Figure~\ref{fig:ConnectionsForComputerSamplingOfPNJunction}. $V_{os} \cos(\theta)$,
+
+\newpage
 
 \begin{itemize}
     \item SRS DS345 ``$ 50 \Omega $; Sine output ----------------------------to ``EXT REF''
@@ -645,6 +649,8 @@ Let's now turn our attention to the bouncing ball circuit (BB).
 
     \item Connect BB OUT2 to the Tek 2215 scope CH 2.
 \end{itemize}
+
+\newpage
 
 Set the DS345 to  $\sim$50Hz and  $\sim$10V peak-to-peak (just turn the knob to about half-way in its range). Look at each channel in time. They should both be sinusoids. Put the scope in X-Y mode and you will see the system's phase portrait. The circuit is fully described in the reprints so we will only summarize it here: The circuit simulates the dynamics of a ball bouncing on a vertically sinusoidally driven table. One output is ball velocity, one is ball position (height from a fixed reference). When the table frequency and amplitude are small, the ball basically stays on the table and the phase portrait is that of an harmonic oscillator. Increase the drive frequency and you should see the phase-portrait begin to change. The phase-portrait becomes jittery and then it should jump to behavior that is periodic at twice the drive frequency. Take some time to understand the simple behaviors of the phase portrait: Which axis is velocity? Which is position? Why is the initial plot an ellipse? What's happening just as you increase the drive frequency but before the plot becomes jittery? Try varying the drive voltage.
 
