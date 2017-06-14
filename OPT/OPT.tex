@@ -263,7 +263,7 @@ Taking data for this experiment is more straightforward than for any other lab i
     \item We will be using a DS 345 synthesized function generator to drive the RF coils in this experiment (see Figure \ref{fig:BlockDiagram}). Before you begin taking data, it would be wise to familiarize yourself with its capabilities, its limitations, and its interface (see Figure \ref{fig:DS345} and the [\href{\DSManual}{\textbf{DS345 Manual}}]).
 \end{enumerate}
 
-\section{DS345 generator}
+\section{DS345 generator} \href{http://experimentationlab.berkeley.edu/ds345}{\emph{\textbf{video on DS345}}}
 \begin{itemize}
     \item Try experimenting with the signal modulation capabilities of the DS 345. Connect the modulation output (Do Not Terminate) of the DS345 (on the back panel, see Figure \ref{fig:DS345}) to the Ch. 1 (X) input of the oscilloscope and connect the terminated function output of the DS 345 to the Ch. 2 (Y) input of the scope. Set the oscilloscope to trigger off of channel 1 in the ``Norm'' mode. Set the scope to ``Alt'' rather than ``Chop''. Experiment with different amplitude modulation waveforms, span, and rate settings. You might also try using the X-Y mode of the scope to observe the output of the DS 345 (Function output against Modulation output) but don't let it confuse you. It is important to have a clear understanding of what the X-Y mode represents and when to use it (the display is called a Lissajous figure).
 
@@ -293,6 +293,14 @@ Taking data for this experiment is more straightforward than for any other lab i
 The temperature controller provides a DC signal to copper wires located inside the apparatus next to the rubidium bulb. The electrical current will radiate in the form of heat from the wires due to the friction of electron interaction ($\frac{dQ}{dt} = I^2 R = I^2 * \frac{\rho l}{A}$).  The greater the current the hotter the wires will get, as the electrons traveling down the wire will feel more of a frictional force. You will notice that the ``DC microamp'' display of the controller runs both ways. In order to increase the heat you will want to turn the black knob clockwise, shifting the red needle to the left. The greater the displacement of the needle the faster the temperature will rise, you will be able to keep your signal at roughly a constant temperature by adjusting this knob. \\
 
 Heat the sample to 48$^\circ$C, then turn the heater off to reduce noise, but remember that you want the temperature between 38$^\circ$C and 45$^\circ$C for good data (You will explore this temperature dependence in the following section and the noise associated with it). A reading from the temperature sensor is output to an LED display labeled `Oven Temperature'. Make sure the temperature does not go above 55$^\circ$C; if you start to approach this temperature, turn down the thermostat. The heater has an over-temperature shutoff switch in the heater box. If you over heat the box it will need time to rest and you should call one of the staff. \\
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\linewidth]{images/SR560}
+        \caption{SR560 Amplifier}
+        \label{fig:SR560}
+    \end{figure}
+
 
 As mentioned before, heating the glass cell will release more rubidium atoms off the walls of the cell and into the buffer gas in the volume of the cell. The higher vapor density will attenuate the Rb lamp more when it is not optically pumped, and so your detected signal -- the difference in optical transmission through the cell in the presence and the absence of optical pumping -- will be larger. However, as the cell heats up and the vapor density increases, there may be effects, such as Rb-Rb collisions, that reduce the lifetime of the optically pumped electronic state, having the effect of decreasing the strength of your signal. \\
 
