@@ -562,8 +562,6 @@ When you are done trapping and collecting data (see below) power down everything
 
 Many, if not all, of these settings, and the ones for the laser control, are likely already set to what they should be. If this is the case, then great. \textbf{It is important to make sure the proper settings are used}.
 
-\newpage
-
 The TEC has a preset current limit, $I_\text{LIM}$, of 1.4 A and the resistance, $T_\text{ACT}$, should be around 10.0 k$\Omega$, and always within the range 9.5 to 10.5 k$\Omega$. This should already be set, but it is important to make sure it is not changed. The TEC, when set properly and turned on, will control the temperature of the laser diode , which prevents temperature-related power fluctuations. It should not need to be adjusted.
 
 \textbf{Laser Diode Control} Control of the laser diode power is via the Laser Diode Control. Once the TEC has been set and turned on, the LDC can be used.
@@ -594,8 +592,6 @@ The QPD zero signal will vary somewhat with the power level of the laser. Hint: 
 
 \begin{enumerate}
     \item To get familiar with the location of the laser trap vertically with respect to the slide and coverslip and horizontally with respect to the camera's field of view, look for reflections of the infrared beam off of the slide and coverslip. These will look like focused beams in the camera viewer. To do this, find a place on the slide with no beads or cells nearby and turn on the laser at a medium power level (set LD I to 300 mA). Make sure that the emission filter in the filter wheel is not in the light path, as it screens out all of the infrared. As you move the objective up and down, you will see a reflection of the laser off the coverslip and off the slide when each is in focus.
-    
-    \newpage
 
     \item To trap a bead, you can search with the laser on or turned down or disabled until you find one to trap. It is easiest to turn off the laser entirely while noting the trap's location in the camera viewer field of view. Then, using the objective adjustment knob, focus on a bead to trap. Using stage control, move this bead approximately to the location of the trap, and turn back on the laser. The laser will likely no longer be a focused spot as it was when it was reflecting off of the coverslip/slide. Instead you might see a diffraction pattern. This is ok, the trap is still there. You should see the bead fall into place in the trap. Silica beads tend to sink rapidly to the bottom of the chamber formed by the slide and coverslip, meaning that they will be sitting on the coverslip. If beads are dense, then look for one that is isolated from others before turning the laser power up.
 
@@ -706,6 +702,9 @@ The average step sizes were:
     &\emph{up: } 25.64 \;\mu/\text{step} \\
     &\emph{down: } 35.71 \;\mu/\text{step}
 \end{align*}
+
+\newpage
+
 Using the Stage Control program provided within OTKBv7 (the MatLab GUI) we can find the speed for the different movements, given some set frequency. The speed can be determined by taking the distance per step (listed above) and multiplying by the frequency. This method was tested by Eric Parsonnet in June 2015, and was found to be correct.
 \begin{align*}
     &\emph{left expected: } \left(\frac{\text{distance} = 37.04 \text{nm}}{\text{step}}\right)(\text{frequency} = 250)=\frac{9.26 \mu}{\text{sec}} \\
