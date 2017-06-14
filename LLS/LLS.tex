@@ -333,7 +333,7 @@ You will use a function generator to provide an input signal to the SR760 in ord
 
     \item We want to set the SPAN of SR760 to 6.25 kHz and switch the display to linear magnitude:
     \begin{enumerate}
-        \item To turn on the SR760 hold down the back-arrow key, [[Image:LLSimage014.gif|thumb|250px|Title and Description]], on the SR760 FFT ENTRY pad and turn on the power. You should hold down the back-arrow key until all of the internal tests have completed and the FFT has started taking data. This starts the FFT in default mode. Note: occasionally you may see the FFT freeze and display the message: ``Calibrating Offset.'' This is normal and nothing to worry about. Just wait until it's done before continuing.
+        \item To turn on the SR760 hold down the back-arrow key, [$\leftarrow$], on the SR760 FFT ENTRY pad and turn on the power. You should hold down the back-arrow key until all of the internal tests have completed and the FFT has started taking data. This starts the FFT in default mode. Note: occasionally you may see the FFT freeze and display the message: ``Calibrating Offset.'' This is normal and nothing to worry about. Just wait until it's done before continuing.
 
         \item To set the SPAN
         \begin{enumerate}
@@ -548,14 +548,14 @@ Now you're going to learn to use the interface software for the Lock-In. You'll 
 
     \item Press [ START ] (The computer should start taking data).
 
-    \item A second or two after the program begins acquiring data, change the amplitude of the input sine wave to 0.02 $V_\text{pp}$. To do this quickly, input the new value for the amplitude on the function generator before you start the run, but wait to press the units button (i.e. [ Hz/$V_\text{pp}$] ) until you're ready (the function generator won't make any changes until everything's specified). The following figure shows what the output of the program might look like.
+    \item A second or two after the program begins acquiring data, change the amplitude of the input sine wave to 0.02 $V_\text{pp}$. To do this quickly, input the new value for the amplitude on the function generator before you start the run, but wait to press the units button (i.e. [ Hz/$V_\text{pp}$] ) until you're ready (the function generator won't make any changes until everything's specified). The following \textbf{Figure \ref{fig:LLSimage013}} shows what the output of the program might look like.
 
 \end{enumerate}
 
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/LLSimage013.jpg}{\includegraphics[width=0.5\linewidth]{images/LLSimage013.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/LLSimage013.jpg}{\includegraphics[width=0.6\linewidth]{images/LLSimage013.jpg}}
     \caption{}
     \label{fig:LLSimage013}
 \end{figure}
@@ -709,7 +709,7 @@ This experiment is mostly qualitative. You're basically going look at the 1/$f$ 
 
     \item Connect a cable to INPUT A of SR760. Grab the cable and place your thumb over the end. Hold on until the data have been taken.
 
-    \item Your data should look like \emph{\textbf{Figure 1}}. Does this follow a 1/$f^\alpha$ spectrum? Note that the vertical axis is a log scale. Why does the spectrum seem to diverge at $f$ = 0 Hz?
+    \item Your data should look like \textbf{Figure \ref{fig:LLSimage019}}. Does this follow a 1/$f^\alpha$ spectrum? Note that the vertical axis is a log scale. Why does the spectrum seem to diverge at $f$ = 0 Hz?
     \begin{figure}[h]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/LLSimage019.gif}{\includegraphics[width=0.5\linewidth]{images/LLSimage019.png}}
@@ -852,7 +852,7 @@ This experiment is almost completely qualitative. You'll look at some Microphoni
 
     \item Since you'll be providing the Microphonic action (i.e. shaking the cable), you probably won't need to look at the frequency spectrum above 100 Hz-unless you're a super-duper tambourine player. So set the SPAN to 97.5 Hz using the \emph{\textbf{Interface}} program. Also turn LINEAR AVERAGING off, if it is on (you'll want to track the happenings in real time, as the frequency of your shaking will probably vary a little).
 
-    \item Hook up a coaxial cable to INPUT A and let it cable hang still. Using the \emph{\textbf{Interface}} program, take a set of data points. Look at the spectrum. You should see something as in \emph{\textbf{Figure \ref{fig:WithoutShakingTheCable}}}. Note the 1/$f$ and capacitive noise. Include a copy of these data in your lab write-up.
+    \item Hook up a coaxial cable to INPUT A and let it cable hang still. Using the \emph{\textbf{Interface}} program, take a set of data points. Look at the spectrum. You should see something as in \textbf{Figure \ref{fig:WithoutShakingTheCable}}. Note the 1/$f$ and capacitive noise. Include a copy of these data in your lab write-up.
 
     \begin{figure}[h]
         \centering
@@ -861,7 +861,7 @@ This experiment is almost completely qualitative. You'll look at some Microphoni
         \label{fig:WithoutShakingTheCable}
     \end{figure}
 
-    \item Now shake the cable at a semi-constant frequency (\emph{Note: you don't have to go crazy. You're not trying to kill snakes or anything. Just shake it gently}). \textbf{Comment on what happens on the FFT screen.} Using the \emph{\textbf{Interface}} program, take a set of data while shaking the cable. Your data should look something like \emph{\textbf{Figure \ref{fig:ShakingTheCable}}}.
+    \item Now shake the cable at a semi-constant frequency (\emph{Note: you don't have to go crazy. You're not trying to kill snakes or anything. Just shake it gently}). \textbf{Comment on what happens on the FFT screen.} Using the \emph{\textbf{Interface}} program, take a set of data while shaking the cable. Your data should look something like \textbf{Figure \ref{fig:ShakingTheCable}}.
 
     \begin{figure}[h]
         \centering
@@ -1027,7 +1027,7 @@ In this experiment, you will use the SR830 Lock-In to measure Johnson noise and 
 
         \item \textbf{Some of your data are zero}. Perhaps you need to reduce the TOTAL NUMBER OF DATA POINTS below 1200.
 
-        \item \textbf{The data look very ``spiky''. WHY IS THIS A PROBLEM (this is a question for you to answer)?} The SAMPLE RATE is probably too low. Increase it. Your data should look rather rounded and contain as many ``periods'' as possible. See \emph{\textbf{Figure \ref{fig:DataNotSpikyAndHavePeriods}.}}
+        \item \textbf{The data look very ``spiky''. WHY IS THIS A PROBLEM (this is a question for you to answer)?} The SAMPLE RATE is probably too low. Increase it. Your data should look rather rounded and contain as many ``periods'' as possible. See \textbf{Figure \ref{fig:DataNotSpikyAndHavePeriods}}.
 
         \begin{figure}[h]
             \centering
@@ -1068,7 +1068,7 @@ There are three techniques that you can use to reduce the amount of noise in you
 
 We are now ready to apply what we have learned. Our goal is to measure the light output of an LED using the 10DP Pin Diode. We'll complicate things by taking this measurement with a lot of background noise sources such as overhead room lights.
 
-How should we go about taking such a measurement? We learned that if we can modulate our light source at a known frequency, we can use the SR830 Lock-In to recover any signal at that frequency. To do just this, we chop our light signal with a chopper wheel. In essence, we are turning our D.C. signal into an oscillating signal. In a typical setting, the chopper wheel slits are much larger than the light source-making a square wave. In this experiment, however, the chopper slits are just about the same size as the LED, so that we'll be stuck with something closer to a triangular wave. See Figure \ref{fig:PowerVsTime}:
+How should we go about taking such a measurement? We learned that if we can modulate our light source at a known frequency, we can use the SR830 Lock-In to recover any signal at that frequency. To do just this, we chop our light signal with a chopper wheel. In essence, we are turning our D.C. signal into an oscillating signal. In a typical setting, the chopper wheel slits are much larger than the light source-making a square wave. In this experiment, however, the chopper slits are just about the same size as the LED, so that we'll be stuck with something closer to a triangular wave. See \textbf{Figure \ref{fig:PowerVsTime}}:
 
 \begin{figure}[h]
     \centering
@@ -1088,7 +1088,7 @@ How should we go about taking such a measurement? We learned that if we can modu
     \label{fig:BlockDiagramI}
 \end{figure}
 
-Shown above in Figure \ref{fig:BlockDiagramI} is a block diagram for the experiment. The LED signal is chopped by the chopper, whose frequency is set by the SR540 Chopper Controller. The chopped signal is detected by the PIN-10DP photodiode, which sends a current signal to the SR570 Low-Noise Current Preamplifier. The SR570 amplifies, filters, and measures the input current signal and you convert it to an output voltage signal. The voltage signal is then sent to the SR760 FFT and the SR830 Lock-In Amplifier. The reference signal for the Lock-In is provided by the SR540. Finally, the computer gathers and analyzes the data.
+Shown above in \textbf{Figure \ref{fig:BlockDiagramI}} is a block diagram for the experiment. The LED signal is chopped by the chopper, whose frequency is set by the SR540 Chopper Controller. The chopped signal is detected by the PIN-10DP photodiode, which sends a current signal to the SR570 Low-Noise Current Preamplifier. The SR570 amplifies, filters, and measures the input current signal and you convert it to an output voltage signal. The voltage signal is then sent to the SR760 FFT and the SR830 Lock-In Amplifier. The reference signal for the Lock-In is provided by the SR540. Finally, the computer gathers and analyzes the data.
 
 You may be asking yourself, ``why do we need to use the SR570? It just adds a bunch of noise to our signal! It can't just be that the SR570 will convert the current signal to a voltage! I read that the Lock-In can accept either a voltage or a current. So what is the purpose of the SR570?''
 
@@ -1098,7 +1098,7 @@ If the current is too large, we will have to use the SR570. First let us see whe
 
 \subsection{Exercise V}
 
-If we were using Block Diagram I (Figure \ref{fig:BlockDiagramI}) for our experiment, determine the minimum sensitivity we should set on the SR570. Use the table in the SR570 Operation manual to determine the minimum amount of noise (in A/$\sqrt{\text{Hz}}$) that will be added to our signal by the SR570. Compare that to the Johnson current noise and Shot noise of the Pin-10DP in normal operating mode (hint: you'll need to know the resistance of the Pin-10DP).
+If we were using Block Diagram I (textbf{Figure \ref{fig:BlockDiagramI}}) for our experiment, determine the minimum sensitivity we should set on the SR570. Use the table in the SR570 Operation manual to determine the minimum amount of noise (in A/$\sqrt{\text{Hz}}$) that will be added to our signal by the SR570. Compare that to the Johnson current noise and Shot noise of the Pin-10DP in normal operating mode (hint: you'll need to know the resistance of the Pin-10DP).
 
 \subsection{Experiment X}
 
@@ -1189,7 +1189,7 @@ where $I(\vec{r})$ is the intensity of the light from the LED as a function of p
 \end{equation}
 where $C$ depends only on the power output of the LED, $\theta$ is the angle listed on the data sheet, and $r$ is the distance from the LED (so that in polar coordinates, the LED would be oriented along the $z$-axis).
 
-Shown in Figure \ref{fig:RadiationProfile} is the actual radiation profile of the LED and the $\cos^2\theta$ approximation (as a function of the angle $\theta$). Note that using this approximation, we will be \emph{overestimating} the actual power output of the diode, as the area contained in the approximate distribution is larger than that contained in the actual profile. \textbf{About how much of an error do you estimate that this approximation will introduce to our measurement?}
+Shown in \textbf{Figure \ref{fig:RadiationProfile}} is the actual radiation profile of the LED and the $\cos^2\theta$ approximation (as a function of the angle $\theta$). Note that using this approximation, we will be \emph{overestimating} the actual power output of the diode, as the area contained in the approximate distribution is larger than that contained in the actual profile. \textbf{About how much of an error do you estimate that this approximation will introduce to our measurement?}
 
 
 \begin{figure}[h]
