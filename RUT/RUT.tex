@@ -248,17 +248,23 @@ See diagram \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/RUT/RUT
 \begin{enumerate}
     \item Turn the electronics on. There are four switches to check: the master power switch in the lower right side of the Nim Bin, the then the Tran-L-Amp should be inside the Nim Bin rack.
 
-    \item DETECTOR and PRE-AMP: The detector is a Silicon PN-junction with about 250 microns of gold on it. It has a bias of 50 volts at 4 microamps with a diameter of 0.75 inches. The detector receives its power through a voltage divider to get 50 volts from the 100 volt power supply in the rack. Take the output from the pre-amp (BNC coaxial cable) and feed it into the scope. Adjust the A TRIGGER LEVEL on the scope and see if you can obtain the positive pulse as shown in Figure \ref{fig:350px-RUT_Spectrum_with_Foil}. You may have to increase the intensity of the trace, and put a hood on the oscilloscope to shut out room light. This pulse is the amplified signal from the detector. The positive voltage pulses represent the detected alpha particles, and the height of the pulses is proportional to the energy of the particles. Reconnect the output of the pre-amp to the AMP IN of the linear amplifier (PG1).
+    \item DETECTOR and PRE-AMP: The detector is a Silicon PN-junction with about 250 microns of gold on it. It has a bias of 50 volts at 4 microamps with a diameter of 0.75 inches. The detector receives its power through a voltage divider to get 50 volts from the 100 volt power supply in the rack. Take the output from the pre-amp (BNC coaxial cable) and feed it into the scope. Adjust the A TRIGGER LEVEL on the scope and see if you can obtain the positive pulse as shown in Figure \ref{fig:SoftScopeDisplay}. You may have to increase the intensity of the trace, and put a hood on the oscilloscope to shut out room light. This pulse is the amplified signal from the detector. The positive voltage pulses represent the detected alpha particles, and the height of the pulses is proportional to the energy of the particles. Reconnect the output of the pre-amp to the AMP IN of the linear amplifier (PG1).
 
     \item Tran-L-Amp: This unit amplifies and shapes the unipolar pulse (unipolar means it goes up and comes down without crossing zero) from the pre-amp. The polarity knob must be set properly for the input pulses, should it be set to POSITIVE or NEGATIVE? To start with, also set the DIFF to 1.0, INT to 0.05, Coarse Gain to 100, and Vennier Gain to about 5.9. microseconds. For now, set the FINE GAIN at 1.75 (you should optimize the settings of this amplifier before starting taking serious data). Use the BNC cable to look at point PG2 ---the output of the Linear. You should see a signal like Figure \ref{fig:SoftScopeDisplay}. Now use the Soft Scope program to view the signal at PG-2 look for a positive signal as seen below.
 
 \end{enumerate}
 
 \begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/350px-RUT_Soft_Scope.png}{\includegraphics[width=0.5\linewidth]{images/350px-RUT_Soft_Scope.png}}
+\begin{minipage}{0.49\linewidth}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/350px-RUT_Soft_Scope.png}{\includegraphics[width=\linewidth]{images/350px-RUT_Soft_Scope.png}}
     \caption{Soft Scope display. Signal from PG-2}
     \label{fig:SoftScopeDisplay}
+    \end{minipage} \hfill
+    \begin{minipage}{0.49\linewidth}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/350px-RUT_Spectrum_with_Foil.png}{\includegraphics[width=\linewidth]{images/350px-RUT_Spectrum_with_Foil.png}}
+    \caption{Spectrum With Gold Foil}
+    \label{fig:350px-RUT_Spectrum_with_Foil}
+    \end{minipage}
 \end{figure}
 
 \textbf{Checkpoint: Call a GSI or Professor over and show them all the signals you have found. Explain the signals.}
@@ -269,13 +275,6 @@ See diagram \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/RUT/RUT
     \item There is a LabView Program ICON on the computer desktop called ``PHA-5124''. Read \href{http://experimentationlab.berkeley.edu/PHA-5124Program}{\textbf{PHA-5124}} first. This program automates the data taking. Just double click on the Icon and take data. Before taking genuine data, determine the impact of the setting of the control parameters listed in the program. Make sure you understand each one and choose the proper setting for your measurement. Your data will be saved with a header and data such that it can be imported into Matlab or Excel. The data will have time and day stamp on all of the files saved.
 
 \end{enumerate}
-
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/350px-RUT_Spectrum_with_Foil.png}{\includegraphics[width=0.5\linewidth]{images/350px-RUT_Spectrum_with_Foil.png}}
-    \caption{Spectrum With Gold Foil}
-    \label{fig:350px-RUT_Spectrum_with_Foil}
-\end{figure}
 
 \section{Handling gold foils}
 
