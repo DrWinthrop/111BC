@@ -825,7 +825,7 @@ You are provided two means for measuring the number of atoms in the MOT: a photo
 
 Start with the photodiode. First, make sure the photodiode is properly aligned. A neat way to do this is first to focus the video camera onto the MOT. Notice that the front face of PD3 is also visible in the video image. When everything's properly aligned, the center part of the front of PD3 should be imaged onto the MOT and then re-imaged onto the video camera.
 
-To record the number of atoms in the MOT, use the VI. Set the ``step'' duration (i.e. the time the shutter is closed) to 100 ms or more (long enough to deplete the MOT completely, setting $N_i = 0$). Run the VI and record the photodiode voltage using either the VI or a digital storage oscilloscope. You should see a trace similar to Fig. 10, which you should interpret to determine how much of your signal is due to the MOT fluorescence. To relate this to the number of atoms in the MOT, you need to know a few things: the fluorescence rate (photons/second) per atom (this depends on the laser intensities and detuning; see above), the solid-angle $\Omega$ of your optical collection system, the efficiency of your photodetector [(Amperes of current output)/(Watt of input optical power)] (\href{http://experimentationlab.berkeley.edu/sites/default/files/images/Photodiode\_info.pdf}{\textbf{see manufacturer spec sheet}}), the impedance $Z$ by which you convert photodiode current to voltage.
+To record the number of atoms in the MOT, use the VI. Set the ``step'' duration (i.e. the time the shutter is closed) to 100 ms or more (long enough to deplete the MOT completely, setting $N_i = 0$). Run the VI and record the photodiode voltage using either the VI or a digital storage oscilloscope. You should see a trace similar to Figure~\ref{fig:600px-PD3_v2}, which you should interpret to determine how much of your signal is due to the MOT fluorescence. To relate this to the number of atoms in the MOT, you need to know a few things: the fluorescence rate (photons/second) per atom (this depends on the laser intensities and detuning; see above), the solid-angle $\Omega$ of your optical collection system, the efficiency of your photodetector [(Amperes of current output)/(Watt of input optical power)] (\href{http://experimentationlab.berkeley.edu/sites/default/files/images/Photodiode\_info.pdf}{\textbf{see manufacturer spec sheet}}), the impedance $Z$ by which you convert photodiode current to voltage.
 
 \begin{figure}[h]
     \centering
@@ -875,7 +875,7 @@ To carry out this measurement, we make use of the ``MOT VI'' again. To switch of
 
 \textbf{Release-and-catch}
 
-One way to measure the velocity distribution is by counting the number of atoms $N_i$ in the MOT just a few ms after the laser light is returned to resonance, and to interpret this as being the number of atoms that are within the ``capture volume'' of the MOT (the atoms coming out of the MOT should certainly be within the capture velocity). This idea is illustrated in Fig. 8. Without worrying about small multiplicative factors, you might take this volume to be a sphere with radius given by some characteristic dimension of the laser beams.
+One way to measure the velocity distribution is by counting the number of atoms $N_i$ in the MOT just a few ms after the laser light is returned to resonance, and to interpret this as being the number of atoms that are within the ``capture volume'' of the MOT (the atoms coming out of the MOT should certainly be within the capture velocity). This idea is illustrated in Figure~\ref{fig:600px-PD3_v2}. Without worrying about small multiplicative factors, you might take this volume to be a sphere with radius given by some characteristic dimension of the laser beams.
 
 \begin{figure}[h]
     \centering
@@ -887,7 +887,7 @@ One way to measure the velocity distribution is by counting the number of atoms 
 \begin{itemize}
     \item Using the photodiode monitor, record $N_i$ vs. $t_\text{TOF}$. Use the ``pulse'' function on the VI and be sure that the MOT has sufficient time to fill completely between pulses. Examining the signal on PD3, you should record both $N_i$ and $N_f$ so that you can adjust your data in case $N_f$ varies during the time you are collecting data. Also, you should determine $t_\text{TOF}$ from the PD3 data trace so that you can account properly for delays in the shutter closing and opening.
 
-    If you examine the PD3 signal for short $t_\text{TOF}$, you will actually see the fluorescence rising in three distinct stages: (1) the level rises very quickly (order 100 microseconds) as the shutter opens, (2) the level rises moderately fast (several ms) as the atoms released from the MOT are gathered again into a new MOT, and (3) the level rises slowly (several 100 ms) as atoms are gathered again from the room temperature vapor. Note this is different than what is shown in Figure 8b (shown for the case where no atoms are re-captured in the MOT).
+    If you examine the PD3 signal for short $t_\text{TOF}$, you will actually see the fluorescence rising in three distinct stages: (1) the level rises very quickly (order 100 microseconds) as the shutter opens, (2) the level rises moderately fast (several ms) as the atoms released from the MOT are gathered again into a new MOT, and (3) the level rises slowly (several 100 ms) as atoms are gathered again from the room temperature vapor. Note this is different than what is shown in Figure~\ref{fig:600px-PD3_v2} (shown for the case where no atoms are re-captured in the MOT).
 
     \item When you have a satisfactory data set, use it to determine the temperature of the gas. Be sure to explain clearly how you are relating your measurement to the gas temperature.
 
@@ -938,19 +938,19 @@ All Reprints and other information can be found on the \href{http://physics111.l
 
     \bibitem{Metcalf} \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Laser\_Cooling\_and\_Trapping\_HJ\_Metcalf/MOT\%20OCR\%20ch.\%203\%20force\%20on\%20two-level\%20atoms.pdf}{\textbf{5.0}}; \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Laser\_Cooling\_and\_Trapping\_HJ\_Metcalf/MOT\%20OCR\%20ch.\%207\%20optical\%20molasses.pdf}{\textbf{5.1}};\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Laser\_Cooling\_and\_Trapping\_HJ\_Metcalf/MOT\%20OCR\%20\%20ch.\%2011.4\%20magneto-optical\%20traps.pdf}{\textbf{5.2}} (ch3, 7. 11.4) H.J. Metcalf and P. van der Straten. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Laser\_Cooling\_and\_Trapping\_HJ\_Metcalf/}{\textbf{Laser Cooling and Trapping}} (Springer, 1999).
 
-    \bibitem{Steck} ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/rubidium85numbers.pdf}{\textbf{Rubidium 85 D line data}}'' and ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/rubidium87numbers.pdf}{\textbf{Rubidium 87 D line data}}'' Dan Steck, University of Oregon. \href{http://steck.us/alkalidata/}{\textbf{Documents available}}
+    \bibitem{Steck} \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/rubidium85numbers.pdf}{\textbf{``Rubidium 85 D line data''}} and \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/rubidium87numbers.pdf}{\textbf{``Rubidium 87 D line data''}} Dan Steck, University of Oregon. \href{http://steck.us/alkalidata/}{\textbf{Documents available}}
 
     \bibitem{Siddons} P. Siddons, C.S. Adams, C. Ge and I.G. Hughes, ``Absolute absorption on rubidium D lines: comparison between theory and experiment,'' Journal of Physics B: Atomic, Molecular and Optical Physics 41, 155004 (2008).
 
     \bibitem{Monroe} C. Monroe, W. Swann, H. Robinson, and C. Wieman. \href{http://dev-physicsadv.pantheon.berkeley.edu/sites/default/files/images/Monroe\_etal.pdf}{\textbf{``Very Cold Trapped Atoms in a Vapor Cell.''}} Physical Review Letters 65, 1571 (1990).
 
-    \bibitem{DiStefano} J.J. DiStefano, A.R. Stubberud, and I.J. Williams. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Schaum's\%20Outline\%20Theory\%20and\%20Problems\%20of\%20Feedback\%20and\%20Control\%20Systems/}{\textbf{Schaum’s outline of theory and problems of feedback and control system}}s (McGraw-Hill; New York; 1990).
+    \bibitem{DiStefano} J.J. DiStefano, A.R. Stubberud, and I.J. Williams. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Schaum's\%20Outline\%20Theory\%20and\%20Problems\%20of\%20Feedback\%20and\%20Control\%20Systems/}{\textbf{Schaum’s outline of theory and problems of feedback and control systems}} (McGraw-Hill; New York; 1990).
 
     \bibitem{Dorf} R.C. Dorf and R.H. Bishop, ``Modern Control Systems, 8th ed.'', Addison Wesley Longman (1998).
 
-    \bibitem{Bechhoefer} J. Bechhoefer. \href{http://journals.aps.org/rmp/pdf/10.1103/RevModPhys.77.783}{\textbf{``Feedback for physicists: A tutorial essay on control''}} Reviews of Modern Physics 77, 783 (2005)
+    \bibitem{Bechhoefer} J. Bechhoefer. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Bechhoefer_RMP_v77-2005-p783_1.pdf}{\textbf{``Feedback for physicists: A tutorial essay on control''}} Reviews of Modern Physics 77, 783 (2005)
 
-    \bibitem{Wieman} C.E. Wieman and L. Hollberg. ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Weiman\_in\_Denver\_MOT.pdf}{\textbf{Using diode lasers for atomic physics}},'' Review of Scientific Instruments 62, 1 (1991). A comprehensive guide to diode lasers
+    \bibitem{Wieman} C.E. Wieman and L. Hollberg. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/usingdiodelasersforatomicphysics.pdf}{\textbf{``Using diode lasers for atomic physics''}}, Review of Scientific Instruments 62, 1 (1991). A comprehensive guide to diode lasers
 
     \bibitem{BSCWriteup} \href{http://socrates.berkeley.edu/~phylabs/bsc/PDFFiles/bscLV-11.pdf}{\textbf{BSC writeup, laboratory \#11}}
 
