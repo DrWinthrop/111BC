@@ -716,8 +716,6 @@ The others were checked as well, but it is not necessary for me to include them 
 
 \subsection{Position and Stiffness Calibration of the QPD}
 
-\newpage
-
 Calibration of the QPD's response to movements of the trapped objects typically use microspheres because of their symmetry and standardized characteristics, such as refractive index, size, shape, etc. In some cases, calibration is performed with a bead that is similar in size and shape to the biological specimen of interest. In others, the bead itself is used in an experiment to apply forces to the biological specimen. For example, a bead can be attached to one end of a macromolecule such as DNA as a handle to pull on. If the other end of the molecule is stuck to a coverslip or a pipette, the bead can be moved by the trap to apply precise forces to the molecule or other structure. In this lab you can do your calibration with Silica beads of 1 or 2 micron diameter, and should plan to use the same bead size for all of your calibration techniques.
 
 \textbf{What is Position Calibration?} Within a narrow range around the trap (about 100-200 nm), the voltages $V_x$ and $V_y$ from the QPD are linearly related \cite{Gittes} to the distance of the bead from the center of the trap along each axis. The position calibration, also called \emph{sensitivity}, allows us to translate our raw $V_x$ and $V_y$ data into distance data. Sensitivity, $\rho$, is usually given in units of Volts/$\mu$. Of course, the power setting of the laser will affect the light intensity incident on the QPD, and thus the voltage responses, so rather than a single conversion we really want the relationship between sensitivity and laser power. This normally is fairly linear, so measuring sensitivity at 4 power levels is plenty to characterize the relationship.
@@ -742,8 +740,6 @@ To summarize, you will use three techniques for position and stiffness calibrati
 \subsubsection{Stuck Bead Scanning Method (Position Calibration)}
 
 We recommend scanning a stuck bead along each orthogonal axis through the center of the trap, considering $V_x$ and $V_y$ independently of one another. A more complete calibration would require raster scanning back and forth in a grid to cover the entire active 2D region of sensor, but this is problematic due to some hysteresis and imprecision in our motorized stage so we'll stick to measurements along the axes.
-
-\newpage
 
 \textbf{Stuck Bead Sample Preparation} Exposing the beads to a salt solution causes them to stick to glass by hydrophobic interactions. A 1 M NaCl solution is provided for this purpose. You can simply substitute the salt solution for water, and again make a 1:10,000 dilution. Alternatively, you could combine the salt solution with a bead sample directly on a slide rather than making a separate vial. To do this, try adding 5 microliters of your previous 1:10,000 dilution of a bead stock in water to 30 microliters of 1 M NaCl on a slide. After adding a coverslip, invert the slide. It may take up to 10-20 min to get good adhesion, and some beads will stick better than others. You may need to adjust the bead concentration to get a reasonable density of beads on your slide.
 
@@ -798,8 +794,6 @@ The thermal motion of a spherical bead of known size suspended in water is well 
 
 \textbf{Procedure}
 
-\newpage
-
 \begin{enumerate}
     \item Starting with a slide loaded with a sparse suspension of beads in water, trap a bead and move it well away from other beads.
 
@@ -850,7 +844,6 @@ Similarly, the rolloff frequency parameters found from \emph{fitlogcurvevarX} an
 again where $\beta$ = $3\pi\eta d$  is the drag, $\eta = 8.90 \times 10^{-4}$ Pa*s is the viscosity of water, and $d$ is the diameter of the bead (in meters).
 
 Finally, you will want to graph $\rho_x$, $\rho_y$, $k_x$, and $k_x$ versus laser power, and fit a line to each of them to determine their dependence on laser power. You may consider averaging the values you obtained from each bead first.
-
 
 \textbf{This is a Checkpoint: Call over a GSI or Professor and show them your graphs of $\rho_x$ , $\rho_y$, $k_x$, $k_y$ versus laser power as well as your solutions for $x$ and $y$ sensitivities from the alpha values $a_x, a_y$.}
 
@@ -1039,7 +1032,16 @@ To begin, you must first have an onion you provide and a bag to hold it after yo
 
 In this part of the experiment, you will observe the motion of particles inside a living cell. Cells transport food, waste, information, etc. in membrane-bound vesicles, which are visible under a light microscope. An old-fashioned view of a cell was that it is a ``bag of water'' containing various enzymes in which matter is transported passively by diffusion. Though diffusion is an important mechanism, it is too slow and random for long distance transport and directing materials where they are most needed, especially in larger cells. It is now understood that cells have highly developed and intricate mechanisms for directed transport of materials.
 
-Most motions within and of cells involve two components, a cytoskeletal fiber that serves as a track, and a \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/biowikipedia.pdf}{\textbf{motor protein}} that does the work. The motor molecule uses energy from the hydrolysis of one ATP molecule to bind to the fiber, bend to pull itself along the fiber, and release, all of which constitutes one ``step''. For an animation of this stepping process, see this \href{https://valelab.ucsf.edu/molecular-animations/}{\textbf{movie animation}} from the Vale lab web site at UC San Francisco. One can divide cellular motility mechanisms into two classes based on the cytoskeletal fibers involved. (1) Microtubule-based mechanisms involve dynein or kinesin motors pulling on microtubules made of the protein tubulin. (2) Actin-based mechanisms involve myosin motors pulling on actin fibers, also called microfibers.
+Most motions within and of cells involve two components, a cytoskeletal fiber that serves as a track, and a \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/biowikipedia.pdf}{\textbf{motor protein}} that does the work. The motor molecule uses energy from the hydrolysis of one ATP molecule to bind to the fiber, bend to pull itself along the fiber, and release, all of which constitutes one ``step''. For an animation of this stepping process, see this \href{https://valelab.ucsf.edu/molecular-animations/}{\textbf{movie animation}} from the Vale lab web site at UC San Francisco. 
+
+The separate animations can be found here:
+
+\begin{itemize}
+    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/dyneinstepping.mp4}{dynein }
+
+\end{itemize}
+
+One can divide cellular motility mechanisms into two classes based on the cytoskeletal fibers involved. (1) Microtubule-based mechanisms involve dynein or kinesin motors pulling on microtubules made of the protein tubulin. (2) Actin-based mechanisms involve myosin motors pulling on actin fibers, also called microfibers.
 
 \begin{figure}[h]
 \begin{minipage}[t]{.475\textwidth}
