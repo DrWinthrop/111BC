@@ -82,6 +82,8 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \textbf{Complete the following before your experiment's scheduled start date:}
 
+\newpage
+
 \begin{enumerate}
     \item View the \href{http://youtu.be/uqH0qRIwBmg}{\textbf{Muon Lifetime video}}.
 
@@ -183,6 +185,8 @@ A photomultiplier tube (PMT) is a detector that converts single photons into lar
 
 \noindent\textbf{In the shaft of room 275 LeConte Hall} (Get a GSI to let you into the room) \textbf{are located:}
 
+\newpage
+
 \begin{itemize}
     \item a high voltage supply and a high voltage divider for the photomultiplier tubes. The high voltage of the photomultiplier tube normally is left on and is NOT adjusted by the student. See the staff in the 111-LAB. These photomultiplier tubes are irreplaceable. Do not mess with them.
 
@@ -214,6 +218,8 @@ A photomultiplier tube (PMT) is a detector that converts single photons into lar
 
 \subsection{How the Experiment Works}
 
+\newpage
+
 Muons are derived from the process of cosmic ray particles striking the nuclei of atoms and molecules in the atmosphere. A muon that passes through the liquid scintillator tank generates scintillation. A photomultiplier tube picks up the light pulse and sends an electrical signal through a cable to our experiment. A muon that enters, stops, and subsequently decays in the liquid scintillator gives rise to two pulses separated by a few microseconds, one when it enters the liquid, and a second one when it decays. The pulses can be viewed with an oscilloscope or digitized and stored on the computer. You are going to measure the time difference between these correlated pulses, as well as the amplitude and width of each pulse. After many such observations, you will obtain a distribution of the number of counts vs. time difference. Ideally, when these data are plotted, they will form an exponential decay curve, whose decay constant is the lifetime of the the muon.
 
 \begin{figure}[h]
@@ -231,6 +237,8 @@ When the two pulses come down the cable, they are routed to an amplifier. Then t
 
 \noindent\href{http://experimentationlab.berkeley.edu/sites/default/files/Muon/MUONdetectionprogram\_2.png}{\textbf{Screenshot of the Muon Detection Program}}
 
+\newpage
+
 \textbf{This is a Checkpoint: Before you use these programs you should have viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabVIEW program as it will need to be specified when the data acquisition begins. The trigger level on the lab view program is initialized to some arbitrary voltage, however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic spread of oscillations are simply noise and you are looking for very narrow sharp peaks following the initial large decaying spike. Show  GSI your pulse signals on the oscilloscope and discuss what values you think are appropriate for the LABView program. }
 \begin{itemize}
     \item Note: High voltage on the PMTs are as follows, Top tube =1900 Volts Negative and bottom tube = 2300 Volts Negative with the SR445A 4 each amplifier, setup top PMT 1 -amp, bottom PMT 2 amps.
@@ -238,6 +246,8 @@ When the two pulses come down the cable, they are routed to an amplifier. Then t
 \end{itemize}
 
 This experiment uses two different LabVIEW programs: \textbf{View Signals} and \textbf{Muon Detection Program}. The purpose of \textbf{View Signals} is for you to choose the best input parameters by inspecting the signals and seeing how changes in the input parameters affect the signals and counting rates. (This reads the input signals like an oscilloscope). The optimal input parameters should then be used in the program \textbf{Muon Detection Program}, whose purpose is to save pulses to data files, from which you calculate the muon lifetime.
+
+\newpage
 
 A high-speed digitizer installed in the back of the computer receives two signals. The digitizer represents the incoming analog signal by generating a series of numbers that describes the discrete samples. The top PMT is connected to Channel 0 of the digitizer, and the bottom PMT is read out by Channel 1. The digitizer is configured and initialized when you click \textbf{Start Acquisition} in either of the Muon LabVIEW programs and essentially a programmed way to interpret the incoming signal. However since the digitizers purpose is to represent the incoming signal and process the data you can change its configuration throughout the program. You can set the input range for each channel separately; 2 V is about right for both channels (the offset is set to 20\% of the range, so 2V corresponds to the range [$-$0.4V..+1.6V]). The input impedance is set to 50 ohms and the digitizer uses full bandwidth.
 
@@ -250,6 +260,8 @@ Both programs initiate a record acquisition by the digitizer and, once the volta
 It is important to note that in the program \textbf{View Signals}, after clicking \textbf{Start Acquisition}, the program continues to acquire records from the amplifier and searches them for the specified pulses until you click \textbf{Stop Acquisition}. This program graphs the \textbf{Raw signals} acquired by the digitizer, the \textbf{Signal with offset removed} and the \textbf{Filtered signal} -- for each channel (Channel 0 in white, Channel 1 in red).
 
 Once you have determined the optimal settings for the program controls the next portion of the lab deals with the\textbf{ Muon Detection Program }which measures the pulse height and width in addition to time. To reduce noise, the programs pass the waveforms through a 29-tap low-pass filter. You set the cut-off frequency of the filter with the control \textbf{Lower-cut off frequency}. \textbf{Pulse 1 threshold} and \textbf{Pulse 2 threshold} correspond to the unfiltered signal. Unfiltered pulses that meet these thresholds will have their amplitudes reduced upon filtering.
+
+\newpage
 
 When you click \textbf{Start Acquisition}, the program prompts you to enter two different file paths to save data: a temporary local data file and a network data file. The temporary file is supposed to be on local disk (``C:/'') so that network connectivity does not affect performance. The temporary file is copied to the network storage (your ``Documents/'' directory) when the program terminates. After the files are open, the program begins acquiring records and searching them for pulses. When an output condition is satisfied (i.e. exactly the specified number of pulses is found in each channel, up to the maximum of 2), the program writes out a record of 12 floating-point numbers to the temporary file: time, amplitude, and width of four pulses: 1st pulse in Channel 0, 2nd pulse in Channel 0, 1st pulse in Channel 1, 2nd pulse in Channel 1. If a given pulse is not found in the record, the time, amplitude, and width are assigned zero values. \textbf{IMPORTANT FOR DATA ANALYSIS:} It is the values saved in this text file that you will be working with in the analysis of this lab. This is the file that you should be uploading to MatLab or ROOT as it will have all the information about the signals received from the PMT.
 
@@ -393,6 +405,8 @@ In experimental physics it is important to understand the electronics you work w
     
     \textbf{This is a Checkpoint: }Which function did you fit to the time difference data? Explain what the mean and standard deviation tell you about the data and its physical significance.\textbf{ }
 
+\newpage
+
     \item \textbf{Efficiency of the digitizer}. Since you will determine the muon lifetime from a histogram of \emph{counts vs time}, you will need to make sure that each time interval is counted by the apparatus equally. To check this, you need to present the apparatus with \emph{a-priori} uniform distribution of time differences. This is done by combining signals from two \emph{uncorrelated} sources: a through-going muon, and an external pulse generator (DG645). As long as the counting rates from the two sources are similar, it's likely that the two trigger pulses will come from different sources.
 
     \begin{itemize}
@@ -422,6 +436,8 @@ In experimental physics it is important to understand the electronics you work w
     \end{itemize}
 
     \item \textbf{Calibration of the digitizer clock}. Even though the VI reports the time interval $dt$ in seconds, you need to check that the time scale is accurate. To do this, you need to send pairs of pulses from DG645 generator to the digitizer, vary the time interval between the pulses, and reconstruct this time interval with the VI.
+
+\newpage
 
     \begin{itemize}
         \item First, reconfigure the internal trigger of the Delay Generator to 12.5kHz (this should be half the value used in the previous part). If the value is kept at 25kHz, a third pulse may be detected (why?).
@@ -457,6 +473,8 @@ In experimental physics it is important to understand the electronics you work w
 
     \item Make a semi-log plot of counting rate $D$ vs. time separation $dt$. On this plot, fit the background (from about 10 to 20 $\mu $s) to a straight line (with the slope not necessarily zero). Extrapolate the line under the muon decay region and subtract the background in each channel from $D$, yielding $D_2$. \textbf{THINK:} How does the choice of the background fit influence your results? Is the fit to the background a constant throughout time, a linear decay, or an exponential decay. Once you have determined the fit and keeping in mind that we are interested in the counting rate, think about how you can properly remove this background noise from the muon decay region (i.e. what mathematical operation relates the noise to the muon decay?). Discuss what could be determining the fit of the background and its correlation to the data you are interested in.
 
+\newpage
+
     \item Make a semi-log plot of $D_2$ vs $dt$. Make sure errors are correctly computed for $\log D_2$. Make a least-squares fit to a straight line (over a time interval where such a fit makes sense). The slope of this line is inversely proportional to the ``effective'' muon lifetime. Also show lines corresponding to ``effective'' lifetimes that are one standard deviation higher and lower than the mean lifetime. All lines should be normalized to the same total number of counts. After you make a fit, also check and see how the calculated exponential curve fits the measured curve. Change the limits of the fit by adding or deleting data points and the beginning and end of the data interval; observe how the lifetime values and the $\chi^2$ of the fit change. In other words, cut and trim your data to observe the effects on the lifetime measurement. Justify any omission of data when you quote your final answer.
 
     \item Be sure to read Evans Chapter 15 at this point. As indicated in the lab write-up, some negatively charged muons ($\mu^-$) undergo nuclear capture in the muonic carbon nuclei of the mineral oil in the scintillation tank. These muons generate a start pulse when they enter the detector but do not generate a stop pulse when they are nuclear captured. Therefore their decay times are not detected. Although the reprints show that the entire population of $\lambda_\text{combined} = \lambda_\text{decay} + \lambda_\text{captured}$, it may not be obvious that the \emph{free-decaying} $\mu^-$'s will also decay with this combined rate. This is a subtle point that you should be sure to ask about if you need to.
@@ -477,6 +495,8 @@ In experimental physics it is important to understand the electronics you work w
 \end{enumerate}
 
 \subsection{Note on Analysis Tools}
+
+\newpage
 
 This analysis can be done with a variety of tools, but we would recommend one of the more common packages designed for high-volume datasets. Thus, while it's possible to do a rudimentary version of the analysis in Excel, we do not recommend it, and we do not provide pre-packaged histograms of $dt$ for that reason. MATLAB is installed on the Advanced Lab computers, including the convenient Curve Fitting and Statistics add-on packages, as well as additional home-made fitting tools. Comprehensive tutorials for MATLAB are available at \href{http://experimentationlab.berkeley.edu/matlabintro}{\textbf{Intro to Matlab}} and elsewhere on the web (some useful functions are \texttt{hist()} and \texttt{histfit()} and it would be very wise to review the error analysis lab). If you want to use MATLAB outside the 111 lab, it is available for students at a discount at the University Store. There is also a GPL (free) clone \href{http://www.gnu.org/software/octave/}{\textbf{Octave}}, which is compatible with MATLAB at about 90\% level (that is, about 90\% of the commands are implemented, but the Curve Fitting package, regrettably, is not available). Octave can be downloaded for Windows, MacOS, and Linux.
 
