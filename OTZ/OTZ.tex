@@ -126,7 +126,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \end{minipage}
 \begin{minipage}{0.32\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/OTZ_Laser_Controller_3553.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/OTZ_Laser_Controller_3553.jpg}}
-    \caption{Laser & TEC Controller. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/OTZ_Laser_Controller_3553.jpg}{\textbf{here}}}
+    \caption{Laser \& TEC Controller. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/OTZ_Laser_Controller_3553.jpg}{\textbf{here}}}
 \end{minipage}
 \begin{minipage}{0.32\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/OTZ_Laser_3550.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/OTZ_Laser_3550.jpg}}
@@ -142,6 +142,8 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
     \item Complete the training in the safe use of lasers detailed on the \href{http://experimentationlab.berkeley.edu/LaserSafety}{\textbf{Laser Safety Training}} page. This includes readings, watching a video, taking a quiz, and filling out a form.
 
     \item Watch the \href{http://youtu.be/bqIBcjcAhso}{\textbf{Optical Tweezer video}}.
+    
+\newpage    
 
     \item Check points are examination points that are placed in this lab where you must STOP and call a GSI or professor to make sure you understand what's expected. There could  be multiple check points throughout your lab so make sure you don't skip them since there is a \href{http://experimentationlab.berkeley.edu/otzcheckpoints}{\textbf{sign off sheet}} that must be turned in with your lab report. There are 6 Checkpoints in this lab.
 
@@ -188,6 +190,8 @@ You should keep a laboratory notebook. The notebook should contain a detailed re
 
 \subsection{What is an Optical Trap?}
 
+\newpage
+
 An optical trap, or laser tweezers, is a device used to apply pico-newton sized forces and make precise measurements on a scale of roughly one micron. The trap is created by focusing a laser onto a dielectric material such as a silica bead or small living cell. The size and force scales make optical traps particularly useful in studying biological systems. Cells and organelles within cells can be manipulated and sorted. The forces and step-sizes of individual motor molecules such as kinesin and myosin can be measured by using beads as convenient handles to tug on and follow motors moving along cytoskeletal proteins. Optical traps are also used to study structural properties of cells, membranes, viruses, and DNA.
 
 Arthur Ashkin discovered the method of optical trapping in 1970 \cite{Ashkin1970,Ashkin1997}. He calculated that the momentum from a high power laser, focused entirely onto a micron bead would propel the bead forward with 100,000 g's of acceleration. Taken by curiosity he performed this experiment and found that not only was the intended bead pushed downstream by the laser but also that other beads in his solution were highly attracted to the beam-path and flew in laterally from other parts of his slide. He then created the first working trap by using two opposing laser beams. At one point a bacterium that had contaminated a sample flew into the trap and was trapped, thus instigating the trap's revolutionary use in cell biology. Today optical traps are used extensively in both atom-trapping experiments and in biophysics labs worldwide. Faculty in Berkeley's Physics Department who use optical traps include Professors \href{http://physics.berkeley.edu/people/faculty/carlos-bustamante}{\textbf{Carlos Bustamente}}, and \href{http://physics.berkeley.edu/people/faculty/ahmet-yildiz}{\textbf{Ahmet Yildiz}}.
@@ -203,9 +207,9 @@ Arthur Ashkin discovered the method of optical trapping in 1970 \cite{Ashkin1970
 
 The most straightforward mechanism to understand the physics of trapping is to consider the change in momentum of light that is scattered by and refracted by a dialectic material, in our case a silica glass bead. Any change in the direction of light imparts momentum to the bead. This mechanism holds for objects much larger in diameter than the wavelength of the laser. A ray-tracing argument holds that the scattered light creates a \emph{scattering force} in the direction of light propagation, while the refracted light creates an opposing \emph{gradient force}. When the bead is in the center of the trap, these forces cancel. When a bead moves slightly away from the center, a net force is applied towards the center, making this a stable equilibrium.
 
-\newpage
-
 In order to understand how the equilibrium is stable, it will help to consider how the gradient force responds to displacement of a bead from the center. In the figure to the right, the red region represents the ``waist'' of the laser at its focus point, with the laser passing upward through the sample chamber. The blue ball is the bead, and the black arrows (1) and (2) represent light rays whose thicknesses correspond to their intensities (note that the beam is brightest at its center). In case (a), with the particle slightly to the left of center, the two rays refract through the particle and bend inwards. The reactionary force vectors, F1 and F2, of each ray on the bead are shown. Because ray (2) is more intense (and thus carries more momentum) than ray 1, the net force on the bead is to the right. Thus, a perturbation to the left causes a rightward-directed force back towards the trap's center.
+
+\newpage
 
 In case (b) the particle is centered laterally in the beam and will not be pushed left or right. The net gradient force is downward, which is balanced by an upward scattering force (not shown) due to reflection of some of the light.
 
@@ -266,8 +270,6 @@ From the 975 nm laser it goes through two steering mirrors, then 1/2 waveplate a
 
 \subsubsection{Trapping Laser}
 
-\newpage
-
 The Axcel from Thorlabs BF-979-0300 300mW Max diode laser \href{http://experimentationlab.berkeley.edu/sites/default/files/images/975nm-Laser-Specs.pdf}{\textbf{975nm Laser Specs}} This has a maximum power output of 300 mW, though a fraction is lost traveling through all the optics. The 975nm wavelength is far enough from the resonant frequency of water to prevent much heating of live cells and is less likely to affect the behavior of cells than visible wavelengths. The diode laser is coupled to a very very delicate optical fiber. DO NOT TOUCH IT!!! If this fiber is broken or kinked it could cause backwards reflections of the beam, destroying the laser. The laser diode is mounted in a standard butterfly mount that acts as a heat sink and cooling device. Two cables connect it to a laser diode controller \href{http://experimentationlab.berkeley.edu/sites/default/files/images/LDC501m.pdf}{\textbf{LDC 501 Laser Controller full Manual}} and thermoelectric temperature controller (TEC) located on a shelf above the optical table. Avoid touching the laser or its butterfly mount because static discharge can destroy the laser and the fibre is very very small. \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SOP\_Laser\_Diode\_Driver.pdf}{\textbf{The getting started SOP for this Laser controller}} See References below for SRS controller cable wiring diagram.
 
 \subsubsection{Fluorescence Laser}
@@ -297,9 +299,9 @@ The trapping laser has a power output of up to 300 mW and a wavelength of 975nm,
 
 \subsection{Optical Paths}
 
-\newpage
-
 The microscope has a dual function. One is to allow us to see our specimen at high magnification by sending visible light through the specimen to a video camera. The other function is to focus the laser beam to create the optical trap and collect the laser light to focus it on a quadrant photodiode (QPD) that tells us how close the trapped object is to the trap's center. Keep in mind that there are three light sources, and though their paths coincide through much of the microscope they are still distinct, with distinct focal and afocal points. A useful concept for understanding microscopy optics is that of \href{http://www.microscopyu.com/articles/formulas/formulasconjugate.html}{\textbf{conjugate planes}}, which groups all the optics into two complementary sets: imaging and illumination.
+
+\newpage
 
 \textbf{Trapping Laser}
 
@@ -337,11 +339,11 @@ The fluorescence laser's alignment is less critical than the trapping laser's, s
 
 The dye fluoresces in every direction, but the part we are interested in goes through the objective (where it is magnified), off a mirror and through both dichroics and a lens for focusing. It then passes through the emission filter, which is a very tight bandpass to block everything except the dye's emission (which peaks at 570 nm) and the LED. Finally its journey is over when it reaches the CCD focused.
 
-\newpage
-
 \subsection{Stage}
 
 \emph{\textbf{Make sure you do NOT turn or run the pico-motors to the ends of their rotation, they will jam up.}}
+
+\newpage
 
 The microscope stage holds the specimen slide and allows fine control over horizontal positioning. It is useful for finding beads or cells to trap and moving them once trapped. Two piezo electric picomotors drive the stage in the X and Y directions. The knurled knob on each pico-motor allows for manual positioning. The motors can be controlled by a joystick or by software. The joystick is best for hunting for specimens to trap and moving the trapped specimens around. The software control is useful for calibration procedures when you want to move the slide at a constant speed. The specimen is held on the stage between a microscope slide and a thin glass coverslip suspended beneath.
 
@@ -383,8 +385,6 @@ Once the OTKBv7 GUI has opened, you will see three graphs and several panels of 
 
     \item The \emph{Plots} control panel has three input boxes. The first is used to set the desired display units on the upper graph. The QPD outputs data as voltage, but this data can be converted to units of force or distance using the trap stiffness and QPD sensitivity. If these values (visible and editable in the bottom panel) are zero, the program will only allow the data to be presented in volts. The QPD Minimum Range input determines the minimum plot range of the two realtime QPD graphs. If any data points exceed this range, the plots will autoscale. Lastly, the PSD Cut Off Frequency input sets the maximum frequency displayed in the bottom-left graph. Since at high frequencies the signal drops below the noise floor (beyond which the graph flattens out), too high a cut off frequency will skew the PSD fit and any calibration values.
 
-\newpage
-
     \item The \emph{Save} panel contains two push buttons: ``Save Voltage Data and Graph'' saves the X and Y raw QPD voltage data (two columns of data), and a copy of the upper plot, while the ``Fit PSD and Save Data/Graph'' saves a text file of frequency, PSD X, and PSD Y data (three columns, all log10 transformed), and a copy of the bottom left plot. The data is also fit to the PSD equation for a trapped bead. Both of these also save a text file of relevant settings from each panel.
 
     \item The \emph{Calibrations} panel contains input boxes to enter calibration values for the optical trap. However, these values are also automatically set whenever Fit PSD and Save Data/Graph is clicked. If the fit is bad and returns imaginary results, all fields will be set to 0.
@@ -419,8 +419,6 @@ Pipettors are a standard tool in most biology, biophysics, and chemistry labs, b
 \emph{Never allow liquid to enter the body of the micropipette}
 
 \subsection{Preparing a Slide}
-
-\newpage
 
 For the calibration section of the lab, you'll be trapping synthetic silica microspheres, or beads, available as stock solutions in the refrigerator (a small bottle with blue solution, it is made by Bangs Laboratories, Inc. and says ``Uniform Dyed Microspheres'' on the label and ``Bead Solution'' on the lid). Be careful not to contaminate or spill the stock solutions, as they cost more than \$100 each. Whether using beads or bacteria, it is generally necessary to dilute the stock considerably to reduce the concentration of particles. You want particles to be somewhat scarce on the slide so that when you do trap one, you don't have other nearby particles being sucked into the trap and ruining your measurements.
 
