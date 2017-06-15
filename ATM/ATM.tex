@@ -248,9 +248,10 @@ You should locate all of the equipment before starting the experiment.
     \item Draw an energy level diagram of mercury and show the transitions likely to be observable (yellow, green, blue, and violet lines).
 	You could make a copy of all these diagrams out of books, but they have so much detail you would lose sight of only the few lines it is possible to observe in a simple experiment. Thus, keep your diagrams simple.
 
-    \item Read carefully the operating instructions for the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Acton\%20.5\%20atmospheric\%20monochromator.pdf}{\textbf{monochromator}}. This is a \emph{very} expensive piece of equipment, and the instructions are simple enough that there should be no reason for causing damage! Be sure to pay particular attention to the cautions listed. If you have to force something the slightest bit on this piece of equipment, something is not right. Ask someone how to turn a knob if it doesn't want to turn. Also note that our spectrometer has a grating of 300 grooves/mm. Multiply the dial number by 6 to get the correct wavelength.
+    \item Read carefully the operating instructions for the monochrometer in Section \ref{sec:Appendix} Appendix
+    (Complete manual found \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Acton\%20.5\%20atmospheric\%20monochromator.pdf}{\textbf{here}}). This is a \emph{very} expensive piece of equipment, and the instructions are simple enough that there should be no reason for causing damage! Be sure to pay particular attention to the cautions listed. If you have to force something the slightest bit on this piece of equipment, something is not right. Ask someone how to turn a knob if it doesn't want to turn. Also note that our spectrometer has a grating of 300 grooves/mm. Multiply the dial number by 6 to get the correct wavelength.
 
-    \item To manually Scan place the speed knob in between any two speeds positions before turning the manual scan knob. To change the speed control knob, first pull it out and then turn it. DO NOT FORCE IT and \textbf{do not scan below} a counter reading of 00000 or above 80000.
+    \item To manually scan place the speed knob in between any two speeds positions before turning the manual scan knob. To change the speed control knob, first pull it out and then turn it. DO NOT FORCE IT and \textbf{do not scan below} a counter reading of 00000 or above 80000.
 
     \item Read about the function and operation of the photomultiplier tube (PMT) in any text on radiation detection and measurement. (See, for example, Knoll Chapter 9 \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/Knoll-Radiation\%20Detection\%20&\%20Measurement/01-Radiation\_Detection\_and\_Measurement\_CH\_09.pdf}{\textbf{[2]}} and [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/GMA/RCA\%20PMT.pdf}{\textbf{RCA PMT Manual}}].
  \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:
@@ -277,7 +278,7 @@ It's time to get started. Pro-tip: check out the photos at the beginning of the 
     \item Using LABVIEW:
     Go into the C drive, open Support, then click through until you get to Chart Builder HP 3478A.exe. We can use this program to scan over the different frequencies and measure the results. The monochromator has a mechanical scanning capability, but LABVIEW cannot control it. Thus, you have to sync up the monochromator's scanning with the program. Start at a wavelength below the bright blue line that you know and love. Set the speed control knob to a value of your choosing (not too fast, not too slow). Before starting the program, make sure that the scale value in the program matches the speed control knob setting. Also, make sure that the initial counter readings of both the program and the monochromator are in agreement. Now you must start the program at the same time that you snap the monochromator's automated scanning on. That way the values of the program are coordinated with the actual machine. As the program runs, you should be able to see distinct peaks appear at the appropriate frequencies (check the Spectrum of Mercury, below). We want a narrow linewidth. I got mine to be around 5 angstroms for the 443nm line. If they're too wide, play around with the setup and try and improve the reading.
     
-    \item Finally, do a nice, slow, high-resolution scan of the spectrum. Note the wavelength corresponding to the peaks on your scan and compare it to the true location of the peaks, as per the Bureau of Standards. This allows us to calibrate the instrument. Do you notice anything weird about the height of the different peaks? How do they compare to the intensity values listed in the article ``The Intensities of the lines in the spectrum of Mercury," found on the library reprints page? How can you account for this? Remember the pre-lab...
+    \item Finally, do a nice, slow, high-resolution scan of the spectrum. Note the wavelength corresponding to the peaks on your scan and compare it to the true location of the peaks, as per the Bureau of Standards. This allows us to calibrate the instrument. Do you notice anything weird about the height of the different peaks? How do they compare to the intensity values listed in the article "\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/ATM\%20Yellow\%20lines_p593_1.pdf}{\textbf{The Intensities of the Lines in the Spectrum of Mercury}}", found on the library reprints page? How can you account for this? Remember the pre-lab...
 \end{enumerate}
 
 \subsection{Wavelength Calibration}
@@ -416,7 +417,7 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
 
     \item Then turn on the wooden box marked ``HIGH VOLTAGE''. Increase the voltage on the transformer until the He tube begins to glow brightly.
 
-    \item The \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/OCR\%20Burleigh\%20tech\%20memo\%20fabry\%20perots.pdf}{\textbf{Fabry-Perot}} interferometer is already adjusted. The plates are flat and parallel to a fraction of a wavelength. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Beam\%20Shaping.pdf}{\textbf{Also see Beam Shaping}}
+    \item The \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/OCR\%20Burleigh\%20tech\%20memo\%20fabry\%20perots.pdf}{\textbf{Fabry-Perot}} interferometer is already adjusted. The plates are flat and parallel to a fraction of a wavelength. Also see  \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Beam\%20Shaping.pdf}{\textbf{Beam Shaping}}
 
     \item See how to set up the CCD camera below so that you can use the camera's image to adjust the setup in the next step.
 
@@ -427,14 +428,12 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
     \item Observe, record, and explain what happens when you do the following, using your eye instead of the camera image: move the position of the lens; tilt the F-P plates; raise and lower the interferometer. Now with the camera in place: change the position of the camera; shift the camera sideways.
 
     \item Put in the red glass filter; adjust the system until the fringes are sharp. Turn on the magnetic field. To control it, use the LAMBDA DC POWER SUPPLY. Turn the OUTPUT VOLTAGE VDC knob to zero, and the CURRENT LIMITER IDC knob to 2 Amps. Turn on the power supply. Increase the VDC control until you see the fringes start to split. If the lamp flickers or goes out, increase the voltage on the transformer. Can you explain why this happens? The lamp is just a tube filled with He gas, and electrons are accelerated through the tube by an electric field from the high voltage. As they travel through the tube, they collide with He atoms, and excite them. When these de-excite, they emit the characteristic He lines. Now what happens when we add a transverse magnetic field? Rotate the polarizer and note the behavior of the lines. Don't be discouraged if you see fuzzy fringes and bizarre behavior. With a little experience your skill will improve until you can produce and see the proper Zeeman effects.
-    \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling }\textbf{over your GSI or Professor to sign you off:}
+    \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:}
 
-    \item \textbf{Produce Zeeman splitting by varying the field strength. Explain why the lamp dies when a high enough field is applied. }
-
-    \item \textbf{Rotate the polarizer until only the sigma components are observed; increase the field strength until the fringes show equal spacings between the rings. What fraction of an order did the magnetic field shift the frequencies of the Zeeman components of the line? [1/2, 1/3, 1/4, or ? We take one order to be the spacing between two unsplit lines - no magnetic field.] Repeat several times, so you can make some estimate of the error in your measurements. Measure the magnetic field strength with the gaussmeter. The He discharge tube is mounted on a track so that you can slide it back out of the center region of the magnet and position the meter probe where the tube usually sits.}
+    \item \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off: Produce Zeeman splitting by varying the field strength. Explain why the lamp dies when a high enough field is applied. Rotate the polarizer until only the sigma components are observed; increase the field strength until the fringes show equal spacings between the rings. What fraction of an order did the magnetic field shift the frequencies of the Zeeman components of the line? [1/2, 1/3, 1/4, or ?. We take one order to be the spacing between two unsplit lines - no magnetic field.] Repeat several times, so you can make some estimate of the error in your measurements. Measure the magnetic field strength with the gaussmeter. The He discharge tube is mounted on a track so that you can slide it back out of the center region of the magnet and position the meter probe where the tube usually sits.}
 
     \begin{itemize}
-        \item \textbf{Before taking any readings with the 5180 gaussmeter,}
+        \item \emph{Before taking any readings with the 5180 gaussmeter,}
         \begin{itemize}
             \item 1st = Select Auto Zero. To select AUTO ZERO operation, press the ZERO pushbutton. Unit automatically returns to normal operation.
         
@@ -448,10 +447,10 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
             \begin{enumerate}
                 \item Turn the magnet through 90 degrees, and look at the lamp through the hole in the pole piece. What is the effect of removing the polarizer?
             
-                \item \textbf{Setup the CCD Camera:}After you have the Zeeman apparatus set up, you can get an even better view of the fringes (and take some snapshots for your write-up) by using the zoom lens and video camera. Attach the camera to the FireWire cable and run FireView on the PC from the Desktop. Use the drop down menu to select the Ohcilynx card. A Prosilica Digital Camera node should appear. Select the Prosilica camera and click Connect. Click OK, then click on View and then Start Acquisition. The camera should now be showing images, though they may be dark. If you need to change the brightness of the image, click on Others->Live Control, and you may change the gain and exposure from here. Temporarily remove the filter, lens, polarizer, and interferometer and line the camera up on the window in the center of the electromagnet. Then put all of the other optics back in place and align each component vertically with the aid of the camera. Zoom out all the way and set the focus to infinity. You can use the micrometer adjustment knobs on the Fabry-Perot mount to center the fringes in the field of the camera.
+                \item \textbf{Setup the CCD Camera:} After you have the Zeeman apparatus set up, you can get an even better view of the fringes (and take some snapshots for your write-up) by using the zoom lens and video camera. Attach the camera to the FireWire cable and run FireView on the PC from the Desktop. Use the drop down menu to select the Ohcilynx card. A Prosilica Digital Camera node should appear. Select the Prosilica camera and click Connect. Click OK, then click on View and then Start Acquisition. The camera should now be showing images, though they may be dark. If you need to change the brightness of the image, click on Others --$>$ Live Control, and you may change the gain and exposure from here. Temporarily remove the filter, lens, polarizer, and interferometer and line the camera up on the window in the center of the electromagnet. Then put all of the other optics back in place and align each component vertically with the aid of the camera. Zoom out all the way and set the focus to infinity. You can use the micrometer adjustment knobs on the Fabry-Perot mount to center the fringes in the field of the camera.
             
                 \begin{itemize}
-                    \item To take a snapshot, select Disk-$>$Save Bitmap, and choose an appropriate location.
+                    \item To take a snapshot, select Disk --$>$ Save Bitmap, and choose an appropriate location.
                 \end{itemize}
             
             \end{enumerate}
@@ -466,7 +465,7 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
         \label{CapturedImage}
     \end{figure}
     
-    \item \textbf{Something more complex and interesting:} Use the spectrometer to see what lines are actually present in helium. Set up the system to use the prism spectrometer as a filter to isolate the red, yellow, and blue lines, and observe the splitting with the interferometer. The trick here is to focus the light from the lamp on the slit of the prism spectrometer and opening the slit up all the way to let in as much light as possible. Then closing it down to see the yellow line in the center of the eyepiece. Ensure that the lens focuses a sharp line of light onto the slit. The optical equipment should already be aligned for this, just move the lens along the track until the line is sharp. When using the camera, try using the Live Control Settings: Auto-Exposure 0, Gain 8, Shutter 425, Brightness 90, camera focal length set to infinity and zoom set to 80. If you go to edit the live controls and they are not having an effect, try restarting the computer or adjusting the lamp voltage until the rings are brighter.
+    \item \textbf{Something more complex and interesting:} Use the spectrometer to see what lines are actually present in helium. Set up the system to use the prism spectrometer as a filter to isolate the red, yellow, and blue lines, and observe the splitting with the interferometer. The trick here is to focus the light from the lamp on the slit of the prism spectrometer and open the slit up all the way to let in as much light as possible. Then closing it down to see the yellow line in the center of the eyepiece. Ensure that the lens focuses a sharp line of light onto the slit. The optical equipment should already be aligned for this, just move the lens along the track until the line is sharp. When using the camera, try using the Live Control Settings: Auto-Exposure 0, Gain 8, Shutter 425, Brightness 90, camera focal length set to infinity and zoom set to 80. If you go to edit the live controls and they are not having an effect, try restarting the computer or adjusting the lamp voltage until the rings are brighter.
     \begin{figure}
     \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/ATM_Zeeman_3489-Crop-Lg.jpg}{\includegraphics[width=0.8\linewidth]{images/ATM_Zeeman_3489-Crop-Lg.jpg}} \\
@@ -485,7 +484,8 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
 
 \end{enumerate}
 
-\section{APPENDIX}
+\section{Appendix}
+\label{sec:Appendix}
 
 \subsection{Acton 0.5 Meter Monochromator}
 
@@ -516,7 +516,7 @@ Moveable Diverter Mirror: A moveable diverter mirror directs the beam either str
 \begin{enumerate}
     \item Herzberg, Gerhard. \emph{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/02-2ndEd-Atomic\_Spectra\_and\_Atomic\_Structure.pdf}{\textbf{Atomic Spectra \& Atomic Structure}}}, Dower Publisher, 1944, New York. Preface pg. 1-257. \#QC451.H43 (this is an old text, but gives a good perspective on how the theory developed.)
 
-    \item Knoll Ch.9. \emph{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/Knoll-Radiation\%20Detection\%20&\%20Measurement/01-Radiation\_Detection\_and\_Measurement\_CH\_09.pdf}{\textbf{Photomulitiplier Tubes Ch.9}}},
+    \item Knoll Ch.9. \emph{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/Knoll-Radiation\%20Detection\%20&\%20Measurement/01-Radiation\_Detection\_and\_Measurement\_CH\_09.pdf}{\textbf{Photomulitiplier Tubes Ch.9}}}
 
 \end{enumerate}
 
