@@ -185,7 +185,7 @@ The term Chaotic has come to mean something very specific in this field. It does
 
 A \emph{dynamical system} is essentially anything that varies with time. The pertinent variables necessary to describe its motion are called the \emph{dynamical variables} and the evolution of the system describes a path, or \emph{trajectory} in the \emph{state-space} (also called \emph{phase space}) of the dynamical variables. Dynamical systems may be either \emph{conservative}: a volume element in state space remains invariant (recall Liouville's theorem; see Marion, J. B. \emph{Classical dynamics of particles \& systems}); or the system may be \emph{dissipative}: for which regions of state space become compressed as the systems evolves.
 
-One of the dynamical systems we study is a driven damped oscillator with a non-linear response. Because it is damped this is a dissipative system. It consists of a pn-junction (a diode) connected in series with an inductor L, a resistor R, and a driving sine wave oscillator of voltage $V_0(t) = V_{os} \cos(\omega_0 t) $, see the left side of Figure~\ref{fig:Circuit}.
+One of the dynamical systems we study is a driven damped oscillator with a non-linear response. Because it is damped this is a dissipative system. It consists of a pn-junction (a diode) connected in series with an inductor L, a resistor R, and a driving sine wave oscillator of voltage $V_0(t) = V_{os} \cos(\omega_0 t) $, see the left side of Figure \ref{fig:Circuit}.
 
 \begin{figure}[h]
     \centering
@@ -197,22 +197,26 @@ One of the dynamical systems we study is a driven damped oscillator with a non-l
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage005.gif}{\includegraphics[width=0.4\linewidth]{images/Nldimage005.png}}
-    \caption{Capacitance of a typical diode as a function of diode voltage. From Ref.~\cite{Hao}.}
+    \caption{Capacitance of a typical diode as a function of diode voltage. From Ref. \cite{Hao}.}
     \label{fig:CapacitanceOfTypicalDiode}
 \end{figure}
 
 The diode is the non-linear circuit element: not only does it have an exponential $I$-$V$ characteristic,
-\[
+
+\begin{equation}
     I_d(V_d) = I_0[\exp(eV_d / kT) - 1]
-\]
-but due to the properties of the junction (see Ref.~\cite{Cvitanovic}), it has a non-linear capacitance as well. The capacitance may be written as a function of the voltage across the diode, \emph{V_{d}}:
-\[
+\end{equation}
+
+but due to the properties of the junction (see Ref. \cite{Cvitanovic}), it has a non-linear capacitance as well. The capacitance may be written as a function of the voltage across the diode, \emph{V_{d}}:
+
+\begin{equation}
     C(V_d) =
     \begin{cases}
         C_0 e^{eV_d/kT} &: V_d > 0 \\
         \frac{C_0}{\sqrt {1-e^{eV_d/kT}}} &: V_d \le 0
     \end{cases}
-\]
+\end{equation}
+ 
 Thus the diode may be modeled as a voltage-dependent capacitor connected in parallel with an ideal diode (a voltage-dependent current-source), giving the equivalent circuit on the right of Figure 1.
 
 We use a computer to measure the voltage across the resistor $R$ and the observed signal, $V_s(t)$, is proportional to the current $I(t)$.
