@@ -201,7 +201,7 @@ In this lab, you will operate an atomic force microscope which is used to image 
 
 \textbf{What is an Atomic Force Microscope?}
 
-An atomic force microscope images objects on the scale of angstroms to microns through the use of physical scanning, rather than optics (like conventional/electron microscopes). The basic mechanism of the AFM is shown in Figure~\ref{fig:BasicMechanism}. A tip attached to a cantilever interacts with a surface. A laser is bounced off of the cantilever and into a photodetector. From this signal, one measures the deflection of the cantilever. A sample is then placed on a special stage underneath the tip. The stage contains a \href{https://en.wikipedia.org/wiki/Piezoelectricity}{\textbf{piezoelectric}} (Wikipedia link, browse at your own risk!) driver that is controlled by software. In particular, it may be made to wiggle around in a raster scan pattern, as well as engage in feedback with the cantilever (constant force mode). Variations in the height of the sample cause deflections of the cantilever, which are then picked up by the photodetector. Through this lab, you should gain a good understanding of how an AFM works, the types of data you can get from it, how you can use this data to make meaningful conclusions, and the limitations of the system.
+An atomic force microscope images objects on the scale of angstroms to microns through the use of physical scanning, rather than optics (like conventional/electron microscopes). The basic mechanism of the AFM is shown in Figure~\ref{fig:BasicMechanism}. A tip attached to a cantilever interacts with a surface. A laser is bounced off of the cantilever and into a photodetector. From this signal, one measures the deflection of the cantilever. A sample is then placed on a special stage underneath the tip. The stage contains a \hyperref[subsubsec:Piezo]{piezoelectric} driver that is controlled by software. In particular, it may be made to wiggle around in a raster scan pattern, as well as engage in feedback with the cantilever (constant force mode). Variations in the height of the sample cause deflections of the cantilever, which are then picked up by the photodetector. Through this lab, you should gain a good understanding of how an AFM works, the types of data you can get from it, how you can use this data to make meaningful conclusions, and the limitations of the system.
 
 \textbf{Why AFM over other microscopy techniques?}
 \begin{itemize}
@@ -265,6 +265,19 @@ Imagine a crosshair at the triangle point of the cantilever. That is roughly whe
     \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/5.3.\%20Probe\%20Sample\%20Bump.flv\_converted.mp4}{\textbf{Probe interacting with sample}}
 
 \end{itemize}
+
+\pagebreak
+
+\textbf{What is the Piezoelectric Effect?}
+\label{subsubsec:Piezo}
+
+The Piezoelectric Effect is the ability of certain materials to generate an electric charge in response to applied mechanical stress. The word Piezoelectric is derived from the Greek piezein, which means to squeeze or press, and piezo, which is Greek for “push”.
+
+One of the unique characteristics of the piezoelectric effect is that it is reversible, meaning that materials exhibiting the direct piezoelectric effect (the generation of electricity when stress is applied) also exhibit the converse piezoelectric effect (the generation of stress when an electric field is applied).
+
+When piezoelectric material is placed under mechanical stress, a shifting of the positive and negative charge centers in the material takes place, which then results in an external electrical field. When reversed, an outer electrical field either stretches or compresses the piezoelectric material.
+
+The piezoelectric effect is very useful within many applications that involve the production and detection of sound, generation of high voltages, electronic frequency generation, microbalances, and ultra-fine focusing of optical assemblies. It is also the basis of a number of scientific instrumental techniques with atomic resolution, such as scanning probe microscopes (STM, AFM, etc). The piezoelectric effect also has its use in more mundane applications as well, such as acting as the ignition source for cigarette lighters. 
 
 \textbf{Detector and Feedback Loop:}
 
@@ -1494,7 +1507,7 @@ Given the limited scan size of a scanner, you can use software to combine multip
 
 For any of these experiments, you may use the overhead microscope to get an overview of the samples. It is recommended to do this for experiments that require scanning over a particular area on the sample.
 
-\emph{\textbf{In this lab you will perform FOUR of the following experiments in addition to measuring Boltzmann's Constant (5 experiments total).}}
+\emph{\textbf{In this lab you will perform FOUR of the following experiments in addition to measuring Boltzmann's Constant which is REQUIRED (5 experiments total).}}
 
 \begin{enumerate}
 
@@ -1502,15 +1515,15 @@ For any of these experiments, you may use the overhead microscope to get an over
 
 \item \hyperref[subsec:CD/DVD]{CD/DVD Experiment}
 
-\item \hyperref[subsec:NoiseFloor]{Noise Floor Experiment}
+\item \hyperref[subsec:CarbonCrystal]{Carbon Crystalline Structure Experiment}
 
-\item \hyperref[subsec:NoiseFloor]{Noise Floor Experiment}
+\item \hyperref[subsec:Microcircuit]{MicroCircuit Experiment}
 
-\item \hyperref[subsec:NoiseFloor]{Noise Floor Experiment}
+\item \hyperref[subsec:GlueStick]{Glue Stick Polymer Experiment}
 
-\item \hyperref[subsec:NoiseFloor]{Noise Floor Experiment}
+\item \hyperref[subsec:ForceDistance]{Force-Distance Experiment}
 
-\item \hyperref[subsec:NoiseFloor]{Noise Floor Experiment}
+\item \hyperref[subsec:Boltzmann]{Spring Constant of the Cantilever and Measuring Boltzmann's Constant}
 
 \end{enumerate}
 
@@ -1576,7 +1589,6 @@ Use a Z HV Gain value of 5 for this experiment.
     \item Begin with a few sources - explain how a CD works and what we are expecting to see. The following are external links and are not exhaustive on this topic. (Destructive/Constructive interference)
 
     \begin{enumerate}
-        \item \href{https://en.wikipedia.org/wiki/Compact\_disc}{\textbf{https://en.wikipedia.org/wiki/Compact\_disc}}
 
         \item \href{http://experimentationlab.berkeley.edu/sites/default/files/How\%20Information\%20is\%20Stored\%20on\%20a\%20CD.mp4}{\textbf{How Information is Stored on a CD}}
 
@@ -1584,7 +1596,6 @@ Use a Z HV Gain value of 5 for this experiment.
 
         \item \href{http://experimentationlab.berkeley.edu/sites/default/files/How_do_Rewriteable_CDs_work.pdf}{\textbf{How do rewriteable CDs work?}}
 
-        \item encoding: \href{https://en.wikipedia.org/wiki/Eight-to-fourteen\_modulation}{\textbf{https://en.wikipedia.org/wiki/Eight-to-fourteen\_modulation}}
     \end{enumerate}
 
     \item \emph{Before you scan, explain and include in your write-up: How is information is stored on a CD? What wavelength of light is used? Why? How is it different for a DVD? Explain constructive and destructive interference as well as a brief explanation of EMF. Using your knowledge, find an expected value for pit depth of the CD/DVD. You will compare this number with your measurement during the lab. }
@@ -1601,7 +1612,7 @@ Use a Z HV Gain value of 5 for this experiment.
 
     \item Describe the features on the CD and DVD scans, what are they? Use your data, include in your write up an image and label different features
 
-    \item Verify the depth of the pits for constructive/destructive interference. How do the measured depths of the pits compare to your expectation from step 2?  Explain any similarities or differences you find.  (refer to \href{http://www.scientificamerican.com/article/how-do-rewriteable-cds-wo/}{\textbf{source 4}})
+    \item Verify the depth of the pits for constructive/destructive interference. How do the measured depths of the pits compare to your expectation from step 2?  Explain any similarities or differences you find.  (refer to \href{http://experimentationlab.berkeley.edu/sites/default/files/How_do_Rewriteable_CDs_work.pdf}{\textbf{source 3}})
 
     \begin{itemize}
         \item ​​\textbf{NOTE: The CD sample was mounted on upside down, so the pits will appear as bumps instead.  The dimensions are unaffected.  The DVD sample still appears as pits.}
@@ -1847,7 +1858,9 @@ More info in\textbf{ }\href{http://experimentationlab.berkeley.edu/sites/default
 \end{enumerate}
 
 \subsection{Spring Constant of the Cantilever and Measuring Boltzmann's Constant}
-\label{subsec:Boltsmann}
+\label{subsec:Boltzmann}
+
+THIS IS A REQUIRED EXPERIMENT
 
 The manufacturer, AppNano, provides a range of resonant frequencies and spring constants for their probes. These are listed on the box that contains the probes. Modeling the cantilever as a simple harmonic oscillator gives a relation between spring constant k and resonant frequency, $\omega_r$ (what is it?). Using the endpoints of the range of frequencies and the range of spring constants gives you two points along this curve. Using the point (0,0) will give you a third point. Interpolating these three points with a Lagrange polynomial (use Wolfram alpha) yields the exact relation predicted by the model. The AFM software allows for a good measurement of $\omega_r$. Plugging this into your polynomial will give you the spring constant k.
 

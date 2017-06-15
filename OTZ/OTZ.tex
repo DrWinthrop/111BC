@@ -160,7 +160,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \textbf{Suggested Reading:}
 
 \begin{enumerate}
-    \item Read K. C. Neuman and S. M. Block, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/Neuman-optical_Trapping.pdf}{\textbf{Optical Trapping}},'' Rev. Sci. Instrum. \textbf{75}, 2787 (2004). Pay particular attention to the overview and theory of of optical trapping and the sections on calibration techniques. You may also refer to the Wikipedia article \href{http://en.wikipedia.org/wiki/Optical\_tweezers}{\textbf{Optical Tweezers}}. Note: as a Wikipedia article the information is subject to change and may not be completely accurate, browse at your own risk. Use this \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/biowikipedia.pdf}{\textbf{definitions sheet}} instead.
+    \item Read K. C. Neuman and S. M. Block, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/Neuman-optical_Trapping.pdf}{\textbf{Optical Trapping}},'' Rev. Sci. Instrum. \textbf{75}, 2787 (2004). Pay particular attention to the overview and theory of of optical trapping and the sections on calibration techniques. You may also refer to the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/biowikipedia.pdf}{\textbf{definitions sheet}} to read about optical tweezers.
 
     \item Go over \href{http://experimentationlab.berkeley.edu/sites/default/files/images/LDC501m.pdf}{\textbf{SRS-LDC501 Laser \& TEC Controller Manual}} to get familiar with the operation of this controller.
 
@@ -190,8 +190,6 @@ You should keep a laboratory notebook. The notebook should contain a detailed re
 
 \subsection{What is an Optical Trap?}
 
-\newpage
-
 An optical trap, or laser tweezers, is a device used to apply pico-newton sized forces and make precise measurements on a scale of roughly one micron. The trap is created by focusing a laser onto a dielectric material such as a silica bead or small living cell. The size and force scales make optical traps particularly useful in studying biological systems. Cells and organelles within cells can be manipulated and sorted. The forces and step-sizes of individual motor molecules such as kinesin and myosin can be measured by using beads as convenient handles to tug on and follow motors moving along cytoskeletal proteins. Optical traps are also used to study structural properties of cells, membranes, viruses, and DNA.
 
 Arthur Ashkin discovered the method of optical trapping in 1970 \cite{Ashkin1970,Ashkin1997}. He calculated that the momentum from a high power laser, focused entirely onto a micron bead would propel the bead forward with 100,000 g's of acceleration. Taken by curiosity he performed this experiment and found that not only was the intended bead pushed downstream by the laser but also that other beads in his solution were highly attracted to the beam-path and flew in laterally from other parts of his slide. He then created the first working trap by using two opposing laser beams. At one point a bacterium that had contaminated a sample flew into the trap and was trapped, thus instigating the trap's revolutionary use in cell biology. Today optical traps are used extensively in both atom-trapping experiments and in biophysics labs worldwide. Faculty in Berkeley's Physics Department who use optical traps include Professors \href{http://physics.berkeley.edu/people/faculty/carlos-bustamante}{\textbf{Carlos Bustamente}}, and \href{http://physics.berkeley.edu/people/faculty/ahmet-yildiz}{\textbf{Ahmet Yildiz}}.
@@ -209,9 +207,9 @@ The most straightforward mechanism to understand the physics of trapping is to c
 
 In order to understand how the equilibrium is stable, it will help to consider how the gradient force responds to displacement of a bead from the center. In the figure to the right, the red region represents the ``waist'' of the laser at its focus point, with the laser passing upward through the sample chamber. The blue ball is the bead, and the black arrows (1) and (2) represent light rays whose thicknesses correspond to their intensities (note that the beam is brightest at its center). In case (a), with the particle slightly to the left of center, the two rays refract through the particle and bend inwards. The reactionary force vectors, F1 and F2, of each ray on the bead are shown. Because ray (2) is more intense (and thus carries more momentum) than ray 1, the net force on the bead is to the right. Thus, a perturbation to the left causes a rightward-directed force back towards the trap's center.
 
-\newpage
-
 In case (b) the particle is centered laterally in the beam and will not be pushed left or right. The net gradient force is downward, which is balanced by an upward scattering force (not shown) due to reflection of some of the light.
+
+\newpage
 
 To better understand how the scattering and gradient forces and the trap's stability vary with bead displacement both vertically and horizontally, try this \href{http://glass.phys.uniroma1.it/dileonardo/content/apps/trapforces.php}{\textbf{Java applet}} from the Di Leonardo lab \cite{Leonardo} in Italy. The model used for this applet shows the importance of a high numerical aperture lens, as the extremal rays illustrated contribute disproportionately to the change in gradient force vertically. (Note that you must adjust the numerical aperture at the bottom of the applet in order to obtain a stable trap.) By moving the bead around and looking at the net force vector, you can get a pretty good feel for how the restoring force varies as a bead is displaced horizontally or vertically from the trap's center. Note particularly how the trap is less stiff as the bead is displaced above the trap's center. Remember this when you trap your first bead and try moving the bead with the stage and focus controls.
 
@@ -301,11 +299,11 @@ The trapping laser has a power output of up to 300 mW and a wavelength of 975nm,
 
 The microscope has a dual function. One is to allow us to see our specimen at high magnification by sending visible light through the specimen to a video camera. The other function is to focus the laser beam to create the optical trap and collect the laser light to focus it on a quadrant photodiode (QPD) that tells us how close the trapped object is to the trap's center. Keep in mind that there are three light sources, and though their paths coincide through much of the microscope they are still distinct, with distinct focal and afocal points. A useful concept for understanding microscopy optics is that of \href{http://www.microscopyu.com/articles/formulas/formulasconjugate.html}{\textbf{conjugate planes}}, which groups all the optics into two complementary sets: imaging and illumination.
 
-\newpage
-
 \textbf{Trapping Laser}
 
 The trapping beam exits the diode and travels through a fiber optic cable to a cable termination fitting, then through a collimating lens. It then passes through two steering mirrors and a beam expander that expands the diameter 2.5x to match the 6 mm aperture of the microscope objective. It joins the microscope at a dichroic mirror, which reflects IR light but allows visible wavelengths to pass through. A mirror at the bottom front of the microscope reflects the beam up through the objective lens, which focuses the beam down to a tiny waist just above the lens, creating the trap. Above this waist, the beam diverges and is recollimated by a condenser lens. Above the condenser the beam is reflected off another dichroic mirror and focused by a lens onto the quadrant photodiode (QPD) for position detection.
+
+\newpage
 
 \textbf{Illumination}
 
@@ -343,9 +341,9 @@ The dye fluoresces in every direction, but the part we are interested in goes th
 
 \emph{\textbf{Make sure you do NOT turn or run the pico-motors to the ends of their rotation, they will jam up.}}
 
-\newpage
-
 The microscope stage holds the specimen slide and allows fine control over horizontal positioning. It is useful for finding beads or cells to trap and moving them once trapped. Two piezo electric picomotors drive the stage in the X and Y directions. The knurled knob on each pico-motor allows for manual positioning. The motors can be controlled by a joystick or by software. The joystick is best for hunting for specimens to trap and moving the trapped specimens around. The software control is useful for calibration procedures when you want to move the slide at a constant speed. The specimen is held on the stage between a microscope slide and a thin glass coverslip suspended beneath.
+
+\newpage
 
 Vertical positioning (Z axis) is accomplished by moving the objective lens with the positioning knob; 1$\mu$m/gradation. This has the effect of moving both the plane of focus of the microscope and the center of the optical trap. So, for instance, if you focus on a bead resting on the coverslip, turn on the laser to trap it; you can then move the objective lens up to raise the bead off the coverslip. This can be difficult in practice. When you turn the positioning knob take special care to not bump the microscope in any other way. This can bump the trapped bead out of the trap. Use two fingers only and do not rest your hand in anyway on the microscope.
 
@@ -369,6 +367,8 @@ With nothing in the trap (or a trapped bead exactly centered in the trap), the l
 \section{Operating Procedures}
 
 \subsection{The Optical Trapping Program}
+
+\newpage
 
 We use a program written in Matlab to control the camera and motorized stage and to record and process data from the QPD. To open the program, double click on ``Computer'' on your desktop, and the C: drive. Open the folder ``Matlab Trapping Software2'' (MAKE SURE IT IS 2). Then double click the file ``OTKBv7.m'' This should open Matlab. \textbf{BE SURE NOT TO CLICK THE FILE OTKBv7.fig AS THIS WILL CRASH MATLAB.} In the Matlab editor which contains the script for the program, click on the play button on the top menu to run the program.
 
@@ -886,7 +886,7 @@ Here we will use the program \href{http://experimentationlab.berkeley.edu/sites/
 
 \section{Part II. Investigating Flagellar Locomotion in E. Coli}
 
-As defined in the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/biowikipedia.pdf}{\textbf{definitions sheet}} and again on wikipedia (no guarantee of accuracy there) \emph{\href{http://en.wikipedia.org/wiki/Escherichia\_coli}{\textbf{Escherichia coli}}} (abbreviated \emph{E. coli}) is a rod-shaped bacterium about 1 $\mu$m in diameter by 2-4 $\mu$m long. It normally occurs in the intestines of humans and all warm-blooded animals. Most strains, including the one we will study, are harmless to humans. \emph{E. coli} has a bad reputation due to some pathogenic strains that produce dangerous toxins causing diarrhea and some other diseases.
+As defined in the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OTZ/biowikipedia.pdf}{\textbf{definitions sheet}}, \textbf{Escherichia coli} (abbreviated \emph{E. coli}) is a rod-shaped bacterium about 1 $\mu$m in diameter by 2-4 $\mu$m long. It normally occurs in the intestines of humans and all warm-blooded animals. Most strains, including the one we will study, are harmless to humans. \emph{E. coli} has a bad reputation due to some pathogenic strains that produce dangerous toxins causing diarrhea and some other diseases.
 
 \begin{figure}[h]
     \centering
@@ -950,7 +950,6 @@ Some suggestions you might try:
     \item Is swimming velocity or cell rotation related to cell size?
 
 \end{enumerate}
-
 
 \textbf{This is a Checkpoint: Choose one or two questions to focus on and collect sufficient data to be able to quantify your results and provide error bars and/or statistical tests for your hypotheses. Call over a GSI or Professor and discuss which two topics you will examine and the methods you will use to answer the questions.}
 
