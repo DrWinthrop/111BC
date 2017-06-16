@@ -238,12 +238,9 @@ Details of the NMR head are shown in Figure~\ref{fig:DetailOfNMRHead}. It is a b
 
 The top and bottom covers of the NMR head have 7-turn pancake coils which carry varying currents that produce a modulation field $H_\text{mod} \cos(2 \pi f_m t)$, where $f_m$ is 60 Hz. The amplitude $H_\text{mod}$ is controlled from the modulation unit with $H_\text{mod} \approx 1.7$ gauss/amp coming from the modulating current. This is done with a 1.7 amp 60Hz power supply to modulate the field.
 
-%\newpage
-
 \section{NMR Box}
 
 This black box \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR31.gif}{\textbf{NMR RF Black Box Circuit Diagram}}
-
 is permanently mounted on the magnet stand and is not to be removed or disassembled; do not remove the cables either. It contains a tunable RF oscillator centered around 16.54x,xxx MHz, a tunable receiver (left-hand knob), a diode-based detector (right-hand knob), a low-pass filter, and an amplifier for enhancing the detector output. Record this frequency down to 1 Hz resolution for the pulse NMR section.
 
 The oscillator generates an RF signal that produces a magnetic field $H_1\cos(2\pi f t)$ in the sample. The frequency is determined by $1/\sqrt{LC}$ where $L$ and $C$ are the combined inductance and capacitance of the coil in the NMR head, the variable capacitors in the NMR box, and the cables connecting the two. One of the capacitors tunes the circuit to hit resonance at the Larmor frequency. Because the resonant circuit includes inductors in the head and in the cables, as well as capacitors in the NMR box and the cables, touching or moving anything during measurements makes the frequency unstable and introduces lots of noise. Thus, be gentle, and keep your hands off while taking data.
@@ -275,6 +272,8 @@ The amplitude of the RF field $H_1$ is controlled by the DC supply voltage $V_1$
 Refer to Figure A for the NMR Block Diagram:
 
 The NMR head is placed in the DC field $H_0 \approx$ 3800 gauss of a large permanent magnet. The simplest method for observing NMR is to sweep the magnetic field through resonance at 60 Hz by superimposing a modulating $H_\text{mod}$ on $H_0$. Also, it is helpful to display the NMR signal $V_\text{ac}$as the y-input of an oscilloscope and the 60-Hz phase shifted sine wave from the modulation unit as the x-input.
+
+\newpage
 
 The signal from the NMR box is amplified by the SRS 560 amplifier which is used to limit the upper and lower pass frequency (typically 10 kHz and 3 Hz), thereby rejecting unwanted frequencies and improving the visibility of the desired signal. The Fluke frequency counter is used to read the NMR oscillator frequency without perturbing the oscillator.
 
