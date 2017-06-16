@@ -38,6 +38,8 @@ Once you have calibrated the trap and learned to analyze the data, you will choo
 
 \textbf{Note that there is NO eating or drinking in the 111-Lab anywhere, except in rooms 282 \& 286 LeConte on the bench with the BLUE stripe around it.} Thank You the Staff.
 
+\newpage
+
 \textbf{Samples and Beads used in this experiment}
 
 \begin{enumerate}
@@ -53,8 +55,6 @@ Once you have calibrated the trap and learned to analyze the data, you will choo
 
     \item E. coli (must notify Don Orlando three (3) days before needed)
 \end{enumerate}
-
-\newpage
 
 \textbf{Other materials used in this experiment}
 
@@ -206,7 +206,7 @@ Arthur Ashkin discovered the method of optical trapping in 1970 \cite{Ashkin1970
 
 The most straightforward mechanism to understand the physics of trapping is to consider the change in momentum of light that is scattered by and refracted by a dialectic material, in our case a silica glass bead. Any change in the direction of light imparts momentum to the bead. This mechanism holds for objects much larger in diameter than the wavelength of the laser. A ray-tracing argument holds that the scattered light creates a \emph{scattering force} in the direction of light propagation, while the refracted light creates an opposing \emph{gradient force}. When the bead is in the center of the trap, these forces cancel. When a bead moves slightly away from the center, a net force is applied towards the center, making this a stable equilibrium.
 
-In order to understand how the equilibrium is stable, it will help to consider how the gradient force responds to displacement of a bead from the center. In the figure to the right, the red region represents the ``waist'' of the laser at its focus point, with the laser passing upward through the sample chamber. The blue ball is the bead, and the black arrows (1) and (2) represent light rays whose thicknesses correspond to their intensities (note that the beam is brightest at its center). In case (a), with the particle slightly to the left of center, the two rays refract through the particle and bend inwards. The reactionary force vectors, F1 and F2, of each ray on the bead are shown. Because ray (2) is more intense (and thus carries more momentum) than ray 1, the net force on the bead is to the right. Thus, a perturbation to the left causes a rightward-directed force back towards the trap's center.
+In order to understand how the equilibrium is stable, it will help to consider how the gradient force responds to displacement of a bead from the center. In the figure \ref{fig:500px-Optical_Trap_Ray_Optics_Explanation} above, the red region represents the ``waist'' of the laser at its focus point, with the laser passing upward through the sample chamber. The blue ball is the bead, and the black arrows (1) and (2) represent light rays whose thicknesses correspond to their intensities (note that the beam is brightest at its center). In case (a), with the particle slightly to the left of center, the two rays refract through the particle and bend inwards. The reactionary force vectors, F1 and F2, of each ray on the bead are shown. Because ray (2) is more intense (and thus carries more momentum) than ray 1, the net force on the bead is to the right. Thus, a perturbation to the left causes a rightward-directed force back towards the trap's center.
 
 In case (b) the particle is centered laterally in the beam and will not be pushed left or right. The net gradient force is downward, which is balanced by an upward scattering force (not shown) due to reflection of some of the light.
 
@@ -251,6 +251,8 @@ The ray optics approach described above holds for trapped objects whose diameter
 \section{Apparatus}
 
 The key to a successful optical trap is to create a well-collimated beam that slightly overfills the aperture of the microscope's objective lens and is aligned perfectly with the optical axis of the objective lens.
+
+\newpage
 
 \begin{figure}[h]
     \centering
@@ -300,11 +302,11 @@ The trapping laser has a power output of up to 300 mW and a wavelength of 975nm,
 
 The microscope has a dual function. One is to allow us to see our specimen at high magnification by sending visible light through the specimen to a video camera. The other function is to focus the laser beam to create the optical trap and collect the laser light to focus it on a quadrant photodiode (QPD) that tells us how close the trapped object is to the trap's center. Keep in mind that there are three light sources, and though their paths coincide through much of the microscope they are still distinct, with distinct focal and afocal points. A useful concept for understanding microscopy optics is that of \href{http://experimentationlab.berkeley.edu/sites/default/files/ConjugatePlanesOpticalMicroscopy.pdf}{\textbf{conjugate planes}}, which groups all the optics into two complementary sets: imaging and illumination.
 
+\newpage
+
 \textbf{Trapping Laser}
 
 The trapping beam exits the diode and travels through a fiber optic cable to a cable termination fitting, then through a collimating lens. It then passes through two steering mirrors and a beam expander that expands the diameter 2.5x to match the 6 mm aperture of the microscope objective. It joins the microscope at a dichroic mirror, which reflects IR light but allows visible wavelengths to pass through. A mirror at the bottom front of the microscope reflects the beam up through the objective lens, which focuses the beam down to a tiny waist just above the lens, creating the trap. Above this waist, the beam diverges and is recollimated by a condenser lens. Above the condenser the beam is reflected off another dichroic mirror and focused by a lens onto the quadrant photodiode (QPD) for position detection.
-
-\newpage
 
 \textbf{Illumination}
 
@@ -342,9 +344,9 @@ The dye fluoresces in every direction, but the part we are interested in goes th
 
 \emph{\textbf{Make sure you do NOT turn or run the pico-motors to the ends of their rotation, they will jam up.}}
 
-The microscope stage holds the specimen slide and allows fine control over horizontal positioning. It is useful for finding beads or cells to trap and moving them once trapped. Two piezo electric picomotors drive the stage in the X and Y directions. The knurled knob on each pico-motor allows for manual positioning. The motors can be controlled by a joystick or by software. The joystick is best for hunting for specimens to trap and moving the trapped specimens around. The software control is useful for calibration procedures when you want to move the slide at a constant speed. The specimen is held on the stage between a microscope slide and a thin glass coverslip suspended beneath.
-
 \newpage
+
+The microscope stage holds the specimen slide and allows fine control over horizontal positioning. It is useful for finding beads or cells to trap and moving them once trapped. Two piezo electric picomotors drive the stage in the X and Y directions. The knurled knob on each pico-motor allows for manual positioning. The motors can be controlled by a joystick or by software. The joystick is best for hunting for specimens to trap and moving the trapped specimens around. The software control is useful for calibration procedures when you want to move the slide at a constant speed. The specimen is held on the stage between a microscope slide and a thin glass coverslip suspended beneath.
 
 Vertical positioning (Z axis) is accomplished by moving the objective lens with the positioning knob; 1$\mu$m/gradation. This has the effect of moving both the plane of focus of the microscope and the center of the optical trap. So, for instance, if you focus on a bead resting on the coverslip, turn on the laser to trap it; you can then move the objective lens up to raise the bead off the coverslip. This can be difficult in practice. When you turn the positioning knob take special care to not bump the microscope in any other way. This can bump the trapped bead out of the trap. Use two fingers only and do not rest your hand in anyway on the microscope.
 
@@ -368,8 +370,6 @@ With nothing in the trap (or a trapped bead exactly centered in the trap), the l
 \section{Operating Procedures}
 
 \subsection{The Optical Trapping Program}
-
-\newpage
 
 We use a program written in Matlab to control the camera and motorized stage and to record and process data from the QPD. To open the program, double click on ``Computer'' on your desktop, and the C: drive. Open the folder ``Matlab Trapping Software2'' (MAKE SURE IT IS 2). Then double click the file ``OTKBv7.m'' This should open Matlab. \textbf{BE SURE NOT TO CLICK THE FILE OTKBv7.fig AS THIS WILL CRASH MATLAB.} In the Matlab editor which contains the script for the program, click on the play button on the top menu to run the program.
 
@@ -1115,6 +1115,8 @@ In your observations of vesicles in onion epidermal cells, you should distinguis
         \item Blot excess liquid using a paper towel
 
     \end{itemize}
+    
+\newpage
 
     \item Mount onto microscope
 
