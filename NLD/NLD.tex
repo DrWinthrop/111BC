@@ -274,7 +274,7 @@ Thus $\vec p$ denotes the current state of the system, and $\vec p(t)$ the path 
 
 \subsection{Phase-Path Reconstruction}
 
-If one could measure all the dynamical variables of a system simultaneously, the path $\vec p(t)$ could be plotted easily. However, in many cases this is not possible and, moreover, it is not necessary in most cases. Look ahead to the reconstructed phase plots of Figures 7 to 10. These plots were made by sampling the diode current only. Rather than measuring the complete set of variables $(I, V_d, \theta)$, the trajectory is available in \emph{each} variable (i.e. we could have sampled the diode voltage and come up with similar plots).
+If one could measure all the dynamical variables of a system simultaneously, the path $\vec p(t)$ could be plotted easily. However, in many cases this is not possible and, moreover, it is not necessary in most cases. Look ahead to the reconstructed phase plots of Figures \ref{fig:my_label} to \ref{fig:Chaotic}. These plots were made by sampling the diode current only. Rather than measuring the complete set of variables $(I, V_d, \theta)$, the trajectory is available in \emph{each} variable (i.e. we could have sampled the diode voltage and come up with similar plots).
 
 Sampling only one dynamical variable and reconstructing the trajectory in a higher-dimensional space is a process called \emph{embedding}: Given a \textbf{discrete time series} $\{I_n\} $ of regularly sampled values of $I_d(t_0 + n\tau)$, where $t_0$ is an arbitrary initial time and $\tau$ is the sample period, we embed the current in a higher dimension (appropriately called the \emph{embedding-dimension,} in this example, dimension 3) by forming the points $(I_n, I_{n+1}, I_{n+2})$ for all data.
 
@@ -284,7 +284,7 @@ This is by no means obvious, and it's complicated by the fact that there do exis
 
 \subsection{PN-Junction phase plots \& The Bifurcation Route to Chaos}
 
-Figure 7- Figure 10 show reconstructed phase-space trajectories, $ \vec p(t) $, that correspond to the circuit's operation in Figure 3- Figure 6. The plots were made using the embedding technique described in the previous section, so the plot axes are $ (I_n, I_{n+1}, I_{n+2}) $. We speculate that $\theta$ revolves around the line $z = y = x$, and that the other two state variables, V and I, correspond loosely to the distance along that line and the distance from that line. The graphs are all stereo-optic. Try holding them at arm's length (or set them on a desk as you stand over them) and letting your eyes focus at infinity. Let two of the double images overlap so that you can see three images. The middle one, if you get it to match up just right, will look like it's 3D.
+Figure \ref{fig:my_label}- Figure \ref{fig:Chaotic} show reconstructed phase-space trajectories, $ \vec p(t) $, that correspond to the circuit's operation in Figure \ref{fig:Period15}- Figure \ref{fig:Nldimage019}. The plots were made using the embedding technique described in the previous section, so the plot axes are $ (I_n, I_{n+1}, I_{n+2}) $. We speculate that $\theta$ revolves around the line $z = y = x$, and that the other two state variables, V and I, correspond loosely to the distance along that line and the distance from that line. The graphs are all stereo-optic. Try holding them at arm's length (or set them on a desk as you stand over them) and letting your eyes focus at infinity. Let two of the double images overlap so that you can see three images. The middle one, if you get it to match up just right, will look like it's 3D.
 
 \begin{figure}
     \centering
@@ -294,15 +294,14 @@ Figure 7- Figure 10 show reconstructed phase-space trajectories, $ \vec p(t) $, 
     \label{fig:my_label}
 \end{figure}
 
-\newpage
-
-For small values of the parameter $V_{os}$, the trajectory is a stable orbit. For larger value (after bifurcation to period 2) the orbit is still stable, but requires \emph{two} cycles of the driving oscillator to return to its initial point (Figure 8). These trajectories are a subclass of a more general object called an \emph{\textbf{attractor}}: The subset of state space toward which a dynamical system evolves. Because they are periodic (the paths are closed cycles), the simple attractors of Figure 7-Figure 9 are known as \emph{\textbf{limit-cycles}}.
+For small values of the parameter $V_{os}$, the trajectory is a stable orbit. For larger value (after bifurcation to period 2) the orbit is still stable, but requires \emph{two} cycles of the driving oscillator to return to its initial point (Figure \ref{fig:perioddoubling}). These trajectories are a subclass of a more general object called an \emph{\textbf{attractor}}: The subset of state space toward which a dynamical system evolves. Because they are periodic (the paths are closed cycles), the simple attractors of Figure \ref{fig:my_label}-Figure \ref{fig:sameasabove} are known as \emph{\textbf{limit-cycles}}.
 
 \begin{figure}
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage044.gif}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Nldimage044.png}}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage045.gif}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Nldimage045.png}}
     \caption{L \& R images of the diode response after undergoing a period-doubling bifurcation}
+    \label{fig:perioddoubling}
 \end{figure}
 
 \begin{figure}
@@ -310,6 +309,7 @@ For small values of the parameter $V_{os}$, the trajectory is a stable orbit. Fo
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage046.gif}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Nldimage046.png}}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage047.gif}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Nldimage047.png}}
     \caption{Same as above after another bifurcation.}
+    \label{fig:sameasabove}
 \end{figure}
 
 Increasing $V_{os}$ to the point where the system is chaotic reveals a more complicated attractor: it is a \emph{\textbf{fractal}} object and hence called a \emph{\textbf{strange}} attractor.
@@ -319,7 +319,10 @@ Increasing $V_{os}$ to the point where the system is chaotic reveals a more comp
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage048.gif}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Nldimage048.png}}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage049.gif}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/Nldimage049.png}}
     \caption{The system is now chaotic. The path in phase space never closes. And the evolution traces out the system's attractor. To improve the visibility of the plot the lines connecting the points have been omitted.}
+    \label{fig:Chaotic}
 \end{figure}
+
+\newpage
 
 \subsection{Fractals}
 
@@ -345,8 +348,6 @@ Now consider two neighboring initial conditions $\vec P_0 \text{ and } \vec P_0+
 If the Liapunov exponents are all positive then the system diverges. If they are all negative then the system condenses to a point. If the largest one is positive and the sum of them all is negative, then it amounts to a stretch in one or more dimensions and a contraction in the others and chaotic behavior is guaranteed.
 
 \subsection{Recurrence relations}
-
-\newpage
 
 The equations of state (Eq's \eqref{eq:Motion1}, \eqref{eq:Motion2}, 
 \eqref{eq:Motion3}) are functions of a continuous time variable. Using the Runge-Kutta method of integrating ordinary differential equations, it is possible to form a set of discrete-time dynamical equations and these are seen to exhibit universal features common to other similar systems. For this reason, we study \emph{\textbf{iterative maps}}: discrete versions of $ \phi_t $ that relate the next state of a system to its previous state. You might wonder why, if chaotic systems are so sensitive to initial conditions, should we expect to see any useful results computed by an approximating method such as Runge-Kutta. The reason is explained in [Ref.~\cite{Strogatz}, \S10.1], where the authors present the 'shadowing' lemma: Although a finitely computed chaotic time-series, beginning with an initial value, will rapidly diverge from the true orbit, there exists some other orbit that coincides closely to the computed series.
@@ -503,7 +504,7 @@ Again, try to do this on your own. If you get really stuck, you can look in appe
 
 Sensitive dependence on initial conditions is one of the defining features of chaotic behavior. Consider two close initial-conditions, $\xi$ and $\xi + \delta$ evolving in time. If their distance of separation increases exponentially, i.e. $|f(t,\xi) - f(t,\xi + \delta)| = \delta e^{\lambda t} $, we say the function $f$ exhibits sensitive dependence on initial conditions. The coefficient is necessarily positive and it is called the Liapunov exponent (see Ref.~\cite{Strogatz}, section 9.3 especially the qualifications after fig 9.3.5). As such, if you can calculate or measure , you have a test to determine whether or not a particular system is chaotic. If is not positive, the system is not chaotic.
 
-As previously mentioned, the Liapunov exponents of multi-dimensional systems are the average eigenvalues of the Jacobian matrix of the system (see also Theiler \cite{Theiler} eq's 4-7). So rather than solving an eigenvalue problem on a multi-dimensional system, it's easier to start with a one-dimensional map. The Liapunov exponent for a 1-d map is given by (Ref.~\cite{Strogatz}, p367). Following example 10.5.3 in Ref.~\cite{Strogatz}, write a VI to calculate the Liapunov exponent of the quadratic map as a function of its chaotic parameter . You will probably find it useful to know that the inputs to LabView's arithmetic operators are \emph{polymorphic}. For example you can wire an array and a constant to the ``add'' function and the result is a new array whose elements are the old array with the constant added to each of them. Most of the math functions work this way for instance the log function can take an array of numbers and produce an array of logarithms of the numbers (see Figure 17). You will make use of quad.vi again.
+As previously mentioned, the Liapunov exponents of multi-dimensional systems are the average eigenvalues of the Jacobian matrix of the system (see also Theiler \cite{Theiler} eq's 4-7). So rather than solving an eigenvalue problem on a multi-dimensional system, it's easier to start with a one-dimensional map. The Liapunov exponent for a 1-d map is given by (Ref.~\cite{Strogatz}, p367). Following example 10.5.3 in Ref.~\cite{Strogatz}, write a VI to calculate the Liapunov exponent of the quadratic map as a function of its chaotic parameter . You will probably find it useful to know that the inputs to LabView's arithmetic operators are \emph{polymorphic}. For example you can wire an array and a constant to the ``add'' function and the result is a new array whose elements are the old array with the constant added to each of them. Most of the math functions work this way for instance the log function can take an array of numbers and produce an array of logarithms of the numbers (see Figure \ref{fig:Nldimage106}). You will make use of quad.vi again.
 
 \begin{figure}[h]
     \centering
@@ -521,7 +522,7 @@ As previously mentioned, the Liapunov exponents of multi-dimensional systems are
 
 \newpage
 
-The front panel of your finished VI should look something like Figure 18. After you look at the algorithm in Ref.~\cite{Strogatz}, make another block diagram of what you'll want to do and then try it in LabView. You'll probably find a FOR loop helpful. If you find yourself spending more than an hour or so on it, you should look at the solution in the appendix. When you have your working VI, explore the area around $r$ = 3.57 especially. What happens when $\lambda \rightarrow 0$ Use your observations to approximate Feigenbaum's ratio $\delta$. Ref.~\cite{Strogatz} suggests 10,000 iterations, but this is a bit excessive, not to mention time consuming. Make sure to have lots of different values for $r$, the chaotic parameter. Experiment to see what gives you good graphs.
+The front panel of your finished VI should look something like Figure \ref{fig:Nldimage107}. After you look at the algorithm in Ref.~\cite{Strogatz}, make another block diagram of what you'll want to do and then try it in LabView. You'll probably find a FOR loop helpful. If you find yourself spending more than an hour or so on it, you should look at the solution in the appendix. When you have your working VI, explore the area around $r$ = 3.57 especially. What happens when $\lambda \rightarrow 0$ Use your observations to approximate Feigenbaum's ratio $\delta$. Ref.~\cite{Strogatz} suggests 10,000 iterations, but this is a bit excessive, not to mention time consuming. Make sure to have lots of different values for $r$, the chaotic parameter. Experiment to see what gives you good graphs.
 
 \textbf{This is a Checkpoint: Call over a GSI and show them your program. Explain what you have done and which value of the chaotic parameter seems to work best.}
 
