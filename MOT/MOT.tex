@@ -787,7 +787,7 @@ The data acquisition for MOT utilizes two different programs, one of which contr
 
 Note if a program error occurs usually it is the 1394 interface, 1st close VI program, then unplug the firewire cable at the rear of the computer and re-insert it. The VI outputs two TTL signals, which are both displayed in the feedback offset graph and a digital signal, which drives a relay, and ultimately, the magnet power supply. At present, these are output from the analog output ports and Port 0/Line 0 of the National Instruments card.
 
-The first TTL output signal is sent to the shutter driver, which reads the rising edge as ``close the shutter'' and the falling edge as ``open the shutter''. The ``step voltage'' defines the height of the pulse, and should between 2 and 5 Volts. The duration of this pulse is variable between 5 and <200 ms, you will find that pulse durations of less that 5 ms will likely cause the shutter to get stuck on occasion, and also that the real time separation between the closing and opening of the shutter is never less than around 8 ms, and is a little longer than the pulse duration set by the electronics.
+The first TTL output signal is sent to the shutter driver, which reads the rising edge as ``close the shutter'' and the falling edge as ``open the shutter''. The ``step voltage'' defines the height of the pulse, and should between 2 and 5 Volts. The duration of this pulse is variable between 5 and $<200$ ms, you will find that pulse durations of less that 5 ms will likely cause the shutter to get stuck on occasion, and also that the real time separation between the closing and opening of the shutter is never less than around 8 ms, and is a little longer than the pulse duration set by the electronics.
 
 The second TTL signal triggers the CCD camera. You can set the camera to respond to either the rising or falling edge of this pulse, using a switch on the VI panel and setting the appropriate controls.
 
@@ -864,7 +864,7 @@ Examining the data from PD3 obtained above for the measurement of the MOT atom n
 \subsubsection{Measuring the MOT temperature}
 \label{subsubsec:MeasuringMOTTemperature}
 
-What is the lowest temperature you've ever experienced? Even in the coldest climate, you're very unlikely to have been colder than 10's of degrees below 0 C (273 K). Maybe you've made ice cream with liquid nitrogen (at 77 K) or even been fortunate enough to work with liquid helium (4 K). To get colder yet, you might resort to a helium-4 refrigerator (around 1 K) or even a helium-3 dilution refrigerator ($>$10 mK).
+What is the lowest temperature you've ever experienced? Even in the coldest climate, you're very unlikely to have been colder than 10's of degrees below 0 C (273 K). Maybe you've made ice cream with liquid nitrogen (at 77 K) or even been fortunate enough to work with liquid helium (4 K). To get colder yet, you might resort to a helium-4 refrigerator (around 1 K) or even a helium-3 dilution refrigerator ($>10$ mK).
 
 Laser cooling has been used to reach some of the lowest temperatures ever. Your task here is to measure the temperature of atoms in your MOT. To measure their temperature, we will attempt to make a measurement of the velocity distribution of atoms in the MOT, which, for an ideal gas at thermal equilibrium, is given by the Maxwell-Boltzmann distribution. To make this measurement, we start with a MOT at equilibrium, and then suddenly switch off the MOT so as to allow the atoms to expand ballistically for a set time of flight, $t_\text{TOF}$. We then make a measurement of the size of the cold-atom gas by one of two means described below.
 
@@ -947,7 +947,7 @@ All Reprints and other information can be found on the \href{http://physics111.l
 
     \bibitem{DiStefano} J.J. DiStefano, A.R. Stubberud, and I.J. Williams. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Schaum's\%20Outline\%20Theory\%20and\%20Problems\%20of\%20Feedback\%20and\%20Control\%20Systems/}{\textbf{Schaum’s outline of theory and problems of feedback and control systems}} (McGraw-Hill; New York; 1990).
 
-    \bibitem{Dorf} R.C. Dorf and R.H. Bishop, ``Modern Control Systems, 8th ed.'', Addison Wesley Longman (1998).
+    \bibitem{Dorf} R.C. Dorf and R.H. Bishop, \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Richard\%20C.\%20Dorf,\%20Robert\%20H.\%20Bishop\%20Modern\%20Control\%20Systems.pdf}{\textbf{Modern Control Systems, 12th ed.}}, Prentice Hall (2010).
 
     \bibitem{Bechhoefer} J. Bechhoefer. \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Bechhoefer_RMP_v77-2005-p783_1.pdf}{\textbf{``Feedback for physicists: A tutorial essay on control''}} Reviews of Modern Physics 77, 783 (2005)
 
