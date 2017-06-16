@@ -2026,7 +2026,8 @@ In the event that you are experiencing software bugs for AFM, try the following:
 
     \item Option 2) Turn off the EBOX, restart the computer, turn on the EBOX, start program.
 
-    \item Option 3) \textbf{(50 MICRON SCANNER ONLY)} When encountering bugs in ``AFM Workshop 2.4.15.exe'' and you have already tried options 1 and 2, use more stable version of the program, ``2.0.3-50 Micron.exe''
+    \item Option 3) \textbf{(50 MICRON SCANNER ONLY)} When encountering bugs in ``AFM Workshop 2.4.15.exe'' and you have already tried options 1 and 2, use more stable version of the program, ``2.0.3-50 Micron.exe''.
+    
     \begin{itemize}
         \item \textbf{NOTE:} This version only has rudimentary capabilities for the Force-Distance tab.  Because the older software does not take advantage of the z-piezo in the 50 Micron scanner itself, the resulting data is not nearly as accurate.  The data is still usable for this experiment, but with much larger error bars.
 
@@ -2075,28 +2076,30 @@ Throughout this experiment, it is very likely that you will break one or more pr
 
 \textbf{Too much light at the photodetector:}
 
-\begin{center}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/53.png}{\includegraphics[width=0.5\linewidth]{images/53.png}}
-\end{center}
+\begin{figure}[h]
+\centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/53.png}{\includegraphics[width=0.7\linewidth]{images/53.png}}
+    \caption{Saturated Photodetector}
+\end{figure}
 
 \begin{itemize}
     \item If the Photodetector bar is saturated, try changing the photodector gain switch to low gain.
 
-    \item Sample not correct:  Try attaching the sample to the stage more securely.
+    \item Sample not correct: Try attaching the sample to the stage more securely.
 
-    \item Probe not seated in holder correctly:  You will want to readjust the probe as a \emph{LAST RESORT.}
-
-    \item Resonance is saturated
+    \item Probe not seated in holder correctly:  You will want to readjust the probe as a \emph{LAST RESORT}.
+    
+    \item Resonance is saturated.
 
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/54.png}{\includegraphics[width=0.7\linewidth]{images/54.png}}
-        \caption{}
+        \caption{Peak amplitude is too high, resulting in saturated resonance.}
     \end{figure}
 
     \item Try reducing the ``Amplitude (Vpp)'' with the peak amplitude to be no larger than 1.4 V.
 
-    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/VM\%204.2.\%20On\%20Cont-small\%20vib\_converted\_r1.mp4}{\textbf{False feedback}}:  If the image is wispy and not very crisp, you are probably scanning over areas of the sample with contamination.  Try selecting a different spot on the sample--RETRACT THE TIP BEFORE MOVING THE SAMPLE.
+    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/VM\%204.2.\%20On\%20Cont-small\%20vib\_converted\_r1.mp4}{\textbf{False feedback}}:  If the image is wispy and not very crisp, you are probably scanning over areas of the sample with contamination.  Try selecting a different spot on the sample -- RETRACT THE TIP BEFORE MOVING THE SAMPLE.
 \end{itemize}
 
 \end{document}
