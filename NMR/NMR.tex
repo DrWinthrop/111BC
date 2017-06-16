@@ -269,7 +269,7 @@ The amplitude of the RF field $H_1$ is controlled by the DC supply voltage $V_1$
 
 \section{Block Diagram}
 
-Refer to Figure A for the NMR Block Diagram:
+Refer to Figure \ref{fig:500px-NMRblockdiagram} for the NMR Block Diagram:
 
 The NMR head is placed in the DC field $H_0 \approx$ 3800 gauss of a large permanent magnet. The simplest method for observing NMR is to sweep the magnetic field through resonance at 60 Hz by superimposing a modulating $H_\text{mod}$ on $H_0$. Also, it is helpful to display the NMR signal $V_\text{ac}$as the y-input of an oscilloscope and the 60-Hz phase shifted sine wave from the modulation unit as the x-input.
 
@@ -478,6 +478,7 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
     \begin{minipage}[t]{0.32\textwidth}
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR23.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR23.png}}
         \caption{1 Molar Mn$^{++}$ in H2O}
+        \label{fig:onemolar}
     \end{minipage}
     \end{figure}
 
@@ -499,7 +500,7 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 
     \item By recalling that $\Delta f / f = \Delta H / H$, where $f$ is the frequency and $H$ is the magnetic field, you can devise a method of calibrating (in gauss/div) the field axis of the oscilloscope. Then you can transfer the data of the four modes (absorption/dispersion; slow passage/non-adiabatic passage) to the computer.
     
-    \item Replace the glycerin sample with a 0.01M Mn$^{++}$sample; again this signal should look like Figure 8. Download the data of this non-adiabatic rapid-passage absorption mode to the computer. (See REPORT, \#3.) Now insert a more highly doped sample, 1M Mn$^{++}$. The paramagnetic Mn$^{++}$ions relax the proton spins and the signal is closely resembled the one of a slow passage absorption mode. By further rotating the paddles you should be able to get a signal like Fig. 10, approximately a slow passage dispersion mode. You may have to increase $V_1$ to see this.
+    \item Replace the glycerin sample with a 0.01M Mn$^{++}$sample; again this signal should look like Figure \ref{fig:TenthMolarMn}. Download the data of this non-adiabatic rapid-passage absorption mode to the computer. (See REPORT, \#3.) Now insert a more highly doped sample, 1M Mn$^{++}$. The paramagnetic Mn$^{++}$ions relax the proton spins and the signal is closely resembled the one of a slow passage absorption mode. By further rotating the paddles you should be able to get a signal like Fig. \ref{fig:onemolar}, approximately a slow passage dispersion mode. You may have to increase $V_1$ to see this.
     
     \item For observing the F$^{19}$ resonance we use a Teflon rod. Note that the F$^{19}$ resonance is a little harder to find. Using the same procedures as for H$^1$, find the resonance curves for F$^{19}$. Accurately measure the NMR frequency ratio of F$^{19}$ to H$^1$. To do that, measure $f(\text{H}^1)$ and $f(\text{F}^{19})$ each a number of times under identical conditions.
     
@@ -515,9 +516,11 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 
 \newpage
 
-Read the manual of the Stanford Research Systems Model SR 830DSP Lock-in Amplifier (copied in reprints). In this apparatus, the lock-in amplifier records the derivative $dV_\text{ac}(H)/dH$ of the NMR signal as the frequency sweeps slowly through the resonance by varying the field $H_2$ with the signal generator. The signal-to-noise ratio can be 100$\times$ larger than that observed with the oscilloscope. This method is used to find and record weak signals. It also provides a convenient way to record the line width $\delta H$ of a signal.
+Read the manual of the Stanford Research Systems Model SR 830DSP Lock-in Amplifier (\href{http://physics111.lib.berkeley.edu/Physics111/Equipment_Manuals/SRS/SR830m.pdf}{manual}). In this apparatus, the lock-in amplifier records the derivative $dV_\text{ac}(H)/dH$ of the NMR signal as the frequency sweeps slowly through the resonance by varying the field $H_2$ with the signal generator. The signal-to-noise ratio can be 100$\times$ larger than that observed with the oscilloscope. This method is used to find and record weak signals. It also provides a convenient way to record the line width $\delta H$ of a signal.
 
 As usual, getting started is not trivial. First you need to have a good signal on the oscilloscope. Then turn on the power supply of the magnet (Hewlett Packard E3615A DC Power Supply), the lock-in amplifier, and the function generator. Set the function generator to give a triangle wave with an initial frequency of .05 Hz and 1 $V_\text{pp}$ amplitude. Check out the OFFSET control to adjust the voltage where the triangle wave will be centered. The output of the signal generator goes to the input of the HP E3615A, located in the back of the unit.
+
+\newpage
 
 You want to sweep the field as shown in Figure~\ref{fig:LockInAmplifierSignals}. Unfortunately, the power supply of the magnet does not generate a negative current and the sweep starts at the resonance field Ho. Consequently, the sweep is not symmetrical, and half the resonance curve is lost. In order to compensate for this, we must adjust the offset of the power supply so that it will generate a symmetric sweep using only positive currents. Additionally, the RF frequency must change to a higher value in order to put the resonance at the middle of the triangular sweep. This means the resonance curve will no longer be at the center of the of the scan like in the previous part of the experiment but will be pushed off to one end instead. How much does the RF need to be adjusted? Experiment to find out.
 
@@ -583,6 +586,8 @@ On the desktop you will find an icon \textbf{NMR Scope2.0.vi}. Double click on t
     \label{fig:NMR35}
 \end{figure}
 
+\newpage
+
 \begin{enumerate}
     \item First select the type of experiment you are doing. There are two options: \emph{Pulsed NMR Rising Edge Triggering} and \emph{CW NMR Falling Edge Triggering}
 
@@ -647,8 +652,6 @@ We can also ``average out'' the signal to get a smother line. The program takes 
 
 Instead of using the actual Strip Chart Recorder, we can use the NMR Scope2.0 program to accomplish the same results. Once all the equipment has been set up properly, the use of the program is simple.
 
-\newpage
-
 \begin{enumerate}
     \item Set up the equipment as instructed in the section ``Taking Data,'' part E.
 
@@ -662,6 +665,8 @@ Instead of using the actual Strip Chart Recorder, we can use the NMR Scope2.0 pr
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR40.jpg}{\includegraphics[width=0.5\linewidth]{images/NMR40.jpg}}
         \caption{Strip Chart}
     \end{figure}
+
+\newpage
 
     \item To stop the signal press \textbf{Stop Chart}
 

@@ -710,21 +710,25 @@ Watching the video and following along will ultimately save you time.
     
     \begin{itemize}
         \item \textbf{BEFORE you pick up the probe, note which side of the probe has the cantilever and tip as shown in the image below.}  The probe should be oriented this way when you pick it up using the finely tipped tweezers labeled ``Probe Use Only.''
-    
-        \begin{center}
-            \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMprobe.JPG}{\includegraphics[width=0.5\linewidth]{images/AFMprobe.JPG}}
-        \end{center}
-    
+
         \item Using the finely tipped tweezers labeled ``Probe Use Only'', \textbf{slowly and with great care}, pick up a new probe along the narrow length.
     
         \item With the tip of the new probe oriented \textbf{AWAY FROM} the copper probe clip on the probe holder, \textbf{GENTLY} place the new probe in the oval on the exchange tool (Figure~\ref{fig:ExchangeTool}).
     \end{itemize}
     
     \begin{figure}[H]
+    \centering
+    \begin{minipage}{0.38\linewidth}
+    \centering
+         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMprobe.JPG}{\includegraphics[height=180\px]{images/AFMprobe.JPG}}
+        \caption{AFM probe bottom view}
+        \end{minipage}\hfill
+    \begin{minipage}{0.59\linewidth}
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/21.JPG}{\includegraphics[width=0.5\linewidth]{images/21.JPG}}
-        \caption{}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/21.JPG}{\includegraphics[height=180\px]{images/21.JPG}}
+        \caption{Place the new probe in the oval cup}
         \label{fig:ExchangeTool}
+        \end{minipage}
     \end{figure}
     
     \item  Grip the probe holder with the exchange tool, slightly tilting them towards yourself ($\sim$10 degrees), and tap it gently it on the table until the probe slides down the track and under the clip.
@@ -735,13 +739,13 @@ Watching the video and following along will ultimately save you time.
             \item \textbf{If this happens, DO NOT release the clip. Tilt it the other way and see if you can get the probe to slide back out.  If this is not possible, see if you can gently shake the probe out of the side and on to a piece of paper. Then pick up the probe with tweezers and try again, more carefully this time.}
         \end{itemize}
     
-        \item Recommended to watch tutorial video \href{http://experimentationlab.berkeley.edu/sites/default/files/gettingstarted\_final2.mp4}{\textbf{Getting Started and Probe}}\href{http://experimentationlab.berkeley.edu/sites/default/files/gettingstarted\_final2.mp4}{\textbf{Exchange}} for this step
+        \item Recommended to watch tutorial video \href{http://experimentationlab.berkeley.edu/sites/default/files/gettingstarted\_final2.mp4}{\textbf{Getting Started and Probe}}\href{http://experimentationlab.berkeley.edu/sites/default/files/gettingstarted\_final2.mp4}{\textbf{Exchange}} for this step.
     \end{itemize}
     
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/22.JPG}{\includegraphics[width=0.5\linewidth]{images/22.JPG}}
-        \caption{}
+        \caption{Carefully tap the exchange tool to slide the probe into the clip.}
         \label{fig:22}
     \end{figure}
     
@@ -750,13 +754,13 @@ Watching the video and following along will ultimately save you time.
     \begin{figure}[H]
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/23.JPG}{\includegraphics[width=0.8\linewidth,keepaspectratio]{images/23.JPG}}
-        \caption{}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/23.JPG}{\includegraphics[height=0.8\linewidth,keepaspectratio]{images/23.JPG}}
+        \caption{Clip positioning on probe}
     \end{minipage}
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/IMG_4053.JPG}{\includegraphics[width=0.8\linewidth,keepaspectratio]{images/IMG_4053.JPG}}
-        \caption{}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/IMG_4053.JPG}{\includegraphics[height=0.8\linewidth,keepaspectratio]{images/IMG_4053.JPG}}
+        \caption{Probe properly secured in probe holder}
     \end{minipage}
     \end{figure}
     
@@ -779,7 +783,7 @@ If you want to change from the 15 Micron Scanner to the 50 Micron Scanner or vic
     \item Use the 3/16 Hex Wrench to loosen the 3 Hex Screws holding the scanner in place
 
     \begin{itemize}
-        \item \textbf{DO NOT LOSE THESE SCREWS. KEEP THEM WITH THE SCANNER .}
+        \item \textbf{DO NOT LOSE THESE SCREWS. KEEP THEM WITH THE SCANNER.}
     \end{itemize}
 
     \item CAREFULLY, unplug the ribbon cable from the back of the scanner
@@ -824,10 +828,15 @@ The scanning area/sample holder is the silver disk located on the far right corn
     
     \item Turn the Focus knob counterclockwise to bring the camera focus down to the sample holder.  Keep adjusting the knob until the top of the screw on the sample holder comes into focus.
     \begin{itemize}
-        \item When the screw is in focus, your Camera Viewer should look something like the image below:
-        \begin{center}
+        \item When the screw is in focus, your Camera Viewer should look something like Figure \ref{fig:ScrewTop}.
+        
+        \begin{figure}[h]
+        \centering
             \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/sampleholder.PNG}{\includegraphics[width=0.5\linewidth]{images/sampleholder.PNG}}
-        \end{center}
+            \caption{Screw top in focus}
+            \label{fig:ScrewTop}
+        \end{figure}
+        
     \end{itemize}
     
     \item Use the X and Y micrometer knobs labeled S1 and S2 (which control the position of the Stage) to bring the yellow circle marker to the center of the screw.  Now you have centered the probe tip.
@@ -912,9 +921,11 @@ After replacing a probe, you will have to realign the laser so that it properly 
 
 In the AFM program in the\textbf{ Laser Align} section of the \textbf{PreScan} Tab, the \textbf{Beam Position} tells you where the laser spot is hitting the photodetector. The Mean Adjustment is \textbf{D2}, this moves the beam horizontally on the Beam Position graph--moving the detector physically in or out.  We want D2 to move the red dot on the Beam Position to 0 horizontally.  This should be a one time adjustment.  If you have to change this that probably means that there is something wrong with the probe. \textbf{Top - Bottom should be around .3,} not 0.
 
-\begin{center}
+\begin{figure}[h]
+\centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/detectoralign.JPG}{\includegraphics[width=0.65\linewidth]{images/detectoralign.JPG}}
-\end{center}
+    \caption{Laser Alignment Tab}
+\end{figure}
 
 \subsection{AFM Calibration (Complete on 1st Day)}
 
@@ -939,7 +950,7 @@ Cross reference the \href{http://experimentationlab.berkeley.edu/tt-afmuserguide
         \item Adjust the Camera Zoom to zoom out, so you can determine the orientation of the slide using the Camera Viewer.
     \end{itemize}
 
-    \item Open the reference sample \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/Reference-\%20sample-SHS-01\_3\_datasheet.pdf}{\textbf{datasheet, here}}.
+    \item Open the reference sample \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/Reference-\%20sample-SHS-01\_3\_datasheet.pdf}{\textbf{datasheet}}.
 
     \begin{itemize}
         \item Refer to the datasheet for the schematics of the reference sample, and the dimensions of its features.
@@ -1083,7 +1094,7 @@ Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_
     
     \item The metallic sample holder will magnetically attach to the stage, so be careful and aware when placing the disk on the stage, as to not damage anything.
 
-    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/3.0\%20Sample\%20Exchange\%28V1.0\%29.wmv}{\textbf{Basic Video Tutorial for step 5}}
+    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/3.0\%20Sample\%20Exchange\%28V1.0\%29.wmv}{\textbf{Basic Video Tutorial}}
 \end{itemize}
 
 \subsection{Setting up Pre-Scan Parameters for Vibrating Scan}
@@ -1107,25 +1118,27 @@ Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_
 
     \begin{figure}[H]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/ZControl.jpg}{\includegraphics[width=0.5\linewidth]{images/ZControl.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/ZControl.jpg}{\includegraphics[width=0.6\linewidth]{images/ZControl.jpg}}
         \caption{AFM Knobs}
     \end{figure}
     
-    \item\textbf{MAKE SURE THE TIP IS NOT TOO CLOSE TO THE SAMPLE} (if the sample is in focus with the camera, the tip should not be in focus--refer to Figure~\ref{fig:ProbeUnfocused} below). Make minimal adjustments to the X-Y micrometers labeled S1 and S2 to move the area of interest of the sample under the tip.
+    \item\textbf{MAKE SURE THE TIP IS NOT TOO CLOSE TO THE SAMPLE} (if the sample is in focus with the camera, the tip should not be in focus -- refer to Figure \ref{fig:ProbeUnfocused} below). Make minimal adjustments to the X-Y micrometers labeled S1 and S2 to move the area of interest of the sample under the tip.
     
 \end{enumerate}
 
 \begin{figure}[H]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/26.png}{\includegraphics[width=0.5\linewidth]{images/26.png}}
-    \caption{Top and side views of the cantilever}
-\end{figure}
-
-\begin{figure}[H]
+    \begin{minipage}{0.3\linewidth}
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/probe_unfocused1_0.png}{\includegraphics[width=0.5\linewidth]{images/probe_unfocused1_0.png}}
-    \caption{The probe is not in focus while the sample is, meaning that there is a safe distance between the probe and the sample.  Adjust the focus of the camera so that your Camera Viewer resembles this figure.}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/26.png}{\includegraphics[height=230\px]{images/26.png}}
+    \caption{Top and side views of the cantilever}
+    \end{minipage}\hfill
+    \begin{minipage}{0.6\linewidth}
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/probe_unfocused1_0.png}{\includegraphics[height=230\px]{images/probe_unfocused1_0.png}}
+    \caption{The probe is not in focus while the sample is, meaning that there is a safe distance between the probe and the sample.}
     \label{fig:ProbeUnfocused}
+    \end{minipage}
 \end{figure}
 
 \subsubsection{Range Check}
