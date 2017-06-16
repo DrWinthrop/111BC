@@ -51,15 +51,14 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
   \caption{\centering AFM EBOX\\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/9.JPG}{Click here to see larger picture}}
   \label{fig:AFMEBox}
 \endminipage\hfill
-\centering
 \minipage{0.36\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED2.jpg}{\includegraphics[height=100pt,keepaspectratio]{images/LED2.jpg}}
   \caption{\centering Illuminator \\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED2.jpg}{Click here to see larger picture}}
   \label{fig:Illuminator}
 \endminipage\hfill
-\minipage{0.33\textwidth}
+\minipage{0.29\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstation.jpg}{\includegraphics[height=100pt,keepaspectratio]{images/AFMstation.jpg}}
-  \caption{\centering AFM on level stage \\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstation.jpg}{Click here to see larger picture}}
+  \caption{\centering AFM on Level Stage \\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstation.jpg}{Click here to see larger picture}}
   \label{fig:LevelStage}
 \endminipage
 \end{figure}
@@ -68,19 +67,19 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \minipage{0.25\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{\includegraphics[height=140pt,keepaspectratio]{images/AFMgen.jpg}}
   \centering
-  \caption{AFM Apparatus \\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{Click here to see larger picture}}
+  \caption{\centering AFM Apparatus \\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{Click here to see \\ larger picture}}
   \label{fig:Apparatus}
 \endminipage\hfill
-\minipage{0.32\textwidth}
-  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcan.JPG}{\includegraphics[width=\linewidth,keepaspectratio]{images/toposcan.JPG}}
-  \caption{Topographic scan window \\
+\minipage{0.35\textwidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcan.JPG}{\includegraphics[height=140pt,keepaspectratio]{images/toposcan.JPG}}
+  \caption{\centering Topographic \\ Scan Window \\
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcan.JPG}{Click here to see larger picture}}
   \label{fig:TopoScan}
 \endminipage\hfill
-\minipage{0.32\textwidth}
-  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/bothfocused.JPG}{\includegraphics[height=100pt,keepaspectratio]{images/bothfocused2.jpg}}
+\minipage{0.35\textwidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/bothfocused.JPG}{\includegraphics[height=140pt,keepaspectratio]{images/bothfocused2.jpg}}
   \centering
-  \caption{Laser focused on cantilever \\
+  \caption{\centering Laser Focused \\on Cantilever \\
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/bothfocused.JPG}{Click here to see larger picture}}
   \label{fig:CantileverLaser}
 \endminipage
@@ -102,6 +101,8 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
     \item Complete the \href{http://experimentationlab.berkeley.edu/node/122}{\textbf{AFM Pre-lab}} and Evaluation sheet. Print, fill it out with the answers, and turn it in with your report. The Pre-Lab must be printed separately. Discuss the experiment and pre-lab questions and answers with any faculty member or GSI and get it signed off by that faculty member or GSI. Turn in the signed pre-lab sheet with answers with your lab report.
 
 \end{enumerate}
+
+\pagebreak
 
 \textbf{Animations \& Videos}
 
@@ -210,6 +211,16 @@ In this lab, you will operate an atomic force microscope which is used to image 
 
 An atomic force microscope images objects on the scale of angstroms to microns through the use of physical scanning, rather than optics (like conventional/electron microscopes). The basic mechanism of the AFM is shown in Figure \ref{fig:BasicMechanism}. A tip attached to a cantilever interacts with a surface. A laser is bounced off of the cantilever and into a photodetector. From this signal, one measures the deflection of the cantilever. A sample is then placed on a special stage underneath the tip. The stage contains a \hyperref[subsubsec:Piezo]{piezoelectric} driver that is controlled by software. In particular, it may be made to wiggle around in a raster scan pattern, as well as engage in feedback with the cantilever (constant force mode). Variations in the height of the sample cause deflections of the cantilever, which are then picked up by the photodetector. Through this lab, you should gain a good understanding of how an AFM works, the types of data you can get from it, how you can use this data to make meaningful conclusions, and the limitations of the system.
 
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.75\linewidth}
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/2_0.png}{\includegraphics[width=0.66\linewidth]{images/2_0.png}}
+    \caption{Diagram of the laser reflecting off the cantilever surface. The deflection of the cantilever as the tip moves across the surface of the sample is measured by the deflection of the laser reflecting onto the photodetector, and this data is used to adjust the position of the cantilever to recenter the beam.}
+    \label{fig:BasicMechanism}
+    \end{minipage}
+\end{figure}
+
 \textbf{Why AFM over other microscopy techniques?}
 \begin{itemize}
     \item Take images in all environments (air, liquid, vacuum)
@@ -228,25 +239,15 @@ An atomic force microscope images objects on the scale of angstroms to microns t
 
 \end{itemize}
 
-\begin{figure}[h]
-    \centering
-    \begin{minipage}{0.75\linewidth}
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/2_0.png}{\includegraphics[width=0.66\linewidth]{images/2_0.png}}
-    \caption{Diagram of the laser reflecting off the cantilever surface. The deflection of the cantilever as the tip moves across the surface of the sample is measured by the deflection of the laser reflecting onto the photodetector, and this data is used to adjust the position of the cantilever to recenter the beam.}
-    \label{fig:BasicMechanism}
-    \end{minipage}
-\end{figure}
-
 \subsection{Apparatus}
 
 \begin{figure}[h]
 \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{\includegraphics[width=0.25\linewidth]{images/AFMgen.jpg}}
-    \caption{AFM Apparatus. Click \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{\textbf{here}} for a larger image.}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{\includegraphics[width=0.5\linewidth]{images/AFMgen.jpg}}
+    \caption{AFM Apparatus}
 \end{figure}
 
-\textbf{Probe:}
+\subsubsection{Probe}
 
 AFM probes are extremely fragile, so you must handle them with extreme care throughout this experiment. Each probe cost about \$30, so keep this in mind when you do this experiment.
 
@@ -280,7 +281,7 @@ Imagine a crosshair at the triangle point of the cantilever. That is roughly whe
 
 \end{itemize}
 
-\textbf{What is the Piezoelectric Effect?}
+\subsubsection{Piezoelectricity}
 \label{subsubsec:Piezo}
 
 The Piezoelectric Effect is the ability of certain materials to generate an electric charge in response to applied mechanical stress. The word Piezoelectric is derived from the Greek piezein, which means to squeeze or press, and piezo, which is Greek for “push”.
