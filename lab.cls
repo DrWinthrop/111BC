@@ -18,6 +18,7 @@
 \RequirePackage[numbers]{natbib}
 \RequirePackage{enumitem}
 \RequirePackage{tocloft}
+\RequirePackage{float}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.5em}
