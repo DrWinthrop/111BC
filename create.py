@@ -1,5 +1,6 @@
 import os
 import subprocess
+import sys
 
 LABS = ['AFM', 'ATM', 'CO2', 'MNO', 'MOT', 'NMR', 'OPT', 'QIE', 'BMC', 'OTZ',
     'COM', 'MUO', 'GMA', 'BRA', 'RUT', 'HAL', 'LLS', 'NLD', 'JOS', 'SHE']
@@ -14,7 +15,7 @@ changed_files = subprocess.check_output(
 
 if 'lab.cls' in changed_files:
     # If lab.cls is changed, rebuild all PDFs
-    labs_to_rebuild = [lab for lab in LABS if os.path.exists(lab)]
+    labs_to_rebuild = LABS
 else:
     # Otherwise, only rebuild PDFs that have changed files
     labs_to_rebuild = set()
@@ -26,21 +27,47 @@ else:
 if len(labs_to_rebuild) > 0:
 
     # Make a 'build' directory
-    subprocess.call(['mkdir', 'build'])
+    subprocess.run(['mkdir', 'build'])
 
     # Get the base directory for pointing to specific files
     base_dir = os.environ['TRAVIS_BUILD_DIR']
 
-    for lab in labs_to_rebuild:
-        print 'Rebuilding', lab
-        build_cmd = 'cd {}/{} && latexmk -outdir=../build -pdf {}'
-        subprocess.call(build_cmd.format(base_dir, lab, lab), shell=True)
+    successes, failures = [], []
 
-        # Sync the PDF to Physics lab website
-        sync_cmd = ("rsync -vz --ipv4 --progress -e 'ssh -p 2222' "
-            "{}/build/{}.pdf --temp-dir=~/tmp/ "
-            "live.{}@appserver.live.{}.drush.in:files/writeups/")
-        subprocess.call(sync_cmd.format(base_dir, lab, SITE, SITE), shell=True)
+    for lab in labs_to_rebuild:
+        print('Rebuilding', lab)
+        build_cmd = 'cd {}/{} && latexmk -outdir=../build -pdf {}'
+
+        try:
+            subprocess.run(build_cmd.format(base_dir, lab, lab),
+                shell=True, timeout=60)
+
+            # Sync the PDF to Physics lab website
+            sync_cmd = ("rsync -vz --ipv4 --progress -e 'ssh -p 2222' "
+                "{}/build/{}.pdf --temp-dir=~/tmp/ "
+                "live.{}@appserver.live.{}.drush.in:files/writeups/")
+            subprocess.run(sync_cmd.format(base_dir, lab, SITE, SITE), shell=True)
+
+            successes.add(lab)
+
+        except subprocess.TimeoutExpired:
+            print('The timeout for {} expired.'.format(lab))
+            failures.add(lab)
+
+    if 'lab.cls' in changed_files:
+        print('lab.cls file changed, so attempted to rebuild all labs.')
+    else:
+        print('Attempted to rebuild lab(s) with changed files:', labs_to_rebuild)
+
+    if failures:
+        if successes:
+            print('Successfully rebuilt lab(s):', successes)
+        print('Failed to rebuild lab(s):', failures)
+        sys.exit('Not all labs were successfully rebuilt.')
+    elif 'lab.cls' in changed_files:
+        print('Successfully rebuilt all labs.')
+    else:
+        print('Successfully rebuilt all labs with changed files.')
 
 else:
-    print 'No labs to rebuild.'
+    print('No labs to rebuild.')
