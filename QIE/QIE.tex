@@ -185,15 +185,30 @@ To measure the polarization of the photon pairs, each detection arm has a half-w
 
 \subsection{Coincidence Counting}
 
-Signals from the APDs are sent to a field-programmable gate array (FPGA) [\href{http://www.altera.com/education/univ/unv-index.html}{\textbf{Altera DE-2}}] that has been programmed to calculate coincidences. A coincidence is the arrival of two photons at different detectors within a short coincidence window, typically 5 ns for our setup. The FPGA sends photon counts for each detector and coincidence counts for each pair of detectors to LabVIEW, which displays the data on the thermometer-like indicators on the front panel. These data can be used to calculate $S$.
+Signals from the APDs are sent to a field-programmable gate array (FPGA) that has been programmed to calculate coincidences. A coincidence is the arrival of two photons at different detectors within a short coincidence window, typically 5 ns for our setup. The FPGA sends photon counts for each detector and coincidence counts for each pair of detectors to LabVIEW, which displays the data on the thermometer-like indicators on the front panel. These data can be used to calculate $S$.
 
 \subsection{Proper Start-up Procedure}
 
 \noindent
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE1.jpg}{\includegraphics[width=0.25\linewidth,keepaspectratio]{images/QIE1.jpg}}
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE4.jpg}{\includegraphics[width=0.25\linewidth,keepaspectratio]{images/QIE4.jpg}}
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE3.jpg}{\includegraphics[width=0.25\linewidth,keepaspectratio]{images/QIE3.jpg}}
-\href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE2.jpg}{\includegraphics[width=0.25\linewidth,keepaspectratio]{images/QIE2.jpg}}
+\begin{figure}[H]
+\minipage{0.24\linewidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE1.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/QIE1.jpg}} \\ Power Supply for 4 APDs
+  \label{fig:QIE1.jpg}
+\endminipage\hfill
+\minipage{0.24\linewidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE4.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/QIE4.jpg}} \\ Power in and data out APDs
+  \label{fig:QIE4.jpg}
+\endminipage\hfill
+\minipage{0.24\linewidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE3.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/QIE3.jpg}} \\ Fiber optic cables in to APDs
+  \label{fig:QIE3.jpg}
+\endminipage\hfill
+\minipage{0.24\linewidth}
+  \href{http://experimentationlab.berkeley.edu/sites/default/files/images/QIE2.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/QIE2.jpg}} \\ APDs (left) send data to FPGA card (right)
+  \label{fig:QIE2.jpg}
+\endminipage
+\end{figure}
+
 
 \noindent Due to the idiosyncrasies of our software, it is important to follow these steps in the correct order:
 

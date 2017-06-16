@@ -351,6 +351,7 @@ Use this section as a reference for when you calibrate the AFM and scan.
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/infeedback.JPG}{\includegraphics[width=0.5\linewidth]{images/infeedback.JPG}}
     \label{fig:infeedback}
+    \caption{Automated Tip Approach Tab}
 \end{figure}
 
 \textbf{Prescan Tab}: Where you will select mode (if vibrating mode, you will also find the resonant frequency), perform a \hyperref[subsubsec:RangeCheck]{range check}, and engage the \hyperref[subsec:TipApproach]{tip with the sample}.
@@ -359,6 +360,7 @@ Use this section as a reference for when you calibrate the AFM and scan.
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/prescantab.JPG}{\includegraphics[width=0.5\linewidth]{images/prescantab.JPG}}
     \label{fig:prescantab}
+    \caption{Prescan Tab}
 \end{figure}
 
 \subsection{Scanning Modes}
@@ -416,9 +418,11 @@ Use this section as a reference for when you calibrate the AFM and scan.
 
 \textbf{Topo Scan Tab} - Where you can adjust scan parameters like scan speed, scan size, what measurements you want to take (i.e. Z Drive will give basic topography, Z phase will give hardness, and Z error will map abrupt changes in topography). A screenshot of the tab is shown below:
 
-\begin{center}
+\begin{figure}[h]
+\centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcan.JPG}{\includegraphics[width=0.45\linewidth]{images/toposcan.JPG}}
-\end{center}
+    \caption{Topographic Scan tab}
+\end{figure}
 
 \begin{itemize}
     \item Scan Setup:
@@ -435,9 +439,11 @@ Use this section as a reference for when you calibrate the AFM and scan.
         \item Example: say you run a 15 micron scan with 256 lines at a rate of 1 Hz and rotation of 0 degrees. This will mean that the time it takes to scan one line \emph{horizontally} is 1 second. The speed at which the tip is moving horizontally is (15 $\mu$m) $\times$ (1 Hz) = 15 $\mu$m/sec.  The time it will take for the scan to complete is 256 seconds.
     \end{itemize}
 
-    \begin{center}
+    \begin{figure}[h]
+    \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/scanningmethod.jpg}{\includegraphics[width=0.6\linewidth]{images/scanningmethod.jpg}}
-    \end{center}
+        \caption{How scan parameters affect the scan}
+    \end{figure}
 
     \item Z Feedback - Standard PID feedback loop.
 
@@ -460,9 +466,11 @@ Use this section as a reference for when you calibrate the AFM and scan.
 
 \textbf{System Tab} - Where you will adjust parameters for resolution, minimizing error, and most importantly \textbf{NOT} \hyperref[subsec:BrokenTip]{BREAKING THE TIP}!
 
-\begin{center}
+\begin{figure}[h]
+\centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/systemtab.JPG}{\includegraphics[width=0.5\linewidth]{images/systemtab.JPG}}
-\end{center}
+    \caption{System Tab}
+\end{figure}
 
 \begin{itemize}
     \item Z Parameters:
@@ -529,15 +537,17 @@ For this section, refer to information in the instructional video  \href{http://
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/EBOX2.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/EBOX2.jpg}}
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/10.JPG}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/10.JPG}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/10.JPG}{\includegraphics[width=0.55\linewidth,keepaspectratio]{images/10.JPG}}
         \caption{EBox controls}
     \end{figure}
+
+\pagebreak
 
     \item Turn on LED illuminator
     \begin{figure}[H]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED1.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/LED1.jpg}}
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED2.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/LED2.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED1.jpg}{\includegraphics[width=0.255\linewidth,keepaspectratio]{images/LED1.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED2.jpg}{\includegraphics[width=0.7\linewidth,keepaspectratio]{images/LED2.jpg}}
         \caption{LED Illuminator}
     \end{figure}
 
