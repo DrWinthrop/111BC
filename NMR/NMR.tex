@@ -54,15 +54,15 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3559.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR_Exp_3559.jpg}}
     \caption{NMR experiment. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3559.jpg}{\textbf{here}}}
 \end{minipage}
-\begin{minipage}{0.32\textwidth}
+\begin{minipage}{0.35\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Head-in-Magnet_3560.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR_Head-in-Magnet_3560.jpg}}
     \caption{NMR head in magnet. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Head-in-Magnet_3560.jpg}{\textbf{here}}}
 \end{minipage}
-\begin{minipage}{0.32\textwidth}
+\begin{minipage}{0.35\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/PNMR_3494.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/PNMR_3494.jpg}}
     \caption{Pulse NMR, HMOD, \& Magnet. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/PNMR_3494.jpg}{\textbf{here}}}
 \end{minipage}
-\begin{minipage}{0.32\textwidth}
+\begin{minipage}{0.25\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/PNMR_3495.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/PNMR_3495.jpg}}
     \caption{Pulse NMR Electronics \& Samples. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/PNMR_3495.jpg}{\textbf{here}}}
 \end{minipage}
@@ -194,6 +194,8 @@ The incident electric field at a frequency of 16 MHz shown in Figure~\ref{fig:Am
 
 A block diagram with signals at the various stages will be shown in the next section.
 
+\newpage
+
 To summarize, we place a test tube of a liquid sample in a magnetic field. We then apply electromagnetic radiation at radio frequency to the sample with a nearby transmission coil. We observe the resonance at the Larmor frequency by tuning the input frequency. As the protons precess, they induce an emf in a receiver coil wrapped around the sample. The amplitude of the induced field is at a maximum when the frequency of the applied RF field exactly matches the Larmor frequency. In the detecting circuit we rectify the RF field, filter it to get a DC voltage proportional to the amplitude of the field, and display it on an oscilloscope.
 
 To take data, we set the frequency of the applied RF to the Larmor frequency for the static field produced by the permanent magnet. By superimposing a modulating magnetic field, we then sweep the amplitude of the resulting magnetic field sinusoidally in time at 60 Hz, above and below the static field for resonance (we say that the field is modulated sinusoidally with a frequency of 60 Hz). The final result is a plot of the resonance curve, the amplitude of the detector signal vs. the magnetic field applied to the sample, for a fixed frequency.
@@ -236,7 +238,7 @@ Details of the NMR head are shown in Figure~\ref{fig:DetailOfNMRHead}. It is a b
 
 The top and bottom covers of the NMR head have 7-turn pancake coils which carry varying currents that produce a modulation field $H_\text{mod} \cos(2 \pi f_m t)$, where $f_m$ is 60 Hz. The amplitude $H_\text{mod}$ is controlled from the modulation unit with $H_\text{mod} \approx 1.7$ gauss/amp coming from the modulating current. This is done with a 1.7 amp 60Hz power supply to modulate the field.
 
-\newpage
+%\newpage
 
 \section{NMR Box}
 
