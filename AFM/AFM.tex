@@ -1252,7 +1252,7 @@ Make sure the tip is NOT IN CONTACT with the sample (there should be about a 2 c
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/probe_unfocused2_0.png}{\includegraphics[width=0.5\linewidth]{images/probe_unfocused2_0.png}}
         \centering
-        \caption{Approximately how focused the probe should be \\ before starting an automated tip approach}
+        \caption{Approximately how focused the probe should \\ be before starting an automated tip approach}
     \end{figure}
     
     \item Ensure the that resonance frequency of the probe has already been selected. \textbf{Ensure the that the laser is on.} You may now initiate the automated tip approach
@@ -1284,7 +1284,7 @@ Make sure the tip is NOT IN CONTACT with the sample (there should be about a 2 c
 \begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/bothfocused.jpg}{\includegraphics[width=0.5\linewidth]{images/bothfocused.jpg}}
-    \caption{}
+    \caption{Completed Tip Approach}
 \end{figure}
 
 \textbf{***ACLA PROBES ARE DESIGNED FOR NON-CONTACT, TAPPING MODE, INTERMITTENT CONTACT, AND/OR CLOSE CONTACT APPLICATIONS***}
@@ -1298,13 +1298,13 @@ Make sure the tip is NOT IN CONTACT with the sample (there should be about a 2 c
     
     \item Set parameters and settings to match those in the screenshot below
     \begin{itemize}
-        \item \textbf{**NOTE only pay attention to the values in the text boxes. Ignore the tip retract and Z Drive position indicators in Figure~\ref{fig:TopoScan} below for this step**}
+        \item \textbf{**NOTE only pay attention to the values in the text boxes. Ignore the tip retract and Z Drive position indicators in Figure \ref{fig:TopoScan} below for this step**}
     \end{itemize}
     
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/toposcansetup.jpg}{\includegraphics[width=0.7\linewidth]{images/toposcansetup.jpg}}
-        \caption{}
+        \caption{Starting scan parameters and settings}
         \label{fig:TopoScan}
     \end{figure}
     
@@ -1342,7 +1342,7 @@ Scanning times for 15 Micron scanner:
         512 Lines  & 1 Hz           & 8 minutes \\\hline
         512 Lines  & 0.5 Hz         & 16 minutes
     \end{tabular}
-    \caption{}
+    \caption{Scanning Times}
 \end{table}
 
 \section{Data Processing and Analysis}
@@ -1409,7 +1409,7 @@ Watch the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMIm
     \begin{figure}[H]
         \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/43.png}{\includegraphics[width=0.5\linewidth]{images/43.png}}
-        \caption{}
+        \caption{Artifacts and Contaminants}
     \end{figure}
     
     \item\textbf{Leveling:} When you look at the 3D projection of your image, you will notice that your sample is tilted. If you know your sample is FLAT (or parts of it are flat), you can use the tools in the \textbf{tools} dropdown to fix the tilt, else go to step 4.
@@ -1431,8 +1431,8 @@ Watch the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMIm
                 \item Other known flat surfaces include the surfaces of 2D materials (e.g. graphene as pictured below)
                 \begin{figure}[H]
                     \centering
-                    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/45.png}{\includegraphics[width=0.5\linewidth]{images/45.png}}
-                    \caption{}
+                    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/45.png}{\includegraphics[width=0.8\linewidth]{images/45.png}}
+                    \caption{Three Point Leveling}
                 \end{figure}
             \end{itemize}
             
@@ -1450,13 +1450,11 @@ Watch the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMIm
             \item Be careful to not draw the lines through artifacts or dust/debris on your image. This will lead to incorrect data processing.
             \begin{figure}[H]
                 \centering
-                \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/47.png}{\includegraphics[width=0.5\linewidth]{images/47.png}}
-                \caption{}
+                \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/47.png}{\includegraphics[width=0.8\linewidth]{images/47.png}}
+                \caption{Vertical Line Leveling}
             \end{figure}
             
         \end{itemize}
-        
-        \item Surface Subtract?
         
     \end{itemize}
     
@@ -1482,16 +1480,16 @@ Watch the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMIm
     
     \begin{figure}[H]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/49.png}{\includegraphics[width=0.5\linewidth]{images/49.png}}
-        \caption{}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/49.png}{\includegraphics[width=0.65\linewidth]{images/49.png}}
+        \caption{Extract Profiles}
     \end{figure}
     
     \item In the new window, click the \textbf{Measure distances in graph} button \includegraphics[height=2em]{images/50.png} and use your cursor to place markers by clicking on the points of interest on the graph of the profile.
     
     \begin{figure}[H]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/51.png}{\includegraphics[width=0.5\linewidth]{images/51.png}}
-        \caption{}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/51.png}{\includegraphics[width=0.65\linewidth]{images/51.png}}
+        \caption{Measure Distances}
     \end{figure}
     
     \begin{itemize}
@@ -1522,7 +1520,7 @@ Given the limited scan size of a scanner, you can use software to combine multip
     
     \item Once all of the scans are open, select the first scan by clicking on it, we will begin here.
     
-    \item In Gwyddion Figure~\ref{fig:GwyddionProgram}, under File, Edit, click \textbf{Data Process} $\rightarrow$ \textbf{Multidata }$\rightarrow$ \textbf{Merge}.
+    \item In the gwyddion tab shown in Figure~\ref{fig:GwyddionProgram}, under File, Edit, click \textbf{Data Process} $\rightarrow$ \textbf{Multidata }$\rightarrow$ \textbf{Merge}.
     
     \item A pop up will open:
     \begin{itemize}
