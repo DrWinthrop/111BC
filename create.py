@@ -48,11 +48,11 @@ if len(labs_to_rebuild) > 0:
                 "live.{}@appserver.live.{}.drush.in:files/writeups/")
             subprocess.run(sync_cmd.format(base_dir, lab, SITE, SITE), shell=True)
 
-            successes.add(lab)
+            successes.append(lab)
 
         except subprocess.TimeoutExpired:
             print('The timeout for {} expired.'.format(lab))
-            failures.add(lab)
+            failures.append(lab)
 
     if 'lab.cls' in changed_files:
         print('lab.cls file changed, so attempted to rebuild all labs.')
