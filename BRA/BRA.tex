@@ -666,27 +666,28 @@ Crop out unwanted bad data points like negative numbers, etc with the use of mar
 
 Fit a line to this curve and get the end-point on the X-axis, $Q_1$. Pick a region above the noise and above the K-peak where it is linear. Now do a inverse Fermi-Kurie plot. You will get something like Figure \ref{fig:021}.
 
-You should repeat the steps above to get the low-energy component and the low-energy end-point $Q_2$. Your result should be the low-energy component as seen in Figure .
+You should repeat the steps above to get the low-energy component and the low-energy end-point $Q_2$. Your result should be the low-energy component as seen in Figure \ref{fig:020}.
+
 \begin{figure}[h]
 \captionsetup{justification=centering}
-\begin{minipage}{0.5\linewidth}
+\begin{minipage}{0.32\linewidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage021.gif}{\includegraphics[width=\linewidth]{images/BRAimage021.png}}
-    \caption{}
+    \caption{High Energy}
     \label{fig:021}
     \end{minipage} \hfill
-    \begin{minipage}{0.5\linewidth}
+    \begin{minipage}{0.32\linewidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/480px-BRAimage020.gif}{\includegraphics[width=\linewidth]{images/480px-BRAimage020.png}}
-    \caption{}
+    \caption{Low Energy}
     \label{fig:020}
+    \end{minipage} \hfill
+    \begin{minipage}{0.32\linewidth}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage022.gif}{\includegraphics[width=0.8\linewidth]{images/BRAimage022.png}}
+    \caption{Combined Graph}
+    \label{fig:Combined}
     \end{minipage}
 \end{figure}
 
-Your combined graphs should be like the following:
-\begin{figure}[h]
-\centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage022.gif}{\includegraphics[width=0.5\linewidth]{images/BRAimage022.png}}
-    \caption{}
-\end{figure}
+Your combined graphs should be like Figure \ref{fig:Combined}:
 
 \textbf{Checkpoint: Show your combined graph to a GSI.}
 
@@ -694,19 +695,19 @@ Reduce your data by following the numbered steps listed below, but first read Re
 
 In your Fermi-Kurie analysis, use units of $\eta \equiv \frac {p}{m_e c}$ and $\epsilon \equiv \frac{E}{m_e c^2}$ for momentum and energy respectively.
 
-\begin{figure}
-\centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage025.gif}{\includegraphics[width=0.5\linewidth]{images/BRAimage025.png}}
-    \caption{Fermi-Kurie plot}
-    \label{fig:FermiKuriePlot}
-\end{figure}
-
 As you work on the data, keep in mind what your ultimate goals are: To observe the beta decay spectrum; to model the phenomenon with a Fermi-Kurie plot that incorporates the theory of beta decay; to determine the maximum energy available in the decay process. Figure \ref{fig:FermiKuriePlot} shows four separate phenomena. Your data is the sum of these. We would like to separate this sum into the individual curves shown above, where they are shown overlapping but not added, as they are in the experimental data. See Appendix D about the Fermi-Kurie plot
 
 \begin{enumerate}
     \item From the masses of $^{137}$Ba and $^{137}$Cs, calculate the total energy available to the electron mass energy + electron kinetic energy + neutrino energy in the beta decay. What is the maximum kinetic energy with which the $^{137}$Ba can recoil? Must this kinetic energy be taken into account in your experiment?
 
     \item Use Matlab for combining your MYDATUP1.DAT and MYDATDN1.DAT files to reduce the effects of hysteresis and to yield a single data file which you will use in all your analyses. Should you add the two sweeps? Should you displace the two spectra by a constant amount or a variable amount? Should you shift them right or left an amount that depends on channel number? Some thought and justification are needed here. Plot your two raw spectra and your combined spectrum.
+          
+    \begin{figure}[h]
+    \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage025.gif}{\includegraphics[width=0.5\linewidth]{images/BRAimage025.png}}
+        \caption{Fermi-Kurie Plot}
+        \label{fig:FermiKuriePlot}
+    \end{figure}
 
     \item The momentum resolution $\Delta p$ is proportional to the momentum p itself (you should derive this), and therefore, $\Delta p$ is proportional to the current, since $I$ is proportional to $p$. Divide the number of counts in each channel of your combined spectrum by $I$ (or a number proportional to $I$). This is your \emph{compensated momentum spectrum} Nc. Plot Nc vs. $\eta$.
 
