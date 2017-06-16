@@ -356,13 +356,13 @@ This is a very nice signal - it is a DC signal proportional to the signal amplit
 
 Now suppose the input is made up of signal plus noise. The PSD and low pass filter only detect signals whose frequencies are very close to the lock-in reference frequency. Noise signals at frequencies far from the reference are attenuated at the PSD output by the low pass filter (neither $\omega_\text{noise} - \omega_\text{ref}$ nor $\omega_\text{noise} + \omega_\text{ref}$ are close to DC). Noise at frequencies very close to the reference frequency will result in very low frequency AC outputs from the PSD ($|\omega_\text{noise} - \omega_\text{ref}|$ is small). Their attenuation depends upon the low pass filter bandwidth and roll-off. A narrower bandwidth will remove noise sources very close to the reference frequency, a wider bandwidth allows these signals to pass. The low pass filter bandwidth determines the bandwidth of detection. Only the signal at the reference frequency will result in a true DC output and be unaffected by the low pass filter. This is the signal we want to measure.
 
-\newpage
-
 \subsection{Where does the lock-in reference come from?}
 
 We need to make the lock-in reference the same as the signal frequency, i.e. $\omega_r = \omega_L$. Not only do the frequencies have to be the same, the phase between the signals can not change with time, otherwise $\cos(\theta_\text{sig} - \theta_\text{ref})$ will change and Vpsd will not be a DC signal. In other words, the lock-in reference needs to be phase-locked to the signal reference.
 
 Lock-in amplifiers use a phase-locked-loop (PLL) to generate the reference signal. An external reference signal (in this case, the reference square wave) is provided to the lock-in. The PLL in the lock-in locks the internal reference oscillator to this external reference, resulting in a reference sine wave at $\omega_r $ with a fixed phase shift of $\theta_\text{ref}$ Since the PLL actively tracks the external reference, changes in the external reference frequency do not affect the measurement.
+
+\newpage
 
 \subsection{All Lock-In Measurements Require a Reference Signal}
 
@@ -397,6 +397,8 @@ A dual-phase lock-in, such as the SR830, has two PSD's, with reference oscillato
 \subsection{What Does a Lock-In Measure?}
 
 So what exactly does the SR830 measure? Fourier's theorem basically states that any input signal can be represented as the sum of many, many sine waves of differing amplitudes, frequencies and phases. This is generally considered as representing the signal in the ``frequency domain''. Normal oscilloscopes display the signal in the ``time domain''. Except in the case of clean sine waves, the time domain representation does not convey very much information about the various frequencies which make up the signal.
+
+\newpage
 
 \subsection{What Does the SR830 Measure?}
 
@@ -464,20 +466,22 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
     \item Now you're ready to go. Insert a glycerin sample into the NMR HEAD and find the resonance signal by doing the following. Look up in the \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR32.jpg}{\textbf{NMR Frequency TABLE}} of the manual - the NMR frequency for H$^1$ in a 10 kilogauss field. Knowing this number and that our $H_0$ is about 3.8 kG, calculate the approximate NMR frequency for our set-up (around 16.1xxxxx Mhz). Turn the TRANS FREQ knob on the NMR BOX until the counter reads this value. Now adjust the receiver coil to observe the resonance by adjusting the CR control so that the receiver frequency matches that of the transmitter. Start with it at the fiducial mark.
 
     \begin{figure}[h]
-    \begin{minipage}[t]{0.33\textwidth}
+    \begin{minipage}[t]{0.32\textwidth}
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR21.gif}{\includegraphics[width=0.95\linewidth,keepaspectratio]{images/NMR21.png}}
         \caption{0.1 Molar Mn$^{++}$ in H2O}
         \label{fig:TenthMolarMn}
     \end{minipage}\hfill
-    \begin{minipage}[t]{0.31\textwidth}
+    \begin{minipage}[t]{0.32\textwidth}
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR22.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR22.png}}
         \caption{1 Molar Mn$^{++}$ in H2O}
     \end{minipage}\hfill
-    \begin{minipage}[t]{0.31\textwidth}
+    \begin{minipage}[t]{0.32\textwidth}
         \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR23.gif}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR23.png}}
         \caption{1 Molar Mn$^{++}$ in H2O}
     \end{minipage}
     \end{figure}
+
+\newpage
 
     Make sure that the amplitude is ``peaked'' on the NMR box. Adjust the peak knob until the maximum microampere reading is shown. This will have to be done for every sample used. Slowly vary the frequency around the value you calculated above. You should be able to find the resonance, and your signal should look like Figure~\ref{fig:TenthMolarMn}. Note that the resonance condition is very sensitive to frequency; so go slowly. Once you have found it, ``peak-up'' your signal by readjusting CR on the NMR BOX for maximizing the signal. If you don't find a signal after you've fussed with everything, ask for help. Once resonance is found, adjust the x-axis of the scope until both edges of the signal are visible on the screen. Vary the frequency so that the resonance signal goes barely off the edge to the left of the screen, and record the frequency. Do the same for the right side of the screen. Subtract the frequencies, and the difference will be the scanning frequency range. You will not need to scan past this range when searching for resonance for any sample, once the signal is found (It should be $\sim$90kHz).
     
@@ -508,6 +512,8 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
     \caption{Lock-in amplifier signals}
     \label{fig:LockInAmplifierSignals}
 \end{figure}
+
+\newpage
 
 Read the manual of the Stanford Research Systems Model SR 830DSP Lock-in Amplifier (copied in reprints). In this apparatus, the lock-in amplifier records the derivative $dV_\text{ac}(H)/dH$ of the NMR signal as the frequency sweeps slowly through the resonance by varying the field $H_2$ with the signal generator. The signal-to-noise ratio can be 100$\times$ larger than that observed with the oscilloscope. This method is used to find and record weak signals. It also provides a convenient way to record the line width $\delta H$ of a signal.
 
