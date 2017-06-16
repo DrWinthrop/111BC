@@ -263,6 +263,8 @@ Taking data for this experiment is more straightforward than for any other lab i
 
     \item When you turn on the [\href{\SRVoltagePREAMP}{\textbf{SR560 Voltage PRE-AMP}}] make sure that the INPUT ‘A' is selected, the DC/GND/AC button is set to the AC position. To start, set the Gain to 500, LF Roll-off to 0.1 Hz, and the HF Roll-off to 10 KHz. You may have to change some settings to make your signal clear. Also note that if you suddenly lose your signal, i.e. if your scope trace goes to a flat-line, you should press the OL REC (OverLoad RECovery) button. The SR560 requires you to adjust the dynamic reserve and the filter roll-off; set the gain mode to low noise and the roll off to 6 dB per octave for both the high and low pass filters.
 
+\newpage
+
     \item We will be using a DS 345 synthesized function generator to drive the RF coils in this experiment (see Figure \ref{fig:BlockDiagram}). Before you begin taking data, it would be wise to familiarize yourself with its capabilities, its limitations, and its interface (see Figure \ref{fig:DS345} and the [\href{\DSManual}{\textbf{DS345 Manual}}]).
 \end{enumerate}
 
@@ -295,6 +297,8 @@ Taking data for this experiment is more straightforward than for any other lab i
 
 The temperature controller provides a DC signal to copper wires located inside the apparatus next to the rubidium bulb. The electrical current will radiate in the form of heat from the wires due to the friction of electron interaction ($\frac{dQ}{dt} = I^2 R = I^2 * \frac{\rho l}{A}$).  The greater the current the hotter the wires will get, as the electrons traveling down the wire will feel more of a frictional force. You will notice that the ``DC microamp'' display of the controller runs both ways. In order to increase the heat you will want to turn the black knob clockwise, shifting the red needle to the left. The greater the displacement of the needle the faster the temperature will rise, you will be able to keep your signal at roughly a constant temperature by adjusting this knob. \\
 
+\newpage
+
 Heat the sample to 48$^\circ$C, then turn the heater off to reduce noise, but remember that you want the temperature between 38$^\circ$C and 45$^\circ$C for good data (You will explore this temperature dependence in the following section and the noise associated with it). A reading from the temperature sensor is output to an LED display labeled `Oven Temperature'. \textbf{Make sure the temperature does not go above 55$^\circ$C}; if you start to approach this temperature, turn down the thermostat. The heater has an over-temperature shutoff switch in the heater box. If you over heat the box it will need time to rest and you should call one of the staff. \\
 
 \textbf{Note: If the heater temperature stops, then you have overheated the oven.
@@ -325,22 +329,22 @@ Take an experimentalist's approach: once you have identified the optical pumping
 
 \subsection{Using the Function Generator to Find Resonance}
 
-\newpage
-
 The setup will need to be slightly tuned to find the resonance frequencies of the two isotopes. Initially we will want to induce the Zeeman splitting by driving a DC current through the magnetic coil, power the coils with roughly 1.0 Amp to start with. The strength of the coils will change the spacing between Zeeman levels and will ultimately dictate the resonance frequency needed to induce stimulated emission of the Rb. Next the RF coils should be set to create the electromagnetic radiation required to induce these emissions. They can be driven using the function output of the DS345. The variation in the opacity of Rubidium gas that occurs when it is optically pumped and then hit by the resonance frequency electromagnetic radiation can be observed through the photodiode. In order to read the signal generated inside the bulb the photo diode's output will need to be connected to the PRE-AMP as the signal of radiation will be very low. It is important to make sure the PRE-AMP settings are as specified before or you will not receive a proper signal. Finally run the output of the PRE-AMP (the amplified photo diode output, see [\href{\PhotodiodeDataSheet}{\textbf{Photodiode Data Sheet}}] for photo detector operation) to Ch.2 (Y) of the oscilloscope and keep Ch.1 (X) connected to the DS 345's modulation output. It will be best to observe the results in the X-Y mode of the oscilloscope. \\
+
+\newpage
 
 Use the Current knob on the Power Supply to adjust the current and the 10mΩΩ shunt to measure it. Current shunt resistors are low resistance precision resistors used to measure AC or DC electrical currents by the voltage drop those currents create across the resistance. The shunt is a calibrated resistor and is temperature compensated so that its resistance value does not change with a change in temperature (On average the shunt's resistance changes less than 0.002\% (or 20 ppm = parts per million) per °C of temperature change). The voltage that develops across the shunt is 10 mV per Amp of current through the coils. The Digital Volt meter reads the millivolt reading. (Note that there is a button on the front of the Digital Volt meter that changes the connections from front to rear of the unit.) This button should be in the front position. A circuit diagram of the set up can be found \href{\CircuitForMagneticCoils}{\textbf{here}}. Make a note of the current value that the Multimeter and the power supply give you (the Multimeter displays voltage drop and will have to be converted to current using ohms law).
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.6\linewidth]{images/PhotodiodeSignal}
+    \includegraphics[width=0.7\linewidth]{images/PhotodiodeSignal}
     \caption{Amplified photo diode signal with large span frequency modulation.}
     \label{fig:PhotodiodeSignal}
 \end{figure}
 
-\newpage
-
 On the oscilloscope, with the modulation connected to ch1 and the amplified signal connected to ch2, you should see something like what is shown in Figure \ref{fig:PhotodiodeSignal}. You may see some 60 Hz noise in your signal; adjusting the connections may help minimize the problem. The fault may simply be related to the electronics and not the settings. It is important to recognize the source of this noise if it arises (60 Hz noise is a commonly recurring theme in experimental physics). The function of the modulated signal will ultimately dictate how the oscilloscopes depicts what is happening. Since the frequency modulation serves to sweep a range set by the span of the function generator and output frequencies ranging from OutF $−$ Span/2 to OutF $+$ Span/2 the oscilloscope in XY mode will divide this frequency range amongst roughly 10 divisions along the axis where the Modulation output of the function generator is plugged in starting (with the minimum frequency on the left hand side of the display). Based on this information it should be noted that the span can not be equal to or greater than twice the carrier frequency of the function output [In case the reasoning behind this isn't so obvious see the  FM Modulation section in the DS345 Manual]. This, in combination with understanding what the perpendicular axis represents in the XY plot, is useful for determining what the resonance frequencies of the isotopes are. 
+
+\newpage
 
 Center the output of the function generator to a frequency close to one that would correspond to the energy difference between two Zeeman levels (You can calculate what this energy difference would be by using the Breit-Rabi equation you found in the prelab), thus inducing spontaneous emission. The signal should be a sine wave with a 10 Hz modulation. Sweep a range you believe will hold the resonance frequencies for the two isotopes, if you have hit the resonance frequency then the figure should look like Figure \ref{fig:PhotodiodeSignal}. Once you have found the proper range it will be possible to better resolve the image to extract a better estimate of the resonance frequency value. You should be able to determine which peak corresponds to which isotope by examining the natural abundance of the two isotopes.
 
@@ -350,13 +354,13 @@ As explained in the introduction video, modulating the magnetic field of the Hel
 
 Familiarize yourself with the Coil Driver panel: The PHASE ADJUST control on Coil Driver panel changes the phase of the modulation signal seen by the scope (the Phase Out signal) relative to the modulation signal that the rubidium sample experiences (which is the actual modulation in the coil current that changes the phase of the photo-detected signal). Connect the Phase out signal to Ch 1 (X) of the oscilloscope and the amplified photodetector signal to Ch 2 (Y). With the scope in Dual Trace Mode (Both Channels), trigger on EXT/Line Source (60 Hz PG\&E power line) and set the time scale to around 2 msec/DIV. You may have to adjust the trigger Level knob to get a stable trace. Now change the phase with the Adjust knob: the modulation signal (Ch. 1) moves because we are changing its phase relative to the 60 Hz line signal that we are triggering on the oscilloscope. Seeing as the oscilloscope is powered by a 60 Hz signal and the detected signal is an effect caused by the rubidium bulb, the Adjust knob does not change the phase of the signal that the sample sees. It is simply a visual effect experienced by the electronics of the system. 
 
-\newpage
-
 After swapping the modulation output from the function generator with the modulation output from the Helmholtz coils (phase out), put the scope in X-Y mode. You should now see the detected signal (Ch. 2) displayed on the y-axis versus the field modulation signal (Ch. 1) on the x-axis. \\
 
 \noindent\textbf{\textcolor{red}{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}
 
 \textbf{\textcolor{red}{How you can tell when you have found the resonance condition in this mode? Should there be any symmetry? If so, how should it be symmetrical? Along what axis should the symmetry be found? It is up to you to determine which of the modes (Time Trace or X-Y) gives a more precise determination of the resonance condition-you might consider using both. Try them for repeatability. Discuss your reasoning with the GSI. These values will all be useful when you are estimate your errors using each method.}}
+
+\newpage
 
 \subsection{Once you have a good understanding of what is going on, here are some things to explore}
 
@@ -379,6 +383,9 @@ After swapping the modulation output from the function generator with the modula
     \end{itemize}
     \item Turn off the RF generator, and vary the current while looking for a resonance. The field should be on with reverse polarity. Set the field modulation to 100. Set the oscilloscope for a linear internal sweep in the x-direction. The resonance should be found around 0.08 A. (This is known as the Zero Field Resonance.)
     \item Measure the pumping time at resonance with a square wave amplitude modulation. Apply a DC Current of 1 Amp to the Helmholtz coils and apply the resonance frequency for the more abundant isotope through the RF coils. The PRE-AMP should run to Ch.2 and the modulation output from the function generator to Ch.1. Once the temperature is within optimal range turn off the heater. Apply an AM signal through the signal generator so that the gas reaches equilibrium before each shift in RF amplitude. Measure the rate of change in the signal height when the RF is gated on or off (that is, when the modulation signal goes from low to high or from high to low). Look for the time it takes for the signal to change by 1/e. Which corresponds to the pumping time and which to the relaxation time?
+    
+\newpage
+    
     \begin{itemize}
         \item Remember to take advantage of the scope's magnification capabilities. The horizontal mode can be set to Mag, with magnifications of $\times$5, $\times$10, and $\times$50. If you observe the relaxation process with a high enough magnification you will see small oscillations in the signal even after you eliminate 60 cycle noise. These are real, physical effects in the relaxation process known as Rabi oscillations. (You should be able to distinguish them from noise by modulating the frequency by small increments, [less than 1 Hz, say]; if they continue to track with the modulation, they're probably real.)
         \item Be mindful of the effects the PRE-AMP's filters and source coupling can have on your signal; adjust them to make sure that your values are real.
@@ -395,8 +402,6 @@ After swapping the modulation output from the function generator with the modula
     \item Make plots of frequency vs. current to help you analyze your data. You should have four sets of data and four lines when you plot them. The individual points, the slopes of the curves, and their axial intercepts have an interrelated significance.
 
     \item You have two equations to work with; one is the Breit-Rabi equation (eq. \ref{eq:BreitRabi}), and the other is the field of Helmholtz coils as a function of current (eq. \ref{eq:HelmholtzCoilField}). Write down the equations, rearrange them, see how the two isotopes fit in, see how additions or subtractions can help, use both + and $-$ currents. Keep in mind that the B-field in the Breit-Rabi equation is the sum or difference of the field of the Helmholtz coils and the Earth's field. From equation (\ref{eq:BreitRabi}) we have a relation between $\nu_1$ and $I_1$, and $\nu_2$ and $I_2$ where the subscripts refer to the $^{85}$Rb and $^{87}$Rb isotopes. From your data determine the best ratio $\nu_1 / \nu_2$ and from this deduce the values of $I_1$ and $I_2$. Their true values are exactly half-integral. (Are the ratio, and this half-integral expectation, sufficient to determine both nuclear moments?)
-
-\newpage
 
     \item Having now determined the values of $I_1$ and $I_2$ use equation (\ref{eq:BreitRabi}) to determine the value of $B$ at the bulb for one positive and one negative value of the current in the coil. Compare these values with those calculated from the coil dimensions and current. Which values are more accurate? Why? Once you have determined the nuclear spins, the Breit-Rabi equation is as accurate as the numerical constant 2.799, since the nuclear spins must be odd half-integers exactly. The field of the Helmholtz coils is not as accurate as the numerical constant $0.9 \times 10^{-6}$ since the radii of the copper wire turns are not all exactly the same, and the separation of the coils is not exact. By using the Breit-Rabi equation, you can determine this constant more accurately. Try drawing a line parallel to the frequency axis at a particular current, both plus and minus. What can you learn from the intersections with the curves? Do the same with a line parallel to the current or B axis.
 
@@ -419,8 +424,6 @@ The purpose of the experiment is to determine the nuclear spins of the two isoto
 
 We have two rubidium isotopes in gaseous form inside a bulb placed in a magnetic field and subject to electromagnetic radiation. The Earth's magnetic field also affects the rubidium energy levels and their populations. We set the current in the coil producing the magnetic field, and adjust the radio frequency to produce a resonance condition. The parameters that we either want to change, vary, or to measure are the current, the field produced by the current, and the frequency of the applied RF radiation at resonance. The relevant equations are Eq. \ref{eq:HelmholtzCoilField} and Eq. \ref{eq:BreitRabi}. \\
 
-\newpage
-
 We have $B_{H}$ = magnetic field from the Helmholtz coils, $i$ = current in the coils, and $a$ = radius of the coils. The value 0.9 is approximate because the radius $a$ is not exactly the same for each of the $N$ windings and we have no simpler way of incorporating this fact. \\
 
 Next we have $\nu$ = frequency of applied em radiation, $I$ = nuclear spin of Rb, and $B = B_{H} + B_{E}$ = the total magnetic field from the Helmholtz coil and the Earth.
@@ -436,6 +439,8 @@ In both methods there will be some errors, but it does not matter because we kno
 \subsubsection{Earth's Magnetic Field}
 
 To determine the value of the earth's magnetic field, we need to find a way to determine $B_{H}$ exactly, or to eliminate it from the equations. $B_{H}$ can be eliminated by setting $i = 0$ and using the frequency intercepts and the Breit-Rabi equation. Recall that the equation for $B_{H}$ as a function of $i$ is not exact. \\
+
+\newpage
 
 There is yet another way to determine the earth's field. There is a reversing switch on the coil current, to reverse the direction of the field. For the same absolute value of the current, the field must have the same strength, except for possible hysteresis effects. Check for hysteresis by measuring the resonant frequency at a particular current, when the value of current is reached from above (run the current to a max, and then come down to the desired value), and from below (run the current to zero, and then come up to the desired value). \\
 
