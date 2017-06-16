@@ -31,7 +31,6 @@ You will setup the experiment using a LabView Program and view the data with his
     \item Pre-requisites: None
 
     \item Days Allotted for the Experiment: 6
-
 \end{enumerate}
 
 This lab will be graded 30\% on theory, 30\% on technique, and 40\% on analysis. For more information, see the \href{\AdvancedLabSyllabus}{\textbf{Advanced Lab Syllabus}}.
@@ -40,7 +39,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \section{The Beta Ray Spectroscopy Experiment Photos}
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \minipage{0.32\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Bra_1.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/Bra_1.jpg}}
   \caption{Beta Ray apparatus block diagram \\ \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Bra_1.jpg}{Click here to see larger picture}}
@@ -277,23 +276,23 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 
     \item The object is to set the LL high enough to eliminate small-amplitude PMT noise while preserving as much of the low-momentum data as you can.
 
-\begin{figure}[!h]
-\minipage{0.32\textwidth}
-  \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage015.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/BRAimage015.jpg}}
-  \caption{}
-  \label{fig:Signal1}
-\endminipage\hfill
-\minipage{0.32\textwidth}
- \href{http://experimentationlab.berkeley.edu/sites/default/files/images/320px-BRAimage016.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/320px-BRAimage016.jpg}}
-  \caption{}
-  \label{fig:Signal2}
-\endminipage\hfill
-\minipage{0.32\textwidth}
- \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage017.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/BRAimage017.jpg}}
-  \caption{}
-  \label{fig:Signal3}
-  \endminipage
-\end{figure}
+    \begin{figure}[H]
+    \minipage{0.32\textwidth}
+      \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage015.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/BRAimage015.jpg}}
+      \caption{}
+      \label{fig:Signal1}
+    \endminipage\hfill
+    \minipage{0.32\textwidth}
+     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/320px-BRAimage016.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/320px-BRAimage016.jpg}}
+      \caption{}
+      \label{fig:Signal2}
+    \endminipage\hfill
+    \minipage{0.32\textwidth}
+     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/BRAimage017.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/BRAimage017.jpg}}
+      \caption{}
+      \label{fig:Signal3}
+      \endminipage
+    \end{figure}
 
     \item The AMP gain should be set around 16, but be careful not to clip the top off your signal. If you set the gain to high on the amplifier it will chip or saturate and look like Figure \ref{fig:Signal3}. Now using the Beta Ray Scan program, take a series of quick spectra (Bins 0-2500 by 10; 3 sec/bin; save time by clicking on the Stop Early Button, click only once, after it has completed taking data in the 'up' direction at about channel \# 2450 (note that the Stop Button takes about 40 second to really stop the program). This should verify your SCA and amplifier settings. With higher LL settings, you should see the lower momentum portion of the spectrum erode. Compare your spectrum to the sample spectrum. If your spectra look too distorted, you may have to repeat step three. Why don't the near-zero-field data disappear with higher discriminator settings?
 \end{enumerate}

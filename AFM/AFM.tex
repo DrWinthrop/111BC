@@ -45,7 +45,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \section{The Atomic Force Microscope Experiment Photos}
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \minipage{0.32\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMgen.jpg}}
   \caption{AFM Apparatus \\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMgen.jpg}{Click here to see larger picture}}
@@ -63,7 +63,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \endminipage
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \minipage{0.32\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/9.JPG}{\includegraphics[width=\linewidth,keepaspectratio]{images/9.JPG}}
   \caption{AFM EBOX\\ \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/9.JPG}{Click here to see larger picture}}
@@ -241,7 +241,7 @@ AFM probes are extremely fragile, so you must handle them with extreme care thro
 
 See the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/ACLA\_4\_datasheet.pdf}{\textbf{datasheet}} for the AFM probes. \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/1.1.\%20Generating\%20an\%20image.flv\_converted.mp4}{\textbf{Here}} is an animation showing the probe interacting with the surface of a sample.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \minipage{0.49\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMprobe.JPG}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMprobe.JPG}}
   \caption{AFM probe bottom view}
@@ -299,18 +299,18 @@ The piezoelectric effect is very useful within many applications that involve th
 
     \item Stage Integration:
     
-    \begin{figure}[!h]
-\minipage{0.4\textwidth}
-  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMdiagram.png}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMdiagram.png}}
-  \caption{Piezo integration}
-  \label{fig:PiezoIntegration}
-\endminipage\hfill
-\minipage{0.58\textwidth}
-  \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstage2.PNG}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMstage2.PNG}}
-  \caption{Laser Setup}
-    \label{fig:LaserSertup}
-\endminipage
-\end{figure}
+    \begin{figure}[H]
+    \minipage{0.4\textwidth}
+      \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMdiagram.png}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMdiagram.png}}
+      \caption{Piezo integration}
+      \label{fig:PiezoIntegration}
+    \endminipage\hfill
+    \minipage{0.58\textwidth}
+      \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMstage2.PNG}{\includegraphics[width=\linewidth,keepaspectratio]{images/AFMstage2.PNG}}
+      \caption{Laser Setup}
+        \label{fig:LaserSertup}
+    \endminipage
+    \end{figure}
 
 \end{itemize}
 
@@ -324,7 +324,7 @@ The sample stage scans around in a raster pattern underneath the probe. When the
 
 The EBOX is located on the shelf behind the AFM. The EBOX houses the DAQ and connects/interfaces the AFM hardware with the software on the computer.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \minipage{0.49\textwidth}
   \href{http://experimentationlab.berkeley.edu/sites/default/files/EBOX.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/EBOX.jpg}}
   \caption{AFM EBOX}
@@ -347,7 +347,7 @@ Use this section as a reference for when you calibrate the AFM and scan.
 
 \textbf{Tip Approach}:  Later, after you load the sample, and adjust various parameters in the AFM program, you will lower the tip to the sample using the \hyperref[subsec:TipApproach]{Automated Tip Approach}.  When the Automated Tip Approach has lowered the tip all the way down to the surface, it will indicate that it is ``In Feedback.'' Here is an animation demonstrating \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/4.4.\%20feedback.flv\_converted.mp4}{\textbf{Feedback}}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/infeedback.JPG}{\includegraphics[width=0.5\linewidth]{images/infeedback.JPG}}
     \label{fig:infeedback}
@@ -355,7 +355,7 @@ Use this section as a reference for when you calibrate the AFM and scan.
 
 \textbf{Prescan Tab}: Where you will select mode (if vibrating mode, you will also find the resonant frequency), perform a \hyperref[subsubsec:RangeCheck]{range check}, and engage the \hyperref[subsec:TipApproach]{tip with the sample}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/prescantab.JPG}{\includegraphics[width=0.5\linewidth]{images/prescantab.JPG}}
     \label{fig:prescantab}
@@ -406,11 +406,10 @@ Use this section as a reference for when you calibrate the AFM and scan.
     \item Automated Tip Approach:  the mechanism by which the AFM software slowly lowers the probe tip to within a few nanometers of the sample's surface.  The AFM program uses a ``Woodpecker'' Tip Approach, demonstrates in the image below: The \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/VM\%203.3.\%20Avg\%20Dist\%20Control\_converted.mp4}{\textbf{setpoint}} determines the amount of deflection that the feedback attempts to maintain.
     
     \begin{figure}[h]
-    \begin{center}
+        \centering
         \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/AFMwoodpecker.png}{\includegraphics[width=0.3\linewidth]{images/AFMwoodpecker.png}}
         \caption{Woodpecker tip approach}
         \label{Woodpecker}
-    \end{center}
     \end{figure}
 
 \end{itemize}
@@ -527,27 +526,27 @@ For this section, refer to information in the instructional video  \href{http://
         \item Series of green LED lights will illuminate when power is on
     \end{itemize}
     
-    \begin{figure} [h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/EBOX2.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/EBOX2.jpg}}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/10.JPG}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/10.JPG}}
-    \caption{EBox controls}
+    \begin{figure}[H]
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/EBOX2.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/EBOX2.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/10.JPG}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/10.JPG}}
+        \caption{EBox controls}
     \end{figure}
 
     \item Turn on LED illuminator
-    \begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED1.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/LED1.jpg}}
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED2.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/LED2.jpg}}
-    \caption{LED Illuminator}
+    \begin{figure}[H]
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED1.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/LED1.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/LED2.jpg}{\includegraphics[width=0.33\linewidth,keepaspectratio]{images/LED2.jpg}}
+        \caption{LED Illuminator}
     \end{figure}
 
     \item Make sure the grounding plug is plugged in, which is located on the back of the AFM.  The grounding plug is the silver plug outlined by the yellow rectangle shown in the figure below.  **Note that in the figure below the grounding plug is already plugged in.  It should already be plugged in because the stage needs to be grounded. The only reason it would ever need to be unplugged is if you wanted to use the Conductive Mode of AFM, which we will NOT be using in this lab.
     
-    \begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/12.JPG}{\includegraphics[width=0.5\linewidth]{images/12.JPG}}
-    \caption{Grounding Plug}
+    \begin{figure}[H]
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/12.JPG}{\includegraphics[width=0.5\linewidth]{images/12.JPG}}
+        \caption{Grounding Plug}
     \end{figure}
 
     \item In C:/AFM Experiment, double click and open
@@ -560,9 +559,7 @@ For this section, refer to information in the instructional video  \href{http://
 
         \begin{itemize}
             \item \textbf{Remove the lens cap from the camera }(bottom of black camera tube)
-
         \end{itemize}
-
     \end{itemize}
 
     \item \textbf{NOTE:} If you are experiencing bugs, please refer to the \hyperref[sec:Troubleshooting]{troubleshooting section} at the end of this lab
@@ -767,7 +764,6 @@ If you want to change from the 15 Micron Scanner to the 50 Micron Scanner or vic
 
     \begin{itemize}
         \item Use caution when removing the cable \textbf{Grip the cable from the connector when removing to not damage the cable.}
-
     \end{itemize}
 
     \item Set this scanner aside.
@@ -778,7 +774,6 @@ If you want to change from the 15 Micron Scanner to the 50 Micron Scanner or vic
 
     \begin{itemize}
         \item \textbf{IT DOES NOT NEED TO BE EXTREMELY TIGHT. JUST HAVE IT SECURE WITHOUT PUTTING STRESS ON THE SCREWS.}
-
     \end{itemize}
 
     \item Reinsert the probe holder into the TT-AFM.
