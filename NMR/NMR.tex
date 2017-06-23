@@ -88,12 +88,12 @@ You should keep a laboratory notebook. The notebook should contain a detailed re
 \end{minipage}
 \begin{minipage}{0.33\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3559.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR_Exp_3559.jpg}}
-    \caption{NMR experiment. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3559.jpg}{\textbf{here}}}
+    \caption{NMR experiment. \\See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3559.jpg}{\textbf{here}}}
 \end{minipage}
 
 \begin{minipage}{0.36\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Head-in-Magnet_3560.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR_Head-in-Magnet_3560.jpg}}
-    \caption{NMR head in magnet. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Head-in-Magnet_3560.jpg}{\textbf{here}}}
+    \caption{NMR head in magnet. \\See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Head-in-Magnet_3560.jpg}{\textbf{here}}}
 \end{minipage}
 \begin{minipage}{0.36\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/PNMR_3494.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/PNMR_3494.jpg}}
@@ -464,7 +464,9 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 
     \item Turn on the frequency counter (Fluke PM6669) and the oscilloscope. Connect the FREQUENCY MONITOR on the back of the NMR box to the input of the frequency counter. Put the scope in the x-y mode. Then connect the PHASE ADJUST to the x-input of the scope and the PRE-AMP output to the y-input of the scope.
 
-    \item Now you're ready to go. Insert a glycerin sample into the NMR HEAD and find the resonance signal by doing the following. Look up in the \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR32.jpg}{\textbf{NMR Frequency TABLE}} of the manual - the NMR frequency for H$^1$ in a 10 kilogauss field. Knowing this number and that our $H_0$ is about 3.8 kG, calculate the approximate NMR frequency for our set-up (around 16.1xxxxx Mhz). Turn the TRANS FREQ knob on the NMR BOX until the counter reads this value. Now adjust the receiver coil to observe the resonance by adjusting the CR control so that the receiver frequency matches that of the transmitter. Start with it at the fiducial mark.
+    \item Now you're ready to go. Insert a glycerin sample into the NMR HEAD and find the resonance signal by doing the following. Look up in the \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR32.jpg}{\textbf{NMR Frequency TABLE}} of the manual - the NMR frequency for H$^1$ in a 10 kilogauss field. Knowing this number and that our $H_0$ is about 3.8 kG, calculate the approximate NMR frequency for our set-up (around 16.1xxxxx Mhz). Turn the TRANS FREQ knob on the NMR BOX until the counter reads this value.
+    
+    \textbf{Note: Running an AC signal through the DC powered coils degausses the magnet over time. The NMR frequency also relates directly to magnetic field, so expect that the frequency will decrease with time to between about 16 to 16.0425 MHz.}
 
     \begin{figure}[h]
     \begin{minipage}[t]{0.32\textwidth}
@@ -485,7 +487,7 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 
 \newpage
 
-    Make sure that the amplitude is ``peaked'' on the NMR box. Adjust the peak knob until the maximum microampere reading is shown. This will have to be done for every sample used. Slowly vary the frequency around the value you calculated above. You should be able to find the resonance, and your signal should look like Figure~\ref{fig:TenthMolarMn}. Note that the resonance condition is very sensitive to frequency; so go slowly. Once you have found it, ``peak-up'' your signal by readjusting CR on the NMR BOX for maximizing the signal. If you don't find a signal after you've fussed with everything, ask for help. Once resonance is found, adjust the x-axis of the scope until both edges of the signal are visible on the screen. Vary the frequency so that the resonance signal goes barely off the edge to the left of the screen, and record the frequency. Do the same for the right side of the screen. Subtract the frequencies, and the difference will be the scanning frequency range. You will not need to scan past this range when searching for resonance for any sample, once the signal is found (It should be $\sim$90kHz).
+    Now adjust the receiver coil to observe the resonance by adjusting the CR control (peak) so that the receiver frequency matches that of the transmitter. Start with it at the fiducial mark. Make sure that the amplitude is ``peaked'' on the NMR box, by adjusting the peak knob until the maximum microampere reading is shown. This will have to be done for every sample used. Slowly vary the frequency around the value you calculated above. You should be able to find the resonance, and your signal should look like Figure~\ref{fig:TenthMolarMn}. \textbf{Note that the resonance condition is very sensitive to frequency, so go slowly.} Once you have found it, ``peak-up'' your signal by readjusting the amplitude and CR on the NMR BOX for maximizing the signal. If you don't find a signal after you've fussed with everything, ask for help. Once resonance is found, adjust the x-axis of the scope until both edges of the signal are visible on the screen. Vary the frequency so that the resonance signal goes barely off the edge to the left of the screen, and record the frequency. Do the same for the right side of the screen. Subtract the frequencies, and the difference will be the scanning frequency range. You will not need to scan past this range when searching for resonance for any sample, once the signal is found (It should be $\sim$90kHz).
     
     Move the NMR HEAD around gently in the gap until you have maximized the number of ``wiggles'' and minimized the line width. This will place the head in the most uniform or homogeneous region of the magnet, and you want to keep it there. Once you have set the position for the day, don't change it. Some of your calculations depend on the field being the same for successive measurements. Repeat this procedure each day when you first come to the lab, since other people may have moved the NMR head from where you have determined to be the best.
 
