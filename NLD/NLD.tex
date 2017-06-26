@@ -488,7 +488,7 @@ We arrange these values in a way that will let LabView draw the cobweb by connec
 \[
     \{x_i,y_i\} = \{(m_0,0),(m_0,m_1),(m_1,m_1),(m_1,m_2),(m_2,m_2),(m_2,m_3),\cdots (m_{n-1},m_{n-1}),(m_{n-1},m_n)\}
 \]
-The $x$-values form a series $\{m_0,m_0,m_1,m_1km_2,m_2,\cdots,m_{n-1},m_{n-1}\}$ which we may form by ``interleaving'' the $x_i$ array with itself and removing the last two elements. Fortunately, LabView has a function that interleaves arrays and a function that takes an array's subset.
+The $x$-values form a series $\{m_0,m_0,m_1,m_1,m_2,m_2,\cdots,m_{n-1},m_{n-1}\}$ which we may form by ``interleaving'' the $x_i$ array with itself and removing the last two elements. Fortunately, LabView has a function that interleaves arrays and a function that takes an array's subset.
 
 The y-values of the cobweb form a series $\{0,m_1,m_1,m_2,m_2,\ldots ,m_{n-1},m_n\}$ which can also be made by interleaving the $x_i$ array and taking subsets (and replacing one element with a zero). Once you have the two arrays of $x$'s and $y$'s, you must bundle them together and then build an array out of this bundle and the other bundled plots of $f$ and $g$ (see the right side of Figure~\ref{fig:SectionOfCobWebVI}).
 
