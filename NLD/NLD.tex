@@ -574,15 +574,15 @@ Let's begin with the PN Junction: Make the following connections referring, in a
 
     \item Set the SRS DS345 to $f$ = 3500 Hz and 10 volts, VPP output, Terminate with $50\Omega$.
 
-    \item Set the STROBE PHASE CONTROLLER ``DELAY RANGE'' to 30 $\mu$s and ``ADJ'' to 0.0 (fully CCW)2
+    \item Set the STROBE PHASE CONTROLLER ``DELAY RANGE'' to 30 $\mu$s and ``ADJ'' to 0.0 (fully CCW)
 
     \item Set the STROBE PHASE CONTROLLER ``WIDTH RANGE'' to 3 $\mu$s and ``ADJ'' to 0.0 (fully CCW)
 
-    \item Set PN JUNCTION DRIVER ``GAIN'' to 0.0 (fully CCW).
+    \item Set PN JUNCTION DRIVER ``GAIN'' to 0.0 (fully CCW, counter-clockwise). 
 
 \end{itemize}
 
-You should now see a horizontal line on the scope. Increase the PN JUNCTION DRIVER GAIN and the scope should display an ellipse. Having connected $ V_o(t) $ and $ V_s(t) $ (recall the notation of the introduction) to the $x$, $y$ axes of the oscilloscope(remember to put the time dial on x.y). The displayed graph is a plot of $I$ vs. $V_{os} \cos(\theta)$, a two-dimensional projection of the system's path in phase space.
+You should now see a horizontal line on the scope. Increase the PN JUNCTION DRIVER GAIN by turning the dial clockwise and the scope should display an ellipse. Having connected $ V_o(t) $ and $ V_s(t) $ (recall the notation of the introduction) to the $x$, $y$ axes of the oscilloscope(remember to put the time dial on x.y). The displayed graph is a plot of $I$ vs. $V_{os} \cos(\theta)$, a two-dimensional projection of the system's path in phase space.
 
 At such a low driving amplitude, the diode is responding linearly: The diode current is periodic at the same frequency as the drive oscillator with a small phase offset. Observe the behavior as you increase the DRIVER GAIN- it should follow the discussion of the pn-junction earlier in this write-up and the video.
 
