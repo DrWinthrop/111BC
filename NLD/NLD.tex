@@ -356,7 +356,7 @@ The equations of state (Eq's \eqref{eq:Motion1}, \eqref{eq:Motion2},
 
 This experiment uses an Intel CPU based computer, running the Windows operating system. The main tools are a data-acquisition computer-interface card and the LabView software package. The data-acquisition card has 8 input-channels, 2 output channels, and miscellaneous timing and TTL features. The inputs sample voltages in the ±5 Volt range with 12-bit resolution at speeds to 100khz.
 
-LabView is a graphical programming environment designed to facilitate lab-instrument control, data-acquisition, and rudimentary numerical analysis. There is a suite of LabView programs (called VI's; for Virtual Instruments) specifically written for this lab that constitutes the bulk of this experiment. You'll also be writing a few of your own to get a better feel for LabView.
+LabView is a graphical programming environment designed to facilitate lab-instrument control, data-acquisition, and rudimentary numerical analysis. There is a suite of LabView programs (called VI's; for Virtual Instruments) specifically written for this lab that constitutes the bulk of this experiment. \textbf{Use \emph{LabVIEW 2015} for this part.} You'll also be writing a few of your own to get a better feel for LabView. \textbf{Use \emph{LabVIEW 2016} for this part.} The distinction between versions is made here, because the custom built VI's call on the CALLCORR.VI sub-vi, which uses a 32 bit file that requires a 32 bit version of LabVIEW to run.
 
 Most of the non-linear circuits you will examine in this lab are driven, so the computer is set up to modify a driving voltage, by using its DAC to attenuate a function-generator, and measure the circuit's response (see Figure~\ref{fig:SimplifiedBlockDiagram}). Because you won't be starting with the real systems, the details of the equipment and connections are deferred to section 4.5, where they should make more sense.
 
@@ -377,6 +377,8 @@ Before starting LabView, create a directory for yourself inside My Documents fol
     \item Control-H displays ``pop-up'' help, which will automatically explain things you point to with your cursor. Usually, this is sufficient, but if you need more detailed information, use the LabView manuals provided with the experiment.
 
     \item Control-E switches between the \emph{front-panel} and the \emph{diagram} windows.
+    
+\newpage
 
     \item There are 3 palettes you will be using; \emph{functions}, \emph{controls}, and \emph{tools}. Right clicking the mouse brings the appropriate palette for the window you're working in. \emph{Functions }are used in the diagram window, \emph{controls }are used\emph{ }in the front-panel window, and \emph{tools} are used in both. Use the spacebar to switch between different tools in the \emph{tools }palette.
 
@@ -394,7 +396,7 @@ Before starting LabView, create a directory for yourself inside My Documents fol
 
 \end{itemize}
 
-Once you're ready to begin, copy all files to your my documents folder chaos. (Note: go to C:\textbackslash support\textbackslash NLD2013 for the NLD.llb file and copy all into your folder manually. Now start LabView from the Windows Start menu. Your first assignment is to make a simple VI. Investigate sampling by putting a \emph{waveform graph} and a \emph{waveform chart} on the front panel. These are located under \textbf{Functions-}F which can be accessed by right clicking in an empty space in ``Block Diagram''.(in the same way the \textbf{Controls} can be accessed by right clicking in an empty space in ``Front Panel''.
+Once you're ready to begin, copy all files to your my documents folder chaos. (Note: go to C:\textbackslash support\textbackslash NLD2013 for the NLD.llb file and copy all into your folder manually. Now start LabView (\textbf{Again, use \emph{LabVIEW 2016} for this part}) from the Windows Start menu. Your first assignment is to make a simple VI. Investigate sampling by putting a \emph{waveform graph} and a \emph{waveform chart} on the front panel. These are located under \textbf{Functions-}F which can be accessed by right clicking in an empty space in ``Block Diagram''.(in the same way the \textbf{Controls} can be accessed by right clicking in an empty space in ``Front Panel''.
 
 \begin{figure}[h]
     \centering
@@ -406,8 +408,6 @@ Once you're ready to begin, copy all files to your my documents folder chaos. (N
 \textbf{NOTE: AI Waveform Scan.vi is no more. Everything that requires it is optional. You should be able to find a similar VI in the new LabVIEW.}
 
 Create a VI that reads a signal from the DS345 Function generator using the Computer DAQ box. Here's where to find the modules needed to create your program:
-
-\newpage
 
 \begin{itemize}
     \item Controls $\rightarrow$ Graph Indicators $\rightarrow$ Waveform Chart/Waveform Graph (you will need 2)
@@ -429,6 +429,8 @@ Create a VI that reads a signal from the DS345 Function generator using the Comp
 \end{figure}
 
 Once you have wired up the VI, you're ready to use it to sample signals. Use a function generator (Stanford Research Systems Model DS345) to send some signal to the Computer DAQ box. Connect the ``function output'' of the function generator to the terminal labeled AI 0 (make sure to terminate the signal). Adjust its output to produce an approximately 200 Hz sine wave, 5 Volts in amplitude (10V peak-to-peak). Use a scope to check the output. Once you create the DAQ Assistant it will prompt you for some inputs, select analog input and then voltage from the ai0 channel. The Spectral measurements one will also prompt you for some information (make sure you program it to spit out the power spectrum in a linear plot).  Run your VI by pressing the ``run'' button.
+
+\newpage
 
 Your two graphs should display the time-series of the signal (it should look like a sine-wave) and the \emph{discrete} Fourier transform (DFT). We stress that it's the discrete transform because, while it is closely related to the continuous Fourier transform, there are some important differences that we hope you'll discover. The units of the time-series graph are Volts vs. Sample number. What are the units of the DFT window?
 
@@ -465,6 +467,8 @@ To familiarize yourself with 1-d maps, you will write a ``cob-web'' analyzer VI 
     \label{fig:CobWebAnalyzer}
 \end{figure}
 
+\newpage
+
 The graph displays three plots. The downward parabola is the quadratic map $f(x) = rx(1-x)$. The straight line is $g(x) = x$, and the stair-step or ``cobweb'' is the effect of successively applying the quadratic map to the initial point, $x$ = 0.94 . The recipe for producing the cobweb is as follows: Begin with the initial point $x_0$, follow a vertical line up to $f(x_0)$, follow a horizontal line over to the line $y = x$, you are now at the x-coordinate $f(x_0)$, proceed vertically to the graph of the quadratic map. You are now at the y-coordinate $f(f(x_0))$ Each time you move vertically to $f$, you have performed a further iteration of the map. Continuing in this way you can explore the long-term behavior of the map as you vary the initial condition and the chaotic parameter.
 
 Making this VI yourself will teach you about arrays, or lists of numbers, in LabView. If you haven't programmed in a computer language before, you should know that each number in an array is indexed starting from 0 to $N-1$. Here's the part of the cobweb VI that produces the graphs of $f$ and $g$ (Figure~\ref{fig:SectionOfCobWebVI}).
@@ -479,6 +483,8 @@ Making this VI yourself will teach you about arrays, or lists of numbers, in Lab
 The big square is a for-loop that gets executed 100 times (the constant 100 wired to N). Each time through the loop the variable \emph{i} increases by 1 (\emph{i} starts at zero and goes through \emph{(N-1)}). The quotient is calculated and assembled into an array, which we shall call $x_i$, at the right border of the loop. The function $f(x_i)$ is computed and also accumulated. The array is accumulated by means of the ``indexing'' feature at the border of the loop. Whenever you connect a wire from the inside to the outside of a loop a border node is formed to control how the data flows. Pop-up on the node to enable ``indexing'' and the result of each iteration will be assembled into an array. Leave indexing off and only the single number that was calculated last will be passed on.
 
 Outside the loop, the arrays are ``bundled'' into a form that the XY-graph module will accept: an array of x-values bundled with an array of corresponding y-values. A ``bundle'' is a LabView data-structure that is a convenient way of collecting several things into one. It basically creates a list of ordered pairs, $\{x_i,y_i\}$ which the program then builds into an array with three such lists. The graph reads these three lists of ordered pairs and plays connect the dots, making three graphs. One graph is made by taking the $x_i$ array and bundling it with itself, producing the graph of y =x. The downward parabola, $y = rx(1-x)$, is made by bundling $x_i$ with $f(x_i)$.
+
+\newpage
 
 That was the easy part, the graph of the cobweb part is a little harder and requires some discussion beforehand. We've already written a VI, named quad.vi, that calculates successive iterates of the quad map. The VI is located in C:\textbackslash NLD-chaos\textbackslash LABVIEW\textbackslash CHAOS. So let's assume we have a series of map-iterates
 \[
@@ -526,7 +532,9 @@ The front panel of your finished VI should look something like Figure \ref{fig:N
 
 \textbf{This is a Checkpoint: Call over a GSI and show them your program. Explain what you have done and which value of the chaotic parameter seems to work best.}
 
-\subsection{NLSIM.VI: the simulation VI}
+\textbf{NOTE: Up to this point, you have been using \emph{LabVIEW 2016}. It is absolutely imperative that you switch over to \emph{LabVIEW 2015}, because this version is 32 bit and can run the necessary sub VI's.}
+
+\subsection{NLSIM.VI: the simulation VI (LabVIEW 2015)}
 
 Before proceeding to real-time NLD systems, you will take some time to run the simulation VI, NLSIM.VI. Open NLSIM.VI. This VI (Figure~\ref{fig:SimulationVI}) allows you to display the time-series, return-map and power spectrum of a variety of signals. As in all the VI's, press control-H and move the mouse pointer over the elements of the screen to get specific information on how to use the program.
 
@@ -537,11 +545,13 @@ Before proceeding to real-time NLD systems, you will take some time to run the s
     \label{fig:SimulationVI}
 \end{figure}
 
+\newpage
+
 Start the VI, select the cosine function, and focus your attention to the return map. Many dynamical systems are described by a cosine function, for example the simple harmonic oscillator of a mass on a spring: $x(t) = A \cos(\sqrt{\frac{\kappa}{m}}t)$. What are the axes of the phase space of this system? What is the shape of the paths in phase space for this system? Is it similar to what you see in the return map? What effect does changing the sample rate have on the shape of the trajectory? When you increase the sample rate, why does the return map narrow around the line $y = x$? What happens if the sample rate is a multiple of the frequency of the cosine? Now try the function $\cos {(\omega_1t)} + \cos(\omega_2t) + a \cos(\omega_1t) \cos(\omega_2t)$. The return map for this function is more complicated: When $a$ is zero, it's a two-dimensional uncoupled harmonic oscillator and its trajectories are confined to a torus in phase space (c.f. Ref.~\cite{Strogatz}, \S8.6). What conditions are necessary for the return-map to show a projection of a torus and not a cycloid? Be sure to explain what you're seeing in the Time Domain and Frequency Domain. Is it chaotic?
 
 Now select the Quadratic Map function and set the parameter $r$ = 2.8. The return map should show a single point. Increase $r$ to about 3, the map will bifurcate, and you should see two points on the return map. Continuing to increase $r$ will produce successive bifurcations and finally chaos at $r$ = 3.5. One dimensional maps like this one are good analogs to \emph{Poincaré sections} and when you sample the real NLD systems synchronous to their driving forces, you will see the same behavior. So it pays to spend some time here to really figure out what's going on. Be sure to compare this map with your cobweb VI at the same value of $r$. Also look at the quadratic map's bifurcation program.
 
-\textbf{This is a Checkmark: Take a look at the Henon Map. Play with the non-linear parameter between 0 and about 1.4. What is that funky thing in the Return Map? Look at the Henon map's bifurcation program as well. Discuss what you are thinking with a GSI or Professor.}
+\textbf{This is a Checkpoint: Take a look at the Henon Map. Play with the non-linear parameter between 0 and about 1.4. What is that funky thing in the Return Map? Look at the Henon map's bifurcation program as well. Discuss what you are thinking with a GSI or Professor.}
 
 \subsection{Continuous-time systems- PN Junction}
 
@@ -553,6 +563,8 @@ Now we're ready to proceed to real-time continuous systems. At present there are
     \caption{The Physics 111-Lab Nonlinear Dynamics Laboratory Panel.}
     \label{fig:NonlinearDynamicsLaboratoryPanel}
 \end{figure}
+
+\newpage
 
 The drive oscillator is an Stanford Research System Model DS345. It is fed into the external reference pin $V_\text{ref}$ of the DAC on the computer. Recall from your basic electronics experience that when you set a DAC to a specific level, e.g. $j$ out of a maximum of $N$, the DAC outputs a voltage equal to $V_\text{DAC} = V_\text{ref} \frac{j}{N}$. Thus if $V_\text{ref}$ is a sine-wave varying in time, the DAC outputs a sine wave of attenuated amplitude. The computer modified sine-wave is then fed to the NLD system under study. The NLD system's response is sent to the ADC input of the computer where it can be sampled either synchronously or asynchronously with respect to the driving frequency. When sampling is performed asynchronously, an internal timebase (not shown) is used. Synchronous sampling is achieved by a ``strober,'' which sends TTL pulses to the EXTERNAL TRIGGER pin of the ADC whenever the drive signal achieves a certain phase (adjustable as ``Pulse delay'' on the NLD box) in its cycle. The sine-wave is also connected (via the square-wave converter on the NLD box) to the computer's timer pin (labeled GATE0) for computer measurement of the drive frequency.
 
@@ -566,8 +578,6 @@ The drive oscillator is an Stanford Research System Model DS345. It is fed into 
 The PN junction circuit requires power, so turn on the system with the switch on the power supply located at the top of the rack. Note: You should hook up the TTL bar output to the Z-axis input on the back of the scope. You will also need to have the Sine Input Switch Off.
 
 Let's begin with the PN Junction: Make the following connections referring, in addition to Figure~\ref{fig:ConnectingTheScope}:
-
-\newpage
 
 \begin{itemize}
     \item $\overline{\text{TTL}}$ to the back of the Tektronix Dual Trace 2215A \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/NLD/NLD_Equipment/01-2215scope.pdf}{scope}
@@ -590,16 +600,23 @@ The scope highlights sections of the plot according to the STROBE PHASE CONTROLL
 
 Now let's include the computer. All of the connections to the computer are made through a single box, called the \emph{Computer Interface Box} (Figure~\ref{fig:ConnectionsOnComputerInterfaceBox}).
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NLD_DAQBOX.png}{\includegraphics[width=0.5\linewidth]{images/NLD_DAQBOX.png}}
     \caption{The connections on the computer interface box.}
     \label{fig:ConnectionsOnComputerInterfaceBox}
 \end{figure}
 
-Disconnect the SRS DS345 from Vin and make the following connections, in addition to looking at Figure~\ref{fig:ConnectionsForComputerSamplingOfPNJunction}. $V_{os} \cos(\theta)$,
+\begin{figure}[H]
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NLD_PN_DIAGRAM.png}{\includegraphics[width=0.7\linewidth]{images/NLD_PN_DIAGRAM.png}}
+    \caption{Connections for computer sampling of the PN-junction.}
+    \label{fig:ConnectionsForComputerSamplingOfPNJunction}
+\end{figure}
 
 \newpage
+
+Disconnect the SRS DS345 from Vin and make the following connections, in addition to looking at Figure~\ref{fig:ConnectionsForComputerSamplingOfPNJunction}. $V_{os} \cos(\theta)$,
 
 \begin{itemize}
     \item SRS DS345 ``$ 50 \Omega $; Sine output ----------------------------to ``EXT REF''
@@ -617,13 +634,6 @@ Disconnect the SRS DS345 from Vin and make the following connections, in additio
     \item set the switch below AUX in/out ---------------------to ``INT''
 \end{itemize}
 
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NLD_PN_DIAGRAM.png}{\includegraphics[width=0.7\linewidth]{images/NLD_PN_DIAGRAM.png}}
-    \caption{Connections for computer sampling of the PN-junction.}
-    \label{fig:ConnectionsForComputerSamplingOfPNJunction}
-\end{figure}
-
 Start LabView and load NLDGEN. You should see a display similar to Figure~\ref{fig:NLDGENVI}.
 
 \begin{figure}[h]
@@ -637,6 +647,8 @@ This VI controls the drive amplitude, collects a sample of data points, and pres
 
 Before moving on, open up nldbifur.vi, which will allow you to view the bifurcation diagram for the PN-junction. Leave the computer and hardware in the same configuration as for nldgen.vi, except turn the knob for PN-JUNCTION DRIVER GAIN all the way up (CW). You should also look at the real-time output on the scope, so also hook the output on the SRS DS345 to the X-channel on the scope, and the IDH output on the PN-JUNCTION DRIVER into the Y-channel, just as before. Run nldbifur.vi and look at several different ranges of V.
 
+\newpage
+
 \section{Bouncing Ball}
 
 Let's now turn our attention to the bouncing ball circuit (BB).
@@ -649,14 +661,12 @@ Let's now turn our attention to the bouncing ball circuit (BB).
 \end{figure}
 
 \begin{itemize}
-    \item Connect the SRS DS345 Sine out to the DRIVE input on the panel.
+    \item Combine a terminator on a T and connect the SRS DS345 with a sine wave out to the DRIVE input on the panel.
 
     \item Connect BB OUT1 to the Tek 2215 scope CH 1.
 
     \item Connect BB OUT2 to the Tek 2215 scope CH 2.
 \end{itemize}
-
-\newpage
 
 Set the DS345 to  $\sim$50Hz and  $\sim$10V peak-to-peak (just turn the knob to about half-way in its range). Look at each channel in time. They should both be sinusoids. Put the scope in X-Y mode and you will see the system's phase portrait. The circuit is fully described in the reprints so we will only summarize it here: The circuit simulates the dynamics of a ball bouncing on a vertically sinusoidally driven table. One output is ball velocity, one is ball position (height from a fixed reference). When the table frequency and amplitude are small, the ball basically stays on the table and the phase portrait is that of an harmonic oscillator. Increase the drive frequency and you should see the phase-portrait begin to change. The phase-portrait becomes jittery and then it should jump to behavior that is periodic at twice the drive frequency. Take some time to understand the simple behaviors of the phase portrait: Which axis is velocity? Which is position? Why is the initial plot an ellipse? What's happening just as you increase the drive frequency but before the plot becomes jittery? Try varying the drive voltage.
 
@@ -675,6 +685,8 @@ Now we're ready to hook up the computer. Make/check the following connections, r
 \end{itemize}
 
 Connect . . .
+
+\newpage
 
 \begin{itemize}
     \item DS345 ``Sine output''---------------- to ``EXT REF''
@@ -712,7 +724,8 @@ Connect . . .
 Chaotic systems have fractal attractors and a commonly measured quantity is the attractor's information (or correlation) dimension (Ref.~\cite{Strogatz}, \S11.5, Ref.~\cite{Theiler}, pp1062-1063, pp1066-1070). The correlation dimension measures how the state-space ``mass'' of the attractor scales with length. CALCCORR.VI computes $C(N,\epsilon)$, the number of points within a distance $\epsilon$ of each other, for increasing embedding dimensions and then displays $\log_2 C(N,\epsilon)$ vs. $2 \log_2 \epsilon$ (Figure~\ref{fig:DataFromQuadraticMap}). The slope of the linear region of the plot is then 1/2 times the information dimension. See the article by Theiler \cite{Theiler} for full details and Ref.~\cite{Buskirk} for a simple application of these concepts.
 
 \begin{itemize}
-    \item As an introductory exercise, do the following: Run NLSIM.VI and CALCCORR.VI. Select ``Random number generator.'' Choose 2048 points and press the ``Send data to the info-dimension VI'' button. Press ``Calculate'' in CALCORR. When the calculation is done, use the graph cursors to estimate the slope of each line. How does each slope compare to the line's embedding-dimension?
+    \item As an introductory exercise, do the following: Run NLSIM.VI and CALCCORR.VI. Select ``Random number generator.'' Choose 2048 points and press the ``Send data to the info-dimension VI'' button. 
+    \item Press ``Calculate'' in CALCORR. When the calculation is done, use the graph cursors to estimate the slope of each line. How does each slope compare to the line's embedding-dimension?
 \end{itemize}
 
 The data calculated by CALCCORR.VI can be saved to a data file for more accurate linear fitting. Simply press the ``send data to a file'' button, name the file, and open it from within Excel (or copy it to a disk and take it to your favorite software). You should measure the information dimension of the PN-junction and the Bouncing Ball circuit for varying driving amplitudes and frequencies. Are the values what you expect?
@@ -746,19 +759,19 @@ Quad.VI Iterates the quadratic map.
 
 QuadBifr.VI Calculates the bifurcation diagram for the quadratic map.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage138.gif}{\includegraphics[width=0.6\linewidth]{images/Nldimage138.png}}
     \caption{\textbf{Quad Bifur} This VI permits you to explore the Bifurcation diagram of the quadratic map. You can change the parameters to reveal the fine detail at the onset of chaos.}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage139.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage139.png}}
     \caption{\textbf{Henon Bifur}}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage140.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage140.png}}
     \caption{\textbf{NLDBifur}}
