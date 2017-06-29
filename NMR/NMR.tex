@@ -86,7 +86,7 @@ You should keep a laboratory notebook. The notebook should contain a detailed re
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3557.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR_Exp_3557.jpg}}
     \caption{Magnet, HMOD, \& CW RF generator. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3557.jpg}{\textbf{here}}}
 \end{minipage}
-\begin{minipage}{0.33\textwidth}
+\begin{minipage}{0.34\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3559.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/NMR_Exp_3559.jpg}}
     \caption{NMR experiment. \\See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR_Exp_3559.jpg}{\textbf{here}}}
 \end{minipage}
@@ -103,6 +103,11 @@ You should keep a laboratory notebook. The notebook should contain a detailed re
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/PNMR_3495.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/PNMR_3495.jpg}}
     \caption{Pulse Electronics \& Samples. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/PNMR_3495.jpg}{\textbf{here}}}
 \end{minipage}
+\end{figure}
+\begin{figure}
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMRDAQ.jpg}{\includegraphics[width=0.8\linewidth]{images/NMRDAQ.jpg}}
+    \caption{DAQ interface and controls. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMRDAQ.jpg}{\textbf{here}}}
 \end{figure}
 
 \section{Objectives}
@@ -178,7 +183,11 @@ When Figures \ref{fig:AbsorptionSignal} and \ref{fig:AppliedMagneticField} are p
 
 Next is to visualize the resonant ``signal'' shown in Figure~\ref{fig:AbsorptionSignal}. If the input power is kept constant, the resonant signal can be realized as a change in the output power. We will consider the electric field, rather than the power, of the outgoing radiation at the frequency $f_o$ as a function of time and call it the signal. The amplitude of this signal is a measure of the power absorbed in the sample.
 
-\begin{figure}[h]
+The incident electric field at a frequency of 16 MHz shown in Figure~\ref{fig:AmplitudeOfIncidentElectricField} is now modulated in amplitude at a frequency of 60 Hz as illustrated in Figure~\ref{fig:AmplitudeOfOutgoingElectricField}. The magnitude of the amplitude when plotted in time is a measure of the resonance curve. The function of the detector is to rectify the 16 MHz signal by putting it through a low-pass filter that removes the 16 MHz component but leaves the modulating component at 60 Hz. The resulting signal is sent to an oscilloscope with the sweep frequency set at 60 Hz. If we operate the oscilloscope in the x-y mode, with the x-channel being the modulating magnetic field and the y-channel being the filtered signal, the display of the oscilloscope is the desired resonance curve.
+
+A block diagram with signals at the various stages will be shown in the next section.
+
+\begin{figure}[H]
 \begin{minipage}[t]{0.49\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NMR7.gif}{\includegraphics[width=0.9\linewidth,keepaspectratio]{images/NMR7.png}}
     \caption{Amplitude of Incident electric field as a function of time.}
@@ -190,10 +199,6 @@ Next is to visualize the resonant ``signal'' shown in Figure~\ref{fig:Absorption
     \label{fig:AmplitudeOfOutgoingElectricField}
 \end{minipage}
 \end{figure}
-
-The incident electric field at a frequency of 16 MHz shown in Figure~\ref{fig:AmplitudeOfIncidentElectricField} is now modulated in amplitude at a frequency of 60 Hz as illustrated in Figure~\ref{fig:AmplitudeOfOutgoingElectricField}. The magnitude of the amplitude when plotted in time is a measure of the resonance curve. The function of the detector is to rectify the 16 MHz signal by putting it through a low-pass filter that removes the 16 MHz component but leaves the modulating component at 60 Hz. The resulting signal is sent to an oscilloscope with the sweep frequency set at 60 Hz. If we operate the oscilloscope in the x-y mode, with the x-channel being the modulating magnetic field and the y-channel being the filtered signal, the display of the oscilloscope is the desired resonance curve.
-
-A block diagram with signals at the various stages will be shown in the next section.
 
 \newpage
 
@@ -266,15 +271,15 @@ The amplitude of the RF field $H_1$ is controlled by the DC supply voltage $V_1$
 \end{minipage}
 \end{figure}
 
-\emph{\textbf{Check Point: show the above pictures you have setup to  the professor or GSI.}}
+\emph{\textbf{Check Point: show the above pictures you have setup to the professor or GSI.}}
+
+\newpage
 
 \section{Block Diagram}
 
 Refer to Figure \ref{fig:500px-NMRblockdiagram} for the NMR Block Diagram:
 
 The NMR head is placed in the DC field $H_0 \approx$ 3800 gauss of a large permanent magnet. The simplest method for observing NMR is to sweep the magnetic field through resonance at 60 Hz by superimposing a modulating $H_\text{mod}$ on $H_0$. Also, it is helpful to display the NMR signal $V_\text{ac}$as the y-input of an oscilloscope and the 60-Hz phase shifted sine wave from the modulation unit as the x-input.
-
-\newpage
 
 The signal from the NMR box is amplified by the SRS 560 amplifier which is used to limit the upper and lower pass frequency (typically 10 kHz and 3 Hz), thereby rejecting unwanted frequencies and improving the visibility of the desired signal. The Fluke frequency counter is used to read the NMR oscillator frequency without perturbing the oscillator.
 
@@ -320,6 +325,8 @@ Lock-in information \href{http://physics111.lib.berkeley.edu/Physics111/Reprints
 
 Let's consider an example. Suppose the signal is a 10 nV sine wave at 10 kHz. Clearly some amplification is required. A good low-noise amplifier will have about 5 nV/$\sqrt{\text{Hz}}$ of input noise. If the amplifier bandwidth is 100 kHz and the gain is 1000, then we can expect our output to be 10 $\mu$V of signal (10 nV $\times$ 1000) and 1.6 mV of broadband noise (5nV/$\sqrt{\text{Hz}}$ $\times$ $\sqrt{100}$ kHz $\times$ 1000). We won't have much luck measuring the output signal unless we single out the frequency of interest.
 
+\newpage
+
 If we follow the amplifier with a band pass filter with a $Q$ = 100 (a VERY good filter) centered at 10 kHz, any signal in a 100 Hz bandwidth will be detected (10 kHz/$Q$). The noise in the band pass filter will be 50 $\mu$V (5 nV/$\sqrt{\text{Hz}} \times \sqrt{100}$ Hz $\times$ 1000) and the signal will still be 10 $\mu$V. The output noise is much greater than the signal and an accurate measurement can not be made. Further gain will not help the signal to noise problem.
 
 Now try following the amplifier with a phase sensitive detector (PSD). The PSD can detect the signal at 10 kHz with a bandwidth as narrow as 0.01 Hz! In this case, the noise in the detection bandwidth will be only 0.5 $\mu$V (5 nV/$\sqrt{\text{Hz}} \times \sqrt{.01}$ Hz $\times$ 1000) while the signal is still 10 (V. The signal to noise ratio is now 20 and an accurate measurement of the signal is possible.
@@ -363,8 +370,6 @@ We need to make the lock-in reference the same as the signal frequency, i.e. $\o
 
 Lock-in amplifiers use a phase-locked-loop (PLL) to generate the reference signal. An external reference signal (in this case, the reference square wave) is provided to the lock-in. The PLL in the lock-in locks the internal reference oscillator to this external reference, resulting in a reference sine wave at $\omega_r $ with a fixed phase shift of $\theta_\text{ref}$ Since the PLL actively tracks the external reference, changes in the external reference frequency do not affect the measurement.
 
-\newpage
-
 \subsection{All Lock-In Measurements Require a Reference Signal}
 
 In this case, the reference is provided by the excitation source (the function generator). This is called an external reference source. In many situations, the SR830's internal oscillator may be used instead. The internal oscillator is just like a function generator (with variable sine output and a TTL sync) which is always phase-locked to the reference oscillator.
@@ -399,8 +404,6 @@ A dual-phase lock-in, such as the SR830, has two PSD's, with reference oscillato
 
 So what exactly does the SR830 measure? Fourier's theorem basically states that any input signal can be represented as the sum of many, many sine waves of differing amplitudes, frequencies and phases. This is generally considered as representing the signal in the ``frequency domain''. Normal oscilloscopes display the signal in the ``time domain''. Except in the case of clean sine waves, the time domain representation does not convey very much information about the various frequencies which make up the signal.
 
-\newpage
-
 \subsection{What Does the SR830 Measure?}
 
 The SR830 multiplies the signal by a pure sine wave at the reference frequency. All components of the input signal are multiplied by the reference simultaneously. Mathematically speaking, sine waves of differing frequencies are orthogonal, i.e. the average of the product of two sine waves is zero unless the frequencies are EXACTLY the same. In the SR830, the product of this multiplication yields a DC output signal proportional to the component of the signal whose frequency is exactly locked to the reference frequency. The low pass filter which follows the multiplier provides the averaging which removes the products of the reference with components at all other frequencies.
@@ -429,7 +432,7 @@ Phase is always reported in degrees. Once again, this is more by custom than by 
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/500px-NMR34.jpg}{\includegraphics[width=0.5\linewidth]{images/500px-NMR34.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/500px-NMR34.jpg}{\includegraphics[width=0.65\linewidth]{images/500px-NMR34.jpg}}
     \caption{Block diagram of the Functional SR830}
     \label{fig:500px-NMR34}
 \end{figure}
@@ -485,8 +488,6 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
     \end{minipage}
     \end{figure}
 
-\newpage
-
     Now adjust the receiver coil to observe the resonance by adjusting the CR control (peak) so that the receiver frequency matches that of the transmitter. Start with it at the fiducial mark. Make sure that the amplitude is ``peaked'' on the NMR box, by adjusting the peak knob until the maximum microampere reading is shown. This will have to be done for every sample used. Slowly vary the frequency around the value you calculated above. You should be able to find the resonance, and your signal should look like Figure~\ref{fig:TenthMolarMn}. \textbf{Note that the resonance condition is very sensitive to frequency, so go slowly.} Once you have found it, ``peak-up'' your signal by readjusting the amplitude and CR on the NMR BOX for maximizing the signal. If you don't find a signal after you've fussed with everything, ask for help. Once resonance is found, adjust the x-axis of the scope until both edges of the signal are visible on the screen. Vary the frequency so that the resonance signal goes barely off the edge to the left of the screen, and record the frequency. Do the same for the right side of the screen. Subtract the frequencies, and the difference will be the scanning frequency range. You will not need to scan past this range when searching for resonance for any sample, once the signal is found (It should be $\sim$90kHz).
     
     Move the NMR HEAD around gently in the gap until you have maximized the number of ``wiggles'' and minimized the line width. This will place the head in the most uniform or homogeneous region of the magnet, and you want to keep it there. Once you have set the position for the day, don't change it. Some of your calculations depend on the field being the same for successive measurements. Repeat this procedure each day when you first come to the lab, since other people may have moved the NMR head from where you have determined to be the best.
@@ -495,6 +496,8 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
 \end{enumerate}
 
 \emph{\textbf{Check Point: Show the professor or GSI your setup for the day after completing this procedure. What frequencies did you record? Was the scanning frequency range near 90 kHz as expected?}}
+
+\newpage
 
 \subsection{Taking Data}
 
@@ -517,13 +520,9 @@ This experiment uses a Digital Storage oscilloscope in order to examine the weak
     \label{fig:LockInAmplifierSignals}
 \end{figure}
 
-\newpage
-
 Read the manual of the Stanford Research Systems Model SR 830DSP Lock-in Amplifier (\href{http://physics111.lib.berkeley.edu/Physics111/Equipment_Manuals/SRS/SR830m.pdf}{manual}). In this apparatus, the lock-in amplifier records the derivative $dV_\text{ac}(H)/dH$ of the NMR signal as the frequency sweeps slowly through the resonance by varying the field $H_2$ with the signal generator. The signal-to-noise ratio can be 100$\times$ larger than that observed with the oscilloscope. This method is used to find and record weak signals. It also provides a convenient way to record the line width $\delta H$ of a signal.
 
 As usual, getting started is not trivial. First you need to have a good signal on the oscilloscope. Then turn on the power supply of the magnet (Hewlett Packard E3615A DC Power Supply), the lock-in amplifier, and the function generator. Set the function generator to give a triangle wave with an initial frequency of .05 Hz and 1 $V_\text{pp}$ amplitude. Check out the OFFSET control to adjust the voltage where the triangle wave will be centered. The output of the signal generator goes to the input of the HP E3615A, located in the back of the unit.
-
-\newpage
 
 You want to sweep the field as shown in Figure~\ref{fig:LockInAmplifierSignals}. Unfortunately, the power supply of the magnet does not generate a negative current and the sweep starts at the resonance field Ho. Consequently, the sweep is not symmetrical, and half the resonance curve is lost. In order to compensate for this, we must adjust the offset of the power supply so that it will generate a symmetric sweep using only positive currents. Additionally, the RF frequency must change to a higher value in order to put the resonance at the middle of the triangular sweep. This means the resonance curve will no longer be at the center of the of the scan like in the previous part of the experiment but will be pushed off to one end instead. How much does the RF need to be adjusted? Experiment to find out.
 
@@ -540,6 +539,8 @@ Set the lock-in controls as follows:
 T-split the phase adjust on the $H_\text{mod}$ panel and connect one of the BNC cables to the phase input (ref) on the Lock-in and the other to the X-input on the DAQ box. It would be useful to put a T on each channel of the oscilloscope, so that you can run the inputs to the scope and then just simply connect the channels on the scope to the DAQ, so that you can easily monitor the traces just by viewing the scope.
 
 Now how do you start? Turn the amplitude of $H_\text{mod}$ way down, to about 10$\sim$20\% of its original value. Refer to the diagrams above. For the first part of the experiment, $H_\text{mod}$ was large; for this part it must be small (but not too small, how come?). Once things are working, adjust the amplitude to peak the signal. With the pre-amplifier hooked up to the Y channel of the scope, you should see the resonance curve sweeping across the face of the scope, and off the end. A few seconds later it should return and sweep across and off the other end. You want the sweep to be symmetrical and off the screen on both sides. I.e., adjust the offset and amplitude on the signal generator to make the resonance peaks go off the right and left hand sides of the oscilloscope, and that the amount of time spent off the screen is minimal and even for both sides. The voltage on the magnet power supply should be going from zero up and back again. If you are monitoring the signal generator output on another oscilloscope, the horizontal line should go up and down from zero. When it is halfway, the resonance curve should be in the center of the scope.
+
+\newpage
 
 Once a good sweep is established, disconnect the pre-amplifier from the Y-input and connect the Ch. 1 output of the lock-in to the Y-input of the DAQ box and flip the switch to CW mode. Take a strip chart recording with a scan rate of 20.00.
 
