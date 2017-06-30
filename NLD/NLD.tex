@@ -163,6 +163,8 @@ Reprints and reference materials can be found on the \href{http://physics111.lib
     \item Learn how to manage and organize your time
 \end{itemize}
 
+\textbf{NOTE for future reference: Once we switch over to Windows 10, we will also be switching over to \emph{LabVIEW 2015}, but most other experiments will be using \emph{LabVIEW 2016}. The distinction between versions is made here, because the custom built VI's call on the CALLCORR.VI sub-vi, which uses a 32 bit file that requires a 32 bit version of LabVIEW to run. When using Windows 10, don't use \emph{LabVIEW 2016}, but rather use \emph{LabVIEW 2015}, because this version is 32 bit and can run the necessary sub VI's.}
+
 \section{Introduction}
 
 This experiment is an introduction to Non-Linear Dynamics, Data Acquisition, Chaos theory and Fractals. Limited as we are by our senses and relatively short powers of recall, much of the physical world seems aperiodic and defies quantitative description. While we have yet to discover closed form solutions to the simplest of systems (e.g. the one-dimensional gravitational three-body problem), the field of chaos reveals structure in their dynamics. The results of chaos theory have found practical applications in almost every branch of science.
@@ -211,6 +213,8 @@ One of the dynamical systems we study is a driven damped oscillator with a non-l
     \label{fig:CapacitanceOfTypicalDiode}
 \end{figure}
 
+\newpage
+
 The diode is the non-linear circuit element: not only does it have an exponential $I$-$V$ characteristic,
 
 \begin{equation}
@@ -252,8 +256,6 @@ The effect of increasing driving-amplitude is seen in the following figures. The
     \label{fig:Period60}
 \end{minipage}
 \end{figure}
-
-\newpage
 
 In Figure \ref{fig:Period15}, $V_{os}$ is set to a small value and the response signal $V_s(t)$ is a sine wave; this is the linear response. As $V_{os}(t)$ is increased, $V_s(t)$ begins to produce harmonic content at 2$\omega_0$, 3$\omega_0$ etc (not shown). But as you keep increasing the voltage, it will abruptly exhibit a change in behavior that, for reasons that will become clearer later, is called a \emph{bifurcation}. This new state has \emph{sub}harmonic content $\omega_0/2$ (Figure \ref{fig:Period30}) and consequently is also called a \emph{period-doubling} bifurcation. As $V_{os}$ is further increased, this period doubling bifurcation occurs again and again at increasingly closely spaced values of $V_{os}$. As the period approaches infinity, the system becomes \emph{chaotic}, i.e. it is aperiodic, with a small but visible noise-like component that looks like ``jitter.''
 
@@ -309,7 +311,7 @@ Figure \ref{fig:my_label}- Figure \ref{fig:Chaotic} show reconstructed phase-spa
 
 For small values of the parameter $V_{os}$, the trajectory is a stable orbit. For larger value (after bifurcation to period 2) the orbit is still stable, but requires \emph{two} cycles of the driving oscillator to return to its initial point (Figure \ref{fig:perioddoubling}). These trajectories are a subclass of a more general object called an \emph{\textbf{attractor}}: The subset of state space toward which a dynamical system evolves. Because they are periodic (the paths are closed cycles), the simple attractors of Figure \ref{fig:my_label}-Figure \ref{fig:sameasabove} are known as \emph{\textbf{limit-cycles}}.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage044.gif}{\includegraphics[width=0.40\linewidth,keepaspectratio]{images/Nldimage044.png}}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage045.gif}{\includegraphics[width=0.40\linewidth,keepaspectratio]{images/Nldimage045.png}}
@@ -317,7 +319,7 @@ For small values of the parameter $V_{os}$, the trajectory is a stable orbit. Fo
     \label{fig:perioddoubling}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage046.gif}{\includegraphics[width=0.40\linewidth,keepaspectratio]{images/Nldimage046.png}}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage047.gif}{\includegraphics[width=0.40\linewidth,keepaspectratio]{images/Nldimage047.png}}
@@ -327,7 +329,7 @@ For small values of the parameter $V_{os}$, the trajectory is a stable orbit. Fo
 
 Increasing $V_{os}$ to the point where the system is chaotic reveals a more complicated attractor: it is a \emph{\textbf{fractal}} object and hence called a \emph{\textbf{strange}} attractor.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage048.gif}{\includegraphics[width=0.40\linewidth,keepaspectratio]{images/Nldimage048.png}}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage049.gif}{\includegraphics[width=0.40\linewidth,keepaspectratio]{images/Nldimage049.png}}
@@ -367,7 +369,7 @@ The equations of state (Eq's \eqref{eq:Motion1}, \eqref{eq:Motion2},
 
 This experiment uses an Intel CPU based computer, running the Windows operating system. The main tools are a data-acquisition computer-interface card and the LabView software package. The data-acquisition card has 8 input-channels, 2 output channels, and miscellaneous timing and TTL features. The inputs sample voltages in the ±5 Volt range with 12-bit resolution at speeds to 100khz.
 
-LabView is a graphical programming environment designed to facilitate lab-instrument control, \\ data-acquisition, and rudimentary numerical analysis. There is a suite of LabView programs (called VI's; for Virtual Instruments) specifically written for this lab that constitutes the bulk of this experiment. \textbf{Use \emph{LabVIEW 2015} for this part.} You'll also be writing a few of your own to get a better feel for LabView. \textbf{Use \emph{LabVIEW 2016} for this part.} The distinction between versions is made here, because the custom built VI's call on the CALLCORR.VI sub-vi, which uses a 32 bit file that requires a 32 bit version of LabVIEW to run.
+LabView is a graphical programming environment designed to facilitate lab-instrument control, \\ data-acquisition, and rudimentary numerical analysis. There is a suite of LabView programs (called VI's; for Virtual Instruments) specifically written for this lab that constitutes the bulk of this experiment. You'll also be writing a few of your own to get a better feel for LabView.
 
 Most of the non-linear circuits you will examine in this lab are driven, so the computer is set up to modify a driving voltage, by using its DAC to attenuate a function-generator, and measure the circuit's response (see Figure~\ref{fig:SimplifiedBlockDiagram}). Because you won't be starting with the real systems, the details of the equipment and connections are deferred to section 4.5, where they should make more sense.
 
@@ -418,8 +420,6 @@ Once you're ready to begin, copy all files to your my documents folder chaos. (N
 
 Create a VI that reads a signal from the DS345 Function generator using the Computer DAQ box. Here's where to find the modules needed to create your program:
 
-\newpage
-
 \begin{itemize}
     \item Controls $\rightarrow$ Graph Indicators $\rightarrow$ Waveform Chart/Waveform Graph (you will need 2)
 
@@ -431,6 +431,8 @@ Create a VI that reads a signal from the DS345 Function generator using the Comp
 
     \item Functions $\rightarrow$ All Functions $\rightarrow$ NI Measurments $\rightarrow$ Data Acquisition $\rightarrow$ Analog Input $\rightarrow$ Waveform Measurements $\rightarrow$ Spectral Measurements( you can search for this in Labview also)
 \end{itemize}
+
+\newpage
 
 \begin{figure}[h]
     \centering
@@ -478,14 +480,16 @@ To familiarize yourself with 1-d maps, you will write a ``cob-web'' analyzer VI 
 
 The graph displays three plots. The downward parabola is the quadratic map $f(x) = rx(1-x)$. The straight line is $g(x) = x$, and the stair-step or ``cobweb'' is the effect of successively applying the quadratic map to the initial point, $x$ = 0.94 . The recipe for producing the cobweb is as follows: Begin with the initial point $x_0$, follow a vertical line up to $f(x_0)$, follow a horizontal line over to the line $y = x$, you are now at the x-coordinate $f(x_0)$, proceed vertically to the graph of the quadratic map. You are now at the y-coordinate $f(f(x_0))$ Each time you move vertically to $f$, you have performed a further iteration of the map. Continuing in this way you can explore the long-term behavior of the map as you vary the initial condition and the chaotic parameter.
 
-Making this VI yourself will teach you about arrays, or lists of numbers, in LabView. If you haven't programmed in a computer language before, you should know that each number in an array is indexed starting from 0 to $N-1$. Here's the part of the cobweb VI that produces the graphs of $f$ and $g$ (Figure~\ref{fig:SectionOfCobWebVI}).
-
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage082.gif}{\includegraphics[width=0.7\linewidth]{images/Nldimage082.png}}
     \caption{Section of the cob web VI}
     \label{fig:SectionOfCobWebVI}
 \end{figure}
+
+\newpage
+
+Making this VI yourself will teach you about arrays, or lists of numbers, in LabView. If you haven't programmed in a computer language before, you should know that each number in an array is indexed starting from 0 to $N-1$. Here's the part of the cobweb VI that produces the graphs of $f$ and $g$ (Figure~\ref{fig:SectionOfCobWebVI}).
 
 The big square is a for-loop that gets executed 100 times (the constant 100 wired to N). Each time through the loop the variable \emph{i} increases by 1 (\emph{i} starts at zero and goes through \emph{(N-1)}). The quotient is calculated and assembled into an array, which we shall call $x_i$, at the right border of the loop. The function $f(x_i)$ is computed and also accumulated. The array is accumulated by means of the ``indexing'' feature at the border of the loop. Whenever you connect a wire from the inside to the outside of a loop a border node is formed to control how the data flows. Pop-up on the node to enable ``indexing'' and the result of each iteration will be assembled into an array. Leave indexing off and only the single number that was calculated last will be passed on.
 
@@ -507,6 +511,8 @@ Try making the cobweb analyzer yourself. First, understand and make the section 
 
 Next, expand the ``Build array'' icon to three inputs and start the cobweb part. Be sure to look at quad.vi to see how it works. You can add a VI into your diagram by going to the \emph{functions} palette and clicking ``Selecting a VI...''. You can then treat it as any other module with inputs and outputs. Consequently, all of the inputs in quad.vi will need to show up on your \emph{front-panel} except for the \emph{pre-iterate} input which you should just wire with a zero in your diagram. There are lots of different ways to program the cobweb, but you'll probably find the array functions ``Build Array,'' ``Interleave 1-D Arrays,'' ``Replace Array Elements,'' ``Array Size,'' and ``Array Subset'' helpful. Read what these modules do, and then make a block diagram on paper illustrating how you would use these functions to make the necessary x and y arrays for the cobweb. Then wire it up in LabView, bundle them together as before, and input it into the ``Build Array'' next to the other two bundles. Be sure to pay attention to whether your inputs/outputs are single elements or arrays of many elements. Some of the module inputs need to be told whether to accept elements or arrays.
 
+\newpage
+
 Again, try to do this on your own. If you get really stuck, you can look in appendix A of this write-up for hints. Once you have the working VI, you can use it for a variety of things. Observe how the derivative of $f(x_i)$ affects the stability of fixed points (Ref.~\cite{Strogatz} \S10.1). Look for limit cycles, period windows, etc. Change the function $f(x_i)$ to $f(f(x_i))$ or some other 1-d map and observe the same qualitative behavior. To do this, you will have to modify both your program and quad.vi. Save quad.vi as quad2.vi in your directory rather than messing with the original. Try any non-invertible function that takes the unit interval to itself. There are numerous ones in the references: the tent map, the shift map, the sine map, etc. Try to come up with one of your own. Pretty much any function with a range of the unit interval that starts at (0,0) and goes to (1,0) will work. The maps must be non-invertible because there must be some dissipation in the equations [Ott \cite{Ott} p8]. Try at least one other map and analyze it.
 
 \textbf{This is a Checkpoint: Call over a GSI and Professor and show them your program. Explain what you have done.}
@@ -526,7 +532,7 @@ As previously mentioned, the Liapunov exponents of multi-dimensional systems are
 
 \begin{figure}[H]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage107.gif}{\includegraphics[width=0.6\linewidth]{images/Nldimage107.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage107.gif}{\includegraphics[width=0.7\linewidth]{images/Nldimage107.png}}
     \caption{Liapunov exponent VI.}
     \label{fig:Nldimage107}
 \end{figure}
@@ -535,9 +541,7 @@ The front panel of your finished VI should look something like Figure \ref{fig:N
 
 \textbf{This is a Checkpoint: Call over a GSI and show them your program. Explain what you have done and which value of the chaotic parameter seems to work best.}
 
-\textbf{NOTE: Up to this point, you have been using \emph{LabVIEW 2016}. It is absolutely imperative that you switch over to \emph{LabVIEW 2015}, because this version is 32 bit and can run the necessary sub VI's.}
-
-\subsection{NLSIM.VI: the simulation VI (LabVIEW 2015)}
+\subsection{NLSIM.VI: the simulation VI}
 
 Before proceeding to real-time NLD systems, you will take some time to run the simulation VI, NLSIM.VI. Open NLSIM.VI. This VI (Figure~\ref{fig:SimulationVI}) allows you to display the time-series, return-map and power spectrum of a variety of signals. As in all the VI's, press control-H and move the mouse pointer over the elements of the screen to get specific information on how to use the program.
 
@@ -550,20 +554,24 @@ Before proceeding to real-time NLD systems, you will take some time to run the s
 
 Start the VI, select the cosine function, and focus your attention to the return map. Many dynamical systems are described by a cosine function, for example the simple harmonic oscillator of a mass on a spring: $x(t) = A \cos(\sqrt{\frac{\kappa}{m}}t)$. What are the axes of the phase space of this system? What is the shape of the paths in phase space for this system? Is it similar to what you see in the return map? What effect does changing the sample rate have on the shape of the trajectory? When you increase the sample rate, why does the return map narrow around the line $y = x$? What happens if the sample rate is a multiple of the frequency of the cosine? Now try the function $\cos {(\omega_1t)} + \cos(\omega_2t) + a \cos(\omega_1t) \cos(\omega_2t)$. The return map for this function is more complicated: When $a$ is zero, it's a two-dimensional uncoupled harmonic oscillator and its trajectories are confined to a torus in phase space (c.f. Ref.~\cite{Strogatz}, \S8.6). What conditions are necessary for the return-map to show a projection of a torus and not a cycloid? Be sure to explain what you're seeing in the Time Domain and Frequency Domain. Is it chaotic?
 
+\newpage
+
 Now select the Quadratic Map function and set the parameter $r$ = 2.8. The return map should show a single point. Increase $r$ to about 3, the map will bifurcate, and you should see two points on the return map. Continuing to increase $r$ will produce successive bifurcations and finally chaos at $r$ = 3.5. One dimensional maps like this one are good analogs to \emph{Poincaré sections} and when you sample the real NLD systems synchronous to their driving forces, you will see the same behavior. So it pays to spend some time here to really figure out what's going on. Be sure to compare this map with your cobweb VI at the same value of $r$. Also look at the quadratic map's bifurcation program.
 
 \textbf{This is a Checkpoint: Take a look at the Henon Map. Play with the non-linear parameter between 0 and about 1.4. What is that funky thing in the Return Map? Look at the Henon map's bifurcation program as well. Discuss what you are thinking with a GSI or Professor.}
 
 \subsection{Continuous-time systems- PN Junction}
 
-Now we're ready to proceed to real-time continuous systems. At present there are two driven NLD systems at the experiment station: The bouncing ball circuit and the PN-junction. For both these driven systems, the basic set-up is the same: The computer controls the driving amplitude and measures the system's response. Both circuits, as well as most of the supporting electronics are located behind the large panel marked ``Nonlinear Dynamics Laboratory.'' (see Figure~\ref{fig:NonlinearDynamicsLaboratoryPanel}) Note: the Sine Input switch should be off for the PN-junction part.
-
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage115.gif}{\includegraphics[width=0.7\linewidth]{images/Nldimage115.png}}
     \caption{The Physics 111-Lab Nonlinear Dynamics Laboratory Panel.}
     \label{fig:NonlinearDynamicsLaboratoryPanel}
 \end{figure}
+
+\newpage
+
+Now we're ready to proceed to real-time continuous systems. At present there are two driven NLD systems at the experiment station: The bouncing ball circuit and the PN-junction. For both these driven systems, the basic set-up is the same: The computer controls the driving amplitude and measures the system's response. Both circuits, as well as most of the supporting electronics are located behind the large panel marked ``Nonlinear Dynamics Laboratory.'' (see Figure~\ref{fig:NonlinearDynamicsLaboratoryPanel}) Note: the Sine Input switch should be off for the PN-junction part.
 
 The drive oscillator is an Stanford Research System Model DS345. It is fed into the external reference pin $V_\text{ref}$ of the DAC on the computer. Recall from your basic electronics experience that when you set a DAC to a specific level, e.g. $j$ out of a maximum of $N$, the DAC outputs a voltage equal to $V_\text{DAC} = V_\text{ref} \frac{j}{N}$. Thus if $V_\text{ref}$ is a sine-wave varying in time, the DAC outputs a sine wave of attenuated amplitude. The computer modified sine-wave is then fed to the NLD system under study. The NLD system's response is sent to the ADC input of the computer where it can be sampled either synchronously or asynchronously with respect to the driving frequency. When sampling is performed asynchronously, an internal timebase (not shown) is used. Synchronous sampling is achieved by a ``strober,'' which sends TTL pulses to the EXTERNAL TRIGGER pin of the ADC whenever the drive signal achieves a certain phase (adjustable as ``Pulse delay'' on the NLD box) in its cycle. The sine-wave is also connected (via the square-wave converter on the NLD box) to the computer's timer pin (labeled GATE0) for computer measurement of the drive frequency.
 
@@ -601,14 +609,14 @@ Now let's include the computer. All of the connections to the computer are made 
 
 \begin{figure}[H]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NLD_DAQBOX.png}{\includegraphics[width=0.7\linewidth]{images/NLD_DAQBOX.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NLD_DAQBOX.png}{\includegraphics[width=0.5\linewidth]{images/NLD_DAQBOX.png}}
     \caption{The connections on the computer interface box.}
     \label{fig:ConnectionsOnComputerInterfaceBox}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NLD_PN_DIAGRAM.png}{\includegraphics[width=0.8\linewidth]{images/NLD_PN_DIAGRAM.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/NLD_PN_DIAGRAM.png}{\includegraphics[width=0.6\linewidth]{images/NLD_PN_DIAGRAM.png}}
     \caption{Connections for computer sampling of the PN-junction.}
     \label{fig:ConnectionsForComputerSamplingOfPNJunction}
 \end{figure}
@@ -676,7 +684,6 @@ Now we're ready to hook up the computer. Make/check the following connections, r
     \begin{minipage}{0.49\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Bouncingball.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/Bouncingball.jpg}}
     \caption{Front panel of Nldgen.vi in \\ LabVIEW 2015 for Bouncing Ball.}
-    \label{fig:ConnectionsForBouncingBallCircuitToComputer}
     \end{minipage}
 \end{figure}
 
@@ -762,25 +769,25 @@ QuadBifr.VI Calculates the bifurcation diagram for the quadratic map.
 
 \begin{figure}[H]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage140.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage140.png}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage140.gif}{\includegraphics[width=0.75\linewidth]{images/Nldimage140.png}}
     \caption{\textbf{NLDBifur}}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage138.gif}{\includegraphics[width=0.6\linewidth]{images/Nldimage138.png}}
-    \caption{\textbf{Quad Bifur} This VI permits you to explore the Bifurcation diagram of the quadratic map. You can change the parameters to reveal the fine detail at the onset of chaos.}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage139.gif}{\includegraphics[width=0.75\linewidth]{images/Nldimage139.png}}
+    \caption{\textbf{Henon Bifur}}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage139.gif}{\includegraphics[width=0.5\linewidth]{images/Nldimage139.png}}
-    \caption{\textbf{Henon Bifur}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage138.gif}{\includegraphics[width=0.8\linewidth]{images/Nldimage138.png}}
+    \caption{\textbf{Quad Bifur} This VI permits you to explore the Bifurcation diagram of the quadratic map. You can change the parameters to reveal the fine detail at the onset of chaos.}
 \end{figure}
 
 \appendix
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage141.gif}{\includegraphics[width=\linewidth]{images/Nldimage141.png}}
     \caption{Cobweb analyzer for the quadratic map. \textbf{Cobweb2.vi}}
@@ -788,7 +795,7 @@ QuadBifr.VI Calculates the bifurcation diagram for the quadratic map.
 
 \textbf{Note: The elements in the current LabView program VI do not look quite like the elements in these diagrams.}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/Nldimage142.jpg}{\includegraphics[width=\linewidth]{images/Nldimage142.jpg}}
     \caption{Liapunov exponent VI. \textbf{liapunov2.vi}}
