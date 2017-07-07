@@ -730,7 +730,7 @@ Show a GSI or professor the adjustments you have made and report your results of
 
 \subsection{Task 3: Magneto-Optical Trapping}
 
-Now that the laser is under control, we move on to the second goal of this laboratory which is to gather atoms in a MOT and measure the trap characteristics. It's now time to make that MOT. This is as easy as turning on the MOT coil power supply to output 10's of Amperes and locking the laser frequency at the proper setting, with the laser detuning $\delta = - (\text{few}) \times \Gamma $. You should monitor the inside of your vacuum chamber using either the video camera or the triggered CCD camera viewed using the ``MOT VI''. A MOT will appear as a ball of bright fluorescence produced near the center of the vacuum chamber. You might also see some fluorescence from the Rb vapor inside the vacuum chamber along the entire lengths of the laser beams.
+Now that the laser is under control, we move on to the second goal of this laboratory which is to gather atoms in a MOT and measure the trap characteristics. It's now time to make that MOT. This is as easy as turning on the MOT coil power supply to output 10's of Amperes and locking the laser frequency at the proper setting, with the laser detuning $\delta = - (\text{few}) \times \Gamma $. You should monitor the inside of your vacuum chamber using either the video camera or the triggered CCD camera viewed using the ``MOT VI'' which you can find in the C:Programs/Support folder on the computer. It should be called ``MOT - With Camera vX.vi'' where ``X'' is the latest version number (currently the full name is MOT - With Camera v6.8\_modified20150317.vi). A MOT will appear as a ball of bright fluorescence produced near the center of the vacuum chamber. You might also see some fluorescence from the Rb vapor inside the vacuum chamber along the entire lengths of the laser beams.
 
 If you don't see a MOT, several things could be wrong, of which the following is just a subset:
 
@@ -742,6 +742,8 @@ If you don't see a MOT, several things could be wrong, of which the following is
     \item The laser beams may be misaligned. A good starting point for their alignment is to use two proper mirrors (think before you tweak) to have each beam centered in its respective vacuum window, both at the entry to and exit from the vacuum chamber. The reflected beams should be aligned by the single retro-mirror -- you might use the backside of an iris to get this reflection alignment right. To see the beam, use the IR viewing card or the IR viewer.
 
     \item The balance of power between the MOT beams may be off. Start with roughly equal intensities in the three beams.
+
+\newpage
 
     \item The polarization of the beams may be incorrect. The quarter wave plates at the entrance to the vacuum chamber should nominally be set to give you the proper normalization. You might tweak these one at a time to see if you can fix things, but keep track of what you're doing. If you suspect the system's totally out of whack, ask the teaching staff to help out. [NOTE: As of April 13, 2010, the following settings of the rotatable quarter wave plates should give the proper circular polarization for a MOT: X-axis, rotation stage at 20 with numbers facing the incident beam; Y-axis, rotation stage at 268 with numbers facing the incident beam; Z-axis, rotation stage at 0 with numbers facing up]
 
@@ -782,7 +784,7 @@ Show a GSI or professor you have produced the MOT in the chamber, and explain th
 
 \subsubsection{Using the MOT Software}
 
-The data acquisition for MOT utilizes two different programs, one of which controls the hardware and the other which records images from the Guppy camera and analyzes data. Now is a good time to become familiar with the ``MOT VI'' which you can find in the C:Programs/Support folder on the computer. It should be called ``MOT - With Camera vX.vi'' where ``X'' is the latest version number (currently 6.3). This VI controls three functions:
+The data acquisition for MOT utilizes two different programs, one of which controls the hardware and the other which records images from the Guppy camera and analyzes data. Now is a good time to become familiar with the ``MOT VI'' which you can find in the C:Programs/Support folder on the computer. It should be called ``MOT - With Camera vX.vi'' where ``X'' is the latest version number (currently MOT - With Camera v6.8\_modified20150317.vi). This VI controls three functions:
 
 \paragraph{The MOT VI}
 
