@@ -3,8 +3,12 @@ import subprocess
 import sys
 
 LABS = ['AFM', 'ATM', 'CO2', 'MNO', 'MOT', 'NMR', 'OPT', 'QIE', 'BMC', 'OTZ',
-    'COM', 'MUO', 'GMA', 'BRA', 'RUT', 'HAL', 'LLS', 'NLD', 'JOS', 'SHE', 'AFM_Signatures', 'ATM_Signatures', 'ATM_Signatures', 'CO2_Signatures', 'MNO', 'MOT', 'NMR', 'OPT', 'QIE', 'BMC', 'OTZ',
-    'COM_Signatures', 'MUO_Signatures', 'GMA_Signatures', 'BRA_Signatures', 'RUT_Signatures', 'HAL_Signatures', 'LLS_Signatures', 'NLD_Signatures', 'JOS_Signatures', 'SHE_Signatures']
+    'COM', 'MUO', 'GMA', 'BRA', 'RUT', 'HAL', 'LLS', 'NLD', 'JOS', 'SHE',
+    'AFM_Signatures', 'ATM_Signatures', 'ATM_Signatures', 'CO2_Signatures',
+    'MNO_Signatures', 'MOT_Signatures', 'NMR_Signatures', 'OPT_Signatures', 
+    'QIE_Signatures', 'BMC_Signatures', 'OTZ_Signatures', 'COM_Signatures', 
+    'MUO_Signatures', 'GMA_Signatures', 'BRA_Signatures', 'RUT_Signatures', 
+    'HAL_Signatures', 'LLS_Signatures', 'NLD_Signatures', 'JOS_Signatures', 'SHE_Signatures']
 
 SITE = '0bc915fe-2126-4798-9621-fdf6aa78ed57'
 
