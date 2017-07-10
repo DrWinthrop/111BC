@@ -34,6 +34,7 @@
 \newcommand*{\@labacronym}{\texttt{\string\labacronym} currently not set.}
 \newcommand*{\labtitle}[1]{\gdef\@labtitle{#1}}
 \newcommand*{\@labtitle}{\texttt{\string\labtitle} currently not set.}
+\newcommand{\checkpoint}[2]{\href{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}{\textbf{Checkpoint }}\textbf{\underline{#1:}}\textbf{ #2}}
 \renewcommand*{\maketitle}{\newpage
     \begin{center}
     {\LARGE \@labacronym\ - \@labtitle} \par \vspace{.5em}

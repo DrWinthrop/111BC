@@ -275,8 +275,10 @@ You should locate all of the equipment before starting the experiment.
     \item To manually scan place the speed knob in between any two speeds positions before turning the manual scan knob. To change the speed control knob, first pull it out and then turn it. DO NOT FORCE IT and \textbf{do not scan below} a counter reading of 00000 or above 80000.
 
     \item Read about the function and operation of the photomultiplier tube (PMT) in any text on radiation detection and measurement. (See, for example, Knoll Chapter 9 \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/Knoll-Radiation\%20Detection\%20&\%20Measurement/01-Radiation\_Detection\_and\_Measurement\_CH\_09.pdf}{\textbf{[2]}} and [\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/GMA/RCA\%20PMT.pdf}{\textbf{RCA PMT Manual}}].
- \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:
-	Point out the location of the diffraction grating inside of the monochromator. Disengage the speed knob. Scan automatically and manually. Within what values must the wavelength reading remain? Show your drawings of the Hydrogen and Mercury spectra and point out the relevant transitions.}
+    
+    \checkpoint{Preparation}{Point out the location of the diffraction grating inside of the monochromator. Disengage the speed knob. Scan automatically and manually. Within what values must the wavelength reading remain? Show your drawings of the Hydrogen and Mercury spectra and point out the relevant transitions.}
+ % \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off:
+%	Point out the location of the diffraction grating inside of the monochromator. Disengage the speed knob. Scan automatically and manually. Within what values must the wavelength reading remain? Show your drawings of the Hydrogen and Mercury spectra and point out the relevant transitions.}
 
 \end{enumerate}
 
@@ -293,8 +295,7 @@ It's time to get started. Pro-tip: check out the photos at the beginning of the 
     
     \item Optimizing the mercury lamp: now that we've checked out that the line is decently focused, we're going to use the electronics to optimize it. Switch the PMT knob to the ``s position.'' This sends the light into the PMT. By twisting around the wave knob, you should be able to find a peak on the spectrum (it will register on the scope). Now wiggle around the mercury lamp, trying to get the signal on the scope bigger. Now that you have managed to get peaks, you need to narrow the peak. Adjust the appropriate parameters until the peak's signal is sharply peaked (i.e. we the signal to die off quickly for nearby wavelengths).
     
-    \textbf{Checkpoint: Make sure you can do the following/answer the following questions
-    before calling over your GSI or Professor to sign you off: Manually scan and find a peak. Show the width of the peak by scanning the nearby wavelengths (remember backlash!). What steps have you taken to get a sharp peak?}
+    \checkpoint{Peak Finding}{Manually scan and find a peak.  Show the width of the peak by scanning the nearby wavelengths (remember backlash!).  What steps have you taken to get a sharp peak?}
     
     \item Using LABVIEW:
     Go into the C drive, open Support, then click through until you get to Chart Builder HP 3478A.exe. We can use this program to scan over the different frequencies and measure the results. The monochromator has a mechanical scanning capability, but LABVIEW cannot control it. Thus, you have to sync up the monochromator's scanning with the program. Start at a wavelength below the bright blue line that you know and love. Set the speed control knob to a value of your choosing (not too fast, not too slow). Before starting the program, make sure that the scale value in the program matches the speed control knob setting. Also, make sure that the initial counter readings of both the program and the monochromator are in agreement. Now you must start the program at the same time that you snap the monochromator's automated scanning on. That way the values of the program are coordinated with the actual machine. As the program runs, you should be able to see distinct peaks appear at the appropriate frequencies (check the Spectrum of Mercury, below). We want a narrow linewidth. I got mine to be around 5 angstroms for the 443nm line. If they're too wide, play around with the setup and try and improve the reading.
@@ -361,16 +362,16 @@ Think before you do anything, because some errors are so small that they are ins
 
 \subsection{Additional Questions: Balmer Series}
 
-\textbf{Checkpoint: Discuss the following questions and answers with a GSI.}
+\checkpoint{Additional Questions}{Discuss the following questions and answers with a GSI:}
 
+    \begin{enumerate}
 
-\begin{enumerate}
+       \item \textbf{What elements in the equipment set the upper and lower limits in the wavelengths that can be observed? What are these limits?}
 
-    \item What elements in the equipment set the upper and lower limits in the wavelengths that can be observed? What are these limits?
+       \item \textbf{Calculate the dispersion and resolution of the spectrometer when it is used to observe the first order at a wavelength of 546.1 nm (mercury green line). The parameters of the spectrometer are given in the manufacturer's manual. Compare the calculated values with what you obtain experimentally.}
 
-    \item Calculate the dispersion and resolution of the spectrometer when it is used to observe the first order at a wavelength of 546.1 nm (mercury green line). The parameters of the spectrometer are given in the manufacturer's manual. Compare the calculated values with what you obtain experimentally.
+    \end{enumerate} 
 
-\end{enumerate}
 
 \section{Zeeman Effect}
 
@@ -446,13 +447,17 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
 
     \item Set up the optical system shown above on the rail closest to the edge of the table, leaving out the red filter for now. Adjust the lens until you get a crisp image from the camera. Make sure that the lamp cooling air is on and watch the lamp carefully; if it gets too hot, it will melt. The image might be very dim, as well as blocked by the magnets. Move the lens wherever you need to to get as much light as possible going through the interferometer.
     
-    \textbf{Checkpoint: Show the produced image to a GSI.}
+    \checkpoint{Zeeman Picture}{Show the produced image to a GSI}
+    
+%    \textbf{Checkpoint: Show the produced image to a GSI.}
 
     \item Observe, record, and explain what happens when you do the following, using your eye instead of the camera image: move the position of the lens; tilt the F-P plates; raise and lower the interferometer. Now with the camera in place: change the position of the camera; shift the camera sideways.
 
     \item Put in the red glass filter; adjust the system until the fringes are sharp. Turn on the magnetic field. To control it, use the LAMBDA DC POWER SUPPLY. Turn the OUTPUT VOLTAGE VDC knob to zero, and the CURRENT LIMITER IDC knob to 2 Amps. Turn on the power supply. Increase the VDC control until you see the fringes start to split. If the lamp flickers or goes out, increase the voltage on the transformer. Can you explain why this happens? The lamp is just a tube filled with He gas, and electrons are accelerated through the tube by an electric field from the high voltage. As they travel through the tube, they collide with He atoms, and excite them. When these de-excite, they emit the characteristic He lines. Now what happens when we add a transverse magnetic field? Rotate the polarizer and note the behavior of the lines. Don't be discouraged if you see fuzzy fringes and bizarre behavior. With a little experience your skill will improve until you can produce and see the proper Zeeman effects.
 
-    \item \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off: Produce Zeeman splitting by varying the field strength. Explain why the lamp dies when a high enough field is applied. Rotate the polarizer until only the sigma components are observed; increase the field strength until the fringes show equal spacings between the rings. What fraction of an order did the magnetic field shift the frequencies of the Zeeman components of the line? [1/2, 1/3, 1/4, or ?. We take one order to be the spacing between two unsplit lines -- no magnetic field.] Repeat several times, so you can make some estimate of the error in your measurements. Measure the magnetic field strength with the gaussmeter. The He discharge tube is mounted on a track so that you can slide it back out of the center region of the magnet and position the meter probe where the tube usually sits.}
+    %\item \textbf{Checkpoint: Make sure you can do the following/answer the following questions before calling over your GSI or Professor to sign you off: Produce Zeeman splitting by varying the field strength. Explain why the lamp dies when a high enough field is applied. Rotate the polarizer until only the sigma components are observed; increase the field strength until the fringes show equal spacings between the rings. What fraction of an order did the magnetic field shift the frequencies of the Zeeman components of the line? [1/2, 1/3, 1/4, or ?. We take one order to be the spacing between two unsplit lines -- no magnetic field.] Repeat several times, so you can make some estimate of the error in your measurements. Measure the magnetic field strength with the gaussmeter. The He discharge tube is mounted on a track so that you can slide it back out of the center region of the magnet and position the meter probe where the tube usually sits.}
+    
+    \checkpoint{Zeeman Splitting}{Produce Zeeman splitting by varying the field strength. Explain why the lamp dies when a high enough field is applied. Rotate the polarizer until only the sigma components are observed; increase the field strength until the fringes show equal spacings between the rings. What fraction of an order did the magnetic field shift the frequencies of the Zeeman components of the line? [1/2, 1/3, 1/4, or ?. We take one order to be the spacing between two unsplit lines -- no magnetic field.] Repeat several times, so you can make some estimate of the error in your measurements. Measure the magnetic field strength with the gaussmeter. The He discharge tube is mounted on a track so that you can slide it back out of the center region of the magnet and position the meter probe where the tube usually sits.}
 
     \begin{itemize}
         \item \emph{Before taking any readings with the 5180 gaussmeter,}
