@@ -2,7 +2,7 @@ import os
 import subprocess
 import sys
 
-LABS = ['AFM', 'ATM', 'CO2', 'MNO', 'MOT', 'NMR', 'OPT', 'QIE', 'BMC', 'OTZ',
+LABS = ['AFM', 'ATM', 'ATM_Signatures', 'CO2', 'MNO', 'MOT', 'NMR', 'OPT', 'QIE', 'BMC', 'OTZ',
     'COM', 'MUO', 'GMA', 'BRA', 'RUT', 'HAL', 'LLS', 'NLD', 'JOS', 'SHE']
 
 SITE = '0bc915fe-2126-4798-9621-fdf6aa78ed57'
