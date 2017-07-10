@@ -46,34 +46,38 @@
 \newcommand{\normal}{\fontsize{12pt}}
 
 \newcommand{\names}
-{
-\\ \\ \\ \\ 
-Student's Name $\rule{5.6cm}{0.15mm}$ Partner's Name $\rule{5.6cm}{0.15mm}$ \\ 
+{  
+Student's Name $\rule{5.6cm}{0.15mm}$ Partner's Name $\rule{5.6cm}{0.15mm}$ 
+\\[12pt]
 }
 
 \newcommand{\prelab}
 {
-\textbf{Pre-Lab Discussion Questions} \\
+\textbf{Pre-Lab Discussion Questions} 
+\\[12pt]
 It is your responsibility to discuss this lab with an instructor before your first day of your scheduled lab period. This signed sheet must be included as the first page of your report. Without it you will lose grade points. You should be prepared to discuss at least the following before you come to lab:
 }
 
 \newcommand{\prelabsignatures}
 {
-\\ \\ \\ \\ \\ \\
-Staff Signature $\rule{8cm}{0.15mm}$ Date $\rule{5cm}{0.15mm}$ \\ \\
-Completed before the first day of lab? (Circle one)  Yes / No \\ \\
+Staff Signature $\rule{8cm}{0.15mm}$ Date $\rule{5cm}{0.15mm}$ 
+\\[24pt] 
+Completed before the first day of lab? (Circle one)  Yes / No 
+\\[12pt]
 }
 
 \newcommand{\midlab}
 {
-\textbf{Mid-Lab Discussion Questions}
+\textbf{Mid-Lab Discussion Questions
+\\[12pt]}
 }
 
 \newcommand{\midlabsignatures}[1]
 {
-\\ \\ \\
-Staff Signature $\rule{8cm}{0.15mm}$ Date $\rule{5cm}{0.15mm}$ \\ \\
-Completed before day #1 of lab? (Circle one)  Yes / No \\
+Staff Signature $\rule{8cm}{0.15mm}$ Date $\rule{5cm}{0.15mm}$ 
+\\[24pt] 
+Completed before day #1 of lab? (Circle one)  Yes / No 
+\\[12pt]
 }
 
 \newcommand{\checkpointsection}
@@ -83,9 +87,10 @@ Completed before day #1 of lab? (Circle one)  Yes / No \\
 
 \newcommand{\checkp}[1]
 {
-\underline{#1} \\
-\\
-\\ \\
-Staff Signature $\rule{8cm}{0.15mm}$ \\
+\underline{#1}
+\\[24pt]
+
+Staff Signature $\rule{8cm}{0.15mm}$ 
+\\[12pt]
 }
 
