@@ -97,6 +97,14 @@ Completed by day #1 of lab? (Circle one)  Yes / No
 \\[12pt]
 }
 
+\newcommand{\midlabsignaturesLLS}
+{
+Staff Signature $\rule{8cm}{0.15mm}$ Date $\rule{5cm}{0.15mm}$ 
+\\[24pt] 
+Completed before proceeding with Experiment X? (Circle one)  Yes / No 
+\\[12pt]
+}
+
 \newcommand{\checkpointsection}
 {
 \textbf{Checkpoint Signatures}
