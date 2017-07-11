@@ -61,7 +61,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \section{Before the 1st Day of Lab and SOP for Beta Ray}
 
-\signatures \hyperlink{}{1} \hyperlink{}{1} \hyperlink{}{1} \hyperlink{}{1} \hyperlink{}{1} 
+\signatures \hyperlink{LabView}{1} \hyperlink{Scope Image}{2} \hyperlink{Statistical Fluctuations}{3} \hyperlink{Hysteresis}{4} \hyperlink{Combined Fermi-Kurie Plot}{5} 
 
 \begin{enumerate}
     \item \emph{\textbf{Note: In order to view the private Youtube videos hosted by the university, you must be signed into your berkeley.edu Google account.}} \\
@@ -256,7 +256,9 @@ A Photomultiplier tube is a photon detector that converts single photons into la
 
 First read and get familiar with the LabView Beta Ray Computer Program  \cite{Siegbahn} which describe the operation of the computerized data-acquisition program that communicates with the DAQ card and controls data taking. The current is supplied to the magnet by a DC power supply in series with a current DVM meter through the relay circuits which can only be set to a particular value with this computer program.
 
-\textbf{Checkpoint: Describe the various components of the LabView program to a GSI and explain how data is collected and what will be measured.}
+\checkpoint{LabView}{Describe the various components of the LabView program to a GSI and explain how data is collected and what will be measured.}
+
+%\textbf{Checkpoint: Describe the various components of the LabView program to a GSI and explain how data is collected and what will be measured.}
 
 \subsection{Set the signal and discriminator levels}
 
@@ -271,7 +273,9 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 
     \item You should see something similar to Figure \ref{fig:Signal1}. In this case, most of the low voltage noise signals are passing through the discriminator and registering as counts on the computer. Now, by slowly increasing the LL (Lower Level) setting, you should be able to obtain an output similar to Figure \ref{fig:Signal2}. In this picture the lower line and a few of the lower voltage pulses beneath the brightest pulse have been eliminated. This effectively eliminates most of the PMT noise as well as some of the lower momentum pulses.
     
-    \textbf{Checkpoint: Call a GSI over and show them the image on the scope. Explain what it is that you're seeing.}
+    \checkpoint{Scope Image}{Call a GSI over and show them the image on the scope. Explain what it is that you're seeing.}
+    
+   % \textbf{Checkpoint: Call a GSI over and show them the image on the scope. Explain what it is that you're seeing.}
 
     \item The object is to set the LL high enough to eliminate small-amplitude PMT noise while preserving as much of the low-momentum data as you can.
 
@@ -302,8 +306,10 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 \begin{enumerate}
     \item Using the Integrate Single Bin program acquire 50 or 60 observations each, at one second per integration, for two bins with greatly different count-rates. Save the observations in a file, and use them to calculate the means and standard deviations for the two channels. How do they compare to counting statistics?
 
-    \item For one bin (one single setting of coil-current), observe the change in fluctuation as you change integration times in a range from 1 to 30 seconds. 
-    \textbf{Checkpoint: Based on the lowest count-rate of all channels, for how long should you integrate each channel of your spectrum to achieve a better than 1\% error due to statistical factors?}
+    \item For one bin (one single setting of coil-current), observe the change in fluctuation as you change integration times in a range from 1 to 30 seconds.
+    
+    \checkpoint{Statistical Fluctuations}{Based on the lowest count-rate of all channels, for how long should you integrate each channel of your spectrum to achieve a better than 1\% error due to statistical factors?}
+    %\textbf{Checkpoint: Based on the lowest count-rate of all channels, for how long should you integrate each channel of your spectrum to achieve a better than 1\% error due to statistical factors?}
 \end{enumerate}
 
 \subsection{Observe the effect of hysteresis}
@@ -313,7 +319,9 @@ First read and get familiar with the LabView Beta Ray Computer Program  \cite{Si
 
     \item Take a quick complete spectrum (Bins 0-2000 by 100; 2000-2500 by 5; 2500-4000 by 100; 2 seconds/bin). Observe the shift in the k-peak between the two directions of current. Using the knowledge that the k-peak always occurs at a given magnetic induction (not at a given current), convince yourself that the observed shift in the spectrum between current up and current down is in the correct direction.
     
-    \textbf{Checkpoint: Show a GSI this shifting and explain why it demonstrates hysteresis and why it shifts in the direction it does.}
+    \checkpoint{Hysteresis}{Show a GSI this shifting and explain why it demonstrates hysteresis and why it shifts in the direction it does.}
+    
+    %\textbf{Checkpoint: Show a GSI this shifting and explain why it demonstrates hysteresis and why it shifts in the direction it does.}
 
 \end{enumerate}
 
@@ -685,7 +693,9 @@ You should repeat the steps above to get the low-energy component and the low-en
 
 Your combined graphs should be like Figure \ref{fig:Combined}:
 
-\textbf{Checkpoint: Show your combined graph to a GSI.}
+\checkpoint{Combined Fermi-Kurie Plot}{Show your combined graph to a GSI.}
+
+%\textbf{Checkpoint: Show your combined graph to a GSI.}
 
 Reduce your data by following the numbered steps listed below, but first read Ref. 1 for detailed explanations of how beta-ray spectra are analyzed. Also read about data analysis.
 
