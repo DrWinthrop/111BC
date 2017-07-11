@@ -1,0 +1,79 @@
+\documentclass{../signatures}
+\labacronym{BMC}
+\labtitle{Brownian Motion in Cells}
+
+\begin{document}
+
+\maketitle
+
+\names
+
+\prelab
+
+\begin{enumerate}
+
+    \item What are the masses of the various nanoparticles you will be observing in the lab? How many molecules are in a single particle? What is the uncertainty in these numbers? Data sheets for the nanoparticles are available on the \ExpReprints.
+    
+    \item We assume that particles in the fluid are in the non-inertial regime. What statistical assumption does that allow us to make? 
+
+    \item Consider a 1-d random walk of N steps, where the probability of moving left equals the probability of moving right at each step. This allows us to define a random variable X  which represents the final displacement of the walker (its location after N steps). Calculate: $\langle X \rangle$ and $\langle X^2\rangle$ To do this, write $X=\sum_{1}^{N} S_i $, where $S_i$ is an indicator on the ith step (explicitly, $S_i=-1$ if the ith step was to the left, and $S_i=1$ if the ith step was to the right). Keep in mind the $S_i$ are independent when calculating $\langle X^2\rangle$.
+       \\[36pt]
+\end{enumerate}
+
+\prelabsignatures
+
+\textbf{Questions to Complete on the First Day of Lab}
+
+These questions can be answered after you read through the \href{http://experimentationlab.berkeley.edu/node/83}{\textbf{Simulating Brownian Motion}}. Make sure to copy and execute the scripts on the computer's MATLAB as you read so that you can understand the program structure and the different variable names. If you take your time and just work slowly through the page, these questions should be straightforward. 
+
+\begin{enumerate}
+
+\item Using the microscope, you will observe a minimum of two different-size particles in at least four solvents with different viscosity. Choose the conditions you plan to observe and simulate them in Matlab. (You should choose at least one particle with 1 μm in size or larger and one smaller.) Plot the Displacement Squared for the different diffusion coefficients on the same graph (see the Hold command used in the write-up).
+
+\item Use your simulated data to calculate the diffusion coefficient, D in each case. Explain how you arrived at your answer. 
+
+\item What is the uncertainty of your estimation of D? How does it vary with the number of simulated data points? Explain your strategy for making observations in the lab. What additional sources of error (these are significant) will come in to play? How will you account for them? Keep these scripts. When analyzing your data you can create artificial data sets on which to test your analysis techniques. 
+\\[36pt]
+\end{enumerate}
+
+\midlabsignatures{1}
+
+\midlab
+
+On day 2 of this lab, you should have completed the following. Show them to an instructor and ask for a signature.
+
+\begin{enumerate}
+
+    \item Using a slide with a combination of 10 μm and 0.44 μm polystyrene spheres, show how to set up Köhler illumination.
+    
+    \item How many nanometers per pixel are captured at 10x, 20x, and 40x magnification?
+    
+    \item Draw a diagram to show dark-field illumination. Explain how it is possible to see 40 nm objects with visible light (400-750 nm wavelengths).
+    
+    \item Set up dark-field illumination.
+\\[36pt]
+\end{enumerate}
+
+\midlabsignatures{2}
+
+\begin{enumerate}
+
+\item By day 3 of this lab, you should have collected some particle tracks and made several movies. Show one of the particle tracks to an instructor. What value of D did you obtain from the track? How close is this to the theoretical value? You can do this either with the BMC application or with the Matlab scripts. Show and explain your averaging and centroiding code. How do they work? 
+\\[36pt]
+\end{enumerate}
+
+\midlabsignatures{3}
+
+\checkpointsection 
+
+\begin{enumerate}
+
+\item \checkp{Dark-Field Illumination}
+
+\item \checkp{Data Analysis Additional Questions}
+
+\item \checkp{Cellular Motion Additional Questions}
+
+\end{enumerate}
+
+\end{document}
