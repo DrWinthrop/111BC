@@ -123,7 +123,7 @@ Thank you to Professor Roger Falcone for his ideas of this experiment. This expe
 
 \section{Before the 1st Day of Lab}
 
-\signatures \hyperlink{}{1} \hyperlink{}{2} \hyperlink{}{3} \hyperlink{}{4} \hyperlink{}{5} 
+\signatures \hyperlink{Fourier Components}{1} \hyperlink{Slope/Oct and Time Constant}{2} \hyperlink{1/f Noise}{3} \hyperlink{Capacitive Noise}{4} \hyperlink{Experiment Nine}{5} 
 
 \begin{enumerate}
     \item \emph{\textbf{Note: In order to view the private Youtube videos hosted by the university, you must be signed into your berkeley.edu Google account.}}\\
@@ -550,8 +550,7 @@ This experiment is very similar to the previous one. In order for you to get a f
 
 The manual goes on to say that the SR830 locked to angular frequency $\omega$ will ``...single out the first component''. The measured signal will be 1.273sin[$\omega t$], not the 2$V_\text{pp}$ that you'd measure on a scope. \textbf{What voltage do you expect the SR830 to display? Does it?} Again you may be off by a few millivolts or so. The root to this problem is probably the ``50$\Omega$'' terminator resistor. If it's not 50$\Omega$, the desired output of the function generator will not be what is input to the Lock-In. The setup basically acts like a voltage divider: the function generator has 50$\Omega$ in it, and adjusts its output voltage to terminate into 50$\Omega$. So the larger the terminating resistance, the larger the input voltage to the Lock-In. If you remove the terminator entirely, the input voltage will be nearly twice what it should (the input impedance of the Lock-In is much greater than 50$\Omega$). Experiment with different terminators. The ones in back may range anywhere from about 52$\Omega$ to 81$\Omega$.
 
-
-\textbf{This is a Checkpoint: Call over a GSI and explain the difference between the $V_\text{pp}$ and the $V_\text{p}$ when dealing with the Fourier components of the square wave, why does the voltage value appear larger on the Lock-in when moving from a sine wave to a square wave of the same amplitude (Hint: Try looking up the Fourier decomposition of a square wave and the amplitude of the first component). Next, explain why the voltage of the SRS is a few millivolts off its desired value. }
+\checkpoint{Fourier Components}{Explain the difference between the $V_\text{pp}$ and the $V_\text{p}$ when dealing with the Fourier components of the square wave, why does the voltage value appear larger on the Lock-in when moving from a sine wave to a square wave of the same amplitude (Hint: Try looking up the Fourier decomposition of a square wave and the amplitude of the first component). Next, explain why the voltage of the SRS is a few millivolts off its desired value.}
 
 \subsection{Experiment III}
 
@@ -637,7 +636,7 @@ This is basically an extension to Experiment III. You're going to determine how 
 
 \end{enumerate}
 
-\textbf{This is a Checkpoint: Call over a Professor or GSI and explain where the pattern in the effective time constant is coming from. What do changes in the value of slope/oct and time constant do towards your measurement? Is the data an accurate representation of how the amplitude of input signal was changing?}
+\checkpoint{Slope/Oct and Time Constant}{Explain where the pattern in the effective time constant is coming from. What do changes in the value of slope/oct and time constant do towards your measurement? Is the data an accurate representation of how the amplitude of input signal was changing?}
 
 \section{The SR570 Low-Noise Current Preamplifier}
 
@@ -763,8 +762,7 @@ This experiment is mostly qualitative. You're basically going look at the 1/$f$ 
 
 \end{enumerate}
 
-
-\textbf{This is a Checkpoint: Call over a GSI or Professor and explain what you know of 1/f noise and its origins. Why does it diverge at 0 Hz. Does the sample you took follow a 1/f spectrum? Where does the 60 Hz noise come from (source)? What does changing the span do to our signal? (Think about the sampling time, rate and span in relation to each other) How can you get a better resolution to figure out a more accurate answer of the next question. At what frequency range does flicker noise seem to dominate? Where does it disappear relative to the noise floor (the background noise at high frequencies)? What is happening here? }
+\checkpoint{1/f Noise}{Explain what you know of 1/f noise and its origins. Why does it diverge at 0 Hz. Does the sample you took follow a 1/f spectrum? Where does the 60 Hz noise come from (source)? What does changing the span do to our signal? (Think about the sampling time, rate and span in relation to each other) How can you get a better resolution to figure out a more accurate answer of the next question. At what frequency range does flicker noise seem to dominate? Where does it disappear relative to the noise floor (the background noise at high frequencies)? What is happening here?}
 
 \section{Capacitive Coupling Noise}
 
@@ -853,8 +851,8 @@ Is this a large capacitance? Keep in mind that the capacitance of one foot of RG
 
 \end{enumerate}
 
-
-\textbf{This is a Checkpoint: Compare the magnitudes of the peaks in units of volts (not dBV). Explain why coiling the wire reduces the noise, why shielding the cable reduces it some more, and why grounding the shield reduces it even further.}\\
+\checkpoint{Capacitive Noise}{Compare the magnitudes of the peaks in units of volts (not dBV). Explain why coiling the wire reduces the noise, why shielding the cable reduces it some more, and why grounding the shield reduces it even further.}
+\\
 Now you see why sensitive experiments are usually locked up in a Faraday Cage. Other common ways to eliminate Capacitive noise include:
 
 \begin{itemize}
@@ -1098,7 +1096,7 @@ In this experiment, you will use the SR830 Lock-In to measure Johnson noise and 
 
 \end{enumerate}
 
-\textbf{This is a Checkpoint: Call over a Professor or GSI and discuss what you have learned from the different noises surrounding this experiment. Compile all your data and plot them.  How well do they agree with theory (remember to calculate $\triangle f$ using the ENBW specified on page 3-11 of the SR830 manual)? What would you expect for such a crude experiment? Remember to account for the Lock-In input noise: $V_\text{Tot, noise}^2 = V_J^2 + V_\text{Input}^2$.}
+\checkpoint{Experiment Nine}{Discuss what you have learned from the different noises surrounding this experiment. Compile all your data and plot them. How well do they agree with theory (remember to calculate $\triangle f$ using the ENBW specified on page 3-11 of the SR830 manual)? What would you expect for such a crude experiment? Remember to account for the Lock-In input noise: $V_\text{Tot, noise}^2 = V_J^2 + V_\text{Input}^2$.}
 
 \subsubsection{General comments about getting low-noise signals}
 
