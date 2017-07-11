@@ -42,8 +42,13 @@
     \end{center}
     \vspace{1.5em}
 }
-\newcommand{\heading}{\fontsize{20pt}}
-\newcommand{\normal}{\fontsize{12pt}}
+\newcommand{\AdvancedLabSyllabus}{http://experimentationlab.berkeley.edu/syllabus}
+\newcommand{\MailDonOrlando}{mailto:phylabs@berkeley.edu}
+\newcommand{\ErrorAnalysisVideo}{https://www.youtube.com/watch?v=jR54387Wd6c}
+\newcommand{\ErrorAnalysisNotes}{http://experimentationlab.berkeley.edu/EAX}
+\newcommand{\ExperimentEvaluation}{http://experimentationlab.berkeley.edu/StudentEvaluation}
+\newcommand{\LabReprints}{\href{http://physics111.lib.berkeley.edu/Physics111/}}
+\newcommand{\ExpReprints}{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/\@labacronym/\@labacronym\_index.html}{\textbf{\@labacronym}\textbf{ Reprints}}}
 
 \newcommand{\names}
 {  
@@ -76,7 +81,7 @@ Completed before the first day of lab? (Circle one)  Yes / No
 {
 Staff Signature $\rule{8cm}{0.15mm}$ Date $\rule{5cm}{0.15mm}$ 
 \\[24pt] 
-Completed before day #1 of lab? (Circle one)  Yes / No 
+Completed by day #1 of lab? (Circle one)  Yes / No 
 \\[12pt]
 }
 
