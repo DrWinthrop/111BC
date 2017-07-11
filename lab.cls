@@ -9,6 +9,7 @@
 \RequirePackage[nottoc]{tocbibind}     % Add references to TOC
 \RequirePackage{hyperref}              % Hyperlinks
 \RequirePackage{amsmath}
+\RequirePackage{blindtext}
 \hypersetup{
     colorlinks=true,
     urlcolor=blue,
@@ -38,11 +39,11 @@
 
 \newcommand*{\@labtitle}{\texttt{\string\labtitle} currently not set.}
 
-\newcommand{\checkpoint}[2]{\href{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}{\textbf{Checkpoint }}\textbf{\underline{#1:}}\textbf{ #2}}
+\newcommand{\checkpoint}[2]{\href{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}{\textbf{Checkpoint }} \hypertarget{#1}{\textbf{\underline{#1:}}}\hyperlink{Signatures}{$^\uparrow$} \textbf{ #2}}
 
 \newcommand{\sig}{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}
 
-\newcommand{\signatures}{\textbf{Complete the \textbf{\@labacronym} Pre Lab found in the \href{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}{\textbf{Signature Sheet}} for this lab. Print the signature sheet, discuss the experiment and pre-lab questions and answers with any faculty member or GSI, and receive their signature. In the course of the lab there will be examination points where you must STOP and get a GSI or professor to verify your understanding and/or verify proper experimental setup. You cannot skip these checkpoints, and must receive signatures demonstrating that you've consulted the staff. Some experiments may have mid lab questions that must be completed by specific days of the experiment. The completed \href{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}{\textbf{Signature Sheet}} MUST be submitted as the first page of your lab report.}}
+\newcommand{\signatures}{\textbf{\hypertarget{Signatures}{Complete} the \textbf{\@labacronym} Pre Lab found in the \href{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}{\textbf{Signature Sheet}} for this lab. Print the signature sheet, discuss the experiment and pre-lab questions and answers with any faculty member or GSI, and receive their signature. In the course of the lab there will be examination points where you must STOP and get a GSI or professor to verify your understanding and/or verify proper experimental setup. You cannot skip these checkpoints, and must receive signatures demonstrating that you've consulted the staff. Some experiments may have mid lab questions that must be completed by specific days of the experiment. The completed \href{http://experimentationlab.berkeley.edu/sites/default/files/writeups/\@labacronym_Signatures.pdf}{\textbf{Signature Sheet}} MUST be submitted as the first page of your lab report. Quick links to the checkpoint questions are found here: }}
 
 \renewcommand*{\maketitle}{\newpage
     \begin{center}

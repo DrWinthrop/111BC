@@ -71,6 +71,18 @@ Completed before the first day of lab? (Circle one)  Yes / No
 \\[12pt]
 }
 
+\newcommand{\gmasafty}
+{
+\textbf{WATCH THE GAMMA RAY AND THE RADIATION SAFETY VIDEOS} 
+\\[12pt]
+You must watch the Radiation Safety video, sign the Office of Radiation Safety form, and get a Radiation Ring before you use the apparatus in this experiment.
+\\[12pt]
+Ring $\rule{1.5cm}{0.15mm}$ Issued (Date and Signed) $\rule{2.5cm}{0.15mm}$ Returned (Date and Signed) $\rule{2.5cm}{0.15mm}$
+\\[12pt]
+Your Report will not be accepted until you have turned in your ring.
+\\[12pt]
+}
+
 \newcommand{\midlab}
 {
 \textbf{Mid-Lab Discussion Questions
