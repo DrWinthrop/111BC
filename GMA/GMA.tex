@@ -111,11 +111,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
     \item Now complete the Radiation Safety Training \href{http://experimentationlab.berkeley.edu/RadiationSafety}{\textbf{Radiation\_Safety}} \textbf{After completion of Training turn in all forms to Don Orlando.}
 
-    \item \signatures \hyperlink{Variable High Voltage Supply}{ 1}  \hyperlink{Change of Pulses}{ 2} \hyperlink{Parameters}{ 3} \hyperlink{Attenuation and Recognition of the Back-Scatter and Compton Edge Signals}{ 4} \hyperlink{Intensity Formula}{ 5}
-    
-    \item Complete the \href{http://experimentationlab.berkeley.edu/GMAPreLab}{\textbf{GMA Pre Lab and Evaluation}} sheets. Print, fill it out, then turn  in your answers with the report. The Pre-Lab must be printed separately. Discuss the experiment and pre-lab questions with any faculty member or GSI and get it signed off by that faculty member or GSI. Turn in the signed pre-lab sheet with your lab report.
-
-    \item \textbf{Check points} \emph{are examination points that are placed in this lab where you must STOP and call a GSI or professor to make sure you understand what's expected. There could  be multiple check points throughout your lab so make sure you don't skip them since there is a \href{http://experimentationlab.berkeley.edu/gmacheckpoints}{\textbf{sign off sheet}} that must be turned in with your lab report.}
+    \item \signatures \hyperlink{Variable High Voltage Supply}{ 1}  \hyperlink{Change of Pulses}{ 2} \hyperlink{Parameters}{ 3} \hyperlink{Back-Scatter and Compton Edge Signals}{ 4} \hyperlink{Intensity Formula}{ 5}
 
     \item View the \href{http://youtu.be/jR54387Wd6c}{\textbf{Introduction to Error Analysis video}} and \href{http://experimentationlab.berkeley.edu/EAX}{\textbf{\textbf{Error Analysis Notes}}}.
 
@@ -318,8 +314,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
             \label{fig:350px-CO-60_Spectrum}
         \end{figure}
 
-    Parameters
-    For a given radioactive sample (in a bottle) what are  some things that can produce a change in coherent time producing a spread of the peak with a finite width in the Pulse Height analyzer? (You should be thinking about what's going on in the bottle)
+    \checkpoint{Change of Pulses}{For a given radioactive sample (in a bottle) what are  some things that can produce a change in coherent time producing a spread of the peak with a finite width in the Pulse Height analyzer? (You should be thinking about what's going on in the bottle)}
+    
 
         \item The other adjustments you should experiment with are the LLD on the Control Tab in the program: this sets the Lower Level Discriminator so that the PHA will ignore pulses with amplitudes below the setting. This way the system doesn't spend its time with unwanted pulses like low-level noise. To set it properly look at the Soft Scope program display. Setting the LLD too low will allow the program to trigger on noise, and overload the program. Set the LLD at a reasonable level that is above the noise level, but below the level of the physical processes that you are interested in. You may find that you still have some noise causing your spectrum to look distorted and this could be due to a couple of factors. Try thinking about the PMT and what are some of the variables that can contribute to non-linearity in it (this should hint you on what should be adjusted).
 
@@ -380,8 +376,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
 
         \item Also compute the 180$^\circ$ back-scatter and Compton edge energies of the gamma ray(s) for each source, and compare to the observed spectra. See the book by Knoll for a description of what the plot should look like.
         
-        \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
-        How can you attenuate the signals of back-scatter and Compton edge gamma ray(s)? Describe how you recognize them from the graph.
+        \checkpoint{Back-Scatter and Compton Edge Signals}{How can you attenuate the signals of back-scatter and Compton edge gamma ray(s)? Describe how you recognize them from the graph.}
+        
 
         \item Use the computer connected to the apparatus to obtain the data and plots of all of your spectra. There is a built-in timer in the equipment. Once your spectra are available on the computer, you may use Matlab to perform background subtraction and peak-fitting.
 
@@ -393,8 +389,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
 
     \item Compute the absolute intensity of the $^{137}$Cs source using the published values of the NaI efficiency. The NaI crystal must not be near or enclosed by lead shielding for this measurement. Subtract the background. To reduce background, support the source with a low-mass stand. Use $I_\textrm{measured} = I_\textrm{absolute} (n(E)\frac{\Delta\Omega}{4\pi})$ where $n(E)$ is the intrinsic efficiency and the quantity in brackets (the product of $n$ and the solid angle) is given in the NaI Crystal Information for a distance of $d$ = 30 cm.
     
-    \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
-    Interpret the aforementioned intensity formula and explain how the distance \emph{d} as well as the size of detector matter when you take measurement.
+    \checkpoint{Intensity Formula}{Interpret the aforementioned intensity formula and explain how the distance \emph{d} as well as the size of detector matter when you take measurement.}
+    
 
     \begin{figure}[h]
         \centering
