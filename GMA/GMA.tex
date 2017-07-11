@@ -111,6 +111,8 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
     \item Now complete the Radiation Safety Training \href{http://experimentationlab.berkeley.edu/RadiationSafety}{\textbf{Radiation\_Safety}} \textbf{After completion of Training turn in all forms to Don Orlando.}
 
+    \item \signatures \hyperlink{Variable High Voltage Supply}{ 1}  \hyperlink{Change of Pulses}{ 2} \hyperlink{Parameters}{ 3} \hyperlink{Attenuation and Recognition of the Back-Scatter and Compton Edge Signals}{ 4} \hyperlink{Intensity Formula}{ 5}
+    
     \item Complete the \href{http://experimentationlab.berkeley.edu/GMAPreLab}{\textbf{GMA Pre Lab and Evaluation}} sheets. Print, fill it out, then turn  in your answers with the report. The Pre-Lab must be printed separately. Discuss the experiment and pre-lab questions with any faculty member or GSI and get it signed off by that faculty member or GSI. Turn in the signed pre-lab sheet with your lab report.
 
     \item \textbf{Check points} \emph{are examination points that are placed in this lab where you must STOP and call a GSI or professor to make sure you understand what's expected. There could  be multiple check points throughout your lab so make sure you don't skip them since there is a \href{http://experimentationlab.berkeley.edu/gmacheckpoints}{\textbf{sign off sheet}} that must be turned in with your lab report.}
@@ -316,7 +318,7 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
             \label{fig:350px-CO-60_Spectrum}
         \end{figure}
 
-    \emph{\textbf{This is a checkpoint and a great time to stop and think about the physics at play. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}} \\
+    Parameters
     For a given radioactive sample (in a bottle) what are  some things that can produce a change in coherent time producing a spread of the peak with a finite width in the Pulse Height analyzer? (You should be thinking about what's going on in the bottle)
 
         \item The other adjustments you should experiment with are the LLD on the Control Tab in the program: this sets the Lower Level Discriminator so that the PHA will ignore pulses with amplitudes below the setting. This way the system doesn't spend its time with unwanted pulses like low-level noise. To set it properly look at the Soft Scope program display. Setting the LLD too low will allow the program to trigger on noise, and overload the program. Set the LLD at a reasonable level that is above the noise level, but below the level of the physical processes that you are interested in. You may find that you still have some noise causing your spectrum to look distorted and this could be due to a couple of factors. Try thinking about the PMT and what are some of the variables that can contribute to non-linearity in it (this should hint you on what should be adjusted).
@@ -369,8 +371,8 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
 
     \item Also look at the effects of varying the repetition rate of the Pulse Gen: do the counts under the peak increase as you expect? As you increase the repetition rate, you may begin to see a phenomenon called pileup. This is when a pulse comes along before the electronics have finished processing the previous pulse. The lesson to learn here is that if you place the source too close to the NaI detector, your spectrum will be skewed due to pile up.
     
-    \emph{\textbf{This is a checkpoint and a great time to stop and think about the devices you have learned in this experiment. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}\\
-    Show your knowledge of several parameters you have set. How do their affect the output data? For example, what is the role of the fine gain, and coarse gain and how do them affect the shape and position of the PHA plot (Counts vs. Energy)?
+    \checkpoint{Parameters}{Show your knowledge of several parameters you have set. How do their affect the output data? For example, what is the role of the fine gain, and coarse gain and how do them affect the shape and position of the PHA plot (Counts vs. Energy)?}
+    
 
     \item Choose a high voltage somewhere near the middle of the range and an amp gain setting in the linear region such that you are utilizing the full scale of the PHA; that is, the highest energy gamma ray (which comes not from the $^{137}$Cs but from the $^{22}$Na source) should appear near the end of your spectrum, not in the middle. Then obtain a spectrum for each source listed above (2-5 minute runs each).
     \begin{enumerate}
