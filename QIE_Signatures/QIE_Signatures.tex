@@ -1,6 +1,6 @@
 \documentclass{../signatures}
-\labacronym{ATM}
-\labtitle{Atomic Physics}
+\labacronym{QIE}
+\labtitle{Quantum Interference \& Entanglement}
 
 \begin{document}
 
@@ -8,61 +8,65 @@
 
 \names
 
+\textbf{Before the Lab}
+\\[12pt]
+Before using the apparatus in this experiment, you must complete training in the safe use of lasers detailed on the \href{http://experimentationlab.berkeley.edu/lasersafety}{\textbf{Laser Safety Training}}. This includes readings, watching a video, taking a Laser Quiz, and filling out a Laser Training Certificate form. You must turn in the completed forms into the 111 Lab Staff before you start the experiment.
+\\[32pt]
 \prelab
 
 \begin{enumerate}
 
-    \item Draw an energy level diagram for hydrogen. Show the transitions that produce the Balmer series. What is the formula that gives the wavelengths of these lines for the simple Bohr hydrogen atom? How does the derivation of the energy levels in the Bohr model differ from the quantum mechanical methods?
+    \item What is the significance of an observation of a violation of a Bell inequality? What does it mean for the validity of Quantum Mechanics as well as for the character of possible alternative theories?
     
-    \item Write the following atomic state's abbreviation in "full spectroscopic notation" (the notation for states written in the \emph{n,l,j,m$_j$} basis, described in the first instructional video). This \href{http://www.physics.byu.edu/faculty/bergeson/physics571/notes/L27spectnotation.pdf}{\textbf{article}} provides a good overview of the notation, in case you need a refresher. A hydrogen atom is in the n=3, l=2 state. Note that there are 2 possible values for J. 
+    \item A half-wave plate is a slice of birefringent crystal that allows incident light whose polarization is perpendicular to some preferred axis (the optical axis) to pass through unchanged but delays by 180 degrees, i.e., changes the sign of, light whose polarization is parallel to the optical axis. Given this, what is the output polarization of a half-wave plate whose optical axis forms an angle θ with the polarization axes of the incident light? If you wish to change horizontally polarized light into light that is in an equal superposition of horizontal and vertical polarizations - that is, polarized at 45 degrees relative to the horizontal - at what angle should you set your waveplate?
 
-    \item Draw an energy level diagram for helium. Show the transitions that produce the red and yellow lines. Note the differences in the structure and splitting between the energy levels for hydrogen and helium.
+    \item Say along each entangled photon path, we have the following optical elements, listed in the order the photon will encounter them: a half-wave plate, a horizontal polarizer, and a detector.
+    \begin{enumerate}
+      \item{Four standard measurements we use to see what state our light is in are N(0,0), N(0,90), N(45,45), and N(90,90), where N($\alpha$,$\beta$) is the number of coincidences with the two detector wave plates set to rotate photon polarizations by α and β. Note that these are not the actual waveplate settings. (See previous question.) Assuming a perfect Bell state and zero phase difference between the vertical and horizontal downconverted photons, i.e. $|\psi\rangle=(1/\sqrt{2})(|hh\rangle + |vv\rangle)$, what values do we expect to see at each of these polarizations, if we know the system is generating 1000 downconverted photon pairs per second? Show the instructor code to calculate the expectation values for arbitrary angles, it will be useful later to analyse the data on the fly.}
+      \item{Of course, the real use of these measurements is when our downconverted photons are not in the ideal entangled case. Let's look at two important cases of this. Suppose that our first half waveplate is slightly off from its correct value, and as a result our down-converted pairs are more likely to be horizontally polarized than vertically polarized. For example, instead of being in the state $|\psi\rangle=(1/\sqrt{2})(|hh\rangle + |vv\rangle)$, they are now in the state $|\psi\rangle= (\sqrt{3}/2) |hh\rangle + (1/2) |vv\rangle$. How do we expect each of these measurements to change?}
+      \item{Now suppose that our setup is producing vertically and horizontally downconverted photons in equal numbers again, but they are no longer entangled-that is, it is emitting light that is a 50–50 mix of horizontally polarized photon pairs and vertically polarized photon pairs. What would you now expect from each of these measurements? This is what we could observe if our experiment followed a local hidden variable theory.}
+      \item{Now suppose that our setup is producing a pure entangled (Bell) state again, but that there is a phase difference between the horizontal and vertical components of the state. Now what do we expect from each of these measurements? This is why we have an angled birefringent plate in the 405nm beam path, to compensate for the space between the two BBO crystals.}
+    \end{enumerate}
 
-    \item Draw an energy level diagram illustrating the Zeeman effect for the red line of helium. When a 1 Tesla magnetic field is applied to helium, what happens to the energy levels and transitions that produce the red line of helium?
+    \item Our coincidence counting works in the following manner: each time a photon hits one detector, the FPGA waits 5ns afterwards to see if a photon hits any other detector. Of course, there are some background counts on each detector due to ambient light, and every now and then two of those counts will come close enough together to register a ``false'' coincidence. Determine the expected rate of these false coincidences in terms of the rate of counts on each detector and the coincidence time window. If each detector gets 10000 background counts per second, what rate of background coincidences do you expect for a 5-ns coincidence window? How does this scale if you double the amount of background light (which doubles the count rates on each detector)?
 
-    \item What gives a spectral line a non-zero width? Estimate the line width for the first Balmer series. Assume that the pressure inside the tube is 5 torr and the temperature 600K, and that the lifetimes of the states are about 10ns.
+    \item What is the statistical error on the number of counts on each detector? How about the statistical error on the number coincidences?
 
-    \item Draw a sketch of the diffraction grating spectrometer showing the placement of the optical elements and the path and focusing of a light beam as it goes from the source through the spectrometer and to the film or photomultiplier. Explain how the grating works. Calculate a representative value for the resolving power of the grating.
+    \item Suppose that as you start to perform your experiment, two of your friends come crashing into the room to see what you are doing, one through each wall (like the Kool-Aid Man) at a speed of .9999c (in opposite directions) when they enter. Unfazed, you explain the experiment and how it works, but once you start to describe how the wave function collapses when measured, one of your friends cuts you off.
+    \\``That's all fine,'' he says, ``but there's just one thing: I saw you running those photon pairs as I arrived,'' - he's quite a talented fellow - ``and the photons going to detector A were always about 19 ns delayed from the ones going to detector B. So it was the measurement of those photons that collapsed the entangled state, right?''\\
+    Before you can answer, your other friend jumps in: ``You mean the ones going to detector B were delayed, right?'' she asks, puzzled. ``That's what I saw.''\\
+    How do you reconcile what your friends saw? What implications does this have for how entanglement works?
 
-    \item Is the photomultiplier output current proportional to the number of incident photons, independent of wavelength? If not, how does the output depend on wavelength?
-
-    \item Draw a sketch of the Fabry-Perot interferometer showing the placement of the optical elements and the path of a light beam as it goes from the source through the interferometer and through the telescope. Calculate the resolving power of the interferometer. Why is it necessary to use the interferometer instead of the grating for observing the Zeeman Effect?
-       \\[36pt]
+    \item Explain which practices you will follow while setting up and disassembling the optics as well as with the fibers (\href{http://experimentationlab.berkeley.edu/OpticsTutorial}{\textbf{Optics Tutorial}}). In particular, show the instructor how you will plug a fiber into or unplug from a connector.
+    \\[32pt]
 \end{enumerate}
 
 \prelabsignatures
 
 \midlab
-
+By day 3 or 4 of this lab, you should have successfully aligned the laser and produced a well tuned Bell state.
 \begin{enumerate}
-
-    \item On day 3 of this lab, you should have successfully produced a plot of the Balmer-series lines, and made an estimate of the Rydberg constant. Show them to an instructor and ask for a signature. 
-\\[36pt]
+    \item Record and report your half-wave plate calibrations.
+    \item Create a graph that shows the purity of your Bell state and show it to a GSI for a signature. Also, show your quantified bell state (coefficients $C_1$,$C_2$, and phase $\phi$). 
+    \item Which pairs of half-wave plate angles will you use for your measurement of $S$? Why are these the best values to use for your entangled state? Make sure you have math to back you up. 
+    \item Please measure the output power of the laser diode after the optical Isolator and show and tell the professor or GSI. Document this number.
+\\[32pt]
 \end{enumerate}
 
-\midlabsignatures{3}
+\midlabsignatures{4}
 
+\checkpointsection
 \begin{enumerate}
 
-\item On day 5 of this lab, you should have successfully observed the Zeeman splitting of the helium lines and estimated a value for the Bohr magneton. Demonstrate this to an instructor and ask for a signature.
-\\[36pt]
-\end{enumerate}
+\item \checkp{Violet Beam Path}
 
-\midlabsignatures{5}
+\item \checkp{Angle}
 
-\checkpointsection 
+\item \checkp{Infrared Beam Path}
 
-\begin{enumerate}
+\item \checkp{Arbitrary Offset}
 
-\item \checkp{Preparation}
-
-\item \checkp{Peak Finding}
-
-\item \checkp{Additional Questions}
-
-\item \checkp{Zeeman Picture}
-
-\item \checkp{Zeeman Splitting}
+\item \checkp{$C_1$,$C_2$, and $\phi$}
 
 \end{enumerate}
 
