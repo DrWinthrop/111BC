@@ -116,7 +116,7 @@ D. Budker, D. Orlando, V. Yashchuk
 \section{Before the 1st Day of Lab}
 \label{sec:BeforeFirstDay}
 
-\signatures \hyperlink{}{1} \hyperlink{}{2} \hyperlink{}{3} \hyperlink{}{4} \hyperlink{}{5} 
+\signatures \hyperlink{Optical Setup}{1} \hyperlink{Laser Beam Shape and Size}{2} \hyperlink{Frequency Range Scan}{3} \hyperlink{Vapor Cell}{4} \hyperlink{Earth's Magnetic Field}{5} 
 
 \begin{enumerate}
 
@@ -262,7 +262,9 @@ The optical set up for this experiment is fairly simple. The laser beam coming f
 
 The first beam splitter (BS-1 as labeled in Figure \ref{fig:DiagramOfOpticalSetup}) is used to split the incoming laser beam into two beams. One of the beams will be used for the Fabry-Perot spectrum analyzer. The other beam will be split by BS-2 and BS-3 to be used in Laser induced fluorescence and Doppler-free saturation spectroscopy. Finally, the laser beam coming out of BS-3 will be split again by BS-4 for the magneto-optical part of the experiment. The optical setup of each individual part of the experiment will be discussed in greater detail in the procedure section. Roughly speaking, the laser beam coming out of the BS-1 for the Fabry-Perot part of the experiment passes through the Diaphragm Iris and goes into the Fabry-Perot spectrum analyzer. The output of the spectrum analyzer is connected to the photodiode sensor (PD-4). The laser beam coming from BS-2 for the laser-induced fluorescence and Doppler-free saturation spectroscopy part of the experiment passes through the optical chopper and then through the center of a Rubidium cell. A second beam coming from BS-3 is reflected by a mirror, M1 as shown in Figure \ref{fig:DiagramOfOpticalSetup}. The reflected beam also passes through the rubidium cell but in the opposite direction. This beam is then reflected by another mirror, M2, and is sent to a photodiode sensor, PD-3. Another photodiode sensor, PD-5 is placed next to a rubidium cell as shown in Figure \ref{fig:DiagramOfOpticalSetup}. Finally, in the magneto-optical part of the experiment, the laser beam coming from BS-4 is passed through two polarizers. It is then passed through another rubidium cell that is placed inside magnetic coils (the cell with coils is shielded). The laser beam exits the rubidium cell and enters the polarimeter (PBS) that splits the beam into two. The two beams enter two photodiode sensors, PD-1 and PD-2. On the side of the shielded cell with coils is located another photodiode, PD-6.
 
-\emph{\textbf{Check Point: Follow the path of the laser and explain the various components of the optical setup. Where is the magneto-optical part of the experiment, the rubidium cell that is placed inside shielded magnetic coils?}}
+\checkpoint{Optical Setup}{Follow the path of the laser and explain the various components of the optical setup. Where is the magneto-optical part of the experiment, the rubidium cell that is placed inside shielded magnetic coils?}
+
+%\emph{\textbf{Check Point: Follow the path of the laser and explain the various components of the optical setup. Where is the magneto-optical part of the experiment, the rubidium cell that is placed inside shielded magnetic coils?}}
 
 \begin{figure}[h]
     \centering
@@ -355,8 +357,10 @@ In this part, you will learn to operate the diode laser, familiarize yourself wi
     \item Checking for stray beams is done by using the IR Viewer and a white piece of paper or business card. If the IR Viewer is not in the room, ask a staff person to locate it. The IR viewer is blue in color and you use it with your goggles on. Using the paper card follow all of the beam paths through the Magneto Optical setup section (see Figure \ref{fig:DiagramOfOpticalSetup}). Note if the beam strays from its intended path. It should go through the lenses, beam splitters, and reflect from mirrors, but should NOT hit or reflect off of anything else (including the mounts) on the optical table. This laser beam is hazardous to your eyes if they are unprotected as you cannot see the laser light. Keep the goggles on at all times for your safety.
     
     \item To view the beams during the experiment (goggles on) use the IR visualization card, or the night vision viewer and a piece of paper. You can observe where the beam is going without actually blocking it by using a piece of \emph{lens paper} and the night vision viewer. This is especially helpful around mirrors or other tight spots.
+
+\checkpoint{Laser Beam Shape and Size}{What is the shape and size of the laser beam? Why is it elongated in one direction? By observing the beam size at different distances from the laser, roughly estimate the angular divergence of the beam. Is it close to being diffraction limited (meaning the minimum divergence with a given beam cross-section, sine theta $\sim$ wavelength/beam diameter?}
     
-\emph{\textbf{Check Point: What is the shape and size of the laser beam? Why is it elongated in one direction? By observing the beam size at different distances from the laser, roughly estimate the angular divergence of the beam. Is it close to being diffraction limited (meaning the minimum divergence with a given beam cross-section, sine theta $\sim$ wavelength/beam diameter)}}?
+%\emph{\textbf{Check Point: What is the shape and size of the laser beam? Why is it elongated in one direction? By observing the beam size at different distances from the laser, roughly estimate the angular divergence of the beam. Is it close to being diffraction limited (meaning the minimum divergence with a given beam cross-section, sine theta $\sim$ wavelength/beam diameter)}}?
 
     As shown on the diagram of the optical set-up (Figure \ref{fig:DiagramOfOpticalSetup}), small fractions of the laser beam are split with beam splitters mounted on adjustable mirror mounts. The first beam splitter directs laser light through a scanning confocal Fabry-Perot interferometer. Reprints for this lab contain a technical memo on Fabry-Perot interferometry written by Burleigh Instruments - a commercial manufacturer of F-P spectrum analyzers. In this experiment, we use a homemade F-P.
     
@@ -411,7 +415,9 @@ Once the F-P interferometer is aligned and the laser is working correctly, take 
 
 The laser's frequency as a function of control voltage may not be a perfectly linear relationship. It should be sufficient to average these voltage intervals to come up with a conversion factor in units of Volts per 1.5 GHz which can be inverted to convert to the desired units of GHz/V. If this linear approximation of frequency as a function of voltage is not accurate enough, one can derive a quadratic expression for frequency as a function of voltage, however this is probably unnecessary.
 
-\emph{\textbf{Check Point: Show the professor or GSI the voltage vs. frequency plot corresponding to the frequency range scan. What is the voltage to frequency conversion factor?}} 
+\checkpoint{Frequency Range Scan}{Show the professor or GSI the voltage vs. frequency plot corresponding to the frequency range scan. What is the voltage to frequency conversion factor?}
+
+%\emph{\textbf{Check Point: Show the professor or GSI the voltage vs. frequency plot corresponding to the frequency range scan. What is the voltage to frequency conversion factor?}} 
 
 \textbf{Important: When using the 1:10 zoom resistor the voltage to frequency conversion factor is different. To determine the new conversion factor repeat the process above with the zoom resistor connected. With the resistor you will need to scan at least 5 V p-p in order to fit two FP spikes on one scan.} Note: The zoom resistor may not be necessary with the new daq cards (as of summer 2013), try zooming in with the scan settings.
 
@@ -470,7 +476,9 @@ On this picture, the AI 0 (ACH0) trace shows the transmission spectrum of the F-
 
 \end{itemize}
 
-\emph{\textbf{Check Point: Describe what you see in the vapor cell and explain these observations.}}
+\checkpoint{Vapor Cell}{Describe what you see in the vapor cell and explain these observations.}
+
+% \emph{\textbf{Check Point: Describe what you see in the vapor cell and explain these observations.}}
 
 \subsection{Part 3: Doppler-free saturation spectroscopy}
 
@@ -501,7 +509,9 @@ Now do a regular (non-zoomed) scan over all the peaks and note the voltages at e
 
 In this part of the lab, you will use a laser polarimeter to investigate the resonant Faraday effect in Rb vapor. The Faraday effect is the rotation of the direction of polarization of linearly polarized light as it passes through a medium that has a magnetic field applied parallel to the direction of light propagation. In this experiment, we use light reflected from the beam splitter BS-4 (). This light first goes through two pieces of Polaroid film. These are used as a variable attenuator to adjust the light power (Both pieces of film are set on one mount. One piece is free to rotate and the other is fixed. Rotating the movable piece changes the amount of light that gets through.) Next, the beam goes through a precision prism polarizer and through a Rb vapor cell installed inside the magnetic shield. Note that we have in the laboratory equipment box several different cells with different isotopic compositions. The one inside the shield is likely to contain pure 85Rb, rather than an isotopic mixture. Verify the isotopic composition by comparing the spectra from this cell with those from the cell outside the shields, which contains a natural isotopic mixture. A magnet coil is installed inside the inner shield. This set-up is used to shield the lab magnetic field and to produce a well-controlled field along the axis of the chamber. Next, the light beam is split by a polarizing beam splitter (PBS) also known as polarimeter. The two resulting beams fall onto photodiodes (PD-1 and PD-2) which detect their power. To adjust the angle of the PBS mount, there is a course knob on the bottom of the dial, and a fine knob on the top. A good value to start with is to align the left number 260 with the 0 reference on the right. This might need adjusting to optimize signal, but it is a good starting point. This part is very delicate, ask for an instructor if you need help.
 
-\emph{\textbf{Check Point: Estimate the value of the residual magnetic field at the vapor cell due to the Earth's and building's magnetic field.}}
+\checkpoint{Earth's Magnetic Field}{Estimate the value of the residual magnetic field at the vapor cell due to the Earth's and building's magnetic field.}
+
+% \emph{\textbf{Check Point: Estimate the value of the residual magnetic field at the vapor cell due to the Earth's and building's magnetic field.}}
 
 \newpage
 
