@@ -74,7 +74,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \section{Before the first day of Lab}
 
-\signatures \hyperlink{}{1} \hyperlink{}{2} \hyperlink{}{3} \hyperlink{}{4} \hyperlink{}{5} 
+\signatures \hyperlink{DS345 Preparation}{ 1} \hyperlink{Resonance Conditions and Symmetry}{  2} \hyperlink{Error Analysis Methods}{  3}
 
 \begin{enumerate}
     \item \emph{\textbf{Note: In order to view the private Youtube videos hosted by the university, you must be signed into your berkeley.edu Google account.}}\\
@@ -274,7 +274,9 @@ Taking data for this experiment is more straightforward than for any other lab i
     \item Now try frequency modulation. Note that you can't set the span to twice the carrier frequency or more (the DS345 has trouble making oscillations with zero or negative frequencies). Try different modulation waveforms; look at sine, triangle and ramp modulations. Again, start with the oscilloscope in the linear, time sweep mode. The X-Y mode can also be revealing if you keep in mind what the modulation output represents. (As with AM, in FM, the modulation output gives a 0-5 V representation of the modulation function. Again, zero volts corresponds to the minimum frequency [the carrier frequency minus half the span] and 5 volts corresponds to the maximum frequency [the carrier frequency plus half the span], and so forth.) You should now have familiarized with the DS345 enough for this experiment.
 \end{itemize}
 
-\noindent\textbf{\textcolor{red}{This is a Checkpoint: Once you feel you are familiar with the DS345, call over a GSI or Professor and explain what you will be using it for in this lab and show them you are capable of navigating the device.}}
+\checkpoint{DS345 Preparation}{This is a Checkpoint: Once you feel you are familiar with the DS345, call over a GSI or Professor and explain what you will be using it for in this lab and show them you are capable of navigating the device.}
+
+%\noindent\textbf{\textcolor{red}{This is a Checkpoint: Once you feel you are familiar with the DS345, call over a GSI or Professor and explain what you will be using it for in this lab and show them you are capable of navigating the device.}}
 
 \begin{figure}[ht]
     \begin{subfigure}[b]{0.5\linewidth}
@@ -353,9 +355,12 @@ As explained in the introduction video, modulating the magnetic field of the Hel
 
 Familiarize yourself with the Coil Driver panel: The PHASE ADJUST control on Coil Driver panel changes the phase of the modulation signal seen by the scope (the Phase Out signal) relative to the modulation signal that the rubidium sample experiences (which is the actual modulation in the coil current that changes the phase of the photo-detected signal). Connect the Phase out signal to Ch 1 (X) of the oscilloscope and the amplified photodetector signal to Ch 2 (Y). With the scope in Dual Trace Mode (Both Channels), trigger on EXT/Line Source (60 Hz PG\&E power line) and set the time scale to around 2 msec/DIV. You may have to adjust the trigger Level knob to get a stable trace. Now change the phase with the Adjust knob: the modulation signal (Ch. 1) moves because we are changing its phase relative to the 60 Hz line signal that we are triggering on the oscilloscope. Seeing as the oscilloscope is powered by a 60 Hz signal and the detected signal is an effect caused by the rubidium bulb, the Adjust knob does not change the phase of the signal that the sample sees. It is simply a visual effect experienced by the electronics of the system. 
 
-After swapping the modulation output from the function generator with the modulation output from the Helmholtz coils (phase out), put the scope in X-Y mode. You should now see the detected signal (Ch. 2) displayed on the y-axis versus the field modulation signal (Ch. 1) on the x-axis. \\
+After swapping the modulation output from the function generator with the modulation output from the Helmholtz coils (phase out), put the scope in X-Y mode. You should now see the detected signal (Ch. 2) displayed on the y-axis versus the field modulation signal (Ch. 1) on the x-axis. 
+\\
 
-\noindent\textbf{\textcolor{red}{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}
+\checkpoint{Resonance Conditions and Symmetry}{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}
+
+%\noindent\textbf{\textcolor{red}{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}
 
 \textbf{\textcolor{red}{How you can tell when you have found the resonance condition in this mode? Should there be any symmetry? If so, how should it be symmetrical? Along what axis should the symmetry be found? It is up to you to determine which of the modes (Time Trace or X-Y) gives a more precise determination of the resonance condition-you might consider using both. Try them for repeatability. Discuss your reasoning with the GSI. These values will all be useful when you are estimate your errors using each method.}}
 
@@ -378,8 +383,11 @@ After swapping the modulation output from the function generator with the modula
     \begin{itemize}
         \item How sensitive are your resonance measurements to changing these variables? Record the qualitative behavior, and explain it. You should also get a quantitative estimate of the statistical error in you measurement technique; try making several independent measurements of the resonance frequency and see how they vary (See the \href{\ErrorAnalysisNotes}{\textbf{Error Analysis Notes}} for further discussion of errors). Are there any possible sources of systematic error? You may want to check that the field is properly aligned; find the field direction meter (vertical compass) and place it close to the center of the Helmholtz coils. See what happens to the magnetized ``needle'' when you reverse the current or turn off the power supply. You should also get a sense of what effects 60 cycle pick up might have on your measurements.
 
-        \item \textbf{\textcolor{red}{This is a checkpoint: Derive a method for determining this error with your lab partner utilizing the Error Analysis Notes. Discuss this method with a GSI Before Taking Data.  You should get a representative sample that at least includes both isotopes (the isotopes have different intensities, so one might expect different error values.)}}
+        %\item \textbf{\textcolor{red}{This is a checkpoint: Derive a method for determining this error with your lab partner utilizing the Error Analysis Notes. Discuss this method with a GSI Before Taking Data.  You should get a representative sample that at least includes both isotopes (the isotopes have different intensities, so one might expect different error values.)}}
     \end{itemize}
+    
+    \checkpoint{Error Analysis Methods}{Derive a method for determining this error with your lab partner utilizing the Error Analysis Notes. Discuss this method with a GSI Before Taking Data.  You should get a representative sample that includes both isotopes (the isotopes have different intensities, so one might expect different error values.)}
+    
     \item Turn off the RF generator, and vary the current while looking for a resonance. The field should be on with reverse polarity. Set the field modulation to 100. Set the oscilloscope for a linear internal sweep in the x-direction. The resonance should be found around 0.08 A. (This is known as the Zero Field Resonance.)
     \item Measure the pumping time at resonance with a square wave amplitude modulation. Apply a DC Current of 1 Amp to the Helmholtz coils and apply the resonance frequency for the more abundant isotope through the RF coils. The PRE-AMP should run to Ch.2 and the modulation output from the function generator to Ch.1. Once the temperature is within optimal range turn off the heater. Apply an AM signal through the signal generator so that the gas reaches equilibrium before each shift in RF amplitude. Measure the rate of change in the signal height when the RF is gated on or off (that is, when the modulation signal goes from low to high or from high to low). Look for the time it takes for the signal to change by 1/e. Which corresponds to the pumping time and which to the relaxation time?
     
