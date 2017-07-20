@@ -142,7 +142,7 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \section{Before The 1st Day of Lab}
 
-\signatures \hyperlink{}{1} \hyperlink{}{2} \hyperlink{}{3} \hyperlink{}{4} \hyperlink{}{5} 
+\signatures \hyperlink{Trapping a Single Bead}{ 1} \hyperlink{Sensitivity vs Laser Power Plot}{ 2} \hyperlink{Sensitivities From Alpha Values}{ 3} \hyperlink{Stiffness Values}{ 4} \hyperlink{Focus Questions}{ 5} \hyperlink{Two Sets of Questions}{ 6}
 
 \begin{enumerate}
     \item Complete the training in the safe use of lasers detailed on the \href{http://experimentationlab.berkeley.edu/LaserSafety}{\textbf{Laser Safety Training}} page. This includes readings, watching a video, taking a quiz, and filling out a form.
@@ -667,7 +667,9 @@ The data can now be retrieved from the Data matrix. This code will work for both
 
 Ideally, you will now be able to work much of the analysis required in this experiment into several Matlab scripts, while still retaining an understanding of the processes involved in the analysis.
 
-\textbf{This is a Checkpoint: Call over a GSI or Professor and show them that you have successfully focused an image of the silica solution and that you are properly trapping a single bead. Also show that you have centered the QPD around zero on the graph display.}
+\checkpoint{Trapping a Single Bead}{Call over a GSI or Professor and show them that you have successfully focused an image of the silica solution and that you are properly trapping a single bead. Also show that you have centered the QPD around zero on the graph display.}
+
+%\textbf{This is a Checkpoint: Call over a GSI or Professor and show them that you have successfully focused an image of the silica solution and that you are properly trapping a single bead. Also show that you have centered the QPD around zero on the graph display.}
 
 \section{Part I. Calibration of the Optical Trap}
 
@@ -784,8 +786,9 @@ Once you have determined the start and end indices for the linear range of the s
 
 Once you have calculated the sensitivities for all four power levels in X and Y, plot them versus laser power in Matlab.
 
+\checkpoint{Sensitivity vs Laser Power Plot}{Call over a GSI or Professor and show them the plot you have made of sensitivity vs laser power for X and Y. Explain how the sensitivities varies with power and what is happening.}
 
-\textbf{This is a Checkpoint: Call over a GSI or Professor and show them the plot you have made of sensitivity vs laser power for X and Y. Explain how the sensitivities varies with power and what is happening.}
+%\textbf{This is a Checkpoint: Call over a GSI or Professor and show them the plot you have made of sensitivity vs laser power for X and Y. Explain how the sensitivities varies with power and what is happening.}
 
 \subsubsection{Power Spectrum Method (Position and Stiffness)}
 
@@ -844,7 +847,9 @@ again where $\beta$ = $3\pi\eta d$  is the drag, $\eta = 8.90 \times 10^{-4}$ Pa
 
 Finally, you will want to graph $\rho_x$, $\rho_y$, $k_x$, and $k_x$ versus laser power, and fit a line to each of them to determine their dependence on laser power. You may consider averaging the values you obtained from each bead first.
 
-\textbf{This is a Checkpoint: Call over a GSI or Professor and show them your graphs of $\rho_x$ , $\rho_y$, $k_x$, $k_y$ versus laser power as well as your solutions for $x$ and $y$ sensitivities from the alpha values $a_x, a_y$.}
+\checkpoint{Sensitivities From Alpha Values}{Call over a GSI or Professor and show them your graphs of $\rho_x$ , $\rho_y$, $k_x$, $k_y$ versus laser power as well as your solutions for $x$ and $y$ sensitivities from the alpha values $a_x, a_y$.}
+
+%\textbf{This is a Checkpoint: Call over a GSI or Professor and show them your graphs of $\rho_x$ , $\rho_y$, $k_x$, $k_y$ versus laser power as well as your solutions for $x$ and $y$ sensitivities from the alpha values $a_x, a_y$.}
 
 \subsubsection{Equipartition Method (for Stiffness)}
 
@@ -865,7 +870,11 @@ Here we will use the program \href{http://experimentationlab.berkeley.edu/sites/
 \begin{verbatim}
     [Kx,Ky] = equipartition(x_sensvspwr, y_sensvspwr, data1, pwr1, data2, pwr2, ...)
 \end{verbatim}
-\textbf{This is a Checkpoint: Call over a GSI or Professor, show them your values for stiffness and discuss your answers to the following questions:}
+
+\checkpoint{Stiffness Values}{Call over a GSI or Professor, show them your values for stiffness and discuss your answers to the following questions:}
+
+%\textbf{This is a Checkpoint: Call over a GSI or Professor, show them your values for stiffness and discuss your answers to the following questions:}
+
 \begin{itemize}
     \item \emph{Why might there be a difference in $k_x$ and $k_y$}?
 
@@ -950,7 +959,9 @@ Some suggestions you might try:
 
 \end{enumerate}
 
-\textbf{This is a Checkpoint: Choose one or two questions to focus on and collect sufficient data to be able to quantify your results and provide error bars and/or statistical tests for your hypotheses. Call over a GSI or Professor and discuss which two topics you will examine and the methods you will use to answer the questions.}
+\checkpoint{Focus Questions}{Choose one or two questions to focus on and collect sufficient data to be able to quantify your results and provide error bars and/or statistical tests for your hypotheses. Call over a GSI or Professor and discuss which two topics you will examine and the methods you will use to answer the questions.}
+
+%\textbf{This is a Checkpoint: Choose one or two questions to focus on and collect sufficient data to be able to quantify your results and provide error bars and/or statistical tests for your hypotheses. Call over a GSI or Professor and discuss which two topics you will examine and the methods you will use to answer the questions.}
 
 \subsection{Methods}
 
@@ -1149,8 +1160,9 @@ Here are some ideas you could try:
 
 \end{enumerate}
 
+\checkpoint{Two Sets of Questions}{Complete at least two sets of questions. Call over a Professor or GSI and discuss the questions and the methods you will be using to tackle them.}
 
-\textbf{This is a Checkpoint: Complete at least two sets of questions. Call over a Professor or GSI and discuss the questions and the methods you will be using to tackle them. }
+%\textbf{This is a Checkpoint: Complete at least two sets of questions. Call over a Professor or GSI and discuss the questions and the methods you will be using to tackle them.}
 
 \section{Part IV: (Not Available) Measuring the Stall Force of Dynein Motor Molecules}
 
