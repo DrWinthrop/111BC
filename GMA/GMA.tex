@@ -314,7 +314,7 @@ The Pulse Height Analyzer (PHA) is a LabView program, \textbf{``PHA-5124.exe''},
             \label{fig:350px-CO-60_Spectrum}
         \end{figure}
 
-    \checkpoint{Change of Pulses}{For a given radioactive sample (in a bottle) what are  some things that can produce a change in coherent time producing a spread of the peak with a finite width in the Pulse Height analyzer? (You should be thinking about what's going on in the bottle)}
+    \checkpoint{Width of a peak}{For a given radioactive sample (in a bottle), the emitted gamma rays are mono-energetic. What is the reason that we observe the peaks with finite width in the Pulse Height analyzer instead of delta functions?}
     
 
         \item The other adjustments you should experiment with are the LLD on the Control Tab in the program: this sets the Lower Level Discriminator so that the PHA will ignore pulses with amplitudes below the setting. This way the system doesn't spend its time with unwanted pulses like low-level noise. To set it properly look at the Soft Scope program display. Setting the LLD too low will allow the program to trigger on noise, and overload the program. Set the LLD at a reasonable level that is above the noise level, but below the level of the physical processes that you are interested in. You may find that you still have some noise causing your spectrum to look distorted and this could be due to a couple of factors. Try thinking about the PMT and what are some of the variables that can contribute to non-linearity in it (this should hint you on what should be adjusted).
