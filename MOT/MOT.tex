@@ -49,7 +49,7 @@ Our focus is on the technique of laser cooling, wherein the mechanical impacts o
 
 Of the many variants of laser cooling, the magneto-optical trap (MOT) is undeniably the workhorse. Invented at MIT and first demonstrated at Bell Labs \cite{Raab}, it combines the abilities of both cooling and also trapping atoms, limiting both their momenta and their positions, while remaining experimentally simple to implement and to integrate with other experimental needs. Using MOT’s and other laser cooling methods, a wide variety of ultracold atomic and molecular gases are produced routinely in labs around the world and applied to a range of scientific pursuits, e.g. matter-wave interferometry with coherent atomic beams, condensed-matter-like systems created from quantum-degenerate gases, and novel atomic clocks and other modes of precision measurement.
 
-Your experimental targets in this laboratory are twofold: to control the frequency of a single-mode laser using laser spectroscopy and electronic feedback, and to produce and characterize a vapor-cell MOT of $^{85}$Rb.  In pursuing these targets, we hope you will take the opportunity to learn about atomic physics and to gain experimental skills in laser spectroscopy, laser optics, and feedback control.
+Your experimental target in this laboratory is to produce and characterize a vapor-cell MOT of $^{85}$Rb.  In pursuing these targets, we hope you will take the opportunity to learn about atomic physics and to gain experimental skills in laser spectroscopy, laser optics, and feedback control.
 
 \begin{enumerate}
     \item Pre-requisites: There is no formal pre-requisite for this lab. However, we do recommend that you do the OPT experiment beforehand, since you will have already learned about the atomic structure of rubidium, selection rules for atom-light interactions, and optical pumping.
@@ -163,27 +163,28 @@ Let us first consider the absorption and spontaneous emission, or scattering, of
 with the following definitions:
 
 \begin{itemize}
-    \item $\Gamma$ = the natural linewidth of the transition, given as an angular frequency (units $s^{-1}$) so that $\Gamma^{-1}$ is the lifetime of the excited atomic state.
+    \item $\Gamma$ = the natural linewidth of the transition, given as an angular frequency (units $\mbox{s}^{-1}$) so that $\Gamma^{-1}$ is the lifetime of the excited atomic state.
 
     \item $s = 2\Omega^2/\Gamma^2$ = the saturation parameter (unitless). We may also express $s = I/I_\text{sat}$ where $I$ is the laser intensity and $I_\text{sat}$ is the saturation intensity.
 
-    \item $\Omega$ = the Rabi frequency (same units as $\Gamma$). This quantity relates to the strength and polarization of the electric field of the laser, and to quantum-mechanical matrix elements that tell us how strongly the ground and excited states of the atom are coupled by laser light. Formally, $\hbar\Omega =  \langle e|d\cdot E|g\rangle$ where $d$ is the electric dipole operator and $ E$ is the laser’s electric field in the co-rotating frame. Clearly, $\Omega^2 \propto  I$.
+    \item $\Omega$ = the Rabi frequency (same units as $\Gamma$). This quantity relates to the strength and polarization of the electric field of the laser, and to quantum-mechanical matrix elements that tell us how strongly the ground and excited states of the atom are coupled by laser light. Formally, $\hbar\Omega =  \langle e|d\cdot E|g\rangle$ where $d$ is the electric dipole operator and $ E$ is the laser's electric field in the co-rotating frame. Clearly, $\Omega^2 \propto  I$.
 
     \item $\delta = \omega_L - \omega_0$ = the detuning of the laser frequency from the atomic resonance frequency $\omega_0$.
 \end{itemize}
 
 \subsubsection{Radiation Pressure}
 
-In a single scattering event, the atom absorbs a photon with momentum $\hbar\vec{k_L}$ from the laser beam, and emits a photon with momentum $\hbar\vec{k_s}$ with the wavevector $\vec{k_s}$ randomly oriented with a probability distribution given by the pertinent dipole emission pattern. Over many scattering events, the average momentum of the emitted photons is zero, giving an average radiation pressure force on the atom:
+In a single scattering event, the atom absorbs a photon with momentum $\hbar\vec{k}_L$ from the laser beam, and emits a photon with momentum $\hbar\vec{k}_s$ with the wavevector $\vec{k}_s$ randomly oriented with a probability distribution given by the pertinent dipole emission pattern. Over many scattering events, the average momentum of the emitted photons is zero, giving an average radiation pressure force on the atom:
 \begin{equation}
     \vec{F} = \hbar \vec{k}_L \Gamma_\text{scat}
 \end{equation}
 
 \subsubsection{Doppler Shift}
+\label{sec:dopplershift}
 
 In the frame of a moving atom with velocity $\vec{v}$, the frequency of laser light will be different than that observed in the stationary lab frame. The detuning of this light from the atomic resonance frequency will then be given as
 \begin{equation}
-    \delta' = \delta - \vec{k_L}\cdot \vec{v}
+    \delta' = \delta - \vec{k}_L\cdot \vec{v}
 \end{equation}
 
 \subsubsection{Doppler Cooling}
@@ -222,7 +223,7 @@ where $ A$ is a prefactor of order unity that accounts for the force fluctuation
 \begin{equation}
     T_D = \frac{\langle p^2\rangle}{3 k_B m} = \frac{A}{6}\frac{\Gamma_\text{scat}\hbar k}{\beta}
 \end{equation}
-The diffusion is also observable in real space: a cold gas of atoms localized initially in the midst of properly tuned counter-propagating laser beams encounters a form of ``optical molasses,'' and will diffuse outwards. You will observe this diffusion in your experiment.
+The diffusion is also observable in real space: a cold gas of atoms localized initially in the midst of properly tuned counter-propagating laser beams encounters a form of ``optical molasses,'' and will diffuse outwards. You will observe similar diffusion in your experiment (although what you observe also involves polarization-gradient cooling).
 
 \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/rubidium85numbers.pdf}{\textbf{\textbf{Data Sheet on Rubidium 85}}}
 
@@ -244,9 +245,9 @@ The $F = 3$ and $F' = 4$ levels each contain a number of magnetic sublevels. The
 
 In the presence of a magnetic field, the energies of the ground and excited state sublevels are shifted by the linear Zeeman shift as $\Delta E = g_F\mu_Bm_FB$, where the Lande g-factors are $ g_F = 1/3$ in the ground state and $ g_F = 1/2$ in the excited state, $\mu_B = h \times 1.4$ MHz/G is the Bohr magneton, $ B$ is the magnetic field strength and the magnetic quantum number $ m_F$ is defined with the quantization axis along the magnetic field direction. These Zeeman shifts vary the atomic resonance frequencies, allowing the radiation pressure force in a MOT to be not only velocity dependent (giving cooling) but also position dependent (giving trapping).
 
-More explicitly, we see that $\sigma^+$ transitions (that increase $m_F$) have higher resonance frequencies than $\sigma^-$ transitions. Given that laser light in a MOT is red-detuned from the atomic transition ( $\delta <0$), we see that a magnetic field will bring the $\sigma^-$ transitions closer to resonance, increasing the radiation pressure force from such light. Now we return to the one-dimensional laser cooling used to explain Doppler cooling and molasses. We consider that both laser beams have left-handed circular polarization; such polarization drives a $\sigma^+$ transition when the laser wavevector points along the magnetic-field axis. Now we consider laser cooling atoms in presence of a linear gradient of the magnetic field, i.e. $\vec{B} = B'z\hat{z}$ (ignoring Maxwell’s equations for now). This configuration ensures that stationary atoms are always forced back to the zero-field position.
+More explicitly, we see that $\sigma^+$ transitions (that increase $m_F$) have higher resonance frequencies than $\sigma^-$ transitions. Given that laser light in a MOT is red-detuned from the atomic transition ($\delta <0$), we see that a magnetic field will bring the $\sigma^-$ transitions closer to resonance, increasing the radiation pressure force from such light. Now we return to the one-dimensional laser cooling used to explain Doppler cooling and molasses. We consider that both laser beams have left-handed circular polarization; such polarization drives a $\sigma^+$ transition when the laser wavevector points along the magnetic-field axis. Now we consider laser cooling atoms in presence of a linear gradient of the magnetic field, i.e. $\vec{B} = B'z\hat{z}$ (ignoring Maxwell’s equations for now). This configuration ensures that stationary atoms are always forced back to the zero-field position.
 
-In our three-dimensional MOT, we apply gradient fields along all spatial dimensions by creating a spherical quadrupole field, given with Maxwell’s blessing as
+In our three-dimensional MOT, we apply gradient fields along all spatial dimensions by creating a spherical quadrupole field, given with Maxwell's blessing as
 \begin{equation}
     \vec{B} = B'z\hat{z} - \frac{B'}{2}(x\hat{x} + y\hat{y})
 \end{equation}
@@ -256,73 +257,50 @@ The change of sign of the gradient requires that we reverse the laser polarizati
 
 When researchers carefully measured the temperature of atoms emerging from MOT’s or from optical molasses, they found the atoms were cooled substantially below the temperature limits described by  for Doppler cooling alone. Soon, it was determined that another cooling mechanism, polarization-gradient (PG) cooling, was also at work. Detailed accounts of PG cooling are given in the references \cite{Metcalf}. Here, we provide only a simple explanation of the effect.
 
-PG cooling is based on two phenomena: the AC Stark shift, and optical pumping. The former is a change in the energy of a polarizable object, e.g. an atom, a molecule, or even a glass bead, due to the application of an oscillating electric field. The field induces an electric dipole moment $\vec{d} = \alpha(\omega_L)\vec{E}$ in the object, and then the energy of the object is shifted by the dipole energy $ U = -\vec{d}\cdot \vec{E}$, the time-average of which is non-zero. Here, $\alpha(\omega_L)$ is the dynamic polarizability which, for an atom with a single optical resonance, varies as $\alpha(\omega_L) \sim -1/\delta$. The AC Stark shift is used in many atomic physics experiments to trap ultracold atoms in laser traps. The second phenomenon at work in PG cooling is optical pumping, where light of a certain polarization will define a particular internal state to which the atom will be directed after scattering several photons. Such optical pumping is explored in a \href{http://experimentationlab.berkeley.edu/OPT}{\textbf{separate experiment}} in the 111 laboratory.
+PG cooling is based on two phenomena: the ac Stark shift, and optical pumping. The former is a change in the energy of a polarizable object, e.g. an atom, a molecule, or even a glass bead, due to the application of an oscillating electric field. The field induces an electric dipole moment $\vec{d} = \alpha(\omega_L)\vec{E}$ in the object, and then the energy of the object is shifted by the dipole energy $ U = -\vec{d}\cdot \vec{E}$, the time-average of which is non-zero. Here, $\alpha(\omega_L)$ is the dynamic polarizability which, for an atom with a single optical resonance, varies as $\alpha(\omega_L) \sim -1/\delta$. The ac Stark shift is used in many atomic physics experiments to trap ultracold atoms in laser traps. The second phenomenon at work in PG cooling is optical pumping, where light of a certain polarization will define a particular internal state to which the atom will be directed after scattering several photons. Such optical pumping is explored in a \href{http://experimentationlab.berkeley.edu/OPT}{\textbf{separate experiment}} in the 111 laboratory.
 
-In PG cooling, a multi-level atom is subject to AC Stark shifts and optical pumping by light that has a spatially varying polarization. Optical pumping consistently directs the atoms to an internal atomic state in which the AC Stark energy is minimized. However, this pumping does not occur instantaneously. Thus, a moving atom will consistently lose energy as it moves away from the location of minimum energy, as if climbing uphill, only to find itself soon delivered to the bottom of a hill through optical pumping and spontaneous emission. This condition is reminiscent of that of the ancient Greek character Sisyphus, whose punishment for a life of hubris was being commanded to roll a large boulder up a hill, only to watch it roll down again, and to repeat this task eternally.
+In PG cooling, a multi-level atom is subject to ac Stark shifts and optical pumping by light that has a spatially varying polarization. Optical pumping consistently directs the atoms to an internal atomic state in which the AC Stark energy is minimized. However, this pumping does not occur instantaneously. Thus, a moving atom will consistently lose energy as it moves away from the location of minimum energy, as if climbing uphill, only to find itself soon delivered to the bottom of a hill through optical pumping and spontaneous emission. This condition is reminiscent of that of the ancient Greek character Sisyphus, whose punishment for a life of hubris was being commanded to roll a large boulder up a hill, only to watch it roll down again, and to repeat this task eternally.
 
-The end result of PG cooling is the reduction of atomic velocities to temperatures on the order of the AC Stark shift, until one reaches the recoil temperature limit that corresponds to the energy of an atom with just one photon’s worth of momentum.
+The end result of PG cooling is the reduction of atomic velocities to temperatures on the order of the AC Stark shift, until one reaches the recoil temperature limit that corresponds to the energy of an atom with just one photon's worth of momentum.
 
 For completeness, we note that sub-recoil optical cooling is also possible, e.g. through Raman cooling or velocity-selective coherent population trapping. However, these intriguing effects are not relevant to this experiment (at least yet!).
 
-\subsection{Control and Feedback}
+\subsection{Using atoms as a frequency reference}
 
-(This section as of Fall 2010 is optional)
+If you've been following the discussion above, you will realize that the operation of a MOT requires light whose frequency is within just 10's of MHz from the atomic transition frequency.  Producing light whose frequency is defined within 10's of MHz is not difficult: we use a commercial external-cavity diode laser, which produces light with a linewidth of around 1 MHz or less.  But how do we fix the central frequency of that laser light to be precisely some 10 MHz below the resonance frequency of $^{85}$Rb on its $F=3 \rightarrow F^\prime = 4$ optical transition?  The answer is to use $^{85}$Rb atoms themselves as a frequency reference.  That is, we use a rubidium vapor cell to generate an electronic signal that tells us what is the instantaneous frequency of our laser light, and then we use electronic feedback based on that signal to keep the laser's optical frequency fixed.
 
-It behooves the modern physicist to learn about the broad and mature field of control theory; not only does it allow the experimentalist to carry out better experiments but also control theory remains a focus of modern research. There are numerous tutorials on control theory \cite{DiStefano,Dorf,Bechhoefer} to which we refer the interested student. In this experiment, we will explore just a small portion of this field as we set about to control the emission frequency of a diode laser placed inside a low-finesse external cavity \cite{Wieman}. The laser frequency depends on many external influences: the laser current, temperatures of the laser and of the mount structure, the length of the external cavity, the incident angle of light on a diffraction grating within the laser cavity, air pressure, vibrations, etc. To stabilize the laser in the presence of these influences, we use feedback: we measure the emission frequency of the laser, and then make use of two actuators – a piezo-electric transducer (PZT) in the laser cavity and the current supplied to the laser diode – to maintain that measurement at the desired value. Here, we will consider feedback on a linear system, using a frequency domain description (i.e. the frequency at which the laser frequency is varying… perhaps a little confusing). You may have also encountered feedback and control in the BSC portion of the Physics 111 course, where it was presented in the time domain \cite{BSCWriteup}.
+In this experiment, the optical frequency measurement is made using a method called ``Dichroic Atomic Vapor Laser Lock'' (DAVLL) \cite{Corwin}.  To explain how this method works, let us start by describing the absorption of light by a room-temperature rubidium vapor cell.  As you read this section, you will find it helpful to refer to the actual experimental setup in the MOT experiment, both as sketched in Fig.\ \ref{fig:OpticalSetup}, and also as actually laid out on the optical table.
 
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/600px-MOTimage001.png}{\includegraphics[width=0.9\linewidth]{images/600px-MOTimage001.png}}
-    \caption{(a) In a generic control system, a controller translates its input, by which one specifies the desired response of the overall system, to suitable input signals to a physical system. In a feed-forward system, the controller is designed based on a model for the action of the system. Inaccuracies in that model will cause a deviation of the actual system performance from the desired one. (b) In a feedback control system, the system output is sensed and then compared with the desired output; this difference signal is used to adjust the action of the controller. Depending on whether the last link in the system (gray dashed) is connected, the input and output of the overall control system, signals $V_1$ and $V_2$, respectively, are related by the open-loop or closed-loop transfer function. Successful feedback minimizes the difference between $V_1$ and $V_2$, and also suppresses the effects of noise (indicated here by the addition of a spurious signal).}
-    \label{fig:GenericControlSystem}
-\end{figure}
+\subsubsection{Doppler broadened absorption in a vapor cell}
 
-\subsubsection{Basics}
+As shown in Fig.\ \ref{fig:OpticalSetup}, the ``spectroscopy setup'' includes two rubidium cells, which are both held at temperature a bit above room temperature.  One of them is held within a housing that includes also several permanent magnets -- that one is used to generate the DAVLL signal.  Two light beams pass through this DAVLL cell, after which they are detected on separate photodetectors.  A second cell is used to measure the rubidium spectrum at near-zero magnetic field.   One light beam passes through this cell and is detected.  Let us begin by explaining the signal that is detected in this second cell.
 
-In a generic control system (Figure~\ref{fig:GenericControlSystem}a), one stipulates a desired output response, e.g. by the input of specific currents or voltages, to a controller device. This controller conditions its inputs to provide a suitable set of parameters to a physical system. This physical system then evolves so as to yield some response, or output. We often think of the controller as a device which the user constructs, with the goal of producing an output response which best matches the desired one. An open-loop control system takes into account only one’s \emph{a priori} knowledge of the response of the system, e.g. based on a well-reasoned physical mode (e.g. consider driving with your eyes closed). As such, this controller is susceptible to modeling errors and changes in the system. In contrast, in a closed-loop control system (e.g. driving with your eyes open), one maintains a prescribed relationship between the desired output and the true system output by comparing them, via a measurement and a comparison device, and using this comparison to drive the controller and system. This feedback lends the control system a much greater robustness and applicability compared to open-loop control.
+If one slowly scans the frequency of the laser light over a broad range -- say 15 GHz or so -- and measures the intensity of light that is transmitted through the vapor cell, one obtains (that is, you will; see Sec.\ \ref{sec:generating_error_signal}) a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}.  We see that the light arriving at the detector is attenuated around four characteristic frequencies.  These correspond to the frequencies for optical transitions from the following ground hyperfine levels: $F=2$ $^{87}$Rb, $F=3$ $^{85}$, $F=2$ $^{85}Rb$ and $F=1$ $^{87}$Rb, listed in order of increasing transition frequencies.
 
-Our laser system is stable and (approximately) linear, so that the steady-state response of the laser to a sinusoidal system output is a bounded sinusoidal output of the same frequency. For this reason, it is helpful to adopt a frequency-domain picture of the control system. For any component of our control system (e.g. just the physical system, or perhaps the combination of controller, system and sensor), we define the transfer function as $G(\omega) = V_\text{out}(\omega)/V_\text{in}(\omega)$. Here, $V_\text{in,out}(\omega)$ are the input or output at frequency $\omega$, represented as a complex number that describes the phase and amplitude of the signal. These signals need not be measured in the same units; e.g. the input might be a voltage to the laser controller while the output might be the frequency of the emitted laser light, in which case $ G(\omega)$ would have units of MHz/V.
+Each of those transitions is \emph{Doppler broadened}.  We previously described the first order Doppler shift of the resonance frequency for an atom in motion (Sec.\ \ref{sec:dopplershift}).  Here, the rubidium atoms in the vapor cell are moving according to the Maxwell-Boltzmann velocity distribution at a temperature of around 300K (room temperature).  The Doppler broadened lines seen in Fig.\ \ref{fig:400px-RbSpecMOT} have line widths of several 100 MHz.  This is because even if we detune the laser light by several 100 MHz from the resonance frequency for an atom at rest, there are still atoms within the vapor cell that are moving at the right velocity relative to the wavevector of the laser light so that they see the laser light as being exactly on resonance in their center-of-mass frame.  Those atoms absorb light from the incident laser beam, rescatter that light in all directions, and thereby attenuate the light beam passing through the vapor cell.
 
-We will find it convenient to represent the gain graphically in two formats. One format is a polar plot, a parametric plot of $G(\omega)$ with $\omega \in \{-\infty, \infty\}$ that defines a contour $\Gamma$ in the complex plane. This method is convenient for ascertaining the stability of a closed-loop system.
+More quantitatively, recall that the atomic vapor inside the cell contains atoms with a thermal distribution of velocities, laser light at detuning $\delta$ with respect to the resonance frequency $\omega_o$ of a stationary atom will be absorbed by atoms with velocity $ v = -\delta/k_L$ along the laser propagation direction, i.e. by a fraction $ P(v) \propto  e^{-m v^2/k_B T}$ of the vapor. Light exiting the cell is attenuated by a factor $ t = e^{-OD(\delta)}$ (Beers’ law) where the optical density $ OD$ is proportional to $P(v = -\delta / k_L)$ and also increases with increasing Rb vapor pressure as you heat the cell. Thus, because the atoms in the cell have a large velocity variance, significant absorption occurs over a wide range of laser frequencies.
 
-Another format is the \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{Bode plot}}, a \emph{log-log plot} of $|G(\omega)|$ and of $\phi = \text{arg}(G(\omega) )$ vs. $\omega$. This plot is convenient in designing a controller than matches well to the system transfer function. We note that the gain is usually plotted in decibels, defined as $ 20\log_{10}|G(\omega)/G_o|$ where $G_o$ is some specified normalization constant; when $G$ is dimensionless, we take $G_o = 1$.
+Note, however, that we cannot resolve the excited-state hyperfine structure in this room-temperature Doppler-broadened absorption signal.  That is, from a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}, we can determine at what conditions we should operate our signal to be near resonant with transitions from the $F=3$ ground state of $^{85}$ (as required for the MOT).  But we cannot easily tell where within that broad absorption line lies the transition specifically from the $F=3$ ground state to the $F^\prime = 4$ excited state.  Rather, what we see is the overlay of Doppler broadened absorption from all the allowed transitions out of the $F=3$ state, i.e.\ transitions to the $F^\prime = \{2, 3, 4\}$ excited hyperfine states.
 
-Now consider the feedback control system of Figure~\ref{fig:GenericControlSystem}b. Taking the system as a whole, let’s consider the open-loop response function around the entire control loop, i.e.
-\begin{equation}
-    G_\text{tot}(\omega) = \frac{V_2(\omega)}{V_1(\omega)} = G_c(\omega)G_s(\omega)H(\omega)
-\end{equation}
-When the loop is closed and stable, the output $V_2$ responds to variations in the input $V_1$ as
-\begin{equation}
-    V_2(\omega) = \frac{G_\text{tot}(\omega)}{1+G_\text{tot}(\omega)}V_1(\omega)
-\end{equation}
-This ratio defines the closed-loop response function of the control system. The control system responds most faithfully with high loop gain at all frequencies.
+\subsubsection{DAVLL method}
 
-High loop gain is also beneficial in suppressing the influence of unintended disturbances on system performance. To exhibit this, consider that an unwanted noise signal $N(\omega)$ is added as shown in Figure~\ref{fig:GenericControlSystem}b. While in an open-loop system, $V_s(\omega) = N(\omega)$, upon closing the loop we obtain $V_s(\omega) =\frac{1}{1+G_\text{tot}(\omega)} N(\omega)$, reducing the effect of the disturbance.
+It turns out that the frequency at which we want to lock our laser is very close to the center of the aforementioned Doppler absorption line.  However, the electronic signal we have obtained so far is not suitable for stabilizing the laser at this frequency.  The problem is that the absorption signal, which ``measures'' the laser's optical frequency, varies quadratically, rather than linearly, at the center of the absorption line.  The lack of a linear dependence (or at least the very weak linear dependence) means that we cannot apply linear feedback to stabilize the laser system.  That is, if the laser strays from the desired optical frequency , causing the transmitted light intensity to increase from its minimum value at the center of the absorption line, what are we supposed to do?  Are we supposed to increase the light frequency or decrease it?
 
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/600px-MOTimage002.png}{\includegraphics[width=0.9\linewidth]{images/600px-MOTimage002.png}}
-    \caption{Laser control system. Two servo controllers are used; one which ultimately controls a piezo-electric transducer (PZT) within the laser housing, and another which controls the diode laser current. The output signals of these controllers, $V_\text{Pmod}$ and $V_\text{cmod}$, respectively, control the ``physical system'' that is the combination of home-built electronics, the electronics within the New Focus laser controller, and the external-cavity diode laser system itself (contents of the dashed gray box). The laser emission is sensed by a laser-spectroscopy setup and a lock-in detection system, yielding a voltage $V_m$ related to the laser frequency. Through this closed-loop system, variations of the bias input lead to controlled variations of the frequency of the laser light.}
-    \label{fig:LaserControlSystem}
-\end{figure}
+The DAVLL method is used to convert the absorption signal for light passing through a vapor cell into one that does vary linearly at the line centers of the absorption signal.  In this method, we measure the absorption of light passing through a vapor cell, under the presence of a strong uniform magnetic field that is applied along the direction of light propagation.  As we discussed earlier (Sec.\ \ref{subsubsec:RubidiumSpectrum}), the applied magnetic field causes $\sigma^+$ and $\sigma^-$ optical transitions -- here, polarizations are defined with respect to the magnetic field axis -- to be frequency shifted from one another by the Zeeman shift.   While the Zeeman shifts in the rubidium spectrum are ``anomalous,'' in that different transitions are Zeeman shifted by different amounts, the net effect is that the absorption lines observed when scanning the optical frequency across the rubidium spectrum end up being shifted with respect to one another for $\sigma^+$ and $\sigma^-$ light.  The gas now displays circular dichroism, meaning that the absorption is generally different for the two circular polarizations.  In our DAVLL setup, we split an incident light beam into two paths, polarize the two paths so that they have opposite circular polarization, detect the transmitted power of beam bean through the DAVLL vapor cell, and then take the difference between the photodetector signals.  The effect is, roughly, to take a derivative of the transmission signal with respect to frequency.  That derivative is zero at the absorption line center, and varies linearly about that point.
 
-\textbf{Conditions for stable feedback}
+\subsection{Feedback control}
+\label{sec:control_abridged}
 
-At some point, however, raising the loop gain makes a system unstable. The condition for stability is stated by the \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{Nyquist stability criterion}}, which is derived using complex analysis. This criterion states that, considering the contour $\Gamma$ drawn in a polar plot of $G_\text{tot}(\omega)$, a feedback system is typically stable if the contour does not encircle the point ($-$1, 0) \cite{PreciseCriterion}.
+Hopefully you have already encountered feedback circuits and learned about control theory, for example in the Physics 111A course.  We recommend strongly that you spend some time learning about feedback control.  You might turn to Sec.\ \ref{sec:controlappendix} to learn more, or look up some helpful references \cite{DiStefano,Dorf,Bechhoefer}.
 
-This criterion may seem a little too abstract, in which case it might be best just to follow some rules of thumb arising from this Nyquist criterion:
+For the present purpose it suffices to be brief.  In this experiment, the frequency of the laser is controlled by three properties of the laser: its temperature, the current supplied to the laser diode, and the voltage provided to a piezoelectric transducer (PZT) that moves an optical element with the laser cavity.  All three quantities can be set manually using the New Focus laser controller.  In addition, two quantities -- the laser current and the PZT voltage -- can be varied by applying external voltages to the laser controller.  Small voltages applied at those external outputs each change the laser frequency by an amount linearly proportional to the applied voltage.
 
-\begin{itemize}
-    \item Pay attention to the low-frequency scaling of the open-loop gain. Systems scaling as $G_\text{tot}\propto 1$ (proportional) or $1/\omega$ (an integrator) are likely stable, while those with $1/\omega^3$ or higher scaling are unstable ($1/\omega^2$ is marginal).
+The DAVLL method is used to generate a voltage that effectively measures the frequency of the laser light.  Near the settings at which we want to stabilize this frequency, the DAVLL signal can be used as an \emph{error signal} to be used as part of a \emph{negative-gain, closed-loop feedback circuit}.
 
-    \item One often constructs a feedback system with gain that diminishes with increasing frequency. There, one must pay attention to the frequency $\omega$ where $ G_\text{tot}(\omega) = 1$, the unity-gain point. If $\phi < -\pi$ at this point, the system is likely to be unstable. The quantity $\phi + \pi$ is known as the phase margin – a larger phase margin means your system is more stable to variations (e.g. in the gain). One usually finds that the phase of the system response indeed becomes unmanageable at high frequencies, requiring that one cut off the high-frequency gain (by designing the controller properly) to avoid instabilities.
+The concept of negative-gain feedback stabilization is fairly intuitive.  Consider the example of driving and keeping your car on the road.  Your eyes and brain produce an error signal, telling you whether the car is veering to the right or the left.  You respond to this veering through negative feedback: if the car drifts right, you steer so as to turn the car to the left, and visa versa.  In contrast, if you feedback with \emph{positive gain}, steering to the right when you veer to the right, you'll only make things worse.
 
-    \item Resonances in the system induce rapid changes in the gain amplitude and phase, making it hard to guarantee system stability. One usually designs the controller to reduce the loop gain at such resonance frequencies to below unity, avoiding trouble.
-\end{itemize}
-
-\subsubsection{Laser Stabilization System}
-
-The laser control scheme implemented in this experiment is diagrammed in Figure~\ref{fig:LaserControlSystem}. This is a two-branch control system, making use of two actuators of the laser system to achieve tighter control over the laser frequency. One of these actuators is a piezo-electric transducer (PZT) that displaces elements within the laser cavity. The PZT is useful for scanning the laser frequency stably over a very broad range, and, thus, is controlled by an integrator which allows the laser to compensate for long-term drift in its emission frequency. However, as you will see, the useful bandwidth of the PZT actuation is limited. Thus, high frequency feedback is achieved by a different actuation mechanism, a variation of the current supplied to the laser diode. The overall transfer function for this control system is the sum of the responses of the two feedback branches.
+The feedback circuitry used in this lab has very many knobs and switches.  This setup is holdover from a previous version of this lab where we asked students to adjust many things and characterize the feedback circuit very thoroughly.  At present, however, you should only need to adjust a few things to stabilize the laser at the right frequency, observe a MOT, and get going on making various measurements on the MOT.  Essentially, you just have to get all the signs right:  (1) Produce an error signal with a linear slope at the frequency where you want to lock the laser.  (2) Apply current feedback, with fixed feedback sign, and see whether that results in negative or positive feedback.  If the feedback is positive, then you have to change the DAVLL signal so that the signal vs.\ frequency varies with a slope of opposite sign.  (3) Apply PZT feedback and see whether this results in positive or negative feedback.  If the feedback is positive, you can flip the polarity of the PZT feedback.  (4) Adjust the magnitude of the gains.  If the gain is too low, the laser frequency will vary a lot and your MOT will be unstable and hard to observe.  If the gain is too high, the feedback will become unstable and/or the system will ``fall out of lock.''   Fortunately, the feedback circuitry is sufficiently stable over a very broad range of gain settings (simply because we have built such an awesome experimental setup!).
 
 \section{Safety}
 
@@ -331,7 +309,7 @@ In working with this experiment, you must be mindful of a few hazards.
 \begin{itemize}
     \item \textbf{Laser light}: This experiment uses a $\sim$50 mW beam of laser light at a wavelength of 780 nm. This light is infrared, beyond the range of human vision except for very bright illumination. Such a Class IIIb laser may damage your eye both from direct viewing and from diffuse scattering. Thus, you must wear laser safety goggles (provided in the laboratory) once the curtain around the table is drawn open. To align optics or search for stray laser light, you should use a fluorescent laser viewing card or an IR scope. Be particularly careful working near the vacuum chamber, where there are vertically oriented beams and also horizontal beams at several elevations.
 
-    \item \textbf{High voltage}: The ion pump is supplied with high voltage for its operation. While the cabling for this ion pump leaves no high-voltage connection exposed, you should not touch or modify the ion-pump setup; rather, ask a professor or teaching assistant for help.
+    \item \textbf{High voltage}: Both the ion pump and the ion gauge are supplied with high voltage for their operation.  You should not touch or modify the ion-pump and ion-gauge setups.  Rather, ask a professor or teaching assistant for help.
 
     \item \textbf{Ultra-high vacuum}: You must be careful not to drop anything on the glass viewports of the vacuum chamber. If they break, not only will your experiment be ruined, but also the imploding glass can be hazardous. If you must use a metal tool near those viewports, consider blocking the glass windows in case the tool slips from your hands.
 \end{itemize}
@@ -339,78 +317,88 @@ In working with this experiment, you must be mindful of a few hazards.
 \section{Equipment used in this experiment}
 
 \begin{enumerate}
-    \item Ion Pump; Never turn off
+    \item Vacuum setup 
+    \begin{enumerate}
+        \item ion pump and controller (do not adjust)
+        \item ion gauge and controller (do not adjust)
+        \item turbo and roughing pump station: Used only to fix major vacuum problems and with staff supervision.
+        \item rubidium getter and current source (labeled ``Power 1, Getter 1'' and located below optical table).
+        \item rubidium metal sample, not used since the rubidium getters were installed.
+    \end{enumerate}
+    
+    \item Optical setup
+    \begin{enumerate}
+        \item New Focus external cavity diode laser, 50 mW output, 780 nm wavelength
+        \item optical setup consisting of many mirrors, lenses, polarization optics, beam splitters, electro-optical modulator, optical isolator, and photodetectors
+        \item video camera with adjustable lens to view atoms in vacuum chamber
+        \item photodiode with focusing lenses to collect fluorescent light from the MOT
+        \item triggered CCD camera (Allied ``Guppy'' camera) controlled by LabView program and used to measure atom number and distribution
+        \item hand-held IR viewer, used for alignment and checking for stray beams of light
+        \item IR viewing cards, which fluoresce visibly when exposed to IR light, used for aligning optics
+        \item two heated rubidium vapor cells
+        \item laser saftey goggles, to be worn when the curtain around the table is open
+    \end{enumerate}
 
-    \item Ion Gauge; to read the pressure in the chamber, Leave on
-
-    \item Rubidium chamber Getter and controls (use power supply \#1)
-
-    \item Rubidium metal sample; back up source of Rubidum (Not used normally)
-
-    \item Turbo Pump and roughing pump with LN-2; Used only by staff if vacuum fails Read the Cryogenic Safety sheet: See the Cryogenic Liquids information from EH\&S \href{http://experimentationlab.berkeley.edu/sites/default/files/SHE/77cryogenic.pdf}{\textbf{Cryogenic Training}}
-
-    \item Video Camera to view Atoms in chamber
-
-    \item Gumpy Trigged CCD Camera to measure number of Atoms, etc and controlled by the LabView Program
-
-    \item Laser 780nm 45mW split into three beam paths X,Y,Z
-
-    \item Optical Isolator
-
-    \item IR Viewer; to view beams which are invisble puls IR cards to view beam directly
-
-    \item Safety Goggles wear at all times when Laser in operation
-
-    \item Digital Scope;
-
-    \item \href{http://physics111.lib.berkeley.edu/Physics111/Equipment_Manuals/JOS/DS345m.pdf}{\textbf{SRS DS345}} Function Generator \href{https://youtu.be/PrM8DHFOFS0}{Click here to watch an instructional video}
-
-    \item Physics 111-Lab Laser Lock-Box and Feedback control
-
-    \item Error amplifier
-
-    \item DAVLL Cell
-
-    \item Optical Detectors
-
-    \item Lens, Mirrors, 1/4λ plates
-
-    \item Ghz Frequency meter
-
-    \item VCO signal
-
-    \item Heater controllers
+    \item Instrumentation setup at the work station
+    \begin{enumerate}
+        \item Digital oscilloscope
+        \item \href{http://physics111.lib.berkeley.edu/Physics111/Equipment_Manuals/JOS/DS345m.pdf}{\textbf{SRS DS345}} Function Generator \href{https://youtu.be/PrM8DHFOFS0}{Click here to watch an instructional video}
+        \item ``DAVLL Error box'' which houses a subtraction op-amp circuit
+        \item ``MOT Laser Feedback Signal Processor'' which is the two-branch electronic feedback circuit for stablizing the laser frequency
+        \item Computer with LabView VIs and a National Instruments I/O block
+    \end{enumerate}
+    
+    \item Other equipment near optical setup
+    \begin{itemize}
+        \item 50 A current supply for MOT coils
+        \item Uniblitz optical shutter controller
+        \item Power supply to heat single-pass Rb vapor cell (always on)
+        \item Heater and temperature sensor for DAVLL cell
+        \item Voltage Controlled Oscillator for generating microwave signal
+        \item GHz-range frequency counter
+    \end{itemize}
 \end{enumerate}
 
 \section{Experimental Setup}
 
-\subsection{Optics}
 
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/800px-Setupv7.png}{\includegraphics[width=0.6\linewidth]{images/800px-Setupv7.png}}
-    \caption{Optical Setup for the MOT experiment}
-    \label{fig:OpticalSetup}
-\end{figure}
-
-\subsection{Standard Operating Procedures (SOP) and MOT Optics}
+\subsection{Standard Operating Procedures (SOP)}
 
 \begin{itemize}
-    \item Note you need 80 PSI water pressure. Look at the prssure meter on the south wall behind the computer and see that is at 80 PSI.
-    
-    IF not see Don Orlando immediately.
+    \item Note you need 80 PSI water pressure. Look at the prssure meter on the south wall behind the computer and see that is at 80 PSI.  If it is not, see the staff immediately.
 
     \item Before turning on the laser, examine the optical table for misplaced objects in the laser beam path. Refer to Figure~\ref{fig:OpticalSetup} for a reference diagram. You may want to print out a copy of this diagram. Once the path is clear, \textbf{put on a pair of the Laser Safety Goggles} and turn on the laser. Adjust the current to around 100 mA. Laser light emerges from a commercial diode laser (New Focus Stablewave) with linear polarization.
 
     \item Now check for stray beams: You should perform a survey of the laser beam paths to check if there are any stray beams (diffuse or specular) emanating from any part of the laser path and its optics. Then document this in the Laser Log Book in the wall pocket near the apparatus. Make sure that the shutter is open as you follow the beam path around the optical table. (currently using shutter \#2) Toggle switch to N.O. to open it, the main power switch is on the back of unit. The laser safety survey is done by using the IR Viewer and a white piece of paper or business card. If the IR Viewer is not in the room, ask a staff person to locate it. The IR viewer is blue in color and you use it with your goggles on. Using the paper card follow all of the beam paths from the laser to the vacuum chamber and from the laser through the spectroscopy setup section (see Figure~\ref{fig:OpticalSetup}). Note if the beam strays from its intended path. It should go through the lenses and reflect from mirrors, but should NOT hit or reflect off of anything else (including the mounts) on the optical table. This laser beam is hazardous to your eyes if they are un-protected as you cannot see the laser light. Keep the goggles on at all times for your safety.
+    
+\end{itemize}
 
-    \item The \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{optical isolator}} minimizes the reflection of light back into the laser from the optics on the table. Such reflections can destabilize the laser, essentially turning the whole table into a laser resonator. You may see such instabilities when light from the MOT beams is retro-reflected into the laser, in which case the staff may want to adjust the optical isolator. A \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{waveplate}} before the resonator adjusts the linear polarization to match the input polarizer of the isolator.
+\subsection{Optical setup}
+
+Now let us take you through the optical setup for this experiment, diagrammed in Fig.\ \ref{fig:OpticalSetup}.  Using an IR card and/or the IR viewer, and wearing laser goggles for safety, follow the laser beam path as we describe the various elements in turn.  Terminology and the basic functioning of various optical elements is found \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{here}}.
+
+
+\begin{figure}[h]
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/800px-Setupv7.png}{\includegraphics[width=0.8\linewidth]{images/800px-Setupv7.png}}
+    \caption{Optical Setup for the MOT experiment}
+    \label{fig:OpticalSetup}
+\end{figure}
+
+\subsubsection{Laser and isolator}
+
+\begin{itemize}
+    \item The optical isolator placed just after the laser minimizes the reflection of light from the optical table back into the laser diode.  Such reflections can destabilize the laser, essentially turning the whole table into a laser resonator. You may see such instabilities when light from the MOT beams is retro-reflected into the laser, in which case the staff may want to adjust the optical isolator. A $\lambda/2$ waveplate before the isolator rotates the optical polarization so as to match the input polarizer of the isolator.
 
     \item A pickoff beam-splitter sends some of the light toward the rubidium spectroscopy system.
+\end{itemize}
 
-    \item The \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{electro-optical modulator}} (EOM) is a non-linear optical crystal placed within a tuned microwave resonator. A resonant microwave signal creates a strong time-varying electric field that distorts the crystal and varies its index of refraction. The laser beam, passing through that varying index material, becomes phase modulated at the frequency of the microwave input. In this manner, we add frequency sidebands to the laser, shifting some of the laser power (a few percent) to a frequency that will repump atoms on the repumping transition. The EOM crystal is birefringent, and its refractive index varies only for one linear polarization. The waveplate after the isolator rotates the polarization appropriately. Further details on this EOM are available in the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Modulators.pdf}{\textbf{EOM 4431 Data Sheet}}.
+\subsubsection{MOT optics}
 
-    \item Several lenses act as a telescope to expand and circularize the beam. The beam should be aligned through the center of and parallel to all these lenses.
+\begin{itemize}
+    \item Continuing on the main optical path, the electro-optical modulator (EOM) is a non-linear optical crystal placed within a tuned microwave resonator. A resonant microwave signal creates a strong time-varying electric field that distorts the crystal and varies its index of refraction. The laser beam, passing through that varying index material, becomes phase modulated at the frequency of the microwave input. In this manner, we add frequency sidebands to the laser, shifting some of the laser power (a few percent) to a frequency that will repump atoms on the repumping transition. The EOM crystal is birefringent, and its refractive index varies only for one linear polarization. The waveplate after the isolator rotates the polarization appropriately. Further details on this EOM are available in the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/Modulators.pdf}{\textbf{EOM 4431 Data Sheet}}.  You shouldn't need to adjust the EOM, but you may need to check the optical alignment through the EOM (see below).
+
+    \item Several lenses act as a telescope to expand and circularize the beam. The beam should be aligned through the center of and parallel to all these lenses.  It may be that the lenses themselves are misplaced.  In this case, one may have to remove the lenses, direct the laser beam along the desired beam path, and then replace the lenses so that they are centered with and with surfaces normal to the laser beam.
 
     \item A variable iris sets the diameter of the laser beams. Using the IR viewer and viewing the input face of the iris, you should see that the laser beam is reasonably well centered on the iris.
 
@@ -418,7 +406,7 @@ In working with this experiment, you must be mindful of a few hazards.
 
     \item On each of the three MOT beams, light passes first through a quarter-wave plate. When rotated to the correct position, this waveplate converts the incoming linear polarized light to circular polarization of the correct helicity for the operation of the MOT. After passing through the vacuum chamber, the beams pass another quarter-wave plate and are retro-reflected.
 
-    \item The many mirrors in the optical path are placed there intentionally so that the optical system can be adjusted to match its many constraints. For example, we highlight two mirrors (M1 and M2) before the EOM. These two mirrors are used to align light through the EOM. This alignment must satisfy four constraints: we require that the beam enter the EOM near the center of the input facet (a specific location in 2D, giving two constraints) and exit near the center of the output facet. The two mirrors before the EOM have four degrees of freedom – the horizontal and vertical tilts – matching the number of constraints. These mirrors should be aligned iteratively to satisfy the alignment constraints, a procedure known as ``walking the beam.'' \cite{SUNYStonyBrook}. This mirror arrangement is known as a ``dog-leg,'' and is repeated throughout the optical setup.
+    \item The many mirrors in the optical path are placed there intentionally so that the optical system can be adjusted to match its many constraints. For example, we highlight two mirrors (M1 and M2) before the EOM. These two mirrors are used to align light through the EOM. This alignment must satisfy four constraints: we require that the beam enter the EOM near the center of the input facet (a specific location in 2D, giving two constraints) and exit near the center of the output facet (two more constraints). The two mirrors before the EOM have four degrees of freedom –- the horizontal and vertical tilts -– matching the number of constraints. These mirrors should be aligned iteratively to satisfy the alignment constraints, a procedure known as ``walking the beam.'' \cite{SUNYStonyBrook}. This mirror arrangement is known as a ``dog-leg,'' and is repeated throughout the optical setup.
 \end{itemize}
 
 \subsubsection{Rubidium Spectroscopy Setup}
@@ -428,14 +416,14 @@ Now we return to the optical setup where a rubidium vapor is probed in order to 
 \begin{itemize}
     \item Following the beam pickoff, light is divided again into two beams.
 
-    \item The first beam passes through a glass cell containing a dilute Rb vapor before being sent to photodetector PD2. In this arrangement we obtain Doppler-broadened features (four broad absorption peaks -- you should explain what these are). We use these features as frequency markers by which to interpret the error signal obtained from PD1a and PD1b.
+    \item The first beam passes through a glass cell containing a dilute Rb vapor before being sent to photodetector PD2. In this arrangement we obtain Doppler-broadened features that mark frequencies within the rubidium D2 optical spectrum.  We use these features as frequency markers by which to interpret the error signal obtained from PD1a and PD1b.
 
-    \item The second beam is used for a Dichroic Atomic Vapor Laser Lock (DAVLL) setup \cite{Corwin}. We use this cell with Rb vapor, to which a near-constant magnetic field, oriented along the direction of laser propagation is applied using a pair of permanent magnets. Two beams of orthogonal linear polarization enter at slightly different points in the cell with a polarization beam splitter. At the input of the cell, a quarter-wave plate is used to measure the laser power in the two circular polarizations, $\sigma^+$ and $\sigma^-$, on the two photodetectors PD1a and PD1b, respectively. As explained below, taking the difference between these two photodiode signals gives us a measure of the frequency of the laser, which we use for feedback stabilization.
+    \item The second beam is used for the Dichroic Atomic Vapor Laser Lock (DAVLL) setup \cite{Corwin}.  A $\lambda/2$ waveplate and a polarizing beam splitter cube are used to divide the beam along two separate paths, steered by several independent mirrors.  The beams propagate side-by-side, parallel to one another, through the heated Rb vapor cell.  The cell is placed within a couple of strong permanent magnets, which apply a field along the optical axis.  Before entering the cell, the beams both pass through a $\lambda/4$ waveplate, which endows the two beams with opposite ellipticity.  The magnitude and sign ($\sigma^+$ vs.\ $\sigma^-$) of the ellipticity is determined by the angle of the rotatable waveplate.  The beams are directed onto two separate photodetectors, PD1a and PD1b.  The photodetector output is sent to the instrumentation rack where each can be viewed separately on the oscilloscope.  The DAVLL error box takes the difference between these signals and inputs it into the feedback circuit.
 \end{itemize}
 
-Let us now describe briefly the origin of the signals seen on the three photodetectors. Neglecting first the effect of light polarization and of an applied magnetic field, a laser beam passing through the Rb vapor cell will be partly attenuated due to the absorption and rescattering of light by the Rb atoms within the cell that experience the laser light frequency as coinciding with an atomic resonance. Recalling that the atomic vapor inside the cell contains atoms with a thermal distribution of velocities, laser light at detuning $\delta$ with respect to the resonance frequency $\omega_o$ of a stationary atom will be absorbed by atoms with velocity $ v = -\delta/k_L$ along the laser propagation direction, i.e. by a fraction $ P(v) \propto  e^{-m v^2/k_B T}$ of the vapor. Light exiting the cell is attenuated by a factor $ t = e^{-OD(\delta)}$ (Beers’ law) where the optical density $ OD$ is proportional to $P(v = -\delta / k_L)$ and also increases with increasing Rb vapor pressure as you heat the cell. Thus, because the atoms in the cell have a large velocity variance, significant absorption occurs over a wide range of laser frequencies.
+%Let us now describe briefly the origin of the signals seen on the three photodetectors. Neglecting first the effect of light polarization and of an applied magnetic field, a laser beam passing through the Rb vapor cell will be partly attenuated due to the absorption and rescattering of light by the Rb atoms within the cell that experience the laser light frequency as coinciding with an atomic resonance. Recalling that the atomic vapor inside the cell contains atoms with a thermal distribution of velocities, laser light at detuning $\delta$ with respect to the resonance frequency $\omega_o$ of a stationary atom will be absorbed by atoms with velocity $ v = -\delta/k_L$ along the laser propagation direction, i.e. by a fraction $ P(v) \propto  e^{-m v^2/k_B T}$ of the vapor. Light exiting the cell is attenuated by a factor $ t = e^{-OD(\delta)}$ (Beers’ law) where the optical density $ OD$ is proportional to $P(v = -\delta / k_L)$ and also increases with increasing Rb vapor pressure as you heat the cell. Thus, because the atoms in the cell have a large velocity variance, significant absorption occurs over a wide range of laser frequencies.
 
-Now, from the discussion on the \hyperref[subsubsec:RubidiumSpectrum]{rubidium spectrum}, the atomic resonance frequencies for $\sigma^+ $ and $\sigma^- $ polarized light are shifted differentially in an applied magnetic field, causing the Doppler-broadened absorption line to be shifted upward in frequency for one circular polarization and downward in frequency for the other. The gas now displays circular dichroism, meaning that the absorption is generally different for the two circular polarizations. Taking the difference in the measured transmitted laser powers for the two circular polarizations provides a signal which crosses zero and varies linearly near the peak of the zero-field Doppler absorption profile. This signal is then suitable for stabilizing the laser frequency near that absorption peak.
+%Now, from the discussion on the \hyperref[subsubsec:RubidiumSpectrum]{rubidium spectrum}, the atomic resonance frequencies for $\sigma^+ $ and $\sigma^- $ polarized light are shifted differentially in an applied magnetic field, causing the Doppler-broadened absorption line to be shifted upward in frequency for one circular polarization and downward in frequency for the other. The gas now displays circular dichroism, meaning that the absorption is generally different for the two circular polarizations. Taking the difference in the measured transmitted laser powers for the two circular polarizations provides a signal which crosses zero and varies linearly near the peak of the zero-field Doppler absorption profile. This signal is then suitable for stabilizing the laser frequency near that absorption peak.
 
 \subsection{Vacuum System}
 
@@ -449,15 +437,35 @@ Now, from the discussion on the \hyperref[subsubsec:RubidiumSpectrum]{rubidium s
 The MOT is created at the center of an evacuated, octagonal vacuum chamber graced with many glass viewports to allow laser light to be directed at the atoms, and surrounded with electromagnets to create the requisite magnetic field. Follow along as we describe the elements of the vacuum apparatus, illustrated in Figure \ref{fig:VacuumChamberDetails}.
 
 \begin{itemize}
-    \item You will be using an electronic rubidium getter to supply the MOT cell with rubidium via power supply \#1. As a backup (which will only be used by laboratory staff if necessary), a chunk of rubidium, with natural abundances of $^{85}$Rb and $^{87}$Rb, rests at the bottom of a flexible vacuum tube. This metal emits a low-pressure vapor of atomic Rb. The temperature of the bottom flange of this tube is controlled by a thermo-electric cooler (TEC), one face of which is connected to the flange, and the other face of which connects to a water-cooled copper plate. This temperature is monitored and maintained by a controller located above the MOT optics. The TEC may be supplanted by a band heater in case you need to heat the rubidium source a lot to get a reasonable vapor in the chamber. However, the current for the Rb chamber getter should not exceed 5 Amps, so please don't overheat the rubidium without consulting with the laboratory staff. Too much Rb vapor can mess up the vacuum system and require a lengthy vacuum bakeout. See Don for help!
+    \item You will be using a getter to supply the MOT cell with rubidium.  Within this getter there is a chemical compound that contains rubidium.  Current run through the getter causes the getter to heat up owing to resistive heating.  At a high temperature, the compound releases rubidium, along with several other gases, into the vacuum chamber.  Once released from the getter, rubidium atoms will remain within the vacuum system for several days, residing most of the time on the walls of the chamber, and occasionally flying through the vacuum chamber.  After several days, the rubidium atoms find their way to the ion pump where they become absorbed for good.
+    
+    The most reliable means of determining whether the chamber has a sufficient vapor pressure of rubidium is to operate the laser system and to scan the laser frequency very slowly across the rubidium resonance lines.  For example, you might use the SRS DS345 to output a low frequency (0.1 Hz or so) sine wave, input that sine wave into the laser lockbox and use it to scan the PZT voltage so that the laser scans across the right frequency range. Viewing the inside of the chamber with the video camera, you should see dim fluorescence along the entire MOT laser beam path when the light is scanned across the Doppler-broadened resonance lines.
+    
+    If see no signs of rubidium vapor (you can ask a staff member just to be sure), you may need to replenish the chamber with rubidium.  For this, you turn on the getter power supply and run about 5 amperes of current through the getter.  Keep scanning the laser across resonance.  Within 10's of seconds you should see rubidium vapor within the chamber.  At this point, you can turn off the getter and proceed with your work.
+    
+    Do not run too much current (say more than 6 amps) through the getter, lest you release the getter's rubidium too rapidly, fouling up the vacuum system and depleting the getter completely.  The current supply should have a ``crowbar set level'' that prevents you from running too much current, but pay attention to what you're doing nonetheless.  If you have questions or problems, consult with the lab staff.
+    
+    %also When current is run through the getter, the getter becomes heated  via power supply \#1. As a backup (which will only be used by laboratory staff if necessary), a chunk of rubidium, with natural abundances of $^{85}$Rb and $^{87}$Rb, rests at the bottom of a flexible vacuum tube. This metal emits a low-pressure vapor of atomic Rb. The temperature of the bottom flange of this tube is controlled by a thermo-electric cooler (TEC), one face of which is connected to the flange, and the other face of which connects to a water-cooled copper plate. This temperature is monitored and maintained by a controller located above the MOT optics. The TEC may be supplanted by a band heater in case you need to heat the rubidium source a lot to get a reasonable vapor in the chamber. However, the current for the Rb chamber getter should not exceed 5 Amps, so please don't overheat the rubidium without consulting with the laboratory staff. Too much Rb vapor can mess up the vacuum system and require a lengthy vacuum bakeout. See Don for help!
 
-    \item The pressure of Rb and other gases in the chamber is controlled by a pumping system comprising a butterfly valve, which restricts the pump speed, a TEC-cooled in-vacuum plate, upon which Rb vapor condenses, an ion pump, and a turbo-molecular pump backed by a roughing pump.
+    \item The octagonal chamber is surrounded by two large electromagnet coils (MOT coils) that generate the spherical quadrupole magnetic field required for the MOT. These coils are wired so that top coil (or, actually, a set of connected layers of coils) runs current in a sense opposite to that of the bottom coil. The coils, made of hollow copper tubing through which we run water, are supplied with up to 50 amperes of current by a current supply located below the optical table.  That current is gated by a signal generated by the National Instruments card on the computer. 
+    
+    
+    \item The rest of the vacuum chamber is comprised of parts that you shouldn't have to adjust at all unless something is seriously wrong.
+    
+    A butterfly valve, which is usually in the closed position, restricts the conductance from the MOT chamber to the vacuum pumps.
+    
+    The ion pump operates by ionizing gases in the vacuum chamber and then accelerating them into a getter material where they become absorbed permanently.  It should remain on.  An ion-gauge operates similarly, sending the ionized particles onto a collection electrode and reading the ensuing current as a measure of the vacuum pressure.  The ion gauge controlled reports the pressure, which should be in the range of $10^{-8}$ torr or below.  The pump station also contains a TEC-cooled in-vacuum plate, upon which rubidium condenses.  An all-metal valve seals the vacuum chamber.  It can be connected to a turbo-pump and roughing pump if the chamber has to be opened and then re-evacuated.
+    
+    Also on the chamber is a small valve behind which there is a flexible vacuum bellows.  Within that bellows resides a chunk of rubidium metal, the temperature of which can be controlled by another TEC.  That setup had been used in the past to supply rubidium to the chamber.  For now, the valve should remain sealed, and rubidium vapor should be obtained instead from the getters.
+    
+    
+    %\item To understand the order in which the pumps operate, consider when the chamber is at atmospheric pressure. The roughing pump is used to pump until the chamber has a pressure of approximately 40 millitorr. Beyond this point, the roughing pump is ineffective, so the turbo pump takes over and gets the chamber to $10^{-8}$ torr. While very powerful, the turbo pump is also very delicate, so once it is finished it turns off and disconnects from the vacuum system. The ion pump then takes over and maintains the vacuum. The vacuum pressure may be read out from the ion pump gauge, which is located below the optics table. You should not need to adjust the pumping station – ask for help if you suspect something is wrong.
 
-    \item To understand the order in which the pumps operate, consider when the chamber is at atmospheric pressure. The roughing pump is used to pump until the chamber has a pressure of approximately 40 millitorr. Beyond this point, the roughing pump is ineffective, so the turbo pump takes over and gets the chamber to $10^{-8}$ torr. While very powerful, the turbo pump is also very delicate, so once it is finished it turns off and disconnects from the vacuum system. The ion pump then takes over and maintains the vacuum. The vacuum pressure may be read out from the ion pump gauge, which is located below the optics table. You should not need to adjust the pumping station – ask for help if you suspect something is wrong.
+    %\item For a more in-depth explanation to vacuum technology, please consult Ref.~\cite{Moore}.
 
-    \item For a more in-depth explanation to vacuum technology, please consult Ref.~\cite{Moore}.
 
-    \item The octagonal chamber is surrounded by several electromagnet coils. A large set of coils (MOT coils) generates the spherical quadrupole field required for the MOT. These coils are wired so that top coil (or, actually, a set of connected layers of coils) runs current in a sense opposite to that of the bottom coil. The coils, made of hollow copper tubing through which we run water, are supplied with up to 100 amperes of current by a current supply located below the optical table. Several other sets of coils (field coils) generate nearly uniform fields in three cardinal directions, and are supplied by additional supplies below the table. These coils are not used in the present version of this experiment.
+    
+    %Several other sets of coils (field coils) generate nearly uniform fields in three cardinal directions, and are supplied by additional supplies below the table. These coils are not used in the present version of this experiment.
 \end{itemize}
 
 \subsection{Electronics for Laser Stabilization}
@@ -615,6 +623,7 @@ Sweep:
 \end{itemize}
 
 \subsubsection{Generating the error signal}
+\label{sec:generating_error_signal}
 
 \emph{Observe the Doppler-broadened absorption spectrum:}
 
@@ -954,6 +963,71 @@ All Reprints and other information can be found on the \href{http://physics111.l
 
     \bibitem{Moore} John H. Moore, Christopher C. Davis, Michael A. Coplan, \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/John\%20Moore,\%20Christopher\%20Davis,\%20Michael\%20A.\%20Coplan_Building\%20Scientific\%20Apparatus,\%204th\%20ed.pdf}{\textbf{Building Scientific Apparatus, 4th ed}}, Cambridge University Press (2009).
 \end{thebibliography}
+
+\section{Appendix on control theory}
+\label{sec:controlappendix}
+
+When this laboratory was first built, we had in mind that students would also spend a fair bit of time characterizing the external cavity diode laser and its control electronics as a generic feedback control system.  The ``MOT Laser Feedback Signal Processor'' that is used for this experiment was built with lots of extra switches and dials so students could conduct this characterization, and then, with the aid of a good knowledge of control theory, could design a perfect feedback system and demonstrate its qualities.  We found, however, that students struggled with this portion of the laboratory, using most of their time at the experiment without even getting to the atomic physics part.
+
+As of Fall 2017, we have modified the MOT experiment to simplify and streamline the feedback-control part of the experiment.  We retain below the full description of control and feedback from the first version of the lab manual, as we feel this presentation will be helpful to the interested student.  Section \ref{sec:control_abridged} is an abridged description of feedback systems pertinent to the present experiment.
+
+\subsection{Control and Feedback}
+
+It behooves the modern physicist to learn about the broad and mature field of control theory; not only does it allow the experimentalist to carry out better experiments but also control theory remains a focus of modern research. There are numerous tutorials on control theory \cite{DiStefano,Dorf,Bechhoefer} to which we refer the interested student. In this experiment, we will explore just a small portion of this field as we set about to control the emission frequency of a diode laser placed inside a low-finesse external cavity \cite{Wieman}. The laser frequency depends on many external influences: the laser current, temperatures of the laser and of the mount structure, the length of the external cavity, the incident angle of light on a diffraction grating within the laser cavity, air pressure, vibrations, etc. To stabilize the laser in the presence of these influences, we use feedback: we measure the emission frequency of the laser, and then make use of two actuators – a piezo-electric transducer (PZT) in the laser cavity and the current supplied to the laser diode – to maintain that measurement at the desired value. Here, we will consider feedback on a linear system, using a frequency domain description (i.e. the frequency at which the laser frequency is varying… perhaps a little confusing). You may have also encountered feedback and control in the BSC portion of the Physics 111 course, where it was presented in the time domain \cite{BSCWriteup}.
+
+\begin{figure}[h]
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/600px-MOTimage001.png}{\includegraphics[width=0.9\linewidth]{images/600px-MOTimage001.png}}
+    \caption{(a) In a generic control system, a controller translates its input, by which one specifies the desired response of the overall system, to suitable input signals to a physical system. In a feed-forward system, the controller is designed based on a model for the action of the system. Inaccuracies in that model will cause a deviation of the actual system performance from the desired one. (b) In a feedback control system, the system output is sensed and then compared with the desired output; this difference signal is used to adjust the action of the controller. Depending on whether the last link in the system (gray dashed) is connected, the input and output of the overall control system, signals $V_1$ and $V_2$, respectively, are related by the open-loop or closed-loop transfer function. Successful feedback minimizes the difference between $V_1$ and $V_2$, and also suppresses the effects of noise (indicated here by the addition of a spurious signal).}
+    \label{fig:GenericControlSystem}
+\end{figure}
+
+\subsubsection{Basics}
+
+In a generic control system (Figure~\ref{fig:GenericControlSystem}a), one stipulates a desired output response, e.g. by the input of specific currents or voltages, to a controller device. This controller conditions its inputs to provide a suitable set of parameters to a physical system. This physical system then evolves so as to yield some response, or output. We often think of the controller as a device which the user constructs, with the goal of producing an output response which best matches the desired one. An open-loop control system takes into account only one’s \emph{a priori} knowledge of the response of the system, e.g. based on a well-reasoned physical mode (e.g. consider driving with your eyes closed). As such, this controller is susceptible to modeling errors and changes in the system. In contrast, in a closed-loop control system (e.g. driving with your eyes open), one maintains a prescribed relationship between the desired output and the true system output by comparing them, via a measurement and a comparison device, and using this comparison to drive the controller and system. This feedback lends the control system a much greater robustness and applicability compared to open-loop control.
+
+Our laser system is stable and (approximately) linear, so that the steady-state response of the laser to a sinusoidal system output is a bounded sinusoidal output of the same frequency. For this reason, it is helpful to adopt a frequency-domain picture of the control system. For any component of our control system (e.g. just the physical system, or perhaps the combination of controller, system and sensor), we define the transfer function as $G(\omega) = V_\text{out}(\omega)/V_\text{in}(\omega)$. Here, $V_\text{in,out}(\omega)$ are the input or output at frequency $\omega$, represented as a complex number that describes the phase and amplitude of the signal. These signals need not be measured in the same units; e.g. the input might be a voltage to the laser controller while the output might be the frequency of the emitted laser light, in which case $ G(\omega)$ would have units of MHz/V.
+
+We will find it convenient to represent the gain graphically in two formats. One format is a polar plot, a parametric plot of $G(\omega)$ with $\omega \in \{-\infty, \infty\}$ that defines a contour $\Gamma$ in the complex plane. This method is convenient for ascertaining the stability of a closed-loop system.
+
+Another format is the \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{Bode plot}}, a \emph{log-log plot} of $|G(\omega)|$ and of $\phi = \text{arg}(G(\omega) )$ vs. $\omega$. This plot is convenient in designing a controller than matches well to the system transfer function. We note that the gain is usually plotted in decibels, defined as $ 20\log_{10}|G(\omega)/G_o|$ where $G_o$ is some specified normalization constant; when $G$ is dimensionless, we take $G_o = 1$.
+
+Now consider the feedback control system of Figure~\ref{fig:GenericControlSystem}b. Taking the system as a whole, let’s consider the open-loop response function around the entire control loop, i.e.
+\begin{equation}
+    G_\text{tot}(\omega) = \frac{V_2(\omega)}{V_1(\omega)} = G_c(\omega)G_s(\omega)H(\omega)
+\end{equation}
+When the loop is closed and stable, the output $V_2$ responds to variations in the input $V_1$ as
+\begin{equation}
+    V_2(\omega) = \frac{G_\text{tot}(\omega)}{1+G_\text{tot}(\omega)}V_1(\omega)
+\end{equation}
+This ratio defines the closed-loop response function of the control system. The control system responds most faithfully with high loop gain at all frequencies.
+
+High loop gain is also beneficial in suppressing the influence of unintended disturbances on system performance. To exhibit this, consider that an unwanted noise signal $N(\omega)$ is added as shown in Figure~\ref{fig:GenericControlSystem}b. While in an open-loop system, $V_s(\omega) = N(\omega)$, upon closing the loop we obtain $V_s(\omega) =\frac{1}{1+G_\text{tot}(\omega)} N(\omega)$, reducing the effect of the disturbance.
+
+\begin{figure}[h]
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/600px-MOTimage002.png}{\includegraphics[width=0.9\linewidth]{images/600px-MOTimage002.png}}
+    \caption{Laser control system. Two servo controllers are used; one which ultimately controls a piezo-electric transducer (PZT) within the laser housing, and another which controls the diode laser current. The output signals of these controllers, $V_\text{Pmod}$ and $V_\text{cmod}$, respectively, control the ``physical system'' that is the combination of home-built electronics, the electronics within the New Focus laser controller, and the external-cavity diode laser system itself (contents of the dashed gray box). The laser emission is sensed by a laser-spectroscopy setup and a lock-in detection system, yielding a voltage $V_m$ related to the laser frequency. Through this closed-loop system, variations of the bias input lead to controlled variations of the frequency of the laser light.}
+    \label{fig:LaserControlSystem}
+\end{figure}
+
+\subsubsection{Conditions for stable feedback}
+
+At some point, however, raising the loop gain makes a system unstable. The condition for stability is stated by the \href{http://experimentationlab.berkeley.edu/sites/default/files/Definitions\%20for\%20MOT.pdf}{\textbf{Nyquist stability criterion}}, which is derived using complex analysis. This criterion states that, considering the contour $\Gamma$ drawn in a polar plot of $G_\text{tot}(\omega)$, a feedback system is typically stable if the contour does not encircle the point ($-$1, 0) \cite{PreciseCriterion}.
+
+This criterion may seem a little too abstract, in which case it might be best just to follow some rules of thumb arising from this Nyquist criterion:
+
+\begin{itemize}
+    \item Pay attention to the low-frequency scaling of the open-loop gain. Systems scaling as $G_\text{tot}\propto 1$ (proportional) or $1/\omega$ (an integrator) are likely stable, while those with $1/\omega^3$ or higher scaling are unstable ($1/\omega^2$ is marginal).
+
+    \item One often constructs a feedback system with gain that diminishes with increasing frequency. There, one must pay attention to the frequency $\omega$ where $ G_\text{tot}(\omega) = 1$, the unity-gain point. If $\phi < -\pi$ at this point, the system is likely to be unstable. The quantity $\phi + \pi$ is known as the phase margin – a larger phase margin means your system is more stable to variations (e.g. in the gain). One usually finds that the phase of the system response indeed becomes unmanageable at high frequencies, requiring that one cut off the high-frequency gain (by designing the controller properly) to avoid instabilities.
+
+    \item Resonances in the system induce rapid changes in the gain amplitude and phase, making it hard to guarantee system stability. One usually designs the controller to reduce the loop gain at such resonance frequencies to below unity, avoiding trouble.
+\end{itemize}
+
+\subsubsection{Laser Stabilization System}
+
+The laser control scheme implemented in this experiment is diagrammed in Figure~\ref{fig:LaserControlSystem}. This is a two-branch control system, making use of two actuators of the laser system to achieve tighter control over the laser frequency. One of these actuators is a piezo-electric transducer (PZT) that displaces elements within the laser cavity. The PZT is useful for scanning the laser frequency stably over a very broad range, and, thus, is controlled by an integrator which allows the laser to compensate for long-term drift in its emission frequency. However, as you will see, the useful bandwidth of the PZT actuation is limited. Thus, high frequency feedback is achieved by a different actuation mechanism, a variation of the current supplied to the laser diode. The overall transfer function for this control system is the sum of the responses of the two feedback branches.
 
 \section{Your Feedback}
 
