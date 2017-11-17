@@ -156,7 +156,7 @@ This description of the operation of a MOT starts with some basic ideas about li
 
 \subsubsection{Scattering Rate}
 
-Let us first consider the absorption and spontaneous emission, or scattering, of light. We focus on just a single optical transition between a particular ground state $|g\rangle$ and excited state $|e\rangle$ of the atom, neglecting for now the complexities of real atomic structure. Such a two-level atom, assumed to have zero velocity, and exposed to monochromatic laser light with frequency $\omega_L$, will scatter photons at a steady-state rate $\Gamma_\text{scat}$ given as
+Consider the absorption and spontaneous emission, or scattering, of light. We focus on a single optical transition between a particular ground state $|g\rangle$ and excited state $|e\rangle$ of the atom, neglecting the complexities of real atomic structure. Such a two-level atom, assumed to have zero velocity, and exposed to monochromatic light with frequency $\omega_L$, will scatter photons at a rate $\Gamma_\text{scat}$ given as
 \begin{equation}
     \Gamma_\text{scat} = \frac{\Gamma}{2} \times \frac{s}{1 + s + (2\delta/\Gamma)^2}
 \end{equation}
@@ -174,7 +174,7 @@ with the following definitions:
 
 \subsubsection{Radiation Pressure}
 
-In a single scattering event, the atom absorbs a photon with momentum $\hbar\vec{k}_L$ from the laser beam, and emits a photon with momentum $\hbar\vec{k}_s$ with the wavevector $\vec{k}_s$ randomly oriented with a probability distribution given by the pertinent dipole emission pattern. Over many scattering events, the average momentum of the emitted photons is zero, giving an average radiation pressure force on the atom:
+In a single scattering event, the atom absorbs a photon with momentum $\hbar\vec{k}_L$ from the laser beam, and emits a photon with momentum $\hbar\vec{k}_s$ with the wavevector $\vec{k}_s$ randomly oriented according to the dipole emission pattern. Over many scattering events, the average momentum of the emitted photons is zero, giving an average radiation pressure force on the atom:
 \begin{equation}
     \vec{F} = \hbar \vec{k}_L \Gamma_\text{scat}
 \end{equation}
@@ -182,14 +182,16 @@ In a single scattering event, the atom absorbs a photon with momentum $\hbar\vec
 \subsubsection{Doppler Shift}
 \label{sec:dopplershift}
 
-In the frame of a moving atom with velocity $\vec{v}$, the frequency of laser light will be different than that observed in the stationary lab frame. The detuning of this light from the atomic resonance frequency will then be given as
+In the frame of a moving atom with velocity $\vec{v}$, the frequency of laser light will be different than that observed in the stationary lab frame. The detuning of this light from the atomic resonance frequency will then be given to first order as
 \begin{equation}
     \delta' = \delta - \vec{k}_L\cdot \vec{v}
 \end{equation}
 
 \subsubsection{Doppler Cooling}
 
-The above ingredients can be combined to explain one of the means, Doppler cooling, by which atoms are slowed down in a MOT from their high velocities in the room-temperature vapor cell to a near standstill. Consider just the one-dimensional motion of an atom in the presence of counter-propagating laser beams with equal frequencies and with wavevectors $k_1 = k$ and $k_2 = -k$, respectively. Summing the radiation pressure from these two beams, we obtain
+%The above ingredients can be combined to explain one of the means, Doppler cooling, by which atoms are slowed down in a MOT from their high velocities in the room-temperature vapor cell to a near standstill.
+
+Consider just the one-dimensional motion of an atom in the presence of counter-propagating laser beams with equal frequencies and with wavevectors $k_1 = k$ and $k_2 = -k$, respectively. Summing the radiation pressure from these two beams, we obtain
 \begin{equation}
     F = F_1 + F_2 = \hbar k \frac{\Gamma}{2}s\left(\frac{1}{1+s+\left(\frac{2(\delta-kv)}{\Gamma}\right)^2}-\frac{1}{1+s+\left(\frac{2(\delta+kv)}{\Gamma}\right)^2}\right)
 \end{equation}
@@ -204,7 +206,7 @@ In a vapor-cell MOT \cite{Monroe}, atoms are captured by laser cooling from high
     \quad \text{or} \quad
     P(v) \propto v^2e^{-mv^2/k_BT}
 \end{equation}
-While the vast majority of atoms in this distribution are moving far too fast to be slowed effectively by the MOT, atoms in the low-velocity tail, with velocities below a ``capture velocity'' $v_c$, may indeed be captured. We can make a classical estimation of this velocity by considering that the MOT laser beams, with diameter $D$, decelerate atoms with the maximum radiation pressure force of $F_\text{max} = \hbar k \Gamma/2$, giving
+While the vast majority of atoms in this distribution are moving far too fast to be slowed effectively by the MOT, atoms in the low-velocity tail, with velocities below a ``capture velocity'' $v_c$, may indeed be captured. We can estimate $v_c$ by considering that the MOT light beams, with diameter $D$, decelerate atoms with the maximum radiation pressure force of $F_\text{max} = \hbar k \Gamma/2$, giving
 \begin{equation}
     v_c \simeq \sqrt{\frac{2F_\text{max}D}{m}}
 \end{equation}
@@ -215,7 +217,7 @@ From here we can estimate the loading rate of atoms into the MOT as the rate $R$
 
 \subsubsection{Doppler Temperature Limit and Doppler Molasses}
 
-The damping force of Doppler cooling is accompanied necessarily by force fluctuations that prevent the atoms from being cooled to zero temperature. These force fluctuations arise both from the temporally random nature of absorption and spontaneous emission, and also from the random orientation of the emitted photons. As a result of such fluctuations, atoms undergo a random walk in momentum space, with the effect that their momentum variance increases as
+The damping force of Doppler cooling is accompanied by force fluctuations that prevent the atoms from being cooled to zero temperature. These force fluctuations arise both from the temporally random nature of absorption and spontaneous emission, and also from the random orientation of the emitted photons. As a result of such fluctuations, atoms undergo a random walk in momentum space, with the effect that their momentum variance increases as
 \begin{equation}
     \frac{d}{dt}(p^2) = A\Gamma_\text{scat}\hbar k
 \end{equation}
@@ -223,21 +225,21 @@ where $ A$ is a prefactor of order unity that accounts for the force fluctuation
 \begin{equation}
     T_D = \frac{\langle p^2\rangle}{3 k_B m} = \frac{A}{6}\frac{\Gamma_\text{scat}\hbar k}{\beta}
 \end{equation}
-The diffusion is also observable in real space: a cold gas of atoms localized initially in the midst of properly tuned counter-propagating laser beams encounters a form of ``optical molasses,'' and will diffuse outwards. You will observe similar diffusion in your experiment (although what you observe also involves polarization-gradient cooling).
+The diffusion is also observable in real space: a cold gas of atoms localized initially in the midst of properly tuned counter-propagating light beams encounters a form of ``optical molasses,'' and will diffuse outwards. You will observe similar diffusion in your experiment (although what you observe also involves polarization-gradient cooling).
 
-\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/rubidium85numbers.pdf}{\textbf{\textbf{Data Sheet on Rubidium 85}}}
 
 \subsubsection{Rubidium Spectrum}
 \label{subsubsec:RubidiumSpectrum}
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/400px-MOTimage005.png}{\includegraphics[width=0.6\linewidth]{images/400px-MOTimage005.png}}
-    \caption{The energy levels for $^{85}$Rb are shown above with the relative frequency differences between levels. The unidirectional arrows indicate the $D_2$ transition from the 5$S_{1/2}$ ground state to the 5$P_{3/2}$ excited state.}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/400px-MOTimage005.png}{\includegraphics[height=2.5 in]{images/Rb85levels.png}}
+    \caption{Hyperfine levels for the 5$S_{1/2}$ ground state (hyperfine spin quantum number $F$) and 5$P_{3/2}$ excited state (hyperfine spin quantum number $F^\prime$) are shown.  Energy differences shown in frequency units.  The transitions used for cooling and rempump light are indicated.}
     \label{fig:400px-MOTimage005}
 \end{figure}
 
-To explain the experiment further, it is necessary to move beyond our fictional, two-level treatment of an atom, and to consider instead the real structure and optical properties of atomic rubidium. Rubidium is composed naturally of two stable isotopes, $^{85}$Rb and $^{87}$Rb. In this experiment, we create a MOT for $^{85}$Rb atoms. A pertinent level diagram for $^{85}$Rb is shown in Figure~\ref{fig:400px-MOTimage005} further detail on both isotopes of rubidium is available in Ref.~\cite{Steck}. The transition used for laser cooling drives atoms from the $F = 3$ ground state to the $F' = 4$ excited state of the D2 line. This transition is nominally closed, meaning that atoms will continue to scatter laser light through many absorption/emission cycles. However, rare off-resonant excitation to the $F' = \{2,3\}$ excited states does allow the atom to decay to the $F = 2$ ground state, where it is far-detuned from laser light and thus lost to the laser cooling process. To mend this problem, we introduce also laser light resonant with the $F = 2 \rightarrow F' = 3$ transition, which pumps atoms back to the laser cooled states.
+
+Rubidium is composed naturally of two stable isotopes, $^{85}$Rb and $^{87}$Rb. In this experiment, we create a MOT for $^{85}$Rb atoms. A pertinent level diagram for $^{85}$Rb is shown in Figure~\ref{fig:400px-MOTimage005} further detail on both isotopes of rubidium is available in Ref.~\cite{Steck}. The transition used for laser cooling drives atoms from the $F = 3$ ground state to the $F' = 4$ excited state of the D2 line. This transition is nominally closed, meaning that atoms will continue to scatter light through many absorption/emission cycles. However, rare off-resonant excitation to the $F' = \{2,3\}$ excited states does allow the atom to decay to the $F = 2$ ground state, where it is far-detuned from the cooling light and thus lost to the laser cooling process. To mend this problem, we introduce also light resonant with the $F = 2 \rightarrow F' = 3$ transition, which pumps atoms back to the laser cooled states.
 
 The $F = 3$ and $F' = 4$ levels each contain a number of magnetic sublevels. The strengths of transitions between them are related according to the Clebsch-Gordan coefficients (tabulated in Refs. \cite{Metcalf,Steck}). The strongest transition (lowest saturation intensity) occurs using circular polarized light driving the $|F = 3, m_F = 3\rangle \rightarrow |F' = 4, m_F = 4\rangle$ transition, with $ I_\text{sat} = 1.7$ mW/cm$^2$ \cite{Steck}. In estimating the fluorescence rate of atoms in a MOT, for the purpose of determining the number of trapped atoms, it is suggested that you account for the simultaneous excitation by the many laser beams of the MOT by averaging over all possible atomic ground states and laser polarizations.
 
@@ -245,9 +247,9 @@ The $F = 3$ and $F' = 4$ levels each contain a number of magnetic sublevels. The
 
 In the presence of a magnetic field, the energies of the ground and excited state sublevels are shifted by the linear Zeeman shift as $\Delta E = g_F\mu_Bm_FB$, where the Lande g-factors are $ g_F = 1/3$ in the ground state and $ g_F = 1/2$ in the excited state, $\mu_B = h \times 1.4$ MHz/G is the Bohr magneton, $ B$ is the magnetic field strength and the magnetic quantum number $ m_F$ is defined with the quantization axis along the magnetic field direction. These Zeeman shifts vary the atomic resonance frequencies, allowing the radiation pressure force in a MOT to be not only velocity dependent (giving cooling) but also position dependent (giving trapping).
 
-More explicitly, we see that $\sigma^+$ transitions (that increase $m_F$) have higher resonance frequencies than $\sigma^-$ transitions. Given that laser light in a MOT is red-detuned from the atomic transition ($\delta <0$), we see that a magnetic field will bring the $\sigma^-$ transitions closer to resonance, increasing the radiation pressure force from such light. Now we return to the one-dimensional laser cooling used to explain Doppler cooling and molasses. We consider that both laser beams have left-handed circular polarization; such polarization drives a $\sigma^+$ transition when the laser wavevector points along the magnetic-field axis. Now we consider laser cooling atoms in presence of a linear gradient of the magnetic field, i.e. $\vec{B} = B'z\hat{z}$ (ignoring Maxwell’s equations for now). This configuration ensures that stationary atoms are always forced back to the zero-field position.
+More explicitly, we see that $\sigma^+$ transitions (that increase $m_F$) have higher resonance frequencies than $\sigma^-$ transitions. Given that cooling light in a MOT is red-detuned from the atomic transition ($\delta <0$), we see that a magnetic field will bring the $\sigma^-$ transitions closer to resonance, increasing the radiation pressure force from such light. Now we return to the one-dimensional laser cooling used to explain Doppler cooling and molasses. We consider that both light beams have left-handed circular polarization; such polarization drives a $\sigma^+$ transition when the laser wavevector points along the magnetic-field axis. Now we consider laser cooling atoms in presence of a linear gradient of the magnetic field, i.e. $\vec{B} = B'z\hat{z}$. This configuration ensures that stationary atoms are always forced back to the zero-field position.
 
-In our three-dimensional MOT, we apply gradient fields along all spatial dimensions by creating a spherical quadrupole field, given with Maxwell's blessing as
+In our three-dimensional MOT, we apply gradient fields along all spatial dimensions by creating a spherical quadrupole field:
 \begin{equation}
     \vec{B} = B'z\hat{z} - \frac{B'}{2}(x\hat{x} + y\hat{y})
 \end{equation}
@@ -255,15 +257,8 @@ The change of sign of the gradient requires that we reverse the laser polarizati
 
 \subsubsection{Sub-Doppler Cooling}
 
-When researchers carefully measured the temperature of atoms emerging from MOT’s or from optical molasses, they found the atoms were cooled substantially below the temperature limits described by  for Doppler cooling alone. Soon, it was determined that another cooling mechanism, polarization-gradient (PG) cooling, was also at work. Detailed accounts of PG cooling are given in the references \cite{Metcalf}. Here, we provide only a simple explanation of the effect.
+When researchers carefully measured the temperature of atoms emerging from MOT’s or from optical molasses, they found the atoms were cooled substantially below the temperature limits described by  for Doppler cooling alone. If your experiment is successful, you will confirm this finding.  Soon, it was determined that another cooling mechanism, polarization-gradient (PG) cooling, was also at work. PG cooling involves an interplay between optical pumping and light-induced energy shifts of the atomic ground state.  You can learn more about PG cooling in  Appendix \ref{sec:pgcooling}.
 
-PG cooling is based on two phenomena: the ac Stark shift, and optical pumping. The former is a change in the energy of a polarizable object, e.g. an atom, a molecule, or even a glass bead, due to the application of an oscillating electric field. The field induces an electric dipole moment $\vec{d} = \alpha(\omega_L)\vec{E}$ in the object, and then the energy of the object is shifted by the dipole energy $ U = -\vec{d}\cdot \vec{E}$, the time-average of which is non-zero. Here, $\alpha(\omega_L)$ is the dynamic polarizability which, for an atom with a single optical resonance, varies as $\alpha(\omega_L) \sim -1/\delta$. The ac Stark shift is used in many atomic physics experiments to trap ultracold atoms in laser traps. The second phenomenon at work in PG cooling is optical pumping, where light of a certain polarization will define a particular internal state to which the atom will be directed after scattering several photons. Such optical pumping is explored in a \href{http://experimentationlab.berkeley.edu/OPT}{\textbf{separate experiment}} in the 111 laboratory.
-
-In PG cooling, a multi-level atom is subject to ac Stark shifts and optical pumping by light that has a spatially varying polarization. Optical pumping consistently directs the atoms to an internal atomic state in which the AC Stark energy is minimized. However, this pumping does not occur instantaneously. Thus, a moving atom will consistently lose energy as it moves away from the location of minimum energy, as if climbing uphill, only to find itself soon delivered to the bottom of a hill through optical pumping and spontaneous emission. This condition is reminiscent of that of the ancient Greek character Sisyphus, whose punishment for a life of hubris was being commanded to roll a large boulder up a hill, only to watch it roll down again, and to repeat this task eternally.
-
-The end result of PG cooling is the reduction of atomic velocities to temperatures on the order of the AC Stark shift, until one reaches the recoil temperature limit that corresponds to the energy of an atom with just one photon's worth of momentum.
-
-For completeness, we note that sub-recoil optical cooling is also possible, e.g. through Raman cooling or velocity-selective coherent population trapping. However, these intriguing effects are not relevant to this experiment (at least yet!).
 
 \subsection{Using atoms as a frequency reference}
 
@@ -275,32 +270,34 @@ In this experiment, the optical frequency measurement is made using a method cal
 
 As shown in Fig.\ \ref{fig:OpticalSetup}, the ``spectroscopy setup'' includes two rubidium cells, which are both held at temperature a bit above room temperature.  One of them is held within a housing that includes also several permanent magnets -- that one is used to generate the DAVLL signal.  Two light beams pass through this DAVLL cell, after which they are detected on separate photodetectors.  A second cell is used to measure the rubidium spectrum at near-zero magnetic field.   One light beam passes through this cell and is detected.  Let us begin by explaining the signal that is detected in this second cell.
 
-If one slowly scans the frequency of the laser light over a broad range -- say 15 GHz or so -- and measures the intensity of light that is transmitted through the vapor cell, one obtains (that is, you will; see Sec.\ \ref{sec:generating_error_signal}) a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}.  We see that the light arriving at the detector is attenuated around four characteristic frequencies.  These correspond to the frequencies for optical transitions from the following ground hyperfine levels: $F=2$ $^{87}$Rb, $F=3$ $^{85}$, $F=2$ $^{85}Rb$ and $F=1$ $^{87}$Rb, listed in order of increasing transition frequencies.
+If one slowly scans the frequency of the laser light over a broad range -- say 15 GHz or so -- and measures the intensity of light that is transmitted through the vapor cell, one obtains (that is, you will; see Sec.\ \ref{sec:generating_error_signal}) a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}.  We see that the light arriving at the detector is attenuated around four characteristic frequencies.  These correspond to the frequencies for optical transitions from the following ground hyperfine levels: the $F=2$ state of $^{87}$Rb, the $F=3$ state of  $^{85}$Rb, the $F=2$ state of  $^{85}$Rb, and the  $F=1$ state of  $^{87}$Rb, listed in order of increasing transition frequencies.
 
-Each of those transitions is \emph{Doppler broadened}.  We previously described the first order Doppler shift of the resonance frequency for an atom in motion (Sec.\ \ref{sec:dopplershift}).  Here, the rubidium atoms in the vapor cell are moving according to the Maxwell-Boltzmann velocity distribution at a temperature of around 300K (room temperature).  The Doppler broadened lines seen in Fig.\ \ref{fig:400px-RbSpecMOT} have line widths of several 100 MHz.  This is because even if we detune the laser light by several 100 MHz from the resonance frequency for an atom at rest, there are still atoms within the vapor cell that are moving at the right velocity relative to the wavevector of the laser light so that they see the laser light as being exactly on resonance in their center-of-mass frame.  Those atoms absorb light from the incident laser beam, rescatter that light in all directions, and thereby attenuate the light beam passing through the vapor cell.
+Each of those transitions is \emph{Doppler broadened}.  We previously described the first order Doppler shift of the resonance frequency for an atom in motion (Sec.\ \ref{sec:dopplershift}).  Here, 
 
-More quantitatively, recall that the atomic vapor inside the cell contains atoms with a thermal distribution of velocities, laser light at detuning $\delta$ with respect to the resonance frequency $\omega_o$ of a stationary atom will be absorbed by atoms with velocity $ v = -\delta/k_L$ along the laser propagation direction, i.e. by a fraction $ P(v) \propto  e^{-m v^2/k_B T}$ of the vapor. Light exiting the cell is attenuated by a factor $ t = e^{-OD(\delta)}$ (Beers’ law) where the optical density $ OD$ is proportional to $P(v = -\delta / k_L)$ and also increases with increasing Rb vapor pressure as you heat the cell. Thus, because the atoms in the cell have a large velocity variance, significant absorption occurs over a wide range of laser frequencies.
+The rubidium atoms in the vapor cell are moving according to the Maxwell-Boltzmann velocity distribution at a temperature of around 300 K (room temperature).  The Doppler broadened lines seen in Fig.\ \ref{fig:400px-RbSpecMOT} have line widths of several 100 MHz.  This is because even if we detune the probe light by several 100 MHz from the resonance frequency for an atom at rest, there are still atoms within the vapor cell that are moving at the right velocity relative to the wavevector of the light so that they see the light as being exactly on resonance in their center-of-mass frame.  Those atoms absorb light from the incident beam, and thereby attenuate the light beam passing through the vapor cell.
 
-Note, however, that we cannot resolve the excited-state hyperfine structure in this room-temperature Doppler-broadened absorption signal.  That is, from a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}, we can determine at what conditions we should operate our signal to be near resonant with transitions from the $F=3$ ground state of $^{85}$ (as required for the MOT).  But we cannot easily tell where within that broad absorption line lies the transition specifically from the $F=3$ ground state to the $F^\prime = 4$ excited state.  Rather, what we see is the overlay of Doppler broadened absorption from all the allowed transitions out of the $F=3$ state, i.e.\ transitions to the $F^\prime = \{2, 3, 4\}$ excited hyperfine states.
+More quantitatively, light exiting the cell is attenuated by a factor $ t = e^{-OD(\delta)}$ (Beers’ law) where the optical density $OD$ is proportional to $P(v = -\delta / k_L)$ and to the vapor pressure of Rb in the cell.  Here, $P(v) \propto 3^{-m v^2 / k_B T}$ is the probability density for an atom propagating with velocity $v$ along the light propagation axis, and $\delta$ is the light detuning from atomic resonance.
+
+Note, however, that we cannot resolve the excited-state hyperfine structure in this room-temperature Doppler-broadened absorption signal.  That is, from a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}, we can determine at what conditions we should operate our signal to be near resonant with transitions from the $F=3$ ground state of $^{85}$Rb (as required for the MOT).  But we cannot easily tell where within that broad absorption line lies the transition specifically from the $F=3$ ground state to the $F^\prime = 4$ excited state.  Rather, what we see is the overlay of Doppler broadened absorption from all the allowed transitions out of the $F=3$ state, i.e.\ transitions to the $F^\prime = \{2, 3, 4\}$ excited hyperfine states.
 
 \subsubsection{DAVLL method}
 
-It turns out that the frequency at which we want to lock our laser is very close to the center of the aforementioned Doppler absorption line.  However, the electronic signal we have obtained so far is not suitable for stabilizing the laser at this frequency.  The problem is that the absorption signal, which ``measures'' the laser's optical frequency, varies quadratically, rather than linearly, at the center of the absorption line.  The lack of a linear dependence (or at least the very weak linear dependence) means that we cannot apply linear feedback to stabilize the laser system.  That is, if the laser strays from the desired optical frequency , causing the transmitted light intensity to increase from its minimum value at the center of the absorption line, what are we supposed to do?  Are we supposed to increase the light frequency or decrease it?
+It turns out that the frequency at which we want to lock our laser is very close to the center of the aforementioned Doppler absorption line.  However, the electronic signal we have obtained so far is not suitable for stabilizing the laser at this frequency.  The problem is that the absorption signal, which ``measures'' the laser's optical frequency, varies quadratically, rather than linearly, at the center of the absorption line.  The lack of a linear dependence (or at least the very weak linear dependence) means that we cannot apply linear feedback to stabilize the laser system.  That is, if the laser strays from the desired optical frequency, causing the transmitted light intensity to increase from its minimum value at the center of the absorption line, what are we supposed to do?  Are we supposed to increase the light frequency or decrease it?
 
-The DAVLL method is used to convert the absorption signal for light passing through a vapor cell into one that does vary linearly at the line centers of the absorption signal.  In this method, we measure the absorption of light passing through a vapor cell, under the presence of a strong uniform magnetic field that is applied along the direction of light propagation.  As we discussed earlier (Sec.\ \ref{subsubsec:RubidiumSpectrum}), the applied magnetic field causes $\sigma^+$ and $\sigma^-$ optical transitions -- here, polarizations are defined with respect to the magnetic field axis -- to be frequency shifted from one another by the Zeeman shift.   While the Zeeman shifts in the rubidium spectrum are ``anomalous,'' in that different transitions are Zeeman shifted by different amounts, the net effect is that the absorption lines observed when scanning the optical frequency across the rubidium spectrum end up being shifted with respect to one another for $\sigma^+$ and $\sigma^-$ light.  The gas now displays circular dichroism, meaning that the absorption is generally different for the two circular polarizations.  In our DAVLL setup, we split an incident light beam into two paths, polarize the two paths so that they have opposite circular polarization, detect the transmitted power of beam bean through the DAVLL vapor cell, and then take the difference between the photodetector signals.  The effect is, roughly, to take a derivative of the transmission signal with respect to frequency.  That derivative is zero at the absorption line center, and varies linearly about that point.
+The DAVLL method is used to convert the absorption signal for light passing through a vapor cell into one that does vary linearly at the line centers of the absorption signal.  In this method, we measure the absorption of light passing through a vapor cell under the presence of a strong uniform magnetic field that is applied along the direction of light propagation.  As we discussed earlier (Sec.\ \ref{subsubsec:RubidiumSpectrum}), the applied magnetic field causes $\sigma^+$ and $\sigma^-$ optical transitions -- here, polarizations are defined with respect to the magnetic field axis -- to be frequency shifted from one another by the Zeeman shift.   While the Zeeman shifts in the rubidium spectrum are ``anomalous,'' in that different transitions are Zeeman shifted by different amounts, the net effect is that the absorption lines observed when scanning the optical frequency across the rubidium spectrum end up being shifted with respect to one another for $\sigma^+$ and $\sigma^-$ light.  The gas now displays circular dichroism, meaning that the absorption is generally different for the two circular polarizations.  In our DAVLL setup, we split an incident light beam into two paths, polarize the two paths so that they have opposite circular polarization, detect the transmitted power of beam bean through the DAVLL vapor cell, and then take the difference between the photodetector signals. That difference is zero at the absorption line center, and varies linearly about that point.
 
 \subsection{Feedback control}
 \label{sec:control_abridged}
 
 Hopefully you have already encountered feedback circuits and learned about control theory, for example in the Physics 111A course.  We recommend strongly that you spend some time learning about feedback control.  You might turn to Sec.\ \ref{sec:controlappendix} to learn more, or look up some helpful references \cite{DiStefano,Dorf,Bechhoefer}.
 
-For the present purpose it suffices to be brief.  In this experiment, the frequency of the laser is controlled by three properties of the laser: its temperature, the current supplied to the laser diode, and the voltage provided to a piezoelectric transducer (PZT) that moves an optical element with the laser cavity.  All three quantities can be set manually using the New Focus laser controller.  In addition, two quantities -- the laser current and the PZT voltage -- can be varied by applying external voltages to the laser controller.  Small voltages applied at those external outputs each change the laser frequency by an amount linearly proportional to the applied voltage.
+Briefly, in this experiment, the optical frequency emitted by the laser is controlled by three properties of the laser: its temperature, the current supplied to the laser diode, and the voltage provided to a piezoelectric transducer (PZT) that moves an optical element with the laser cavity.  All three quantities can be set manually using the New Focus laser controller.  In addition, two quantities -- the laser current and the PZT voltage -- can be varied by applying external voltages to the laser controller.  Small voltages applied at those external outputs each change the laser frequency by an amount linearly proportional to the applied voltage.
 
 The DAVLL method is used to generate a voltage that effectively measures the frequency of the laser light.  Near the settings at which we want to stabilize this frequency, the DAVLL signal can be used as an \emph{error signal} to be used as part of a \emph{negative-gain, closed-loop feedback circuit}.
 
-The concept of negative-gain feedback stabilization is fairly intuitive.  Consider the example of driving and keeping your car on the road.  Your eyes and brain produce an error signal, telling you whether the car is veering to the right or the left.  You respond to this veering through negative feedback: if the car drifts right, you steer so as to turn the car to the left, and visa versa.  In contrast, if you feedback with \emph{positive gain}, steering to the right when you veer to the right, you'll only make things worse.
+The concept of negative-gain feedback stabilization is fairly intuitive.  Consider the example of driving and keeping your car on the road.  Your eyes and brain produce an error signal, telling you whether the car is veering to the right or the left.  You respond to this veering through negative feedback: if the car drifts right, you steer so as to turn the car to the left, and visa versa.  In contrast, if you feed back with \emph{positive gain}, steering to the right when you veer to the right, you'll only make things worse.
 
-The feedback circuitry used in this lab has very many knobs and switches.  This setup is holdover from a previous version of this lab where we asked students to adjust many things and characterize the feedback circuit very thoroughly.  At present, however, you should only need to adjust a few things to stabilize the laser at the right frequency, observe a MOT, and get going on making various measurements on the MOT.  Essentially, you just have to get all the signs right:  (1) Produce an error signal with a linear slope at the frequency where you want to lock the laser.  (2) Apply current feedback, with fixed feedback sign, and see whether that results in negative or positive feedback.  If the feedback is positive, then you have to change the DAVLL signal so that the signal vs.\ frequency varies with a slope of opposite sign.  (3) Apply PZT feedback and see whether this results in positive or negative feedback.  If the feedback is positive, you can flip the polarity of the PZT feedback.  (4) Adjust the magnitude of the gains.  If the gain is too low, the laser frequency will vary a lot and your MOT will be unstable and hard to observe.  If the gain is too high, the feedback will become unstable and/or the system will ``fall out of lock.''   Fortunately, the feedback circuitry is sufficiently stable over a very broad range of gain settings (simply because we have built such an awesome experimental setup!).
+The feedback circuitry used in this lab has very many knobs and switches.  This setup is holdover from a previous version of this lab where we asked students to adjust many things and characterize the feedback circuit very thoroughly.  At present, however, you should only need to adjust a few things to stabilize the laser at the right frequency, observe a MOT, and get going on making various measurements on the MOT.  Essentially, you just have to get all the signs right:  (1) Produce an error signal with a linear slope at the frequency where you want to lock the laser.  (2) Apply current feedback, with fixed feedback sign, and see whether that results in negative or positive feedback.  If the feedback is positive, then you have to change the DAVLL signal so that the signal vs.\ frequency varies with a slope of opposite sign.  (3) Apply PZT feedback and see whether this results in positive or negative feedback.  If the feedback is positive, you can reverse the polarity of the PZT feedback by flipping a switch on the control box.  (4) Adjust the magnitude of the gains.  If the gain is too low, the laser frequency will vary a lot and your MOT will be unstable and hard to observe.  If the gain is too high, the feedback will become unstable and/or the system will ``fall out of lock.''   Fortunately, the feedback circuitry is sufficiently stable over a very broad range of gain settings (simply because we have built such an awesome experimental setup!).
 
 \section{Safety}
 
@@ -311,7 +308,7 @@ In working with this experiment, you must be mindful of a few hazards.
 
     \item \textbf{High voltage}: Both the ion pump and the ion gauge are supplied with high voltage for their operation.  You should not touch or modify the ion-pump and ion-gauge setups.  Rather, ask a professor or teaching assistant for help.
 
-    \item \textbf{Ultra-high vacuum}: You must be careful not to drop anything on the glass viewports of the vacuum chamber. If they break, not only will your experiment be ruined, but also the imploding glass can be hazardous. If you must use a metal tool near those viewports, consider blocking the glass windows in case the tool slips from your hands.
+    \item \textbf{Ultra-high vacuum}: You must be careful not to drop anything on the glass viewports of the vacuum chamber. If they break, not only will your experiment be ruined, but also the imploding glass can be hazardous. If you must use a metal tool near those viewports, block the glass windows in case the tool slips from your hands.
 \end{itemize}
 
 \section{Equipment used in this experiment}
@@ -349,14 +346,14 @@ In working with this experiment, you must be mindful of a few hazards.
     \end{enumerate}
     
     \item Other equipment near optical setup
-    \begin{itemize}
+    \begin{enumerate}
         \item 50 A current supply for MOT coils
         \item Uniblitz optical shutter controller
         \item Power supply to heat single-pass Rb vapor cell (always on)
         \item Heater and temperature sensor for DAVLL cell
         \item Voltage Controlled Oscillator for generating microwave signal
         \item GHz-range frequency counter
-    \end{itemize}
+    \end{enumerate}
 \end{enumerate}
 
 \section{Experimental Setup}
@@ -736,13 +733,11 @@ If you don't see a MOT, several things could be wrong, of which the following is
 \begin{itemize}
     \item The laser may be unlocked or locked to the wrong frequency. Relock the laser, following the directions above. If the laser is locked somewhere on the broad linear portion of the correct DAVLL signal, you should be able to tune the laser frequency smoothly using the \textbf{INTERNAL BIAS} knob.
 
-    \item The laser light might be blocked. Follow all the beams with IR cards to see nothing's sitting in their path. Make sure the iris controlling the beam diameter is fully open. \emph{Check that the shutter is aligned and open. It should be on the ``N.O.'' or ``normally open'' setting, which is controlled by a switch on the front of the shutter-driver electronics box. }
+    \item The laser light might be blocked. Check that the shutter is aligned and open. It should be on the ``N.O.'' or ``normally open'' setting, which is controlled by a switch on the front of the shutter-driver electronics box.  Follow all the beams with IR cards to see nothing's sitting in their path. Make sure the iris controlling the beam diameter is fully open. 
 
     \item The laser beams may be misaligned. A good starting point for their alignment is to use two proper mirrors (think before you tweak) to have each beam centered in its respective vacuum window, both at the entry to and exit from the vacuum chamber. The reflected beams should be aligned by the single retro-mirror -- you might use the backside of an iris to get this reflection alignment right. To see the beam, use the IR viewing card or the IR viewer.
 
     \item The balance of power between the MOT beams may be off. Start with roughly equal intensities in the three beams.
-
-\newpage
 
     \item The polarization of the beams may be incorrect. The quarter wave plates at the entrance to the vacuum chamber should nominally be set to give you the proper normalization. You might tweak these one at a time to see if you can fix things, but keep track of what you're doing. If you suspect the system's totally out of whack, ask the teaching staff to help out. [NOTE: As of April 13, 2010, the following settings of the rotatable quarter wave plates should give the proper circular polarization for a MOT: X-axis, rotation stage at 20 with numbers facing the incident beam; Y-axis, rotation stage at 268 with numbers facing the incident beam; Z-axis, rotation stage at 0 with numbers facing up]
 
@@ -964,7 +959,23 @@ All Reprints and other information can be found on the \href{http://physics111.l
     \bibitem{Moore} John H. Moore, Christopher C. Davis, Michael A. Coplan, \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MOT/John\%20Moore,\%20Christopher\%20Davis,\%20Michael\%20A.\%20Coplan_Building\%20Scientific\%20Apparatus,\%204th\%20ed.pdf}{\textbf{Building Scientific Apparatus, 4th ed}}, Cambridge University Press (2009).
 \end{thebibliography}
 
-\section{Appendix on control theory}
+\appendix
+
+\section{Polarizaiton gradient cooling}
+\label{sec:pgcooling}
+
+Detailed accounts of PG cooling are given in the references \cite{Metcalf}. Here, we provide only a simple explanation of the effect.
+
+PG cooling is based on two phenomena: the ac Stark shift, and optical pumping. The former is a change in the energy of a polarizable object, e.g. an atom, a molecule, or even a glass bead, due to the application of an oscillating electric field. The field induces an electric dipole moment $\vec{d} = \alpha(\omega_L)\vec{E}$ in the object, and then the energy of the object is shifted by the dipole energy $ U = -\vec{d}\cdot \vec{E}$, the time-average of which is non-zero. Here, $\alpha(\omega_L)$ is the dynamic polarizability which, for an atom with a single optical resonance, varies as $\alpha(\omega_L) \sim -1/\delta$. The ac Stark shift is used in many atomic physics experiments to trap ultracold atoms in laser traps. The second phenomenon at work in PG cooling is optical pumping, where light of a certain polarization will define a particular internal state to which the atom will be directed after scattering several photons. Such optical pumping is explored in a \href{http://experimentationlab.berkeley.edu/OPT}{\textbf{separate experiment}} in the 111 laboratory.
+
+In PG cooling, a multi-level atom is subject to ac Stark shifts and optical pumping by light that has a spatially varying polarization. Optical pumping consistently directs the atoms to an internal atomic state in which the AC Stark energy is minimized. However, this pumping does not occur instantaneously. Thus, a moving atom will consistently lose energy as it moves away from the location of minimum energy, as if climbing uphill, only to find itself soon delivered to the bottom of a hill through optical pumping and spontaneous emission. This condition is reminiscent of that of the ancient Greek character Sisyphus, whose punishment for a life of hubris was being commanded to roll a large boulder up a hill, only to watch it roll down again, and to repeat this task eternally.
+
+The end result of PG cooling is the reduction of atomic velocities to temperatures on the order of the AC Stark shift, until one reaches the recoil temperature limit that corresponds to the energy of an atom with just one photon's worth of momentum.
+
+For completeness, we note that sub-recoil optical cooling is also possible, e.g. through Raman cooling or velocity-selective coherent population trapping. However, these intriguing effects are not relevant to this experiment (at least yet!).
+
+
+\section{Control theory}
 \label{sec:controlappendix}
 
 When this laboratory was first built, we had in mind that students would also spend a fair bit of time characterizing the external cavity diode laser and its control electronics as a generic feedback control system.  The ``MOT Laser Feedback Signal Processor'' that is used for this experiment was built with lots of extra switches and dials so students could conduct this characterization, and then, with the aid of a good knowledge of control theory, could design a perfect feedback system and demonstrate its qualities.  We found, however, that students struggled with this portion of the laboratory, using most of their time at the experiment without even getting to the atomic physics part.
