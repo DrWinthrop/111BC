@@ -328,7 +328,7 @@ Take an experimentalist's approach: once you have identified the optical pumping
 
 \section{Finding Resonance}
 
-\subsection{Using the Function Generator to Find Resonance}
+\subsection{Using the Function Generator to Find Resonance}\label{sec:freq_mod}
 
 The setup will need to be slightly tuned to find the resonance frequencies of the two isotopes. Initially we will want to induce the Zeeman splitting by driving a DC current through the magnetic coil, power the coils with roughly 1.0 Amp to start with. The strength of the coils will change the spacing between Zeeman levels and will ultimately dictate the resonance frequency needed to induce stimulated emission of the Rb. Next the RF coils should be set to create the electromagnetic radiation required to induce these emissions. They can be driven using the function output of the DS345. The variation in the opacity of Rubidium gas that occurs when it is optically pumped and then hit by the resonance frequency electromagnetic radiation can be observed through the photodiode. In order to read the signal generated inside the bulb the photo diode's output will need to be connected to the PRE-AMP as the signal of radiation will be very low. It is important to make sure the PRE-AMP settings are as specified before or you will not receive a proper signal. Finally run the output of the PRE-AMP (the amplified photo diode output, see [\href{\PhotodiodeDataSheet}{\textbf{Photodiode Data Sheet}}] for photo detector operation) to Ch.2 (Y) of the oscilloscope and keep Ch.1 (X) connected to the DS 345's modulation output. It will be best to observe the results in the X-Y mode of the oscilloscope. \\
 
@@ -355,47 +355,48 @@ As explained in the introduction video, modulating the magnetic field of the Hel
 
 Familiarize yourself with the Coil Driver panel: The PHASE ADJUST control on Coil Driver panel changes the phase of the modulation signal seen by the scope (the Phase Out signal) relative to the modulation signal that the rubidium sample experiences (which is the actual modulation in the coil current that changes the phase of the photo-detected signal). Connect the Phase out signal to Ch 1 (X) of the oscilloscope and the amplified photodetector signal to Ch 2 (Y). With the scope in Dual Trace Mode (Both Channels), trigger on EXT/Line Source (60 Hz PG\&E power line) and set the time scale to around 2 msec/DIV. You may have to adjust the trigger Level knob to get a stable trace. Now change the phase with the Adjust knob: the modulation signal (Ch. 1) moves because we are changing its phase relative to the 60 Hz line signal that we are triggering on the oscilloscope. Seeing as the oscilloscope is powered by a 60 Hz signal and the detected signal is an effect caused by the rubidium bulb, the Adjust knob does not change the phase of the signal that the sample sees. It is simply a visual effect experienced by the electronics of the system. 
 
-After swapping the modulation output from the function generator with the modulation output from the Helmholtz coils (phase out), put the scope in X-Y mode. You should now see the detected signal (Ch. 2) displayed on the y-axis versus the field modulation signal (Ch. 1) on the x-axis. 
+After swapping the modulation output from the function generator with the modulation output from the Helmholtz coils (phase out), put the scope in X-Y mode. You should now see the detected signal (Ch.2) displayed on the y-axis versus the field modulation signal (Ch.1) on the x-axis. 
 \\
 
-\checkpoint{Resonance Conditions and Symmetry}{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}
+\checkpoint{Resonance Conditions and Symmetry}{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off.}
 
 %\noindent\textbf{\textcolor{red}{This is a checkpoint and a great time to stop and think about the physics. Discuss the following questions with you partner and once you feel you have a better understanding of what is happening, call over a GSI to sign you off:}}
 
-\textbf{\textcolor{red}{How you can tell when you have found the resonance condition in this mode? Should there be any symmetry? If so, how should it be symmetrical? Along what axis should the symmetry be found? It is up to you to determine which of the modes (Time Trace or X-Y) gives a more precise determination of the resonance condition-you might consider using both. Try them for repeatability. Discuss your reasoning with the GSI. These values will all be useful when you are estimate your errors using each method.}}
+\textbf{\textcolor{red}{How can you tell when you have found the resonance condition in this mode? Should there be any symmetry? If so, how should it be symmetrical? Along what axis should the symmetry be found? It is up to you to determine which of the modes (Time Trace or X-Y) gives a more precise determination of the resonance condition-you might consider using both. Try them for repeatability. Discuss your reasoning with the GSI. These values will be useful when you estimate your errors using each method.}}
 
 \newpage
 
 \subsection{Once you have a good understanding of what is going on, here are some things to explore}
 
 \begin{itemize}
-    \item Temperature variation of the signal and intensity dependence
+    \item Variation of the signal as a function of the oven temperature
 
-    \item Signal variation with different voltages (ranging from 0V -- 9V) applied across the Helmholtz coils (Including reverse polarity). How does the resonance change with voltage/current supplied to the Helmholtz coils
+    \item Variation of the signal with different voltages (ranging from 0V -- 9V) applied across the Helmholtz coils (including reverse polarity). How does the resonance change with voltage/current supplied to the Helmholtz coils?
 
     \item Refining the resonance frequency measurements:
     \begin{itemize}
         \item This can be achieved using either of the two techniques: fixing the RF frequency and modulating the Helmholtz Coils while varying the current or fixing the current to the Helmholtz coils and modulating the RF signal;
 
-        \item Pro Tip: It is much easier to fix the RF signal and vary the current of the Modulated Helmholtz coils while looking at the XY mode. It should be possible to get fairly accurate and precise resonance measurements using small span RF frequency modulation; if you have time, you might try retaking your points with this alternate methodology.
+        \item Pro Tip: It is much easier to fix the RF signal and vary the current of the Modulated Helmholtz coils while looking at the signal in the X-Y mode. It should be possible to get fairly accurate and precise resonance measurements using small span RF frequency modulation; if you have time, you might try retaking your points with this alternate method.
     \end{itemize}
     \item Adjusting the span, rate, phase, carrier frequency, and using a triangle modulation rather than a ramp modulation:
     \begin{itemize}
-        \item How sensitive are your resonance measurements to changing these variables? Record the qualitative behavior, and explain it. You should also get a quantitative estimate of the statistical error in you measurement technique; try making several independent measurements of the resonance frequency and see how they vary (See the \href{\ErrorAnalysisNotes}{\textbf{Error Analysis Notes}} for further discussion of errors). Are there any possible sources of systematic error? You may want to check that the field is properly aligned; find the field direction meter (vertical compass) and place it close to the center of the Helmholtz coils. See what happens to the magnetized ``needle'' when you reverse the current or turn off the power supply. You should also get a sense of what effects 60 cycle pick up might have on your measurements.
+        \item How sensitive are your resonance measurements to changes of these variables? Record the qualitative behavior, and explain it. You should also get a quantitative estimate of the statistical error in you measurement technique; try making several independent measurements of the resonance frequency and see how they vary (See the \href{\ErrorAnalysisNotes}{\textbf{Error Analysis Notes}} for further discussion of errors). Are there any possible sources of systematic error? You may want to check that the field is properly aligned; find the field direction meter (vertical compass) and place it close to the center of the Helmholtz coils. See what happens to the magnetized ``needle'' when you reverse the current or turn off the power supply. You should also get a sense of what effects the 60-Hz pick up might have on your measurements.
 
-        %\item \textbf{\textcolor{red}{This is a checkpoint: Derive a method for determining this error with your lab partner utilizing the Error Analysis Notes. Discuss this method with a GSI Before Taking Data.  You should get a representative sample that at least includes both isotopes (the isotopes have different intensities, so one might expect different error values.)}}
+        %\item \textbf{\textcolor{red}{This is a checkpoint: Derive a method for determining the error with your lab partner utilizing the Error Analysis Notes. Discuss this method with a GSI Before Taking Data.  You should get a representative sample that at least includes both isotopes (the isotopes have different intensities, so one might expect different errors.)}}
     \end{itemize}
     
-    \checkpoint{Error Analysis Methods}{Derive a method for determining this error with your lab partner utilizing the Error Analysis Notes. Discuss this method with a GSI Before Taking Data.  You should get a representative sample that includes both isotopes (the isotopes have different intensities, so one might expect different error values.)}
+    \checkpoint{Error Analysis}{Derive a method for determining this error with your lab partner utilizing the Error Analysis Notes. Discuss this method with a GSI Before Taking Data.  You should get a representative sample that includes both isotopes (the isotopes have different intensities, so one might expect different errors.)}
     
-    \item Turn off the RF generator, and vary the current while looking for a resonance. The field should be on with reverse polarity. Set the field modulation to 100. Set the oscilloscope for a linear internal sweep in the x-direction. The resonance should be found around 0.08 A. (This is known as the Zero Field Resonance.)
-    \item Measure the pumping time at resonance with a square wave amplitude modulation. Apply a DC Current of 1 Amp to the Helmholtz coils and apply the resonance frequency for the more abundant isotope through the RF coils. The PRE-AMP should run to Ch.2 and the modulation output from the function generator to Ch.1. Once the temperature is within optimal range turn off the heater. Apply an AM signal through the signal generator so that the gas reaches equilibrium before each shift in RF amplitude. Measure the rate of change in the signal height when the RF is gated on or off (that is, when the modulation signal goes from low to high or from high to low). Look for the time it takes for the signal to change by 1/e. Which corresponds to the pumping time and which to the relaxation time?
+    \item Turn off the RF generator, and vary the current while looking for a resonance. The magnetic field should be on with reverse polarity. Set the field modulation to 100. Set the oscilloscope for a linear internal sweep in the x-direction. The resonance should be found around 0.08 A. (This is known as the Zero Field Resonance.)
+    \item Measure the pumping time at resonance with a square wave amplitude modulation.  The frequency of the modulation should be low (review Section \ref{sec:freq_mod}). Apply a DC current of 1 A to the Helmholtz coils and apply the resonance frequency for the more abundant isotope through the RF coils. The PRE-AMP should run to Ch.2 and the modulation output from the function generator to Ch.1. Once the temperature is within the optimal range turn off the heater. %Apply an FM signal through the signal generator so that the gas reaches equilibrium before each shift in RF amplitude. 
+    Measure the rate of change in the signal amplitude when the RF is gated on or off (that is, when the modulation signal goes from low to high or from high to low). Look for the time it takes for the signal to change by 1/e. Which corresponds to the pumping time and which to the relaxation time?
     
 \newpage
     
     \begin{itemize}
-        \item Remember to take advantage of the scope's magnification capabilities. The horizontal mode can be set to Mag, with magnifications of $\times$5, $\times$10, and $\times$50. If you observe the relaxation process with a high enough magnification you will see small oscillations in the signal even after you eliminate 60 cycle noise. These are real, physical effects in the relaxation process known as Rabi oscillations. (You should be able to distinguish them from noise by modulating the frequency by small increments, [less than 1 Hz, say]; if they continue to track with the modulation, they're probably real.)
-        \item Be mindful of the effects the PRE-AMP's filters and source coupling can have on your signal; adjust them to make sure that your values are real.
+        \item Remember to take advantage of the magnification capabilities of the oscilloscope. The horizontal mode can be set to Mag, with magnifications of $\times$5, $\times$10, and $\times$50. If you observe the relaxation process with a high enough magnification you will see small oscillations in the signal even after you eliminate the 60-Hz noise. These are real, physical effects in the relaxation process known as Rabi oscillations. (You should be able to distinguish them from noise by modulating the frequency by small increments, [less than 1 Hz, say]; if they continue to track with the modulation, they're probably real.)
+        \item Be mindful of the effects that the PRE-AMP's filters and source coupling can have on your signal; adjust them to make sure that your values are real.
         \item Examine the time constant of the other isotope. 
     \end{itemize}
 
@@ -406,72 +407,72 @@ After swapping the modulation output from the function generator with the modula
 (See \href{\ErrorAnalysisNotes}{\textbf{Error Analysis Notes}} for further discussion.)
 
 \begin{enumerate}
-    \item Make plots of frequency vs. current to help you analyze your data. You should have four sets of data and four lines when you plot them. The individual points, the slopes of the curves, and their axial intercepts have an interrelated significance.
+    \item Make plots of frequency vs. current applied to the Helmholtz coils to help you analyze your data. You should have four sets of data and four lines when you plot them. The individual points, the slopes of the curves, and their axial intercepts have an interrelated significance.
 
-    \item You have two equations to work with; one is the Breit-Rabi equation (eq. \ref{eq:BreitRabi}), and the other is the field of Helmholtz coils as a function of current (eq. \ref{eq:HelmholtzCoilField}). Write down the equations, rearrange them, see how the two isotopes fit in, see how additions or subtractions can help, use both + and $-$ currents. Keep in mind that the B-field in the Breit-Rabi equation is the sum or difference of the field of the Helmholtz coils and the Earth's field. From equation (\ref{eq:BreitRabi}) we have a relation between $\nu_1$ and $I_1$, and $\nu_2$ and $I_2$ where the subscripts refer to the $^{85}$Rb and $^{87}$Rb isotopes. From your data determine the best ratio $\nu_1 / \nu_2$ and from this deduce the values of $I_1$ and $I_2$. Their true values are exactly half-integral. (Are the ratio, and this half-integral expectation, sufficient to determine both nuclear moments?)
+    \item You have two equations to work with; one is the Breit-Rabi equation (eq. \ref{eq:BreitRabi}), and the other is the magnetic field of the Helmholtz coils as a function of current (eq. \ref{eq:HelmholtzCoilField}). Write down the equations, rearrange them, see how the two isotopes fit in, see how additions or subtractions can help, use both + and $-$ currents. Keep in mind that the B-field in the Breit-Rabi equation is the sum or difference of the magnetic field of the Helmholtz coils and the Earth's field. From equation (\ref{eq:BreitRabi}) we have a relation between $\nu_1$ and $I_1$, and $\nu_2$ and $I_2$ where the subscripts refer to the $^{85}$Rb and $^{87}$Rb isotopes. From your data determine the best ratio $\nu_1 / \nu_2$ and from this deduce the values of $I_1$ and $I_2$. Their true values are exactly half-integral. (Are the ratio, and this half-integral expectation, sufficient to determine both nuclear spins?)
 
     \item Having now determined the values of $I_1$ and $I_2$ use equation (\ref{eq:BreitRabi}) to determine the value of $B$ at the bulb for one positive and one negative value of the current in the coil. Compare these values with those calculated from the coil dimensions and current. Which values are more accurate? Why? Once you have determined the nuclear spins, the Breit-Rabi equation is as accurate as the numerical constant 2.799, since the nuclear spins must be odd half-integers exactly. The field of the Helmholtz coils is not as accurate as the numerical constant $0.9 \times 10^{-6}$ since the radii of the copper wire turns are not all exactly the same, and the separation of the coils is not exact. By using the Breit-Rabi equation, you can determine this constant more accurately. Try drawing a line parallel to the frequency axis at a particular current, both plus and minus. What can you learn from the intersections with the curves? Do the same with a line parallel to the current or B axis.
 
-    \item Perform a line fit on each of your four data sets. For each, find the slope and intercept and there respective errors using the theory and techniques of error analysis as illustrated in \citeauthor{Lyons}, Data Analysis for Physical Science Students, Section 2.9, page 63ff. (Also see \href{\ErrorAnalysisNotes}{\textbf{Error Analysis Notes}}). Show clearly how you do this, with a sample calculation. If you use Excel you must show that you know what the program is doing. In particular, what is R and what influences its value? Don't just use a data reduction code blindly - you don't learn anything that way. You might also try a Chi-Square analysis to check whether your data and error estimates are consistent (again, see \citeauthor{Lyons}). Also, check to see that their slopes are consistent with the values of nuclear spins that you found.
+    \item Perform a line fit on each of your four data sets. For each, find the slope and intercept along with their errors using the theory and techniques of error analysis as illustrated in \cite{Lyons}, (Data Analysis for Physical Science Students, Section 2.9, page 63ff. Also see \href{\ErrorAnalysisNotes}{\textbf{Error Analysis Notes}}). Show clearly how you do this, with a sample calculation. If you use Excel you must show that you know what the program is doing. In particular, what is R and what influences its value? Don't just use a data reduction code blindly - you don't learn anything that way. You might also do a least-squares fit to check whether your data and error estimates are consistent (again, see \cite{Lyons}). Also, check to see that their slopes are consistent with the values of nuclear spins that you found.
 
-    \item From the intercepts calculate the earth's field, and its errors. Ultimately you can have four values for the earth's field for each isotope. Check to see that all eight values fall within the range of your statistical errors. If they don't, what might be wrong? Say something about which values you think are the most accurate, and why.
+    \item From the intercepts calculate the Earth's field and its errors. Ultimately you can have four values for the earth's field for each isotope. Check to see that all eight values fall within the range of your statistical errors. If they don't, what might be wrong? Say something about which values you think are the most accurate, and why.
 
-    \item Explain why there is a resonance at zero field, i.e. the magnetic field generated by the Helmholtz coils and the Earth magnetic field sum up to zero.
+    \item Explain why there is a resonance at zero field, i.e. the magnetic field generated by the Helmholtz coils and the Earth's magnetic field sum up to zero.
 
-    \item What do you need to know and to take account of, in order to make a rough estimate or calculation of the pumping time to compare with your experimentally measured value?
+    \item What do you need to know and take account for, in order to make a rough estimate or calculation of the pumping time to compare with your experimentally measured value?
 
-    \item Go to the page on data analysis and complete the steps.
+    %\item Go to the page on data analysis and complete the steps.
 \end{enumerate}
 
-\subsection{Data Analysis}
+%\subsection{Data Analysis}
 
-\subsubsection{Overview}
+%\subsubsection{Overview}
 
-The purpose of the experiment is to determine the nuclear spins of the two isotopes $^{85}$Rb and $^{87}$Rb [It is known that both spins are odd half-integral values, like 1/2, 3/2, 5/2, etc.] and to measure $B_{E}$, the Earth's magnetic field. \\
+%The purpose of the experiment is to determine the nuclear spins of the two isotopes $^{85}$Rb and $^{87}$Rb [It is known that both spins are odd half-integral values, like 1/2, 3/2, 5/2, etc.] and to measure $B_{E}$, the Earth's magnetic field. \\
 
-We have two rubidium isotopes in gaseous form inside a bulb placed in a magnetic field and subject to electromagnetic radiation. The Earth's magnetic field also affects the rubidium energy levels and their populations. We set the current in the coil producing the magnetic field, and adjust the radio frequency to produce a resonance condition. The parameters that we either want to change, vary, or to measure are the current, the field produced by the current, and the frequency of the applied RF radiation at resonance. The relevant equations are Eq. \ref{eq:HelmholtzCoilField} and Eq. \ref{eq:BreitRabi}. \\
+%We have two rubidium isotopes in gaseous form inside a bulb placed in a magnetic field and subject to electromagnetic radiation. The Earth's magnetic field also affects the rubidium energy levels and their populations. We set the current in the coil producing the magnetic field, and adjust the radio frequency to produce a resonance condition. The parameters that we either want to change, vary, or to measure are the current, the magnetic field produced by the current, and the frequency of the applied RF radiation at resonance. The relevant equations are Eq. \ref{eq:HelmholtzCoilField} and Eq. \ref{eq:BreitRabi}. \\
 
-We have $B_{H}$ = magnetic field from the Helmholtz coils, $i$ = current in the coils, and $a$ = radius of the coils. The value 0.9 is approximate because the radius $a$ is not exactly the same for each of the $N$ windings and we have no simpler way of incorporating this fact. \\
+%We have $B_{H}$ = magnetic field from the Helmholtz coils, $i$ = current in the coils, and $a$ = radius of the coils. The value 0.9 is approximate because the radius $a$ is not exactly the same for each of the $N$ windings and we have no simpler way of incorporating this fact. \\
 
-Next we have $\nu$ = frequency of applied em radiation, $I$ = nuclear spin of Rb, and $B = B_{H} + B_{E}$ = the total magnetic field from the Helmholtz coil and the Earth.
+%Next we have $\nu$ = frequency of applied em radiation, $I$ = nuclear spin of Rb, and $B = B_{H} + B_{E}$ = the total magnetic field from the Helmholtz coil and the Earth.
 
-\subsubsection{Nuclear Spins}
+%\subsubsection{Nuclear Spins}
 
-Using the results from the four tables of Resonance Frequency vs. Current, determine the values of the nuclear spins ($I$) of both the isotopes. This can be accomplished by looking at the same current value, and thus same external magnetic field, and rearranging the Breit-Rabi equation to get a linear equation with a slope dependence of $2I + 1$, and an intercept dependent only on the earth's field. [Sketch 4 straight lines] \\
+%Using the results from the four tables of Resonance Frequency vs. Current, determine the values of the nuclear spins ($I$) of both the isotopes. This can be accomplished by looking at the same current value, and thus same external magnetic field, and rearranging the Breit-Rabi equation to get a linear equation with a slope dependence of $2I + 1$, and an intercept dependent only on the earth's field. [Sketch 4 straight lines] \\
 
-Another way of determining the spins is to set the current and take the ratio of the resonance frequencies for the two isotopes, at the same current. \\
+%Another way of determining the spins is to set the current and take the ratio of the resonance frequencies for the two isotopes, at the same current. \\
 
-In both methods there will be some errors, but it does not matter because we know that the spins have exact half-integral values. This is a case in which the use of error analysis is unwarranted because the results are unambiguous.
+%In both methods there will be some errors, but it does not matter because we know that the spins have exact half-integral values. This is a case in which the use of error analysis is unwarranted because the results are unambiguous.
 
-\subsubsection{Earth's Magnetic Field}
+%\subsubsection{Earth's Magnetic Field}
 
-To determine the value of the earth's magnetic field, we need to find a way to determine $B_{H}$ exactly, or to eliminate it from the equations. $B_{H}$ can be eliminated by setting $i = 0$ and using the frequency intercepts and the Breit-Rabi equation. Recall that the equation for $B_{H}$ as a function of $i$ is not exact. \\
+%To determine the value of the earth's magnetic field, we need to find a way to determine $B_{H}$ exactly, or to eliminate it from the equations. $B_{H}$ can be eliminated by setting $i = 0$ and using the frequency intercepts and the Breit-Rabi equation. Recall that the equation for $B_{H}$ as a function of $i$ is not exact. \\
 
-\newpage
+%\newpage
 
-There is yet another way to determine the earth's field. There is a reversing switch on the coil current, to reverse the direction of the field. For the same absolute value of the current, the field must have the same strength, except for possible hysteresis effects. Check for hysteresis by measuring the resonant frequency at a particular current, when the value of current is reached from above (run the current to a max, and then come down to the desired value), and from below (run the current to zero, and then come up to the desired value). \\
+%There is yet another way to determine the earth's field. There is a reversing switch on the coil current, to reverse the direction of the field. For the same absolute value of the current, the field must have the same strength, except for possible hysteresis effects. Check for hysteresis by measuring the resonant frequency at a particular current, when the value of current is reached from above (run the current to a max, and then come down to the desired value), and from below (run the current to zero, and then come up to the desired value). \\
 
-So, at a particular current, measure the resonance frequencies for both positive and negative values of current. Add and subtract the two equations, and get exact expressions for $B_{E}$ and for the more exact parameter for the relation between current and $B_{H}$.
+%So, at a particular current, measure the resonance frequencies for both positive and negative values of current. Add and subtract the two equations, and get exact expressions for $B_{E}$ and for the more exact parameter for the relation between current and $B_{H}$.
 
-\subsubsection{Errors in the Field}
+%\subsubsection{Errors in the Field}
 
-How do we treat the errors in the value of the earth's field? Step back a little, and see what data you have and how you can arrange it to make error computation the simplest. Here are several approaches.
-\begin{enumerate}
-    \item Look at plots of your data. You should have 4 lines, two for each isotope, one with positive current and one with negative current. You can do a least-square fit of each line, calculate the position of the zero-current intercepts, and obtain values for the field. Then you can calculate ``errors of adjusted coefficients'' using the methods given in \citeauthor{Lyons} and other references.
+%How do we treat the errors in the value of the earth's field? Step back a little, and see what data you have and how you can arrange it to make error computation the simplest. Here are several approaches.
+%\begin{enumerate}
+    %\item Look at plots of your data. You should have 4 lines, two for each isotope, one with positive current and one with negative current. You can do a least-square fit of each line, calculate the position of the zero-current intercepts, and obtain values for the field. Then you can calculate ``errors of adjusted coefficients'' using the methods given in \citeauthor{Lyons} and other references.
 
-    \item But, by changing negative current points to negative frequencies as well, each isotope has only one plot line and presumably the zero crossing is more accurate. Then there are only two lines to fit, one for each isotope, and the errors can be calculated as described above for adjusted coefficients.
+    %\item But, by changing negative current points to negative frequencies as well, each isotope has only one plot line and presumably the zero crossing is more accurate. Then there are only two lines to fit, one for each isotope, and the errors can be calculated as described above for adjusted coefficients.
 
-    \item A still easier method is to use pairs of points with the same absolute values of current, and add the two resulting equations. We then have values of the earth's field without adjusting any coefficients, and the errors can be calculated as an error of a single parameter, rather than as an error of an adjusted coefficient. We have
-    \[
-    \nu^+ = \frac{2.799 (|\overrightarrow{B_H}|
-        + |\overrightarrow{B_E}|)}{2I + 1}, \qquad
-    \nu^- = \frac{2.799 (|\overrightarrow{B_H}|
-        - |\overrightarrow{B_E}|)}{2I + 1}, \qquad
-    |\overrightarrow{B_H}| =
-        \frac{1}{2}\left(\frac{|\nu^+ - \nu^-|}{2.799}\right)(2I + 1)
-    \]
-    The standard deviation is calculated as described above in Error of a Single Parameter: Measurement Statistics. Compute the average; compute the differences, square them, add, divide by $N(N - 1)$ and take the square root. Then step back, look at the results, and see if they look reasonable. If not, you've goofed somewhere, and must try again.
-\end{enumerate}
+    %\item A still easier method is to use pairs of points with the same absolute values of current, and add the two resulting equations. We then have values of the earth's field without adjusting any coefficients, and the errors can be calculated as an error of a single parameter, rather than as an error of an adjusted coefficient. We have
+    %\[
+    %\nu^+ = \frac{2.799 (|\overrightarrow{B_H}|
+        %+ |\overrightarrow{B_E}|)}{2I + 1}, \qquad
+    %\nu^- = \frac{2.799 (|\overrightarrow{B_H}|
+        %- |\overrightarrow{B_E}|)}{2I + 1}, \qquad
+    %|\overrightarrow{B_H}| =
+        %\frac{1}{2}\left(\frac{|\nu^+ - \nu^-|}{2.799}\right)(2I + 1)
+    %\]
+    %The standard deviation is calculated as described above in Error of a Single Parameter: Measurement Statistics. Compute the average; compute the differences, square them, add, divide by $N(N - 1)$ and take the square root. Then step back, look at the results, and see if they look reasonable. If not, you've goofed somewhere, and must try again.
+%\end{enumerate}
 
 \section{Notes and advice from Prof. Budker}
 
@@ -482,13 +483,13 @@ Nov. 19, 2007. The Physics-111 Optical Pumping experiment utilizes radio-frequen
 \begin{thebibliography}{}
 \label{references}
 \bibitem{Taylor}
-J.R. Taylor, Taylor Book 2ed ``\href{\ErrorAnalysis}{\textbf{An Introduction to Error Analysis}}'', Oxford,
+J.R. Taylor, ``\href{\ErrorAnalysis}{\textbf{An Introduction to Error Analysis}}'', 2nd ed., Oxford.
 
 \bibitem{Lyons}
 L. Lyons, ``\href{\DataAnalysis}{\textbf{A Practical Guide to Data Analysis for Physical Science Students}}'', Cambridge, 1991. \#QC33.L9
 
 \bibitem{Camparo}
-James Camparo, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/Camparo,PhysTodayNov(07)33-Rb\%20Atomic\%20Clock.pdf}{\textbf{The Rubidium Atomic Clock and Basic Research}}'', Physics Today -- November 2007
+James Camparo, ``\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/Camparo,PhysTodayNov(07)33-Rb\%20Atomic\%20Clock.pdf}{\textbf{The Rubidium Atomic Clock and Basic Research}}'', Physics Today -- November 2007.
 
 \bibitem{Carver}
 Carver, Thomas R. ``\href{\OpticalPumpingCarver}{\textbf{Optical Pumping}}''; Science: vol. 141, Aug 16, 1963, pp. 599-608.
