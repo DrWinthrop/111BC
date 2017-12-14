@@ -62,15 +62,15 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 \begin{figure}[h]
 \begin{minipage}{0.24\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_3517.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/MUO_3517.jpg}}
-    \caption{Lab station front view. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_3517.jpg}{\textbf{here}}}
+    \caption{Front view of the lab station for the muon lifetime experiment. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_3517.jpg}{\textbf{here}}}
 \end{minipage}
 \begin{minipage}{0.18\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_Pwr_3562.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/MUO_Pwr_3562.jpg}}
-    \caption{High voltage power supplies for top \& bottom tubes with top of the top tube. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_Pwr_3562.jpg}{\textbf{here}}}
+    \caption{High voltage power supplies for top \& bottom photomultiplier tubes with the black base of the top photomultiplier tube shown. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_Pwr_3562.jpg}{\textbf{here}}}
 \end{minipage}
 \begin{minipage}{0.20\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_PMT_3563.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/MUO_PMT_3563.jpg}}
-    \caption{Close up of top, black photomultiplier tube found in room 275. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_PMT_3563.jpg}{\textbf{here}}}
+    \caption{Close up of the black base of the top photomultiplier tube found in room 275. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_PMT_3563.jpg}{\textbf{here}}}
 \end{minipage}
 \begin{minipage}{0.33\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_Tank_3565.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/MUO_Tank_3565.jpg}}
@@ -154,7 +154,7 @@ By the CPT theorem, the lifetimes of the negative and positive muons in \emph{va
 \label{eq:Reaction3}
     \mu^- + p \rightarrow \nu_{\mu}+n
 \end{equation}
-where $p$ annd $n$ are the proton and neutron respectively.
+where $p$ and $n$ are the proton and neutron respectively.
 The rate of the muon-capture process \eqref{eq:Reaction3} depends strongly on the charge Z of the nucleus which captures the muon. In muonic carbon atoms, the rate of the muon capture \eqref{eq:Reaction3} is about 10\% the decay rate in \eqref{eq:Decay2}.
 
 Most of the muons that are incident on the detector pass straight through it. Only the lowest energy particles come to rest within the scintillating liquid itself.
@@ -166,7 +166,7 @@ Most of the muons that are incident on the detector pass straight through it. On
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/750px-Muon_Equip_New_fig1.png}{\includegraphics[width=0.5\linewidth]{images/750px-Muon_Equip_New_fig1.png}}
-    \caption{Block Diagram of Muon Lifetime Experiment}
+    \caption{Block Diagram of the Muon Lifetime Experiment}
     \label{fig:BlockDiagram}
 \end{figure}
 
@@ -177,7 +177,7 @@ A photomultiplier tube (PMT) is a detector that converts single photons into lar
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUOimage056.gif}{\includegraphics[width=0.5\linewidth]{images/MUOimage056.png}}
-    \caption{Photomultiplier tube}
+    \caption{Schematic of a photomultiplier tube}
     \label{fig:PhotomultiplierTube}
 \end{figure}
 
@@ -223,7 +223,7 @@ Muons are derived from the process of cosmic ray particles striking the nuclei o
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUOimage008.gif}{\includegraphics[width=0.5\linewidth]{images/MUOimage008.png}}
-    \caption{This graph shows lifetime on the X axis and counts on the Y axis. Note that the X axis  sometimes is called the channel number for the digitizer. The Y axis is also called the amplitude counts.}
+    \caption{Distribution of the temporal separation between two signals.  Note that the X axis  sometimes is called the channel number for the digitizer. The Y axis is also called the amplitude counts.}
     \label{fig:MUOimage008}
 \end{figure}
 
@@ -237,11 +237,11 @@ When the two pulses come down the cable, they are routed to an amplifier. Then t
 
 \newpage
 
-\checkpoint{Oscilloscope (TDS 360)}{Before you use these programs you should have viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabVIEW program as it will need to be specified when the data acquisition begins. The trigger level on the lab view program is initialized to some arbitrary voltage, however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic spread of oscillations are simply noise and you are looking for very narrow sharp peaks following the initial large decaying spike. Show GSI your pulse signals on the oscilloscope and discuss what values you think are appropriate for the LABView program.}
+\checkpoint{Oscilloscope (TDS 360)}{Before you use these programs you should have viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabVIEW program as it will need to be specified when the data acquisition begins. The trigger level on the lab view program is initialized to some arbitrary voltage; however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic oscillations are simply noise and you are looking for very narrow sharp pulses following the initial large pulse. Show GSI your signals on the oscilloscope and discuss what values you think are appropriate for the LABView program.}
 
 %\textbf{This is a Checkpoint: Before you use these programs you should have viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabVIEW program as it will need to be specified when the data acquisition begins. The trigger level on the lab view program is initialized to some arbitrary voltage, however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic spread of oscillations are simply noise and you are looking for very narrow sharp peaks following the initial large decaying spike. Show  GSI your pulse signals on the oscilloscope and discuss what values you think are appropriate for the LABView program. }
 \begin{itemize}
-    \item Note: High voltage on the PMTs are as follows, Top tube =1900 Volts Negative and bottom tube = 2300 Volts Negative with the SR445A 4 each amplifier, setup top PMT 1 -amp, bottom PMT 2 amps.
+    \item Note: High voltage on the PMTs are as follows: Top tube =1900 Volts Negative and bottom tube = 2300 Volts Negative with the SR445A 4 each amplifier, setup top PMT 1 -amp, bottom PMT 2 amps.
 
 \end{itemize}
 
